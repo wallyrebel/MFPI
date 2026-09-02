@@ -52,5 +52,23 @@ export default function Home() {
     }),
   };
 
-  return <RankingsDashboard snapshot={publicSnapshot} />;
+  return (
+    <>
+      <RankingsDashboard snapshot={publicSnapshot} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'Mississippi Football Power Index',
+            alternateName: 'Mississippi Football Rankings',
+            url: 'https://www.mississippifootballrankings.com/',
+            description: 'Weekly Mississippi high school football rankings for every MHSAA team.',
+            inLanguage: 'en-US',
+          }),
+        }}
+      />
+    </>
+  );
 }
