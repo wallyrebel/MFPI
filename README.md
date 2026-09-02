@@ -66,7 +66,7 @@ The repository is already configured as a vinext application that builds a Cloud
 - Deploy command: `npx wrangler deploy --config dist/server/wrangler.json`
 - Production branch: `main`
 
-The Wednesday workflow in `.github/workflows/update-rankings.yml` tests the engine, pulls the live data after the cutoff, rebuilds the site, and commits changed ranking snapshots. A push to `main` then gives Cloudflare's Git integration a new revision to deploy. The workflow needs repository `contents: write` permission; a protected branch must also allow the workflow bot to push, or the commit step must be changed to open a pull request.
+The Wednesday workflow in `.github/workflows/update-rankings.yml` tests the engine, pulls the live data after the cutoff, rebuilds the site, and commits changed ranking snapshots. Ordinary workflow runs use `--skip-existing`, so a retry or an already-published week completes successfully without fetching or overwriting ranking data. A push to `main` then gives Cloudflare's Git integration a new revision to deploy. The workflow needs repository `contents: write` permission; a protected branch must also allow the workflow bot to push, or the commit step must be changed to open a pull request.
 
 For a local Cloudflare-compatible preview or an authenticated manual deployment:
 

@@ -59,7 +59,7 @@ jobs:
 
       - name: Pull data and calculate rankings
         if: ${{ github.event_name == 'schedule' || !inputs.corrected }}
-        run: python calculate_rankings.py --live
+        run: python calculate_rankings.py --live --skip-existing
 
       - name: Pull data and publish an audited correction
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.corrected }}

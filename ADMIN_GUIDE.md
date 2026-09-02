@@ -28,7 +28,7 @@ Low verified-game coverage by itself produces a complete, visibly labeled provis
 
 ## Corrections and history
 
-Published `data/<season>/week-XX` directories are immutable. A second ordinary publication raises an error. After reviewing the reason for a historical correction, use `--corrected`; the program writes a numbered revision, marks it `CORRECTED`, links it to the original run in SQLite, and updates `data/current`.
+Published `data/<season>/week-XX` directories are immutable. A second ordinary publication raises an error. Ordinary GitHub Actions workflow runs pass `--skip-existing`, which reports `ALREADY_PUBLISHED` and exits successfully when the week's archive is already present; it does not fetch data or change the archive. After reviewing the reason for a historical correction, use `--corrected`; the program writes a numbered revision, marks it `CORRECTED`, links it to the original run in SQLite, and updates `data/current`.
 
 Never delete or edit an original weekly directory to conceal a correction. Formula changes require a new `FORMULA_VERSION`; do not recalculate old published weeks in place.
 

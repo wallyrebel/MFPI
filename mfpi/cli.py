@@ -48,14 +48,39 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--data-root", type=Path, default=Path("data"))
     parser.add_argument("--refresh-teams", action="store_true")
     parser.add_argument("--corrected", action="store_true", help="Publish an audited correction without overwriting history.")
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Exit successfully when this week's immutable snapshot is already published.",
+    )
     parser.add_argument("--no-publish", action="store_true", help="Calculate and validate without updating current rankings.")
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
-    args = build_parser().parse_args(argv)
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    if args.skip_existing and (args.corrected or args.no_publish):
+        parser.error("--skip-existing cannot be combined with --corrected or --no-publish")
+
     generated_at = datetime.now(timezone.utc)
     week = args.week or ranking_week(generated_at, args.season)
+    existing_archive = args.data_root / str(args.season) / f"week-{week:02d}"
+    if args.skip_existing and existing_archive.exists():
+        print(
+            json.dumps(
+                {
+                    "formula_version": FORMULA_VERSION,
+                    "season": args.season,
+                    "week": week,
+                    "status": "ALREADY_PUBLISHED",
+                    "archive": str(existing_archive),
+                },
+                indent=2,
+            )
+        )
+        return 0
+
     settings = replace(Settings(), season=args.season, week=week)
     cutoff = _parse_cutoff(args.cutoff, settings)
     source_meta: list[dict] = []
