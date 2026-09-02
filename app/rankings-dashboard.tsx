@@ -95,9 +95,8 @@ export default function RankingsDashboard({ snapshot }: { snapshot: Snapshot }) 
     });
   }, [scope, sort, snapshot.rankings]);
 
-  const strongestSchedules = [...snapshot.rankings]
-    .sort((a, b) => b.components.sos.normalized - a.components.sos.normalized)
-    .slice(0, 3);
+  const strongestSchedule = [...snapshot.rankings]
+    .sort((a, b) => b.components.sos.normalized - a.components.sos.normalized)[0];
   const movers = snapshot.rankings.filter((row) => row.state_rank_change !== null);
   const biggestRiser = [...movers].sort((a, b) => (b.state_rank_change ?? 0) - (a.state_rank_change ?? 0))[0];
   const biggestFaller = [...movers].sort((a, b) => (a.state_rank_change ?? 0) - (b.state_rank_change ?? 0))[0];
@@ -145,7 +144,7 @@ export default function RankingsDashboard({ snapshot }: { snapshot: Snapshot }) 
         <section className="signal-grid" aria-label="Weekly signals">
           <article><span>Largest riser</span><strong>{biggestRiser?.team ?? 'Available in Week 2'}</strong><small>{biggestRiser ? `Up ${biggestRiser.state_rank_change} spots` : 'First snapshot establishes the baseline'}</small></article>
           <article><span>Largest faller</span><strong>{biggestFaller?.team ?? 'Available in Week 2'}</strong><small>{biggestFaller ? `Down ${Math.abs(biggestFaller.state_rank_change ?? 0)} spots` : 'Movement begins after another official run'}</small></article>
-          <article className="schedule-card"><span>Strongest schedule</span><strong>{strongestSchedules[0]?.team}</strong><small>No. 1 SOS · {strongestSchedules[0]?.components.sos.normalized.toFixed(1)} percentile</small></article>
+          <article className="schedule-card"><span>Strongest schedule</span><strong>{strongestSchedule?.team}</strong></article>
         </section>
 
         <section className="rankings-panel" aria-labelledby="rankings-title">
