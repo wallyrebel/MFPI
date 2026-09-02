@@ -34,6 +34,7 @@ def solve_srs(
     priors: Mapping[str, float],
     prior_strengths: Mapping[str, float],
     ranked_team_ids: set[str],
+    external_priors: Mapping[str, float] | None = None,
     *,
     margin_scale: float = 42.0,
     home_field: float = 2.0,
@@ -47,7 +48,8 @@ def solve_srs(
             by_team[game.home_team_id].append(game)
             by_team[game.away_team_id].append(game)
 
-    ratings = {team_id: float(priors.get(team_id, 0.0)) for team_id in ids}
+    external_priors = external_priors or {}
+    ratings = {team_id: float(external_priors.get(team_id, priors.get(team_id, 0.0))) for team_id in ids}
     if not ids:
         return ratings, 0, True
 
@@ -56,7 +58,8 @@ def solve_srs(
         updated: dict[str, float] = {}
         for team_id in ids:
             prior_weight = max(0.0, float(prior_strengths.get(team_id, 1.0)))
-            numerator = prior_weight * float(priors.get(team_id, 0.0))
+            prior_value = external_priors.get(team_id, priors.get(team_id, 0.0))
+            numerator = prior_weight * float(prior_value)
             denominator = prior_weight
             for game in by_team.get(team_id, []):
                 opponent_id, points_for, points_against, location = perspective(game, team_id)

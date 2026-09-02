@@ -6,6 +6,7 @@ import sys
 from dataclasses import replace
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 from .config import CENTRAL, FORMULA_VERSION, Settings, ranking_week
 from .engine import calculate_rankings
@@ -18,7 +19,7 @@ from .providers import (
     MaxPrepsRankingProvider,
     MaxPrepsScoreProvider,
 )
-from .reconcile import reconcile_games, reconcile_maxpreps, supplement_games_with_maxpreps
+from .reconcile import reconcile_external_maxpreps_ratings, reconcile_games, reconcile_maxpreps, supplement_games_with_maxpreps
 from .snapshots import (
     load_previous,
     publish_snapshot,
@@ -89,16 +90,9 @@ def main(argv: list[str] | None = None) -> int:
         )
         teams, games, game_issues = reconcile_games(official, scores.games)
         prior_issues.extend(game_issues)
-        maxpreps_score_targets = {}
-        for game in games:
-            if (
-                game.date <= cutoff
-                and not game.completed
-                and game.status not in {"CANCELLED", "POSTPONED"}
-            ):
-                for team_id in (game.home_team_id, game.away_team_id):
-                    if team_id in maxpreps_signals:
-                        maxpreps_score_targets[team_id] = maxpreps_signals[team_id]
+        # Read every Mississippi team's MaxPreps schedule so completed games
+        # against out-of-state opponents can inherit a published rating too.
+        maxpreps_score_targets = dict(maxpreps_signals)
 
         maxpreps_score_fetch = MaxPrepsScoreProvider().fetch(
             maxpreps_score_targets,
@@ -111,6 +105,19 @@ def main(argv: list[str] | None = None) -> int:
             cutoff,
         )
         prior_issues.extend(maxpreps_score_issues)
+        external_states = {}
+        for observation in maxpreps_score_fetch.games:
+            for team_url in (observation.home_url, observation.away_url):
+                parts = [part for part in urlparse(team_url).path.split("/") if part]
+                if parts and parts[0] != "ms" and len(parts[0]) == 2:
+                    external_states.setdefault(parts[0], None)
+        rankings_by_state = {
+            state: MaxPrepsRankingProvider().fetch_state(
+                state, args.data_root / "cache" / "maxpreps" / f"{state}.json"
+            )
+            for state in external_states
+        }
+        external_ratings = reconcile_external_maxpreps_ratings(teams, maxpreps_score_fetch.games, rankings_by_state)
         secondary_results_used = sum(
             len(issue.context.get("games", []))
             for issue in maxpreps_score_issues
@@ -170,7 +177,7 @@ def main(argv: list[str] | None = None) -> int:
 
     previous = load_previous(args.data_root, args.season, week)
     report = validate_inputs(teams, games, cutoff, settings, prior_issues)
-    result = calculate_rankings(teams, games, cutoff, settings, previous, maxpreps_signals)
+    result = calculate_rankings(teams, games, cutoff, settings, previous, maxpreps_signals, external_ratings if not args.demo else None)
     if not result.converged:
         report.issues.append(
             ValidationIssue(

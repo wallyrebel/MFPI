@@ -19,6 +19,7 @@ from .models import MaxPrepsRanking, MaxPrepsScoreObservation, MaxPrepsSignal, R
 MHSAA_CLASSIFICATIONS_URL = "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
 SCORE_API_URL = "https://api.scorebooklive.com/v2/graphql"
 MAXPREPS_RANKINGS_URL = "https://www.maxpreps.com/ms/football/rankings/{page}/"
+MAXPREPS_STATE_RANKINGS_URL = "https://www.maxpreps.com/{state}/football/rankings/{page}/"
 MAXPREPS_ROOT = "https://www.maxpreps.com"
 
 # Schools can remain in a two-year MHSAA classification document after ending
@@ -354,6 +355,31 @@ class MaxPrepsRankingProvider:
                 return self._read_cache(cache_path)
             raise
 
+    def fetch_state(self, state: str, cache_path: Path | None = None) -> list[MaxPrepsRanking]:
+        """Fetch a state's first ranking pages for rating out-of-state opponents."""
+        state = state.strip().lower()
+        if not re.fullmatch(r"[a-z]{2}", state) or state == "ms":
+            return []
+        if cache_path and cache_path.exists():
+            try:
+                return [MaxPrepsRanking(**item) for item in json.loads(cache_path.read_text(encoding="utf-8"))["rankings"]]
+            except (KeyError, TypeError, ValueError, json.JSONDecodeError):
+                pass
+        rankings: list[MaxPrepsRanking] = []
+        for page in range(1, 21):
+            html = self.transport(MAXPREPS_STATE_RANKINGS_URL.format(state=state, page=page)).decode("utf-8", errors="replace")
+            rows = self.parse(html)
+            if not rows:
+                break
+            rankings.extend(rows)
+            if len(rows) < 25:
+                break
+            time.sleep(self.request_delay)
+        if cache_path:
+            cache_path.parent.mkdir(parents=True, exist_ok=True)
+            cache_path.write_text(json.dumps({"state": state, "rankings": [asdict(row) for row in rankings]}, indent=2) + "\n", encoding="utf-8")
+        return rankings
+
 
 @dataclass(frozen=True)
 class MaxPrepsScoreFetch:
@@ -515,6 +541,8 @@ class MaxPrepsScoreProvider:
                         source_url=event_url,
                         observed_from_team_id=source_team_id,
                         retrieved_at=retrieved_at,
+                        home_url=cls._team_url(home),
+                        away_url=cls._team_url(away),
                     )
                 )
         return observations

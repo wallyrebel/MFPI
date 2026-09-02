@@ -46,6 +46,17 @@ def test_classification_prior_keeps_zero_external_data_calculation_functional(cu
     assert all(1 <= row.mfpi <= 100 for row in result.rankings)
 
 
+def test_published_external_rating_seeds_opponent_adjusted_performance(cutoff) -> None:
+    teams = [make_team("Tupelo", "6A"), make_team("Other MS", "6A"), make_team("Elite Alabama", None)]
+    games = [
+        make_game("cross-state", "tupelo", "elite-alabama", 21, 14),
+        make_game("in-state", "other-ms", "elite-alabama", 7, 14),
+    ]
+    neutral = calculate_rankings(teams, games, cutoff, Settings())
+    rated = calculate_rankings(teams, games, cutoff, Settings(), external_ratings={"elite-alabama": 92.0})
+    assert rated.srs["elite-alabama"] > neutral.srs["elite-alabama"]
+
+
 def test_weekly_movement_and_class_rank_use_same_score(cutoff) -> None:
     teams = [make_team("Alpha", "4A"), make_team("Beta", "4A"), make_team("Gamma", "5A")]
     games = [make_game("1", "alpha", "beta", 28, 14), make_game("2", "gamma", "alpha", 21, 20)]

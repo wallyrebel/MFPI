@@ -113,6 +113,8 @@ class MaxPrepsScoreObservation:
     source_url: str
     observed_from_team_id: str
     retrieved_at: datetime
+    home_url: str = ""
+    away_url: str = ""
 
     def to_dict(self) -> dict[str, Any]:
         value = asdict(self)

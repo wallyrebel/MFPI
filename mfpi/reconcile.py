@@ -12,6 +12,8 @@ from .models import (
     Team,
     ValidationIssue,
 )
+from urllib.parse import urljoin, urlparse
+from .providers import MAXPREPS_ROOT
 
 
 def reconcile_games(
@@ -333,3 +335,26 @@ def supplement_games_with_maxpreps(
             )
         )
     return output, issues
+
+
+def reconcile_external_maxpreps_ratings(
+    teams: list[Team], observations: list[MaxPrepsScoreObservation], rankings_by_state: dict[str, list[MaxPrepsRanking]]
+) -> dict[str, float]:
+    """Attach published MaxPreps ratings to non-Mississippi opponents."""
+    by_name = {normalize_name(team.display_name): team for team in teams if not team.ranked}
+    ratings: dict[str, float] = {}
+    for observation in observations:
+        for name, team_url in ((observation.home_name, observation.home_url), (observation.away_name, observation.away_url)):
+            absolute = urljoin(MAXPREPS_ROOT, team_url)
+            parts = [part for part in urlparse(absolute).path.split("/") if part]
+            if len(parts) < 2 or parts[0].lower() == "ms":
+                continue
+            state = parts[0].lower()
+            team = by_name.get(normalize_name(name))
+            if team is None or not team_url:
+                continue
+            target = urlparse(absolute).path.rstrip("/").lower()
+            matches = [row for row in rankings_by_state.get(state, []) if urlparse(urljoin(MAXPREPS_ROOT, row.team_url)).path.rstrip("/").lower() == target]
+            if matches:
+                ratings[team.team_id] = matches[0].rating
+    return ratings

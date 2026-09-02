@@ -92,7 +92,7 @@ ADMIN_GUIDE.md               validation, corrections, and weekly operation
 
 ## Formula and auditability
 
-Every component stores its raw value, normalized score, effective weight, and contribution. The unrounded contributions sum to MFPI; display values are rounded only at the edge. Formula version `MFPI-3.0` is stored in every snapshot and database run. Media Rank and Strength of Schedule contribute 10% each; MFPI's score-based model contributes the remaining 80%. See [METHODOLOGY.md](METHODOLOGY.md) for the full calculation.
+Every component stores its raw value, normalized score, effective weight, and contribution. The unrounded contributions sum to MFPI; display values are rounded only at the edge. Formula version `MFPI-3.1` is stored in every snapshot and database run. Media Rank and Strength of Schedule contribute 10% each; MFPI's score-based model contributes the remaining 80%. Out-of-state opponents receive a published-rating SRS prior when available. See [METHODOLOGY.md](METHODOLOGY.md) for the full calculation.
 
 ## Tests
 

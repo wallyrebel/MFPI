@@ -115,6 +115,7 @@ def test_maxpreps_schedule_parser_reads_result_forfeit_and_explicit_cancellation
         ("three", "CANCELLED"),
     ]
     assert (games[0].home_score, games[0].away_score) == (14, 21)
+    assert games[0].away_url.endswith("/ms/b/beta/football/")
     assert (games[1].home_score, games[1].away_score, games[1].forfeit) == (2, 0, True)
 
 

@@ -1,4 +1,4 @@
-# MFPI methodology — version 3.0
+# MFPI methodology — version 3.1
 
 MFPI asks: based on whom a team played and how it performed, how strong is that team right now? Eighty percent of the answer comes from MHSAA classifications, schedules, and scores. Twenty percent comes from statewide Media Rank and Strength of Schedule inputs.
 
@@ -50,6 +50,7 @@ A road team receives +2 performance points and a home team −2; the recorded sc
 - **Recent form:** opponent-adjusted game performances from the last three games, weighted 1.00, 0.70, and 0.50 newest-first.
 - **Media Rank:** the weekly statewide ordering after filtering to active MHSAA 1A–7A teams. The rating is stored for audit, but the rank percentile is the formula input.
 - **Media Strength of Schedule:** the weekly published schedule-strength value normalized statewide. A `0.0` opening value is neutral instead of being treated as the state's weakest schedule.
+- **Out-of-state opponents:** when a Mississippi schedule includes a non-Mississippi team, MFPI checks that opponent's MaxPreps team URL and state ranking when available. Its published rating becomes a capped, fading SRS prior (rather than a Mississippi ranking or class assignment), so a game against a highly rated Alabama, Tennessee, Arkansas, or Louisiana team receives appropriate opponent credit even before that opponent has a connected local schedule.
 
 ## Ranking and ties
 

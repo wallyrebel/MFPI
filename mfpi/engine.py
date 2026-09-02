@@ -103,8 +103,10 @@ def calculate_rankings(
     settings: Settings,
     previous: dict[str, dict] | None = None,
     maxpreps: dict[str, MaxPrepsSignal] | None = None,
+    external_ratings: dict[str, float] | None = None,
 ) -> EngineResult:
     maxpreps = maxpreps or {}
+    external_ratings = external_ratings or {}
     ranked_teams = [team for team in teams if team.ranked]
     ranked_ids = {team.team_id for team in ranked_teams}
     completed_games = [game for game in games if game.completed and game.verified and game.date <= cutoff]
@@ -120,12 +122,20 @@ def calculate_rankings(
     prior_strengths = {
         team.team_id: _prior_strength(len(by_team.get(team.team_id, [])), team.ranked) for team in teams
     }
+    external_priors = {
+        team_id: max(-20.0, min(20.0, (rating - 50.0) * 0.4))
+        for team_id, rating in external_ratings.items()
+        if team_id in teams_by_id
+    }
+    for team_id in external_priors:
+        prior_strengths[team_id] = 2.0
     srs, iterations, converged = solve_srs(
         [team.team_id for team in teams],
         completed_games,
         priors,
         prior_strengths,
         ranked_ids,
+        external_priors,
         margin_scale=settings.margin_scale,
         home_field=settings.home_field_points,
         tolerance=settings.convergence_tolerance,
