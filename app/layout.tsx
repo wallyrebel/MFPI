@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     template: '%s | Mississippi Football Power Index',
   },
   description: 'Weekly Mississippi high school football rankings for every MHSAA team, powered by an explainable Mississippi Football Power Index using scores, margin of victory, and strength of schedule.',
+  category: 'Sports',
+  authors: [{ name: 'Mississippi Football Power Index' }],
+  creator: 'Mississippi Football Power Index',
+  publisher: 'Mississippi Football Power Index',
   keywords: [
     'Mississippi Football Power Index',
     'Mississippi football rankings',

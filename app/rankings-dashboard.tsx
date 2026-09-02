@@ -127,8 +127,8 @@ export default function RankingsDashboard({ snapshot }: { snapshot: Snapshot }) 
         <section className="hero">
           <div>
             <p className="eyebrow">{snapshot.metadata.season} · Week {snapshot.metadata.week}</p>
-            <h1>Every team.<br />One explainable number.</h1>
-            <p className="hero-copy">Computer rankings built from scores, opponent-adjusted margin, schedule strength, and recent form, with Media Rank and Strength of Schedule contributing 20%.</p>
+            <h1>Mississippi Football<br />Rankings</h1>
+            <p className="hero-copy">The Mississippi Football Power Index is an explainable weekly ranking of every MHSAA team, built from scores, opponent-adjusted margin, schedule strength, and recent form, with Media Rank and Strength of Schedule contributing 20%.</p>
           </div>
           <aside className="run-card">
             <span className="run-card-label">Latest {isProvisional ? 'provisional' : 'validated'} run</span>
