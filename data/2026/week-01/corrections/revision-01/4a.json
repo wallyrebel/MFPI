@@ -1,0 +1,3166 @@
+{
+  "metadata": {
+    "season": 2026,
+    "week": 1,
+    "generated_at": "2026-09-02T13:32:47.160257+00:00",
+    "cutoff_at": "2026-09-02T20:30:00-05:00",
+    "formula_version": "MFPI-3.0",
+    "status": "CORRECTED",
+    "run_id": "2026-week-01-20260902T133247160257Z",
+    "data_sources": [
+      {
+        "name": "MHSAA official score center",
+        "url": "https://scores.misshsaa.com/",
+        "retrieved_at": "2026-09-02T13:32:49.525429+00:00"
+      },
+      {
+        "name": "MHSAA 2025-27 football classifications",
+        "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+      },
+      {
+        "name": "MaxPreps Mississippi football rankings",
+        "url": "https://www.maxpreps.com/ms/football/rankings/1/",
+        "retrieved_at": "2026-09-02T13:32:47.160257+00:00",
+        "source_updated_at": "8/30/2026",
+        "cached_fallback": false
+      },
+      {
+        "name": "MaxPreps football scores (secondary only)",
+        "url": "https://www.maxpreps.com/ms/football/scores/",
+        "retrieved_at": "2026-09-02T13:32:56.214306+00:00",
+        "team_schedule_pages_checked": 25,
+        "secondary_results_used": 12,
+        "secondary_statuses_used": 0,
+        "cached_team_ids": [],
+        "failed_team_ids": []
+      }
+    ],
+    "validation_status": "VALIDATED",
+    "coverage_percentage": 99.17,
+    "expected_games": 120,
+    "verified_games": 119,
+    "missing_games": 1
+  },
+  "rankings": [
+    {
+      "team_id": "poplarville",
+      "slug": "poplarville",
+      "team": "Poplarville Jr Sr High School",
+      "classification": "4A",
+      "region": "7",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 11,
+      "class_rank": 1,
+      "mfpi": 78.5,
+      "mfpi_unrounded": 78.54626617,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 40.0,
+      "pa_per_game": 7.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 3.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 33,
+      "maxpreps_rating": 61.43,
+      "maxpreps_strength": 26.1,
+      "components": {
+        "performance": {
+          "raw": 9.992387,
+          "normalized": 92.857143,
+          "weight": 0.35,
+          "contribution": 32.5
+        },
+        "sos": {
+          "raw": -1.03276,
+          "normalized": 46.330275,
+          "weight": 0.2,
+          "contribution": 9.266055
+        },
+        "maxpreps_rank": {
+          "raw": -33.0,
+          "normalized": 87.946429,
+          "weight": 0.1,
+          "contribution": 8.794643
+        },
+        "maxpreps_sos": {
+          "raw": 26.1,
+          "normalized": 71.461187,
+          "weight": 0.1,
+          "contribution": 7.146119
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 40.0,
+          "normalized": 81.880734,
+          "weight": 0.08,
+          "contribution": 6.550459
+        },
+        "defense": {
+          "raw": 42.0,
+          "normalized": 82.798165,
+          "weight": 0.08,
+          "contribution": 6.623853
+        },
+        "recent": {
+          "raw": 28.518162,
+          "normalized": 98.165138,
+          "weight": 0.04,
+          "contribution": 3.926606
+        }
+      },
+      "explanation": "Poplarville Jr Sr High School enters at No. 11 with an MFPI of 78.5; opponent-adjusted performance contributes 32.50 points and MaxPreps contributes 15.94 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "mendenhall",
+      "slug": "mendenhall",
+      "team": "Mendenhall High School",
+      "classification": "4A",
+      "region": "6",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 23,
+      "class_rank": 2,
+      "mfpi": 72.2,
+      "mfpi_unrounded": 72.22745883,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 46.0,
+      "pa_per_game": 27.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 2.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 49,
+      "maxpreps_rating": 55.21,
+      "maxpreps_strength": 26.1,
+      "components": {
+        "performance": {
+          "raw": 6.930178,
+          "normalized": 83.928571,
+          "weight": 0.35,
+          "contribution": 29.375
+        },
+        "sos": {
+          "raw": -0.47055,
+          "normalized": 48.623853,
+          "weight": 0.2,
+          "contribution": 9.724771
+        },
+        "maxpreps_rank": {
+          "raw": -49.0,
+          "normalized": 81.696429,
+          "weight": 0.1,
+          "contribution": 8.169643
+        },
+        "maxpreps_sos": {
+          "raw": 26.1,
+          "normalized": 71.461187,
+          "weight": 0.1,
+          "contribution": 7.146119
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 46.0,
+          "normalized": 89.678899,
+          "weight": 0.08,
+          "contribution": 7.174312
+        },
+        "defense": {
+          "raw": 22.0,
+          "normalized": 42.201835,
+          "weight": 0.08,
+          "contribution": 3.376147
+        },
+        "recent": {
+          "raw": 19.331326,
+          "normalized": 88.073394,
+          "weight": 0.04,
+          "contribution": 3.522936
+        }
+      },
+      "explanation": "Mendenhall High School enters at No. 23 with an MFPI of 72.2; opponent-adjusted performance contributes 29.38 points and MaxPreps contributes 15.32 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "louisville",
+      "slug": "louisville",
+      "team": "Louisville High School",
+      "classification": "4A",
+      "region": "4",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 24,
+      "class_rank": 3,
+      "mfpi": 71.9,
+      "mfpi_unrounded": 71.89979866,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 21.0,
+      "pa_per_game": 6.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 1.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 9,
+      "maxpreps_rating": 77.41,
+      "maxpreps_strength": 38.4,
+      "components": {
+        "performance": {
+          "raw": 5.45303,
+          "normalized": 76.339286,
+          "weight": 0.35,
+          "contribution": 26.71875
+        },
+        "sos": {
+          "raw": -1.493403,
+          "normalized": 43.577982,
+          "weight": 0.2,
+          "contribution": 8.715596
+        },
+        "maxpreps_rank": {
+          "raw": -9.0,
+          "normalized": 96.875,
+          "weight": 0.1,
+          "contribution": 9.6875
+        },
+        "maxpreps_sos": {
+          "raw": 38.4,
+          "normalized": 94.063927,
+          "weight": 0.1,
+          "contribution": 9.406393
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 21.0,
+          "normalized": 44.495413,
+          "weight": 0.08,
+          "contribution": 3.559633
+        },
+        "defense": {
+          "raw": 43.0,
+          "normalized": 86.009174,
+          "weight": 0.08,
+          "contribution": 6.880734
+        },
+        "recent": {
+          "raw": 14.899783,
+          "normalized": 79.816514,
+          "weight": 0.04,
+          "contribution": 3.192661
+        }
+      },
+      "explanation": "Louisville High School enters at No. 24 with an MFPI of 71.9; opponent-adjusted performance contributes 26.72 points and MaxPreps contributes 19.09 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "kosciusko",
+      "slug": "kosciusko",
+      "team": "Kosciusko Senior High School",
+      "classification": "4A",
+      "region": "4",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 27,
+      "class_rank": 4,
+      "mfpi": 70.4,
+      "mfpi_unrounded": 70.35231651,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 55.0,
+      "pa_per_game": 35.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 2.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 29,
+      "maxpreps_rating": 62.29,
+      "maxpreps_strength": 22.8,
+      "components": {
+        "performance": {
+          "raw": 6.133191,
+          "normalized": 80.803571,
+          "weight": 0.35,
+          "contribution": 28.28125
+        },
+        "sos": {
+          "raw": 0.326436,
+          "normalized": 52.293578,
+          "weight": 0.2,
+          "contribution": 10.458716
+        },
+        "maxpreps_rank": {
+          "raw": -29.0,
+          "normalized": 89.285714,
+          "weight": 0.1,
+          "contribution": 8.928571
+        },
+        "maxpreps_sos": {
+          "raw": 22.8,
+          "normalized": 59.360731,
+          "weight": 0.1,
+          "contribution": 5.936073
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 49.0,
+          "normalized": 96.330275,
+          "weight": 0.08,
+          "contribution": 7.706422
+        },
+        "defense": {
+          "raw": 14.0,
+          "normalized": 25.458716,
+          "weight": 0.08,
+          "contribution": 2.036697
+        },
+        "recent": {
+          "raw": 16.940312,
+          "normalized": 81.651376,
+          "weight": 0.04,
+          "contribution": 3.266055
+        }
+      },
+      "explanation": "Kosciusko Senior High School enters at No. 27 with an MFPI of 70.4; opponent-adjusted performance contributes 28.28 points and MaxPreps contributes 14.86 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "new-albany",
+      "slug": "new-albany",
+      "team": "New Albany High School",
+      "classification": "4A",
+      "region": "1",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 29,
+      "class_rank": 5,
+      "mfpi": 69.8,
+      "mfpi_unrounded": 69.77951972,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 34.0,
+      "pa_per_game": 7.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 2.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 55,
+      "maxpreps_rating": 52.71,
+      "maxpreps_strength": 16.6,
+      "components": {
+        "performance": {
+          "raw": 8.431522,
+          "normalized": 87.946429,
+          "weight": 0.35,
+          "contribution": 30.78125
+        },
+        "sos": {
+          "raw": -1.971895,
+          "normalized": 37.614679,
+          "weight": 0.2,
+          "contribution": 7.522936
+        },
+        "maxpreps_rank": {
+          "raw": -55.0,
+          "normalized": 79.464286,
+          "weight": 0.1,
+          "contribution": 7.946429
+        },
+        "maxpreps_sos": {
+          "raw": 16.6,
+          "normalized": 36.986301,
+          "weight": 0.1,
+          "contribution": 3.69863
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 34.0,
+          "normalized": 71.330275,
+          "weight": 0.08,
+          "contribution": 5.706422
+        },
+        "defense": {
+          "raw": 42.0,
+          "normalized": 82.798165,
+          "weight": 0.08,
+          "contribution": 6.623853
+        },
+        "recent": {
+          "raw": 23.835461,
+          "normalized": 94.036697,
+          "weight": 0.04,
+          "contribution": 3.761468
+        }
+      },
+      "explanation": "New Albany High School enters at No. 29 with an MFPI of 69.8; opponent-adjusted performance contributes 30.78 points and MaxPreps contributes 11.65 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "pass-christian",
+      "slug": "pass-christian",
+      "team": "Pass Christian High School",
+      "classification": "4A",
+      "region": "8",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 31,
+      "class_rank": 6,
+      "mfpi": 69.5,
+      "mfpi_unrounded": 69.47575959,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 48.0,
+      "pa_per_game": 3.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 2.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 74,
+      "maxpreps_rating": 50.13,
+      "maxpreps_strength": 11.6,
+      "components": {
+        "performance": {
+          "raw": 10.774631,
+          "normalized": 94.642857,
+          "weight": 0.35,
+          "contribution": 33.125
+        },
+        "sos": {
+          "raw": -4.315004,
+          "normalized": 29.357798,
+          "weight": 0.2,
+          "contribution": 5.87156
+        },
+        "maxpreps_rank": {
+          "raw": -74.0,
+          "normalized": 72.321429,
+          "weight": 0.1,
+          "contribution": 7.232143
+        },
+        "maxpreps_sos": {
+          "raw": 11.6,
+          "normalized": 11.415525,
+          "weight": 0.1,
+          "contribution": 1.141553
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 48.0,
+          "normalized": 91.513761,
+          "weight": 0.08,
+          "contribution": 7.321101
+        },
+        "defense": {
+          "raw": 46.0,
+          "normalized": 88.53211,
+          "weight": 0.08,
+          "contribution": 7.082569
+        },
+        "recent": {
+          "raw": 30.864947,
+          "normalized": 99.082569,
+          "weight": 0.04,
+          "contribution": 3.963303
+        }
+      },
+      "explanation": "Pass Christian High School enters at No. 31 with an MFPI of 69.5; opponent-adjusted performance contributes 33.12 points and MaxPreps contributes 8.37 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "shannon",
+      "slug": "shannon",
+      "team": "Shannon High School",
+      "classification": "4A",
+      "region": "2",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 38,
+      "class_rank": 7,
+      "mfpi": 67.6,
+      "mfpi_unrounded": 67.62219194,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 31.0,
+      "pa_per_game": 13.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 2.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 60,
+      "maxpreps_rating": 52.08,
+      "maxpreps_strength": 16.0,
+      "components": {
+        "performance": {
+          "raw": 5.72306,
+          "normalized": 78.125,
+          "weight": 0.35,
+          "contribution": 27.34375
+        },
+        "sos": {
+          "raw": 0.736568,
+          "normalized": 54.12844,
+          "weight": 0.2,
+          "contribution": 10.825688
+        },
+        "maxpreps_rank": {
+          "raw": -60.0,
+          "normalized": 78.125,
+          "weight": 0.1,
+          "contribution": 7.8125
+        },
+        "maxpreps_sos": {
+          "raw": 16.0,
+          "normalized": 34.246575,
+          "weight": 0.1,
+          "contribution": 3.424658
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 31.0,
+          "normalized": 66.284404,
+          "weight": 0.08,
+          "contribution": 5.302752
+        },
+        "defense": {
+          "raw": 36.0,
+          "normalized": 74.311927,
+          "weight": 0.08,
+          "contribution": 5.944954
+        },
+        "recent": {
+          "raw": 15.709891,
+          "normalized": 80.733945,
+          "weight": 0.04,
+          "contribution": 3.229358
+        }
+      },
+      "explanation": "Shannon High School enters at No. 38 with an MFPI of 67.6; opponent-adjusted performance contributes 27.34 points and MaxPreps contributes 11.24 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "corinth",
+      "slug": "corinth",
+      "team": "Corinth High School",
+      "classification": "4A",
+      "region": "1",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 41,
+      "class_rank": 8,
+      "mfpi": 67.1,
+      "mfpi_unrounded": 67.09582159,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 28.0,
+      "pa_per_game": 21.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 1.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 40,
+      "maxpreps_rating": 58.7,
+      "maxpreps_strength": 28.5,
+      "components": {
+        "performance": {
+          "raw": 3.58874,
+          "normalized": 69.642857,
+          "weight": 0.35,
+          "contribution": 24.375
+        },
+        "sos": {
+          "raw": 0.370888,
+          "normalized": 52.752294,
+          "weight": 0.2,
+          "contribution": 10.550459
+        },
+        "maxpreps_rank": {
+          "raw": -40.0,
+          "normalized": 84.821429,
+          "weight": 0.1,
+          "contribution": 8.482143
+        },
+        "maxpreps_sos": {
+          "raw": 28.5,
+          "normalized": 79.680365,
+          "weight": 0.1,
+          "contribution": 7.968037
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 28.0,
+          "normalized": 61.238532,
+          "weight": 0.08,
+          "contribution": 4.899083
+        },
+        "defense": {
+          "raw": 28.0,
+          "normalized": 53.669725,
+          "weight": 0.08,
+          "contribution": 4.293578
+        },
+        "recent": {
+          "raw": 9.306785,
+          "normalized": 69.724771,
+          "weight": 0.04,
+          "contribution": 2.788991
+        }
+      },
+      "explanation": "Corinth High School enters at No. 41 with an MFPI of 67.1; opponent-adjusted performance contributes 24.37 points and MaxPreps contributes 16.45 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "itawamba-agricultural",
+      "slug": "itawamba-agricultural",
+      "team": "Itawamba Agricultural High School",
+      "classification": "4A",
+      "region": "2",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 45,
+      "class_rank": 9,
+      "mfpi": 66.4,
+      "mfpi_unrounded": 66.41268339,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 42.0,
+      "pa_per_game": 10.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 1.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 72,
+      "maxpreps_rating": 50.41,
+      "maxpreps_strength": 13.6,
+      "components": {
+        "performance": {
+          "raw": 7.597772,
+          "normalized": 86.160714,
+          "weight": 0.35,
+          "contribution": 30.15625
+        },
+        "sos": {
+          "raw": -3.638144,
+          "normalized": 31.651376,
+          "weight": 0.2,
+          "contribution": 6.330275
+        },
+        "maxpreps_rank": {
+          "raw": -72.0,
+          "normalized": 73.214286,
+          "weight": 0.1,
+          "contribution": 7.321429
+        },
+        "maxpreps_sos": {
+          "raw": 13.6,
+          "normalized": 21.689498,
+          "weight": 0.1,
+          "contribution": 2.16895
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 42.0,
+          "normalized": 85.321101,
+          "weight": 0.08,
+          "contribution": 6.825688
+        },
+        "defense": {
+          "raw": 39.0,
+          "normalized": 77.752294,
+          "weight": 0.08,
+          "contribution": 6.220183
+        },
+        "recent": {
+          "raw": 21.334152,
+          "normalized": 91.284404,
+          "weight": 0.04,
+          "contribution": 3.651376
+        }
+      },
+      "explanation": "Itawamba Agricultural High School enters at No. 45 with an MFPI of 66.4; opponent-adjusted performance contributes 30.16 points and MaxPreps contributes 9.49 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "houston",
+      "slug": "houston",
+      "team": "Houston High School",
+      "classification": "4A",
+      "region": "2",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 47,
+      "class_rank": 10,
+      "mfpi": 65.9,
+      "mfpi_unrounded": 65.86443335,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 46.0,
+      "pa_per_game": 12.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 1.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 89,
+      "maxpreps_rating": 48.16,
+      "maxpreps_strength": 12.5,
+      "components": {
+        "performance": {
+          "raw": 8.882614,
+          "normalized": 90.625,
+          "weight": 0.35,
+          "contribution": 31.71875
+        },
+        "sos": {
+          "raw": -4.922987,
+          "normalized": 25.229358,
+          "weight": 0.2,
+          "contribution": 5.045872
+        },
+        "maxpreps_rank": {
+          "raw": -89.0,
+          "normalized": 66.071429,
+          "weight": 0.1,
+          "contribution": 6.607143
+        },
+        "maxpreps_sos": {
+          "raw": 12.5,
+          "normalized": 15.981735,
+          "weight": 0.1,
+          "contribution": 1.598174
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 46.0,
+          "normalized": 89.678899,
+          "weight": 0.08,
+          "contribution": 7.174312
+        },
+        "defense": {
+          "raw": 37.0,
+          "normalized": 76.605505,
+          "weight": 0.08,
+          "contribution": 6.12844
+        },
+        "recent": {
+          "raw": 25.188768,
+          "normalized": 96.330275,
+          "weight": 0.04,
+          "contribution": 3.853211
+        }
+      },
+      "explanation": "Houston High School enters at No. 47 with an MFPI of 65.9; opponent-adjusted performance contributes 31.72 points and MaxPreps contributes 8.21 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "mccomb",
+      "slug": "mccomb",
+      "team": "McComb High School",
+      "classification": "4A",
+      "region": "7",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 49,
+      "class_rank": 11,
+      "mfpi": 65.4,
+      "mfpi_unrounded": 65.3736359,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 41.0,
+      "pa_per_game": 0.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -1.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 67,
+      "maxpreps_rating": 51.67,
+      "maxpreps_strength": 14.8,
+      "components": {
+        "performance": {
+          "raw": 8.494509,
+          "normalized": 88.392857,
+          "weight": 0.35,
+          "contribution": 30.9375
+        },
+        "sos": {
+          "raw": -9.534881,
+          "normalized": 11.009174,
+          "weight": 0.2,
+          "contribution": 2.201835
+        },
+        "maxpreps_rank": {
+          "raw": -67.0,
+          "normalized": 75.0,
+          "weight": 0.1,
+          "contribution": 7.5
+        },
+        "maxpreps_sos": {
+          "raw": 14.8,
+          "normalized": 29.223744,
+          "weight": 0.1,
+          "contribution": 2.922374
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 41.0,
+          "normalized": 83.715596,
+          "weight": 0.08,
+          "contribution": 6.697248
+        },
+        "defense": {
+          "raw": 49.0,
+          "normalized": 94.724771,
+          "weight": 0.08,
+          "contribution": 7.577982
+        },
+        "recent": {
+          "raw": 24.024425,
+          "normalized": 94.954128,
+          "weight": 0.04,
+          "contribution": 3.798165
+        }
+      },
+      "explanation": "McComb High School enters at No. 49 with an MFPI of 65.4; opponent-adjusted performance contributes 30.94 points and MaxPreps contributes 10.42 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "morton",
+      "slug": "morton",
+      "team": "Morton High School",
+      "classification": "4A",
+      "region": "6",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 50,
+      "class_rank": 12,
+      "mfpi": 65.0,
+      "mfpi_unrounded": 65.00711058,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 42.0,
+      "pa_per_game": 13.0,
+      "up_games": 0,
+      "same_class_games": 1,
+      "down_games": 0,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "Mostly same class",
+      "maxpreps_state_rank": 68,
+      "maxpreps_rating": 51.48,
+      "maxpreps_strength": 17.9,
+      "components": {
+        "performance": {
+          "raw": 6.511738,
+          "normalized": 81.696429,
+          "weight": 0.35,
+          "contribution": 28.59375
+        },
+        "sos": {
+          "raw": -5.05211,
+          "normalized": 24.770642,
+          "weight": 0.2,
+          "contribution": 4.954128
+        },
+        "maxpreps_rank": {
+          "raw": -68.0,
+          "normalized": 74.553571,
+          "weight": 0.1,
+          "contribution": 7.455357
+        },
+        "maxpreps_sos": {
+          "raw": 17.9,
+          "normalized": 41.552511,
+          "weight": 0.1,
+          "contribution": 4.155251
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 42.0,
+          "normalized": 85.321101,
+          "weight": 0.08,
+          "contribution": 6.825688
+        },
+        "defense": {
+          "raw": 36.0,
+          "normalized": 74.311927,
+          "weight": 0.08,
+          "contribution": 5.944954
+        },
+        "recent": {
+          "raw": 18.075978,
+          "normalized": 83.486239,
+          "weight": 0.04,
+          "contribution": 3.33945
+        }
+      },
+      "explanation": "Morton High School enters at No. 50 with an MFPI of 65.0; opponent-adjusted performance contributes 28.59 points and MaxPreps contributes 11.61 points. The schedule has 0 up, 1 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "rosa-fort",
+      "slug": "rosa-fort",
+      "team": "Rosa Fort High School",
+      "classification": "4A",
+      "region": "3",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 63,
+      "class_rank": 13,
+      "mfpi": 60.8,
+      "mfpi_unrounded": 60.77472161,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 36.0,
+      "pa_per_game": 0.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -1.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 92,
+      "maxpreps_rating": 47.95,
+      "maxpreps_strength": 10.8,
+      "components": {
+        "performance": {
+          "raw": 6.899927,
+          "normalized": 83.482143,
+          "weight": 0.35,
+          "contribution": 29.21875
+        },
+        "sos": {
+          "raw": -7.9403,
+          "normalized": 15.59633,
+          "weight": 0.2,
+          "contribution": 3.119266
+        },
+        "maxpreps_rank": {
+          "raw": -92.0,
+          "normalized": 64.732143,
+          "weight": 0.1,
+          "contribution": 6.473214
+        },
+        "maxpreps_sos": {
+          "raw": 10.8,
+          "normalized": 9.589041,
+          "weight": 0.1,
+          "contribution": 0.958904
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 36.0,
+          "normalized": 77.522936,
+          "weight": 0.08,
+          "contribution": 6.201835
+        },
+        "defense": {
+          "raw": 49.0,
+          "normalized": 94.724771,
+          "weight": 0.08,
+          "contribution": 7.577982
+        },
+        "recent": {
+          "raw": 19.240572,
+          "normalized": 87.155963,
+          "weight": 0.04,
+          "contribution": 3.486239
+        }
+      },
+      "explanation": "Rosa Fort High School enters at No. 63 with an MFPI of 60.8; opponent-adjusted performance contributes 29.22 points and MaxPreps contributes 7.43 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "richland",
+      "slug": "richland",
+      "team": "Richland High School",
+      "classification": "4A",
+      "region": "6",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 68,
+      "class_rank": 14,
+      "mfpi": 59.2,
+      "mfpi_unrounded": 59.21161399,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 31.0,
+      "pa_per_game": 21.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 1.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 125,
+      "maxpreps_rating": 44.51,
+      "maxpreps_strength": 16.4,
+      "components": {
+        "performance": {
+          "raw": 3.308576,
+          "normalized": 67.857143,
+          "weight": 0.35,
+          "contribution": 23.75
+        },
+        "sos": {
+          "raw": 0.651051,
+          "normalized": 53.669725,
+          "weight": 0.2,
+          "contribution": 10.733945
+        },
+        "maxpreps_rank": {
+          "raw": -125.0,
+          "normalized": 53.125,
+          "weight": 0.1,
+          "contribution": 5.3125
+        },
+        "maxpreps_sos": {
+          "raw": 16.4,
+          "normalized": 34.931507,
+          "weight": 0.1,
+          "contribution": 3.493151
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 31.0,
+          "normalized": 66.284404,
+          "weight": 0.08,
+          "contribution": 5.302752
+        },
+        "defense": {
+          "raw": 28.0,
+          "normalized": 53.669725,
+          "weight": 0.08,
+          "contribution": 4.293578
+        },
+        "recent": {
+          "raw": 8.466276,
+          "normalized": 64.678899,
+          "weight": 0.04,
+          "contribution": 2.587156
+        }
+      },
+      "explanation": "Richland High School enters at No. 68 with an MFPI of 59.2; opponent-adjusted performance contributes 23.75 points and MaxPreps contributes 8.81 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "choctaw-central",
+      "slug": "choctaw-central",
+      "team": "Choctaw Central",
+      "classification": "4A",
+      "region": "5",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 75,
+      "class_rank": 15,
+      "mfpi": 57.9,
+      "mfpi_unrounded": 57.86568767,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 48.0,
+      "pa_per_game": 8.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -2.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 106,
+      "maxpreps_rating": 46.47,
+      "maxpreps_strength": 9.2,
+      "components": {
+        "performance": {
+          "raw": 6.758732,
+          "normalized": 83.035714,
+          "weight": 0.35,
+          "contribution": 29.0625
+        },
+        "sos": {
+          "raw": -10.299104,
+          "normalized": 7.33945,
+          "weight": 0.2,
+          "contribution": 1.46789
+        },
+        "maxpreps_rank": {
+          "raw": -106.0,
+          "normalized": 58.928571,
+          "weight": 0.1,
+          "contribution": 5.892857
+        },
+        "maxpreps_sos": {
+          "raw": 9.2,
+          "normalized": 5.479452,
+          "weight": 0.1,
+          "contribution": 0.547945
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 48.0,
+          "normalized": 91.513761,
+          "weight": 0.08,
+          "contribution": 7.321101
+        },
+        "defense": {
+          "raw": 41.0,
+          "normalized": 80.045872,
+          "weight": 0.08,
+          "contribution": 6.40367
+        },
+        "recent": {
+          "raw": 18.816976,
+          "normalized": 85.779817,
+          "weight": 0.04,
+          "contribution": 3.431193
+        }
+      },
+      "explanation": "Choctaw Central enters at No. 75 with an MFPI of 57.9; opponent-adjusted performance contributes 29.06 points and MaxPreps contributes 6.44 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "greene-county",
+      "slug": "greene-county",
+      "team": "Greene County High School",
+      "classification": "4A",
+      "region": "8",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 76,
+      "class_rank": 16,
+      "mfpi": 57.8,
+      "mfpi_unrounded": 57.79132985,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 21.0,
+      "pa_per_game": 13.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 1.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 129,
+      "maxpreps_rating": 44.29,
+      "maxpreps_strength": 15.9,
+      "components": {
+        "performance": {
+          "raw": 2.830937,
+          "normalized": 63.839286,
+          "weight": 0.35,
+          "contribution": 22.34375
+        },
+        "sos": {
+          "raw": 1.128691,
+          "normalized": 55.963303,
+          "weight": 0.2,
+          "contribution": 11.192661
+        },
+        "maxpreps_rank": {
+          "raw": -129.0,
+          "normalized": 51.785714,
+          "weight": 0.1,
+          "contribution": 5.178571
+        },
+        "maxpreps_sos": {
+          "raw": 15.9,
+          "normalized": 33.561644,
+          "weight": 0.1,
+          "contribution": 3.356164
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 21.0,
+          "normalized": 44.495413,
+          "weight": 0.08,
+          "contribution": 3.559633
+        },
+        "defense": {
+          "raw": 36.0,
+          "normalized": 74.311927,
+          "weight": 0.08,
+          "contribution": 5.944954
+        },
+        "recent": {
+          "raw": 7.033325,
+          "normalized": 61.926606,
+          "weight": 0.04,
+          "contribution": 2.477064
+        }
+      },
+      "explanation": "Greene County High School enters at No. 76 with an MFPI of 57.8; opponent-adjusted performance contributes 22.34 points and MaxPreps contributes 8.53 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "senatobia",
+      "slug": "senatobia",
+      "team": "Senatobia High School",
+      "classification": "4A",
+      "region": "3",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 78,
+      "class_rank": 17,
+      "mfpi": 57.1,
+      "mfpi_unrounded": 57.11119571,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 21.0,
+      "pa_per_game": 8.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "No class data",
+      "maxpreps_state_rank": 64,
+      "maxpreps_rating": 51.84,
+      "maxpreps_strength": 17.8,
+      "components": {
+        "performance": {
+          "raw": 2.898203,
+          "normalized": 64.732143,
+          "weight": 0.35,
+          "contribution": 22.65625
+        },
+        "sos": {
+          "raw": -3.363786,
+          "normalized": 33.027523,
+          "weight": 0.2,
+          "contribution": 6.605505
+        },
+        "maxpreps_rank": {
+          "raw": -64.0,
+          "normalized": 76.339286,
+          "weight": 0.1,
+          "contribution": 7.633929
+        },
+        "maxpreps_sos": {
+          "raw": 17.8,
+          "normalized": 40.182648,
+          "weight": 0.1,
+          "contribution": 4.018265
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 21.0,
+          "normalized": 44.495413,
+          "weight": 0.08,
+          "contribution": 3.559633
+        },
+        "defense": {
+          "raw": 41.0,
+          "normalized": 80.045872,
+          "weight": 0.08,
+          "contribution": 6.40367
+        },
+        "recent": {
+          "raw": 7.236375,
+          "normalized": 62.385321,
+          "weight": 0.04,
+          "contribution": 2.495413
+        }
+      },
+      "explanation": "Senatobia High School enters at No. 78 with an MFPI of 57.1; opponent-adjusted performance contributes 22.66 points and MaxPreps contributes 11.65 points. The schedule has 0 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "south-pike",
+      "slug": "south-pike",
+      "team": "South Pike Senior High School",
+      "classification": "4A",
+      "region": "7",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 84,
+      "class_rank": 18,
+      "mfpi": 56.1,
+      "mfpi_unrounded": 56.06298307,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 38.0,
+      "pa_per_game": 18.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -2.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 98,
+      "maxpreps_rating": 47.53,
+      "maxpreps_strength": 15.1,
+      "components": {
+        "performance": {
+          "raw": 4.633217,
+          "normalized": 73.660714,
+          "weight": 0.35,
+          "contribution": 25.78125
+        },
+        "sos": {
+          "raw": -8.173589,
+          "normalized": 14.678899,
+          "weight": 0.2,
+          "contribution": 2.93578
+        },
+        "maxpreps_rank": {
+          "raw": -98.0,
+          "normalized": 62.5,
+          "weight": 0.1,
+          "contribution": 6.25
+        },
+        "maxpreps_sos": {
+          "raw": 15.1,
+          "normalized": 30.821918,
+          "weight": 0.1,
+          "contribution": 3.082192
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 38.0,
+          "normalized": 79.587156,
+          "weight": 0.08,
+          "contribution": 6.366972
+        },
+        "defense": {
+          "raw": 31.0,
+          "normalized": 61.238532,
+          "weight": 0.08,
+          "contribution": 4.899083
+        },
+        "recent": {
+          "raw": 12.440286,
+          "normalized": 75.229358,
+          "weight": 0.04,
+          "contribution": 3.009174
+        }
+      },
+      "explanation": "South Pike Senior High School enters at No. 84 with an MFPI of 56.1; opponent-adjusted performance contributes 25.78 points and MaxPreps contributes 9.33 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "columbia",
+      "slug": "columbia",
+      "team": "Columbia High School",
+      "classification": "4A",
+      "region": "7",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 85,
+      "class_rank": 19,
+      "mfpi": 55.8,
+      "mfpi_unrounded": 55.75718613,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 28.0,
+      "pa_per_game": 42.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "No class data",
+      "maxpreps_state_rank": 30,
+      "maxpreps_rating": 62.2,
+      "maxpreps_strength": 44.5,
+      "components": {
+        "performance": {
+          "raw": -2.321865,
+          "normalized": 33.482143,
+          "weight": 0.35,
+          "contribution": 11.71875
+        },
+        "sos": {
+          "raw": 7.07635,
+          "normalized": 83.944954,
+          "weight": 0.2,
+          "contribution": 16.788991
+        },
+        "maxpreps_rank": {
+          "raw": -30.0,
+          "normalized": 88.839286,
+          "weight": 0.1,
+          "contribution": 8.883929
+        },
+        "maxpreps_sos": {
+          "raw": 44.5,
+          "normalized": 98.173516,
+          "weight": 0.1,
+          "contribution": 9.817352
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 28.0,
+          "normalized": 61.238532,
+          "weight": 0.08,
+          "contribution": 4.899083
+        },
+        "defense": {
+          "raw": 7.0,
+          "normalized": 14.449541,
+          "weight": 0.08,
+          "contribution": 1.155963
+        },
+        "recent": {
+          "raw": -8.427185,
+          "normalized": 31.651376,
+          "weight": 0.04,
+          "contribution": 1.266055
+        }
+      },
+      "explanation": "Columbia High School enters at No. 85 with an MFPI of 55.8; opponent-adjusted performance contributes 11.72 points and MaxPreps contributes 18.70 points. The schedule has 0 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "forest",
+      "slug": "forest",
+      "team": "Forest High School",
+      "classification": "4A",
+      "region": "6",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 87,
+      "class_rank": 20,
+      "mfpi": 55.6,
+      "mfpi_unrounded": 55.62756008,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 37.0,
+      "pa_per_game": 18.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -2.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 84,
+      "maxpreps_rating": 48.84,
+      "maxpreps_strength": 13.8,
+      "components": {
+        "performance": {
+          "raw": 4.43022,
+          "normalized": 72.767857,
+          "weight": 0.35,
+          "contribution": 25.46875
+        },
+        "sos": {
+          "raw": -7.970592,
+          "normalized": 15.137615,
+          "weight": 0.2,
+          "contribution": 3.027523
+        },
+        "maxpreps_rank": {
+          "raw": -84.0,
+          "normalized": 68.303571,
+          "weight": 0.1,
+          "contribution": 6.830357
+        },
+        "maxpreps_sos": {
+          "raw": 13.8,
+          "normalized": 23.972603,
+          "weight": 0.1,
+          "contribution": 2.39726
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 37.0,
+          "normalized": 78.669725,
+          "weight": 0.08,
+          "contribution": 6.293578
+        },
+        "defense": {
+          "raw": 31.0,
+          "normalized": 61.238532,
+          "weight": 0.08,
+          "contribution": 4.899083
+        },
+        "recent": {
+          "raw": 11.831283,
+          "normalized": 74.311927,
+          "weight": 0.04,
+          "contribution": 2.972477
+        }
+      },
+      "explanation": "Forest High School enters at No. 87 with an MFPI of 55.6; opponent-adjusted performance contributes 25.47 points and MaxPreps contributes 9.23 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "clarksdale",
+      "slug": "clarksdale",
+      "team": "Clarksdale High School",
+      "classification": "4A",
+      "region": "3",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 88,
+      "class_rank": 21,
+      "mfpi": 55.4,
+      "mfpi_unrounded": 55.36516776,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 29.0,
+      "pa_per_game": 35.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "No class data",
+      "maxpreps_state_rank": 66,
+      "maxpreps_rating": 51.73,
+      "maxpreps_strength": 27.7,
+      "components": {
+        "performance": {
+          "raw": -0.013357,
+          "normalized": 50.0,
+          "weight": 0.35,
+          "contribution": 17.5
+        },
+        "sos": {
+          "raw": 2.459335,
+          "normalized": 62.385321,
+          "weight": 0.2,
+          "contribution": 12.477064
+        },
+        "maxpreps_rank": {
+          "raw": -66.0,
+          "normalized": 75.446429,
+          "weight": 0.1,
+          "contribution": 7.544643
+        },
+        "maxpreps_sos": {
+          "raw": 27.7,
+          "normalized": 76.255708,
+          "weight": 0.1,
+          "contribution": 7.625571
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 29.0,
+          "normalized": 63.761468,
+          "weight": 0.08,
+          "contribution": 5.100917
+        },
+        "defense": {
+          "raw": 14.0,
+          "normalized": 25.458716,
+          "weight": 0.08,
+          "contribution": 2.036697
+        },
+        "recent": {
+          "raw": -1.500179,
+          "normalized": 46.330275,
+          "weight": 0.04,
+          "contribution": 1.853211
+        }
+      },
+      "explanation": "Clarksdale High School enters at No. 88 with an MFPI of 55.4; opponent-adjusted performance contributes 17.50 points and MaxPreps contributes 15.17 points. The schedule has 0 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "ripley",
+      "slug": "ripley",
+      "team": "Ripley High School",
+      "classification": "4A",
+      "region": "3",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 92,
+      "class_rank": 22,
+      "mfpi": 54.9,
+      "mfpi_unrounded": 54.89673775,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 34.0,
+      "pa_per_game": 23.0,
+      "up_games": 0,
+      "same_class_games": 1,
+      "down_games": 0,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "Mostly same class",
+      "maxpreps_state_rank": 132,
+      "maxpreps_rating": 43.77,
+      "maxpreps_strength": 13.5,
+      "components": {
+        "performance": {
+          "raw": 2.918577,
+          "normalized": 65.178571,
+          "weight": 0.35,
+          "contribution": 22.8125
+        },
+        "sos": {
+          "raw": -1.45895,
+          "normalized": 44.495413,
+          "weight": 0.2,
+          "contribution": 8.899083
+        },
+        "maxpreps_rank": {
+          "raw": -132.0,
+          "normalized": 50.892857,
+          "weight": 0.1,
+          "contribution": 5.089286
+        },
+        "maxpreps_sos": {
+          "raw": 13.5,
+          "normalized": 21.004566,
+          "weight": 0.1,
+          "contribution": 2.100457
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 34.0,
+          "normalized": 71.330275,
+          "weight": 0.08,
+          "contribution": 5.706422
+        },
+        "defense": {
+          "raw": 26.0,
+          "normalized": 50.458716,
+          "weight": 0.08,
+          "contribution": 4.036697
+        },
+        "recent": {
+          "raw": 7.296253,
+          "normalized": 62.844037,
+          "weight": 0.04,
+          "contribution": 2.513761
+        }
+      },
+      "explanation": "Ripley High School enters at No. 92 with an MFPI of 54.9; opponent-adjusted performance contributes 22.81 points and MaxPreps contributes 7.19 points. The schedule has 0 up, 1 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "tishomingo-county",
+      "slug": "tishomingo-county",
+      "team": "Tishomingo County High School",
+      "classification": "4A",
+      "region": "1",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 100,
+      "class_rank": 23,
+      "mfpi": 52.6,
+      "mfpi_unrounded": 52.58295855,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 27.0,
+      "pa_per_game": 10.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -1.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 137,
+      "maxpreps_rating": 42.66,
+      "maxpreps_strength": 9.3,
+      "components": {
+        "performance": {
+          "raw": 3.636933,
+          "normalized": 70.535714,
+          "weight": 0.35,
+          "contribution": 24.6875
+        },
+        "sos": {
+          "raw": -4.677305,
+          "normalized": 25.688073,
+          "weight": 0.2,
+          "contribution": 5.137615
+        },
+        "maxpreps_rank": {
+          "raw": -137.0,
+          "normalized": 48.660714,
+          "weight": 0.1,
+          "contribution": 4.866071
+        },
+        "maxpreps_sos": {
+          "raw": 9.3,
+          "normalized": 5.936073,
+          "weight": 0.1,
+          "contribution": 0.593607
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 27.0,
+          "normalized": 56.651376,
+          "weight": 0.08,
+          "contribution": 4.53211
+        },
+        "defense": {
+          "raw": 39.0,
+          "normalized": 77.752294,
+          "weight": 0.08,
+          "contribution": 6.220183
+        },
+        "recent": {
+          "raw": 9.451368,
+          "normalized": 70.183486,
+          "weight": 0.04,
+          "contribution": 2.807339
+        }
+      },
+      "explanation": "Tishomingo County High School enters at No. 100 with an MFPI of 52.6; opponent-adjusted performance contributes 24.69 points and MaxPreps contributes 5.46 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "forrest-county-agricultural",
+      "slug": "forrest-county-agricultural",
+      "team": "Forrest County Agricultural Hi Sch",
+      "classification": "4A",
+      "region": "8",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 108,
+      "class_rank": 24,
+      "mfpi": 50.8,
+      "mfpi_unrounded": 50.81437653,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 27.0,
+      "pa_per_game": 14.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -1.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 133,
+      "maxpreps_rating": 43.68,
+      "maxpreps_strength": 11.3,
+      "components": {
+        "performance": {
+          "raw": 2.75482,
+          "normalized": 63.392857,
+          "weight": 0.35,
+          "contribution": 22.1875
+        },
+        "sos": {
+          "raw": -3.795192,
+          "normalized": 31.192661,
+          "weight": 0.2,
+          "contribution": 6.238532
+        },
+        "maxpreps_rank": {
+          "raw": -133.0,
+          "normalized": 50.446429,
+          "weight": 0.1,
+          "contribution": 5.044643
+        },
+        "maxpreps_sos": {
+          "raw": 11.3,
+          "normalized": 10.730594,
+          "weight": 0.1,
+          "contribution": 1.073059
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 27.0,
+          "normalized": 56.651376,
+          "weight": 0.08,
+          "contribution": 4.53211
+        },
+        "defense": {
+          "raw": 35.0,
+          "normalized": 69.495413,
+          "weight": 0.08,
+          "contribution": 5.559633
+        },
+        "recent": {
+          "raw": 6.804969,
+          "normalized": 61.009174,
+          "weight": 0.04,
+          "contribution": 2.440367
+        }
+      },
+      "explanation": "Forrest County Agricultural Hi Sch enters at No. 108 with an MFPI of 50.8; opponent-adjusted performance contributes 22.19 points and MaxPreps contributes 6.12 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "yazoo-city",
+      "slug": "yazoo-city",
+      "team": "Yazoo City High School",
+      "classification": "4A",
+      "region": "4",
+      "record": "0-0",
+      "games_played": 0,
+      "state_rank": 112,
+      "class_rank": 25,
+      "mfpi": 50.0,
+      "mfpi_unrounded": 49.97767857,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 0.0,
+      "pa_per_game": 0.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "No class data",
+      "maxpreps_state_rank": 165,
+      "maxpreps_rating": 34.09,
+      "maxpreps_strength": 0.0,
+      "components": {
+        "performance": {
+          "raw": 0.486554,
+          "normalized": 53.125,
+          "weight": 0.35,
+          "contribution": 18.59375
+        },
+        "sos": {
+          "raw": null,
+          "normalized": 50.0,
+          "weight": 0.2,
+          "contribution": 10.0
+        },
+        "maxpreps_rank": {
+          "raw": -165.0,
+          "normalized": 38.839286,
+          "weight": 0.1,
+          "contribution": 3.883929
+        },
+        "maxpreps_sos": {
+          "raw": null,
+          "normalized": 50.0,
+          "weight": 0.1,
+          "contribution": 5.0
+        },
+        "record": {
+          "raw": null,
+          "normalized": 50.0,
+          "weight": 0.05,
+          "contribution": 2.5
+        },
+        "offense": {
+          "raw": null,
+          "normalized": 50.0,
+          "weight": 0.08,
+          "contribution": 4.0
+        },
+        "defense": {
+          "raw": null,
+          "normalized": 50.0,
+          "weight": 0.08,
+          "contribution": 4.0
+        },
+        "recent": {
+          "raw": null,
+          "normalized": 50.0,
+          "weight": 0.04,
+          "contribution": 2.0
+        }
+      },
+      "explanation": "Yazoo City High School enters at No. 112 with an MFPI of 50.0; opponent-adjusted performance contributes 18.59 points and MaxPreps contributes 8.88 points. The schedule has 0 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "byhalia",
+      "slug": "byhalia",
+      "team": "Byhalia High School (9-12)",
+      "classification": "4A",
+      "region": "3",
+      "record": "1-0",
+      "games_played": 1,
+      "state_rank": 114,
+      "class_rank": 26,
+      "mfpi": 49.4,
+      "mfpi_unrounded": 49.35703289,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 28.0,
+      "pa_per_game": 6.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -3.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 151,
+      "maxpreps_rating": 37.36,
+      "maxpreps_strength": 8.3,
+      "components": {
+        "performance": {
+          "raw": 3.401435,
+          "normalized": 68.75,
+          "weight": 0.35,
+          "contribution": 24.0625
+        },
+        "sos": {
+          "raw": -9.441807,
+          "normalized": 11.926606,
+          "weight": 0.2,
+          "contribution": 2.385321
+        },
+        "maxpreps_rank": {
+          "raw": -151.0,
+          "normalized": 44.196429,
+          "weight": 0.1,
+          "contribution": 4.419643
+        },
+        "maxpreps_sos": {
+          "raw": 8.3,
+          "normalized": 2.739726,
+          "weight": 0.1,
+          "contribution": 0.273973
+        },
+        "record": {
+          "raw": 1.0,
+          "normalized": 74.770642,
+          "weight": 0.05,
+          "contribution": 3.738532
+        },
+        "offense": {
+          "raw": 28.0,
+          "normalized": 61.238532,
+          "weight": 0.08,
+          "contribution": 4.899083
+        },
+        "defense": {
+          "raw": 43.0,
+          "normalized": 86.009174,
+          "weight": 0.08,
+          "contribution": 6.880734
+        },
+        "recent": {
+          "raw": 8.744857,
+          "normalized": 67.431193,
+          "weight": 0.04,
+          "contribution": 2.697248
+        }
+      },
+      "explanation": "Byhalia High School (9-12) enters at No. 114 with an MFPI of 49.4; opponent-adjusted performance contributes 24.06 points and MaxPreps contributes 4.69 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "gentry",
+      "slug": "gentry",
+      "team": "Gentry High School",
+      "classification": "4A",
+      "region": "4",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 117,
+      "class_rank": 27,
+      "mfpi": 48.8,
+      "mfpi_unrounded": 48.84772804,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 6.0,
+      "pa_per_game": 16.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 2.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 226,
+      "maxpreps_rating": 26.37,
+      "maxpreps_strength": 19.6,
+      "components": {
+        "performance": {
+          "raw": -0.973963,
+          "normalized": 47.321429,
+          "weight": 0.35,
+          "contribution": 16.5625
+        },
+        "sos": {
+          "raw": 7.433591,
+          "normalized": 85.321101,
+          "weight": 0.2,
+          "contribution": 17.06422
+        },
+        "maxpreps_rank": {
+          "raw": -226.0,
+          "normalized": 14.285714,
+          "weight": 0.1,
+          "contribution": 1.428571
+        },
+        "maxpreps_sos": {
+          "raw": 19.6,
+          "normalized": 47.488584,
+          "weight": 0.1,
+          "contribution": 4.748858
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 6.0,
+          "normalized": 12.844037,
+          "weight": 0.08,
+          "contribution": 1.027523
+        },
+        "defense": {
+          "raw": 33.0,
+          "normalized": 64.678899,
+          "weight": 0.08,
+          "contribution": 5.174312
+        },
+        "recent": {
+          "raw": -4.381633,
+          "normalized": 40.366972,
+          "weight": 0.04,
+          "contribution": 1.614679
+        }
+      },
+      "explanation": "Gentry High School enters at No. 117 with an MFPI of 48.8; opponent-adjusted performance contributes 16.56 points and MaxPreps contributes 6.18 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "greenwood",
+      "slug": "greenwood",
+      "team": "Greenwood High School",
+      "classification": "4A",
+      "region": "4",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 126,
+      "class_rank": 28,
+      "mfpi": 46.1,
+      "mfpi_unrounded": 46.06452147,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 4.0,
+      "pa_per_game": 8.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -1.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 154,
+      "maxpreps_rating": 36.21,
+      "maxpreps_strength": 19.3,
+      "components": {
+        "performance": {
+          "raw": -0.392155,
+          "normalized": 49.553571,
+          "weight": 0.35,
+          "contribution": 17.34375
+        },
+        "sos": {
+          "raw": -0.648218,
+          "normalized": 47.706422,
+          "weight": 0.2,
+          "contribution": 9.541284
+        },
+        "maxpreps_rank": {
+          "raw": -154.0,
+          "normalized": 42.857143,
+          "weight": 0.1,
+          "contribution": 4.285714
+        },
+        "maxpreps_sos": {
+          "raw": 19.3,
+          "normalized": 46.575342,
+          "weight": 0.1,
+          "contribution": 4.657534
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 4.0,
+          "normalized": 10.550459,
+          "weight": 0.08,
+          "contribution": 0.844037
+        },
+        "defense": {
+          "raw": 41.0,
+          "normalized": 80.045872,
+          "weight": 0.08,
+          "contribution": 6.40367
+        },
+        "recent": {
+          "raw": -2.636168,
+          "normalized": 44.036697,
+          "weight": 0.04,
+          "contribution": 1.761468
+        }
+      },
+      "explanation": "Greenwood High School enters at No. 126 with an MFPI of 46.1; opponent-adjusted performance contributes 17.34 points and MaxPreps contributes 8.94 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "mooreville",
+      "slug": "mooreville",
+      "team": "Mooreville High School",
+      "classification": "4A",
+      "region": "2",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 129,
+      "class_rank": 29,
+      "mfpi": 45.1,
+      "mfpi_unrounded": 45.08569442,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 23.0,
+      "pa_per_game": 34.0,
+      "up_games": 0,
+      "same_class_games": 1,
+      "down_games": 0,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "Mostly same class",
+      "maxpreps_state_rank": 202,
+      "maxpreps_rating": 29.1,
+      "maxpreps_strength": 21.2,
+      "components": {
+        "performance": {
+          "raw": -1.45895,
+          "normalized": 44.196429,
+          "weight": 0.35,
+          "contribution": 15.46875
+        },
+        "sos": {
+          "raw": 2.918577,
+          "normalized": 65.137615,
+          "weight": 0.2,
+          "contribution": 13.027523
+        },
+        "maxpreps_rank": {
+          "raw": -202.0,
+          "normalized": 24.553571,
+          "weight": 0.1,
+          "contribution": 2.455357
+        },
+        "maxpreps_sos": {
+          "raw": 21.2,
+          "normalized": 52.739726,
+          "weight": 0.1,
+          "contribution": 5.273973
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 23.0,
+          "normalized": 47.706422,
+          "weight": 0.08,
+          "contribution": 3.816514
+        },
+        "defense": {
+          "raw": 15.0,
+          "normalized": 29.357798,
+          "weight": 0.08,
+          "contribution": 2.348624
+        },
+        "recent": {
+          "raw": -5.836625,
+          "normalized": 36.697248,
+          "weight": 0.04,
+          "contribution": 1.46789
+        }
+      },
+      "explanation": "Mooreville High School enters at No. 129 with an MFPI of 45.1; opponent-adjusted performance contributes 15.47 points and MaxPreps contributes 7.73 points. The schedule has 0 up, 1 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "newton-county",
+      "slug": "newton-county",
+      "team": "Newton County High School",
+      "classification": "4A",
+      "region": "5",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 143,
+      "class_rank": 30,
+      "mfpi": 41.4,
+      "mfpi_unrounded": 41.39208869,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 13.0,
+      "pa_per_game": 42.0,
+      "up_games": 0,
+      "same_class_games": 1,
+      "down_games": 0,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "Mostly same class",
+      "maxpreps_state_rank": 160,
+      "maxpreps_rating": 34.55,
+      "maxpreps_strength": 28.9,
+      "components": {
+        "performance": {
+          "raw": -5.05211,
+          "normalized": 22.767857,
+          "weight": 0.35,
+          "contribution": 7.96875
+        },
+        "sos": {
+          "raw": 6.511738,
+          "normalized": 81.192661,
+          "weight": 0.2,
+          "contribution": 16.238532
+        },
+        "maxpreps_rank": {
+          "raw": -160.0,
+          "normalized": 40.178571,
+          "weight": 0.1,
+          "contribution": 4.017857
+        },
+        "maxpreps_sos": {
+          "raw": 28.9,
+          "normalized": 81.050228,
+          "weight": 0.1,
+          "contribution": 8.105023
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 13.0,
+          "normalized": 24.311927,
+          "weight": 0.08,
+          "contribution": 1.944954
+        },
+        "defense": {
+          "raw": 7.0,
+          "normalized": 14.449541,
+          "weight": 0.08,
+          "contribution": 1.155963
+        },
+        "recent": {
+          "raw": -16.616351,
+          "normalized": 18.348624,
+          "weight": 0.04,
+          "contribution": 0.733945
+        }
+      },
+      "explanation": "Newton County High School enters at No. 143 with an MFPI of 41.4; opponent-adjusted performance contributes 7.97 points and MaxPreps contributes 12.12 points. The schedule has 0 up, 1 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "north-pontotoc",
+      "slug": "north-pontotoc",
+      "team": "North Pontotoc High School",
+      "classification": "4A",
+      "region": "1",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 145,
+      "class_rank": 31,
+      "mfpi": 41.0,
+      "mfpi_unrounded": 40.97824093,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 21.0,
+      "pa_per_game": 33.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -1.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 181,
+      "maxpreps_rating": 32.16,
+      "maxpreps_strength": 22.0,
+      "components": {
+        "performance": {
+          "raw": -2.316082,
+          "normalized": 33.928571,
+          "weight": 0.35,
+          "contribution": 11.875
+        },
+        "sos": {
+          "raw": 1.27571,
+          "normalized": 57.798165,
+          "weight": 0.2,
+          "contribution": 11.559633
+        },
+        "maxpreps_rank": {
+          "raw": -181.0,
+          "normalized": 32.142857,
+          "weight": 0.1,
+          "contribution": 3.214286
+        },
+        "maxpreps_sos": {
+          "raw": 22.0,
+          "normalized": 57.077626,
+          "weight": 0.1,
+          "contribution": 5.707763
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 21.0,
+          "normalized": 44.495413,
+          "weight": 0.08,
+          "contribution": 3.559633
+        },
+        "defense": {
+          "raw": 16.0,
+          "normalized": 31.880734,
+          "weight": 0.08,
+          "contribution": 2.550459
+        },
+        "recent": {
+          "raw": -8.408081,
+          "normalized": 32.110092,
+          "weight": 0.04,
+          "contribution": 1.284404
+        }
+      },
+      "explanation": "North Pontotoc High School enters at No. 145 with an MFPI of 41.0; opponent-adjusted performance contributes 11.88 points and MaxPreps contributes 8.92 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "lawrence-county",
+      "slug": "lawrence-county",
+      "team": "Lawrence County High School",
+      "classification": "4A",
+      "region": "7",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 146,
+      "class_rank": 32,
+      "mfpi": 40.9,
+      "mfpi_unrounded": 40.91423993,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 8.0,
+      "pa_per_game": 35.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 1.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 243,
+      "maxpreps_rating": 20.86,
+      "maxpreps_strength": 33.1,
+      "components": {
+        "performance": {
+          "raw": -5.096927,
+          "normalized": 22.321429,
+          "weight": 0.35,
+          "contribution": 7.8125
+        },
+        "sos": {
+          "raw": 9.056554,
+          "normalized": 90.366972,
+          "weight": 0.2,
+          "contribution": 18.073394
+        },
+        "maxpreps_rank": {
+          "raw": -243.0,
+          "normalized": 7.589286,
+          "weight": 0.1,
+          "contribution": 0.758929
+        },
+        "maxpreps_sos": {
+          "raw": 33.1,
+          "normalized": 87.671233,
+          "weight": 0.1,
+          "contribution": 8.767123
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 8.0,
+          "normalized": 19.036697,
+          "weight": 0.08,
+          "contribution": 1.522936
+        },
+        "defense": {
+          "raw": 14.0,
+          "normalized": 25.458716,
+          "weight": 0.08,
+          "contribution": 2.036697
+        },
+        "recent": {
+          "raw": -16.750802,
+          "normalized": 17.889908,
+          "weight": 0.04,
+          "contribution": 0.715596
+        }
+      },
+      "explanation": "Lawrence County High School enters at No. 146 with an MFPI of 40.9; opponent-adjusted performance contributes 7.81 points and MaxPreps contributes 9.53 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "amory",
+      "slug": "amory",
+      "team": "Amory High School",
+      "classification": "4A",
+      "region": "2",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 151,
+      "class_rank": 33,
+      "mfpi": 40.1,
+      "mfpi_unrounded": 40.07944824,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 14.0,
+      "pa_per_game": 48.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 1.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 197,
+      "maxpreps_rating": 29.62,
+      "maxpreps_strength": 28.3,
+      "components": {
+        "performance": {
+          "raw": -6.173008,
+          "normalized": 17.857143,
+          "weight": 0.35,
+          "contribution": 6.25
+        },
+        "sos": {
+          "raw": 10.132636,
+          "normalized": 93.577982,
+          "weight": 0.2,
+          "contribution": 18.715596
+        },
+        "maxpreps_rank": {
+          "raw": -197.0,
+          "normalized": 26.339286,
+          "weight": 0.1,
+          "contribution": 2.633929
+        },
+        "maxpreps_sos": {
+          "raw": 28.3,
+          "normalized": 78.767123,
+          "weight": 0.1,
+          "contribution": 7.876712
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 14.0,
+          "normalized": 28.899083,
+          "weight": 0.08,
+          "contribution": 2.311927
+        },
+        "defense": {
+          "raw": 1.0,
+          "normalized": 7.568807,
+          "weight": 0.08,
+          "contribution": 0.605505
+        },
+        "recent": {
+          "raw": -19.979119,
+          "normalized": 11.46789,
+          "weight": 0.04,
+          "contribution": 0.458716
+        }
+      },
+      "explanation": "Amory High School enters at No. 151 with an MFPI of 40.1; opponent-adjusted performance contributes 6.25 points and MaxPreps contributes 10.51 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "bay",
+      "slug": "bay",
+      "team": "Bay High School",
+      "classification": "4A",
+      "region": "8",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 156,
+      "class_rank": 34,
+      "mfpi": 39.7,
+      "mfpi_unrounded": 39.65949793,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 7.0,
+      "pa_per_game": 35.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "No class data",
+      "maxpreps_state_rank": 246,
+      "maxpreps_rating": 20.66,
+      "maxpreps_strength": 21.8,
+      "components": {
+        "performance": {
+          "raw": -4.516252,
+          "normalized": 25.0,
+          "weight": 0.35,
+          "contribution": 8.75
+        },
+        "sos": {
+          "raw": 11.465125,
+          "normalized": 96.788991,
+          "weight": 0.2,
+          "contribution": 19.357798
+        },
+        "maxpreps_rank": {
+          "raw": -246.0,
+          "normalized": 6.25,
+          "weight": 0.1,
+          "contribution": 0.625
+        },
+        "maxpreps_sos": {
+          "raw": 21.8,
+          "normalized": 54.794521,
+          "weight": 0.1,
+          "contribution": 5.479452
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 7.0,
+          "normalized": 16.513761,
+          "weight": 0.08,
+          "contribution": 1.321101
+        },
+        "defense": {
+          "raw": 14.0,
+          "normalized": 25.458716,
+          "weight": 0.08,
+          "contribution": 2.036697
+        },
+        "recent": {
+          "raw": -15.011759,
+          "normalized": 21.559633,
+          "weight": 0.04,
+          "contribution": 0.862385
+        }
+      },
+      "explanation": "Bay High School enters at No. 156 with an MFPI of 39.7; opponent-adjusted performance contributes 8.75 points and MaxPreps contributes 6.10 points. The schedule has 0 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "moss-point",
+      "slug": "moss-point",
+      "team": "Moss Point High School",
+      "classification": "4A",
+      "region": "8",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 158,
+      "class_rank": 35,
+      "mfpi": 39.5,
+      "mfpi_unrounded": 39.51927529,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 0.0,
+      "pa_per_game": 44.0,
+      "up_games": 1,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 2.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 228,
+      "maxpreps_rating": 26.05,
+      "maxpreps_strength": 34.0,
+      "components": {
+        "performance": {
+          "raw": -5.719306,
+          "normalized": 19.196429,
+          "weight": 0.35,
+          "contribution": 6.71875
+        },
+        "sos": {
+          "raw": 12.178934,
+          "normalized": 97.247706,
+          "weight": 0.2,
+          "contribution": 19.449541
+        },
+        "maxpreps_rank": {
+          "raw": -228.0,
+          "normalized": 13.392857,
+          "weight": 0.1,
+          "contribution": 1.339286
+        },
+        "maxpreps_sos": {
+          "raw": 34.0,
+          "normalized": 89.497717,
+          "weight": 0.1,
+          "contribution": 8.949772
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 0.0,
+          "normalized": 4.357798,
+          "weight": 0.08,
+          "contribution": 0.348624
+        },
+        "defense": {
+          "raw": 5.0,
+          "normalized": 11.46789,
+          "weight": 0.08,
+          "contribution": 0.917431
+        },
+        "recent": {
+          "raw": -18.617983,
+          "normalized": 14.220183,
+          "weight": 0.04,
+          "contribution": 0.568807
+        }
+      },
+      "explanation": "Moss Point High School enters at No. 158 with an MFPI of 39.5; opponent-adjusted performance contributes 6.72 points and MaxPreps contributes 10.29 points. The schedule has 1 up, 0 same-class, and 0 down game(s)."
+    },
+    {
+      "team_id": "west-lauderdale",
+      "slug": "west-lauderdale",
+      "team": "West Lauderdale High School",
+      "classification": "4A",
+      "region": "5",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 163,
+      "class_rank": 36,
+      "mfpi": 38.0,
+      "mfpi_unrounded": 37.98247967,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 6.0,
+      "pa_per_game": 37.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -1.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 164,
+      "maxpreps_rating": 34.39,
+      "maxpreps_strength": 29.8,
+      "components": {
+        "performance": {
+          "raw": -5.988999,
+          "normalized": 18.303571,
+          "weight": 0.35,
+          "contribution": 6.40625
+        },
+        "sos": {
+          "raw": 4.948626,
+          "normalized": 74.311927,
+          "weight": 0.2,
+          "contribution": 14.862385
+        },
+        "maxpreps_rank": {
+          "raw": -164.0,
+          "normalized": 39.285714,
+          "weight": 0.1,
+          "contribution": 3.928571
+        },
+        "maxpreps_sos": {
+          "raw": 29.8,
+          "normalized": 83.105023,
+          "weight": 0.1,
+          "contribution": 8.310502
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 6.0,
+          "normalized": 12.844037,
+          "weight": 0.08,
+          "contribution": 1.027523
+        },
+        "defense": {
+          "raw": 12.0,
+          "normalized": 21.330275,
+          "weight": 0.08,
+          "contribution": 1.706422
+        },
+        "recent": {
+          "raw": -19.427079,
+          "normalized": 12.844037,
+          "weight": 0.04,
+          "contribution": 0.513761
+        }
+      },
+      "explanation": "West Lauderdale High School enters at No. 163 with an MFPI of 38.0; opponent-adjusted performance contributes 6.41 points and MaxPreps contributes 12.24 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "south-pontotoc",
+      "slug": "south-pontotoc",
+      "team": "South Pontotoc High School",
+      "classification": "4A",
+      "region": "1",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 169,
+      "class_rank": 37,
+      "mfpi": 37.0,
+      "mfpi_unrounded": 36.97930674,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 28.0,
+      "pa_per_game": 33.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -2.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 209,
+      "maxpreps_rating": 28.63,
+      "maxpreps_strength": 16.6,
+      "components": {
+        "performance": {
+          "raw": -2.264264,
+          "normalized": 34.375,
+          "weight": 0.35,
+          "contribution": 12.03125
+        },
+        "sos": {
+          "raw": -1.276109,
+          "normalized": 45.412844,
+          "weight": 0.2,
+          "contribution": 9.082569
+        },
+        "maxpreps_rank": {
+          "raw": -209.0,
+          "normalized": 21.875,
+          "weight": 0.1,
+          "contribution": 2.1875
+        },
+        "maxpreps_sos": {
+          "raw": 16.6,
+          "normalized": 36.986301,
+          "weight": 0.1,
+          "contribution": 3.69863
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 28.0,
+          "normalized": 61.238532,
+          "weight": 0.08,
+          "contribution": 4.899083
+        },
+        "defense": {
+          "raw": 16.0,
+          "normalized": 31.880734,
+          "weight": 0.08,
+          "contribution": 2.550459
+        },
+        "recent": {
+          "raw": -8.252621,
+          "normalized": 32.568807,
+          "weight": 0.04,
+          "contribution": 1.302752
+        }
+      },
+      "explanation": "South Pontotoc High School enters at No. 169 with an MFPI of 37.0; opponent-adjusted performance contributes 12.03 points and MaxPreps contributes 5.89 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "raymond",
+      "slug": "raymond",
+      "team": "Raymond High School",
+      "classification": "4A",
+      "region": "6",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 171,
+      "class_rank": 38,
+      "mfpi": 36.0,
+      "mfpi_unrounded": 36.01164518,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 14.0,
+      "pa_per_game": 34.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -1.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 237,
+      "maxpreps_rating": 23.73,
+      "maxpreps_strength": 20.8,
+      "components": {
+        "performance": {
+          "raw": -4.048574,
+          "normalized": 28.571429,
+          "weight": 0.35,
+          "contribution": 10.0
+        },
+        "sos": {
+          "raw": 3.008202,
+          "normalized": 65.59633,
+          "weight": 0.2,
+          "contribution": 13.119266
+        },
+        "maxpreps_rank": {
+          "raw": -237.0,
+          "normalized": 9.821429,
+          "weight": 0.1,
+          "contribution": 0.982143
+        },
+        "maxpreps_sos": {
+          "raw": 20.8,
+          "normalized": 50.684932,
+          "weight": 0.1,
+          "contribution": 5.068493
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 14.0,
+          "normalized": 28.899083,
+          "weight": 0.08,
+          "contribution": 2.311927
+        },
+        "defense": {
+          "raw": 15.0,
+          "normalized": 29.357798,
+          "weight": 0.08,
+          "contribution": 2.348624
+        },
+        "recent": {
+          "raw": -13.605674,
+          "normalized": 23.853211,
+          "weight": 0.04,
+          "contribution": 0.954128
+        }
+      },
+      "explanation": "Raymond High School enters at No. 171 with an MFPI of 36.0; opponent-adjusted performance contributes 10.00 points and MaxPreps contributes 6.05 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    },
+    {
+      "team_id": "northeast-lauderdale",
+      "slug": "northeast-lauderdale",
+      "team": "Northeast Lauderdale High School",
+      "classification": "4A",
+      "region": "5",
+      "record": "0-1",
+      "games_played": 1,
+      "state_rank": 188,
+      "class_rank": 39,
+      "mfpi": 32.8,
+      "mfpi_unrounded": 32.8258216,
+      "previous_state_rank": null,
+      "state_rank_change": null,
+      "previous_class_rank": null,
+      "class_rank_change": null,
+      "previous_mfpi": null,
+      "mfpi_change": null,
+      "pf_per_game": 7.0,
+      "pa_per_game": 30.0,
+      "up_games": 0,
+      "same_class_games": 0,
+      "down_games": 1,
+      "class_schedule_delta": -2.0,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 223,
+      "maxpreps_rating": 26.79,
+      "maxpreps_strength": 23.4,
+      "components": {
+        "performance": {
+          "raw": -5.256788,
+          "normalized": 21.428571,
+          "weight": 0.35,
+          "contribution": 7.5
+        },
+        "sos": {
+          "raw": 1.716415,
+          "normalized": 58.256881,
+          "weight": 0.2,
+          "contribution": 11.651376
+        },
+        "maxpreps_rank": {
+          "raw": -223.0,
+          "normalized": 15.625,
+          "weight": 0.1,
+          "contribution": 1.5625
+        },
+        "maxpreps_sos": {
+          "raw": 23.4,
+          "normalized": 60.958904,
+          "weight": 0.1,
+          "contribution": 6.09589
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 24.541284,
+          "weight": 0.05,
+          "contribution": 1.227064
+        },
+        "offense": {
+          "raw": 7.0,
+          "normalized": 16.513761,
+          "weight": 0.08,
+          "contribution": 1.321101
+        },
+        "defense": {
+          "raw": 19.0,
+          "normalized": 35.091743,
+          "weight": 0.08,
+          "contribution": 2.807339
+        },
+        "recent": {
+          "raw": -17.230396,
+          "normalized": 16.513761,
+          "weight": 0.04,
+          "contribution": 0.66055
+        }
+      },
+      "explanation": "Northeast Lauderdale High School enters at No. 188 with an MFPI of 32.8; opponent-adjusted performance contributes 7.50 points and MaxPreps contributes 7.66 points. The schedule has 0 up, 0 same-class, and 1 down game(s)."
+    }
+  ]
+}

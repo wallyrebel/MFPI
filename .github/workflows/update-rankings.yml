@@ -1,0 +1,82 @@
+name: Update MFPI rankings
+
+on:
+  schedule:
+    - cron: "10 13 * * 3"
+      timezone: America/Chicago
+  workflow_dispatch:
+    inputs:
+      corrected:
+        description: Publish an audited correction if this week already exists
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mfpi-weekly-rankings
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.13.0"
+          cache: npm
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Install site dependencies
+        run: npm ci
+
+      - name: Restore source cache
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: mfpi-source-cache-${{ github.run_id }}
+          restore-keys: |
+            mfpi-source-cache-
+
+      - name: Test ranking engine
+        run: python -m pytest -q -p no:cacheprovider
+
+      - name: Pull data and calculate rankings
+        if: ${{ github.event_name == 'schedule' || !inputs.corrected }}
+        run: python calculate_rankings.py --live
+
+      - name: Pull data and publish an audited correction
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.corrected }}
+        run: python calculate_rankings.py --live --corrected
+
+      - name: Build Cloudflare site
+        run: npm run build
+
+      - name: Commit updated ranking snapshots
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current data/2026
+          if git diff --cached --quiet; then
+            echo "No ranking data changed."
+            exit 0
+          fi
+          git commit -m "Update MFPI weekly rankings"
+          git push

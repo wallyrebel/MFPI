@@ -1,0 +1,196 @@
+{
+  "valid": true,
+  "expected_games": 120,
+  "verified_games": 119,
+  "missing_games": 1,
+  "coverage_percentage": 99.17,
+  "issues": [
+    {
+      "code": "MAXPREPS_SECONDARY_RESULTS_USED",
+      "severity": "WARNING",
+      "message": "Used exact MaxPreps matchup evidence for 12 MHSAA listings without official finals.",
+      "context": {
+        "games": [
+          {
+            "mhsaa_game_id": "7586895",
+            "maxpreps_game_id": "3a3eebdb-d277-43dd-96c1-fe68f2b3eb99",
+            "original_date": "2026-08-27T17:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "pearl",
+            "away_team_id": "madison-central",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/madison-central-vs-pearl/8-27-2026/?c=3a3eebdb-d277-43dd-96c1-fe68f2b3eb99"
+            ],
+            "home_score": 7,
+            "away_score": 17,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7586910",
+            "maxpreps_game_id": "4cde9fbc-30de-4f6f-a28d-f498495af65e",
+            "original_date": "2026-08-27T17:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "ocean-springs",
+            "away_team_id": "meridian",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/meridian-vs-ocean-springs/8-27-2026/?c=4cde9fbc-30de-4f6f-a28d-f498495af65e"
+            ],
+            "home_score": 9,
+            "away_score": 47,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7614614",
+            "maxpreps_game_id": "98bded44-7251-4295-9495-85bd5fd38391",
+            "original_date": "2026-08-27T17:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "byhalia",
+            "away_team_id": "byers",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/byers-holly-springs-vs-byhalia/8-27-2026/?c=98bded44-7251-4295-9495-85bd5fd38391"
+            ],
+            "home_score": 28,
+            "away_score": 6,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7614615",
+            "maxpreps_game_id": "4a0cd32f-4cf6-4bea-9876-3cb1c3f1190c",
+            "original_date": "2026-08-27T17:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "callaway",
+            "away_team_id": "forest-hill",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/callaway-jackson-vs-forest-hill-jackson/8-27-2026/?c=4a0cd32f-4cf6-4bea-9876-3cb1c3f1190c"
+            ],
+            "home_score": 14,
+            "away_score": 0,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7614616",
+            "maxpreps_game_id": "b5c3fa94-249f-4919-92a9-fad68c2071a5",
+            "original_date": "2026-08-27T17:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "south-jones",
+            "away_team_id": "northeast-jones",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/northeast-jones-laurel-vs-south-jones-ellisville/8-27-2026/?c=b5c3fa94-249f-4919-92a9-fad68c2071a5"
+            ],
+            "home_score": 36,
+            "away_score": 23,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7731688",
+            "maxpreps_game_id": "ebc4439e-05f6-4a24-8b2b-fa1743575ba6",
+            "original_date": "2026-08-27T17:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "quitman",
+            "away_team_id": "kemper-county",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/kemper-county-dekalb-vs-quitman/8-27-2026/?c=ebc4439e-05f6-4a24-8b2b-fa1743575ba6"
+            ],
+            "home_score": 34,
+            "away_score": 48,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7614621",
+            "maxpreps_game_id": "18467cf6-ad4c-479b-ab91-670c5387b22e",
+            "original_date": "2026-08-28T16:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "tishomingo-county",
+            "away_team_id": "alcorn-central",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/alcorn-central-glen-vs-tishomingo-county-iuka/8-27-2026/?c=18467cf6-ad4c-479b-ab91-670c5387b22e"
+            ],
+            "home_score": 27,
+            "away_score": 10,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7614638",
+            "maxpreps_game_id": "036c58cb-c9fc-465c-9881-71cfd7425bd0",
+            "original_date": "2026-08-28T16:00:00-07:00",
+            "maxpreps_date": "2026-08-28T19:00:00-05:00",
+            "home_team_id": "st-patrick",
+            "away_team_id": "external-231344",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/christian-collegiate-academy-gulfport-vs-st-patrick-biloxi/8-28-2026/?c=036c58cb-c9fc-465c-9881-71cfd7425bd0"
+            ],
+            "home_score": 2,
+            "away_score": 0,
+            "forfeit": true
+          },
+          {
+            "mhsaa_game_id": "7614651",
+            "maxpreps_game_id": "c187e7a2-9a5c-4550-b87e-34fcde5f0aae",
+            "original_date": "2026-08-28T16:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "ashland",
+            "away_team_id": "smithville",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/ashland-vs-smithville/8-27-2026/?c=c187e7a2-9a5c-4550-b87e-34fcde5f0aae"
+            ],
+            "home_score": 14,
+            "away_score": 52,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7614653",
+            "maxpreps_game_id": "d1baf8f2-3fed-42c7-ab05-b4dfa2963e05",
+            "original_date": "2026-08-28T16:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "baldwyn",
+            "away_team_id": "kossuth",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/baldwyn-vs-kossuth/8-27-2026/?c=d1baf8f2-3fed-42c7-ab05-b4dfa2963e05"
+            ],
+            "home_score": 28,
+            "away_score": 13,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7614613",
+            "maxpreps_game_id": "e7de3178-4b46-45e3-aa8d-36624bf24a59",
+            "original_date": "2026-08-28T17:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "east-marion",
+            "away_team_id": "west-marion",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/east-marion-columbia-vs-west-marion-foxworth/8-27-2026/?c=e7de3178-4b46-45e3-aa8d-36624bf24a59"
+            ],
+            "home_score": 40,
+            "away_score": 0,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7731605",
+            "maxpreps_game_id": "02ec7327-7c5d-4a6e-8874-7c2bbc55ee24",
+            "original_date": "2026-08-28T17:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "south-pontotoc",
+            "away_team_id": "bruce",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/bruce-vs-south-pontotoc/8-27-2026/?c=02ec7327-7c5d-4a6e-8874-7c2bbc55ee24"
+            ],
+            "home_score": 28,
+            "away_score": 33,
+            "forfeit": false
+          }
+        ]
+      }
+    },
+    {
+      "code": "UNVERIFIED_GAMES_REMAIN",
+      "severity": "WARNING",
+      "message": "Published coverage is 99.2%, with 1 unresolved game listings retained.",
+      "context": {
+        "missing_game_ids": [
+          "7731608"
+        ]
+      }
+    }
+  ]
+}

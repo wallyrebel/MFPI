@@ -1,0 +1,40 @@
+state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
+11,1,Poplarville Jr Sr High School,4A,1-0,78.5,,,,46.3,40.0,7.0,33,61.43,26.1,Playing up,3.0,1,0,0
+23,2,Mendenhall High School,4A,1-0,72.2,,,,48.6,46.0,27.0,49,55.21,26.1,Playing up,2.0,1,0,0
+24,3,Louisville High School,4A,1-0,71.9,,,,43.6,21.0,6.0,9,77.41,38.4,Playing up,1.0,1,0,0
+27,4,Kosciusko Senior High School,4A,1-0,70.4,,,,52.3,55.0,35.0,29,62.29,22.8,Playing up,2.0,1,0,0
+29,5,New Albany High School,4A,1-0,69.8,,,,37.6,34.0,7.0,55,52.71,16.6,Playing up,2.0,1,0,0
+31,6,Pass Christian High School,4A,1-0,69.5,,,,29.4,48.0,3.0,74,50.13,11.6,Playing up,2.0,1,0,0
+38,7,Shannon High School,4A,1-0,67.6,,,,54.1,31.0,13.0,60,52.08,16.0,Playing up,2.0,1,0,0
+41,8,Corinth High School,4A,1-0,67.1,,,,52.8,28.0,21.0,40,58.7,28.5,Playing up,1.0,1,0,0
+45,9,Itawamba Agricultural High School,4A,1-0,66.4,,,,31.7,42.0,10.0,72,50.41,13.6,Playing up,1.0,1,0,0
+47,10,Houston High School,4A,1-0,65.9,,,,25.2,46.0,12.0,89,48.16,12.5,Playing up,1.0,1,0,0
+49,11,McComb High School,4A,1-0,65.4,,,,11.0,41.0,0.0,67,51.67,14.8,Playing down,-1.0,0,0,1
+50,12,Morton High School,4A,1-0,65.0,,,,24.8,42.0,13.0,68,51.48,17.9,Mostly same class,0.0,0,1,0
+63,13,Rosa Fort High School,4A,1-0,60.8,,,,15.6,36.0,0.0,92,47.95,10.8,Playing down,-1.0,0,0,1
+68,14,Richland High School,4A,1-0,59.2,,,,53.7,31.0,21.0,125,44.51,16.4,Playing up,1.0,1,0,0
+75,15,Choctaw Central,4A,1-0,57.9,,,,7.3,48.0,8.0,106,46.47,9.2,Playing down,-2.0,0,0,1
+76,16,Greene County High School,4A,1-0,57.8,,,,56.0,21.0,13.0,129,44.29,15.9,Playing up,1.0,1,0,0
+78,17,Senatobia High School,4A,1-0,57.1,,,,33.0,21.0,8.0,64,51.84,17.8,No class data,0.0,0,0,0
+84,18,South Pike Senior High School,4A,1-0,56.1,,,,14.7,38.0,18.0,98,47.53,15.1,Playing down,-2.0,0,0,1
+85,19,Columbia High School,4A,0-1,55.8,,,,83.9,28.0,42.0,30,62.2,44.5,No class data,0.0,0,0,0
+87,20,Forest High School,4A,1-0,55.6,,,,15.1,37.0,18.0,84,48.84,13.8,Playing down,-2.0,0,0,1
+88,21,Clarksdale High School,4A,0-1,55.4,,,,62.4,29.0,35.0,66,51.73,27.7,No class data,0.0,0,0,0
+92,22,Ripley High School,4A,1-0,54.9,,,,44.5,34.0,23.0,132,43.77,13.5,Mostly same class,0.0,0,1,0
+100,23,Tishomingo County High School,4A,1-0,52.6,,,,25.7,27.0,10.0,137,42.66,9.3,Playing down,-1.0,0,0,1
+108,24,Forrest County Agricultural Hi Sch,4A,1-0,50.8,,,,31.2,27.0,14.0,133,43.68,11.3,Playing down,-1.0,0,0,1
+112,25,Yazoo City High School,4A,0-0,50.0,,,,50.0,0.0,0.0,165,34.09,0.0,No class data,0.0,0,0,0
+114,26,Byhalia High School (9-12),4A,1-0,49.4,,,,11.9,28.0,6.0,151,37.36,8.3,Playing down,-3.0,0,0,1
+117,27,Gentry High School,4A,0-1,48.8,,,,85.3,6.0,16.0,226,26.37,19.6,Playing up,2.0,1,0,0
+126,28,Greenwood High School,4A,0-1,46.1,,,,47.7,4.0,8.0,154,36.21,19.3,Playing down,-1.0,0,0,1
+129,29,Mooreville High School,4A,0-1,45.1,,,,65.1,23.0,34.0,202,29.1,21.2,Mostly same class,0.0,0,1,0
+143,30,Newton County High School,4A,0-1,41.4,,,,81.2,13.0,42.0,160,34.55,28.9,Mostly same class,0.0,0,1,0
+145,31,North Pontotoc High School,4A,0-1,41.0,,,,57.8,21.0,33.0,181,32.16,22.0,Playing down,-1.0,0,0,1
+146,32,Lawrence County High School,4A,0-1,40.9,,,,90.4,8.0,35.0,243,20.86,33.1,Playing up,1.0,1,0,0
+151,33,Amory High School,4A,0-1,40.1,,,,93.6,14.0,48.0,197,29.62,28.3,Playing up,1.0,1,0,0
+156,34,Bay High School,4A,0-1,39.7,,,,96.8,7.0,35.0,246,20.66,21.8,No class data,0.0,0,0,0
+158,35,Moss Point High School,4A,0-1,39.5,,,,97.2,0.0,44.0,228,26.05,34.0,Playing up,2.0,1,0,0
+163,36,West Lauderdale High School,4A,0-1,38.0,,,,74.3,6.0,37.0,164,34.39,29.8,Playing down,-1.0,0,0,1
+169,37,South Pontotoc High School,4A,0-1,37.0,,,,45.4,28.0,33.0,209,28.63,16.6,Playing down,-2.0,0,0,1
+171,38,Raymond High School,4A,0-1,36.0,,,,65.6,14.0,34.0,237,23.73,20.8,Playing down,-1.0,0,0,1
+188,39,Northeast Lauderdale High School,4A,0-1,32.8,,,,58.3,7.0,30.0,223,26.79,23.4,Playing down,-2.0,0,0,1

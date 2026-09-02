@@ -1,0 +1,25 @@
+state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
+7,1,Warren Central High School,6A,1-0,81.9,,,,75.7,35.0,24.0,8,77.65,34.8,Playing up,1.0,1,0,0
+9,2,Center Hill High School,6A,1-0,78.6,,,,80.7,23.0,16.0,34,60.87,28.6,Playing up,1.0,1,0,0
+14,3,South Panola High School,6A,0-1,75.4,,,,84.9,25.0,26.0,24,68.81,34.3,Playing up,1.0,1,0,0
+16,4,Terry High School,6A,1-0,74.5,,,,42.7,55.0,6.0,73,50.3,12.3,Playing up,1.0,1,0,0
+17,5,Hattiesburg High School,6A,0-1,74.1,,,,86.7,34.0,35.0,28,62.66,37.5,Playing up,1.0,1,0,0
+25,6,Callaway High School,6A,1-0,71.1,,,,64.7,14.0,0.0,71,50.62,14.0,Mostly same class,0.0,0,1,0
+26,7,Gautier High School,6A,1-0,71.0,,,,50.5,63.0,35.0,76,49.61,14.6,Mostly same class,0.0,0,1,0
+28,8,Pascagoula High School,6A,1-0,70.3,,,,21.1,44.0,0.0,45,56.73,12.6,Playing down,-2.0,0,0,1
+44,9,Lake Cormorant High,6A,1-0,66.5,,,,32.1,27.0,8.0,39,58.95,16.5,No class data,0.0,0,0,0
+48,10,Pearl River Central High School,6A,1-0,65.8,,,,66.1,28.0,27.0,117,45.08,20.9,Playing down,-1.0,0,0,1
+53,11,Canton Public High School,6A,1-0,64.2,,,,13.8,56.0,20.0,81,49.26,13.8,Playing down,-4.0,0,0,1
+54,12,Grenada High,6A,0-0,64.0,,,,50.0,0.0,0.0,17,72.52,0.0,No class data,0.0,0,0,0
+59,13,Jim Hill High School,6A,1-0,62.2,,,,17.0,34.0,2.0,135,43.07,7.7,Playing down,-3.0,0,0,1
+60,14,Hancock High School,6A,0-1,61.5,,,,73.9,44.0,50.0,146,40.11,24.1,Playing down,-1.0,0,0,1
+61,15,Greenville High School,6A,1-0,61.5,,,,46.8,16.0,6.0,140,41.97,11.9,Playing down,-2.0,0,0,1
+65,16,West Jones High School,6A,0-1,60.2,,,,82.1,42.0,56.0,155,36.15,29.1,Playing down,-1.0,0,0,1
+67,17,Neshoba Central High School,6A,0-1,59.3,,,,80.3,35.0,55.0,80,49.27,37.6,Playing down,-2.0,0,0,1
+69,18,Picayune Memorial High School,6A,0-1,58.9,,,,99.1,0.0,35.0,25,66.72,46.9,Playing up,1.0,1,0,0
+70,19,Forest Hill High School,6A,0-1,58.7,,,,89.4,0.0,14.0,198,29.43,25.6,Mostly same class,0.0,0,1,0
+73,20,Ridgeland High School,6A,0-1,58.2,,,,83.5,27.0,46.0,50,55.21,33.0,Playing down,-2.0,0,0,1
+86,21,George County High School,6A,0-1,55.7,,,,96.3,35.0,63.0,190,30.67,27.2,Mostly same class,0.0,0,1,0
+95,22,Olive Branch High School,6A,0-1,53.3,,,,77.5,13.0,31.0,176,33.03,28.3,Playing down,-2.0,0,0,1
+121,23,Saltillo High School,6A,0-1,47.8,,,,87.2,7.0,34.0,170,33.5,29.4,Playing down,-2.0,0,0,1
+147,24,Long Beach Senior High School,6A,0-1,40.7,,,,94.5,3.0,48.0,227,26.18,27.8,Playing down,-2.0,0,0,1

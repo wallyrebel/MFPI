@@ -1,0 +1,26 @@
+state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
+30,1,Laurel High School,5A,1-0,69.5,,,,61.5,56.0,42.0,44,56.99,18.1,Playing up,1.0,1,0,0
+32,2,Lanier High School,5A,1-0,69.4,,,,76.6,24.0,20.0,104,46.62,20.0,Playing up,2.0,1,0,0
+37,3,Leake Central High School,5A,1-0,68.1,,,,27.1,35.0,0.0,79,49.33,11.8,Mostly same class,0.0,0,1,0
+39,4,Pontotoc High School,5A,1-0,67.6,,,,19.7,48.0,14.0,57,52.42,13.9,Playing down,-1.0,0,0,1
+42,5,Lafayette High School,5A,1-0,66.8,,,,5.0,58.0,0.0,61,51.86,15.1,No class data,0.0,0,0,0
+43,6,Brookhaven High School,5A,1-0,66.7,,,,24.3,35.0,8.0,53,54.68,13.7,Playing down,-1.0,0,0,1
+46,7,Stone High School,5A,1-0,66.2,,,,71.6,50.0,44.0,94,47.94,19.5,Playing up,1.0,1,0,0
+51,8,South Jones High School,5A,1-0,64.9,,,,53.2,36.0,23.0,99,47.48,16.4,Mostly same class,0.0,0,1,0
+52,9,Holmes County Central High School,5A,0-1,64.3,,,,94.0,19.0,35.0,42,58.18,36.3,Playing up,2.0,1,0,0
+56,10,Natchez High School,5A,1-0,62.9,,,,56.9,20.0,14.0,122,44.7,19.0,Mostly same class,0.0,0,1,0
+58,11,Sumrall High School,5A,1-0,62.2,,,,10.1,39.0,0.0,85,48.66,11.3,Playing down,-3.0,0,0,1
+64,12,Wayne County High School,5A,0-1,60.7,,,,78.0,27.0,28.0,118,45.07,21.2,Playing up,1.0,1,0,0
+66,13,Cleveland Central High School,5A,0-0,59.8,,,,50.0,0.0,0.0,52,54.78,23.9,No class data,0.0,0,0,0
+71,14,New Hope High School,5A,0-1,58.6,,,,69.3,21.0,28.0,41,58.68,32.0,Playing down,-1.0,0,0,1
+77,15,West Point High School,5A,0-1,57.5,,,,76.1,6.0,21.0,10,77.39,44.6,Playing down,-1.0,0,0,1
+91,16,Vicksburg High School,5A,0-1,55.0,,,,74.8,14.0,20.0,149,38.21,21.9,Mostly same class,0.0,0,1,0
+94,17,North Pike Senior High School,5A,1-0,53.7,,,,45.9,17.0,12.0,153,36.4,15.9,Playing down,-2.0,0,0,1
+98,18,Purvis High School,5A,1-0,52.9,,,,16.1,27.0,14.0,112,45.91,13.8,Playing down,-4.0,0,0,1
+99,19,Northeast Jones High School,5A,0-1,52.9,,,,78.4,23.0,36.0,175,33.1,24.5,Mostly same class,0.0,0,1,0
+109,20,Florence High School,5A,0-1,50.6,,,,67.4,21.0,31.0,174,33.2,21.8,Playing down,-1.0,0,0,1
+110,21,East Central High School,5A,0-1,50.4,,,,64.2,13.0,21.0,177,32.78,21.7,Playing down,-1.0,0,0,1
+124,22,Vancleave High School,5A,0-1,46.4,,,,98.2,14.0,56.0,192,30.35,30.0,Playing up,2.0,1,0,0
+140,23,Caledonia High School,5A,0-1,42.9,,,,86.2,10.0,42.0,201,29.12,28.1,Playing down,-1.0,0,0,1
+144,24,Provine High School,5A,0-1,41.0,,,,95.0,0.0,35.0,224,26.63,26.7,Mostly same class,0.0,0,1,0
+160,25,Columbus High School,5A,0-1,38.8,,,,89.9,12.0,46.0,217,27.61,25.4,Playing down,-1.0,0,0,1

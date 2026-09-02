@@ -1,0 +1,40 @@
+state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
+35,1,Winona Secondary School,3A,1-0,68.6,,,,60.1,21.0,7.0,51,55.02,21.9,Playing up,4.0,1,0,0
+57,2,Seminary High School,3A,1-0,62.3,,,,20.6,37.0,6.0,63,51.84,17.9,Playing up,1.0,1,0,0
+74,3,Magee High School,3A,1-0,58.2,,,,0.9,64.0,0.0,86,48.56,8.8,Playing down,-2.0,0,0,1
+80,4,Yazoo County High School,3A,1-0,56.6,,,,1.8,61.0,0.0,114,45.51,7.2,Playing down,-2.0,0,0,1
+89,5,Raleigh High School,3A,0-1,55.3,,,,91.7,6.0,21.0,38,58.98,42.5,Playing up,4.0,1,0,0
+90,6,Presbyterian Christian School,3A,1-0,55.1,,,,20.2,31.0,13.0,65,51.77,20.0,No class data,0.0,0,0,0
+97,7,Port Gibson High School,3A,1-0,53.0,,,,29.8,34.0,14.0,134,43.23,10.5,Playing up,1.0,1,0,0
+101,8,Booneville High School,3A,1-0,52.2,,,,35.8,33.0,21.0,123,44.65,15.6,Playing up,1.0,1,0,0
+104,9,O’Bannon High School,3A,1-0,51.1,,,,12.4,28.0,0.0,127,44.43,9.7,Playing down,-1.0,0,0,1
+105,10,Noxubee County High School,3A,1-0,50.9,,,,27.8,21.0,20.0,31,62.05,31.3,Playing down,-1.0,0,0,1
+107,11,Jefferson Davis County High School,3A,0-1,50.9,,,,60.6,27.0,30.0,82,49.23,39.0,No class data,0.0,0,0,0
+113,12,Thomas E. Edwards,3A,1-0,49.8,,,,49.1,8.0,4.0,150,37.65,18.2,Playing up,1.0,1,0,0
+122,13,Aberdeen High School,3A,1-0,46.5,,,,7.8,50.0,32.0,102,46.72,12.0,Playing down,-2.0,0,0,1
+125,14,Franklin High School,3A,0-1,46.4,,,,63.3,12.0,17.0,180,32.68,19.1,Playing up,2.0,1,0,0
+130,15,St. Patrick,3A,1-0,45.1,,,,49.5,2.0,0.0,265,13.12,0.0,No class data,0.0,0,0,0
+131,16,Hazlehurst High School,3A,0-0,44.9,,,,50.0,0.0,0.0,144,40.77,0.0,No class data,0.0,0,0,0
+133,17,Humphreys County High School,3A,0-0,44.6,,,,50.0,0.0,0.0,152,36.57,0.0,No class data,0.0,0,0,0
+135,18,Choctaw County High School,3A,0-1,44.3,,,,40.1,14.0,20.0,37,60.65,33.0,Playing down,-1.0,0,0,1
+137,19,Union High School,3A,1-0,43.8,,,,27.8,27.0,26.0,109,46.15,18.8,Playing down,-1.0,0,0,1
+139,20,Belmont School,3A,0-1,43.3,,,,55.5,16.0,21.0,166,33.87,21.1,No class data,0.0,0,0,0
+141,21,Independence High School,3A,1-0,42.6,,,,23.9,24.0,20.0,173,33.2,15.2,Playing down,-1.0,0,0,1
+152,22,Holly Springs High School,3A,1-0,39.9,,,,37.2,28.0,25.0,219,27.41,12.3,Mostly same class,0.0,0,1,0
+154,23,Jefferson Co High,3A,0-1,39.8,,,,87.6,6.0,27.0,218,27.42,25.5,No class data,0.0,0,0,0
+164,24,St. Stanislaus,3A,0-1,37.9,,,,63.8,14.0,27.0,230,25.36,21.0,Playing up,1.0,1,0,0
+167,25,St. Andrew’S,3A,0-1,37.0,,,,90.8,13.0,42.0,240,22.41,23.8,No class data,0.0,0,0,0
+170,26,Southeast Lauderdale High School,3A,1-0,36.3,,,,17.9,7.0,0.0,196,29.94,13.6,Playing down,-2.0,0,0,1
+173,27,Mantachie Attendance Center,3A,0-1,35.6,,,,43.1,25.0,28.0,220,27.41,13.9,Mostly same class,0.0,0,1,0
+175,28,Quitman High School,3A,0-1,35.4,,,,51.8,34.0,48.0,172,33.2,25.8,Playing down,-1.0,0,0,1
+176,29,Tylertown High School,3A,0-1,35.4,,,,88.1,0.0,41.0,189,30.83,29.6,Playing up,1.0,1,0,0
+177,30,Alcorn Central High School,3A,0-1,35.3,,,,70.2,10.0,27.0,245,20.74,20.2,Playing up,1.0,1,0,0
+179,31,McLaurin Attendance Center,3A,1-0,34.9,,,,17.4,33.0,30.0,210,28.36,12.7,Playing down,-2.0,0,0,1
+182,32,Crystal Springs High School,3A,0-1,34.4,,,,95.4,2.0,34.0,260,17.17,20.4,Playing up,3.0,1,0,0
+184,33,Kossuth High School,3A,0-1,33.8,,,,48.2,13.0,28.0,185,31.25,25.3,Playing down,-1.0,0,0,1
+187,34,North Panola High School,3A,0-1,33.0,,,,83.0,0.0,36.0,234,24.37,25.2,Playing up,1.0,1,0,0
+189,35,Pisgah High School,3A,0-1,32.7,,,,36.7,19.0,27.0,212,28.04,17.8,Playing down,-1.0,0,0,1
+191,36,Nettleton High School,3A,0-1,31.8,,,,40.1,18.0,24.0,236,23.88,17.4,Playing down,-1.0,0,0,1
+200,37,West Marion High School,3A,0-1,28.9,,,,69.7,0.0,40.0,211,28.23,24.9,Playing down,-1.0,0,0,1
+202,38,Amanda Elzy High School,3A,0-1,28.6,,,,71.1,0.0,42.0,232,25.0,27.3,Playing down,-1.0,0,0,1
+206,39,Coahoma County Jr/Sr High School,3A,0-1,28.0,,,,58.7,12.0,44.0,215,27.77,27.6,Playing down,-2.0,0,0,1

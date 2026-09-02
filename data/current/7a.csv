@@ -1,0 +1,26 @@
+state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
+1,1,Tupelo High School,7A,1-0,86.4,,,,67.0,38.0,14.0,1,88.43,39.3,Mostly same class,0.0,0,1,0
+2,2,Meridian High School,7A,1-0,85.1,,,,51.4,47.0,9.0,18,72.38,35.1,Mostly same class,0.0,0,1,0
+3,3,Germantown High School,7A,1-0,83.8,,,,59.6,60.0,27.0,5,78.73,33.4,Mostly same class,0.0,0,1,0
+4,4,Madison Central High School,7A,1-0,83.5,,,,75.2,17.0,7.0,11,76.2,33.4,Mostly same class,0.0,0,1,0
+5,5,Gulfport High School,7A,1-0,83.4,,,,45.0,35.0,0.0,2,80.74,31.9,Playing down,-1.0,0,0,1
+6,6,Starkville High School,7A,1-0,83.2,,,,84.4,17.0,15.0,3,79.68,42.7,Mostly same class,0.0,0,1,0
+8,7,Petal High School,7A,1-0,79.2,,,,77.1,35.0,34.0,20,71.96,34.8,Playing down,-1.0,0,0,1
+10,8,Oak Grove High School,7A,0-1,78.6,,,,91.3,15.0,17.0,4,79.0,43.4,Mostly same class,0.0,0,1,0
+12,9,Biloxi High School,7A,1-0,78.5,,,,56.4,35.0,19.0,27,64.84,27.5,Playing down,-2.0,0,0,1
+13,10,Desoto Central High School,7A,1-0,78.4,,,,81.7,26.0,25.0,23,68.86,35.0,Playing down,-1.0,0,0,1
+15,11,Oxford High School,7A,1-0,75.2,,,,54.6,34.0,24.0,7,77.92,28.9,No class data,0.0,0,0,0
+18,12,Diberville Senior High Sch,7A,1-0,74.0,,,,32.6,21.0,6.0,16,73.79,31.2,Playing down,-4.0,0,0,1
+19,13,Pearl High School,7A,0-1,73.9,,,,95.9,7.0,17.0,26,66.14,42.9,Mostly same class,0.0,0,1,0
+20,14,St. Martin High School,7A,1-0,73.0,,,,33.9,56.0,14.0,47,55.62,14.3,Playing down,-2.0,0,0,1
+21,15,Clinton High School,7A,0-1,72.6,,,,89.0,24.0,35.0,22,69.63,43.5,Playing down,-1.0,0,0,1
+22,16,Horn Lake High,7A,0-1,72.4,,,,85.8,16.0,23.0,35,60.86,28.5,Playing down,-1.0,0,0,1
+33,17,Hernando High School,7A,1-0,69.4,,,,9.2,55.0,0.0,56,52.65,13.9,No class data,0.0,0,0,0
+34,18,Brandon High School,7A,0-1,69.3,,,,97.7,14.0,38.0,14,75.46,52.1,Mostly same class,0.0,0,1,0
+36,19,Lewisburg High School,7A,1-0,68.5,,,,50.0,26.0,14.0,95,47.83,17.9,No class data,0.0,0,0,0
+40,20,Northwest Rankin High School,7A,0-1,67.1,,,,98.6,27.0,60.0,21,70.51,46.0,Mostly same class,0.0,0,1,0
+55,21,Harrison Central High School,7A,0-1,64.0,,,,79.4,20.0,24.0,141,41.91,23.4,Playing down,-2.0,0,0,1
+62,22,Ocean Springs High School,7A,0-1,61.2,,,,100.0,9.0,47.0,19,72.36,40.9,Mostly same class,0.0,0,1,0
+72,23,Southaven High School,7A,0-1,58.5,,,,72.9,7.0,21.0,103,46.72,32.6,Playing down,-4.0,0,0,1
+79,24,West Harrison High School,7A,0-1,56.9,,,,92.7,7.0,40.0,48,55.45,37.3,Playing down,-3.0,0,0,1
+123,25,Murrah High School,7A,0-1,46.5,,,,99.5,6.0,55.0,233,24.97,28.0,Playing down,-1.0,0,0,1
