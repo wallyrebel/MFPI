@@ -29,11 +29,20 @@ export const metadata: Metadata = {
     siteName: 'Mississippi Football Power Index',
     title: 'Mississippi Football Power Index | Mississippi Football Rankings',
     description: 'Weekly, explainable Mississippi high school football rankings for all MHSAA classifications.',
+    images: [
+      {
+        url: '/mfpi-social-card.png',
+        width: 1200,
+        height: 630,
+        alt: 'Mississippi Football Power Index',
+      },
+    ],
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'Mississippi Football Power Index | Mississippi Football Rankings',
     description: 'Weekly Mississippi high school football rankings with scores, margin of victory, and strength of schedule.',
+    images: ['/mfpi-social-card.png'],
   },
   robots: { index: true, follow: true },
 };
