@@ -103,6 +103,27 @@ export default function RankingsDashboard({ snapshot }: { snapshot: Snapshot }) 
 
   return (
     <main>
+      <aside className="sponsor-strip" aria-label="Sponsored advertisement">
+        <div className="sponsor-inner">
+          <p className="sponsor-label">Sponsored By</p>
+          <a
+            className="sponsor-ad"
+            href="https://langstonlott.com/attorneys/casey-lott/"
+            rel="sponsored"
+            aria-label="Visit Casey Lott at Langston and Lott"
+          >
+            {/* The vinext client shim currently fails to hydrate next/image here. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/casey-lott-sponsor.png"
+              alt="Injury Law, Casey Lott, 662-888-8888"
+              width="600"
+              height="245"
+            />
+          </a>
+        </div>
+      </aside>
+
       <header className="site-header">
         <div className="header-inner">
           <a className="brand" href="#top" aria-label="MFPI home">
