@@ -4,9 +4,9 @@ MFPI is intentionally local and file-based. The command line is the admin interf
 
 ## Wednesday workflow
 
-1. At or after 1:00 p.m. America/Chicago, run `.\scripts\run_weekly.ps1`. It refreshes MHSAA scores and every paginated MaxPreps Mississippi ranking row automatically, then checks MaxPreps team schedules only for unresolved MHSAA games.
+1. At or after 1:00 p.m. America/Chicago, run `.\scripts\run_weekly.ps1`. It refreshes MHSAA scores and every paginated Media Rank and Strength of Schedule row automatically, then checks secondary team schedules only for unresolved MHSAA games.
 2. Read the printed report. `PUBLISHED` means the immutable week and `data/current` were written. `PROVISIONAL` means all teams were ranked but verified score coverage is still below 95%. `DRAFT` means a data-integrity problem blocked the dashboard update.
-3. For a provisional or blocked run, open the reported `data/drafts/<run-id>/validation.json`. A low-coverage issue lists every missing source game ID. Accepted MaxPreps fallbacks and any conflicting secondary reports are listed separately with event URLs.
+3. For a provisional or blocked run, open the reported `data/drafts/<run-id>/validation.json`. A low-coverage issue lists every missing source game ID. Accepted secondary fallbacks and any conflicting reports are listed separately with event URLs.
 4. Correct the upstream data or add a reviewed alias in `mfpi/matching.py`; rerun tests and then rerun the week. Never label a scoreless listing cancelled unless a source explicitly does so.
 5. Refresh the local browser. The dashboard reads `data/current/overall.json` at build/dev time.
 
@@ -24,7 +24,7 @@ python calculate_rankings.py --live --week 1 --cutoff "2026-09-02T13:00:00-05:00
 
 ## Validation rules
 
-Low verified-game coverage by itself produces a complete, visibly labeled provisional dashboard. Missing or duplicate MaxPreps team matches, a MaxPreps rankings cache older than eight days, conflicting MaxPreps score reports, duplicate game IDs or matchups, same-team games, impossible or future scores, duplicate aliases, ambiguous source matches, and SRS non-convergence remain hard blockers and cannot replace `data/current`. A recent MaxPreps cache may be used during a short source outage and is recorded as a warning. Unresolved games remain visible as a warning even after coverage reaches the 95% publication threshold.
+Low verified-game coverage by itself produces a complete, visibly labeled provisional dashboard. Missing or duplicate media-ranking team matches, a media-ranking cache older than eight days, conflicting secondary score reports, duplicate game IDs or matchups, same-team games, impossible or future scores, duplicate aliases, ambiguous source matches, and SRS non-convergence remain hard blockers and cannot replace `data/current`. A recent media cache may be used during a short source outage and is recorded as a warning.
 
 ## Corrections and history
 

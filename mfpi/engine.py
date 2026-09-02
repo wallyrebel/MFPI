@@ -261,7 +261,7 @@ def calculate_rankings(
             row.explanation = (
                 f"{row.team.display_name} {direction} to No. {row.state_rank} with an MFPI of {row.mfpi:.1f}. "
                 f"Its opponent-adjusted performance is {row.components['performance'].normalized:.1f}, SOS is "
-                f"{row.components['sos'].normalized:.1f}, MaxPreps rank is "
+                f"{row.components['sos'].normalized:.1f}, Media Rank is "
                 f"{f'No. {row.maxpreps_state_rank}' if row.maxpreps_state_rank else 'unavailable'}, and its schedule "
                 f"includes {row.up_games} game(s) up in class."
             )
@@ -269,7 +269,7 @@ def calculate_rankings(
             row.explanation = (
                 f"{row.team.display_name} enters at No. {row.state_rank} with an MFPI of {row.mfpi:.1f}; "
                 f"opponent-adjusted performance contributes {row.components['performance'].contribution:.2f} points and "
-                f"MaxPreps contributes {row.components['maxpreps_rank'].contribution + row.components['maxpreps_sos'].contribution:.2f} "
+                f"Media Rank and Strength of Schedule contribute {row.components['maxpreps_rank'].contribution + row.components['maxpreps_sos'].contribution:.2f} "
                 f"points. The schedule has {row.up_games} up, {row.same_class_games} same-class, and {row.down_games} down game(s)."
             )
     return EngineResult(rows, srs, iterations, converged)

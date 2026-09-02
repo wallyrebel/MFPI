@@ -104,7 +104,7 @@ def reconcile_games(
 def reconcile_maxpreps(
     official_teams: list[Team], rankings: list[MaxPrepsRanking]
 ) -> tuple[dict[str, MaxPrepsSignal], list[ValidationIssue]]:
-    """Match the statewide MaxPreps table to active MHSAA programs exactly once."""
+    """Match the statewide media table to active MHSAA programs exactly once."""
 
     matcher = TeamMatcher(official_teams)
     ranked_ids = {team.team_id for team in official_teams if team.ranked}
@@ -128,7 +128,7 @@ def reconcile_maxpreps(
                 ValidationIssue(
                     "DUPLICATE_MAXPREPS_TEAM",
                     "CRITICAL",
-                    f"More than one MaxPreps row matched {team.display_name}.",
+                    f"More than one media-ranking row matched {team.display_name}.",
                     {"team_id": team.team_id, "incoming": row.team_name},
                 )
             )
@@ -138,7 +138,7 @@ def reconcile_maxpreps(
                 ValidationIssue(
                     "FUZZY_MAXPREPS_TEAM_MATCH",
                     "WARNING",
-                    f"Matched MaxPreps {row.team_name!r} to {team.display_name!r} at {confidence:.3f} confidence.",
+                    f"Matched media-ranking team {row.team_name!r} to {team.display_name!r} at {confidence:.3f} confidence.",
                     {"team_id": team.team_id, "incoming": row.team_name, "confidence": confidence},
                 )
             )
@@ -157,7 +157,7 @@ def reconcile_maxpreps(
             ValidationIssue(
                 "MISSING_MAXPREPS_TEAMS",
                 "CRITICAL",
-                f"MaxPreps data matched {len(signals)} of {len(ranked_ids)} active MHSAA teams.",
+                f"Media-ranking data matched {len(signals)} of {len(ranked_ids)} active MHSAA teams.",
                 {"missing_team_ids": missing},
             )
         )
@@ -170,7 +170,7 @@ def supplement_games_with_maxpreps(
     observations: list[MaxPrepsScoreObservation],
     cutoff,
 ) -> tuple[list[Game], list[ValidationIssue]]:
-    """Fill only unresolved MHSAA listings from exact MaxPreps matchup evidence."""
+    """Fill only unresolved MHSAA listings from exact secondary matchup evidence."""
 
     matcher = TeamMatcher(teams)
     resolved_observations: list[tuple[MaxPrepsScoreObservation, str, str]] = []
@@ -235,7 +235,7 @@ def supplement_games_with_maxpreps(
                 ValidationIssue(
                     "MAXPREPS_SCORE_CONFLICT",
                     "CRITICAL",
-                    f"MaxPreps has conflicting terminal results for MHSAA game {game.game_id}.",
+                    f"The secondary source has conflicting terminal results for MHSAA game {game.game_id}.",
                     {
                         "mhsaa_game_id": game.game_id,
                         "observations": [candidate[0].to_dict() for candidate in candidates],
@@ -258,7 +258,7 @@ def supplement_games_with_maxpreps(
                 ValidationIssue(
                     "MAXPREPS_EVENT_REUSED",
                     "CRITICAL",
-                    f"MaxPreps event {observation.game_id} matched more than one MHSAA listing.",
+                    f"Secondary event {observation.game_id} matched more than one MHSAA listing.",
                     {"first_mhsaa_game_id": previous_use, "second_mhsaa_game_id": game.game_id},
                 )
             )
@@ -319,7 +319,7 @@ def supplement_games_with_maxpreps(
             ValidationIssue(
                 "MAXPREPS_SECONDARY_RESULTS_USED",
                 "WARNING",
-                f"Used exact MaxPreps matchup evidence for {len(recovered)} MHSAA listings without official finals.",
+                f"Used exact secondary matchup evidence for {len(recovered)} MHSAA listings without official finals.",
                 {"games": recovered},
             )
         )
@@ -328,7 +328,7 @@ def supplement_games_with_maxpreps(
             ValidationIssue(
                 "MAXPREPS_SECONDARY_STATUS_USED",
                 "WARNING",
-                f"Used MaxPreps cancellation/postponement status for {len(terminal_statuses)} MHSAA listings.",
+                f"Used secondary-source cancellation/postponement status for {len(terminal_statuses)} MHSAA listings.",
                 {"games": terminal_statuses},
             )
         )

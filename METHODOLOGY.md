@@ -1,6 +1,6 @@
 # MFPI methodology — version 3.0
 
-MFPI asks: based on whom a team played and how it performed, how strong is that team right now? Eighty percent of the answer comes from MHSAA classifications, schedules, and scores. Twenty percent comes from the statewide MaxPreps ranking and displayed strength value supplied under media-partner permission.
+MFPI asks: based on whom a team played and how it performed, how strong is that team right now? Eighty percent of the answer comes from MHSAA classifications, schedules, and scores. Twenty percent comes from statewide Media Rank and Strength of Schedule inputs.
 
 ## Final components
 
@@ -10,8 +10,8 @@ Each raw component becomes a robust statewide percentile among active MHSAA 1A�
 |---|---:|---|
 | Opponent-adjusted performance | 35% | Margin of victory/loss adjusted for opponent and site |
 | MFPI strength of schedule | 20% | Average current SRS of completed opponents |
-| MaxPreps statewide rank | 10% | Statewide ordinal rank, converted to a higher-is-better percentile |
-| MaxPreps strength | 10% | MaxPreps' displayed `Str.` field; `0.0` is treated as unavailable/neutral |
+| Media Rank | 10% | Statewide ordinal rank, converted to a higher-is-better percentile |
+| Media Strength of Schedule | 10% | Published schedule-strength field; `0.0` is treated as unavailable/neutral |
 | Points scored | 8% | PF/game, capped at 49 in each game |
 | Points allowed | 8% | Defensive value from PA/game, capped at 49 |
 | Record | 5% | Wins plus half credit for ties |
@@ -48,8 +48,8 @@ A road team receives +2 performance points and a home team −2; the recorded sc
 - **Offense:** season average of `min(points scored, 49)`; displayed PF/G remains actual.
 - **Defense:** season average of `49 − min(points allowed, 49)`; displayed PA/G remains actual.
 - **Recent form:** opponent-adjusted game performances from the last three games, weighted 1.00, 0.70, and 0.50 newest-first.
-- **MaxPreps statewide rank:** the weekly statewide ordering after filtering to active MHSAA 1A–7A teams. The rating is stored for audit, but the rank percentile is the formula input.
-- **MaxPreps strength:** the weekly displayed `Str.` value normalized statewide. A `0.0` opening value is neutral instead of being treated as the state's weakest schedule.
+- **Media Rank:** the weekly statewide ordering after filtering to active MHSAA 1A–7A teams. The rating is stored for audit, but the rank percentile is the formula input.
+- **Media Strength of Schedule:** the weekly published schedule-strength value normalized statewide. A `0.0` opening value is neutral instead of being treated as the state's weakest schedule.
 
 ## Ranking and ties
 

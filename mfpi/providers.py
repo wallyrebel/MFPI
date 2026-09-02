@@ -264,7 +264,7 @@ class MaxPrepsFetch:
 
 
 class MaxPrepsRankingProvider:
-    """Fetch every paginated Mississippi football ranking from MaxPreps."""
+    """Fetch every paginated statewide media football ranking."""
 
     def __init__(self, transport: Callable[..., bytes] = _request_bytes, request_delay: float = 0.10) -> None:
         self.transport = transport
@@ -288,7 +288,7 @@ class MaxPrepsRankingProvider:
                     )
                 )
             except (KeyError, ValueError) as error:
-                raise ValueError(f"Invalid MaxPreps ranking row: {row}") from error
+                raise ValueError(f"Invalid media-ranking row: {row}") from error
         return rankings
 
     @staticmethod
@@ -302,7 +302,7 @@ class MaxPrepsRankingProvider:
         rankings = [MaxPrepsRanking(**item) for item in payload["rankings"]]
         ranks = [row.state_rank for row in rankings]
         if len(rankings) < 200 or len(ranks) != len(set(ranks)):
-            raise ValueError(f"Cached MaxPreps statewide data is incomplete or duplicated ({len(rankings)} rows)")
+            raise ValueError(f"Cached media-ranking data is incomplete or duplicated ({len(rankings)} rows)")
         return MaxPrepsFetch(
             rankings=rankings,
             retrieved_at=_parse_timestamp(payload["retrieved_at"]),
@@ -322,18 +322,18 @@ class MaxPrepsRankingProvider:
                     source_updated_at = self._updated_at(html)
                 if not page_rows:
                     if page == 1:
-                        raise ValueError("MaxPreps first rankings page contained no rows")
+                        raise ValueError("The first media-ranking page contained no rows")
                     break
                 rankings.extend(page_rows)
                 if len(page_rows) < 25:
                     break
                 time.sleep(self.request_delay)
             else:
-                raise ValueError("MaxPreps pagination exceeded 20 pages")
+                raise ValueError("Media-ranking pagination exceeded 20 pages")
 
             ranks = [row.state_rank for row in rankings]
             if len(rankings) < 200 or len(ranks) != len(set(ranks)):
-                raise ValueError(f"MaxPreps statewide parse was incomplete or duplicated ({len(rankings)} rows)")
+                raise ValueError(f"The statewide media-ranking parse was incomplete or duplicated ({len(rankings)} rows)")
             cache_path.parent.mkdir(parents=True, exist_ok=True)
             cache_path.write_text(
                 json.dumps(
@@ -365,7 +365,7 @@ class MaxPrepsScoreFetch:
 
 
 class MaxPrepsScoreProvider:
-    """Read MaxPreps team schedules only for unresolved MHSAA games."""
+    """Read secondary team schedules only for unresolved MHSAA games."""
 
     _SCORE_RE = re.compile(r"\b(won|lost|tied)\b.*?\bby a score of\s+(\d+)-(\d+)", re.IGNORECASE)
     _ACTOR_RE = re.compile(
@@ -384,7 +384,7 @@ class MaxPrepsScoreProvider:
         if path.endswith("/schedule"):
             return absolute
         if not path.endswith("/football"):
-            raise ValueError(f"Unexpected MaxPreps football team URL: {team_url}")
+            raise ValueError(f"Unexpected secondary football team URL: {team_url}")
         return absolute.rstrip("/") + "/schedule/"
 
     @staticmethod

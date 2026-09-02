@@ -78,7 +78,7 @@ def main(argv: list[str] | None = None) -> int:
                 ValidationIssue(
                     "MAXPREPS_CACHE_FALLBACK",
                     "CRITICAL" if cache_age > timedelta(days=8) else "WARNING",
-                    f"Used cached MaxPreps rankings retrieved {maxpreps_fetch.retrieved_at.isoformat()} after the live pull failed.",
+                    f"Used cached media rankings retrieved {maxpreps_fetch.retrieved_at.isoformat()} after the live pull failed.",
                     {"cache_age_hours": round(cache_age.total_seconds() / 3600, 1)},
                 )
             )
@@ -126,7 +126,7 @@ def main(argv: list[str] | None = None) -> int:
                 ValidationIssue(
                     "MAXPREPS_SCORE_CACHE_FALLBACK",
                     "WARNING",
-                    "Used cached MaxPreps team schedules after one or more live secondary-score requests failed.",
+                    "Used cached secondary team schedules after one or more live score requests failed.",
                     {"team_ids": list(maxpreps_score_fetch.cached_team_ids)},
                 )
             )
@@ -135,7 +135,7 @@ def main(argv: list[str] | None = None) -> int:
                 ValidationIssue(
                     "MAXPREPS_SCORE_SOURCE_UNAVAILABLE",
                     "WARNING",
-                    "Some unresolved MHSAA games could not be checked against MaxPreps and remain unverified.",
+                    "Some unresolved MHSAA games could not be checked against the secondary score source and remain unverified.",
                     {"team_ids": list(maxpreps_score_fetch.failed_team_ids)},
                 )
             )
@@ -150,14 +150,14 @@ def main(argv: list[str] | None = None) -> int:
                 "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/",
             },
             {
-                "name": "MaxPreps Mississippi football rankings",
+                "name": "Media Rank and Strength of Schedule",
                 "url": MAXPREPS_RANKINGS_URL.format(page=1),
                 "retrieved_at": maxpreps_fetch.retrieved_at.isoformat(),
                 "source_updated_at": maxpreps_fetch.source_updated_at,
                 "cached_fallback": maxpreps_fetch.used_cache,
             },
             {
-                "name": "MaxPreps football scores (secondary only)",
+                "name": "Secondary score verification",
                 "url": "https://www.maxpreps.com/ms/football/scores/",
                 "retrieved_at": maxpreps_score_fetch.retrieved_at.isoformat(),
                 "team_schedule_pages_checked": len(maxpreps_score_targets),
