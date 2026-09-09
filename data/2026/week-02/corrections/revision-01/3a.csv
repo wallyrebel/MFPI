@@ -1,0 +1,40 @@
+state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
+31,1,Port Gibson High School,3A,2-0,74.3,66,6,21.3,62.8,36.0,11.0,96,45.3,13.7,Playing up,2.0,2,0,0
+44,2,Booneville High School,3A,2-0,68.8,57,6,16.6,40.5,38.5,16.5,79,48.68,19.5,Mostly same class,0.0,1,0,1
+46,3,Independence High School,3A,2-0,68.3,95,18,25.7,54.5,27.5,10.0,104,43.29,16.9,Mostly same class,0.0,1,0,1
+47,4,Noxubee County High School,3A,2-0,68.3,58,6,17.3,44.8,41.0,27.0,30,60.2,27.4,Playing down,-1.0,0,0,2
+51,5,Winona Secondary School,3A,2-0,66.8,-16,-4,-1.8,21.6,38.0,3.5,62,51.04,13.4,Playing up,1.5,1,0,1
+59,6,Seminary High School,3A,2-0,64.0,-2,-4,1.7,5.4,43.0,3.0,68,50.16,15.4,Mostly same class,0.0,1,0,1
+71,7,Presbyterian Christian School,3A,2-0,61.3,19,-1,6.1,36.9,26.0,15.0,69,50.06,24.2,Playing down,-1.0,0,0,1
+76,8,Alcorn Central High School,3A,1-1,60.5,101,22,25.1,59.9,25.5,13.5,150,35.27,18.6,Playing down,-0.5,1,0,1
+81,9,Raleigh High School,3A,1-1,59.7,8,-4,4.4,78.4,17.0,21.0,39,57.06,31.5,Playing up,2.5,2,0,0
+87,10,Thomas E. Edwards,3A,2-0,58.1,26,2,8.2,31.5,21.0,2.0,124,40.89,12.6,Playing up,1.0,2,0,0
+92,11,Hazlehurst High School,3A,1-0,56.6,39,5,11.7,50.9,31.0,22.0,98,45.16,19.6,Playing down,-1.0,0,0,1
+97,12,Jefferson Davis County High School,3A,0-2,54.9,10,-1,4.0,77.9,20.5,26.0,78,48.71,35.5,Playing up,2.0,1,0,0
+102,13,O’Bannon High School,3A,2-0,53.1,2,-4,1.9,0.0,41.0,4.0,137,39.27,3.5,Playing down,-1.5,0,0,2
+105,14,Aberdeen High School,3A,2-0,52.1,17,-1,5.5,12.2,48.0,34.0,83,47.65,17.8,Playing down,-2.0,0,0,2
+110,15,Belmont School,3A,1-1,50.9,29,5,7.6,26.6,22.5,10.5,113,42.11,17.1,Playing down,-1.0,0,0,1
+113,16,Magee High School,3A,1-1,49.3,-39,-13,-8.9,22.1,39.5,17.5,117,41.74,17.8,Playing down,-0.5,1,0,1
+120,17,Choctaw County High School,3A,0-2,47.8,15,1,3.5,72.1,22.0,33.5,43,55.48,32.9,Playing up,0.5,1,0,1
+136,18,Holly Springs High School,3A,2-0,43.8,16,4,3.9,13.5,33.0,18.5,186,29.37,7.8,Playing down,-1.0,0,1,1
+141,19,Franklin High School,3A,0-2,40.6,-16,-5,-5.8,80.6,9.0,29.5,201,27.24,24.3,Playing up,2.0,2,0,0
+148,20,St. Stanislaus,3A,1-1,38.9,16,4,1.1,19.4,28.0,17.0,203,26.87,8.4,Playing up,1.0,2,0,0
+151,21,Jefferson Co High,3A,0-2,38.6,3,2,-1.2,93.7,6.0,34.5,217,25.36,27.6,Playing up,1.0,1,0,0
+153,22,Tylertown High School,3A,1-1,38.2,23,7,2.8,73.0,11.0,30.5,181,30.77,21.4,Playing up,1.0,2,0,0
+158,23,Mantachie Attendance Center,3A,1-1,36.8,15,4,1.2,16.2,35.0,27.0,187,29.37,8.6,Playing down,-1.0,0,1,1
+159,24,Southeast Lauderdale High School,3A,1-1,36.8,11,2,0.5,35.6,10.0,13.5,209,26.39,18.2,Playing down,-1.5,0,0,2
+162,25,Union High School,3A,1-1,35.9,-25,-6,-7.9,39.0,23.0,30.0,178,31.03,18.9,Playing down,-1.0,0,0,2
+170,26,St. Patrick,3A,1-1,33.9,-40,-11,-11.1,41.9,10.5,15.0,212,26.0,11.3,Playing down,-1.0,0,0,1
+174,27,Yazoo County High School,3A,1-1,33.2,-94,-23,-23.4,4.1,38.0,18.0,211,26.01,11.1,Playing down,-1.5,0,0,2
+175,28,Humphreys County High School,3A,0-1,32.3,-42,-11,-12.3,57.2,8.0,30.0,202,27.01,22.9,Playing down,-2.0,0,0,1
+177,29,North Panola High School,3A,0-2,31.6,10,5,-1.4,71.2,7.0,30.0,232,21.45,21.4,Mostly same class,0.0,1,0,1
+179,30,Nettleton High School,3A,0-2,31.4,12,6,-0.4,56.8,23.0,34.5,236,19.9,18.3,Mostly same class,0.0,1,0,1
+182,31,Pisgah High School,3A,1-1,30.7,7,4,-2.1,5.0,27.0,20.5,180,30.77,9.7,Playing down,-1.5,0,0,2
+192,32,Coahoma County Jr/Sr High School,3A,0-2,26.9,14,7,-1.0,67.6,12.0,45.0,234,21.45,24.1,Playing down,-0.5,1,0,1
+194,33,Kossuth High School,3A,0-2,26.7,-10,0,-7.1,48.2,10.0,31.0,220,25.32,23.8,Playing down,-1.0,0,0,1
+195,34,Amanda Elzy High School,3A,0-2,26.5,7,4,-2.1,81.5,0.0,42.0,252,10.49,21.3,Playing up,1.0,1,0,1
+196,35,Quitman High School,3A,0-2,26.0,-21,-7,-9.5,44.8,24.0,57.0,200,27.26,27.4,Playing down,-1.0,0,0,2
+199,36,St. Andrew’S,3A,0-2,25.1,-32,-11,-11.9,64.9,9.5,41.5,251,11.98,20.1,Playing down,-2.0,0,0,1
+202,37,West Marion High School,3A,0-2,24.4,-2,0,-4.5,61.3,0.0,39.5,235,21.18,25.7,Mostly same class,0.0,1,0,1
+206,38,Crystal Springs High School,3A,0-2,23.5,-24,-6,-10.9,62.8,1.0,26.0,267,-7.4,13.7,Playing up,2.0,2,0,0
+219,39,McLaurin Attendance Center,3A,1-1,14.9,-40,-8,-20.0,7.7,22.5,35.5,265,-6.18,7.0,Playing down,-1.5,0,0,2
