@@ -5,7 +5,8 @@ from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime
 
-from .config import COMPONENTS, Settings, class_prior_points, weights_for_games
+from .config import BYE_PREVIOUS_WEIGHT, COMPONENTS, Settings, class_prior_points, weights_for_games
+from .byes import result_fingerprint, unchanged_results
 from .models import ComponentValue, Game, MaxPrepsSignal, RankingRow, Team
 from .normalize import robust_percentiles
 from .srs import adjusted_margin, perspective, solve_srs
@@ -104,6 +105,7 @@ def calculate_rankings(
     previous: dict[str, dict] | None = None,
     maxpreps: dict[str, MaxPrepsSignal] | None = None,
     external_ratings: dict[str, float] | None = None,
+    confirmed_bye_team_ids: set[str] | None = None,
 ) -> EngineResult:
     maxpreps = maxpreps or {}
     external_ratings = external_ratings or {}
@@ -247,12 +249,28 @@ def calculate_rankings(
                 class_schedule_delta=float(stats[team_id]["class_schedule_delta"]),
                 components=components,
                 mfpi=mfpi,
+                game_results=result_fingerprint(by_team.get(team_id, [])),
                 maxpreps_state_rank=maxpreps.get(team_id).state_rank if team_id in maxpreps else None,
                 maxpreps_rating=maxpreps.get(team_id).rating if team_id in maxpreps else None,
                 maxpreps_strength=maxpreps.get(team_id).strength if team_id in maxpreps else None,
             )
         )
 
+    previous = previous or {}
+    for row in rows:
+        old = previous.get(row.team.team_id)
+        if row.team.team_id not in (confirmed_bye_team_ids or set()) or not old or not unchanged_results(row, old):
+            continue
+        old_score = old.get("mfpi_unrounded", old.get("mfpi"))
+        if not isinstance(old_score, (int, float)) or not 1 <= old_score <= 100:
+            continue
+        recalculated = row.mfpi
+        row.mfpi = BYE_PREVIOUS_WEIGHT * old_score + (1 - BYE_PREVIOUS_WEIGHT) * recalculated
+        row.bye_adjustment = {
+            "previous_weight": BYE_PREVIOUS_WEIGHT, "previous_mfpi": old_score,
+            "recalculated_mfpi": recalculated, "adjustment": row.mfpi - recalculated,
+            "reason": "Confirmed bye; no new or changed verified results.",
+        }
     rows = _apply_tie_breakers(rows, completed_games)
     class_counts: dict[str, int] = defaultdict(int)
     previous = previous or {}
@@ -282,4 +300,6 @@ def calculate_rankings(
                 f"Media Rank and Strength of Schedule contribute {row.components['maxpreps_rank'].contribution + row.components['maxpreps_sos'].contribution:.2f} "
                 f"points. The schedule has {row.up_games} up, {row.same_class_games} same-class, and {row.down_games} down game(s)."
             )
+        if row.bye_adjustment:
+            row.explanation += " Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
     return EngineResult(rows, srs, iterations, converged)

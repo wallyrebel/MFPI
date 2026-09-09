@@ -27,6 +27,7 @@ export type Ranking = {
   schedule_direction: string;
   components: Record<string, ComponentValue>;
   explanation: string;
+  bye_adjustment?: { previous_weight: number; previous_mfpi: number; recalculated_mfpi: number; adjustment: number } | null;
 };
 
 export type Snapshot = {
@@ -208,6 +209,9 @@ export default function RankingsDashboard({ snapshot }: { snapshot: Snapshot }) 
                   </summary>
                   <div className="team-details">
                     <p>{publicExplanation(row)}</p>
+                    {row.bye_adjustment && (
+                      <p className="schedule-detail"><strong>Bye-week protection:</strong> 90% of last week&apos;s {row.bye_adjustment.previous_mfpi.toFixed(2)} + 10% of this week&apos;s recalculated {row.bye_adjustment.recalculated_mfpi.toFixed(2)} = {row.mfpi.toFixed(1)} MFPI. The components below total the recalculated score; the bye adjustment is {row.bye_adjustment.adjustment >= 0 ? '+' : ''}{row.bye_adjustment.adjustment.toFixed(2)} points.</p>
+                    )}
                     <p className="schedule-detail"><strong>{row.schedule_direction}:</strong> {row.up_games} up · {row.same_class_games} same · {row.down_games} down</p>
                     <div className="component-grid">
                       {Object.entries(row.components).map(([name, value]) => (
@@ -223,12 +227,12 @@ export default function RankingsDashboard({ snapshot }: { snapshot: Snapshot }) 
               );
             })}
           </div>
-          <p className="table-note">SOS is a statewide percentile: 100 means the strongest verified schedule in this week&apos;s field, not a perfect or absolute schedule grade. Select a team row to see every component and its exact MFPI contribution.</p>
+          <p className="table-note">SOS is a statewide percentile: 100 means the strongest verified schedule in this week&apos;s field, not a perfect or absolute schedule grade. Select a team row to see its component contributions and any bye-week adjustment.</p>
         </section>
 
         <section className="method-card">
           <div><p className="eyebrow">How MFPI thinks</p><h2>Strong opponents matter.<br />Runaway scores don’t.</h2></div>
-          <div className="method-copy"><p>A 70-point margin is compressed with a diminishing-return curve. A 4A team facing 7A opponents gets stronger schedule credit than one facing 1A opponents; the 7A-to-1A starting assumption fades as real results connect the state.</p><p>Media Rank and Strength of Schedule each contribute 10%. Rankings use full-precision scores, and class lists reuse the statewide calculation rather than recalculating a smaller pool.</p></div>
+          <div className="method-copy"><p>A 70-point margin is compressed with a diminishing-return curve. A 4A team facing 7A opponents gets stronger schedule credit than one facing 1A opponents; the 7A-to-1A starting assumption fades as real results connect the state.</p><p>Media Rank and Strength of Schedule each contribute 10%. On a confirmed bye, MFPI retains 90% of the previous week&apos;s score and uses 10% of the recalculated score. Other teams can still pass an idle team. Rankings use full-precision scores, and class lists reuse the statewide calculation.</p></div>
         </section>
 
         <footer><span>MFPI · Local weekly ranking desk</span><span>Formula {snapshot.metadata.formula_version} · No human voting</span></footer>

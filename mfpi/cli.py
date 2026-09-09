@@ -9,6 +9,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from .config import CENTRAL, FORMULA_VERSION, Settings, ranking_week
+from .byes import confirmed_byes
 from .engine import calculate_rankings
 from .fixtures import demo_dataset
 from .models import ValidationIssue
@@ -86,6 +87,7 @@ def main(argv: list[str] | None = None) -> int:
     source_meta: list[dict] = []
     prior_issues: list[ValidationIssue] = []
     maxpreps_signals = {}
+    bye_team_ids: set[str] = set()
 
     if args.demo:
         teams, games = demo_dataset()
@@ -137,6 +139,11 @@ def main(argv: list[str] | None = None) -> int:
             cutoff,
         )
         prior_issues.extend(maxpreps_score_issues)
+        bye_team_ids = confirmed_byes(
+            games, maxpreps_score_fetch.games, cutoff,
+            set(maxpreps_score_targets) - set(maxpreps_score_fetch.cached_team_ids)
+            - set(maxpreps_score_fetch.failed_team_ids),
+        )
         external_states = {}
         for observation in maxpreps_score_fetch.games:
             for team_url in (observation.home_url, observation.away_url):
@@ -209,7 +216,10 @@ def main(argv: list[str] | None = None) -> int:
 
     previous = load_previous(args.data_root, args.season, week)
     report = validate_inputs(teams, games, cutoff, settings, prior_issues)
-    result = calculate_rankings(teams, games, cutoff, settings, previous, maxpreps_signals, external_ratings if not args.demo else None)
+    result = calculate_rankings(
+        teams, games, cutoff, settings, previous, maxpreps_signals,
+        external_ratings if not args.demo else None, confirmed_bye_team_ids=bye_team_ids,
+    )
     if not result.converged:
         report.issues.append(
             ValidationIssue(
@@ -229,6 +239,10 @@ def main(argv: list[str] | None = None) -> int:
         "games": len([game for game in games if game.completed and game.date <= cutoff]),
         "srs_iterations": result.iterations,
         "srs_converged": result.converged,
+        "bye_adjusted_teams": [
+            {"team": row.team.display_name, "mfpi": round(row.mfpi, 1), "rank": row.state_rank}
+            for row in result.rankings if row.bye_adjustment
+        ],
         "top_five": [
             {"rank": row.state_rank, "team": row.team.display_name, "mfpi": round(row.mfpi, 1)}
             for row in result.rankings[:5]

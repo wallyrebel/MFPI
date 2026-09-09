@@ -17,6 +17,11 @@ def load_previous(data_root: Path, season: int, week: int) -> dict[str, dict[str
     path = data_root / str(season) / f"week-{week - 1:02d}" / "overall.json"
     if not path.exists():
         return {}
+    # Week N must inherit the latest audited publication of week N-1, never
+    # the current week's earlier revision (which would repeatedly compound).
+    revisions = sorted((path.parent / "corrections").glob("revision-*/overall.json"))
+    if revisions:
+        path = revisions[-1]
     payload = json.loads(path.read_text(encoding="utf-8"))
     return {row["team_id"]: row for row in payload.get("rankings", [])}
 

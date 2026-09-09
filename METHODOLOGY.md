@@ -1,4 +1,4 @@
-# MFPI methodology — version 3.1
+# MFPI methodology — version 3.2
 
 MFPI asks: based on whom a team played and how it performed, how strong is that team right now? Eighty percent of the answer comes from MHSAA classifications, schedules, and scores. Twenty percent comes from statewide Media Rank and Strength of Schedule inputs.
 
@@ -54,4 +54,26 @@ A road team receives +2 performance points and a home team −2; the recorded sc
 
 ## Ranking and ties
 
-State and class lists use the same MFPI score; class scores are never recalculated. Order is unrounded MFPI, opponent-adjusted performance, SOS, head-to-head when applicable, capped season scoring margin, then team name for deterministic output. Weekly movement compares the immutable prior snapshot. A team absent from that snapshot is `NEW`.
+### Confirmed bye-week stability
+
+On a confirmed bye with unchanged verified results, the final score is
+`0.90 × previous week's published MFPI + 0.10 × current recalculated MFPI`.
+The adjustment is symmetric for increases and decreases. It protects the score,
+not a rank position: other teams may pass an idle team. Playing teams keep the
+normal formula. Teams with no previous games receive no protection.
+
+A fresh secondary team schedule must contain entries before and after the
+weekly cutoff window, with no contest during it. Any official game in that
+window, unresolved historical listing, cached/failed team schedule, or changed
+result prevents protection. Future snapshots store game-level fingerprints to
+detect corrections. Legacy snapshots without fingerprints are eligible only
+with one previous game and matching recorded scores, record, capped scoring
+components, and class-schedule statistics.
+
+Component values continue to describe the unsmoothed recalculation. The JSON
+and team details separately disclose the previous score, recalculated score,
+90% weight, and adjustment so the final score remains auditable. Corrections
+always compare with the latest audited snapshot of the *previous week*, never
+with an earlier run of the same week.
+
+State and class lists use the same final MFPI score; class scores are never recalculated. Order is unrounded MFPI, opponent-adjusted performance, SOS, head-to-head when applicable, capped season scoring margin, then team name for deterministic output. Weekly movement compares the latest audited prior-week snapshot. A team absent from that snapshot is `NEW`.

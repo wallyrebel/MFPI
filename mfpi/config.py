@@ -4,7 +4,8 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
-FORMULA_VERSION = "MFPI-3.1"
+FORMULA_VERSION = "MFPI-3.2"
+BYE_PREVIOUS_WEIGHT = 0.90
 CENTRAL = ZoneInfo("America/Chicago")
 
 COMPONENTS = (

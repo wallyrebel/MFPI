@@ -165,6 +165,8 @@ class RankingRow:
     maxpreps_state_rank: int | None = None
     maxpreps_rating: float | None = None
     maxpreps_strength: float | None = None
+    game_results: list[dict[str, Any]] = field(default_factory=list)
+    bye_adjustment: dict[str, Any] | None = None
 
     @property
     def record(self) -> str:
@@ -213,6 +215,8 @@ class RankingRow:
             "maxpreps_rating": self.maxpreps_rating,
             "maxpreps_strength": self.maxpreps_strength,
             "components": {name: value.to_dict() for name, value in self.components.items()},
+            "game_results": self.game_results,
+            "bye_adjustment": self.bye_adjustment,
             "explanation": self.explanation,
         }
 
