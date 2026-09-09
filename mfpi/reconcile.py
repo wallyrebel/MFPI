@@ -12,7 +12,7 @@ from .models import (
     Team,
     ValidationIssue,
 )
-from urllib.parse import urljoin, urlparse
+from urllib.parse import parse_qs, urljoin, urlparse
 from .providers import MAXPREPS_ROOT
 
 
@@ -113,7 +113,29 @@ def reconcile_maxpreps(
     signals: dict[str, MaxPrepsSignal] = {}
     issues: list[ValidationIssue] = []
 
+    # The consolidated 2026 Leake program has a new media profile. The old
+    # Leake Central page remains in the table with a 0-0 record. Only retire
+    # that exact placeholder when the verified successor is also present.
+    leake_successors = [
+        row for row in rankings
+        if row.team_name == "Leake"
+        and parse_qs(urlparse(row.team_url).query).get("schoolid")
+        == ["80480779-619d-4cd9-9feb-c26005e4201f"]
+    ]
     for row in rankings:
+        if (
+            len(leake_successors) == 1
+            and row.team_name == "Leake Central"
+            and row.record == "0-0"
+            and urlparse(row.team_url).path.rstrip("/") == "/ms/carthage/leake-central-gators/football"
+        ):
+            issues.append(ValidationIssue(
+                "RETIRED_MAXPREPS_PROFILE", "WARNING",
+                "Used the consolidated Leake program's media profile instead of its retired 0-0 listing.",
+                {"team_id": "leake-central", "retired_url": row.team_url,
+                 "active_url": leake_successors[0].team_url},
+            ))
+            continue
         incoming_name = row.team_name
         normalized = normalize_name(row.team_name)
         location = row.team_url.lower()
@@ -279,6 +301,35 @@ def supplement_games_with_maxpreps(
             "source_urls": source_urls,
         }
         if observation.status == "COMPLETED":
+            # A rescheduled contest can leave an unfinished old listing next
+            # to the official final under a new ID. Corroborate the actual
+            # date and score before discarding only the stale listing.
+            official_finals = [
+                other for other in games
+                if other.game_id != game.game_id and other.completed and other.verified
+                and {other.home_team_id, other.away_team_id} == primary_pair
+                and other.date.date() == observation.date.date()
+            ]
+            if len(official_finals) == 1:
+                final = official_finals[0]
+                official_scores = {final.home_team_id: final.home_score, final.away_team_id: final.away_score}
+                secondary_scores = {home_id: observation.home_score, away_id: observation.away_score}
+                if official_scores == secondary_scores and final.forfeit == observation.forfeit:
+                    issues.append(ValidationIssue(
+                        "STALE_RESCHEDULED_LISTING", "WARNING",
+                        f"Excluded stale MHSAA listing {game.game_id}; official final {final.game_id} is independently corroborated.",
+                        {**audit, "retained_mhsaa_game_id": final.game_id,
+                         "home_score": observation.home_score, "away_score": observation.away_score},
+                    ))
+                    continue
+                issues.append(ValidationIssue(
+                    "MAXPREPS_SCORE_CONFLICT", "CRITICAL",
+                    f"Secondary evidence for {game.game_id} conflicts with official final {final.game_id}.",
+                    {**audit, "official_game_id": final.game_id,
+                     "official_scores": official_scores, "secondary_scores": secondary_scores},
+                ))
+                output.append(game)
+                continue
             updated = replace(
                 game,
                 date=observation.date,

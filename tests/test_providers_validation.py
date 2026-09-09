@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import pytest
 from pathlib import Path
 from dataclasses import replace
 from datetime import datetime, timedelta, timezone
@@ -208,6 +209,59 @@ def test_maxpreps_reconciliation_requires_every_active_team() -> None:
     signals, issues = reconcile_maxpreps(teams, [MaxPrepsRanking(1, "Alpha", "1-0", 70.0, 30.0)])
     assert set(signals) == {"alpha"}
     assert any(issue.code == "MISSING_MAXPREPS_TEAMS" and issue.severity == "CRITICAL" for issue in issues)
+
+
+@pytest.mark.parametrize("reverse", [False, True])
+def test_consolidated_leake_profile_replaces_only_retired_placeholder(reverse) -> None:
+    teams = [make_team("Leake Central")]
+    old = MaxPrepsRanking(82, "Leake Central", "0-0", 47.67, 0.0,
+                         "/ms/carthage/leake-central-gators/football/")
+    active = MaxPrepsRanking(139, "Leake", "2-0", 38.61, 10.3,
+                            "/local/team/home.aspx?schoolid=80480779-619d-4cd9-9feb-c26005e4201f&season=fall")
+    rows = [active, old] if reverse else [old, active]
+    signals, issues = reconcile_maxpreps(teams, rows)
+    assert signals["leake-central"].rating == 38.61
+    assert [issue.code for issue in issues] == ["RETIRED_MAXPREPS_PROFILE"]
+    _, issues = reconcile_maxpreps(teams, [replace(old, record="1-0"), active])
+    assert any(issue.code == "DUPLICATE_MAXPREPS_TEAM" for issue in issues)
+    _, issues = reconcile_maxpreps(teams, [old, replace(active, team_url="/unknown/")])
+    assert any(issue.code == "DUPLICATE_MAXPREPS_TEAM" for issue in issues)
+
+
+@pytest.mark.parametrize("reverse", [False, True])
+@pytest.mark.parametrize("conflicting", [False, True])
+def test_rescheduled_listing_does_not_double_count_corroborated_official_final(cutoff, reverse, conflicting) -> None:
+    teams = [make_team("Alpha"), make_team("Beta")]
+    final = make_game("official-final", "alpha", "beta", 21, 14)
+    stale = replace(final, game_id="old-listing", date=final.date + timedelta(days=1),
+                    status="UPCOMING", verified=False, home_score=None, away_score=None)
+    observation = MaxPrepsScoreObservation(
+        game_id="secondary", date=final.date, home_name="Beta", away_name="Alpha",
+        home_score=14, away_score=24 if conflicting else 21, status="COMPLETED", forfeit=False,
+        source_url="https://www.maxpreps.com/game/one/", observed_from_team_id="alpha",
+        retrieved_at=cutoff,
+    )
+    primary = [stale, final] if reverse else [final, stale]
+    games, issues = supplement_games_with_maxpreps(teams, primary, [observation], cutoff)
+    if conflicting:
+        assert len(games) == 2
+        assert any(issue.code == "MAXPREPS_SCORE_CONFLICT" for issue in issues)
+        assert not validate_inputs(teams, games, cutoff, Settings(), issues).valid
+    else:
+        assert games == [final]
+        assert [issue.code for issue in issues] == ["STALE_RESCHEDULED_LISTING"]
+        report = validate_inputs(teams, games, cutoff, Settings(), issues)
+        assert report.valid and report.verified_games == report.expected_games == 1
+
+
+def test_rescheduled_listing_needs_independent_evidence(cutoff) -> None:
+    teams = [make_team("Alpha"), make_team("Beta")]
+    final = make_game("official-final", "alpha", "beta", 21, 14)
+    stale = replace(final, game_id="old-listing", date=final.date + timedelta(days=1),
+                    status="UPCOMING", verified=False, home_score=None, away_score=None)
+    games, issues = supplement_games_with_maxpreps(teams, [final, stale], [], cutoff)
+    assert games == [final, stale]
+    assert not issues
 
 
 def test_validation_blocks_low_coverage_and_impossible_scores(cutoff) -> None:
