@@ -1,0 +1,3629 @@
+{
+  "source": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/",
+  "retrieved_at": "2026-09-02T03:26:39.781738+00:00",
+  "teams": [
+    {
+      "team_id": "desoto-central",
+      "canonical_name": "desoto central",
+      "display_name": "Desoto Central High School",
+      "classification": "7A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "DESOTO CENTRAL HIGH SCHOOL",
+        "desoto central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "hernando",
+      "canonical_name": "hernando",
+      "display_name": "Hernando High School",
+      "classification": "7A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HERNANDO HIGH SCHOOL",
+        "hernando"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "horn-lake",
+      "canonical_name": "horn lake",
+      "display_name": "Horn Lake High",
+      "classification": "7A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HORN LAKE HIGH",
+        "horn lake"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "lewisburg",
+      "canonical_name": "lewisburg",
+      "display_name": "Lewisburg High School",
+      "classification": "7A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LEWISBURG HIGH SCHOOL",
+        "lewisburg"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "southaven",
+      "canonical_name": "southaven",
+      "display_name": "Southaven High School",
+      "classification": "7A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SOUTHAVEN HIGH SCHOOL",
+        "southaven"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "tupelo",
+      "canonical_name": "tupelo",
+      "display_name": "Tupelo High School",
+      "classification": "7A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "TUPELO HIGH SCHOOL",
+        "tupelo"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "clinton",
+      "canonical_name": "clinton",
+      "display_name": "Clinton High School",
+      "classification": "7A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CLINTON HIGH SCHOOL",
+        "clinton"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "germantown",
+      "canonical_name": "germantown",
+      "display_name": "Germantown High School",
+      "classification": "7A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "GERMANTOWN HIGH SCHOOL",
+        "germantown"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "madison-central",
+      "canonical_name": "madison central",
+      "display_name": "Madison Central High School",
+      "classification": "7A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MADISON CENTRAL HIGH SCHOOL",
+        "madison central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "murrah",
+      "canonical_name": "murrah",
+      "display_name": "Murrah High School",
+      "classification": "7A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MURRAH HIGH SCHOOL",
+        "murrah"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "oxford",
+      "canonical_name": "oxford",
+      "display_name": "Oxford High School",
+      "classification": "7A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "OXFORD HIGH SCHOOL",
+        "oxford"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "starkville",
+      "canonical_name": "starkville",
+      "display_name": "Starkville High School",
+      "classification": "7A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "STARKVILLE HIGH SCHOOL",
+        "starkville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "brandon",
+      "canonical_name": "brandon",
+      "display_name": "Brandon High School",
+      "classification": "7A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BRANDON HIGH SCHOOL",
+        "brandon"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "meridian",
+      "canonical_name": "meridian",
+      "display_name": "Meridian High School",
+      "classification": "7A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "Meridian High School",
+        "meridian"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "northwest-rankin",
+      "canonical_name": "northwest rankin",
+      "display_name": "Northwest Rankin High School",
+      "classification": "7A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NORTHWEST RANKIN HIGH SCHOOL",
+        "northwest rankin"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "oak-grove",
+      "canonical_name": "oak grove",
+      "display_name": "Oak Grove High School",
+      "classification": "7A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "OAK GROVE HIGH SCHOOL",
+        "oak grove"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "pearl",
+      "canonical_name": "pearl",
+      "display_name": "Pearl High School",
+      "classification": "7A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PEARL HIGH SCHOOL",
+        "pearl"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "petal",
+      "canonical_name": "petal",
+      "display_name": "Petal High School",
+      "classification": "7A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PETAL HIGH SCHOOL",
+        "petal"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "biloxi",
+      "canonical_name": "biloxi",
+      "display_name": "Biloxi High School",
+      "classification": "7A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BILOXI HIGH SCHOOL",
+        "biloxi"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "diberville",
+      "canonical_name": "diberville",
+      "display_name": "Diberville Senior High Sch",
+      "classification": "7A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "DIBERVILLE SENIOR HIGH SCH",
+        "diberville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "gulfport",
+      "canonical_name": "gulfport",
+      "display_name": "Gulfport High School",
+      "classification": "7A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "GULFPORT HIGH SCHOOL",
+        "gulfport"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "harrison-central",
+      "canonical_name": "harrison central",
+      "display_name": "Harrison Central High School",
+      "classification": "7A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HARRISON CENTRAL HIGH SCHOOL",
+        "harrison central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "ocean-springs",
+      "canonical_name": "ocean springs",
+      "display_name": "Ocean Springs High School",
+      "classification": "7A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "OCEAN SPRINGS HIGH SCHOOL",
+        "ocean springs"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "st-martin",
+      "canonical_name": "st martin",
+      "display_name": "St. Martin High School",
+      "classification": "7A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "ST MARTIN HIGH SCHOOL",
+        "saint martin",
+        "st martin"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "west-harrison",
+      "canonical_name": "west harrison",
+      "display_name": "West Harrison High School",
+      "classification": "7A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WEST HARRISON HIGH SCHOOL",
+        "west harrison"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "center-hill",
+      "canonical_name": "center hill",
+      "display_name": "Center Hill High School",
+      "classification": "6A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CENTER HILL HIGH SCHOOL",
+        "center hill"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "grenada",
+      "canonical_name": "grenada",
+      "display_name": "Grenada High",
+      "classification": "6A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "GRENADA HIGH",
+        "grenada"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "lake-cormorant",
+      "canonical_name": "lake cormorant",
+      "display_name": "Lake Cormorant High",
+      "classification": "6A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LAKE CORMORANT HIGH",
+        "lake cormorant"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "olive-branch",
+      "canonical_name": "olive branch",
+      "display_name": "Olive Branch High School",
+      "classification": "6A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "OLIVE BRANCH HIGH SCHOOL",
+        "olive branch"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "saltillo",
+      "canonical_name": "saltillo",
+      "display_name": "Saltillo High School",
+      "classification": "6A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SALTILLO HIGH SCHOOL",
+        "saltillo"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "south-panola",
+      "canonical_name": "south panola",
+      "display_name": "South Panola High School",
+      "classification": "6A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SOUTH PANOLA HIGH SCHOOL",
+        "south panola"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "callaway",
+      "canonical_name": "callaway",
+      "display_name": "Callaway High School",
+      "classification": "6A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CALLAWAY HIGH SCHOOL",
+        "callaway"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "canton",
+      "canonical_name": "canton",
+      "display_name": "Canton Public High School",
+      "classification": "6A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CANTON PUBLIC HIGH SCHOOL",
+        "canton"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "greenville",
+      "canonical_name": "greenville",
+      "display_name": "Greenville High School",
+      "classification": "6A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "GREENVILLE HIGH SCHOOL",
+        "greenville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "neshoba-central",
+      "canonical_name": "neshoba central",
+      "display_name": "Neshoba Central High School",
+      "classification": "6A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NESHOBA CENTRAL HIGH SCHOOL",
+        "neshoba central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "ridgeland",
+      "canonical_name": "ridgeland",
+      "display_name": "Ridgeland High School",
+      "classification": "6A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "RIDGELAND HIGH SCHOOL",
+        "ridgeland"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "warren-central",
+      "canonical_name": "warren central",
+      "display_name": "Warren Central High School",
+      "classification": "6A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WARREN CENTRAL HIGH SCHOOL",
+        "warren central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "forest-hill",
+      "canonical_name": "forest hill",
+      "display_name": "Forest Hill High School",
+      "classification": "6A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "FOREST HILL HIGH SCHOOL",
+        "forest hill"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "george-county",
+      "canonical_name": "george county",
+      "display_name": "George County High School",
+      "classification": "6A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "GEORGE COUNTY HIGH SCHOOL",
+        "george county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "hattiesburg",
+      "canonical_name": "hattiesburg",
+      "display_name": "Hattiesburg High School",
+      "classification": "6A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HATTIESBURG HIGH SCHOOL",
+        "hattiesburg"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "jim-hill",
+      "canonical_name": "jim hill",
+      "display_name": "Jim Hill High School",
+      "classification": "6A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "JIM HILL HIGH SCHOOL",
+        "jim hill"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "terry",
+      "canonical_name": "terry",
+      "display_name": "Terry High School",
+      "classification": "6A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "TERRY HIGH SCHOOL",
+        "terry"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "west-jones",
+      "canonical_name": "west jones",
+      "display_name": "West Jones High School",
+      "classification": "6A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WEST JONES HIGH SCHOOL",
+        "west jones"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "gautier",
+      "canonical_name": "gautier",
+      "display_name": "Gautier High School",
+      "classification": "6A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "GAUTIER HIGH SCHOOL",
+        "gautier"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "hancock",
+      "canonical_name": "hancock",
+      "display_name": "Hancock High School",
+      "classification": "6A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HANCOCK HIGH SCHOOL",
+        "hancock"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "long-beach",
+      "canonical_name": "long beach",
+      "display_name": "Long Beach Senior High School",
+      "classification": "6A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LONG BEACH SENIOR HIGH SCHOOL",
+        "long beach"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "pascagoula",
+      "canonical_name": "pascagoula",
+      "display_name": "Pascagoula High School",
+      "classification": "6A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PASCAGOULA HIGH SCHOOL",
+        "pascagoula"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "pearl-river-central",
+      "canonical_name": "pearl river central",
+      "display_name": "Pearl River Central High School",
+      "classification": "6A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PEARL RIVER CENTRAL HIGH SCHOOL",
+        "pearl river central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "picayune",
+      "canonical_name": "picayune",
+      "display_name": "Picayune Memorial High School",
+      "classification": "6A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PICAYUNE MEMORIAL HIGH SCHOOL",
+        "picayune"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "caledonia",
+      "canonical_name": "caledonia",
+      "display_name": "Caledonia High School",
+      "classification": "5A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CALEDONIA HIGH SCHOOL",
+        "caledonia"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "columbus",
+      "canonical_name": "columbus",
+      "display_name": "Columbus High School",
+      "classification": "5A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "COLUMBUS HIGH SCHOOL",
+        "columbus"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "lafayette",
+      "canonical_name": "lafayette",
+      "display_name": "Lafayette High School",
+      "classification": "5A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LAFAYETTE HIGH SCHOOL",
+        "lafayette"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "new-hope",
+      "canonical_name": "new hope",
+      "display_name": "New Hope High School",
+      "classification": "5A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NEW HOPE HIGH SCHOOL",
+        "new hope"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "pontotoc",
+      "canonical_name": "pontotoc",
+      "display_name": "Pontotoc High School",
+      "classification": "5A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PONTOTOC HIGH SCHOOL",
+        "pontotoc"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "west-point",
+      "canonical_name": "west point",
+      "display_name": "West Point High School",
+      "classification": "5A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WEST POINT HIGH SCHOOL",
+        "west point"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "cleveland-central",
+      "canonical_name": "cleveland central",
+      "display_name": "Cleveland Central High School",
+      "classification": "5A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CLEVELAND CENTRAL HIGH SCHOOL",
+        "cleveland central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "florence",
+      "canonical_name": "florence",
+      "display_name": "Florence High School",
+      "classification": "5A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "FLORENCE HIGH SCHOOL",
+        "florence"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "holmes-county-central",
+      "canonical_name": "holmes county central",
+      "display_name": "Holmes County Central High School",
+      "classification": "5A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HOLMES COUNTY CENTRAL HIGH SCHOOL",
+        "holmes county central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "lanier",
+      "canonical_name": "lanier",
+      "display_name": "Lanier High School",
+      "classification": "5A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LANIER HIGH SCHOOL",
+        "lanier"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "leake-central",
+      "canonical_name": "leake central",
+      "display_name": "Leake Central High School",
+      "classification": "5A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LEAKE CENTRAL HIGH SCHOOL",
+        "leake central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "provine",
+      "canonical_name": "provine",
+      "display_name": "Provine High School",
+      "classification": "5A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PROVINE HIGH SCHOOL",
+        "provine"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "vicksburg",
+      "canonical_name": "vicksburg",
+      "display_name": "Vicksburg High School",
+      "classification": "5A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "VICKSBURG HIGH SCHOOL",
+        "vicksburg"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "brookhaven",
+      "canonical_name": "brookhaven",
+      "display_name": "Brookhaven High School",
+      "classification": "5A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BROOKHAVEN HIGH SCHOOL",
+        "brookhaven"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "laurel",
+      "canonical_name": "laurel",
+      "display_name": "Laurel High School",
+      "classification": "5A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LAUREL HIGH SCHOOL",
+        "laurel"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "natchez",
+      "canonical_name": "natchez",
+      "display_name": "Natchez High School",
+      "classification": "5A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NATCHEZ HIGH SCHOOL",
+        "natchez"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "north-pike",
+      "canonical_name": "north pike",
+      "display_name": "North Pike Senior High School",
+      "classification": "5A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NORTH PIKE SENIOR HIGH SCHOOL",
+        "north pike"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "south-jones",
+      "canonical_name": "south jones",
+      "display_name": "South Jones High School",
+      "classification": "5A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SOUTH JONES HIGH SCHOOL",
+        "south jones"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "sumrall",
+      "canonical_name": "sumrall",
+      "display_name": "Sumrall High School",
+      "classification": "5A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SUMRALL HIGH SCHOOL",
+        "sumrall"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "east-central",
+      "canonical_name": "east central",
+      "display_name": "East Central High School",
+      "classification": "5A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "EAST CENTRAL HIGH SCHOOL",
+        "east central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "northeast-jones",
+      "canonical_name": "northeast jones",
+      "display_name": "Northeast Jones High School",
+      "classification": "5A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NORTHEAST JONES HIGH SCHOOL",
+        "northeast jones"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "purvis",
+      "canonical_name": "purvis",
+      "display_name": "Purvis High School",
+      "classification": "5A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PURVIS HIGH SCHOOL",
+        "purvis"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "stone",
+      "canonical_name": "stone",
+      "display_name": "Stone High School",
+      "classification": "5A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "STONE HIGH SCHOOL",
+        "stone"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "vancleave",
+      "canonical_name": "vancleave",
+      "display_name": "Vancleave High School",
+      "classification": "5A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "VANCLEAVE HIGH SCHOOL",
+        "vancleave"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "wayne-county",
+      "canonical_name": "wayne county",
+      "display_name": "Wayne County High School",
+      "classification": "5A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WAYNE COUNTY HIGH SCHOOL",
+        "wayne county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "corinth",
+      "canonical_name": "corinth",
+      "display_name": "Corinth High School",
+      "classification": "4A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CORINTH HIGH SCHOOL",
+        "corinth"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "new-albany",
+      "canonical_name": "new albany",
+      "display_name": "New Albany High School",
+      "classification": "4A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NEW ALBANY HIGH SCHOOL",
+        "new albany"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "north-pontotoc",
+      "canonical_name": "north pontotoc",
+      "display_name": "North Pontotoc High School",
+      "classification": "4A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "North Pontotoc High School",
+        "north pontotoc"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "south-pontotoc",
+      "canonical_name": "south pontotoc",
+      "display_name": "South Pontotoc High School",
+      "classification": "4A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "South Pontotoc High School",
+        "south pontotoc"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "tishomingo-county",
+      "canonical_name": "tishomingo county",
+      "display_name": "Tishomingo County High School",
+      "classification": "4A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "TISHOMINGO COUNTY HIGH SCHOOL",
+        "tishomingo county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "amory",
+      "canonical_name": "amory",
+      "display_name": "Amory High School",
+      "classification": "4A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "AMORY HIGH SCHOOL",
+        "amory"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "houston",
+      "canonical_name": "houston",
+      "display_name": "Houston High School",
+      "classification": "4A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HOUSTON HIGH SCHOOL",
+        "houston"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "itawamba-agricultural",
+      "canonical_name": "itawamba agricultural",
+      "display_name": "Itawamba Agricultural High School",
+      "classification": "4A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "ITAWAMBA AGRICULTURAL HIGH SCHOOL",
+        "itawamba ag",
+        "itawamba agricultural"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "mooreville",
+      "canonical_name": "mooreville",
+      "display_name": "Mooreville High School",
+      "classification": "4A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MOOREVILLE HIGH SCHOOL",
+        "mooreville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "shannon",
+      "canonical_name": "shannon",
+      "display_name": "Shannon High School",
+      "classification": "4A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SHANNON HIGH SCHOOL",
+        "shannon"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "byhalia",
+      "canonical_name": "byhalia",
+      "display_name": "Byhalia High School (9-12)",
+      "classification": "4A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BYHALIA HIGH SCHOOL (9-12)",
+        "byhalia"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "clarksdale",
+      "canonical_name": "clarksdale",
+      "display_name": "Clarksdale High School",
+      "classification": "4A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CLARKSDALE HIGH SCHOOL",
+        "clarksdale"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "ripley",
+      "canonical_name": "ripley",
+      "display_name": "Ripley High School",
+      "classification": "4A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "RIPLEY HIGH SCHOOL",
+        "ripley"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "rosa-fort",
+      "canonical_name": "rosa fort",
+      "display_name": "Rosa Fort High School",
+      "classification": "4A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "ROSA FORT HIGH SCHOOL",
+        "rosa fort"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "senatobia",
+      "canonical_name": "senatobia",
+      "display_name": "Senatobia High School",
+      "classification": "4A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SENATOBIA HIGH SCHOOL",
+        "senatobia"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "gentry",
+      "canonical_name": "gentry",
+      "display_name": "Gentry High School",
+      "classification": "4A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "GENTRY HIGH SCHOOL",
+        "gentry"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "greenwood",
+      "canonical_name": "greenwood",
+      "display_name": "Greenwood High School",
+      "classification": "4A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "GREENWOOD HIGH SCHOOL",
+        "greenwood"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "kosciusko",
+      "canonical_name": "kosciusko",
+      "display_name": "Kosciusko Senior High School",
+      "classification": "4A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "KOSCIUSKO SENIOR HIGH SCHOOL",
+        "kosciusko"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "louisville",
+      "canonical_name": "louisville",
+      "display_name": "Louisville High School",
+      "classification": "4A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LOUISVILLE HIGH SCHOOL",
+        "louisville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "yazoo-city",
+      "canonical_name": "yazoo city",
+      "display_name": "Yazoo City High School",
+      "classification": "4A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "YAZOO CITY HIGH SCHOOL",
+        "yazoo city"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "choctaw-central",
+      "canonical_name": "choctaw central",
+      "display_name": "Choctaw Central",
+      "classification": "4A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "Choctaw Central",
+        "choctaw central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "newton-county",
+      "canonical_name": "newton county",
+      "display_name": "Newton County High School",
+      "classification": "4A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NEWTON COUNTY HIGH SCHOOL",
+        "newton county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "northeast-lauderdale",
+      "canonical_name": "northeast lauderdale",
+      "display_name": "Northeast Lauderdale High School",
+      "classification": "4A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NORTHEAST LAUDERDALE HIGH SCHOOL",
+        "northeast lauderdale"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "west-lauderdale",
+      "canonical_name": "west lauderdale",
+      "display_name": "West Lauderdale High School",
+      "classification": "4A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WEST LAUDERDALE HIGH SCHOOL",
+        "west lauderdale"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "forest",
+      "canonical_name": "forest",
+      "display_name": "Forest High School",
+      "classification": "4A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "FOREST HIGH SCHOOL",
+        "forest"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "mendenhall",
+      "canonical_name": "mendenhall",
+      "display_name": "Mendenhall High School",
+      "classification": "4A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MENDENHALL HIGH SCHOOL",
+        "mendenhall"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "morton",
+      "canonical_name": "morton",
+      "display_name": "Morton High School",
+      "classification": "4A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MORTON HIGH SCHOOL",
+        "morton"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "raymond",
+      "canonical_name": "raymond",
+      "display_name": "Raymond High School",
+      "classification": "4A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "RAYMOND HIGH SCHOOL",
+        "raymond"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "richland",
+      "canonical_name": "richland",
+      "display_name": "Richland High School",
+      "classification": "4A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "RICHLAND HIGH SCHOOL",
+        "richland"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "columbia",
+      "canonical_name": "columbia",
+      "display_name": "Columbia High School",
+      "classification": "4A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "COLUMBIA HIGH SCHOOL",
+        "columbia"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "lawrence-county",
+      "canonical_name": "lawrence county",
+      "display_name": "Lawrence County High School",
+      "classification": "4A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LAWRENCE COUNTY HIGH SCHOOL",
+        "lawrence county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "mccomb",
+      "canonical_name": "mccomb",
+      "display_name": "McComb High School",
+      "classification": "4A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MCCOMB HIGH SCHOOL",
+        "mccomb"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "poplarville",
+      "canonical_name": "poplarville",
+      "display_name": "Poplarville Jr Sr High School",
+      "classification": "4A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "POPLARVILLE JR SR HIGH SCHOOL",
+        "poplarville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "south-pike",
+      "canonical_name": "south pike",
+      "display_name": "South Pike Senior High School",
+      "classification": "4A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SOUTH PIKE SENIOR HIGH SCHOOL",
+        "south pike"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "bay",
+      "canonical_name": "bay",
+      "display_name": "Bay High School",
+      "classification": "4A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BAY HIGH SCHOOL",
+        "bay"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "forrest-county-agricultural",
+      "canonical_name": "forrest county agricultural",
+      "display_name": "Forrest County Agricultural Hi Sch",
+      "classification": "4A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "FORREST COUNTY AGRICULTURAL HI SCH",
+        "forrest county ag",
+        "forrest county agricultural"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "greene-county",
+      "canonical_name": "greene county",
+      "display_name": "Greene County High School",
+      "classification": "4A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "GREENE COUNTY HIGH SCHOOL",
+        "greene county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "moss-point",
+      "canonical_name": "moss point",
+      "display_name": "Moss Point High School",
+      "classification": "4A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MOSS POINT HIGH SCHOOL",
+        "moss point"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "pass-christian",
+      "canonical_name": "pass christian",
+      "display_name": "Pass Christian High School",
+      "classification": "4A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PASS CHRISTIAN HIGH SCHOOL",
+        "pass christian"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "alcorn-central",
+      "canonical_name": "alcorn central",
+      "display_name": "Alcorn Central High School",
+      "classification": "3A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "ALCORN CENTRAL HIGH SCHOOL",
+        "alcorn central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "belmont",
+      "canonical_name": "belmont",
+      "display_name": "Belmont School",
+      "classification": "3A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BELMONT SCHOOL",
+        "belmont"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "booneville",
+      "canonical_name": "booneville",
+      "display_name": "Booneville High School",
+      "classification": "3A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BOONEVILLE HIGH SCHOOL",
+        "booneville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "kossuth",
+      "canonical_name": "kossuth",
+      "display_name": "Kossuth High School",
+      "classification": "3A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "KOSSUTH HIGH SCHOOL",
+        "kossuth"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "mantachie",
+      "canonical_name": "mantachie",
+      "display_name": "Mantachie Attendance Center",
+      "classification": "3A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MANTACHIE ATTENDANCE CENTER",
+        "mantachie"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "coahoma-county",
+      "canonical_name": "coahoma county",
+      "display_name": "Coahoma County Jr/Sr High School",
+      "classification": "3A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "COAHOMA COUNTY JR/SR HIGH SCHOOL",
+        "coahoma county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "holly-springs",
+      "canonical_name": "holly springs",
+      "display_name": "Holly Springs High School",
+      "classification": "3A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HOLLY SPRINGS HIGH SCHOOL",
+        "holly springs"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "independence",
+      "canonical_name": "independence",
+      "display_name": "Independence High School",
+      "classification": "3A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "INDEPENDENCE HIGH SCHOOL",
+        "independence"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "north-panola",
+      "canonical_name": "north panola",
+      "display_name": "North Panola High School",
+      "classification": "3A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NORTH PANOLA HIGH SCHOOL",
+        "north panola"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "edwards",
+      "canonical_name": "edwards",
+      "display_name": "Thomas E. Edwards",
+      "classification": "3A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "THOMAS E. EDWARDS",
+        "edwards"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "amanda-elzy",
+      "canonical_name": "amanda elzy",
+      "display_name": "Amanda Elzy High School",
+      "classification": "3A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "AMANDA ELZY HIGH SCHOOL",
+        "amanda elzy"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "humphreys-county",
+      "canonical_name": "humphreys county",
+      "display_name": "Humphreys County High School",
+      "classification": "3A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HUMPHREYS COUNTY HIGH SCHOOL",
+        "humphreys county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "obannon",
+      "canonical_name": "obannon",
+      "display_name": "O\u2019Bannon High School",
+      "classification": "3A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "O\u2019BANNON HIGH SCHOOL",
+        "obannon"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "yazoo-county",
+      "canonical_name": "yazoo county",
+      "display_name": "Yazoo County High School",
+      "classification": "3A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "YAZOO COUNTY HIGH SCHOOL",
+        "yazoo county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "aberdeen",
+      "canonical_name": "aberdeen",
+      "display_name": "Aberdeen High School",
+      "classification": "3A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "ABERDEEN HIGH SCHOOL",
+        "aberdeen"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "choctaw-county",
+      "canonical_name": "choctaw county",
+      "display_name": "Choctaw County High School",
+      "classification": "3A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CHOCTAW COUNTY HIGH SCHOOL",
+        "choctaw county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "nettleton",
+      "canonical_name": "nettleton",
+      "display_name": "Nettleton High School",
+      "classification": "3A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NETTLETON HIGH SCHOOL",
+        "nettleton"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "noxubee-county",
+      "canonical_name": "noxubee county",
+      "display_name": "Noxubee County High School",
+      "classification": "3A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NOXUBEE COUNTY HIGH SCHOOL",
+        "noxubee county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "winona",
+      "canonical_name": "winona",
+      "display_name": "Winona Secondary School",
+      "classification": "3A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WINONA SECONDARY SCHOOL",
+        "winona"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "pisgah",
+      "canonical_name": "pisgah",
+      "display_name": "Pisgah High School",
+      "classification": "3A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PISGAH HIGH SCHOOL",
+        "pisgah"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "quitman",
+      "canonical_name": "quitman",
+      "display_name": "Quitman High School",
+      "classification": "3A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "QUITMAN HIGH SCHOOL",
+        "quitman"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "southeast-lauderdale",
+      "canonical_name": "southeast lauderdale",
+      "display_name": "Southeast Lauderdale High School",
+      "classification": "3A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SOUTHEAST LAUDERDALE HIGH SCHOOL",
+        "southeast lauderdale"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "st-andrews",
+      "canonical_name": "st andrews",
+      "display_name": "St. Andrew\u2019S",
+      "classification": "3A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "St. Andrew\u2019s",
+        "saint andrews",
+        "st andrews"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "union",
+      "canonical_name": "union",
+      "display_name": "Union High School",
+      "classification": "3A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "UNION HIGH SCHOOL",
+        "union"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "jefferson-davis-county",
+      "canonical_name": "jefferson davis county",
+      "display_name": "Jefferson Davis County High School",
+      "classification": "3A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "Jefferson Davis County HIGH SCHOOL",
+        "jefferson davis county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "magee",
+      "canonical_name": "magee",
+      "display_name": "Magee High School",
+      "classification": "3A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MAGEE HIGH SCHOOL",
+        "magee"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "mclaurin",
+      "canonical_name": "mclaurin",
+      "display_name": "McLaurin Attendance Center",
+      "classification": "3A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MCLAURIN ATTENDANCE CENTER",
+        "mclaurin"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "raleigh",
+      "canonical_name": "raleigh",
+      "display_name": "Raleigh High School",
+      "classification": "3A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "RALEIGH HIGH SCHOOL",
+        "raleigh"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "seminary",
+      "canonical_name": "seminary",
+      "display_name": "Seminary High School",
+      "classification": "3A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SEMINARY HIGH SCHOOL",
+        "seminary"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "crystal-springs",
+      "canonical_name": "crystal springs",
+      "display_name": "Crystal Springs High School",
+      "classification": "3A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CRYSTAL SPRINGS HIGH SCHOOL",
+        "crystal springs"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "franklin",
+      "canonical_name": "franklin",
+      "display_name": "Franklin High School",
+      "classification": "3A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "FRANKLIN HIGH SCHOOL",
+        "franklin"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "hazlehurst",
+      "canonical_name": "hazlehurst",
+      "display_name": "Hazlehurst High School",
+      "classification": "3A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HAZLEHURST HIGH SCHOOL",
+        "hazlehurst"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "jefferson-county",
+      "canonical_name": "jefferson county",
+      "display_name": "Jefferson Co High",
+      "classification": "3A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "JEFFERSON CO HIGH",
+        "jefferson county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "port-gibson",
+      "canonical_name": "port gibson",
+      "display_name": "Port Gibson High School",
+      "classification": "3A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PORT GIBSON HIGH SCHOOL",
+        "port gibson"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "presbyterian-christian",
+      "canonical_name": "presbyterian christian",
+      "display_name": "Presbyterian Christian School",
+      "classification": "3A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "Presbyterian Christian School",
+        "presbyterian christian"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "st-patrick",
+      "canonical_name": "st patrick",
+      "display_name": "St. Patrick",
+      "classification": "3A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "St. Patrick",
+        "saint patrick",
+        "st patrick"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "st-stanislaus",
+      "canonical_name": "st stanislaus",
+      "display_name": "St. Stanislaus",
+      "classification": "3A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "St. Stanislaus",
+        "saint stanislaus",
+        "st stanislaus"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "tylertown",
+      "canonical_name": "tylertown",
+      "display_name": "Tylertown High School",
+      "classification": "3A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "TYLERTOWN HIGH SCHOOL",
+        "tylertown"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "west-marion",
+      "canonical_name": "west marion",
+      "display_name": "West Marion High School",
+      "classification": "3A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WEST MARION HIGH SCHOOL",
+        "west marion"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "baldwyn",
+      "canonical_name": "baldwyn",
+      "display_name": "Baldwyn High School",
+      "classification": "2A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BALDWYN HIGH SCHOOL",
+        "baldwyn"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "hamilton",
+      "canonical_name": "hamilton",
+      "display_name": "Hamilton High School",
+      "classification": "2A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HAMILTON HIGH SCHOOL",
+        "hamilton"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "hatley",
+      "canonical_name": "hatley",
+      "display_name": "Hatley High School",
+      "classification": "2A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HATLEY HIGH SCHOOL",
+        "hatley"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "walnut",
+      "canonical_name": "walnut",
+      "display_name": "Walnut Attendance Center",
+      "classification": "2A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WALNUT ATTENDANCE CENTER",
+        "walnut"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "bruce",
+      "canonical_name": "bruce",
+      "display_name": "Bruce High School",
+      "classification": "2A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BRUCE HIGH SCHOOL",
+        "bruce"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "east-union",
+      "canonical_name": "east union",
+      "display_name": "East Union Attendance Center",
+      "classification": "2A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "EAST UNION ATTENDANCE CENTER",
+        "east union"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "myrtle",
+      "canonical_name": "myrtle",
+      "display_name": "Myrtle Attendance Center",
+      "classification": "2A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MYRTLE ATTENDANCE CENTER",
+        "myrtle"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "strayhorn",
+      "canonical_name": "strayhorn",
+      "display_name": "Strayhorn High School",
+      "classification": "2A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "STRAYHORN HIGH SCHOOL",
+        "strayhorn"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "water-valley",
+      "canonical_name": "water valley",
+      "display_name": "Water Valley High School",
+      "classification": "2A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WATER VALLEY HIGH SCHOOL",
+        "water valley"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "charleston",
+      "canonical_name": "charleston",
+      "display_name": "Charleston High School",
+      "classification": "2A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CHARLESTON HIGH SCHOOL",
+        "charleston"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "j-z-george",
+      "canonical_name": "j z george",
+      "display_name": "J Z George High School",
+      "classification": "2A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "J Z GEORGE HIGH SCHOOL",
+        "j z george"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "leland",
+      "canonical_name": "leland",
+      "display_name": "Leland High School",
+      "classification": "2A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LELAND HIGH SCHOOL",
+        "leland"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "palmer",
+      "canonical_name": "palmer",
+      "display_name": "M. S. Palmer High School",
+      "classification": "2A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "M. S. PALMER HIGH SCHOOL",
+        "palmer"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "northside",
+      "canonical_name": "northside",
+      "display_name": "Northside High School",
+      "classification": "2A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NORTHSIDE HIGH SCHOOL",
+        "northside"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "east-webster",
+      "canonical_name": "east webster",
+      "display_name": "East Webster High School",
+      "classification": "2A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "EAST WEBSTER HIGH SCHOOL",
+        "east webster"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "eupora",
+      "canonical_name": "eupora",
+      "display_name": "Eupora High School",
+      "classification": "2A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "EUPORA HIGH SCHOOL",
+        "eupora"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "kemper-county",
+      "canonical_name": "kemper county",
+      "display_name": "Kemper County High School",
+      "classification": "2A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "KEMPER COUNTY HIGH SCHOOL",
+        "kemper county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "philadelphia",
+      "canonical_name": "philadelphia",
+      "display_name": "Philadelphia High School",
+      "classification": "2A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PHILADELPHIA HIGH SCHOOL",
+        "philadelphia"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "velma-jackson",
+      "canonical_name": "velma jackson",
+      "display_name": "Velma Jackson High School",
+      "classification": "2A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "VELMA JACKSON HIGH SCHOOL",
+        "velma jackson"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "lake",
+      "canonical_name": "lake",
+      "display_name": "Lake High School",
+      "classification": "2A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LAKE HIGH SCHOOL",
+        "lake"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "newton",
+      "canonical_name": "newton",
+      "display_name": "Newton High School",
+      "classification": "2A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NEWTON HIGH SCHOOL",
+        "newton"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "pelahatchie",
+      "canonical_name": "pelahatchie",
+      "display_name": "Pelahatchie Attendance Center",
+      "classification": "2A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PELAHATCHIE ATTENDANCE CENTER",
+        "pelahatchie"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "puckett",
+      "canonical_name": "puckett",
+      "display_name": "Puckett Attendance Center",
+      "classification": "2A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PUCKETT ATTENDANCE CENTER",
+        "puckett"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "scott-central",
+      "canonical_name": "scott central",
+      "display_name": "Scott Central Attendance Center",
+      "classification": "2A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SCOTT CENTRAL ATTENDANCE CENTER",
+        "scott central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "bay-springs",
+      "canonical_name": "bay springs",
+      "display_name": "Bay Springs High School",
+      "classification": "2A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BAY SPRINGS HIGH SCHOOL",
+        "bay springs"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "clarkdale",
+      "canonical_name": "clarkdale",
+      "display_name": "Clarkdale High School",
+      "classification": "2A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CLARKDALE HIGH SCHOOL",
+        "clarkdale"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "enterprise-clarke",
+      "canonical_name": "enterprise clarke",
+      "display_name": "Enterprise (Clarke)",
+      "classification": "2A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "Enterprise Clarke",
+        "Enterprise High School Clarke"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "heidelberg",
+      "canonical_name": "heidelberg",
+      "display_name": "Heidelberg High School",
+      "classification": "2A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "HEIDELBERG HIGH SCHOOL",
+        "heidelberg"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "mize",
+      "canonical_name": "mize",
+      "display_name": "Mize Attendance Center",
+      "classification": "2A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MIZE ATTENDANCE CENTER",
+        "mize"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "amite-county",
+      "canonical_name": "amite county",
+      "display_name": "Amite County High School",
+      "classification": "2A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "AMITE COUNTY HIGH SCHOOL",
+        "amite county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "enterprise-brookhaven",
+      "canonical_name": "enterprise brookhaven",
+      "display_name": "Enterprise (Brookhaven)",
+      "classification": "2A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "Enterprise Brookhaven",
+        "Enterprise (Brookhaven)",
+        "Enterprise Lincoln"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "loyd-star",
+      "canonical_name": "loyd star",
+      "display_name": "Loyd Star School",
+      "classification": "2A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LOYD STAR SCHOOL",
+        "loyd star"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "wesson",
+      "canonical_name": "wesson",
+      "display_name": "Wesson Attendance Center",
+      "classification": "2A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WESSON ATTENDANCE CENTER",
+        "wesson"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "wilkinson-county",
+      "canonical_name": "wilkinson county",
+      "display_name": "Wilkinson County High",
+      "classification": "2A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WILKINSON COUNTY HIGH",
+        "wilkinson county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "collins",
+      "canonical_name": "collins",
+      "display_name": "Collins High School",
+      "classification": "2A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "COLLINS HIGH SCHOOL",
+        "collins"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "east-marion",
+      "canonical_name": "east marion",
+      "display_name": "East Marion High School",
+      "classification": "2A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "EAST MARION HIGH SCHOOL",
+        "east marion"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "north-forrest",
+      "canonical_name": "north forrest",
+      "display_name": "North Forrest High School",
+      "classification": "2A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NORTH FORREST HIGH SCHOOL",
+        "north forrest"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "perry-central",
+      "canonical_name": "perry central",
+      "display_name": "Perry Central High School",
+      "classification": "2A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "PERRY CENTRAL HIGH SCHOOL",
+        "perry central"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "sacred-heart",
+      "canonical_name": "sacred heart",
+      "display_name": "Sacred Heart",
+      "classification": "2A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "Sacred Heart",
+        "sacred heart"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "biggersville",
+      "canonical_name": "biggersville",
+      "display_name": "Biggersville High School",
+      "classification": "1A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BIGGERSVILLE HIGH SCHOOL",
+        "biggersville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "smithville",
+      "canonical_name": "smithville",
+      "display_name": "Smithville High School",
+      "classification": "1A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SMITHVILLE HIGH SCHOOL",
+        "smithville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "thrasher",
+      "canonical_name": "thrasher",
+      "display_name": "Thrasher High School",
+      "classification": "1A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "THRASHER HIGH SCHOOL",
+        "thrasher"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "tupelo-christian-prep",
+      "canonical_name": "tupelo christian prep",
+      "display_name": "Tupelo Christian",
+      "classification": "1A",
+      "region": "1",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "Tupelo Christian",
+        "tupelo christian prep"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "ashland",
+      "canonical_name": "ashland",
+      "display_name": "Ashland Middle-High School",
+      "classification": "1A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "ASHLAND MIDDLE-HIGH SCHOOL",
+        "ashland"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "falkner",
+      "canonical_name": "falkner",
+      "display_name": "Falkner Attendance Center",
+      "classification": "1A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "FALKNER ATTENDANCE CENTER",
+        "falkner"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "byers",
+      "canonical_name": "byers",
+      "display_name": "H. W. Byers High School (5-12)",
+      "classification": "1A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "H. W. BYERS HIGH SCHOOL (5-12)",
+        "byers"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "potts-camp",
+      "canonical_name": "potts camp",
+      "display_name": "Potts Camp High School (5-12)",
+      "classification": "1A",
+      "region": "2",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "POTTS CAMP HIGH SCHOOL (5-12)",
+        "potts camp"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "calhoun-city",
+      "canonical_name": "calhoun city",
+      "display_name": "Calhoun City High School",
+      "classification": "1A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "CALHOUN CITY HIGH SCHOOL",
+        "calhoun city"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "okolona",
+      "canonical_name": "okolona",
+      "display_name": "Okolona High School",
+      "classification": "1A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "OKOLONA HIGH SCHOOL",
+        "okolona"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "vardaman",
+      "canonical_name": "vardaman",
+      "display_name": "Vardaman High School",
+      "classification": "1A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "VARDAMAN HIGH SCHOOL",
+        "vardaman"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "west-lowndes",
+      "canonical_name": "west lowndes",
+      "display_name": "West Lowndes High School",
+      "classification": "1A",
+      "region": "3",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WEST LOWNDES HIGH SCHOOL",
+        "west lowndes"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "coffeeville",
+      "canonical_name": "coffeeville",
+      "display_name": "Coffeeville High School",
+      "classification": "1A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "COFFEEVILLE HIGH SCHOOL",
+        "coffeeville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "french-camp",
+      "canonical_name": "french camp",
+      "display_name": "French Camp",
+      "classification": "1A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "French Camp",
+        "french camp"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "leflore-county",
+      "canonical_name": "leflore county",
+      "display_name": "Leflore County High School",
+      "classification": "1A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LEFLORE COUNTY HIGH SCHOOL",
+        "leflore county"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "west-tallahatchie",
+      "canonical_name": "west tallahatchie",
+      "display_name": "West Tallahatchie High School",
+      "classification": "1A",
+      "region": "4",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WEST TALLAHATCHIE HIGH SCHOOL",
+        "west tallahatchie"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "ethel",
+      "canonical_name": "ethel",
+      "display_name": "Ethel Attendance Center",
+      "classification": "1A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "ETHEL ATTENDANCE CENTER",
+        "ethel"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "mcadams",
+      "canonical_name": "mcadams",
+      "display_name": "McAdams Attendance Center",
+      "classification": "1A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MCADAMS ATTENDANCE CENTER",
+        "mcadams"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "nanih-waiya",
+      "canonical_name": "nanih waiya",
+      "display_name": "Nanih Waiya Attendance Center",
+      "classification": "1A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NANIH WAIYA ATTENDANCE CENTER",
+        "nanih waiya"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "noxapater",
+      "canonical_name": "noxapater",
+      "display_name": "Noxapater Attendance Center",
+      "classification": "1A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "NOXAPATER ATTENDANCE CENTER",
+        "noxapater"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "sebastopol",
+      "canonical_name": "sebastopol",
+      "display_name": "Sebastopol Attendance Center",
+      "classification": "1A",
+      "region": "5",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SEBASTOPOL ATTENDANCE CENTER",
+        "sebastopol"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "riverside",
+      "canonical_name": "riverside",
+      "display_name": "Riverside High School",
+      "classification": "1A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "RIVERSIDE HIGH SCHOOL",
+        "riverside"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "shaw",
+      "canonical_name": "shaw",
+      "display_name": "Shaw High School",
+      "classification": "1A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SHAW HIGH SCHOOL",
+        "shaw"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "simmons",
+      "canonical_name": "simmons",
+      "display_name": "Simmons High School",
+      "classification": "1A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SIMMONS HIGH SCHOOL",
+        "simmons"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "south-delta",
+      "canonical_name": "south delta",
+      "display_name": "South Delta High School",
+      "classification": "1A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SOUTH DELTA HIGH SCHOOL",
+        "south delta"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "west-bolivar",
+      "canonical_name": "west bolivar",
+      "display_name": "West Bolivar High School",
+      "classification": "1A",
+      "region": "6",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WEST BOLIVAR HIGH SCHOOL",
+        "west bolivar"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "bogue-chitto",
+      "canonical_name": "bogue chitto",
+      "display_name": "Bogue Chitto School",
+      "classification": "1A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "BOGUE CHITTO SCHOOL",
+        "bogue chitto"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "mount-olive",
+      "canonical_name": "mount olive",
+      "display_name": "Mount Olive Attendance Center",
+      "classification": "1A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "MOUNT OLIVE ATTENDANCE CENTER",
+        "mount olive"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "salem",
+      "canonical_name": "salem",
+      "display_name": "Salem Attendance Center",
+      "classification": "1A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "SALEM ATTENDANCE CENTER",
+        "salem"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "west-lincoln",
+      "canonical_name": "west lincoln",
+      "display_name": "West Lincoln School",
+      "classification": "1A",
+      "region": "7",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "WEST LINCOLN SCHOOL",
+        "west lincoln"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "lumberton",
+      "canonical_name": "lumberton",
+      "display_name": "Lumberton High School",
+      "classification": "1A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "LUMBERTON HIGH SCHOOL",
+        "lumberton"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "resurrection",
+      "canonical_name": "resurrection",
+      "display_name": "Resurrection",
+      "classification": "1A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "Resurrection",
+        "resurrection"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "richton",
+      "canonical_name": "richton",
+      "display_name": "Richton High School",
+      "classification": "1A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "RICHTON HIGH SCHOOL",
+        "richton"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "stringer",
+      "canonical_name": "stringer",
+      "display_name": "Stringer Attendance Center",
+      "classification": "1A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "STRINGER ATTENDANCE CENTER",
+        "stringer"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    },
+    {
+      "team_id": "taylorsville",
+      "canonical_name": "taylorsville",
+      "display_name": "Taylorsville Attendance Center",
+      "classification": "1A",
+      "region": "8",
+      "city": "",
+      "state": "MS",
+      "aliases": [
+        "TAYLORSVILLE ATTENDANCE CENTER",
+        "taylorsville"
+      ],
+      "active": true,
+      "season": 2026,
+      "source_team_id": null
+    }
+  ]
+}

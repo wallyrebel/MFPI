@@ -94,7 +94,14 @@ def main(argv: list[str] | None = None) -> int:
         ]
     else:
         team_provider = MHSAAClassificationProvider()
-        official = team_provider.fetch(args.data_root / "cache" / "mhsaa_teams_2025_27.json", args.refresh_teams)
+        official = team_provider.fetch(
+            args.data_root / "cache" / "mhsaa_teams_2025_27.json",
+            args.refresh_teams,
+            fallback_path=(
+                Path(__file__).resolve().parent.parent / "data" / "reference" / "mhsaa_teams_2025_27.json"
+                if args.season in {2025, 2026} else None
+            ),
+        )
         maxpreps_fetch = MaxPrepsRankingProvider().fetch(args.data_root / "cache" / "maxpreps" / "latest.json")
         maxpreps_signals, maxpreps_issues = reconcile_maxpreps(official, maxpreps_fetch.rankings)
         prior_issues.extend(maxpreps_issues)

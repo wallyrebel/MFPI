@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 from dataclasses import replace
 from datetime import datetime, timedelta, timezone
 
@@ -50,6 +51,32 @@ def test_cached_classification_also_applies_inactive_override(tmp_path) -> None:
     teams = MHSAAClassificationProvider().fetch(cache)
     assert not teams[0].active
     assert not teams[0].ranked
+
+
+def test_bundled_classifications_work_without_network_or_cache(tmp_path) -> None:
+    def offline(url):
+        raise AssertionError("Classifications should load without network access")
+
+    reference = Path(__file__).resolve().parents[1] / "data/reference/mhsaa_teams_2025_27.json"
+    teams = MHSAAClassificationProvider(transport=offline).fetch(
+        tmp_path / "missing-cache.json", fallback_path=reference,
+    )
+    published = json.loads((reference.parents[1] / "2026/week-01/overall.json").read_text())
+    expected = {(row["team_id"], row["classification"], row["region"]) for row in published["rankings"]}
+    assert {(team.team_id, team.classification, team.region) for team in teams if team.ranked} == expected
+
+
+def test_refresh_bypasses_bundled_classifications(tmp_path) -> None:
+    import pytest
+
+    def offline(url):
+        raise RuntimeError("Live refresh attempted")
+
+    reference = Path(__file__).resolve().parents[1] / "data/reference/mhsaa_teams_2025_27.json"
+    with pytest.raises(RuntimeError, match="Live refresh attempted"):
+        MHSAAClassificationProvider(transport=offline).fetch(
+            tmp_path / "missing-cache.json", refresh=True, fallback_path=reference,
+        )
 
 
 def test_score_provider_parses_home_away_score_and_status() -> None:

@@ -47,7 +47,7 @@ jobs:
         run: npm ci
 
       - name: Restore source cache
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: data/cache
           key: mfpi-source-cache-${{ github.run_id }}
@@ -67,6 +67,23 @@ jobs:
 
       - name: Build Cloudflare site
         run: npm run build
+
+      - name: Preserve fetched source cache
+        if: ${{ always() && hashFiles('data/cache/**') != '' }}
+        uses: actions/cache/save@v4
+        with:
+          path: data/cache
+          key: mfpi-source-cache-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Preserve validation diagnostics
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ranking-validation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            data/drafts/**/validation.json
+            data/current/validation.json
+          if-no-files-found: ignore
 
       - name: Commit updated ranking snapshots
         shell: bash

@@ -180,9 +180,15 @@ class MHSAAClassificationProvider:
     def __init__(self, transport: Callable[..., bytes] = _request_bytes) -> None:
         self.transport = transport
 
-    def fetch(self, cache_path: Path | None = None, refresh: bool = False) -> list[Team]:
-        if cache_path and cache_path.exists() and not refresh:
-            payload = json.loads(cache_path.read_text(encoding="utf-8"))
+    def fetch(
+        self, cache_path: Path | None = None, refresh: bool = False,
+        *, fallback_path: Path | None = None,
+    ) -> list[Team]:
+        # Two-year classifications are reference data, not weekly results.
+        # A checked-in copy also works on a runner with an empty Actions cache.
+        saved_path = cache_path if cache_path and cache_path.exists() else fallback_path
+        if saved_path and saved_path.exists() and not refresh:
+            payload = json.loads(saved_path.read_text(encoding="utf-8"))
             teams = [Team(**{**item, "aliases": tuple(item.get("aliases", []))}) for item in payload["teams"]]
             return [replace(team, active=False) if team.team_id in INACTIVE_FOOTBALL_PROGRAMS else team for team in teams]
         html = self.transport(MHSAA_CLASSIFICATIONS_URL).decode("utf-8", errors="replace")
