@@ -60,6 +60,23 @@ def _write_json_csv(directory: Path, metadata: dict[str, Any], rankings: list[Ra
                 )
 
 
+def _opponent_names(teams: list[Team], games: list[Game], rankings: list[RankingRow]) -> dict[str, str]:
+    """Display names for opponents that appear in a schedule but are not ranked.
+
+    Out-of-state and non-MHSAA opponents carry synthetic ids such as
+    "external-254111". Published team pages list opponents by name, so without
+    this map the raw id would surface on the public site.
+    """
+    ranked = {row.team_id for row in rankings}
+    played = {game.home_team_id for game in games} | {game.away_team_id for game in games}
+    known = {team.team_id: team.display_name for team in teams}
+    return {
+        team_id: known[team_id]
+        for team_id in sorted(played - ranked)
+        if known.get(team_id)
+    }
+
+
 def publish_snapshot(
     data_root: Path,
     *,
@@ -105,6 +122,7 @@ def publish_snapshot(
         "expected_games": report.expected_games,
         "verified_games": report.verified_games,
         "missing_games": report.missing_games,
+        "opponent_names": _opponent_names(teams, games, rankings),
     }
     _write_json_csv(archive, metadata, rankings)
     (archive / "validation.json").write_text(json.dumps(report.to_dict(), indent=2) + "\n", encoding="utf-8")
@@ -161,6 +179,7 @@ def write_provisional_snapshot(
         "expected_games": report.expected_games,
         "verified_games": report.verified_games,
         "missing_games": report.missing_games,
+        "opponent_names": _opponent_names(teams, games, rankings),
     }
     draft = data_root / "drafts" / run_id
     _write_json_csv(draft, metadata, rankings)

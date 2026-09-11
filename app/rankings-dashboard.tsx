@@ -1,10 +1,13 @@
 'use client';
 
+import Link from 'next/link';
 import { useMemo, useState } from 'react';
+import { SiteFooter, SiteHeader } from './site-nav';
 
 export type ComponentValue = { raw: number | null; normalized: number; weight: number; contribution: number };
 export type Ranking = {
   team_id: string;
+  slug: string;
   team: string;
   classification: string;
   region: string;
@@ -125,15 +128,7 @@ export default function RankingsDashboard({ snapshot }: { snapshot: Snapshot }) 
         </div>
       </aside>
 
-      <header className="site-header">
-        <div className="header-inner">
-          <a className="brand" href="#top" aria-label="MFPI home">
-            <span className="brand-mark">M</span>
-            <span><strong>Mississippi Football</strong><small>POWER INDEX</small></span>
-          </a>
-          <div className="run-status"><span />{snapshot.metadata.validation_status} · {snapshot.metadata.coverage_percentage.toFixed(0)}% coverage</div>
-        </div>
-      </header>
+      <SiteHeader />
 
       <div id="top" className="page-shell">
         {isDemo && <div className="demo-banner"><strong>Demonstration rankings</strong><span>The live MHSAA team, schedule, and score feeds are connected. Official publication waits only for the 95% verified-results threshold.</span></div>}
@@ -196,7 +191,7 @@ export default function RankingsDashboard({ snapshot }: { snapshot: Snapshot }) 
                   <summary className="ranking-grid">
                     <strong className="rank-number">{scope === 'Overall' ? row.state_rank : row.class_rank}</strong>
                     <span>{movement(rowMovement)}</span>
-                    <span className="team-cell"><strong>{row.team}</strong><small>{row.classification} · Region {row.region}</small></span>
+                    <span className="team-cell"><strong><Link href={`/team/${row.slug}`}>{row.team}</Link></strong><small>{row.classification} · Region {row.region}</small></span>
                     <span className="tabular">{row.record}</span>
                     <strong className="mfpi-score">{row.mfpi.toFixed(1)}</strong>
                     <span className="tabular secondary">{row.mfpi_change === null ? 'NEW' : `${row.mfpi_change > 0 ? '+' : ''}${row.mfpi_change.toFixed(1)}`}</span>
@@ -235,7 +230,7 @@ export default function RankingsDashboard({ snapshot }: { snapshot: Snapshot }) 
           <div className="method-copy"><p>A 70-point margin is compressed with a diminishing-return curve. A 4A team facing 7A opponents gets stronger schedule credit than one facing 1A opponents; the 7A-to-1A starting assumption fades as real results connect the state.</p><p>Media Rank and Strength of Schedule each contribute 10%. On a confirmed bye, MFPI retains 90% of the previous week&apos;s score and uses 10% of the recalculated score. Other teams can still pass an idle team. Rankings use full-precision scores, and class lists reuse the statewide calculation.</p></div>
         </section>
 
-        <footer><span>MFPI · Local weekly ranking desk</span><span>Formula {snapshot.metadata.formula_version} · No human voting</span></footer>
+        <SiteFooter />
       </div>
     </main>
   );

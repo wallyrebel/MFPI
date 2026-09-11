@@ -1,0 +1,54 @@
+name: Deploy site
+
+# Pushing to main does not by itself put anything on mississippifootballrankings.com.
+# This workflow is what makes a merged code change go live. Ranking data deploys
+# separately from update-rankings.yml, right after it commits a new snapshot.
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+      - '.github/workflows/update-rankings.yml'
+      # The weekly rankings job pushes these and deploys them itself. Without
+      # this, every data commit would deploy twice, from two racing workflows.
+      - 'data/current/**'
+      - 'data/2026/**'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-mfpi
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Cloudflare Workers
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::warning::CLOUDFLARE_API_TOKEN secret is not set, so nothing was deployed. Add it in Settings > Secrets and variables > Actions to turn on automatic deploys."
+            exit 0
+          fi
+          npx wrangler deploy --config dist/server/wrangler.json

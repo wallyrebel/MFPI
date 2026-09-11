@@ -1,8 +1,10 @@
 import type { MetadataRoute } from 'next';
+import { siteUrl } from './site';
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: '*', allow: '/' },
-    sitemap: 'https://www.mississippifootballrankings.com/sitemap.xml',
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   };
 }

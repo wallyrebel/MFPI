@@ -5,7 +5,11 @@ import nextTs from 'eslint-config-next/typescript';
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
-  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts']),
+  // Build output and the Python venv are not lintable source.
+  globalIgnores([
+    '.next/**', 'out/**', 'build/**', 'dist/**', 'next-env.d.ts',
+    '.venv/**', '.pytest-tmp*/**', '.pytest_cache/**', '.wrangler/**', '.vinext/**',
+  ]),
 ]);
 
 export default eslintConfig;
