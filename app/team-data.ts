@@ -95,8 +95,11 @@ export function teamLabel(teamId: string): string {
   if (ranked) return ranked.team;
   const named = opponentNames[teamId];
   if (named) return named;
-  // A synthetic id must never reach the page as a team name.
-  return teamId.startsWith('external-') ? 'Non-MHSAA opponent' : teamId;
+  // Out-of-state and other non-MHSAA opponents are listed by name; the
+  // classification column is what marks them as outside the MHSAA. Only an
+  // opponent the feed never named falls through here, and a synthetic
+  // "external-…" id must never surface as if it were a team name.
+  return teamId.startsWith('external-') ? 'Opponent' : teamId;
 }
 
 export function classTeams(classification: string): Team[] {
