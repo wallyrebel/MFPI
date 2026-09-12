@@ -2,7 +2,10 @@ name: Update MFPI rankings
 
 on:
   schedule:
-    - cron: "10 13 * * 3"
+    # 11:00 a.m. America/Chicago every Tuesday, matching the weekly cutoff in
+    # mfpi/config.py. The two must stay in step: run before the cutoff and the
+    # job recomputes the week that is already published.
+    - cron: "0 11 * * 2"
       timezone: America/Chicago
   workflow_dispatch:
     inputs:

@@ -43,7 +43,7 @@ def build_parser() -> argparse.ArgumentParser:
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--live", action="store_true", help="Fetch official MHSAA teams, schedules, and scores.")
     mode.add_argument("--demo", action="store_true", help="Run the deterministic bundled demonstration dataset.")
-    parser.add_argument("--week", type=int, help="Ranking week; defaults from the Wednesday 1 p.m. America/Chicago cutoff.")
+    parser.add_argument("--week", type=int, help="Ranking week; defaults from the Tuesday 11 a.m. America/Chicago cutoff.")
     parser.add_argument("--season", type=int, default=2026)
     parser.add_argument("--cutoff", help="ISO timestamp; naive values are interpreted in America/Chicago.")
     parser.add_argument("--data-root", type=Path, default=Path("data"))

@@ -48,7 +48,7 @@ class Settings:
     season: int = 2026
     week: int = 1
     season_start: str = "2026-08-27"
-    cutoff_hour: int = 13
+    cutoff_hour: int = 11
     cutoff_minute: int = 0
     home_field_points: float = 2.0
     margin_scale: float = 42.0
@@ -60,10 +60,13 @@ class Settings:
     convergence_tolerance: float = 0.01
 
     def default_cutoff(self) -> datetime:
+        # Week 1 closes Tuesday 1 September 2026 at 11:00 Central; every later
+        # week is exactly seven days on. The scheduled workflow runs at this
+        # same boundary, so each run opens a new week.
         first = datetime(
             self.season,
             9,
-            2,
+            1,
             self.cutoff_hour,
             self.cutoff_minute,
             tzinfo=CENTRAL,
@@ -78,7 +81,7 @@ def weights_for_games(games_played: int) -> dict[str, float]:
 
 
 def ranking_week(at: datetime | None = None, season: int = 2026) -> int:
-    """Return the ranking week at the Wednesday 1 p.m. Central boundary."""
+    """Return the ranking week at the Tuesday 11 a.m. Central boundary."""
 
     local = (at or datetime.now(tz=CENTRAL)).astimezone(CENTRAL)
     first_cutoff = Settings(season=season).default_cutoff()

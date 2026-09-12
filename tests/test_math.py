@@ -63,5 +63,21 @@ def test_class_prior_orders_7a_through_1a_and_is_centered() -> None:
 
 
 def test_ranking_week_changes_only_at_central_cutoff() -> None:
-    assert ranking_week(datetime(2026, 9, 9, 12, 59, tzinfo=CENTRAL)) == 1
-    assert ranking_week(datetime(2026, 9, 9, 13, 0, tzinfo=CENTRAL)) == 2
+    # The boundary is Tuesday 11:00 Central, and the scheduled workflow runs at
+    # that same moment. A run even a minute early would recompute the week that
+    # is already published, so the edges matter.
+    assert ranking_week(datetime(2026, 9, 8, 10, 59, tzinfo=CENTRAL)) == 1
+    assert ranking_week(datetime(2026, 9, 8, 11, 0, tzinfo=CENTRAL)) == 2
+    assert ranking_week(datetime(2026, 9, 15, 10, 59, tzinfo=CENTRAL)) == 2
+    assert ranking_week(datetime(2026, 9, 15, 11, 0, tzinfo=CENTRAL)) == 3
+
+
+def test_ranking_week_boundary_holds_across_dst() -> None:
+    # Central time leaves DST on 1 November 2026; the cron carries the same
+    # America/Chicago timezone, so both must stay on the 11:00 wall clock.
+    from mfpi.config import Settings
+
+    for week in (9, 10):
+        cutoff = Settings(season=2026, week=week).default_cutoff()
+        assert cutoff.strftime("%A") == "Tuesday"
+        assert (cutoff.hour, cutoff.minute) == (11, 0)
