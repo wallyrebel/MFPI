@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { GoogleAnalytics } from './analytics';
+import { AdvertisingBanner } from './advertising-banner';
 import { siteUrl } from './site';
 
 export const metadata: Metadata = {
@@ -48,5 +49,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}<GoogleAnalytics /></body></html>;
+  return <html lang="en"><body><AdvertisingBanner />{children}<GoogleAnalytics /></body></html>;
 }

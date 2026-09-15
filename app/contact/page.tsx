@@ -53,8 +53,8 @@ export default function ContactPage() {
               strength and margin across every game carry more weight than a single result.
             </li>
             <li>
-              <strong>Advertising and sponsorship.</strong> Direct sponsor placements are available. Get in touch for
-              rates and sizes.
+              <strong>Advertising and sponsorship.</strong> Advertise on an individual team page or across the entire
+              site. <Link href="/advertise">View advertising options</Link> and email for details.
             </li>
             <li>
               <strong>Media and reuse.</strong> You are welcome to cite MFPI ratings with attribution and a link.

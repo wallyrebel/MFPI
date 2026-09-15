@@ -13,6 +13,7 @@ export function SiteHeader() {
           <Link href="/teams">Teams</Link>
           <Link href="/methodology">Methodology</Link>
           <Link href="/about">About</Link>
+          <Link href="/advertise">Advertise</Link>
           <Link href="/contact">Contact</Link>
         </nav>
       </div>
@@ -32,6 +33,7 @@ export function SiteFooter() {
         <Link href="/teams">Teams</Link>
         <Link href="/methodology">Methodology</Link>
         <Link href="/about">About</Link>
+        <Link href="/advertise">Advertise</Link>
         <Link href="/contact">Contact</Link>
         <Link href="/privacy">Privacy</Link>
       </nav>

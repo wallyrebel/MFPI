@@ -125,3 +125,37 @@ footer { display: flex; justify-content: space-between; padding: 28px 4px 0; col
 @media (max-width: 600px) { .mf-nav { display: none; } .mf-footer { flex-direction: column; } .mf-game-row { padding-left: 16px; padding-right: 16px; } }
 .team-cell strong a { color: inherit; text-decoration: none; }
 .team-cell strong a:hover, .team-cell strong a:focus-visible { color: #95551d; text-decoration: underline; }
+
+/* Advertising opportunities, shared by the root layout */
+.advertise-banner { border-bottom: 1px solid rgb(23 34 27 / 12%); background: var(--gold); color: var(--green); }
+.advertise-banner-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px; max-width: 1180px; margin: auto; padding: 8px 28px; }
+.advertise-banner a { display: inline-flex; min-height: 44px; align-items: center; color: var(--green); text-underline-offset: 4px; }
+.advertise-banner-cta { font-size: 1rem; font-weight: 850; text-decoration: none; }
+.advertise-banner-inner p { flex: 1; margin: 0; font-size: .875rem; line-height: 1.5; }
+.advertise-banner-details { font-size: .875rem; font-weight: 700; }
+.advertise-banner a:hover { text-decoration: underline; }
+.advertise-banner a:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; border-radius: 2px; }
+.advertise-page { max-width: 920px; }
+.mf-doc .advertise-intro { max-width: 700px; margin: 24px 0 30px; font-size: 1.125rem; }
+.advertise-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.advertise-options section { border: 1px solid rgb(23 34 27 / 14%); border-top: 4px solid var(--green); border-radius: 0 0 12px 12px; padding: 26px; background: #fffdf8; }
+.advertise-options h2 { margin: 0 0 16px; }
+.advertise-options p:last-child { margin-bottom: 0; }
+.advertise-contact { margin-top: 32px; padding: 28px; border-radius: 12px; background: var(--green); color: white; }
+.advertise-contact h2 { margin: 0 0 12px; }
+.advertise-contact p { max-width: 680px; color: #d8e6df; }
+.advertise-contact .advertise-email-button { display: inline-flex; min-height: 48px; align-items: center; margin: 8px 0 14px; padding: 12px 20px; border-radius: 6px; background: var(--gold); color: var(--green); font-size: 1rem; font-weight: 800; text-decoration: none; }
+.advertise-contact .advertise-email-button:hover { background: #ffc34b; }
+.advertise-contact a:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+.advertise-contact .advertise-email-address { margin: 0; overflow-wrap: anywhere; }
+.advertise-email-address a { color: white; font-size: .875rem; text-underline-offset: 3px; }
+@media (min-width: 601px) and (max-width: 980px) {
+  .header-inner { flex-wrap: wrap; gap: 14px; padding-top: 16px; padding-bottom: 16px; }
+  .mf-nav { flex-wrap: wrap; gap: 14px 20px; }
+}
+@media (max-width: 600px) {
+  .advertise-banner-inner { justify-content: space-between; column-gap: 12px; padding: 4px 16px 12px; }
+  .advertise-banner-inner p { order: 3; flex-basis: 100%; }
+  .advertise-options { grid-template-columns: 1fr; gap: 16px; }
+  .advertise-options section, .advertise-contact { padding: 22px; }
+}

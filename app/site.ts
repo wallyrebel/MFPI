@@ -3,6 +3,8 @@ export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
   'https://www.mississippifootballrankings.com';
 
+export const advertisingEmail = 'editor@sportsmississippi.com';
+
 // GA4 measurement IDs are public — they ship in the page source — so the
 // production ID is the default and the env var only exists to point a local
 // or preview build somewhere else (or at '' to switch analytics off).
