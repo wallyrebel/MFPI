@@ -67,7 +67,7 @@ def _opponent_names(teams: list[Team], games: list[Game], rankings: list[Ranking
     "external-254111". Published team pages list opponents by name, so without
     this map the raw id would surface on the public site.
     """
-    ranked = {row.team_id for row in rankings}
+    ranked = {row.team.team_id for row in rankings}
     played = {game.home_team_id for game in games} | {game.away_team_id for game in games}
     known = {team.team_id: team.display_name for team in teams}
     return {
