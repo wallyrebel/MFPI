@@ -19,7 +19,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: mfpi-weekly-rankings
+  group: mfpi-production
   cancel-in-progress: false
 
 jobs:
@@ -28,8 +28,23 @@ jobs:
     timeout-minutes: 45
 
     steps:
+      - name: Check deployment credentials
+        shell: bash
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          for name in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID; do
+            if [ -z "${!name}" ]; then
+              echo "::error::$name is missing. Add it under Settings > Secrets and variables > Actions."
+              exit 1
+            fi
+          done
+
       - name: Check out repository
         uses: actions/checkout@v7
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -89,7 +104,6 @@ jobs:
           if-no-files-found: ignore
 
       - name: Commit updated ranking snapshots
-        id: publish
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
@@ -97,25 +111,20 @@ jobs:
           git add data/current data/2026
           if git diff --cached --quiet; then
             echo "No ranking data changed."
-            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "Update MFPI weekly rankings"
           git push
-          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       # The rankings and every team page are built from the snapshot above, so
       # the site keeps serving last week's numbers until a deploy runs. dist/ is
       # already the fresh build from the "Build Cloudflare site" step.
+      # Always deploy, even if the week already exists: a retry must recover a
+      # failed deployment after the snapshot was successfully committed.
       - name: Deploy updated rankings
-        if: steps.publish.outputs.changed == 'true'
         shell: bash
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
-            echo "::warning::CLOUDFLARE_API_TOKEN secret is not set, so the new rankings were committed but not deployed. The live site will keep serving the previous build until someone runs 'npm run deploy'."
-            exit 0
-          fi
           npx wrangler deploy --config dist/server/wrangler.json

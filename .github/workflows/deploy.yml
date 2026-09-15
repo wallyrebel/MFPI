@@ -15,17 +15,36 @@ on:
       - 'data/2026/**'
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
-  group: deploy-mfpi
-  cancel-in-progress: true
+  group: mfpi-production
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - name: Check deployment credentials
+        shell: bash
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          for name in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID; do
+            if [ -z "${!name}" ]; then
+              echo "::error::$name is missing. Add it under Settings > Secrets and variables > Actions."
+              exit 1
+            fi
+          done
+
       - name: Check out repository
         uses: actions/checkout@v7
+        with:
+          # A queued deployment must include rankings committed while it waited.
+          ref: main
 
       - name: Set up Node.js
         uses: actions/setup-node@v7
@@ -47,8 +66,4 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
-            echo "::warning::CLOUDFLARE_API_TOKEN secret is not set, so nothing was deployed. Add it in Settings > Secrets and variables > Actions to turn on automatic deploys."
-            exit 0
-          fi
           npx wrangler deploy --config dist/server/wrangler.json
