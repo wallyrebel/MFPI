@@ -1,0 +1,33 @@
+{
+  "snapshot": "data/2026/week-01",
+  "season": 2026,
+  "week": 1,
+  "status": "PUBLISHED",
+  "formula_version": "MFPI-3.0",
+  "generated_at": "2026-09-02T13:31:06.769119+00:00",
+  "cutoff_at": "2026-09-02T20:30:00-05:00",
+  "audited_at": "2026-09-25T14:52:21.351116+00:00",
+  "outcome": "PASS",
+  "teams": 225,
+  "unique_games": 0,
+  "blocking": 0,
+  "warnings": 0,
+  "info": 1,
+  "issue_counts": [
+    {
+      "severity": "INFO",
+      "code": "LEGACY_SNAPSHOT_NO_GAME_ROWS",
+      "count": 1
+    }
+  ],
+  "external_verification": "NOT_PERFORMED: MHSAA, MaxPreps and AHSFHS were unreachable from the build environment",
+  "issues": [
+    {
+      "code": "LEGACY_SNAPSHOT_NO_GAME_ROWS",
+      "severity": "INFO",
+      "message": "This snapshot predates per-game rows; record, average and two-sided game checks are skipped.",
+      "team_id": null,
+      "context": {}
+    }
+  ]
+}

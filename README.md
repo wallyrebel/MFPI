@@ -84,20 +84,28 @@ tests/                       unit, integration, and ranking-scenario tests
 scripts/run_weekly.ps1       one-command local weekly workflow
 data/current/                viewer's latest live or validated rankings
 data/2026/week-XX/           immutable official snapshots
+content/analysis/            Weekly Analysis articles (draft → published after human review)
+reports/                     audit, reconciliation and data-quality reports; screenshots
+tests-js/, tests-e2e/        site display/ad-eligibility tests and browser acceptance tests
 calculate_rankings.py        CLI entry point
 METHODOLOGY.md               formula in plain language and exact weights
 DATA_SOURCES.md              source contracts, permissions, and limitations
 ADMIN_GUIDE.md               validation, corrections, and weekly operation
+ADSENSE.md                   ad configuration, eligibility, consent and readiness checklist
+HANDOFF.md                   changes, reconciliation findings, and remaining owner actions
 ```
 
 ## Formula and auditability
 
-Every component stores its raw value, normalized score, effective weight, and contribution. The unrounded contributions sum to MFPI; display values are rounded only at the edge. Formula version `MFPI-3.1` is stored in every snapshot and database run. Media Rank and Strength of Schedule contribute 10% each; MFPI's score-based model contributes the remaining 80%. Out-of-state opponents receive a published-rating SRS prior when available. See [METHODOLOGY.md](METHODOLOGY.md) for the full calculation.
+Every component stores its raw value, normalized score, effective weight, and contribution. The unrounded contributions sum to MFPI; display values are rounded only at the edge. Formula version `MFPI-3.2` is stored in every snapshot and database run. Media Rank and Strength of Schedule contribute 10% each; MFPI's score-based model contributes the remaining 80%. Out-of-state opponents receive a published-rating SRS prior when available. See [METHODOLOGY.md](METHODOLOGY.md) for the full calculation.
 
 ## Tests
 
 ```powershell
-python -m pytest -q
+python -m pytest -q                      # engine, validation, audit, editorial, pipeline safety
+npm run test:site                        # display logic and ad eligibility (Node test runner)
+python -m mfpi.audit --snapshot data/current   # publication audit of the live snapshot
+node tests-e2e/site.e2e.mjs              # browser acceptance tests against a running build (see ADSENSE.md)
 ```
 
 The suite covers margin diminishing returns, home field, SRS convergence, robust normalization, SOS, quality wins, weak schedules, close elite losses, recent form, dynamic/stale weights, aliases, ties, forfeits, zero-game teams, missing data, tie breakers, movement, class filtering, provider parsing, validation, and the 70-point-win scenario.

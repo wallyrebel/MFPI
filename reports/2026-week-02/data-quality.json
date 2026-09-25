@@ -1,0 +1,596 @@
+{
+  "snapshot": "data/2026/week-02",
+  "season": 2026,
+  "week": 2,
+  "status": "PUBLISHED",
+  "formula_version": "MFPI-3.1",
+  "generated_at": "2026-09-09T19:03:33.039151+00:00",
+  "cutoff_at": "2026-09-09T13:00:00-05:00",
+  "audited_at": "2026-09-25T14:52:21.669184+00:00",
+  "outcome": "PASS",
+  "teams": 225,
+  "unique_games": 0,
+  "blocking": 0,
+  "warnings": 0,
+  "info": 80,
+  "issue_counts": [
+    {
+      "severity": "INFO",
+      "code": "LARGE_RANK_CHANGE",
+      "count": 48
+    },
+    {
+      "severity": "INFO",
+      "code": "LARGE_RATING_CHANGE",
+      "count": 31
+    },
+    {
+      "severity": "INFO",
+      "code": "LEGACY_SNAPSHOT_NO_GAME_ROWS",
+      "count": 1
+    }
+  ],
+  "external_verification": "NOT_PERFORMED: MHSAA, MaxPreps and AHSFHS were unreachable from the build environment",
+  "issues": [
+    {
+      "code": "LEGACY_SNAPSHOT_NO_GAME_ROWS",
+      "severity": "INFO",
+      "message": "This snapshot predates per-game rows; record, average and two-sided game checks are skipped.",
+      "team_id": null,
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Canton Public High School rating moved +21.1 points.",
+      "team_id": "canton",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Canton Public High School moved +45 places.",
+      "team_id": "canton",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Grenada High rating moved +16.0 points.",
+      "team_id": "grenada",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Neshoba Central High School rating moved +18.2 points.",
+      "team_id": "neshoba-central",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Neshoba Central High School moved +41 places.",
+      "team_id": "neshoba-central",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Port Gibson High School rating moved +21.3 points.",
+      "team_id": "port-gibson",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Port Gibson High School moved +66 places.",
+      "team_id": "port-gibson",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "West Harrison High School rating moved +16.0 points.",
+      "team_id": "west-harrison",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "West Harrison High School moved +45 places.",
+      "team_id": "west-harrison",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Tishomingo County High School rating moved +19.3 points.",
+      "team_id": "tishomingo-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Tishomingo County High School moved +65 places.",
+      "team_id": "tishomingo-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Senatobia High School moved +40 places.",
+      "team_id": "senatobia",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Booneville High School rating moved +16.6 points.",
+      "team_id": "booneville",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Booneville High School moved +57 places.",
+      "team_id": "booneville",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Independence High School rating moved +25.7 points.",
+      "team_id": "independence",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Independence High School moved +95 places.",
+      "team_id": "independence",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Noxubee County High School rating moved +17.3 points.",
+      "team_id": "noxubee-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Noxubee County High School moved +58 places.",
+      "team_id": "noxubee-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Murrah High School rating moved +16.9 points.",
+      "team_id": "murrah",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Murrah High School moved +61 places.",
+      "team_id": "murrah",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Scott Central Attendance Center moved +43 places.",
+      "team_id": "scott-central",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Horn Lake High moved -44 places.",
+      "team_id": "horn-lake",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Pearl High School moved -50 places.",
+      "team_id": "pearl",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Heidelberg High School rating moved +16.7 points.",
+      "team_id": "heidelberg",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Heidelberg High School moved +62 places.",
+      "team_id": "heidelberg",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Water Valley High School rating moved +27.2 points.",
+      "team_id": "water-valley",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Water Valley High School moved +112 places.",
+      "team_id": "water-valley",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Alcorn Central High School rating moved +25.1 points.",
+      "team_id": "alcorn-central",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Alcorn Central High School moved +101 places.",
+      "team_id": "alcorn-central",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Long Beach Senior High School rating moved +16.1 points.",
+      "team_id": "long-beach",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Long Beach Senior High School moved +56 places.",
+      "team_id": "long-beach",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "North Pontotoc High School moved +51 places.",
+      "team_id": "north-pontotoc",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Velma Jackson High School rating moved +17.3 points.",
+      "team_id": "velma-jackson",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Velma Jackson High School moved +69 places.",
+      "team_id": "velma-jackson",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "J Z George High School rating moved +16.9 points.",
+      "team_id": "j-z-george",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "J Z George High School moved +73 places.",
+      "team_id": "j-z-george",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "South Delta High School rating moved +17.2 points.",
+      "team_id": "south-delta",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "South Delta High School moved +75 places.",
+      "team_id": "south-delta",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Rosa Fort High School moved -49 places.",
+      "team_id": "rosa-fort",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Jim Hill High School moved -57 places.",
+      "team_id": "jim-hill",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Mize Attendance Center moved -40 places.",
+      "team_id": "mize",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Lewisburg High School rating moved -21.3 points.",
+      "team_id": "lewisburg",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Lewisburg High School moved -87 places.",
+      "team_id": "lewisburg",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Richland High School moved -58 places.",
+      "team_id": "richland",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Northeast Lauderdale High School moved +61 places.",
+      "team_id": "northeast-lauderdale",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Raymond High School moved +40 places.",
+      "team_id": "raymond",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "North Pike Senior High School moved -41 places.",
+      "team_id": "north-pike",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "East Marion High School moved -54 places.",
+      "team_id": "east-marion",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Wilkinson County High moved +63 places.",
+      "team_id": "wilkinson-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Ethel Attendance Center moved +64 places.",
+      "team_id": "ethel",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "South Jones High School rating moved -26.4 points.",
+      "team_id": "south-jones",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "South Jones High School moved -101 places.",
+      "team_id": "south-jones",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Callaway High School rating moved -33.5 points.",
+      "team_id": "callaway",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Callaway High School moved -130 places.",
+      "team_id": "callaway",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Stringer Attendance Center moved +46 places.",
+      "team_id": "stringer",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Baldwyn High School moved -45 places.",
+      "team_id": "baldwyn",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "St. Patrick moved -40 places.",
+      "team_id": "st-patrick",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Northeast Jones High School rating moved -19.3 points.",
+      "team_id": "northeast-jones",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Northeast Jones High School moved -72 places.",
+      "team_id": "northeast-jones",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Forest Hill High School rating moved -25.5 points.",
+      "team_id": "forest-hill",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Forest Hill High School moved -103 places.",
+      "team_id": "forest-hill",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Yazoo County High School rating moved -23.4 points.",
+      "team_id": "yazoo-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Yazoo County High School moved -94 places.",
+      "team_id": "yazoo-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Humphreys County High School moved -42 places.",
+      "team_id": "humphreys-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Byhalia High School (9-12) rating moved -17.5 points.",
+      "team_id": "byhalia",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Byhalia High School (9-12) moved -62 places.",
+      "team_id": "byhalia",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "West Bolivar High School moved +40 places.",
+      "team_id": "west-bolivar",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "West Tallahatchie High School rating moved -19.3 points.",
+      "team_id": "west-tallahatchie",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "West Tallahatchie High School moved -72 places.",
+      "team_id": "west-tallahatchie",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Walnut Attendance Center rating moved -20.8 points.",
+      "team_id": "walnut",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Walnut Attendance Center moved -68 places.",
+      "team_id": "walnut",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Bay High School rating moved -21.9 points.",
+      "team_id": "bay",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Bay High School moved -59 places.",
+      "team_id": "bay",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Falkner Attendance Center rating moved -26.5 points.",
+      "team_id": "falkner",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Falkner Attendance Center moved -80 places.",
+      "team_id": "falkner",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "McLaurin Attendance Center rating moved -20.0 points.",
+      "team_id": "mclaurin",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "McLaurin Attendance Center moved -40 places.",
+      "team_id": "mclaurin",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Potts Camp High School (5-12) rating moved -16.1 points.",
+      "team_id": "potts-camp",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "West Lowndes High School rating moved -16.0 points.",
+      "team_id": "west-lowndes",
+      "context": {}
+    }
+  ]
+}

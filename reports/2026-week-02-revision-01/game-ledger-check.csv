@@ -1,0 +1,238 @@
+calendar_date,home,away,home_name,away_name,home_score,away_score,neutral,forfeit,both_teams_ranked,perspective_check
+2026-08-27,tishomingo-county,alcorn-central,Tishomingo County High School,Alcorn Central High School,27,10,False,False,True,consistent
+2026-08-27,ashland,smithville,Ashland Middle-High School,Smithville High School,14,52,False,False,True,consistent
+2026-08-27,baldwyn,kossuth,Baldwyn High School,Kossuth High School,28,13,False,False,True,consistent
+2026-08-27,south-pontotoc,bruce,South Pontotoc High School,Bruce High School,28,33,False,False,True,consistent
+2026-08-27,byhalia,byers,Byhalia High School (9-12),H. W. Byers High School (5-12),28,6,False,False,True,consistent
+2026-08-27,callaway,forest-hill,Callaway High School,Forest Hill High School,14,0,False,False,True,consistent
+2026-08-27,east-marion,west-marion,East Marion High School,West Marion High School,40,0,False,False,True,consistent
+2026-08-27,quitman,kemper-county,Quitman High School,Kemper County High School,34,48,False,False,True,consistent
+2026-08-27,pearl,madison-central,Pearl High School,Madison Central High School,7,17,False,False,True,consistent
+2026-08-27,ocean-springs,meridian,Ocean Springs High School,Meridian High School,9,47,False,False,True,consistent
+2026-08-27,south-jones,northeast-jones,South Jones High School,Northeast Jones High School,36,23,False,False,True,consistent
+2026-08-28,okolona,aberdeen,Okolona High School,Aberdeen High School,32,50,False,False,True,consistent
+2026-08-28,charleston,amanda-elzy,Charleston High School,Amanda Elzy High School,42,0,False,False,True,consistent
+2026-08-28,mcadams,amite-county,McAdams Attendance Center,Amite County High School,0,44,False,False,True,consistent
+2026-08-28,amory,pontotoc,Amory High School,Pontotoc High School,14,48,False,False,True,consistent
+2026-08-28,bay,external-231155,Bay High School,external-231155,7,35,False,False,False,single_ranked_team
+2026-08-28,bay-springs,south-pike,Bay Springs High School,South Pike Senior High School,18,38,False,False,True,consistent
+2026-08-28,external-253142,belmont,external-253142,Belmont School,21,16,False,False,False,single_ranked_team
+2026-08-28,biggersville,west-lowndes,Biggersville High School,West Lowndes High School,33,14,False,False,True,consistent
+2026-08-28,biloxi,holmes-county-central,Biloxi High School,Holmes County Central High School,35,19,False,False,True,consistent
+2026-08-28,bogue-chitto,wesson,Bogue Chitto School,Wesson Attendance Center,0,41,False,False,True,consistent
+2026-08-28,booneville,north-pontotoc,Booneville High School,North Pontotoc High School,33,21,False,False,True,consistent
+2026-08-28,tupelo,brandon,Tupelo High School,Brandon High School,38,14,False,False,True,consistent
+2026-08-28,lawrence-county,brookhaven,Lawrence County High School,Brookhaven High School,8,35,False,False,True,consistent
+2026-08-28,itawamba-agricultural,caledonia,Itawamba Agricultural High School,Caledonia High School,42,10,False,False,True,consistent
+2026-08-28,myrtle,calhoun-city,Myrtle Attendance Center,Calhoun City High School,18,28,False,False,True,consistent
+2026-08-28,canton,velma-jackson,Canton Public High School,Velma Jackson High School,56,20,False,False,True,consistent
+2026-08-28,center-hill,horn-lake,Center Hill High School,Horn Lake High,23,16,False,False,True,consistent
+2026-08-28,choctaw-central,newton,Choctaw Central,Newton High School,48,8,False,False,True,consistent
+2026-08-28,choctaw-county,east-webster,Choctaw County High School,East Webster High School,14,20,False,False,True,consistent
+2026-08-28,clarkdale,resurrection,Clarkdale High School,Resurrection,56,15,False,False,True,consistent
+2026-08-28,external-241722,clarksdale,external-241722,Clarksdale High School,35,29,False,False,False,single_ranked_team
+2026-08-28,warren-central,clinton,Warren Central High School,Clinton High School,35,24,False,False,True,consistent
+2026-08-28,coahoma-county,simmons,Coahoma County Jr/Sr High School,Simmons High School,12,44,False,False,True,consistent
+2026-08-28,coffeeville,west-bolivar,Coffeeville High School,West Bolivar High School,34,8,False,False,True,consistent
+2026-08-28,sumrall,collins,Sumrall High School,Collins High School,39,0,False,False,True,consistent
+2026-08-28,columbia,external-260779,Columbia High School,external-260779,28,42,False,False,False,single_ranked_team
+2026-08-28,columbus,houston,Columbus High School,Houston High School,12,46,False,False,True,consistent
+2026-08-28,new-hope,corinth,New Hope High School,Corinth High School,21,28,False,False,True,consistent
+2026-08-28,crystal-springs,jim-hill,Crystal Springs High School,Jim Hill High School,2,34,False,False,True,consistent
+2026-08-28,desoto-central,south-panola,Desoto Central High School,South Panola High School,26,25,False,False,True,consistent
+2026-08-28,raleigh,diberville,Raleigh High School,Diberville Senior High Sch,6,21,False,False,True,consistent
+2026-08-28,greene-county,east-central,Greene County High School,East Central High School,21,13,False,False,True,consistent
+2026-08-28,east-union,tupelo-christian-prep,East Union Attendance Center,Tupelo Christian,0,42,False,False,True,consistent
+2026-08-28,edwards,greenwood,Thomas E. Edwards,Greenwood High School,8,4,False,False,True,consistent
+2026-08-28,enterprise-brookhaven,north-forrest,Enterprise (Brookhaven),North Forrest High School,14,13,False,False,True,consistent
+2026-08-28,enterprise-clarke,stringer,Enterprise (Clarke),Stringer Attendance Center,40,24,False,False,True,consistent
+2026-08-28,ethel,j-z-george,Ethel Attendance Center,J Z George High School,20,28,False,False,True,consistent
+2026-08-28,eupora,hamilton,Eupora High School,Hamilton High School,40,14,False,False,True,consistent
+2026-08-28,presbyterian-christian,external-228114,Presbyterian Christian School,external-228114,31,13,False,False,False,single_ranked_team
+2026-08-28,jefferson-davis-county,external-229394,Jefferson Davis County High School,external-229394,27,30,False,False,False,single_ranked_team
+2026-08-28,external-229400,french-camp,external-229400,French Camp,42,0,False,False,False,single_ranked_team
+2026-08-28,sacred-heart,external-229425,Sacred Heart,external-229425,24,0,False,False,False,single_ranked_team
+2026-08-28,walnut,external-230145,Walnut Attendance Center,external-230145,31,18,False,False,False,single_ranked_team
+2026-08-28,st-patrick,external-231344,St. Patrick,external-231344,2,0,False,True,False,single_ranked_team
+2026-08-28,jefferson-county,external-243751,Jefferson Co High,external-243751,6,27,False,False,False,single_ranked_team
+2026-08-28,falkner,external-252421,Falkner Attendance Center,external-252421,40,0,False,False,False,single_ranked_team
+2026-08-28,lewisburg,external-253175,Lewisburg High School,external-253175,26,14,False,False,False,single_ranked_team
+2026-08-28,hernando,external-253176,Hernando High School,external-253176,55,0,False,False,False,single_ranked_team
+2026-08-28,lafayette,external-253186,Lafayette High School,external-253186,58,0,False,False,False,single_ranked_team
+2026-08-28,oxford,external-254111,Oxford High School,external-254111,34,24,False,False,False,single_ranked_team
+2026-08-28,external-260739,st-andrews,external-260739,St. Andrew’S,42,13,False,False,False,single_ranked_team
+2026-08-28,senatobia,external-263142,Senatobia High School,external-263142,21,8,False,False,False,single_ranked_team
+2026-08-28,lake-cormorant,external-529091,Lake Cormorant High,external-529091,27,8,False,False,False,single_ranked_team
+2026-08-28,richland,florence,Richland High School,Florence High School,31,21,False,False,True,consistent
+2026-08-28,lake,forest,Lake High School,Forest High School,18,37,False,False,True,consistent
+2026-08-28,forrest-county-agricultural,st-stanislaus,Forrest County Agricultural Hi Sch,St. Stanislaus,27,14,False,False,True,consistent
+2026-08-28,north-pike,franklin,North Pike Senior High School,Franklin High School,17,12,False,False,True,consistent
+2026-08-28,gautier,george-county,Gautier High School,George County High School,63,35,False,False,True,consistent
+2026-08-28,gentry,greenville,Gentry High School,Greenville High School,6,16,False,False,True,consistent
+2026-08-28,germantown,northwest-rankin,Germantown High School,Northwest Rankin High School,60,27,False,False,True,consistent
+2026-08-28,picayune,gulfport,Picayune Memorial High School,Gulfport High School,0,35,False,False,True,consistent
+2026-08-28,stone,hancock,Stone High School,Hancock High School,50,44,False,False,True,consistent
+2026-08-28,harrison-central,lanier,Harrison Central High School,Lanier High School,20,24,False,False,True,consistent
+2026-08-28,nettleton,hatley,Nettleton High School,Hatley High School,18,24,False,False,True,consistent
+2026-08-28,hattiesburg,petal,Hattiesburg High School,Petal High School,34,35,False,False,True,consistent
+2026-08-28,heidelberg,noxubee-county,Heidelberg High School,Noxubee County High School,20,21,False,False,True,consistent
+2026-08-28,holly-springs,mantachie,Holly Springs High School,Mantachie Attendance Center,28,25,False,False,True,consistent
+2026-08-28,water-valley,independence,Water Valley High School,Independence High School,20,24,False,False,True,consistent
+2026-08-28,kosciusko,neshoba-central,Kosciusko Senior High School,Neshoba Central High School,55,35,False,False,True,consistent
+2026-08-28,laurel,west-jones,Laurel High School,West Jones High School,56,42,False,False,True,consistent
+2026-08-28,provine,leake-central,Provine High School,Leake Central High School,0,35,False,False,True,consistent
+2026-08-28,shaw,leflore-county,Shaw High School,Leflore County High School,0,30,False,False,True,consistent
+2026-08-28,obannon,leland,O’Bannon High School,Leland High School,28,0,False,False,True,consistent
+2026-08-28,long-beach,pass-christian,Long Beach Senior High School,Pass Christian High School,3,48,False,False,True,consistent
+2026-08-28,west-point,louisville,West Point High School,Louisville High School,6,21,False,False,True,consistent
+2026-08-28,loyd-star,perry-central,Loyd Star School,Perry Central High School,16,24,False,False,True,consistent
+2026-08-28,lumberton,purvis,Lumberton High School,Purvis High School,14,27,False,False,True,consistent
+2026-08-28,magee,mount-olive,Magee High School,Mount Olive Attendance Center,64,0,False,False,True,consistent
+2026-08-28,tylertown,mccomb,Tylertown High School,McComb High School,0,41,False,False,True,consistent
+2026-08-28,salem,mclaurin,Salem Attendance Center,McLaurin Attendance Center,30,33,False,False,True,consistent
+2026-08-28,ridgeland,mendenhall,Ridgeland High School,Mendenhall High School,27,46,False,False,True,consistent
+2026-08-28,mize,taylorsville,Mize Attendance Center,Taylorsville Attendance Center,56,6,False,False,True,consistent
+2026-08-28,ripley,mooreville,Ripley High School,Mooreville High School,34,23,False,False,True,consistent
+2026-08-28,morton,newton-county,Morton High School,Newton County High School,42,13,False,False,True,consistent
+2026-08-28,pascagoula,moss-point,Pascagoula High School,Moss Point High School,44,0,False,False,True,consistent
+2026-08-28,murrah,terry,Murrah High School,Terry High School,6,55,False,False,True,consistent
+2026-08-28,vardaman,nanih-waiya,Vardaman High School,Nanih Waiya Attendance Center,45,65,False,False,True,consistent
+2026-08-28,vicksburg,natchez,Vicksburg High School,Natchez High School,14,20,False,False,True,consistent
+2026-08-28,saltillo,new-albany,Saltillo High School,New Albany High School,7,34,False,False,True,consistent
+2026-08-28,rosa-fort,north-panola,Rosa Fort High School,North Panola High School,36,0,False,False,True,consistent
+2026-08-28,scott-central,northeast-lauderdale,Scott Central Attendance Center,Northeast Lauderdale High School,30,7,False,False,True,consistent
+2026-08-28,southeast-lauderdale,noxapater,Southeast Lauderdale High School,Noxapater Attendance Center,7,0,False,False,True,consistent
+2026-08-28,oak-grove,starkville,Oak Grove High School,Starkville High School,15,17,False,False,True,consistent
+2026-08-28,shannon,olive-branch,Shannon High School,Olive Branch High School,31,13,False,False,True,consistent
+2026-08-28,palmer,west-tallahatchie,M. S. Palmer High School,West Tallahatchie High School,6,44,False,False,True,consistent
+2026-08-28,wayne-county,pearl-river-central,Wayne County High School,Pearl River Central High School,27,28,False,False,True,consistent
+2026-08-28,pelahatchie,pisgah,Pelahatchie Attendance Center,Pisgah High School,27,19,False,False,True,consistent
+2026-08-28,philadelphia,union,Philadelphia High School,Union High School,26,27,False,False,True,consistent
+2026-08-28,west-harrison,poplarville,West Harrison High School,Poplarville Jr Sr High School,7,40,False,False,True,consistent
+2026-08-28,port-gibson,raymond,Port Gibson High School,Raymond High School,34,14,False,False,True,consistent
+2026-08-28,potts-camp,strayhorn,Potts Camp High School (5-12),Strayhorn High School,40,36,False,False,True,consistent
+2026-08-28,puckett,sebastopol,Puckett Attendance Center,Sebastopol Attendance Center,0,13,False,False,True,consistent
+2026-08-28,richton,west-lincoln,Richton High School,West Lincoln School,25,0,False,False,True,consistent
+2026-08-28,yazoo-county,riverside,Yazoo County High School,Riverside High School,61,0,False,False,True,consistent
+2026-08-28,seminary,west-lauderdale,Seminary High School,West Lauderdale High School,37,6,False,False,True,consistent
+2026-08-28,wilkinson-county,south-delta,Wilkinson County High,South Delta High School,18,22,False,False,True,consistent
+2026-08-28,southaven,winona,Southaven High School,Winona Secondary School,7,21,False,False,True,consistent
+2026-08-28,st-martin,vancleave,St. Martin High School,Vancleave High School,56,14,False,False,True,consistent
+2026-09-03,byers,holly-springs,H. W. Byers High School (5-12),Holly Springs High School,12,38,False,False,True,consistent
+2026-09-03,terry,canton,Terry High School,Canton Public High School,40,47,False,False,True,consistent
+2026-09-03,west-marion,columbia,West Marion High School,Columbia High School,0,39,False,False,True,consistent
+2026-09-03,quitman,heidelberg,Quitman High School,Heidelberg High School,14,66,False,False,True,consistent
+2026-09-03,jim-hill,port-gibson,Jim Hill High School,Port Gibson High School,8,38,False,False,True,consistent
+2026-09-03,lake,sebastopol,Lake High School,Sebastopol Attendance Center,46,27,False,False,True,consistent
+2026-09-03,myrtle,potts-camp,Myrtle Attendance Center,Potts Camp High School (5-12),42,6,False,False,True,consistent
+2026-09-03,provine,ridgeland,Provine High School,Ridgeland High School,0,35,False,False,True,consistent
+2026-09-04,calhoun-city,aberdeen,Calhoun City High School,Aberdeen High School,36,46,False,False,True,consistent
+2026-09-04,alcorn-central,falkner,Alcorn Central High School,Falkner Attendance Center,41,0,False,False,True,consistent
+2026-09-04,amanda-elzy,greenville,Amanda Elzy High School,Greenville High School,0,42,False,False,True,consistent
+2026-09-04,amite-county,richton,Amite County High School,Richton High School,28,0,False,False,True,consistent
+2026-09-04,caledonia,amory,Caledonia High School,Amory High School,27,7,False,False,True,consistent
+2026-09-04,mantachie,ashland,Mantachie Attendance Center,Ashland Middle-High School,45,26,False,False,True,consistent
+2026-09-04,booneville,baldwyn,Booneville High School,Baldwyn High School,44,12,False,False,True,consistent
+2026-09-04,st-stanislaus,bay,St. Stanislaus,Bay High School,42,7,False,False,True,consistent
+2026-09-04,taylorsville,bay-springs,Taylorsville Attendance Center,Bay Springs High School,0,30,False,False,True,consistent
+2026-09-04,belmont,walnut,Belmont School,Walnut Attendance Center,29,0,False,False,True,consistent
+2026-09-04,biggersville,tishomingo-county,Biggersville High School,Tishomingo County High School,7,56,False,False,True,consistent
+2026-09-04,pascagoula,biloxi,Pascagoula High School,Biloxi High School,17,8,False,False,True,consistent
+2026-09-04,pisgah,bogue-chitto,Pisgah High School,Bogue Chitto School,35,14,False,False,True,consistent
+2026-09-04,brandon,madison-central,Brandon High School,Madison Central High School,33,23,False,False,True,consistent
+2026-09-04,brookhaven,franklin,Brookhaven High School,Franklin High School,42,6,False,False,True,consistent
+2026-09-04,bruce,vardaman,Bruce High School,Vardaman High School,42,0,False,False,True,consistent
+2026-09-04,independence,byhalia,Independence High School,Byhalia High School (9-12),31,0,False,False,True,consistent
+2026-09-04,callaway,murrah,Callaway High School,Murrah High School,23,48,False,False,True,consistent
+2026-09-04,external-253156,center-hill,external-253156,Center Hill High School,6,43,False,False,False,single_ranked_team
+2026-09-04,north-panola,charleston,North Panola High School,Charleston High School,14,24,False,False,True,consistent
+2026-09-04,external-261951,choctaw-central,external-261951,Choctaw Central,28,27,False,False,False,single_ranked_team
+2026-09-04,choctaw-county,new-hope,Choctaw County High School,New Hope High School,30,47,False,False,True,consistent
+2026-09-04,clarkdale,stringer,Clarkdale High School,Stringer Attendance Center,22,8,False,False,True,consistent
+2026-09-04,clarksdale,coahoma-county,Clarksdale High School,Coahoma County Jr/Sr High School,46,12,False,False,True,consistent
+2026-09-04,northwest-rankin,clinton,Northwest Rankin High School,Clinton High School,44,34,False,False,True,consistent
+2026-09-04,j-z-george,coffeeville,J Z George High School,Coffeeville High School,13,8,False,False,True,consistent
+2026-09-04,seminary,collins,Seminary High School,Collins High School,49,0,False,False,True,consistent
+2026-09-04,southaven,columbus,Southaven High School,Columbus High School,41,0,False,False,True,consistent
+2026-09-04,corinth,itawamba-agricultural,Corinth High School,Itawamba Agricultural High School,14,21,False,False,True,consistent
+2026-09-04,raymond,crystal-springs,Raymond High School,Crystal Springs High School,18,0,False,False,True,consistent
+2026-09-04,lake-cormorant,desoto-central,Lake Cormorant High,Desoto Central High School,14,7,False,False,True,consistent
+2026-09-04,diberville,gautier,Diberville Senior High Sch,Gautier High School,35,14,False,False,True,consistent
+2026-09-04,st-martin,east-central,St. Martin High School,East Central High School,34,0,False,False,True,consistent
+2026-09-04,hazlehurst,east-marion,Hazlehurst High School,East Marion High School,31,22,False,False,True,consistent
+2026-09-04,mooreville,east-union,Mooreville High School,East Union Attendance Center,62,21,False,False,True,consistent
+2026-09-04,east-webster,nanih-waiya,East Webster High School,Nanih Waiya Attendance Center,47,13,False,False,True,consistent
+2026-09-04,gentry,edwards,Gentry High School,Thomas E. Edwards,0,34,False,False,True,consistent
+2026-09-04,pelahatchie,enterprise-brookhaven,Pelahatchie Attendance Center,Enterprise (Brookhaven),18,26,False,False,True,consistent
+2026-09-04,enterprise-clarke,southeast-lauderdale,Enterprise (Clarke),Southeast Lauderdale High School,27,13,False,False,True,consistent
+2026-09-04,ethel,st-andrews,Ethel Attendance Center,St. Andrew’S,41,6,False,False,True,consistent
+2026-09-04,french-camp,eupora,French Camp,Eupora High School,14,34,False,False,True,consistent
+2026-09-04,picayune,external-229409,Picayune Memorial High School,external-229409,17,48,False,False,False,single_ranked_team
+2026-09-04,external-231146,strayhorn,external-231146,Strayhorn High School,48,6,False,False,False,single_ranked_team
+2026-09-04,tupelo,external-231289,Tupelo High School,external-231289,49,7,False,False,False,single_ranked_team
+2026-09-04,external-231342,tupelo-christian-prep,external-231342,Tupelo Christian,22,29,False,False,False,single_ranked_team
+2026-09-04,external-231344,resurrection,external-231344,Resurrection,0,0,False,False,False,single_ranked_team
+2026-09-04,greenwood,external-241722,Greenwood High School,external-241722,6,21,False,False,False,single_ranked_team
+2026-09-04,pearl-river-central,external-244750,Pearl River Central High School,external-244750,42,28,False,False,False,single_ranked_team
+2026-09-04,hernando,external-253177,Hernando High School,external-253177,49,7,False,False,False,single_ranked_team
+2026-09-04,external-254111,horn-lake,external-254111,Horn Lake High,35,7,False,False,False,single_ranked_team
+2026-09-04,kossuth,external-263057,Kossuth High School,external-263057,7,34,False,False,False,single_ranked_team
+2026-09-04,external-263101,okolona,external-263101,Okolona High School,35,6,False,False,False,single_ranked_team
+2026-09-04,rosa-fort,external-529091,Rosa Fort High School,external-529091,36,42,False,False,False,single_ranked_team
+2026-09-04,florence,kosciusko,Florence High School,Kosciusko Senior High School,16,46,False,False,True,consistent
+2026-09-04,west-harrison,forest,West Harrison High School,Forest High School,37,19,False,False,True,consistent
+2026-09-04,forest-hill,wayne-county,Forest Hill High School,Wayne County High School,0,44,False,False,True,consistent
+2026-09-04,long-beach,forrest-county-agricultural,Long Beach Senior High School,Forrest County Agricultural Hi Sch,17,7,False,False,True,consistent
+2026-09-04,george-county,south-jones,George County High School,South Jones High School,48,20,False,False,True,consistent
+2026-09-04,oak-grove,germantown,Oak Grove High School,Germantown High School,28,25,False,False,True,consistent
+2026-09-04,greene-county,perry-central,Greene County High School,Perry Central High School,43,27,False,False,True,consistent
+2026-09-04,ripley,grenada,Ripley High School,Grenada High,8,50,False,False,True,consistent
+2026-09-04,hamilton,noxapater,Hamilton High School,Noxapater Attendance Center,35,41,False,False,True,consistent
+2026-09-04,hancock,harrison-central,Hancock High School,Harrison Central High School,17,14,False,False,True,consistent
+2026-09-04,smithville,hatley,Smithville High School,Hatley High School,20,22,False,False,True,consistent
+2026-09-04,hattiesburg,laurel,Hattiesburg High School,Laurel High School,27,25,False,False,True,consistent
+2026-09-04,yazoo-city,holmes-county-central,Yazoo City High School,Holmes County Central High School,20,32,False,False,True,consistent
+2026-09-04,pontotoc,houston,Pontotoc High School,Houston High School,27,12,False,False,True,consistent
+2026-09-04,south-delta,humphreys-county,South Delta High School,Humphreys County High School,30,8,False,False,True,consistent
+2026-09-04,mccomb,jefferson-county,McComb High School,Jefferson Co High,42,6,False,False,True,consistent
+2026-09-04,sumrall,jefferson-davis-county,Sumrall High School,Jefferson Davis County High School,22,14,False,False,True,consistent
+2026-09-04,noxubee-county,kemper-county,Noxubee County High School,Kemper County High School,61,34,False,False,True,consistent
+2026-09-04,lafayette,saltillo,Lafayette High School,Saltillo High School,71,28,False,False,True,consistent
+2026-09-04,lanier,moss-point,Lanier High School,Moss Point High School,20,0,False,False,True,consistent
+2026-09-04,tylertown,lawrence-county,Tylertown High School,Lawrence County High School,22,20,False,False,True,consistent
+2026-09-04,leake-central,vicksburg,Leake Central High School,Vicksburg High School,34,18,False,False,True,consistent
+2026-09-04,leflore-county,simmons,Leflore County High School,Simmons High School,14,6,False,False,True,consistent
+2026-09-04,shaw,leland,Shaw High School,Leland High School,22,14,False,False,True,consistent
+2026-09-04,olive-branch,lewisburg,Olive Branch High School,Lewisburg High School,49,30,False,False,True,consistent
+2026-09-04,louisville,shannon,Louisville High School,Shannon High School,28,0,False,False,True,consistent
+2026-09-04,west-lincoln,loyd-star,West Lincoln School,Loyd Star School,2,39,False,False,True,consistent
+2026-09-04,north-forrest,lumberton,North Forrest High School,Lumberton High School,12,26,False,False,True,consistent
+2026-09-04,mendenhall,magee,Mendenhall High School,Magee High School,35,15,False,False,True,consistent
+2026-09-04,west-lowndes,mcadams,West Lowndes High School,McAdams Attendance Center,14,44,False,False,True,consistent
+2026-09-04,puckett,mclaurin,Puckett Attendance Center,McLaurin Attendance Center,41,12,False,False,True,consistent
+2026-09-04,neshoba-central,meridian,Neshoba Central High School,Meridian High School,36,28,False,False,True,consistent
+2026-09-04,mize,presbyterian-christian,Mize Attendance Center,Presbyterian Christian School,17,21,False,False,True,consistent
+2026-09-04,west-lauderdale,morton,West Lauderdale High School,Morton High School,34,49,False,False,True,consistent
+2026-09-04,mount-olive,newton,Mount Olive Attendance Center,Newton High School,0,44,False,False,True,consistent
+2026-09-04,natchez,south-pike,Natchez High School,South Pike Senior High School,40,24,False,False,True,consistent
+2026-09-04,nettleton,north-pontotoc,Nettleton High School,North Pontotoc High School,28,45,False,False,True,consistent
+2026-09-04,new-albany,senatobia,New Albany High School,Senatobia High School,27,34,False,False,True,consistent
+2026-09-04,newton-county,raleigh,Newton County High School,Raleigh High School,21,28,False,False,True,consistent
+2026-09-04,wesson,north-pike,Wesson Attendance Center,North Pike Senior High School,29,14,False,False,True,consistent
+2026-09-04,northeast-jones,west-jones,Northeast Jones High School,West Jones High School,14,35,False,False,True,consistent
+2026-09-04,northeast-lauderdale,philadelphia,Northeast Lauderdale High School,Philadelphia High School,30,6,False,False,True,consistent
+2026-09-04,obannon,riverside,O’Bannon High School,Riverside High School,54,8,False,False,True,consistent
+2026-09-04,petal,ocean-springs,Petal High School,Ocean Springs High School,43,21,False,False,True,consistent
+2026-09-04,oxford,south-panola,Oxford High School,South Panola High School,17,10,False,False,True,consistent
+2026-09-04,palmer,winona,M. S. Palmer High School,Winona Secondary School,0,55,False,False,True,consistent
+2026-09-04,pass-christian,purvis,Pass Christian High School,Purvis High School,55,19,False,False,True,consistent
+2026-09-04,warren-central,pearl,Warren Central High School,Pearl High School,40,14,False,False,True,consistent
+2026-09-04,poplarville,stone,Poplarville Jr Sr High School,Stone High School,42,0,False,False,True,consistent
+2026-09-04,vancleave,richland,Vancleave High School,Richland High School,49,46,False,False,True,consistent
+2026-09-04,sacred-heart,st-patrick,Sacred Heart,St. Patrick,30,19,False,False,True,consistent
+2026-09-04,wilkinson-county,salem,Wilkinson County High,Salem Attendance Center,38,7,False,False,True,consistent
+2026-09-04,union,scott-central,Union High School,Scott Central Attendance Center,19,34,False,False,True,consistent
+2026-09-04,water-valley,south-pontotoc,Water Valley High School,South Pontotoc High School,47,3,False,False,True,consistent
+2026-09-04,starkville,west-point,Starkville High School,West Point High School,46,8,False,False,True,consistent
+2026-09-04,velma-jackson,yazoo-county,Velma Jackson High School,Yazoo County High School,36,15,False,False,True,consistent
+2026-09-04,west-tallahatchie,west-bolivar,West Tallahatchie High School,West Bolivar High School,8,14,False,False,True,consistent

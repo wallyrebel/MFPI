@@ -1,0 +1,10 @@
+{
+  "cleveland-central": "Identity mapping added: official score-center team 'Cleveland' (source ID 241722) links to Cleveland Central when the listing's city is also Cleveland. Applies from the next weekly run; the immutable Week 4 snapshot still shows no results. Page now says 'results unavailable' instead of 0-0 / 0.0.",
+  "houston": "Page now flags two games credited on Sep 11 as under review (no data changed).",
+  "tupelo": "Intro now states rank (unchanged) and rating (+3.1) separately; Sep 11 game marked under review pending the Houston listing check.",
+  "corinth": "Sep 11 game marked under review pending the Houston listing check.",
+  "diberville": "Display name shown as D'Iberville High School (source list abbreviation 'Diberville Senior High Sch').",
+  "falkner": "Aug 28 game now displays on Aug 28 (legacy 23:59 Pacific date-only marker previously shown as Aug 29).",
+  "pearl-river-central": "Date-only marker games now display on the correct date.",
+  "northside": "Page now says 'results unavailable' instead of 0-0 / 0.0; no source data changed."
+}
