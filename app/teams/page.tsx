@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SiteFooter, SiteHeader } from '../site-nav';
-import { CLASSES, classTeams, longDate, metadata as snapshotMeta, teams } from '../team-data';
+import { CLASSES, classTeams, longDate, metadata as snapshotMeta, teamStatus, teams } from '../team-data';
 
 export const metadata: Metadata = {
   title: 'All Mississippi Football Teams',
@@ -37,7 +37,7 @@ export default function TeamsIndexPage() {
                   <Link key={row.team_id} href={`/team/${row.slug}`}>
                     <span className="mf-dir-rank tabular">{row.class_rank}</span>
                     <span className="mf-dir-name">{row.team}</span>
-                    <span className="mf-dir-meta tabular">{row.record} · {row.mfpi.toFixed(1)}</span>
+                    <span className="mf-dir-meta tabular">{teamStatus(row) === 'unavailable' ? 'Results unavailable' : row.record} · {row.mfpi.toFixed(1)}</span>
                   </Link>
                 ))}
               </div>

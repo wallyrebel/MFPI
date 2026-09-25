@@ -77,3 +77,11 @@ always compare with the latest audited snapshot of the *previous week*, never
 with an earlier run of the same week.
 
 State and class lists use the same final MFPI score; class scores are never recalculated. Order is unrounded MFPI, opponent-adjusted performance, SOS, head-to-head when applicable, capped season scoring margin, then team name for deterministic output. Weekly movement compares the latest audited prior-week snapshot. A team absent from that snapshot is `NEW`.
+
+## Data states and display rules
+
+- **Eligible games.** Only verified finals and forfeits through the cutoff count. Postponed, cancelled, suspended, no-contest, scheduled and unscored listings never count; jamborees and scrimmages never count even with a score. A missing score is never 0–0.
+- **Provisional.** A week with under 95% verified coverage is published as provisional. A team with no verified results has `data_status: "unavailable"`; its record and averages are shown as unavailable (—), and its rating is labelled provisional because game-based components sit at a neutral 50th percentile.
+- **Points per game.** Public PF/G and PA/G are actual points over played games (forfeits excluded on the site); the formula's offense/defense inputs remain the capped values above.
+- **Movement.** Rank movement = previous rank − current rank. Rating change = current displayed (one-decimal) rating − previous displayed rating, so displayed numbers always reconcile. They are stated separately. The comparison is always the latest audited publication of the previous week; otherwise the team is NEW.
+- **Dates.** Game dates are Central calendar dates. A source's "time not published" marker (23:59 in its own zone) keeps its own date.

@@ -1,0 +1,483 @@
+{
+  "snapshot": "data/2026/week-03",
+  "season": 2026,
+  "week": 3,
+  "status": "PUBLISHED",
+  "formula_version": "MFPI-3.2",
+  "generated_at": "2026-09-15T17:08:22.897558+00:00",
+  "cutoff_at": "2026-09-15T11:00:00-05:00",
+  "audited_at": "2026-09-25T14:52:35.438502+00:00",
+  "outcome": "PASS_WITH_WARNINGS",
+  "teams": 225,
+  "unique_games": 349,
+  "blocking": 0,
+  "warnings": 10,
+  "info": 48,
+  "issue_counts": [
+    {
+      "severity": "INFO",
+      "code": "FORFEIT_REVIEW",
+      "count": 3
+    },
+    {
+      "severity": "INFO",
+      "code": "LARGE_RANK_CHANGE",
+      "count": 24
+    },
+    {
+      "severity": "INFO",
+      "code": "LARGE_RATING_CHANGE",
+      "count": 13
+    },
+    {
+      "severity": "INFO",
+      "code": "UNUSUAL_SCORE",
+      "count": 8
+    },
+    {
+      "severity": "WARNING",
+      "code": "FABRICATED_ZERO_AVERAGE",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "code": "MULTIPLE_GAMES_SAME_DAY",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "code": "OPPONENT_LISTING_UNDER_REVIEW",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "code": "POSSIBLE_IDENTITY_SPLIT",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "code": "RESULTS_UNAVAILABLE",
+      "count": 2
+    }
+  ],
+  "external_verification": "NOT_PERFORMED: MHSAA, MaxPreps and AHSFHS were unreachable from the build environment",
+  "issues": [
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Kosciusko Senior High School game on 2026-09-11 finished 60-58; flagged for a source check only.",
+      "team_id": "kosciusko",
+      "context": {}
+    },
+    {
+      "code": "FORFEIT_REVIEW",
+      "severity": "INFO",
+      "message": "Itawamba Agricultural High School has a forfeit on 2026-09-11; confirm the official ruling before treating its score as played.",
+      "team_id": "itawamba-agricultural",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Hernando High School game on 2026-09-11 finished 60-58; flagged for a source check only.",
+      "team_id": "hernando",
+      "context": {}
+    },
+    {
+      "code": "FORFEIT_REVIEW",
+      "severity": "INFO",
+      "message": "New Albany High School has a forfeit on 2026-09-11; confirm the official ruling before treating its score as played.",
+      "team_id": "new-albany",
+      "context": {}
+    },
+    {
+      "code": "OPPONENT_LISTING_UNDER_REVIEW",
+      "severity": "WARNING",
+      "message": "corinth's 2026-09-11 game against Houston High School involves a double-booked listing.",
+      "team_id": "corinth",
+      "context": {
+        "date": "2026-09-11",
+        "double_booked_team": "houston"
+      }
+    },
+    {
+      "code": "OPPONENT_LISTING_UNDER_REVIEW",
+      "severity": "WARNING",
+      "message": "tupelo's 2026-09-11 game against Houston High School involves a double-booked listing.",
+      "team_id": "tupelo",
+      "context": {
+        "date": "2026-09-11",
+        "double_booked_team": "houston"
+      }
+    },
+    {
+      "code": "MULTIPLE_GAMES_SAME_DAY",
+      "severity": "WARNING",
+      "message": "Houston High School is credited with 2 games on 2026-09-11; one listing may belong to a same-named school (check source team IDs and cities).",
+      "team_id": "houston",
+      "context": {
+        "date": "2026-09-11"
+      }
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Magee High School game on 2026-08-28 finished 64-0; flagged for a source check only.",
+      "team_id": "magee",
+      "context": {}
+    },
+    {
+      "code": "FORFEIT_REVIEW",
+      "severity": "INFO",
+      "message": "St. Patrick has a forfeit on 2026-08-28; confirm the official ruling before treating its score as played.",
+      "team_id": "st-patrick",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Yazoo County High School game on 2026-08-28 finished 61-0; flagged for a source check only.",
+      "team_id": "yazoo-county",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Nanih Waiya Attendance Center game on 2026-08-28 finished 45-65; flagged for a source check only.",
+      "team_id": "nanih-waiya",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Riverside High School game on 2026-08-28 finished 61-0; flagged for a source check only.",
+      "team_id": "riverside",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Vardaman High School game on 2026-08-28 finished 45-65; flagged for a source check only.",
+      "team_id": "vardaman",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Mount Olive Attendance Center game on 2026-08-28 finished 64-0; flagged for a source check only.",
+      "team_id": "mount-olive",
+      "context": {}
+    },
+    {
+      "code": "FABRICATED_ZERO_AVERAGE",
+      "severity": "WARNING",
+      "message": "Cleveland Central High School has no eligible games but publishes pf_per_game=0.0; the site must show it as unavailable.",
+      "team_id": "cleveland-central",
+      "context": {}
+    },
+    {
+      "code": "FABRICATED_ZERO_AVERAGE",
+      "severity": "WARNING",
+      "message": "Cleveland Central High School has no eligible games but publishes pa_per_game=0.0; the site must show it as unavailable.",
+      "team_id": "cleveland-central",
+      "context": {}
+    },
+    {
+      "code": "RESULTS_UNAVAILABLE",
+      "severity": "WARNING",
+      "message": "Cleveland Central High School has no verified results at week 3; its page must say results are unavailable, not 0-0.",
+      "team_id": "cleveland-central",
+      "context": {}
+    },
+    {
+      "code": "POSSIBLE_IDENTITY_SPLIT",
+      "severity": "WARNING",
+      "message": "External opponent 'Cleveland' (external-241722) may be Cleveland Central High School listed under a shorter name; confirm with the source team ID and city before linking.",
+      "team_id": "cleveland-central",
+      "context": {
+        "external_id": "external-241722",
+        "external_name": "Cleveland"
+      }
+    },
+    {
+      "code": "FABRICATED_ZERO_AVERAGE",
+      "severity": "WARNING",
+      "message": "Northside High School has no eligible games but publishes pf_per_game=0.0; the site must show it as unavailable.",
+      "team_id": "northside",
+      "context": {}
+    },
+    {
+      "code": "FABRICATED_ZERO_AVERAGE",
+      "severity": "WARNING",
+      "message": "Northside High School has no eligible games but publishes pa_per_game=0.0; the site must show it as unavailable.",
+      "team_id": "northside",
+      "context": {}
+    },
+    {
+      "code": "RESULTS_UNAVAILABLE",
+      "severity": "WARNING",
+      "message": "Northside High School has no verified results at week 3; its page must say results are unavailable, not 0-0.",
+      "team_id": "northside",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Presbyterian Christian School moved +42 places.",
+      "team_id": "presbyterian-christian",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Greenwood High School rating moved +19.9 points.",
+      "team_id": "greenwood",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Greenwood High School moved +67 places.",
+      "team_id": "greenwood",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Thomas E. Edwards moved +45 places.",
+      "team_id": "edwards",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Leflore County High School moved +47 places.",
+      "team_id": "leflore-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Pascagoula High School rating moved -18.2 points.",
+      "team_id": "pascagoula",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Pascagoula High School moved -51 places.",
+      "team_id": "pascagoula",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Caledonia High School moved +46 places.",
+      "team_id": "caledonia",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Laurel High School moved -42 places.",
+      "team_id": "laurel",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Port Gibson High School moved -41 places.",
+      "team_id": "port-gibson",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Tupelo Christian rating moved +15.6 points.",
+      "team_id": "tupelo-christian-prep",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Tupelo Christian moved +52 places.",
+      "team_id": "tupelo-christian-prep",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Lewisburg High School moved +43 places.",
+      "team_id": "lewisburg",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Biloxi High School rating moved -22.3 points.",
+      "team_id": "biloxi",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Biloxi High School moved -71 places.",
+      "team_id": "biloxi",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Wayne County High School moved -49 places.",
+      "team_id": "wayne-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Baldwyn High School rating moved +19.0 points.",
+      "team_id": "baldwyn",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Baldwyn High School moved +62 places.",
+      "team_id": "baldwyn",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "West Jones High School moved -53 places.",
+      "team_id": "west-jones",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Kossuth High School rating moved +22.0 points.",
+      "team_id": "kossuth",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Kossuth High School moved +77 places.",
+      "team_id": "kossuth",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Holmes County Central High School rating moved -19.8 points.",
+      "team_id": "holmes-county-central",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Holmes County Central High School moved -71 places.",
+      "team_id": "holmes-county-central",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Tishomingo County High School rating moved -26.8 points.",
+      "team_id": "tishomingo-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Tishomingo County High School moved -95 places.",
+      "team_id": "tishomingo-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "J Z George High School moved -44 places.",
+      "team_id": "j-z-george",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Shaw High School moved +42 places.",
+      "team_id": "shaw",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Alcorn Central High School rating moved -27.6 points.",
+      "team_id": "alcorn-central",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Alcorn Central High School moved -91 places.",
+      "team_id": "alcorn-central",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Jim Hill High School rating moved -17.1 points.",
+      "team_id": "jim-hill",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Jim Hill High School moved -57 places.",
+      "team_id": "jim-hill",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Raymond High School moved -45 places.",
+      "team_id": "raymond",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Holly Springs High School moved -45 places.",
+      "team_id": "holly-springs",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Yazoo City High School rating moved -16.4 points.",
+      "team_id": "yazoo-city",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Yazoo City High School moved -56 places.",
+      "team_id": "yazoo-city",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Humphreys County High School rating moved -15.0 points.",
+      "team_id": "humphreys-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Collins High School rating moved -16.0 points.",
+      "team_id": "collins",
+      "context": {}
+    }
+  ]
+}

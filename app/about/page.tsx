@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SiteFooter, SiteHeader } from '../site-nav';
+import { editorEmail, publisher } from '../site';
 import { longDate, metadata as snapshotMeta, teams } from '../team-data';
 
 export const metadata: Metadata = {
   title: 'About the Mississippi Football Power Index',
-  description: 'Who publishes MFPI, what the rating is, where the scores come from, and how often it updates.',
+  description: 'Who publishes MFPI, what it calculates, where its data comes from, how often it updates, and how corrections and review work.',
   alternates: { canonical: '/about' },
 };
 
@@ -26,63 +27,68 @@ export default function AboutPage() {
             Mississippi. It currently rates {teams.length} teams across MHSAA Classes 1A through 7A.
           </p>
 
-          <h2>What MFPI is</h2>
+          <h2>Who publishes it</h2>
+          <p>
+            MFPI is an independent Mississippi sports analytics project operated by {publisher.operatorName} for{' '}
+            {publisher.organization}. {publisher.operatorName} is responsible for the site, its rankings and its
+            corrections; reach the editor at <a href={`mailto:${editorEmail}`}>{editorEmail}</a>. MFPI is free to read, with no
+            paywall or account, and is supported by advertising and direct sponsors. Sponsorship never influences how a
+            team is rated.
+          </p>
+          <p>
+            MFPI is not affiliated with, sponsored by or endorsed by the Mississippi High School Activities Association
+            (MHSAA), MaxPreps, Google, or any school or school district.
+          </p>
+
+          <h2>What MFPI calculates</h2>
           <p>
             A win-loss record does not tell you much on its own. A 4–0 team that has played four winless opponents and
-            a 3–1 team that has played the toughest schedule in the state are not the same team, and the standings
-            cannot tell them apart. MFPI exists to put every program on one scale by asking two questions at once: whom
-            did you play, and how did you do against them?
-          </p>
-          <p>
-            The answer is a single number from roughly 1 to 100. It is a rating, not a prediction or a poll, and it
-            carries no official standing with the MHSAA. It is one more piece of information for coaches, players,
-            parents and fans who follow Mississippi high school football.
+            a 3–1 team that has played the toughest schedule in the state are not the same team. MFPI puts every program
+            on one scale by asking two questions at once: whom did you play, and how did you do against them? MFPI
+            itself calculates the opponent-adjusted team ratings, strength of schedule, every component percentile, the
+            final 1–100 rating, statewide and class ranks, and the week-to-week comparisons. It is a rating of results
+            so far, not a poll, a prediction or a betting line, and it has no official standing with the MHSAA.
           </p>
 
-          <h2>What MFPI is not</h2>
+          <h2>Where the underlying facts come from</h2>
           <ul>
-            <li>It is not an official MHSAA product and carries no playoff seeding weight.</li>
-            <li>It is not a human poll. No votes, no ballots, no preseason expectations baked in.</li>
-            <li>It is not a betting product, and it does not publish point spreads or projections.</li>
+            <li><strong>Teams, classes and regions:</strong> the official{' '}
+              <a href="https://www.misshsaa.com/2024/11/19/2025-27-football-regions/" rel="noopener">MHSAA 2025–27 football classifications</a>.</li>
+            <li><strong>Schedules and scores:</strong> the official <a href="https://scores.misshsaa.com/" rel="noopener">MHSAA score center</a>.</li>
+            <li><strong>Media rank and media strength of schedule (20% of the rating):</strong> the{' '}
+              <a href="https://www.maxpreps.com/ms/football/rankings/1/" rel="noopener">MaxPreps Mississippi football rankings</a>.</li>
+            <li><strong>Filling gaps:</strong> when the MHSAA score center has no final for a game that should be over,
+              MaxPreps team schedules are checked, and a result is accepted only when both teams and the date agree.
+              MaxPreps ratings are also used as a starting estimate for out-of-state opponents.</li>
           </ul>
-
-          <h2>Where the scores come from</h2>
           <p>
-            Team lists and classifications come from official MHSAA sources. Scores come from the official MHSAA score
-            center with secondary verification against published media results, and every run reports its own coverage:
-            this week&rsquo;s snapshot verified {snapshotMeta.verified_games} of {snapshotMeta.expected_games} expected games,
-            or {snapshotMeta.coverage_percentage.toFixed(1)}%. Media rank and strength-of-schedule inputs come from a
-            statewide media feed.
-          </p>
-          <p>
-            Every team page shows its own source data: each completed game, the score, the site, and the opponent&rsquo;s
-            classification and rating. If something looks wrong, the underlying games are right there to check.
+            Each team page lists every counted game, score, site and opponent, so the underlying results can be checked.
+            How conflicts and missing data are handled is described on the{' '}
+            <Link href="/corrections">corrections and standards page</Link>.
           </p>
 
           <h2>How often it updates</h2>
           <p>
-            Ratings are recalculated weekly in season, after the week&rsquo;s results are in and verified. When a score is
-            corrected after publication, the run is reissued as an audited correction rather than edited silently — the
-            snapshot records its own status and formula version.
+            Ratings are recalculated once a week in season, after a Tuesday 11:00 a.m. Central cutoff. The weekly run is
+            automated and can start a little after the cutoff. Every run is checked before publication;
+            games with conflicting or impossible listings are held out rather than guessed. When data is incomplete — fewer
+            than 95% of the games due by the cutoff verified, a stale media table, or a held-out listing — the week is still
+            published, labelled <strong>provisional</strong>. Only a calculation failure keeps the previous week up, and
+            the page always shows its real date.
+            A team with no verified results has its rating marked provisional on its own page.
           </p>
 
-          <h2>Corrections</h2>
+          <h2>People and automation</h2>
           <p>
-            Published high school scores contain errors, and MFPI inherits them. If you find a wrong score, a missing
-            game, or a team in the wrong classification, send the detail and a source and it will be checked against
-            the next run. Corrections are welcome from anyone — coaches, statisticians, parents or fans.
-          </p>
-          <p>
-            Write to <a href="mailto:editor@sportsmississippi.com">editor@sportsmississippi.com</a>, or see the{' '}
-            <Link href="/contact">contact page</Link>. The full calculation is documented on the{' '}
-            <Link href="/methodology">methodology page</Link>.
+            Data collection, matching, calculation and validation are automated, and rankings publish every week from
+            the data available — marked provisional when data is incomplete. Weekly Analysis articles are generated
+            automatically from the published data and labelled as automated analysis; they are not individually
+            reviewed before publication. Source conflicts, team-identity questions and corrections are decided by a person.
           </p>
 
-          <h2>Who publishes it</h2>
           <p>
-            MFPI is published by the Mississippi Football Power Index, an independent Mississippi sports analytics
-            project. It is free to read, with no paywall, subscription or account required, and is supported by
-            advertising and direct sponsors. Sponsorship never influences how a team is rated.
+            The full calculation is documented on the <Link href="/methodology">methodology page</Link>. Questions and
+            corrections: <Link href="/contact">contact</Link>.
           </p>
         </article>
         <SiteFooter />

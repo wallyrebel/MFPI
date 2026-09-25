@@ -159,3 +159,43 @@ footer { display: flex; justify-content: space-between; padding: 28px 4px 0; col
   .advertise-options { grid-template-columns: 1fr; gap: 16px; }
   .advertise-options section, .advertise-contact { padding: 22px; }
 }
+
+/* ---- Navigation on small screens: keep every link reachable ---- */
+@media (max-width: 600px) {
+  .header-inner { flex-wrap: wrap; row-gap: 10px; }
+  .mf-nav { display: flex; width: 100%; gap: 16px; overflow-x: auto; padding-bottom: 6px; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+  .mf-nav a { flex: 0 0 auto; min-height: 36px; display: inline-flex; align-items: center; }
+}
+.mf-nav a:focus-visible, .class-tabs button:focus-visible, .sort-control select:focus-visible, .ranking-entry summary:focus-visible, .table-scroll:focus-visible {
+  outline: 3px solid var(--gold); outline-offset: 2px;
+}
+.mf-footer nav { flex-wrap: wrap; }
+.mf-link-button { border: 0; padding: 0; background: none; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
+
+/* ---- Honest data states ---- */
+.mf-data-notice { margin: 0 0 16px; border-left: 4px solid #b23e36; border-radius: 6px; padding: 12px 14px; background: #fbeeec; color: #5a1f1a; font-size: 15px; line-height: 1.5; }
+.mf-provisional-tag { display: inline-block; margin: 4px 0 8px; border-radius: 4px; padding: 3px 7px; background: #fbeeec; color: #8a2f28; font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.mf-provisional-inline { color: #8a2f28; font-style: normal; font-weight: 700; }
+.mf-movement { margin: 0 0 12px; padding-left: 18px; color: #2c3a31; font-size: 15px; line-height: 1.6; }
+.mf-story .mf-story-body { padding: 0 28px 24px; }
+.mf-story h3 { margin: 18px 0 6px; font-size: 15px; }
+.mf-story p { margin: 0 0 8px; line-height: 1.6; }
+.mf-game-pending { color: #5d6961; background: #faf8f2; }
+.hero-links { margin-top: 10px; font-size: 14px; font-weight: 700; }
+.hero-links a { color: #95551d; }
+.mf-article-list { padding: 0; list-style: none; }
+.mf-article-list li { display: grid; gap: 4px; border-top: 1px solid rgb(23 34 27 / 10%); padding: 14px 0; }
+.mf-article-list small { color: #6e7771; }
+.mf-article section { margin-bottom: 8px; }
+.mf-archive-table { margin: 0 0 32px; border-radius: 12px; background: #fffdf8; }
+.mf-archive-table table { min-width: 560px; }
+@media (max-width: 600px) { .mf-story .mf-story-body { padding: 0 16px 18px; } }
+
+/* ---- Advertising: labelled, separated, and collapsed when unfilled ---- */
+.ad-slot { margin: 28px auto; max-width: 970px; border-top: 1px solid rgb(23 34 27 / 10%); border-bottom: 1px solid rgb(23 34 27 / 10%); padding: 8px 0 12px; text-align: center; }
+.ad-slot .adsbygoogle { min-height: 250px; }
+.ad-label { display: block; margin-bottom: 6px; color: #6e7771; font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.ad-slot:has(ins[data-ad-status="unfilled"]) { display: none; }
+@media (min-width: 768px) { .ad-slot .adsbygoogle { min-height: 100px; } }
+.mf-review-tag { background: #fbeeec; color: #8a2f28; border-radius: 4px; padding: 1px 5px; }
+.ad-slot[hidden] { display: none; }

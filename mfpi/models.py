@@ -167,6 +167,21 @@ class RankingRow:
     maxpreps_strength: float | None = None
     game_results: list[dict[str, Any]] = field(default_factory=list)
     bye_adjustment: dict[str, Any] | None = None
+    # Listings due by the cutoff that still lack a verified result. They do
+    # not count as games played, wins, losses, or points.
+    pending_games: int = 0
+    # complete | partial | unavailable | preseason (see RankingRow.data_status_for)
+    data_status: str = "complete"
+
+    @staticmethod
+    def data_status_for(games_played: int, pending_games: int, season_started: bool) -> str:
+        if games_played == 0 and pending_games == 0 and not season_started:
+            return "preseason"
+        if games_played == 0:
+            return "unavailable"
+        if pending_games:
+            return "partial"
+        return "complete"
 
     @property
     def record(self) -> str:
@@ -185,7 +200,13 @@ class RankingRow:
     def to_dict(self) -> dict[str, Any]:
         state_change = None if self.previous_state_rank is None else self.previous_state_rank - self.state_rank
         class_change = None if self.previous_class_rank is None else self.previous_class_rank - self.class_rank
-        mfpi_change = None if self.previous_mfpi is None else self.mfpi - self.previous_mfpi
+        # Rating change is the difference between the one-decimal ratings the
+        # site displays, so "93.1 -> 96.2" always reads as +3.1. Ranking and
+        # tie-breaking still use full precision.
+        mfpi_change = (
+            None if self.previous_mfpi is None
+            else round(round(self.mfpi, 1) - round(self.previous_mfpi, 1), 1) + 0.0
+        )
         return {
             "team_id": self.team.team_id,
             "slug": self.team.team_id,
@@ -203,9 +224,12 @@ class RankingRow:
             "previous_class_rank": self.previous_class_rank,
             "class_rank_change": class_change,
             "previous_mfpi": None if self.previous_mfpi is None else round(self.previous_mfpi, 1),
-            "mfpi_change": None if mfpi_change is None else round(mfpi_change, 1),
-            "pf_per_game": round(self.points_for / self.games_played, 1) if self.games_played else 0.0,
-            "pa_per_game": round(self.points_against / self.games_played, 1) if self.games_played else 0.0,
+            "mfpi_change": mfpi_change,
+            # No eligible games means no average, never a fabricated 0.0.
+            "pf_per_game": round(self.points_for / self.games_played, 1) if self.games_played else None,
+            "pa_per_game": round(self.points_against / self.games_played, 1) if self.games_played else None,
+            "pending_games": self.pending_games,
+            "data_status": self.data_status,
             "up_games": self.up_games,
             "same_class_games": self.same_class_games,
             "down_games": self.down_games,

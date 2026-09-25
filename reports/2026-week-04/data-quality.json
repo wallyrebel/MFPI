@@ -1,0 +1,306 @@
+{
+  "snapshot": "data/2026/week-04",
+  "season": 2026,
+  "week": 4,
+  "status": "PUBLISHED",
+  "formula_version": "MFPI-3.2",
+  "generated_at": "2026-09-22T16:19:26.783618+00:00",
+  "cutoff_at": "2026-09-22T11:00:00-05:00",
+  "audited_at": "2026-09-25T14:52:35.584284+00:00",
+  "outcome": "PASS_WITH_WARNINGS",
+  "teams": 225,
+  "unique_games": 458,
+  "blocking": 0,
+  "warnings": 10,
+  "info": 22,
+  "issue_counts": [
+    {
+      "severity": "INFO",
+      "code": "FORFEIT_REVIEW",
+      "count": 1
+    },
+    {
+      "severity": "INFO",
+      "code": "LARGE_RANK_CHANGE",
+      "count": 9
+    },
+    {
+      "severity": "INFO",
+      "code": "LARGE_RATING_CHANGE",
+      "count": 1
+    },
+    {
+      "severity": "INFO",
+      "code": "SCHEDULE_GAP",
+      "count": 1
+    },
+    {
+      "severity": "INFO",
+      "code": "UNUSUAL_SCORE",
+      "count": 10
+    },
+    {
+      "severity": "WARNING",
+      "code": "FABRICATED_ZERO_AVERAGE",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "code": "MULTIPLE_GAMES_SAME_DAY",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "code": "OPPONENT_LISTING_UNDER_REVIEW",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "code": "POSSIBLE_IDENTITY_SPLIT",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "code": "RESULTS_UNAVAILABLE",
+      "count": 2
+    }
+  ],
+  "external_verification": "NOT_PERFORMED: MHSAA, MaxPreps and AHSFHS were unreachable from the build environment",
+  "issues": [
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Kosciusko Senior High School game on 2026-09-11 finished 60-58; flagged for a source check only.",
+      "team_id": "kosciusko",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Hernando High School game on 2026-09-11 finished 60-58; flagged for a source check only.",
+      "team_id": "hernando",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Heidelberg High School game on 2026-09-18 finished 60-0; flagged for a source check only.",
+      "team_id": "heidelberg",
+      "context": {}
+    },
+    {
+      "code": "OPPONENT_LISTING_UNDER_REVIEW",
+      "severity": "WARNING",
+      "message": "corinth's 2026-09-11 game against Houston High School involves a double-booked listing.",
+      "team_id": "corinth",
+      "context": {
+        "date": "2026-09-11",
+        "double_booked_team": "houston"
+      }
+    },
+    {
+      "code": "OPPONENT_LISTING_UNDER_REVIEW",
+      "severity": "WARNING",
+      "message": "tupelo's 2026-09-11 game against Houston High School involves a double-booked listing.",
+      "team_id": "tupelo",
+      "context": {
+        "date": "2026-09-11",
+        "double_booked_team": "houston"
+      }
+    },
+    {
+      "code": "MULTIPLE_GAMES_SAME_DAY",
+      "severity": "WARNING",
+      "message": "Houston High School is credited with 2 games on 2026-09-11; one listing may belong to a same-named school (check source team IDs and cities).",
+      "team_id": "houston",
+      "context": {
+        "date": "2026-09-11"
+      }
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Magee High School game on 2026-08-28 finished 64-0; flagged for a source check only.",
+      "team_id": "magee",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Nanih Waiya Attendance Center game on 2026-08-28 finished 45-65; flagged for a source check only.",
+      "team_id": "nanih-waiya",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Yazoo County High School game on 2026-08-28 finished 61-0; flagged for a source check only.",
+      "team_id": "yazoo-county",
+      "context": {}
+    },
+    {
+      "code": "FORFEIT_REVIEW",
+      "severity": "INFO",
+      "message": "St. Patrick has a forfeit on 2026-08-28; confirm the official ruling before treating its score as played.",
+      "team_id": "st-patrick",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Taylorsville Attendance Center game on 2026-09-18 finished 60-0; flagged for a source check only.",
+      "team_id": "taylorsville",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Vardaman High School game on 2026-08-28 finished 45-65; flagged for a source check only.",
+      "team_id": "vardaman",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Mount Olive Attendance Center game on 2026-08-28 finished 64-0; flagged for a source check only.",
+      "team_id": "mount-olive",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Riverside High School game on 2026-08-28 finished 61-0; flagged for a source check only.",
+      "team_id": "riverside",
+      "context": {}
+    },
+    {
+      "code": "FABRICATED_ZERO_AVERAGE",
+      "severity": "WARNING",
+      "message": "Cleveland Central High School has no eligible games but publishes pf_per_game=0.0; the site must show it as unavailable.",
+      "team_id": "cleveland-central",
+      "context": {}
+    },
+    {
+      "code": "FABRICATED_ZERO_AVERAGE",
+      "severity": "WARNING",
+      "message": "Cleveland Central High School has no eligible games but publishes pa_per_game=0.0; the site must show it as unavailable.",
+      "team_id": "cleveland-central",
+      "context": {}
+    },
+    {
+      "code": "RESULTS_UNAVAILABLE",
+      "severity": "WARNING",
+      "message": "Cleveland Central High School has no verified results at week 4; its page must say results are unavailable, not 0-0.",
+      "team_id": "cleveland-central",
+      "context": {}
+    },
+    {
+      "code": "POSSIBLE_IDENTITY_SPLIT",
+      "severity": "WARNING",
+      "message": "External opponent 'Cleveland' (external-241722) may be Cleveland Central High School listed under a shorter name; confirm with the source team ID and city before linking.",
+      "team_id": "cleveland-central",
+      "context": {
+        "external_id": "external-241722",
+        "external_name": "Cleveland"
+      }
+    },
+    {
+      "code": "FABRICATED_ZERO_AVERAGE",
+      "severity": "WARNING",
+      "message": "Northside High School has no eligible games but publishes pf_per_game=0.0; the site must show it as unavailable.",
+      "team_id": "northside",
+      "context": {}
+    },
+    {
+      "code": "FABRICATED_ZERO_AVERAGE",
+      "severity": "WARNING",
+      "message": "Northside High School has no eligible games but publishes pa_per_game=0.0; the site must show it as unavailable.",
+      "team_id": "northside",
+      "context": {}
+    },
+    {
+      "code": "RESULTS_UNAVAILABLE",
+      "severity": "WARNING",
+      "message": "Northside High School has no verified results at week 4; its page must say results are unavailable, not 0-0.",
+      "team_id": "northside",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Wilkinson County High has 2 verified games against a statewide median of 4.",
+      "team_id": "wilkinson-county",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Raleigh High School moved +43 places.",
+      "team_id": "raleigh",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RATING_CHANGE",
+      "severity": "INFO",
+      "message": "Simmons High School rating moved +25.6 points.",
+      "team_id": "simmons",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Simmons High School moved +84 places.",
+      "team_id": "simmons",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Lake High School moved +46 places.",
+      "team_id": "lake",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "North Pontotoc High School moved -40 places.",
+      "team_id": "north-pontotoc",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Callaway High School moved +40 places.",
+      "team_id": "callaway",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Port Gibson High School moved -42 places.",
+      "team_id": "port-gibson",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Northeast Jones High School moved +50 places.",
+      "team_id": "northeast-jones",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Forest Hill High School moved +40 places.",
+      "team_id": "forest-hill",
+      "context": {}
+    },
+    {
+      "code": "LARGE_RANK_CHANGE",
+      "severity": "INFO",
+      "message": "Union High School moved -40 places.",
+      "team_id": "union",
+      "context": {}
+    }
+  ]
+}

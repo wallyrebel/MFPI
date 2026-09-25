@@ -43,6 +43,15 @@ export default function AdvertisePage() {
             </section>
           </div>
 
+          <section>
+            <h2>How advertising appears</h2>
+            <p>
+              Paid placements are always labelled &ldquo;Sponsored&rdquo; or &ldquo;Advertisement&rdquo; and are kept
+              separate from the rankings table, team statistics and navigation. Advertisers cannot buy coverage, a
+              rating, or a change to how any team is ranked.
+            </p>
+          </section>
+
           <section className="advertise-contact">
             <h2>Let’s talk advertising</h2>
             <p>

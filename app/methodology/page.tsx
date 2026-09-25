@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 const WEIGHTS: Array<[string, string, string]> = [
   ['35%', 'Opponent-adjusted performance', 'Margin of victory or defeat, adjusted for the strength of the opponent and for the site of the game.'],
   ['20%', 'MFPI strength of schedule', 'The average current rating of every completed opponent. This is a rating average, not opponent win percentage.'],
-  ['10%', 'Media rank', 'The statewide ordinal rank from the media feed, converted to a higher-is-better percentile.'],
-  ['10%', 'Media strength of schedule', 'The published schedule-strength value. An opening 0.0 is treated as unavailable rather than as the weakest schedule in the state.'],
+  ['10%', 'Media rank', 'The team’s statewide rank in the MaxPreps Mississippi football rankings (MHSAA 1A–7A teams only), converted to a higher-is-better percentile.'],
+  ['10%', 'Media strength of schedule', 'The schedule-strength value published in the MaxPreps rankings. An opening 0.0 is treated as unavailable rather than as the weakest schedule in the state.'],
   ['8%', 'Points scored', 'Points per game, capped at 49 in any single game so a running-clock blowout does not pay extra.'],
   ['8%', 'Points allowed', 'Defensive value derived from points allowed per game, capped the same way.'],
   ['5%', 'Record', 'Wins plus half credit for ties, over games played.'],
@@ -34,8 +34,9 @@ export default function MethodologyPage() {
 
           <p>
             MFPI asks one question: based on whom a team played and how it performed, how strong is that team right
-            now? Roughly eighty percent of the answer comes from MHSAA classifications, schedules and scores. The
-            remaining twenty percent comes from statewide media rank and strength-of-schedule inputs.
+            now? Eighty percent of the answer comes from MHSAA classifications, schedules and scores. The remaining
+            twenty percent comes from the MaxPreps Mississippi rankings&apos; statewide rank and strength-of-schedule
+            values.
           </p>
 
           <h2>The eight components</h2>
@@ -95,6 +96,42 @@ export default function MethodologyPage() {
             not assumed. A team&rsquo;s schedule must show games before and after the empty week; simply missing from a feed
             is not a bye, and neither is a cancellation or postponement. Teams with no previous games get no
             protection.
+          </p>
+
+          <h2>Data sources</h2>
+          <ul>
+            <li>Teams, classifications and regions: the official MHSAA 2025–27 football classification list. Only active
+              MHSAA Class 1A–7A programs are ranked; MAIS, out-of-state and other opponents appear on schedules but are
+              never ranked.</li>
+            <li>Schedules and scores: the official MHSAA score center. A game counts only when it is final with both
+              scores. Jamborees and scrimmages never count.</li>
+            <li>Media rank and media strength of schedule: the MaxPreps Mississippi football rankings, matched to the
+              MHSAA list exactly once per team.</li>
+            <li>Gaps: when the MHSAA score center lacks a final for a game that should be over, MaxPreps team schedules
+              are checked. A result is accepted only for the same two teams on the scheduled date or one day either side,
+              and conflicting reports are rejected. An absent score is never read as a cancellation.</li>
+            <li>Out-of-state opponents: a published MaxPreps rating, when available, gives a capped starting estimate
+              that fades as real results connect.</li>
+          </ul>
+
+          <h2>Missing data and provisional ratings</h2>
+          <p>
+            A missing score is never treated as 0–0 or as a loss, and postponed or cancelled games do not count. A
+            component with no data for a team (for example scoring averages before its first verified game) sits at a
+            neutral 50th percentile rather than a punitive zero. When fewer than 95% of the games due by the cutoff have
+            verified scores, the whole week is labelled <strong>provisional</strong>. A team with no verified results is
+            shown as &ldquo;results unavailable&rdquo;, its averages are shown as &mdash;, and its rating is labelled provisional
+            because it rests on class, media and neutral inputs rather than games.
+          </p>
+
+          <h2>How changes and dates are shown</h2>
+          <p>
+            Rank movement is last week&apos;s rank minus this week&apos;s. Rating change is this week&apos;s displayed
+            one-decimal rating minus last week&apos;s displayed rating, so the numbers on a page always add up. They are
+            reported separately: a team can hold its rank while its rating rises. Both compare against the latest audited
+            publication of the previous week; a team with no comparable previous row is shown as NEW. Game dates are
+            calendar dates in Central time. Opponent ranks shown beside past games are their current ranks, not their
+            ranks on game day.
           </p>
 
           <h2>Ranking, ties and corrections</h2>
