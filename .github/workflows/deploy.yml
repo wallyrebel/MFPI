@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths-ignore:
       - '**.md'
+      - 'reports/**'
       - '.github/workflows/update-rankings.yml'
       # The weekly rankings job pushes these and deploys them itself. Without
       # this, every data commit would deploy twice, from two racing workflows.
@@ -55,10 +56,44 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+
       - name: Lint
         run: npm run lint
 
+      - name: Test site display and ad-eligibility logic
+        run: npm run test:site
+
+      # Blocking audit findings stop the deploy; warnings are reported only.
+      - name: Audit the snapshot being deployed
+        run: python -m mfpi.audit --snapshot data/current
+
+      - name: Check Weekly Analysis review metadata
+        run: python -m mfpi.editorial validate
+
       - name: Build
+        env:
+          # AdSense settings are public values configured as repository
+          # variables (Settings > Secrets and variables > Actions > Variables).
+          # Unset variables leave advertising off. See ADSENSE.md.
+          NEXT_PUBLIC_ADSENSE_CLIENT: ${{ vars.NEXT_PUBLIC_ADSENSE_CLIENT }}
+          NEXT_PUBLIC_ADS_ENABLED: ${{ vars.NEXT_PUBLIC_ADS_ENABLED }}
+          NEXT_PUBLIC_GOOGLE_CMP: ${{ vars.NEXT_PUBLIC_GOOGLE_CMP }}
+          NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_TOP: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_TOP }}
+          NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_BOTTOM: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_BOTTOM }}
+          NEXT_PUBLIC_ADSENSE_SLOT_TEAM_MID: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_TEAM_MID }}
+          NEXT_PUBLIC_ADSENSE_SLOT_TEAM_BOTTOM: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_TEAM_BOTTOM }}
+          NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE_MID: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE_MID }}
+          NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE_BOTTOM: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE_BOTTOM }}
+          NEXT_PUBLIC_ADS_TXT_EXTRA: ${{ vars.NEXT_PUBLIC_ADS_TXT_EXTRA }}
+          NEXT_PUBLIC_PUBLISHER_NAME: ${{ vars.NEXT_PUBLIC_PUBLISHER_NAME }}
         run: npm run build
 
       - name: Deploy to Cloudflare Workers

@@ -14,7 +14,9 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "rankings:demo": "python calculate_rankings.py --demo",
     "rankings:live": "python calculate_rankings.py --live",
-    "test:engine": "python -m pytest -q"
+    "test:engine": "python -m pytest -q",
+    "test:site": "node --experimental-strip-types --test tests-js/*.test.mjs",
+    "audit": "python -m mfpi.audit --snapshot data/current"
   },
   "dependencies": {
     "next": "^16.3.4",

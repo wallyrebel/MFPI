@@ -83,7 +83,25 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.corrected }}
         run: python calculate_rankings.py --live --corrected
 
+      - name: Audit the current snapshot
+        run: python -m mfpi.audit --snapshot data/current --out data/drafts/audit-current
+
+      - name: Test site display logic
+        run: npm run test:site
+
       - name: Build Cloudflare site
+        env:
+          NEXT_PUBLIC_ADSENSE_CLIENT: ${{ vars.NEXT_PUBLIC_ADSENSE_CLIENT }}
+          NEXT_PUBLIC_ADS_ENABLED: ${{ vars.NEXT_PUBLIC_ADS_ENABLED }}
+          NEXT_PUBLIC_GOOGLE_CMP: ${{ vars.NEXT_PUBLIC_GOOGLE_CMP }}
+          NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_TOP: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_TOP }}
+          NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_BOTTOM: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_BOTTOM }}
+          NEXT_PUBLIC_ADSENSE_SLOT_TEAM_MID: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_TEAM_MID }}
+          NEXT_PUBLIC_ADSENSE_SLOT_TEAM_BOTTOM: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_TEAM_BOTTOM }}
+          NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE_MID: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE_MID }}
+          NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE_BOTTOM: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE_BOTTOM }}
+          NEXT_PUBLIC_ADS_TXT_EXTRA: ${{ vars.NEXT_PUBLIC_ADS_TXT_EXTRA }}
+          NEXT_PUBLIC_PUBLISHER_NAME: ${{ vars.NEXT_PUBLIC_PUBLISHER_NAME }}
         run: npm run build
 
       - name: Preserve fetched source cache
@@ -100,7 +118,10 @@ jobs:
           name: ranking-validation-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
             data/drafts/**/validation.json
+            data/drafts/**/audit.json
+            data/drafts/audit-current/**
             data/current/validation.json
+            data/current/audit.json
           if-no-files-found: ignore
 
       - name: Commit updated ranking snapshots

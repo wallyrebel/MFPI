@@ -36,9 +36,10 @@ export default function ContactPage() {
             <li>A link or source, if you have one — a box score, official result or news report</li>
           </ul>
           <p>
-            Corrections are verified against official results rather than entered by hand, so a score that has not been
-            reported anywhere may not be fixable until it is. Confirmed corrections are published as an audited
-            correction run, not edited in silently.
+            Corrections are verified against official results rather than entered on request alone, so a score that has
+            not been reported anywhere may not be fixable until it is. Confirmed corrections to a published week are
+            issued as an audited revision, not edited in silently. See the{' '}
+            <Link href="/corrections">corrections and standards page</Link> for the correction log and known data issues.
           </p>
 
           <h2>Other questions</h2>
@@ -63,7 +64,7 @@ export default function ContactPage() {
 
           <h2>What this site is</h2>
           <p>
-            MFPI is an independent project, not an official product of the MHSAA or any school. More detail is on the{' '}
+            MFPI is an independent project, not an official product of the MHSAA, MaxPreps or any school. More detail is on the{' '}
             <Link href="/about">about page</Link>, and the calculation is documented on the{' '}
             <Link href="/methodology">methodology page</Link>. See also the{' '}
             <Link href="/privacy">privacy policy</Link>.

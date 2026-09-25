@@ -1,60 +1,66 @@
-import RankingsDashboard, { type ComponentValue, type Ranking, type Snapshot } from './rankings-dashboard';
-import snapshotData from '../data/current/overall.json';
-
-type SourceRanking = Omit<Ranking, 'media_state_rank' | 'media_strength' | 'components'> & {
-  maxpreps_state_rank: number | null;
-  maxpreps_rating: number | null;
-  maxpreps_strength: number | null;
-  components: Record<string, ComponentValue>;
-};
-
-type SourceSnapshot = Omit<Snapshot, 'rankings'> & { rankings: SourceRanking[] };
+import RankingsDashboard, { type Ranking, type Snapshot } from './rankings-dashboard';
+import { pageAds } from './ads/page-ads';
+import { ageInDays, centralWeekdayTime } from './lib/format';
+import { metadata as snapshotMeta, teamRatingChange, teamScoring, teamStatus, teams } from './team-data';
 
 export default function Home() {
-  const snapshot = snapshotData as SourceSnapshot;
-  const publicSourceNames = [
-    'Official MHSAA classifications and scores',
-    'Media Rank and Strength of Schedule',
-    'Secondary score verification',
-  ];
   const publicSnapshot: Snapshot = {
-    ...snapshot,
     metadata: {
-      ...snapshot.metadata,
-      data_sources: snapshot.metadata.data_sources.map((source, index) => ({
-        name: source.name.includes('demo') ? source.name : (publicSourceNames[index] ?? 'Public football data'),
+      ...snapshotMeta,
+      cutoff_label: centralWeekdayTime(snapshotMeta.cutoff_at),
+      data_sources: snapshotMeta.data_sources.map((source) => ({
+        name: source.name,
         retrieved_at: source.retrieved_at,
-        configured: source.configured,
       })),
     },
-    rankings: snapshot.rankings.map((ranking) => {
-      const {
-        maxpreps_state_rank: media_state_rank,
-        maxpreps_rating: unusedMediaRating,
-        maxpreps_strength: media_strength,
-        components: sourceComponents,
-        ...publicRanking
-      } = ranking;
-      const {
-        maxpreps_rank: media_rank,
-        maxpreps_sos: media_sos,
-        ...components
-      } = sourceComponents;
-      void unusedMediaRating;
-
+    rankings: teams.map((team): Ranking => {
+      const scoring = teamScoring(team);
+      const { maxpreps_rank: media_rank, maxpreps_sos: media_sos, ...components } = team.components;
       return {
-        ...publicRanking,
-        media_state_rank,
-        media_strength,
+        team_id: team.team_id,
+        slug: team.slug,
+        team: team.team,
+        classification: team.classification,
+        region: team.region,
+        record: team.record,
+        games_played: team.games_played,
+        data_status: teamStatus(team),
+        state_rank: team.state_rank,
+        class_rank: team.class_rank,
+        mfpi: team.mfpi,
+        mfpi_unrounded: team.mfpi_unrounded,
+        previous_state_rank: team.previous_state_rank,
+        state_rank_change: team.state_rank_change,
+        class_rank_change: team.class_rank_change,
+        rating_change: teamRatingChange(team),
+        pf_per_game: scoring?.pointsFor ?? null,
+        pa_per_game: scoring?.pointsAgainst ?? null,
+        media_state_rank: team.maxpreps_state_rank,
+        media_strength: team.maxpreps_strength,
+        up_games: team.up_games,
+        same_class_games: team.same_class_games,
+        down_games: team.down_games,
+        class_schedule_delta: team.class_schedule_delta,
+        schedule_direction: team.schedule_direction,
         components: { ...components, media_rank, media_sos },
-        explanation: '',
+        bye_adjustment: team.bye_adjustment ?? null,
       };
     }),
   };
 
+  // Rendered per request, so the age shown is the snapshot's real age.
+  const age = ageInDays(snapshotMeta.generated_at, new Date());
+  const ads = pageAds({ kind: 'rankings', substantive: teams.length > 0 }, ['rankings-top', 'rankings-bottom']);
+
   return (
     <>
-      <RankingsDashboard snapshot={publicSnapshot} />
+      {ads.script}
+      <RankingsDashboard
+        snapshot={publicSnapshot}
+        ageDays={age}
+        adTop={ads.slot('rankings-top')}
+        adBottom={ads.slot('rankings-bottom')}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

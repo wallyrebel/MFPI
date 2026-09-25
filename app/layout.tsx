@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { GoogleAnalytics } from './analytics';
 import { AdvertisingBanner } from './advertising-banner';
-import { siteUrl } from './site';
+import { adsConfig, siteUrl } from './site';
+import { GoogleCmpTag } from './ads/consent';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -46,8 +47,20 @@ export const metadata: Metadata = {
     images: ['/mfpi-social-card.png'],
   },
   robots: { index: true, follow: true },
+  // Site ownership verification for AdSense. Independent of whether ad slots
+  // render: the meta tag loads no ad code.
+  other: adsConfig.client ? { 'google-adsense-account': adsConfig.client } : undefined,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body><AdvertisingBanner />{children}<GoogleAnalytics /></body></html>;
+  return (
+    <html lang="en">
+      <body>
+        <GoogleAnalytics />
+        <GoogleCmpTag />
+        <AdvertisingBanner />
+        {children}
+      </body>
+    </html>
+  );
 }
