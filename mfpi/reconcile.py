@@ -1,8 +1,9 @@
 from __future__ import annotations
 
+from collections import defaultdict
 from dataclasses import replace
 
-from .matching import TeamMatcher, normalize_name, team_slug
+from .matching import TeamMatcher, normalize_name, reviewed_identity, team_slug
 from .models import (
     Game,
     MaxPrepsRanking,
@@ -24,9 +25,55 @@ def reconcile_games(
     external: dict[str, Team] = {}
     issues: list[ValidationIssue] = []
 
-    def resolve(name: str, source_id: str | None, city: str) -> Team:
+    reported_identities: set[tuple[str, str]] = set()
+    source_ids_by_team: dict[str, dict[str, set[str]]] = defaultdict(dict)
+
+    def resolve(name: str, source_id: str | None, city: str, source: str) -> Team:
+        identity = reviewed_identity(source, source_id, name)
+        if identity is not None and identity.team_id is None:
+            external_id = f"external-{source_id}"
+            if ("not", str(source_id)) not in reported_identities:
+                reported_identities.add(("not", str(source_id)))
+                issues.append(ValidationIssue(
+                    "REVIEWED_EXTERNAL_IDENTITY", "WARNING",
+                    f"Kept source team {name!r} ({source} {source_id}) external: reviewed as a different school.",
+                    {"source_team_id": source_id, "incoming": name, "evidence": identity.evidence},
+                ))
+            return external.setdefault(external_id, Team(
+                team_id=external_id, canonical_name=normalize_name(name), display_name=name,
+                classification=None, city=city, active=True, source_team_id=source_id,
+            ))
+        if identity is not None:
+            official = teams_by_id.get(identity.team_id)
+            corroborated = bool(city) and normalize_name(city) == normalize_name(identity.city)
+            key = (identity.source_team_id, "applied" if corroborated and official else "skipped")
+            if official is not None and official.ranked and corroborated:
+                if key not in reported_identities:
+                    reported_identities.add(key)
+                    issues.append(ValidationIssue(
+                        "REVIEWED_IDENTITY_APPLIED", "WARNING",
+                        f"Linked source team {name!r} ({source} {source_id}, {city}) to {official.display_name}.",
+                        {"team_id": official.team_id, "source": source, "source_team_id": source_id,
+                         "incoming": name, "city": city, "evidence": identity.evidence},
+                    ))
+                if not official.source_team_id or not official.city:
+                    teams_by_id[official.team_id] = replace(
+                        official, city=official.city or city,
+                        source_team_id=official.source_team_id or source_id,
+                    )
+                return teams_by_id[official.team_id]
+            if key not in reported_identities:
+                reported_identities.add(key)
+                issues.append(ValidationIssue(
+                    "REVIEWED_IDENTITY_NOT_CORROBORATED", "WARNING",
+                    f"Source team {name!r} ({source} {source_id}) matches a reviewed identity for "
+                    f"{identity.team_id}, but its city {city!r} does not confirm it; kept as an external opponent.",
+                    {"team_id": identity.team_id, "source_team_id": source_id, "incoming": name, "city": city},
+                ))
         team, confidence, method = matcher.match(name)
         if team is not None:
+            if source_id:
+                source_ids_by_team[team.team_id].setdefault(str(source_id), set()).add(f"{name} | {city}")
             if method == "fuzzy":
                 issues.append(
                     ValidationIssue(
@@ -76,8 +123,8 @@ def reconcile_games(
 
     games: list[Game] = []
     for raw in raw_games:
-        home = resolve(raw.home_name, raw.home_source_id, raw.home_city)
-        away = resolve(raw.away_name, raw.away_source_id, raw.away_city)
+        home = resolve(raw.home_name, raw.home_source_id, raw.home_city, raw.source)
+        away = resolve(raw.away_name, raw.away_source_id, raw.away_city, raw.source)
         if not home.ranked and not away.ranked:
             continue
         games.append(
@@ -99,6 +146,24 @@ def reconcile_games(
                 contest_type=raw.contest_type,
             )
         )
+    teams_in_game = {game.game_id: (game.home_team_id, game.away_team_id) for game in games}
+    for team_id, source_ids in sorted(source_ids_by_team.items()):
+        if len(source_ids) > 1:
+            # One MHSAA program matched by name from several source team IDs is
+            # how a same-named school from another state gets merged into a
+            # Mississippi team's schedule. Report it; do not guess which is right.
+            issues.append(ValidationIssue(
+                "MULTIPLE_SOURCE_IDS_FOR_TEAM", "WARNING",
+                f"{teams_by_id[team_id].display_name} matched {len(source_ids)} different source team IDs by name.",
+                {"team_id": team_id, "source_ids": {key: sorted(value) for key, value in source_ids.items()},
+                 "games": [
+                     {"game_id": raw.game_id, "date": raw.date.isoformat(),
+                      "home": raw.home_name, "home_source_id": raw.home_source_id,
+                      "away": raw.away_name, "away_source_id": raw.away_source_id}
+                     for raw in raw_games
+                     if team_id in teams_in_game.get(raw.game_id, ())
+                 ]},
+            ))
     all_teams = list(teams_by_id.values()) + list(external.values())
     return all_teams, games, issues
 

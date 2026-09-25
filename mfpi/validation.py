@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import datetime
 
 from .config import Settings
+from .dates import calendar_date
 from .models import Game, Team, ValidationIssue, ValidationReport
 
 
@@ -60,6 +61,21 @@ def validate_inputs(
             expected.append(game)
             if game.completed and game.verified:
                 verified.append(game)
+
+    booked: dict[tuple[str, str], list[str]] = defaultdict(list)
+    for game in games:
+        if game.completed and game.date <= cutoff:
+            day = calendar_date(game.date).isoformat()
+            for team_id in (game.home_team_id, game.away_team_id):
+                if team_id in ranked_ids:
+                    booked[(team_id, day)].append(game.game_id)
+    for (team_id, day), game_ids in sorted(booked.items()):
+        if len(game_ids) > 1:
+            issues.append(ValidationIssue(
+                "TEAM_DOUBLE_BOOKED", "WARNING",
+                f"{team_id} is credited with {len(game_ids)} completed games on {day}; one may belong to a same-named school.",
+                {"team_id": team_id, "date": day, "game_ids": game_ids},
+            ))
 
     for key, count in matchup_keys.items():
         if count > 1:

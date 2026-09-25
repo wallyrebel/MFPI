@@ -46,3 +46,7 @@ __pycache__/
 /data/mfpi.sqlite3
 /data/drafts/
 /data/cache/
+
+# transient staging directories from an interrupted publish
+/data/.current-staging/
+/data/.current-retired/

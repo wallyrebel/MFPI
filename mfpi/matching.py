@@ -123,3 +123,60 @@ class TeamMatcher:
         if best_score >= 0.94 and best_score - second_score >= 0.04:
             return self._by_alias[candidates[0]], best_score, "fuzzy"
         return None, best_score, "ambiguous"
+
+
+class ReviewedIdentity:
+    """A source team whose name alone does not identify the MHSAA program.
+
+    A mapping applies only when the source, the source's stable team ID, the
+    listed name, and the listed city all agree. A fuzzy name match is never
+    enough; if the city is missing or different the team stays external and a
+    warning asks for review.
+
+    ``team_id=None`` records the opposite finding: a source team that shares
+    an MHSAA program's name but is a different school (for example, a
+    same-named school in another state). It is always kept external.
+    """
+
+    __slots__ = ("source", "source_team_id", "team_id", "source_names", "city", "evidence")
+
+    def __init__(
+        self, source: str, source_team_id: str, team_id: str | None,
+        source_names: Iterable[str], city: str, evidence: str,
+    ) -> None:
+        self.source = source
+        self.source_team_id = source_team_id
+        self.team_id = team_id
+        self.source_names = frozenset(normalize_name(name) for name in source_names)
+        self.city = city
+        self.evidence = evidence
+
+
+REVIEWED_SOURCE_IDENTITIES: tuple[ReviewedIdentity, ...] = (
+    ReviewedIdentity(
+        source="mhsaa_score_center",
+        source_team_id="241722",
+        team_id="cleveland-central",
+        source_names=("Cleveland",),
+        city="Cleveland",
+        evidence=(
+            "The official score center lists 'Cleveland' (team 241722) against Clarksdale, "
+            "Greenwood, Amanda Elzy and Grenada while Cleveland Central, the only MHSAA "
+            "football program in Cleveland, Mississippi, had no linked games in weeks 1-4. "
+            "Applied only when the listing's city is also Cleveland."
+        ),
+    ),
+)
+
+
+def reviewed_identity(source: str, source_team_id: str | None, name: str) -> ReviewedIdentity | None:
+    if not source_team_id:
+        return None
+    for identity in REVIEWED_SOURCE_IDENTITIES:
+        if (
+            identity.source == source
+            and identity.source_team_id == str(source_team_id)
+            and normalize_name(name) in identity.source_names
+        ):
+            return identity
+    return None

@@ -7,6 +7,8 @@ from datetime import datetime
 
 from .config import BYE_PREVIOUS_WEIGHT, COMPONENTS, Settings, class_prior_points, weights_for_games
 from .byes import result_fingerprint, unchanged_results
+from .explain import ranking_explanation
+from .game_status import expected_by_cutoff, is_exhibition
 from .models import ComponentValue, Game, MaxPrepsSignal, RankingRow, Team
 from .normalize import robust_percentiles
 from .srs import adjusted_margin, perspective, solve_srs
@@ -111,7 +113,11 @@ def calculate_rankings(
     external_ratings = external_ratings or {}
     ranked_teams = [team for team in teams if team.ranked]
     ranked_ids = {team.team_id for team in ranked_teams}
-    completed_games = [game for game in games if game.completed and game.verified and game.date <= cutoff]
+    # Jamborees and scrimmages are never varsity season results, even with a final score.
+    completed_games = [
+        game for game in games
+        if game.completed and game.verified and game.date <= cutoff and not is_exhibition(game)
+    ]
     by_team: dict[str, list[Game]] = defaultdict(list)
     for game in completed_games:
         by_team[game.home_team_id].append(game)
@@ -120,6 +126,12 @@ def calculate_rankings(
         team_games.sort(key=lambda game: (game.date, game.game_id))
 
     teams_by_id = {team.team_id: team for team in teams}
+    pending_by_team: dict[str, int] = defaultdict(int)
+    for game in games:
+        if expected_by_cutoff(game, cutoff) and not (game.completed and game.verified):
+            pending_by_team[game.home_team_id] += 1
+            pending_by_team[game.away_team_id] += 1
+    season_started = cutoff.date() >= datetime.fromisoformat(settings.season_start).date()
     priors = {team.team_id: class_prior_points(team.classification) for team in teams}
     prior_strengths = {
         team.team_id: _prior_strength(len(by_team.get(team.team_id, [])), team.ranked) for team in teams
@@ -284,22 +296,7 @@ def calculate_rankings(
             row.previous_state_rank = old.get("state_rank")
             row.previous_class_rank = old.get("class_rank")
             row.previous_mfpi = old.get("mfpi_unrounded", old.get("mfpi"))
-            movement = row.previous_state_rank - row.state_rank if row.previous_state_rank else 0
-            direction = "rose" if movement > 0 else "fell" if movement < 0 else "held"
-            row.explanation = (
-                f"{row.team.display_name} {direction} to No. {row.state_rank} with an MFPI of {row.mfpi:.1f}. "
-                f"Its opponent-adjusted performance is {row.components['performance'].normalized:.1f}, SOS is "
-                f"{row.components['sos'].normalized:.1f}, Media Rank is "
-                f"{f'No. {row.maxpreps_state_rank}' if row.maxpreps_state_rank else 'unavailable'}, and its schedule "
-                f"includes {row.up_games} game(s) up in class."
-            )
-        else:
-            row.explanation = (
-                f"{row.team.display_name} enters at No. {row.state_rank} with an MFPI of {row.mfpi:.1f}; "
-                f"opponent-adjusted performance contributes {row.components['performance'].contribution:.2f} points and "
-                f"Media Rank and Strength of Schedule contribute {row.components['maxpreps_rank'].contribution + row.components['maxpreps_sos'].contribution:.2f} "
-                f"points. The schedule has {row.up_games} up, {row.same_class_games} same-class, and {row.down_games} down game(s)."
-            )
-        if row.bye_adjustment:
-            row.explanation += " Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
+        row.pending_games = pending_by_team.get(row.team.team_id, 0)
+        row.data_status = RankingRow.data_status_for(row.games_played, row.pending_games, season_started)
+        row.explanation = ranking_explanation(row.to_dict())
     return EngineResult(rows, srs, iterations, converged)

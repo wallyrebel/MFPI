@@ -2,13 +2,19 @@ from __future__ import annotations
 
 import csv
 import json
+import os
+import shutil
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 from .config import FORMULA_VERSION
 from .database import save_run
+from .dates import calendar_date
+from .game_status import counts_toward_record, counts_toward_scoring, status_category
 from .models import Game, RankingRow, Team, ValidationReport
+
+MHSAA_SCORE_CENTER_URL = "https://scores.misshsaa.com/"
 
 
 def load_previous(data_root: Path, season: int, week: int) -> dict[str, dict[str, Any]]:
@@ -77,6 +83,99 @@ def _opponent_names(teams: list[Team], games: list[Game], rankings: list[Ranking
     }
 
 
+def preview_payload(
+    *, season: int, week: int, cutoff: datetime, generated_at: datetime, status: str,
+    teams: list[Team], games: list[Game], rankings: list[RankingRow], report: ValidationReport,
+) -> dict[str, Any]:
+    """The overall.json payload a run would publish, built without writing it."""
+
+    return _payload(
+        {
+            "season": season,
+            "week": week,
+            "generated_at": generated_at.isoformat(),
+            "cutoff_at": cutoff.isoformat(),
+            "formula_version": FORMULA_VERSION,
+            "status": status,
+            "coverage_percentage": round(report.coverage * 100, 2),
+            "expected_games": report.expected_games,
+            "verified_games": report.verified_games,
+            "missing_games": report.missing_games,
+            "opponent_names": _opponent_names(teams, games, rankings),
+        },
+        rankings,
+    )
+
+
+def game_ledger(teams: list[Team], games: list[Game], rankings: list[RankingRow], cutoff: datetime) -> dict[str, Any]:
+    """Every listing that touches a ranked team, with its status category.
+
+    Team pages use this to distinguish a verified result from a listing that
+    is scheduled, postponed, cancelled, or still waiting for a score.
+    """
+
+    ranked = {row.team.team_id for row in rankings}
+    names = {team.team_id: team.display_name for team in teams}
+    rows = []
+    for game in sorted(games, key=lambda item: (item.date, item.game_id)):
+        if game.home_team_id not in ranked and game.away_team_id not in ranked:
+            continue
+        category = status_category(game, cutoff)
+        scored = game.completed and game.verified and category in {"final", "forfeit"}
+        rows.append({
+            "game_id": game.game_id,
+            "calendar_date": calendar_date(game.date).isoformat(),
+            "kickoff": game.date.isoformat(),
+            "home": game.home_team_id,
+            "away": game.away_team_id,
+            "home_name": names.get(game.home_team_id, game.home_team_id),
+            "away_name": names.get(game.away_team_id, game.away_team_id),
+            "neutral": game.neutral_site,
+            # A score is published only for a verified result. An unscored
+            # listing stays null; it is never rendered as 0-0.
+            "home_score": game.home_score if scored else None,
+            "away_score": game.away_score if scored else None,
+            "status": game.status,
+            "status_category": category,
+            "counts_toward_record": counts_toward_record(game, cutoff),
+            "counts_toward_scoring": counts_toward_scoring(game, cutoff),
+            "overtime": game.overtime,
+            "forfeit": game.forfeit,
+            "verified": game.verified,
+            "source": game.source,
+            "source_url": MHSAA_SCORE_CENTER_URL if game.source == "mhsaa_score_center" else None,
+            "source_timestamp": game.source_timestamp.isoformat() if game.source_timestamp else None,
+        })
+    return {"cutoff_at": cutoff.isoformat(), "games": rows}
+
+
+def _write_ledger(directory: Path, ledger: dict[str, Any] | None) -> None:
+    if ledger is not None:
+        (directory / "games.json").write_text(json.dumps(ledger, indent=1) + "\n", encoding="utf-8")
+
+
+def _replace_current(data_root: Path, write: Any) -> None:
+    """Write data/current in a staging directory, then swap it in.
+
+    A failure part-way through leaves the previous current snapshot intact
+    instead of a mix of old and new files.
+    """
+
+    current = data_root / "current"
+    staging = data_root / ".current-staging"
+    retired = data_root / ".current-retired"
+    for leftover in (staging, retired):
+        if leftover.exists():
+            shutil.rmtree(leftover)
+    staging.mkdir(parents=True)
+    write(staging)
+    if current.exists():
+        os.replace(current, retired)
+    os.replace(staging, current)
+    if retired.exists():
+        shutil.rmtree(retired)
+
+
 def publish_snapshot(
     data_root: Path,
     *,
@@ -89,6 +188,7 @@ def publish_snapshot(
     rankings: list[RankingRow],
     report: ValidationReport,
     sources: list[dict[str, Any]],
+    audit: dict[str, Any] | None = None,
     corrected: bool = False,
 ) -> Path:
     if not report.valid:
@@ -124,11 +224,17 @@ def publish_snapshot(
         "missing_games": report.missing_games,
         "opponent_names": _opponent_names(teams, games, rankings),
     }
-    _write_json_csv(archive, metadata, rankings)
-    (archive / "validation.json").write_text(json.dumps(report.to_dict(), indent=2) + "\n", encoding="utf-8")
-    current = data_root / "current"
-    _write_json_csv(current, metadata, rankings)
-    (current / "validation.json").write_text(json.dumps(report.to_dict(), indent=2) + "\n", encoding="utf-8")
+    ledger = game_ledger(teams, games, rankings, cutoff)
+
+    def write(directory: Path) -> None:
+        _write_json_csv(directory, metadata, rankings)
+        (directory / "validation.json").write_text(json.dumps(report.to_dict(), indent=2) + "\n", encoding="utf-8")
+        _write_ledger(directory, ledger)
+        if audit is not None:
+            (directory / "audit.json").write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
+
+    write(archive)
+    _replace_current(data_root, write)
     save_run(
         data_root / "mfpi.sqlite3",
         run_id=run_id,
@@ -160,6 +266,7 @@ def write_provisional_snapshot(
     rankings: list[RankingRow],
     report: ValidationReport,
     sources: list[dict[str, Any]],
+    audit: dict[str, Any] | None = None,
 ) -> Path:
     """Show a complete live ranking while a small number of finals remain unverified."""
 
@@ -182,12 +289,17 @@ def write_provisional_snapshot(
         "opponent_names": _opponent_names(teams, games, rankings),
     }
     draft = data_root / "drafts" / run_id
-    _write_json_csv(draft, metadata, rankings)
-    (draft / "validation.json").write_text(json.dumps(report.to_dict(), indent=2) + "\n", encoding="utf-8")
+    ledger = game_ledger(teams, games, rankings, cutoff)
 
-    current = data_root / "current"
-    _write_json_csv(current, metadata, rankings)
-    (current / "validation.json").write_text(json.dumps(report.to_dict(), indent=2) + "\n", encoding="utf-8")
+    def write(directory: Path) -> None:
+        _write_json_csv(directory, metadata, rankings)
+        (directory / "validation.json").write_text(json.dumps(report.to_dict(), indent=2) + "\n", encoding="utf-8")
+        _write_ledger(directory, ledger)
+        if audit is not None:
+            (directory / "audit.json").write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
+
+    write(draft)
+    _replace_current(data_root, write)
     save_run(
         data_root / "mfpi.sqlite3",
         run_id=run_id,

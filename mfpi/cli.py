@@ -21,8 +21,11 @@ from .providers import (
     MaxPrepsScoreProvider,
 )
 from .reconcile import reconcile_external_maxpreps_ratings, reconcile_games, reconcile_maxpreps, supplement_games_with_maxpreps
+from .audit import audit_snapshot, latest_revision
 from .snapshots import (
+    game_ledger,
     load_previous,
+    preview_payload,
     publish_snapshot,
     write_demo_preview,
     write_draft_report,
@@ -229,6 +232,41 @@ def main(argv: list[str] | None = None) -> int:
             )
         )
 
+    audit_summary = None
+    if not args.demo:
+        # Audit the exact payload readers would see before it can replace the
+        # live snapshot. A blocking finding keeps the last valid publication.
+        previous_dir = args.data_root / str(args.season) / f"week-{week - 1:02d}"
+        previous_payload = (
+            json.loads((latest_revision(previous_dir) / "overall.json").read_text(encoding="utf-8"))
+            if week > 1 and (previous_dir / "overall.json").exists() else None
+        )
+        audit = audit_snapshot(
+            preview_payload(
+                season=args.season, week=week, cutoff=cutoff, generated_at=generated_at,
+                status="CORRECTED" if args.corrected else "PUBLISHED",
+                teams=teams, games=games, rankings=result.rankings, report=report,
+            ),
+            snapshot_label="pre-publication",
+            reference={"teams": [team.to_dict() for team in teams if team.ranked]},
+            previous=previous_payload,
+            ledger=game_ledger(teams, games, result.rankings, cutoff),
+            external_verification="PIPELINE_SOURCES_ONLY",
+        )
+        audit_summary = audit.to_dict()
+        if audit.blocking:
+            report.issues.append(ValidationIssue(
+                "PUBLICATION_AUDIT_BLOCKED", "CRITICAL",
+                f"The publication audit found {len(audit.blocking)} blocking issue(s); the previous snapshot stays live.",
+                {"codes": sorted({issue.code for issue in audit.blocking})},
+            ))
+        elif audit.outcome != "PASS":
+            report.issues.append(ValidationIssue(
+                "PUBLICATION_AUDIT_WARNINGS", "WARNING",
+                "The publication audit passed with warnings; see audit.json.",
+                {"counts": audit.summary()["issue_counts"]},
+            ))
+
     run_id = f"{args.season}-week-{week:02d}-{generated_at.strftime('%Y%m%dT%H%M%S%fZ')}"
     summary = {
         "run_id": run_id,
@@ -278,6 +316,7 @@ def main(argv: list[str] | None = None) -> int:
             report=report,
             sources=source_meta,
             corrected=args.corrected,
+            audit=audit_summary,
         )
         summary["status"] = "CORRECTED" if args.corrected else "PUBLISHED"
         summary["archive"] = str(archive)
@@ -296,13 +335,18 @@ def main(argv: list[str] | None = None) -> int:
             rankings=result.rankings,
             report=report,
             sources=source_meta,
+            audit=audit_summary,
         )
         summary["status"] = "PROVISIONAL"
         summary["draft"] = str(draft)
     else:
         draft = write_draft_report(args.data_root, run_id, report)
+        if audit_summary is not None:
+            (draft / "audit.json").write_text(json.dumps(audit_summary, indent=2) + "\n", encoding="utf-8")
         summary["status"] = "DRAFT"
         summary["draft"] = str(draft)
+    if audit_summary is not None:
+        summary["audit"] = {key: audit_summary[key] for key in ("outcome", "blocking", "warnings", "info")}
     print(json.dumps(summary, indent=2))
     return 0 if report.valid or summary["status"] == "PROVISIONAL" else 2
 
