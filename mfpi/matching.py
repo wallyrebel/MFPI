@@ -128,10 +128,10 @@ class TeamMatcher:
 class ReviewedIdentity:
     """A source team whose name alone does not identify the MHSAA program.
 
-    A mapping applies only when the source, the source's stable team ID, the
-    listed name, and the listed city all agree. A fuzzy name match is never
-    enough; if the city is missing or different the team stays external and a
-    warning asks for review.
+    A mapping applies only when the source, the source's stable team ID and
+    the listed name agree, plus the listed city when ``city`` is set. A fuzzy
+    name match is never enough. ``city=None`` is used only for identities the
+    site owner has confirmed directly.
 
     ``team_id=None`` records the opposite finding: a source team that shares
     an MHSAA program's name but is a different school (for example, a
@@ -142,7 +142,7 @@ class ReviewedIdentity:
 
     def __init__(
         self, source: str, source_team_id: str, team_id: str | None,
-        source_names: Iterable[str], city: str, evidence: str,
+        source_names: Iterable[str], city: str | None, evidence: str,
     ) -> None:
         self.source = source
         self.source_team_id = source_team_id
@@ -158,12 +158,11 @@ REVIEWED_SOURCE_IDENTITIES: tuple[ReviewedIdentity, ...] = (
         source_team_id="241722",
         team_id="cleveland-central",
         source_names=("Cleveland",),
-        city="Cleveland",
+        city=None,
         evidence=(
-            "The official score center lists 'Cleveland' (team 241722) against Clarksdale, "
-            "Greenwood, Amanda Elzy and Grenada while Cleveland Central, the only MHSAA "
-            "football program in Cleveland, Mississippi, had no linked games in weeks 1-4. "
-            "Applied only when the listing's city is also Cleveland."
+            "Confirmed by the site owner on 2026-09-25: the official score center's "
+            "'Cleveland' (team 241722), which played Clarksdale, Greenwood, Amanda Elzy "
+            "and Grenada, is Cleveland Central."
         ),
     ),
 )
@@ -179,4 +178,46 @@ def reviewed_identity(source: str, source_team_id: str | None, name: str) -> Rev
             and normalize_name(name) in identity.source_names
         ):
             return identity
+    return None
+
+
+class ReviewedGameSide:
+    """One listing where a name that matches an MHSAA program is a different school.
+
+    Used when the source team ID is not known. Matches the source, calendar
+    date and the exact pair of listed names, and keeps ``external_name`` out
+    of the MHSAA program it would otherwise match.
+    """
+
+    __slots__ = ("source", "date", "names", "external_name", "display_name", "evidence")
+
+    def __init__(self, source: str, date: str, names: Iterable[str], external_name: str, display_name: str, evidence: str) -> None:
+        self.source = source
+        self.date = date
+        self.names = frozenset(normalize_name(name) for name in names)
+        self.external_name = normalize_name(external_name)
+        self.display_name = display_name
+        self.evidence = evidence
+
+
+REVIEWED_GAME_SIDES: tuple[ReviewedGameSide, ...] = (
+    ReviewedGameSide(
+        source="mhsaa_score_center",
+        date="2026-09-11",
+        names=("Houston", "Tupelo"),
+        external_name="Houston",
+        display_name="Houston (out of state)",
+        evidence=(
+            "Confirmed by the site owner on 2026-09-25: Houston (MS) played Corinth on "
+            "Sept. 11; the Houston that played Tupelo that night is an out-of-state school."
+        ),
+    ),
+)
+
+
+def reviewed_game_side(source: str, date: str, home: str, away: str) -> ReviewedGameSide | None:
+    pair = frozenset({normalize_name(home), normalize_name(away)})
+    for side in REVIEWED_GAME_SIDES:
+        if side.source == source and side.date == date and side.names == pair:
+            return side
     return None

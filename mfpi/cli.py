@@ -21,7 +21,7 @@ from .providers import (
     MaxPrepsScoreProvider,
 )
 from .reconcile import reconcile_external_maxpreps_ratings, reconcile_games, reconcile_maxpreps, supplement_games_with_maxpreps
-from .audit import audit_snapshot, latest_revision
+from .audit import HARD_AUDIT_CODES, audit_snapshot, latest_revision
 from .snapshots import (
     game_ledger,
     load_previous,
@@ -31,7 +31,7 @@ from .snapshots import (
     write_draft_report,
     write_provisional_snapshot,
 )
-from .validation import can_show_provisional, validate_inputs
+from .validation import can_show_provisional, quarantine_games, validate_inputs
 
 
 def _parse_cutoff(value: str | None, settings: Settings) -> datetime:
@@ -218,6 +218,8 @@ def main(argv: list[str] | None = None) -> int:
         ]
 
     previous = load_previous(args.data_root, args.season, week)
+    games, quarantine_issues = quarantine_games(games, cutoff)
+    prior_issues.extend(quarantine_issues)
     report = validate_inputs(teams, games, cutoff, settings, prior_issues)
     result = calculate_rankings(
         teams, games, cutoff, settings, previous, maxpreps_signals,
@@ -254,10 +256,17 @@ def main(argv: list[str] | None = None) -> int:
             external_verification="PIPELINE_SOURCES_ONLY",
         )
         audit_summary = audit.to_dict()
-        if audit.blocking:
+        hard = [issue for issue in audit.blocking if issue.code in HARD_AUDIT_CODES]
+        if hard:
             report.issues.append(ValidationIssue(
                 "PUBLICATION_AUDIT_BLOCKED", "CRITICAL",
-                f"The publication audit found {len(audit.blocking)} blocking issue(s); the previous snapshot stays live.",
+                f"The publication audit found {len(hard)} issue(s) that make the rankings unsound; the previous snapshot stays live.",
+                {"codes": sorted({issue.code for issue in hard})},
+            ))
+        elif audit.blocking:
+            report.issues.append(ValidationIssue(
+                "PUBLICATION_AUDIT_FINDINGS", "CRITICAL",
+                f"The publication audit found {len(audit.blocking)} data issue(s); the week is published as provisional.",
                 {"codes": sorted({issue.code for issue in audit.blocking})},
             ))
         elif audit.outcome != "PASS":
@@ -336,6 +345,7 @@ def main(argv: list[str] | None = None) -> int:
             report=report,
             sources=source_meta,
             audit=audit_summary,
+            corrected=args.corrected,
         )
         summary["status"] = "PROVISIONAL"
         summary["draft"] = str(draft)

@@ -3,7 +3,8 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import replace
 
-from .matching import TeamMatcher, normalize_name, reviewed_identity, team_slug
+from .dates import calendar_date
+from .matching import TeamMatcher, normalize_name, reviewed_game_side, reviewed_identity, team_slug
 from .models import (
     Game,
     MaxPrepsRanking,
@@ -45,7 +46,7 @@ def reconcile_games(
             ))
         if identity is not None:
             official = teams_by_id.get(identity.team_id)
-            corroborated = bool(city) and normalize_name(city) == normalize_name(identity.city)
+            corroborated = identity.city is None or (bool(city) and normalize_name(city) == normalize_name(identity.city))
             key = (identity.source_team_id, "applied" if corroborated and official else "skipped")
             if official is not None and official.ranked and corroborated:
                 if key not in reported_identities:
@@ -122,9 +123,26 @@ def reconcile_games(
         return external[external_id]
 
     games: list[Game] = []
+    def reviewed_external(raw: RawGame, side_name: str, source_id: str | None, city: str) -> Team | None:
+        side = reviewed_game_side(raw.source, calendar_date(raw.date).isoformat(), raw.home_name, raw.away_name)
+        if side is None or normalize_name(side_name) != side.external_name:
+            return None
+        external_id = f"external-{source_id}-{team_slug(side.display_name)}" if source_id else f"external-{team_slug(side.display_name)}"
+        issues.append(ValidationIssue(
+            "REVIEWED_EXTERNAL_GAME_SIDE", "WARNING",
+            f"Kept {side_name!r} in game {raw.game_id} external: reviewed as a different school.",
+            {"game_id": raw.game_id, "source_team_id": source_id, "evidence": side.evidence},
+        ))
+        return external.setdefault(external_id, Team(
+            team_id=external_id, canonical_name=normalize_name(side.display_name), display_name=side.display_name,
+            classification=None, city=city, active=True, source_team_id=source_id,
+        ))
+
     for raw in raw_games:
-        home = resolve(raw.home_name, raw.home_source_id, raw.home_city, raw.source)
-        away = resolve(raw.away_name, raw.away_source_id, raw.away_city, raw.source)
+        home = reviewed_external(raw, raw.home_name, raw.home_source_id, raw.home_city) \
+            or resolve(raw.home_name, raw.home_source_id, raw.home_city, raw.source)
+        away = reviewed_external(raw, raw.away_name, raw.away_source_id, raw.away_city) \
+            or resolve(raw.away_name, raw.away_source_id, raw.away_city, raw.source)
         if not home.ranked and not away.ranked:
             continue
         games.append(

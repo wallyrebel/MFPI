@@ -83,8 +83,16 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.corrected }}
         run: python calculate_rankings.py --live --corrected
 
+      # Rankings publish every week from the data available; this report is
+      # informational and never stops the commit or deploy.
       - name: Audit the current snapshot
+        continue-on-error: true
         run: python -m mfpi.audit --snapshot data/current --out data/drafts/audit-current
+
+      # Automated Weekly Analysis for the week in data/current. Idempotent:
+      # an unchanged snapshot leaves published articles as they are.
+      - name: Publish automated weekly analysis
+        run: python -m mfpi.editorial auto
 
       - name: Test site display logic
         run: npm run test:site
@@ -129,9 +137,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/current data/2026
+          git add data content/analysis
           if git diff --cached --quiet; then
-            echo "No ranking data changed."
+            echo "No ranking data or analysis changed."
             exit 0
           fi
           git commit -m "Update MFPI weekly rankings"

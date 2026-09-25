@@ -61,13 +61,13 @@ are unavailable, unreviewed articles.
 4. **Consent.** In AdSense → Privacy & messaging, create a European regulations (GDPR) message for EEA/UK/Switzerland, enable Google consent mode integration for your tags, publish it, then set `NEXT_PUBLIC_GOOGLE_CMP=true` and redeploy. Test Accept, Reject/Do not consent, Manage options, and the footer link from an EEA location (VPN) before enabling ads.
 5. **Ad units.** Create display units (responsive) and set `NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_TOP`, `…_RANKINGS_BOTTOM`, `…_TEAM_MID`, `…_TEAM_BOTTOM`, `…_ARTICLE_MID`, `…_ARTICLE_BOTTOM`. Set `NEXT_PUBLIC_ADS_ENABLED=true` only after approval.
 6. **Auto ads.** Leave Auto ads **off**. If you turn it on, add AdSense page exclusions ("All pages under this section") for `/privacy`, `/contact`, `/about`, `/advertise`, `/corrections`, `/analysis` (index), `/teams`, and the team pages listed as results-unavailable on `/corrections`. The site already omits the AdSense tag on those pages, but a client-side navigation from an eligible page keeps the tag loaded, so account-side exclusions are still needed.
-7. **Publisher identity.** Set `NEXT_PUBLIC_PUBLISHER_NAME` to the person or business that operates the site as you want it shown on About. It is blank because it could not be verified from the repository.
-8. **Review and publish at least the Week 4 analysis drafts** (see HANDOFF.md) so the Weekly Analysis section has reviewed content.
+7. **Publisher identity.** Done: About shows Jon Ross Myers for Mississippi Sports Group (override with `NEXT_PUBLIC_PUBLISHER_NAME` / `NEXT_PUBLIC_PUBLISHER_ORGANIZATION`).
+8. **Weekly Analysis** publishes automatically each week and is labelled automated; those pages carry no ads. Reviewing a piece with `python -m mfpi.editorial publish <slug> --reviewer "Name" --confirm-reviewed` makes it ad-eligible.
 9. **Submit for review** in AdSense. Not done here.
 
 ### Unresolved blockers
 - None in code. Approval depends on the owner actions above and on Google's review of the live site.
-- Data issues that a reviewer could notice and that need owner confirmation: Houston's two Sept. 11 games; Cleveland Central and Northside showing results unavailable (see HANDOFF.md §3).
+- Houston and Cleveland Central are confirmed and fixed from the Sept. 29 run. Northside still shows results unavailable; confirm whether it is playing and how the feed names it.
 
 ## Testing locally
 

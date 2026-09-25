@@ -46,6 +46,14 @@ WARNING = "WARNING"
 INFO = "INFO"
 RANKED_CLASSES = {f"{n}A" for n in range(1, 8)}
 MHSAA_SCORE_CENTER_URL = "https://scores.misshsaa.com/"
+# Blocking findings that mean the rankings themselves are unsound (not merely
+# that some data is missing or conflicting). Only these stop a weekly
+# publication or a deploy; other blocking findings publish a provisional week.
+HARD_AUDIT_CODES = frozenset({
+    "MISSING_EXPECTED_TEAM", "UNEXPECTED_TEAM", "TEAM_DISAPPEARED", "DUPLICATE_TEAM_ID", "DUPLICATE_SLUG",
+    "EXTERNAL_TEAM_RANKED", "OUT_OF_SCOPE_TEAM", "NON_FINITE_VALUE", "STATE_RANKS_NOT_SEQUENTIAL",
+    "RANK_ORDER_VIOLATION", "RATING_OUT_OF_RANGE", "CLASS_RANK_MISMATCH",
+})
 KNOWN_STATUSES = {"PUBLISHED", "CORRECTED", "PROVISIONAL", "DEMO"}
 SEASON_START = {2026: date(2026, 8, 27)}
 
@@ -650,7 +658,7 @@ def main(argv: list[str] | None = None) -> int:
     for issue in report.issues:
         if issue.severity == BLOCKING:
             print(f"BLOCKING {issue.code}: {issue.message}", file=sys.stderr)
-    if report.blocking:
+    if any(issue.code in HARD_AUDIT_CODES for issue in report.blocking):
         return 2
     if args.strict and report.outcome != "PASS":
         return 1

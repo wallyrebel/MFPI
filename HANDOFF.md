@@ -1,5 +1,18 @@
 # MFPI improvement handoff — 2026-09-25
 
+## Update after owner decisions (2026-09-25)
+
+- **Cleveland Central confirmed** as the score center's "Cleveland" (ID 241722). The link no longer needs a city match and applies from the next weekly run.
+- **Houston confirmed**: Houston (MS) played Corinth on Sept. 11; the Houston that played Tupelo is out of state. A reviewed game-side rule (`REVIEWED_GAME_SIDES` in `mfpi/matching.py`) keeps that listing's Houston external ("Houston (out of state)") from the next run. Houston, Tupelo and Corinth pages say "Correction pending" until then.
+- **Rankings publish every week from available data.** Conflicting, duplicate or impossible listings are held out of the calculation and reported (`QUARANTINED_*`); any incomplete-data week publishes as PROVISIONAL and is archived like any other week. Only a broken calculation (SRS non-convergence, a missing/extra team, ranks out of order, non-finite values) keeps the previous week live. The weekly workflow's audit step is informational.
+- **Weekly Analysis publishes automatically** after each weekly run (`python -m mfpi.editorial auto`), labelled "Automated analysis … publication approved by Jon Ross Myers; not individually reviewed". It never claims a human reviewer, refreshes only when the snapshot changes (a correction), and never replaces an article a person reviewed. The three Week 4 pieces are published this way. Automated articles stay ad-free; an article reviewed with `mfpi.editorial publish` becomes ad-eligible.
+- **Operator**: About states the site is operated by Jon Ross Myers for Mississippi Sports Group.
+- **Week 4 was not re-run as a correction**: a correction today would read media rankings updated after the Week 4 cutoff. The confirmed fixes take effect in the Tuesday Sept. 29 run. To correct Week 4 anyway: Actions → Update MFPI rankings → Run workflow with "corrected" checked.
+- AdSense: not applied yet; follow `ADSENSE.md` owner actions 1–7 before applying.
+
+---
+
+
 Branch `claude/gracious-wright-7kgs3u`, based on `main` at `971bd3c` ("Update MFPI weekly rankings").
 **Nothing is deployed.** The branch is pushed; production changes only when it is merged to `main`
 (see §8). No AdSense account action and no review submission were taken.

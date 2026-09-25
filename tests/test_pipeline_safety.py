@@ -96,3 +96,32 @@ def test_rerun_of_published_week_is_refused_not_overwritten(tmp_path, stub_sourc
         cli.main(["--live", "--week", "1", "--data-root", str(tmp_path)])
     capsys.readouterr()
     assert (tmp_path / "2026" / "week-01" / "overall.json").read_text() == archived
+
+
+def test_conflicting_duplicate_listing_still_publishes_the_week(tmp_path, stub_sources, capsys) -> None:
+    # Two listings of the same game disagree on the score: the week still
+    # publishes (provisional), the game is not counted, and the week is archived.
+    stub_sources["games"] = stub_sources["games"] + [
+        RawGame(game_id="1b", date=datetime(2026, 8, 28, 19, tzinfo=CENTRAL), home_name="Alpha", away_name="Beta",
+                home_source_id=None, away_source_id=None, home_score=28, away_score=7, status="COMPLETED"),
+    ]
+    code, summary = run(tmp_path, 1, capsys)
+    assert code == 0 and summary["status"] == "PROVISIONAL"
+    archived = json.loads((tmp_path / "2026" / "week-01" / "overall.json").read_text())
+    assert archived["metadata"]["status"] == "PROVISIONAL"
+    rows = {row["team_id"]: row for row in archived["rankings"]}
+    assert rows["alpha"]["games_played"] == 0 and rows["gamma"]["record"] == "1-0"
+    validation = json.loads((tmp_path / "current" / "validation.json").read_text())
+    assert "QUARANTINED_CONFLICTING_MATCHUP" in {issue["code"] for issue in validation["issues"]}
+
+
+def test_provisional_week_feeds_the_next_weeks_movement(tmp_path, stub_sources, capsys) -> None:
+    unscored = RawGame(game_id="9", date=datetime(2026, 8, 29, 19, tzinfo=CENTRAL), home_name="Beta", away_name="Delta",
+                       home_source_id=None, away_source_id=None, home_score=None, away_score=None, status="UPCOMING")
+    stub_sources["games"] = stub_sources["games"] + [unscored]
+    assert run(tmp_path, 1, capsys)[1]["status"] == "PROVISIONAL"  # 2 of 3 games verified
+    stub_sources["games"] = stub_sources["games"][:2]
+    code, summary = run(tmp_path, 2, capsys)
+    assert code == 0 and summary["status"] == "PUBLISHED"
+    current = json.loads((tmp_path / "current" / "overall.json").read_text())
+    assert all(row["previous_state_rank"] is not None for row in current["rankings"])

@@ -3,17 +3,17 @@
   "kind": "weekly-analysis",
   "title": "Week 4 MFPI analysis: Tupelo High School leads the statewide rankings",
   "dek": "What moved in the Week 4 Mississippi Football Power Index, computed from verified results through Sep 22.",
-  "status": "draft",
+  "status": "published",
   "season": 2026,
   "week": 4,
   "snapshot_run_id": "2026-week-04-20260922T161926783618Z",
   "snapshot_generated_at": "2026-09-22T16:19:26.783618+00:00",
   "formula_version": "MFPI-3.2",
-  "draft_generated_at": "2026-09-25T14:52:36.573208+00:00",
-  "author": "MFPI automated draft (requires human review)",
+  "draft_generated_at": "2026-09-25T15:09:17.988623+00:00",
+  "author": "MFPI automated analysis",
   "reviewed_by": null,
   "reviewed_at": null,
-  "published_at": null,
+  "published_at": "2026-09-25T10:09:18-05:00",
   "review_notes": "",
   "sources": [
     {
@@ -247,10 +247,14 @@
       "paragraphs": [
         "Snapshot generated September 22, 2026 at 11:19 AM Central with a cutoff of September 22 at 11:00 AM Central, formula MFPI-3.2.",
         "458 of 465 game listings due by the cutoff had verified scores (98.5%); the rest count as unavailable, never as losses or 0-0 results.",
-        "No verified results were linked to [[cleveland-central]], [[northside]] for this cutoff. Their ratings are provisional and rest on class, media and neutral inputs; their positions should not be read as the product of games.",
-        "[[houston]] is credited with two games on Sep 11. One listing may belong to a same-named school; it is under review and affects that team and its opponents.",
+        "[[cleveland-central]] had no linked results in this snapshot because the score feed lists the school under a different name. The link has been confirmed and applies from the next weekly run; until then its rating is provisional and does not reflect its games.",
+        "No verified results were linked to [[northside]] for this cutoff. Their ratings are provisional and rest on class, media and neutral inputs; their positions should not be read as the product of games.",
+        "[[houston]] is credited with two games on Sep 11 in this snapshot. One of them was played by a same-named out-of-state school; that game is removed from [[houston]]'s record from the next weekly run, which also affects its opponents.",
         "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
       ]
     }
-  ]
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
 }

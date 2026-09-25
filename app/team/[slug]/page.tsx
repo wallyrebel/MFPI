@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { SiteFooter, SiteHeader } from '../../site-nav';
 import { siteUrl } from '../../site';
 import { pageAds } from '../../ads/page-ads';
+import { CONFIRMED_DOUBLE_BOOKINGS, CONFIRMED_IDENTITY_NOTES } from '../../lib/confirmed';
 import { loadPreviousWeek } from '../../archive-data';
 import { centralDateTime, formatRatingChange, rankSentence, ratingSentence, shortDate, stat } from '../../lib/format';
 import {
@@ -139,13 +140,20 @@ export default async function TeamPage({ params }: Params) {
                 <strong>Season data incomplete.</strong> No verified results are linked to {row.team} for the Week{' '}
                 {snapshotMeta.week} cutoff ({cutoffLabel}). Its record and scoring averages are unavailable, and its
                 rating is provisional — it rests on class, media and neutral inputs rather than games.
+                {CONFIRMED_IDENTITY_NOTES[row.team_id] ? ` ${CONFIRMED_IDENTITY_NOTES[row.team_id]}` : ''}
               </p>
             )}
             {conflictDays.length > 0 && (
               <p className="mf-data-notice" role="note">
-                <strong>Listing under review.</strong> {row.team} is credited with two games on{' '}
-                {conflictDays.map(formatGameDate).join(', ')}. One of those listings may belong to a same-named school; until
-                it is resolved it affects this team&apos;s record and rating and its opponents&apos;.
+                {conflictDays.every((day) => CONFIRMED_DOUBLE_BOOKINGS[`${row.team_id}|${day}`]) ? (
+                  <><strong>Correction pending.</strong> {row.team} is credited with two games on{' '}
+                    {conflictDays.map(formatGameDate).join(', ')} in this week&apos;s rankings.{' '}
+                    {conflictDays.map((day) => CONFIRMED_DOUBLE_BOOKINGS[`${row.team_id}|${day}`]).join(' ')}</>
+                ) : (
+                  <><strong>Listing under review.</strong> {row.team} is credited with two games on{' '}
+                    {conflictDays.map(formatGameDate).join(', ')}. One of those listings may belong to a same-named school; until
+                    it is resolved it affects this team&apos;s record and rating and its opponents&apos;.</>
+                )}
               </p>
             )}
             <p className="hero-copy">

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SiteFooter, SiteHeader } from '../site-nav';
-import { publishedArticles } from '../lib/articles';
+import { isAutomated, publishedArticles } from '../lib/articles';
 import { archive } from '../archive-data';
 import { centralDateTime } from '../lib/format';
 
@@ -23,13 +23,14 @@ export default function AnalysisIndex() {
             Each week MFPI&apos;s published rankings are turned into short, data-grounded analysis: what moved at the top,
             which teams rose and fell and why, and — once enough games have been played — how the rankings published
             before kickoff held up against the results that followed. Every number comes from verified scores and
-            published snapshots. Articles are drafted from the data and published only after a named editor reviews them.
+            published snapshots. The weekly pieces are generated automatically when each week&apos;s rankings publish and are
+            labelled as automated analysis; any article an editor has reviewed names the reviewer.
           </p>
 
           <h2>Latest analysis</h2>
           {publishedArticles.length === 0 ? (
             <p>
-              No analysis has been published yet this season. Reviewed articles will appear here; the{' '}
+              No analysis has been published yet this season. Articles will appear here after the next weekly run; the{' '}
               <Link href="/">current rankings</Link> and the <Link href="/archive">weekly archive</Link> are always available.
             </p>
           ) : (
@@ -38,7 +39,7 @@ export default function AnalysisIndex() {
                 <li key={article.slug}>
                   <Link href={`/analysis/${article.slug}`}><strong>{article.title}</strong></Link>
                   <span>{article.dek}</span>
-                  <small>Published {centralDateTime(article.published_at!, false)} · Reviewed by {article.reviewed_by}</small>
+                  <small>Published {centralDateTime(article.published_at!, false)} · {isAutomated(article) ? 'Automated analysis' : `Reviewed by ${article.reviewed_by}`}</small>
                 </li>
               ))}
             </ul>

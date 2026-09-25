@@ -27,6 +27,7 @@ export default async function ArticlePage({ params }: Params) {
   const article = findPublished((await params).slug);
   if (!article) notFound();
   const ads = pageAds(
+    // Automated articles have no human reviewer, so they stay ad-free.
     { kind: 'article', substantive: article.sections.length >= 3, reviewStatus: article.status, reviewedBy: article.reviewed_by },
     ['article-mid', 'article-bottom'],
   );

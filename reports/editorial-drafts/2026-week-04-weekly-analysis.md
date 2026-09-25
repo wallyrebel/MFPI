@@ -2,7 +2,7 @@
 
 _What moved in the Week 4 Mississippi Football Power Index, computed from verified results through Sep 22._
 
-Status: **DRAFT** · Reviewed by: not yet reviewed · Data: 2026 Week 4 snapshot (MFPI-3.2)
+Status: **PUBLISHED** · Reviewed by: not yet reviewed · Data: 2026 Week 4 snapshot (MFPI-3.2)
 
 ## The top of the statewide rankings
 
@@ -73,9 +73,11 @@ Snapshot generated September 22, 2026 at 11:19 AM Central with a cutoff of Septe
 
 458 of 465 game listings due by the cutoff had verified scores (98.5%); the rest count as unavailable, never as losses or 0-0 results.
 
-No verified results were linked to Cleveland Central High School, Northside High School for this cutoff. Their ratings are provisional and rest on class, media and neutral inputs; their positions should not be read as the product of games.
+Cleveland Central High School had no linked results in this snapshot because the score feed lists the school under a different name. The link has been confirmed and applies from the next weekly run; until then its rating is provisional and does not reflect its games.
 
-Houston High School is credited with two games on Sep 11. One listing may belong to a same-named school; it is under review and affects that team and its opponents.
+No verified results were linked to Northside High School for this cutoff. Their ratings are provisional and rest on class, media and neutral inputs; their positions should not be read as the product of games.
+
+Houston High School is credited with two games on Sep 11 in this snapshot. One of them was played by a same-named out-of-state school; that game is removed from Houston High School's record from the next weekly run, which also affects its opponents.
 
 Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise.
 

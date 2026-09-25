@@ -1,10 +1,15 @@
 """Weekly Analysis drafts and the draft -> review -> publish workflow.
 
-Drafts are generated only from published, audited snapshots. They are
-starting points for a human editor, never publications: the site renders an
-article only after a named person has reviewed it with ``publish``.
+Articles are generated only from published, audited snapshots. Two ways to
+publish them:
+
+* ``auto`` (run by the weekly workflow) publishes the week's articles as
+  *automated analysis* under the operator's standing approval. They are
+  labelled as automated, name no reviewer, and carry no ads.
+* ``publish`` marks an article as reviewed by a named person.
 
     python -m mfpi.editorial generate --week 4
+    python -m mfpi.editorial auto                 # latest published week
     python -m mfpi.editorial list
     python -m mfpi.editorial publish 2026-week-04-weekly-analysis --reviewer "Full Name" --confirm-reviewed
     python -m mfpi.editorial validate
@@ -29,11 +34,17 @@ from typing import Any
 from .audit import latest_revision
 from .config import CENTRAL
 from .dates import calendar_date_from_snapshot
+from .matching import REVIEWED_GAME_SIDES, REVIEWED_SOURCE_IDENTITIES
 from .explain import display_rating_change, rank_sentence, rating_sentence
 
 CONTENT_DIR = Path("content/analysis")
 STATUSES = ("draft", "in_review", "published")
 DRAFT_AUTHOR = "MFPI automated draft (requires human review)"
+AUTOMATED_AUTHOR = "MFPI automated analysis"
+# Standing approval from the site's operator (given 2026-09-25) to publish the
+# weekly automated analysis without an individual review. Articles published
+# this way are labelled "automated" and never claim a human reviewer.
+STANDING_APPROVER = "Jon Ross Myers"
 MHSAA_SCORES = "https://scores.misshsaa.com/"
 MHSAA_CLASSES = "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
 MEDIA_RANKINGS = "https://www.maxpreps.com/ms/football/rankings/1/"
@@ -178,17 +189,35 @@ def data_notes(snapshot: Snapshot) -> list[str]:
             f"({meta['coverage_percentage']:.1f}%); the rest count as unavailable, never as losses or 0-0 results."
         )
     missing = [row for row in snapshot.rows if row.get("games_played", 0) == 0]
-    if missing:
-        names = ", ".join(team_link(row["team_id"], snapshot) for row in missing)
+    linked = {identity.team_id for identity in REVIEWED_SOURCE_IDENTITIES if identity.team_id}
+    pending_link = [row for row in missing if row["team_id"] in linked]
+    unexplained = [row for row in missing if row["team_id"] not in linked]
+    if pending_link:
+        names = ", ".join(team_link(row["team_id"], snapshot) for row in pending_link)
+        notes.append(
+            f"{names} had no linked results in this snapshot because the score feed lists the school under a "
+            "different name. The link has been confirmed and applies from the next weekly run; until then its "
+            "rating is provisional and does not reflect its games."
+        )
+    if unexplained:
+        names = ", ".join(team_link(row["team_id"], snapshot) for row in unexplained)
         notes.append(
             f"No verified results were linked to {names} for this cutoff. Their ratings are provisional and rest on "
             "class, media and neutral inputs; their positions should not be read as the product of games."
         )
+    confirmed_days = {side.date for side in REVIEWED_GAME_SIDES}
     for team_id, day in sorted(double_booked(snapshot)):
-        notes.append(
-            f"{team_link(team_id, snapshot)} is credited with two games on {short_date(day)}. One listing may belong to a "
-            "same-named school; it is under review and affects that team and its opponents."
-        )
+        if day.isoformat() in confirmed_days:
+            notes.append(
+                f"{team_link(team_id, snapshot)} is credited with two games on {short_date(day)} in this snapshot. "
+                "One of them was played by a same-named out-of-state school; that game is removed from "
+                f"{team_link(team_id, snapshot)}'s record from the next weekly run, which also affects its opponents."
+            )
+        else:
+            notes.append(
+                f"{team_link(team_id, snapshot)} is credited with two games on {short_date(day)}. One listing may belong to a "
+                "same-named school; it is under review and affects that team and its opponents."
+            )
     notes.append(
         "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game "
         "was played, unless a sentence says otherwise."
@@ -550,21 +579,28 @@ def validate_article(article: dict[str, Any], known_team_ids: set[str] | None = 
     problems = []
     now = now or datetime.now(timezone.utc)
     status = article.get("status")
+    mode = article.get("publication_mode", "reviewed")
     if status not in STATUSES:
         problems.append(f"unknown status {status!r}")
     if status == "published":
-        if not (article.get("reviewed_by") or "").strip():
-            problems.append("published without a named human reviewer")
-        if article.get("reviewed_by") == DRAFT_AUTHOR:
-            problems.append("the automated draft author cannot be the reviewer")
-        for key in ("reviewed_at", "published_at"):
-            if not article.get(key):
-                problems.append(f"published without {key}")
-        if article.get("reviewed_at") and article.get("published_at"):
-            reviewed = datetime.fromisoformat(article["reviewed_at"])
-            published = datetime.fromisoformat(article["published_at"])
-            if published < reviewed:
+        if not article.get("published_at"):
+            problems.append("published without published_at")
+        if mode == "automated":
+            if not (article.get("approved_by") or "").strip():
+                problems.append("automated publication without a named approver")
+            if article.get("reviewed_by") or article.get("reviewed_at"):
+                problems.append("an automated article must not claim a human reviewer")
+        else:
+            if not (article.get("reviewed_by") or "").strip():
+                problems.append("published without a named human reviewer")
+            if article.get("reviewed_by") in {DRAFT_AUTHOR, AUTOMATED_AUTHOR}:
+                problems.append("the automated author cannot be the reviewer")
+            if not article.get("reviewed_at"):
+                problems.append("published without reviewed_at")
+            elif article.get("published_at") and datetime.fromisoformat(article["published_at"]) < datetime.fromisoformat(article["reviewed_at"]):
                 problems.append("published before it was reviewed")
+        if article.get("published_at"):
+            published = datetime.fromisoformat(article["published_at"])
             if published > now:
                 problems.append("publication date is in the future")
             if published < datetime.fromisoformat(article["snapshot_generated_at"]):
@@ -576,6 +612,52 @@ def validate_article(article: dict[str, Any], known_team_ids: set[str] | None = 
         for team_id in set(_team_refs(text)) - known_team_ids:
             problems.append(f"links to unknown team {team_id!r}")
     return problems
+
+
+def auto_publish(article: dict[str, Any], content_dir: Path = CONTENT_DIR, now: datetime | None = None) -> tuple[Path, str]:
+    """Publish (or refresh) one automated article. Idempotent per snapshot run.
+
+    A human-reviewed article is never replaced. An automated article is
+    replaced only when its snapshot changed (an audited correction), keeping
+    its original publication date and recording the update.
+    """
+
+    content_dir.mkdir(parents=True, exist_ok=True)
+    path = article_path(article["slug"], content_dir)
+    stamp = (now or datetime.now(timezone.utc)).astimezone(CENTRAL).isoformat(timespec="seconds")
+    existing = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+    if existing and existing.get("status") == "published":
+        if existing.get("publication_mode", "reviewed") != "automated":
+            return path, "kept (human-reviewed)"
+        if existing.get("snapshot_run_id") == article.get("snapshot_run_id"):
+            return path, "unchanged"
+    article.update(
+        status="published",
+        publication_mode="automated",
+        author=AUTOMATED_AUTHOR,
+        approved_by=STANDING_APPROVER,
+        reviewed_by=None,
+        reviewed_at=None,
+        published_at=(existing or {}).get("published_at") if existing and existing.get("status") == "published" else stamp,
+        updated_at=stamp if existing and existing.get("status") == "published" else None,
+    )
+    problems = validate_article(article, now=now)
+    if problems:
+        raise SystemExit(f"Refusing to publish {article['slug']}: " + "; ".join(problems))
+    path.write_text(json.dumps(article, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return path, "updated for a corrected snapshot" if existing and existing.get("status") == "published" else "published"
+
+
+def build_articles(data_root: Path, season: int, week: int) -> tuple[list[dict[str, Any]], Snapshot]:
+    current = load_week(data_root, season, week)
+    if current is None:
+        raise SystemExit(f"No published snapshot for {season} week {week}.")
+    previous = load_week(data_root, season, week - 1) if week > 1 else None
+    articles = [weekly_analysis(current, previous, data_root), risers_and_fallers(current, previous)]
+    review = performance_review(data_root, season, week)
+    if review:
+        articles.append(review)
+    return articles, current
 
 
 def _team_refs(text: str) -> list[str]:
@@ -593,7 +675,8 @@ def publish(slug: str, reviewer: str, *, confirm: bool, content_dir: Path = CONT
     if article["status"] == "published":
         raise SystemExit(f"{slug} is already published (reviewed by {article['reviewed_by']}).")
     stamp = (now or datetime.now(timezone.utc)).astimezone(CENTRAL).isoformat(timespec="seconds")
-    article.update(status="published", reviewed_by=reviewer, reviewed_at=stamp, published_at=stamp)
+    article.update(status="published", publication_mode="reviewed", author=article.get("author", DRAFT_AUTHOR),
+                   reviewed_by=reviewer, reviewed_at=stamp, published_at=stamp)
     problems = validate_article(article, now=now)
     if problems:
         raise SystemExit("Refusing to publish: " + "; ".join(problems))
@@ -636,6 +719,9 @@ def main(argv: list[str] | None = None) -> int:
     generate.add_argument("--season", type=int, default=2026)
     generate.add_argument("--week", type=int, required=True)
     generate.add_argument("--markdown-dir", type=Path, help="Also write reviewable Markdown copies here.")
+    auto = commands.add_parser("auto", help="Generate and publish the week's automated analysis.")
+    auto.add_argument("--season", type=int)
+    auto.add_argument("--week", type=int, help="Defaults to the week in data/current.")
     commands.add_parser("list", help="List articles and their review status.")
     commands.add_parser("validate", help="Check every article's review metadata.")
     publish_cmd = commands.add_parser("publish", help="Mark an article reviewed and published.")
@@ -645,14 +731,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     if args.command == "generate":
-        current = load_week(args.data_root, args.season, args.week)
-        if current is None:
-            raise SystemExit(f"No published snapshot for {args.season} week {args.week}.")
-        previous = load_week(args.data_root, args.season, args.week - 1) if args.week > 1 else None
-        articles = [weekly_analysis(current, previous, args.data_root), risers_and_fallers(current, previous)]
-        review = performance_review(args.data_root, args.season, args.week)
-        if review:
-            articles.append(review)
+        articles, current = build_articles(args.data_root, args.season, args.week)
         for article in articles:
             path, outcome = save_draft(article, args.content_dir)
             print(f"{outcome}: {path}")
@@ -661,11 +740,22 @@ def main(argv: list[str] | None = None) -> int:
                 (args.markdown_dir / f"{article['slug']}.md").write_text(to_markdown(article, current), encoding="utf-8")
         return 0
 
+    if args.command == "auto":
+        meta = json.loads((args.data_root / "current" / "overall.json").read_text(encoding="utf-8"))["metadata"]
+        season = args.season or int(meta["season"])
+        week = args.week or int(meta["week"])
+        articles, _ = build_articles(args.data_root, season, week)
+        for article in articles:
+            path, outcome = auto_publish(article, args.content_dir)
+            print(f"{outcome}: {path}")
+        return 0
+
     paths = sorted(args.content_dir.glob("*.json"))
     if args.command == "list":
         for path in paths:
             article = json.loads(path.read_text(encoding="utf-8"))
-            print(f"{article['status']:<10} {article['slug']}  reviewed_by={article.get('reviewed_by') or '-'}")
+            print(f"{article['status']:<10} {article.get('publication_mode', 'reviewed'):<9} {article['slug']}  "
+                  f"reviewed_by={article.get('reviewed_by') or '-'} approved_by={article.get('approved_by') or '-'}")
         return 0
     if args.command == "validate":
         failures = 0

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SiteFooter, SiteHeader } from '../site-nav';
 import { editorEmail } from '../site';
+import { CONFIRMED_DOUBLE_BOOKINGS } from '../lib/confirmed';
 import { archive, loadSnapshot } from '../archive-data';
 import { calendarDate, centralDateTime } from '../lib/format';
 import { metadata as snapshotMeta, teamStatus, teams } from '../team-data';
@@ -60,10 +61,11 @@ export default async function CorrectionsPage() {
           <h2>What is automated and what a person does</h2>
           <ul>
             <li><strong>Automated:</strong> fetching schedules and scores, matching teams, calculating ratings, and a
-              validation audit that blocks publication when data is inconsistent (for example a missing team, a score
-              that differs between two teams&apos; pages, or a record that disagrees with its games).</li>
-            <li><strong>Automated, then reviewed:</strong> Weekly Analysis articles are drafted from the data and are
-              published only after a named editor reviews them. The reviewer&apos;s name is shown on each article.</li>
+              validation audit. Conflicting or impossible listings are held out of the calculation, and a week with
+              incomplete data is published as provisional. Only a calculation failure (for example a team missing from
+              the table or ranks out of order) keeps the previous week up.</li>
+            <li><strong>Automated:</strong> Weekly Analysis articles are generated from each week&apos;s published data and
+              labelled &ldquo;Automated analysis&rdquo;. An article an editor has reviewed names the reviewer instead.</li>
             <li><strong>By a person:</strong> resolving source conflicts, confirming team identities that a name alone
               cannot settle, and deciding corrections.</li>
           </ul>
@@ -86,13 +88,13 @@ export default async function CorrectionsPage() {
             {unavailable.map((team) => (
               <li key={team.team_id}>
                 <Link href={`/team/${team.slug}`}>{team.team}</Link>: no verified results linked for this cutoff; rating is
-                provisional. Under review.
+                provisional.{team.team_id === 'cleveland-central' ? ' The score feed lists the school as “Cleveland”; that link is confirmed and applies from the next weekly rankings.' : ' Under review.'}
               </li>
             ))}
             {conflicts.map((item) => (
               <li key={`${item.slug}-${item.day}`}>
-                <Link href={`/team/${item.slug}`}>{item.team}</Link> is credited with two games on {item.day}; one listing
-                may belong to a same-named school. Under review; it affects this team and its opponents.
+                <Link href={`/team/${item.slug}`}>{item.team}</Link> is credited with two games on {item.day}.{' '}
+                {CONFIRMED_DOUBLE_BOOKINGS[`${item.slug}|${item.day}`] ?? 'One listing may belong to a same-named school. Under review; it affects this team and its opponents.'}
               </li>
             ))}
           </ul>

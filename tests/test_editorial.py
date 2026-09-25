@@ -95,3 +95,39 @@ def test_articles_do_not_mention_unsupported_narratives(drafts) -> None:
     text = json.dumps(articles).lower()
     for word in ("quarterback", "touchdown", "coach said", "told reporters", "sources say"):
         assert word not in text
+
+
+def test_automated_publication_is_labelled_and_idempotent(tmp_path) -> None:
+    articles, _ = editorial.build_articles(DATA, 2026, 4)
+    first = datetime(2026, 9, 25, 16, tzinfo=timezone.utc)
+    for article in articles:
+        path, outcome = editorial.auto_publish(dict(article), tmp_path, now=first)
+        assert outcome == "published"
+        stored = json.loads(path.read_text())
+        assert stored["publication_mode"] == "automated" and stored["approved_by"] == editorial.STANDING_APPROVER
+        assert stored["reviewed_by"] is None and stored["reviewed_at"] is None
+        assert editorial.validate_article(stored, now=first) == []
+    # Same snapshot again: nothing changes.
+    assert editorial.auto_publish(dict(articles[0]), tmp_path, now=first + timedelta(days=1))[1] == "unchanged"
+    # A corrected snapshot refreshes the article but keeps its publication date.
+    corrected = dict(articles[0], snapshot_run_id="2026-week-04-correction")
+    path, outcome = editorial.auto_publish(corrected, tmp_path, now=first + timedelta(days=1))
+    stored = json.loads(path.read_text())
+    assert outcome.startswith("updated") and stored["published_at"] == first.astimezone(editorial.CENTRAL).isoformat(timespec="seconds")
+    assert stored["updated_at"]
+
+
+def test_automation_never_replaces_a_human_reviewed_article(tmp_path) -> None:
+    articles, _ = editorial.build_articles(DATA, 2026, 4)
+    editorial.save_draft(dict(articles[0]), tmp_path)
+    editorial.publish(articles[0]["slug"], "Jane Editor", confirm=True, content_dir=tmp_path,
+                      now=datetime(2026, 9, 25, 15, tzinfo=timezone.utc))
+    _, outcome = editorial.auto_publish(dict(articles[0], snapshot_run_id="new"), tmp_path)
+    assert outcome == "kept (human-reviewed)"
+
+
+def test_automated_article_cannot_claim_a_reviewer() -> None:
+    articles, _ = editorial.build_articles(DATA, 2026, 4)
+    fake = dict(articles[0], status="published", publication_mode="automated", approved_by="Jon Ross Myers",
+                reviewed_by="Jon Ross Myers", published_at="2026-09-25T10:00:00-05:00")
+    assert "an automated article must not claim a human reviewer" in editorial.validate_article(fake)

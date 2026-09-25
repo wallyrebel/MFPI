@@ -29,9 +29,9 @@ export default function AboutPage() {
 
           <h2>Who publishes it</h2>
           <p>
-            MFPI is an independent Mississippi sports analytics project{publisher.operatorName ? <>, operated by {publisher.operatorName}</> : null}.
-            The site&apos;s editor maintains the rankings, reviews analysis before publication and handles corrections;
-            reach the editor at <a href={`mailto:${editorEmail}`}>{editorEmail}</a>. MFPI is free to read, with no
+            MFPI is an independent Mississippi sports analytics project operated by {publisher.operatorName} for{' '}
+            {publisher.organization}. {publisher.operatorName} is responsible for the site, its rankings and its
+            corrections; reach the editor at <a href={`mailto:${editorEmail}`}>{editorEmail}</a>. MFPI is free to read, with no
             paywall or account, and is supported by advertising and direct sponsors. Sponsorship never influences how a
             team is rated.
           </p>
@@ -70,17 +70,20 @@ export default function AboutPage() {
           <h2>How often it updates</h2>
           <p>
             Ratings are recalculated once a week in season, after a Tuesday 11:00 a.m. Central cutoff. The weekly run is
-            automated and can start a little after the cutoff. A run is published only after its data passes validation;
-            if it fails, the previous week stays up and the page shows its real date. When fewer than 95% of the games
-            due by the cutoff have verified scores, the rankings are published as <strong>provisional</strong> and say so.
+            automated and can start a little after the cutoff. Every run is checked before publication;
+            games with conflicting or impossible listings are held out rather than guessed. When data is incomplete — fewer
+            than 95% of the games due by the cutoff verified, a stale media table, or a held-out listing — the week is still
+            published, labelled <strong>provisional</strong>. Only a calculation failure keeps the previous week up, and
+            the page always shows its real date.
             A team with no verified results has its rating marked provisional on its own page.
           </p>
 
           <h2>People and automation</h2>
           <p>
-            Data collection, matching, calculation and validation are automated. Weekly Analysis articles are drafted
-            automatically from the published data and appear on the site only after a named editor has reviewed them.
-            Source conflicts, team-identity questions and corrections are decided by a person.
+            Data collection, matching, calculation and validation are automated, and rankings publish every week from
+            the data available — marked provisional when data is incomplete. Weekly Analysis articles are generated
+            automatically from the published data and labelled as automated analysis; they are not individually
+            reviewed before publication. Source conflicts, team-identity questions and corrections are decided by a person.
           </p>
 
           <p>

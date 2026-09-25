@@ -30,7 +30,8 @@ Low verified-game coverage by itself produces a complete, visibly labeled provis
 
 Every live run audits the exact payload it would publish (`mfpi/audit.py`) before anything replaces `data/current`:
 
-- **BLOCKING** — a missing or extra team versus the MHSAA list, a team that disappeared since last week, a score that differs between the two teams' pages, a game missing from one side, a record or average that disagrees with its games, ranks out of order, component arithmetic that does not add up, non-finite numbers, a counted game after the cutoff, or a listing ledger that counts a non-final game. The run becomes `DRAFT`; the previous snapshot stays live; `data/drafts/<run-id>/audit.json` lists every finding.
+- **BLOCKING** — a data or consistency problem (a score that differs between two teams' pages, a record that disagrees with its games, component arithmetic, a counted game after the cutoff). The week still publishes, as `PROVISIONAL`, with the findings in `audit.json`. Only the hard subset (`HARD_AUDIT_CODES`: a missing, extra or disappeared team, duplicate IDs, ranks out of order, non-finite numbers, ratings out of range) keeps the previous week live as a `DRAFT`.
+- Before validation, conflicting, duplicate or impossible listings are quarantined (`QUARANTINED_*` warnings): kept as unverified listings and never counted, so one bad listing cannot stop the week.
 - **WARNING** — publishable but needs a person: a team with no verified results, a possible identity split (an external opponent whose name is a shorter form of a ranked team), a team credited with two games on one date, a zero average on a team without games.
 - **INFO** — investigate only: unusual scores (60+ margin or 110+ total), large rating/rank swings, schedule gaps, forfeits. Never "correct" a valid unusual result.
 
@@ -41,6 +42,8 @@ Run it any time: `python -m mfpi.audit --snapshot data/current --out reports/cur
 Names alone never merge schools. When a source lists an MHSAA program under a different name, add a `ReviewedIdentity` in `mfpi/matching.py` with the source, its stable team ID, the listed name and the listed city; it applies only when all four agree, and the run records `REVIEWED_IDENTITY_APPLIED`. Use `team_id=None` to record that a same-named source team is a different school (for example a Tennessee "Houston"), which keeps it external. The import reports `MULTIPLE_SOURCE_IDS_FOR_TEAM` when one MHSAA team matched several source IDs by name, and `TEAM_DOUBLE_BOOKED` when a team is credited with two games on one date — both are signs of a same-name mix-up. Resolve them with evidence (the opponent's schedule, the school's own schedule, or the MHSAA listing's city), not by deleting a game.
 
 ## Weekly Analysis workflow
+
+The weekly workflow runs `python -m mfpi.editorial auto` after each ranking run: it publishes that week's weekly analysis, risers and fallers, and season-to-date performance review as **automated analysis** under the operator's standing approval (`STANDING_APPROVER` in `mfpi/editorial.py`). They are labelled automated, name no reviewer, stay ad-free, and refresh only if the week's snapshot is corrected. To review one yourself:
 
 1. After a week publishes: `python -m mfpi.editorial generate --week N --markdown-dir reports/editorial-drafts`. Drafts go to `content/analysis/*.json` with `status: "draft"`; they are never routed, listed, put in the sitemap or given ads in production.
 2. Read the Markdown copy (or `npm run dev` and open `/analysis/preview/<slug>`). Check every number against the rankings, remove anything you would not stand behind, and edit the JSON text if needed. Add notes in `review_notes`.

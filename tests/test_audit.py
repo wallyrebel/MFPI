@@ -190,21 +190,44 @@ def test_same_name_in_another_state_is_reported_not_silently_merged() -> None:
     assert "TEAM_DOUBLE_BOOKED" in {issue.code for issue in report.issues}
 
 
-def test_reviewed_identity_requires_source_id_name_and_city(monkeypatch) -> None:
+def test_confirmed_cleveland_identity_requires_source_id_and_name() -> None:
     teams = [replace(make_team("Cleveland Central", "5A"), team_id="cleveland-central"), make_team("Clarksdale")]
-    corroborated = [raw("1", "Cleveland", "Clarksdale", "241722", "5", home_city="Cleveland", away_city="Clarksdale")]
-    _, games, issues = reconcile_games(teams, corroborated)
-    assert games[0].home_team_id == "cleveland-central"
-    assert "REVIEWED_IDENTITY_APPLIED" in {issue.code for issue in issues}
-
-    no_city = [raw("1", "Cleveland", "Clarksdale", "241722", "5", home_city="", away_city="Clarksdale")]
-    _, games, issues = reconcile_games(teams, no_city)
-    assert games[0].home_team_id == "external-241722"
-    assert "REVIEWED_IDENTITY_NOT_CORROBORATED" in {issue.code for issue in issues}
+    for city in ("Cleveland", ""):
+        listing = [raw("1", "Cleveland", "Clarksdale", "241722", "5", home_city=city, away_city="Clarksdale")]
+        _, games, issues = reconcile_games(teams, listing)
+        assert games[0].home_team_id == "cleveland-central"
+        assert "REVIEWED_IDENTITY_APPLIED" in {issue.code for issue in issues}
 
     other_id = [raw("1", "Cleveland", "Clarksdale", "777", "5", home_city="Cleveland", away_city="Clarksdale")]
     _, games, _ = reconcile_games(teams, other_id)
     assert games[0].home_team_id == "external-777"  # the name alone never merges
+
+
+def test_city_mismatch_blocks_an_unconfirmed_identity(monkeypatch) -> None:
+    from mfpi import matching
+
+    rule = matching.ReviewedIdentity("mhsaa_score_center", "55", "alpha", ("Alpha Town",), "Alpha", "test")
+    monkeypatch.setattr(matching, "REVIEWED_SOURCE_IDENTITIES", (rule,))
+    teams = [make_team("Alpha"), make_team("Beta")]
+    _, games, issues = reconcile_games(teams, [raw("1", "Alpha Town", "Beta", "55", "2", home_city="Memphis")])
+    assert games[0].home_team_id.startswith("external-")
+    assert "REVIEWED_IDENTITY_NOT_CORROBORATED" in {issue.code for issue in issues}
+
+
+def test_out_of_state_houston_on_sept_11_stays_external() -> None:
+    teams = [make_team("Houston"), make_team("Corinth"), make_team("Tupelo", "7A")]
+    raws = [
+        raw("1", "Houston", "Corinth", "100", "200", day=11),
+        replace(raw("2", "Houston", "Tupelo", "999", "300"), date=datetime(2026, 9, 11, 19, tzinfo=CENTRAL)),
+    ]
+    raws[0] = replace(raws[0], date=datetime(2026, 9, 11, 19, tzinfo=CENTRAL))
+    all_teams, games, issues = reconcile_games(teams, raws)
+    by_id = {game.game_id: game for game in games}
+    assert by_id["1"].home_team_id == "houston"
+    assert by_id["2"].home_team_id != "houston" and by_id["2"].home_team_id.startswith("external-")
+    assert next(t for t in all_teams if t.team_id == by_id["2"].home_team_id).display_name == "Houston (out of state)"
+    report = validate_inputs(teams, games, datetime(2026, 9, 15, 11, tzinfo=CENTRAL), Settings(), issues)
+    assert "TEAM_DOUBLE_BOOKED" not in {issue.code for issue in report.issues}
 
 
 def test_reviewed_external_identity_keeps_same_named_school_external(monkeypatch) -> None:

@@ -8,11 +8,13 @@ export const siteUrl =
 export const advertisingEmail = 'editor@sportsmississippi.com';
 export const editorEmail = 'editor@sportsmississippi.com';
 
-// Publisher identity shown on the About page. Leave a field empty rather than
-// guess: the site states only what the owner has confirmed. See HANDOFF.md.
+// Publisher identity shown on the About page, as confirmed by the owner on
+// 2026-09-25. The env vars exist only to change it without a code edit.
 export const publisher = {
   /** Person or business legally responsible for the site, as the owner wants it shown. */
-  operatorName: process.env.NEXT_PUBLIC_PUBLISHER_NAME ?? '',
+  operatorName: process.env.NEXT_PUBLIC_PUBLISHER_NAME || 'Jon Ross Myers',
+  /** Organization the operator publishes for. */
+  organization: process.env.NEXT_PUBLIC_PUBLISHER_ORGANIZATION || 'Mississippi Sports Group',
   /** Person who handles corrections, if different from the operator. */
   correctionsContact: editorEmail,
 };

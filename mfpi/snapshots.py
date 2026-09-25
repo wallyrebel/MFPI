@@ -267,6 +267,7 @@ def write_provisional_snapshot(
     report: ValidationReport,
     sources: list[dict[str, Any]],
     audit: dict[str, Any] | None = None,
+    corrected: bool = False,
 ) -> Path:
     """Show a complete live ranking while a small number of finals remain unverified."""
 
@@ -299,6 +300,17 @@ def write_provisional_snapshot(
             (directory / "audit.json").write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
 
     write(draft)
+    # Archive the week too, so the weekly archive, movement and analysis keep
+    # working. An existing archive is never overwritten: a correction run adds
+    # a revision, and an ordinary rerun only refreshes data/current.
+    base_archive = data_root / str(season) / f"week-{week:02d}"
+    if not base_archive.exists():
+        write(base_archive)
+    elif corrected:
+        revision = 1
+        while (base_archive / "corrections" / f"revision-{revision:02d}").exists():
+            revision += 1
+        write(base_archive / "corrections" / f"revision-{revision:02d}")
     _replace_current(data_root, write)
     save_run(
         data_root / "mfpi.sqlite3",

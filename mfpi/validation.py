@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from collections import Counter, defaultdict
+from dataclasses import replace
 from datetime import datetime
 
 from .config import Settings
@@ -8,14 +9,88 @@ from .dates import calendar_date
 from .models import Game, Team, ValidationIssue, ValidationReport
 
 
-PROVISIONAL_SAFE_CRITICAL_CODES = frozenset({"LOW_GAME_COVERAGE"})
+# Rankings are published every week from the data available. These critical
+# codes mean the calculation itself cannot be trusted, so the previous week
+# stays up instead. Every other critical issue (low coverage, a stale media
+# table, a conflicting secondary score) publishes a PROVISIONAL week that says
+# so; conflicting or duplicate games are quarantined first (see below) so they
+# never count.
+HARD_BLOCKING_CODES = frozenset({
+    "SRS_DID_NOT_CONVERGE",
+    "PUBLICATION_AUDIT_BLOCKED",
+    "DUPLICATE_TEAM_ALIAS",
+    "DUPLICATE_GAME_ID",
+    "SELF_GAME",
+    "DUPLICATE_MATCHUP",
+    "IMPOSSIBLE_SCORE",
+    "FUTURE_COMPLETED_GAME",
+})
 
 
 def can_show_provisional(report: ValidationReport) -> bool:
-    """Allow a live preview only when missing finals are the sole blocking issue."""
+    """Publish a provisional week unless the calculation itself is unsound."""
 
     critical_codes = {issue.code for issue in report.issues if issue.severity == "CRITICAL"}
-    return bool(critical_codes) and critical_codes <= PROVISIONAL_SAFE_CRITICAL_CODES
+    return bool(critical_codes) and not (critical_codes & HARD_BLOCKING_CODES)
+
+
+def quarantine_games(games: list[Game], cutoff: datetime) -> tuple[list[Game], list[ValidationIssue]]:
+    """Keep bad listings out of the calculation instead of stopping the week.
+
+    Exact duplicate IDs keep one copy. Self-games are dropped. Impossible
+    scores, completed games after the cutoff, and same-day duplicate matchups
+    whose scores disagree become unverified (listed, never counted); agreeing
+    same-day duplicates keep one copy. Each action is reported as a warning.
+    """
+
+    issues: list[ValidationIssue] = []
+    seen_ids: set[str] = set()
+    output: list[Game] = []
+    for game in games:
+        if game.game_id in seen_ids:
+            issues.append(ValidationIssue("QUARANTINED_DUPLICATE_ID", "WARNING", f"Dropped a second copy of game {game.game_id}."))
+            continue
+        seen_ids.add(game.game_id)
+        if game.home_team_id == game.away_team_id:
+            issues.append(ValidationIssue("QUARANTINED_SELF_GAME", "WARNING", f"Dropped game {game.game_id}: a team listed against itself."))
+            continue
+        bad_score = any(score is not None and (score < 0 or score > 150) for score in (game.home_score, game.away_score))
+        if bad_score or (game.completed and game.date > cutoff):
+            issues.append(ValidationIssue(
+                "QUARANTINED_GAME", "WARNING",
+                f"Game {game.game_id} kept as unverified: {'impossible score' if bad_score else 'marked final after the cutoff'}.",
+            ))
+            game = replace(game, verified=False, status="UNRESOLVED_CONFLICT", home_score=None, away_score=None)
+        output.append(game)
+
+    groups: dict[tuple[str, str, str], list[int]] = defaultdict(list)
+    for index, game in enumerate(output):
+        if game.completed and game.verified:
+            groups[(calendar_date(game.date).isoformat(), *sorted((game.home_team_id, game.away_team_id)))].append(index)
+    drop: set[int] = set()
+    for key, indexes in groups.items():
+        if len(indexes) < 2:
+            continue
+        facts = {
+            tuple(sorted({(output[i].home_team_id, output[i].home_score), (output[i].away_team_id, output[i].away_score)}))
+            for i in indexes
+        }
+        if len(facts) == 1:
+            drop.update(indexes[1:])
+            issues.append(ValidationIssue(
+                "QUARANTINED_DUPLICATE_MATCHUP", "WARNING",
+                f"Counted one of {len(indexes)} identical listings for {key}.",
+                {"game_ids": [output[i].game_id for i in indexes]},
+            ))
+        else:
+            for i in indexes:
+                output[i] = replace(output[i], verified=False, status="UNRESOLVED_CONFLICT", home_score=None, away_score=None)
+            issues.append(ValidationIssue(
+                "QUARANTINED_CONFLICTING_MATCHUP", "WARNING",
+                f"Listings for {key} disagree on the score; none is counted until resolved.",
+                {"game_ids": [output[i].game_id for i in indexes]},
+            ))
+    return [game for index, game in enumerate(output) if index not in drop], issues
 
 
 def validate_inputs(

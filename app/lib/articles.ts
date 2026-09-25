@@ -1,8 +1,11 @@
 // Weekly Analysis articles from content/analysis/*.json.
 //
-// Only articles a named person has reviewed and published are public. Drafts
-// are never routed, listed, put in the sitemap, or given ads in a production
-// build; `npm run dev` shows them under /analysis/preview/<slug> for review.
+// Published articles are either reviewed by a named person
+// (publication_mode "reviewed") or automated weekly analysis published under
+// the operator's standing approval (publication_mode "automated"), which is
+// labelled as such and carries no ads. Drafts are never routed, listed or put
+// in the sitemap in production; `npm run dev` shows them under
+// /analysis/preview/<slug>.
 
 export type ArticleSection = {
   heading: string;
@@ -22,6 +25,9 @@ export type Article = {
   snapshot_generated_at: string;
   formula_version: string;
   author: string;
+  publication_mode?: 'reviewed' | 'automated';
+  approved_by?: string | null;
+  updated_at?: string | null;
   reviewed_by: string | null;
   reviewed_at: string | null;
   published_at: string | null;
@@ -34,8 +40,14 @@ const modules = import.meta.glob('../../content/analysis/*.json', { eager: true,
 
 export const allArticles: Article[] = Object.values(modules);
 
+export function isAutomated(article: Article): boolean {
+  return article.publication_mode === 'automated';
+}
+
 export function isPublished(article: Article): boolean {
-  return article.status === 'published' && Boolean(article.reviewed_by?.trim()) && Boolean(article.reviewed_at) && Boolean(article.published_at);
+  if (article.status !== 'published' || !article.published_at) return false;
+  if (isAutomated(article)) return Boolean(article.approved_by?.trim()) && !article.reviewed_by;
+  return Boolean(article.reviewed_by?.trim()) && Boolean(article.reviewed_at);
 }
 
 export const publishedArticles: Article[] = allArticles

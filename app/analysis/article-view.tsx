@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { findPublished, tokens, type Article } from '../lib/articles';
+import { findPublished, isAutomated, isPublished, tokens, type Article } from '../lib/articles';
 import { getTeamById, teamLabel } from '../team-data';
 import { centralDateTime } from '../lib/format';
 
@@ -22,14 +22,19 @@ function Rich({ text }: { text: string }) {
 
 /** Renders an article; `between` is placed after the given section index (ads, if eligible). */
 export function ArticleView({ article, between }: { article: Article; between?: Record<number, ReactNode> }) {
-  const published = article.status === 'published' && article.reviewed_by;
+  const published = isPublished(article);
+  const automated = isAutomated(article);
   return (
     <article className="mf-doc mf-article">
       <p className="eyebrow">Weekly Analysis · {article.season} Week {article.week}</p>
       <h1>{article.title}</h1>
       <p className="advertise-intro">{article.dek}</p>
       <p className="mf-doc-meta">
-        {published ? (
+        {published && automated ? (
+          <>Published {centralDateTime(article.published_at!)}
+            {article.updated_at ? <> · Updated {centralDateTime(article.updated_at)} for a corrected snapshot</> : null}
+            {' '}· <strong>Automated analysis</strong> generated from verified data; publication approved by {article.approved_by}; not individually reviewed · </>
+        ) : published ? (
           <>Published {centralDateTime(article.published_at!)} · Reviewed by {article.reviewed_by} · </>
         ) : (
           <><strong>Draft — not reviewed, not public.</strong> Generated from data; requires human review before publication. · </>
@@ -70,8 +75,10 @@ export function ArticleView({ article, between }: { article: Article; between?: 
         </>
       )}
       <p className="mf-doc-meta">
-        Written from verified MFPI data. Automated processing drafts the numbers; a named editor reviews every article
-        before it is published. Spot an error? <Link href="/corrections">Report a correction</Link>.
+        {automated
+          ? 'Written automatically from verified MFPI data each week. It describes results and ratings only; it does not include opinions, quotes or game narratives.'
+          : 'Written from verified MFPI data and reviewed by the named editor before publication.'}{' '}
+        Spot an error? <Link href="/corrections">Report a correction</Link>.
       </p>
     </article>
   );
