@@ -123,7 +123,7 @@ export default async function TeamPage({ params }: Params) {
   return (
     <>
       <SiteHeader />
-      {ads.script}
+
       <main className="page-shell">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 

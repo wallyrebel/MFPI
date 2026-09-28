@@ -1,15 +1,16 @@
+import { ExternalScript } from './ads/external-script';
 import { gaMeasurementId } from './site';
-import { ConsentDefaults } from './ads/consent';
 
-// Plain script tags rather than `next/script`: React hoists the async loader
-// into <head>, and this keeps the tag independent of the vinext client runtime.
+
+// ExternalScript prevents React from moving this loader before consent defaults.
+// Consent defaults are initialized in the root head.
 // Consent defaults are pushed to the data layer before the config command.
 export function GoogleAnalytics() {
-  if (!gaMeasurementId) return <ConsentDefaults />;
+  if (!gaMeasurementId) return null;
   return (
     <>
-      <ConsentDefaults />
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
+
+      <ExternalScript src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
       <script
         dangerouslySetInnerHTML={{
           __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gaMeasurementId}');`,

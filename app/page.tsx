@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <>
-      {ads.script}
+
       <RankingsDashboard
         snapshot={publicSnapshot}
         ageDays={age}

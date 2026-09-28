@@ -1,10 +1,5 @@
-// Central advertising configuration and page-level eligibility.
-//
-// Every Google ad on the site goes through `adEligibility`. A page that is not
-// eligible renders no ad slot AND does not load the AdSense script, so Auto ads
-// (if ever turned on in the AdSense account) have no tag to run from on it.
-// Account-side Auto ads page exclusions are still required; see ADSENSE.md.
-//
+// Manual ad-slot configuration and page-level eligibility.
+// The root layout loads the connection script; Auto ads exclusions live in AdSense.
 // This file has no imports so the Node test runner can load it directly.
 
 export type AdsConfig = {
@@ -51,7 +46,9 @@ export type Eligibility = { eligible: boolean; reason: string };
 const CLIENT_PATTERN = /^ca-pub-\d{16}$/;
 
 export function parseAdsConfig(env: Record<string, string | undefined>): AdsConfig {
-  const client = (env.NEXT_PUBLIC_ADSENSE_CLIENT ?? '').trim();
+  // Account information shows pub-..., while the script and meta tag need ca-pub-....
+  const suppliedClient = (env.NEXT_PUBLIC_ADSENSE_CLIENT ?? '').trim();
+  const client = /^pub-\d{16}$/.test(suppliedClient) ? 'ca-' + suppliedClient : suppliedClient;
   const valid = CLIENT_PATTERN.test(client);
   return {
     client: valid ? client : '',

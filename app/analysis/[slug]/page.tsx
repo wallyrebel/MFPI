@@ -35,7 +35,7 @@ export default async function ArticlePage({ params }: Params) {
   return (
     <>
       <SiteHeader />
-      {ads.script}
+
       <main className="page-shell">
         <ArticleView article={article} between={{ [middle]: ads.slot('article-mid'), [article.sections.length - 1]: ads.slot('article-bottom') }} />
         <SiteFooter />

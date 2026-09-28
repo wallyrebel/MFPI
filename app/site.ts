@@ -1,6 +1,6 @@
 import { parseAdsConfig } from './lib/ads';
 
-// The apex domain has no DNS record; www is the host that actually serves.
+// The apex domain redirects to www, the canonical host. Add the bare domain in AdSense.
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
   'https://www.mississippifootballrankings.com';
@@ -27,10 +27,10 @@ export const gaMeasurementId =
   'G-Y623H9Z0KC';
 
 // Google AdSense. Every value is public (it ships in page source), but none is
-// invented here: without a real `ca-pub-` ID the integration stays off.
+// the default publisher ID was supplied by the owner on September 28, 2026.
 // Each variable is referenced by name so the build can inline it.
 export const adsConfig = parseAdsConfig({
-  NEXT_PUBLIC_ADSENSE_CLIENT: process.env.NEXT_PUBLIC_ADSENSE_CLIENT,
+  NEXT_PUBLIC_ADSENSE_CLIENT: process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-3245500092050206',
   NEXT_PUBLIC_ADS_ENABLED: process.env.NEXT_PUBLIC_ADS_ENABLED,
   NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_TOP: process.env.NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_TOP,
   NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_BOTTOM: process.env.NEXT_PUBLIC_ADSENSE_SLOT_RANKINGS_BOTTOM,

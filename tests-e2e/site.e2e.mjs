@@ -97,10 +97,10 @@ if (MODE === 'ads') {
     assert.equal(await tab.evaluate(() => window.__revocationShown), true);
     await context.close();
   });
-  for (const path of ['/privacy', '/contact', '/about', '/advertise', '/corrections', '/analysis', '/teams', '/team/cleveland-central', '/does-not-exist']) {
-    await check(`no ad code on ${path} (CMP still present)`, async () => {
+  for (const path of ['/privacy', '/contact', '/about', '/advertise', '/corrections', '/analysis', '/teams', '/does-not-exist']) {
+    await check(`no manual ad slots on ${path} (connection script and CMP present)`, async () => {
       const { tab, requests, context } = await page(browser, path);
-      assert.equal(requests.filter((url) => url.includes('googlesyndication')).length, 0);
+      assert.equal(requests.filter((url) => url.includes('googlesyndication')).length, 1);
       assert.equal(await tab.locator('.ad-slot, ins.adsbygoogle').count(), 0);
       assert.ok(requests.some((url) => url.includes('fundingchoicesmessages')), 'CMP loaded');
       await context.close();
@@ -121,11 +121,14 @@ if (MODE === 'ads') {
   });
 } else {
   for (const path of ['/', '/team/tupelo', '/team/cleveland-central', '/privacy', '/analysis', '/archive/2026/week-04']) {
-    await check(`ads disabled: no ad or CMP code on ${path}`, async () => {
+    await check(`verification ready: publisher script with no manual slots or CMP on ${path}`, async () => {
       const { tab, requests, status, errors, context } = await page(browser, path);
       assert.equal(status, 200);
-      assert.equal(requests.length, 0);
-      assert.equal(await tab.locator('.ad-slot, meta[name="google-adsense-account"]').count(), 0);
+      assert.equal(requests.filter((url) => url.includes('googlesyndication')).length, 1);
+      assert.equal(requests.filter((url) => url.includes('fundingchoicesmessages')).length, 0);
+      assert.equal(await tab.locator('.ad-slot').count(), 0);
+      assert.equal(await tab.locator('head meta[name="google-adsense-account"]').getAttribute('content'), 'ca-pub-3245500092050206');
+      assert.equal(await tab.locator('head script[src*="adsbygoogle.js"] ').count(), 1);
       assert.deepEqual(errors, []);
       await context.close();
     });

@@ -8,7 +8,7 @@ const eslintConfig = defineConfig([
   // Build output and the Python venv are not lintable source.
   globalIgnores([
     '.next/**', 'out/**', 'build/**', 'dist/**', 'next-env.d.ts',
-    '.venv/**', '.pytest-tmp*/**', '.pytest_cache/**', '.wrangler/**', '.vinext/**',
+    'data/cache/**', '.venv/**', '.pytest-tmp*/**', '.pytest_cache/**', '.wrangler/**', '.vinext/**',
   ]),
 ]);
 

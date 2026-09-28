@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         <article className="mf-doc">
           <p className="eyebrow">Legal</p>
           <h1>Privacy Policy</h1>
-          <p className="mf-doc-meta">Last updated September 25, 2026</p>
+          <p className="mf-doc-meta">Last updated September 28, 2026</p>
 
           <p>
             This policy explains what information is collected when you visit the Mississippi Football Power Index
@@ -53,8 +53,8 @@ export default function PrivacyPage() {
           <p>
             <strong>Current status:</strong>{' '}
             {adsOn
-              ? 'Google AdSense ads are shown on eligible pages (rankings, team and reviewed article pages). Utility pages such as this one, error pages and pages without substantive content carry no ads.'
-              : 'Google AdSense ads are not currently shown on this site. This section describes what applies when they are, and this notice will change when they start.'}
+              ? 'Google AdSense ads are shown on eligible pages (rankings, team and reviewed article pages). Our manually placed ads exclude utility pages, error pages and pages without substantive content.'
+              : 'The Google AdSense connection script is installed on this site. Google receives technical request information when it loads. Ad serving depends on Google approval and the advertising settings in our account.'}
           </p>
           <p>
             When advertising from Google is displayed, third-party vendors, including Google, use cookies to serve ads

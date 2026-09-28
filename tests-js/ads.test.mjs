@@ -65,3 +65,13 @@ test('consent defaults deny storage in the EEA, UK and Switzerland before any ta
   for (const region of ['DE', 'FR', 'GB', 'CH', 'NO', 'IS', 'LI']) assert.ok(script.includes(`"${region}"`), region);
   assert.ok(!script.includes('"US"'));
 });
+
+test('publisher IDs copied from Account information normalize for verification and ads.txt', () => {
+  const config = parseAdsConfig({ NEXT_PUBLIC_ADSENSE_CLIENT: '  pub-0000000000000000  ' });
+  assert.equal(config.client, REAL_LOOKING);
+  assert.equal(config.enabled, false);
+  assert.match(adsTxt(config), /^google\.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0$/m);
+  for (const invalid of ['pub-123', 'pub-00000000000000000', '<script>pub-0000000000000000</script>']) {
+    assert.equal(parseAdsConfig({ NEXT_PUBLIC_ADSENSE_CLIENT: invalid }).client, '');
+  }
+});
