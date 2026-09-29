@@ -1,0 +1,177 @@
+{
+  "slug": "2026-rankings-performance-review-weeks-1-4",
+  "kind": "performance-review",
+  "title": "How MFPI's pregame rankings fared: Weeks 1-4 rankings against the games that followed",
+  "dek": "The higher-rated team won 301 of 411 games between ranked MHSAA teams (73.2%), using only the rankings published before kickoff.",
+  "status": "published",
+  "season": 2026,
+  "week": 5,
+  "snapshot_run_id": "2026-week-05-20260929T184131088924Z",
+  "snapshot_generated_at": "2026-09-29T18:41:31.088924+00:00",
+  "formula_version": "MFPI-3.2",
+  "draft_generated_at": "2026-09-29T18:43:40.389844+00:00",
+  "author": "MFPI automated analysis",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "published_at": "2026-09-29T13:43:40-05:00",
+  "review_notes": "",
+  "sources": [
+    {
+      "label": "MHSAA official score center (schedules and scores)",
+      "url": "https://scores.misshsaa.com/"
+    },
+    {
+      "label": "MHSAA 2025-27 football classifications and regions",
+      "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+    },
+    {
+      "label": "Statewide media rankings used for the Media Rank inputs",
+      "url": "https://www.maxpreps.com/ms/football/rankings/1/"
+    },
+    {
+      "label": "MFPI Week 5 rankings archive",
+      "url": "/archive/2026/week-05"
+    },
+    {
+      "label": "MFPI methodology",
+      "url": "/methodology"
+    }
+  ],
+  "limitations": [
+    "Only games between two ranked MHSAA teams are evaluated.",
+    "Uses the rankings actually published before kickoff; no hindsight inputs."
+  ],
+  "sections": [
+    {
+      "heading": "What was measured",
+      "paragraphs": [
+        "For every game between two ranked MHSAA teams, the favorite is the team with the higher full-precision MFPI in the latest snapshot published before that game's date, including an audited correction if one was issued before kickoff. Later rankings and later corrections are never used to pick a favorite.",
+        "A game counts as correct when the favorite won. Results are the verified final scores in the Week 5 snapshot. MFPI is a rating of past performance, not a betting line: home field, injuries and weather are not considered, and no point spread is implied.",
+        "Excluded and disclosed below: games against non-MHSAA or out-of-state opponents (they have no MFPI rating), games where both teams had exactly equal ratings, tied games, and games involving a team credited with two games on the same date (a listing under review)."
+      ]
+    },
+    {
+      "heading": "Results by ranking week",
+      "paragraphs": [
+        "Across these windows the favorite won 301 of 411 (73.2%). The Week 1 ranking was built from about one game per team plus the fading classification prior; the table shows each week's rate as published."
+      ],
+      "table": {
+        "columns": [
+          "Ranking used",
+          "Games played",
+          "Evaluated",
+          "Favorite won",
+          "Rate",
+          "Non-MHSAA excluded",
+          "Under review excluded",
+          "Equal ratings",
+          "Ties"
+        ],
+        "rows": [
+          [
+            "Week 1 (MFPI-3.0, published Sep 2 8:32 AM CT)",
+            "Sep 3-Sep 9",
+            "105",
+            "68",
+            "64.8%",
+            "13",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Week 2 (MFPI-3.2, published Sep 9 2:17 PM CT)",
+            "Sep 10-Sep 15",
+            "99",
+            "71",
+            "71.7%",
+            "12",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Week 3 (MFPI-3.2, published Sep 15 12:08 PM CT)",
+            "Sep 16-Sep 22",
+            "104",
+            "81",
+            "77.9%",
+            "6",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Week 4 (MFPI-3.2, published Sep 22 11:19 AM CT)",
+            "Sep 23-Sep 29",
+            "103",
+            "81",
+            "78.6%",
+            "6",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Bigger rating gaps were more reliable",
+      "paragraphs": [
+        "Games grouped by the pregame MFPI gap between the two teams."
+      ],
+      "table": {
+        "columns": [
+          "Pregame rating gap",
+          "Games",
+          "Favorite won",
+          "Rate"
+        ],
+        "rows": [
+          [
+            "under 5",
+            "97",
+            "55",
+            "56.7%"
+          ],
+          [
+            "5 to 15",
+            "135",
+            "89",
+            "65.9%"
+          ],
+          [
+            "15 or more",
+            "179",
+            "157",
+            "87.7%"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Largest upsets by pregame rating gap",
+      "paragraphs": [
+        "[[callaway]] beat [[terry]] 7-6 on Sep 18, overcoming a 47.1-point gap in the Week 3 ranking.",
+        "[[kossuth]] beat [[tishomingo-county]] 31-13 on Sep 11, overcoming a 45.2-point gap in the Week 2 ranking.",
+        "[[amanda-elzy]] beat [[north-pontotoc]] 20-14 on Sep 18, overcoming a 36.9-point gap in the Week 3 ranking.",
+        "[[moss-point]] beat [[vancleave]] 34-29 on Sep 25, overcoming a 34.8-point gap in the Week 4 ranking.",
+        "[[picayune]] beat [[biloxi]] 34-31 on Sep 11, overcoming a 29.2-point gap in the Week 2 ranking."
+      ]
+    },
+    {
+      "heading": "Data notes and limitations",
+      "paragraphs": [
+        "Snapshot generated September 29, 2026 at 1:41 PM Central with a cutoff of September 29 at 11:00 AM Central, formula MFPI-3.2.",
+        "567 of 578 game listings due by the cutoff had verified scores (98.1%); the rest count as unavailable, never as losses or 0-0 results.",
+        "No verified results were linked to [[northside]] for this cutoff. Their ratings are provisional and rest on class, media and neutral inputs; their positions should not be read as the product of games.",
+        "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise.",
+        "Formula versions differed across these weeks (MFPI-3.0 to MFPI-3.2); each ranking is evaluated as it was published.",
+        "Samples are small (411 games); a few results can move these percentages several points."
+      ]
+    }
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
+}

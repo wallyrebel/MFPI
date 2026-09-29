@@ -1,0 +1,249 @@
+{
+  "slug": "2026-week-05-risers-and-fallers",
+  "kind": "risers-and-fallers",
+  "title": "Week 5 risers and fallers in the MFPI",
+  "dek": "The largest statewide rank moves this week, with the verified results and rating changes behind each one.",
+  "status": "published",
+  "season": 2026,
+  "week": 5,
+  "snapshot_run_id": "2026-week-05-20260929T184131088924Z",
+  "snapshot_generated_at": "2026-09-29T18:41:31.088924+00:00",
+  "formula_version": "MFPI-3.2",
+  "draft_generated_at": "2026-09-29T18:43:40.353070+00:00",
+  "author": "MFPI automated analysis",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "published_at": "2026-09-29T13:43:40-05:00",
+  "review_notes": "",
+  "sources": [
+    {
+      "label": "MHSAA official score center (schedules and scores)",
+      "url": "https://scores.misshsaa.com/"
+    },
+    {
+      "label": "MHSAA 2025-27 football classifications and regions",
+      "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+    },
+    {
+      "label": "Statewide media rankings used for the Media Rank inputs",
+      "url": "https://www.maxpreps.com/ms/football/rankings/1/"
+    },
+    {
+      "label": "MFPI Week 5 rankings archive",
+      "url": "/archive/2026/week-05"
+    },
+    {
+      "label": "MFPI methodology",
+      "url": "/methodology"
+    }
+  ],
+  "limitations": [
+    "Movement is only shown against a comparable previous snapshot; teams without one are NEW.",
+    "Large moves in the middle of the table often reflect tightly bunched ratings rather than dramatic results."
+  ],
+  "sections": [
+    {
+      "heading": "How to read these moves",
+      "paragraphs": [
+        "Rank movement is last week's statewide rank minus this week's. Rating change is this week's displayed MFPI minus last week's. They are separate facts: in the middle of the table, where ratings are close together, a small rating change can move a team many places, and a team can hold its place while its rating changes.",
+        "Both compare the Week 5 snapshot with the latest audited Week 4 snapshot (formula MFPI-3.2)."
+      ]
+    },
+    {
+      "heading": "Biggest risers",
+      "paragraphs": [
+        "[[wilkinson-county]] (2A, 2-1): State ranking: up 53 spots to No. 92 (from No. 145). MFPI rating: increased 17.2 points to 57.2. In the window it beat [[sacred-heart]] (currently No. 169) 44-3 at home on Sep 25.",
+        "[[nanih-waiya]] (1A, 4-1): State ranking: up 46 spots to No. 107 (from No. 153). MFPI rating: increased 14.4 points to 51.1. In the window it beat [[water-valley]] (currently No. 100) 48-36 on the road on Sep 25.",
+        "[[cleveland-central]] (5A, 3-1): State ranking: up 44 spots to No. 42 (from No. 86). MFPI rating: increased 15.5 points to 74.3. It had no verified result in the window; the move comes from other teams' results and re-solved opponent ratings.",
+        "[[heidelberg]] (2A, 3-1): State ranking: up 41 spots to No. 36 (from No. 77). MFPI rating: increased 14.1 points to 76.4. In the window it beat [[leake-central]] (currently No. 44) 47-0 on the road on Sep 25.",
+        "[[bruce]] (2A, 5-0): State ranking: up 36 spots to No. 113 (from No. 149). MFPI rating: increased 9.5 points to 49.0. In the window it beat [[j-z-george]] (currently No. 168) 46-18 on the road on Sep 25.",
+        "[[hamilton]] (2A, 2-3): State ranking: up 34 spots to No. 155 (from No. 189). MFPI rating: increased 9.8 points to 36.0. In the window it beat [[smithville]] (currently No. 200) 46-6 at home on Sep 25.",
+        "[[myrtle]] (2A, 3-1): State ranking: up 32 spots to No. 108 (from No. 140). MFPI rating: increased 9.2 points to 51.0. In the window it beat [[walnut]] (currently No. 179) 34-8 on the road on Sep 25.",
+        "[[south-jones]] (5A, 3-2): State ranking: up 30 spots to No. 89 (from No. 119). MFPI rating: increased 9.2 points to 58.0. In the window it beat [[enterprise-clarke]] (currently No. 106) 37-20 at home on Sep 25."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[wilkinson-county]]",
+            "92",
+            "145",
+            "+53",
+            "57.2",
+            "+17.2"
+          ],
+          [
+            "[[nanih-waiya]]",
+            "107",
+            "153",
+            "+46",
+            "51.1",
+            "+14.4"
+          ],
+          [
+            "[[cleveland-central]]",
+            "42",
+            "86",
+            "+44",
+            "74.3",
+            "+15.5"
+          ],
+          [
+            "[[heidelberg]]",
+            "36",
+            "77",
+            "+41",
+            "76.4",
+            "+14.1"
+          ],
+          [
+            "[[bruce]]",
+            "113",
+            "149",
+            "+36",
+            "49.0",
+            "+9.5"
+          ],
+          [
+            "[[hamilton]]",
+            "155",
+            "189",
+            "+34",
+            "36.0",
+            "+9.8"
+          ],
+          [
+            "[[myrtle]]",
+            "108",
+            "140",
+            "+32",
+            "51.0",
+            "+9.2"
+          ],
+          [
+            "[[south-jones]]",
+            "89",
+            "119",
+            "+30",
+            "58.0",
+            "+9.2"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Biggest fallers",
+      "paragraphs": [
+        "[[lake]] (2A, 2-2): State ranking: down 50 spots to No. 148 (from No. 98). MFPI rating: decreased 16.1 points to 37.7. In the window it lost to [[union]] (currently No. 157) 12-35 on the road on Sep 25.",
+        "[[north-pontotoc]] (4A, 2-3): State ranking: down 36 spots to No. 147 (from No. 111). MFPI rating: decreased 12.1 points to 38.1. In the window it lost to [[kossuth]] (currently No. 122) 21-35 at home on Sep 25.",
+        "[[vancleave]] (5A, 2-3): State ranking: down 35 spots to No. 103 (from No. 68). MFPI rating: decreased 12.6 points to 52.8. In the window it lost to [[moss-point]] (currently No. 152) 29-34 at home on Sep 25.",
+        "[[biloxi]] (7A, 1-4): State ranking: down 32 spots to No. 123 (from No. 91). MFPI rating: decreased 10.0 points to 47.1. In the window it lost to [[ocean-springs]] (currently No. 101) 14-21 at home on Sep 25.",
+        "[[booneville]] (3A, 5-0): State ranking: down 31 spots to No. 84 (from No. 53). MFPI rating: decreased 9.4 points to 60.1. In the window it beat [[ripley]] (currently No. 145) 31-21 on the road on Sep 25.",
+        "[[sacred-heart]] (2A, 4-1): State ranking: down 31 spots to No. 169 (from No. 138). MFPI rating: decreased 10.7 points to 31.9. In the window it lost to [[wilkinson-county]] (currently No. 92) 3-44 on the road on Sep 25.",
+        "[[simmons]] (1A, 3-1): State ranking: down 30 spots to No. 72 (from No. 42). MFPI rating: decreased 8.5 points to 63.4. In the window it beat [[leland]] (currently No. 214) 48-0 at home on Sep 25.",
+        "[[nettleton]] (3A, 0-5): State ranking: down 29 spots to No. 209 (from No. 180). MFPI rating: decreased 10.7 points to 17.7. In the window it lost to [[okolona]] (currently No. 178) 26-45 on the road on Sep 25."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[lake]]",
+            "148",
+            "98",
+            "-50",
+            "37.7",
+            "-16.1"
+          ],
+          [
+            "[[north-pontotoc]]",
+            "147",
+            "111",
+            "-36",
+            "38.1",
+            "-12.1"
+          ],
+          [
+            "[[vancleave]]",
+            "103",
+            "68",
+            "-35",
+            "52.8",
+            "-12.6"
+          ],
+          [
+            "[[biloxi]]",
+            "123",
+            "91",
+            "-32",
+            "47.1",
+            "-10.0"
+          ],
+          [
+            "[[booneville]]",
+            "84",
+            "53",
+            "-31",
+            "60.1",
+            "-9.4"
+          ],
+          [
+            "[[sacred-heart]]",
+            "169",
+            "138",
+            "-31",
+            "31.9",
+            "-10.7"
+          ],
+          [
+            "[[simmons]]",
+            "72",
+            "42",
+            "-30",
+            "63.4",
+            "-8.5"
+          ],
+          [
+            "[[nettleton]]",
+            "209",
+            "180",
+            "-29",
+            "17.7",
+            "-10.7"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Rank and rating moving separately",
+      "paragraphs": [
+        "Moved in the ranking with an unchanged displayed rating: [[bay-springs]] (-1 to No. 142); [[coffeeville]] (-2 to No. 171)."
+      ]
+    },
+    {
+      "heading": "Data notes and limitations",
+      "paragraphs": [
+        "Snapshot generated September 29, 2026 at 1:41 PM Central with a cutoff of September 29 at 11:00 AM Central, formula MFPI-3.2.",
+        "567 of 578 game listings due by the cutoff had verified scores (98.1%); the rest count as unavailable, never as losses or 0-0 results.",
+        "No verified results were linked to [[northside]] for this cutoff. Their ratings are provisional and rest on class, media and neutral inputs; their positions should not be read as the product of games.",
+        "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
+      ]
+    }
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
+}
