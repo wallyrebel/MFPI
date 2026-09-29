@@ -8,6 +8,10 @@ import {
 } from '../app/lib/format.ts';
 
 const snapshot = JSON.parse(readFileSync(new URL('../data/current/overall.json', import.meta.url), 'utf8'));
+// Historical regressions must use an immutable week: live ratings and data
+// availability legitimately change on every Tuesday publication. Keep the
+// cross-team consistency tests below on the current snapshot.
+const week4 = JSON.parse(readFileSync(new URL('../data/2026/week-04/overall.json', import.meta.url), 'utf8'));
 
 test('Friday night games stay on Friday regardless of server timezone', () => {
   assert.equal(calendarDate('2026-08-28T19:00:00-05:00'), '2026-08-28');
@@ -19,7 +23,7 @@ test('Friday night games stay on Friday regardless of server timezone', () => {
 });
 
 test('rank unchanged while rating increases (Tupelo regression)', () => {
-  const tupelo = snapshot.rankings.find((row) => row.team_id === 'tupelo');
+  const tupelo = week4.rankings.find((row) => row.team_id === 'tupelo');
   assert.equal(rankSentence(tupelo.state_rank, tupelo.previous_state_rank), 'State ranking: unchanged at No. 1.');
   const change = ratingChange(tupelo.mfpi, tupelo.previous_mfpi);
   assert.ok(change > 0);
@@ -41,7 +45,7 @@ test('missing previous snapshot reads NEW / not comparable', () => {
 });
 
 test('unknown data is never a fabricated zero (Cleveland Central regression)', () => {
-  const cc = snapshot.rankings.find((row) => row.team_id === 'cleveland-central');
+  const cc = week4.rankings.find((row) => row.team_id === 'cleveland-central');
   assert.equal(dataStatus(cc), 'unavailable');
   assert.equal(scoringAverages(cc.team_id, cc.game_results), null);
   assert.equal(stat(null), '—');
