@@ -156,7 +156,7 @@ export default function RankingsDashboard({ snapshot, ageDays, adTop, adBottom }
           <div>
             <p className="eyebrow">{snapshot.metadata.season} · Week {snapshot.metadata.week}</p>
             <h1>Mississippi Football<br />Rankings</h1>
-            <p className="hero-copy">The Mississippi Football Power Index is an explainable weekly ranking of every MHSAA Class 1A–7A team, built from verified scores, opponent-adjusted margin, schedule strength and recent form, with MaxPreps&apos; statewide media rank and strength of schedule contributing 20%. Rankings update every Tuesday after the 11 a.m. Central cutoff.</p>
+            <p className="hero-copy">Compare Mississippi high school football rankings for all {snapshot.rankings.length} MHSAA teams in Classes 1A–7A. The Mississippi Football Power Index (MFPI) is an explainable weekly ranking built from verified scores, opponent-adjusted margin, schedule strength and recent form, with MaxPreps&apos; statewide media rank and strength of schedule contributing 20%. Rankings update every Tuesday after the 11 a.m. Central cutoff.</p>
             <p className="hero-links"><Link href="/analysis">Weekly analysis</Link> · <Link href="/methodology">How it works</Link> · <Link href="/archive">Past weeks</Link></p>
           </div>
           <aside className="run-card">

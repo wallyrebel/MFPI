@@ -36,7 +36,7 @@ export function SiteFooter() {
         <span>Independent rankings from official MHSAA classifications and scores, with MaxPreps media rank and strength of schedule. Not affiliated with or endorsed by the MHSAA or MaxPreps.</span>
       </div>
       <nav aria-label="Footer">
-        <Link href="/">Rankings</Link>
+        <Link href="/">Mississippi Football Rankings</Link>
         <Link href="/teams">Teams</Link>
         <Link href="/analysis">Analysis</Link>
         <Link href="/archive">Archive</Link>

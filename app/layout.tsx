@@ -9,10 +9,10 @@ import { ConsentDefaults, GoogleCmpTag } from './ads/consent';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Mississippi Football Power Index | Mississippi Football Rankings',
+    default: 'Mississippi Football Rankings | MHSAA High School Football',
     template: '%s | Mississippi Football Power Index',
   },
-  description: 'Weekly Mississippi high school football rankings for every MHSAA team, powered by an explainable Mississippi Football Power Index using scores, margin of victory, and strength of schedule.',
+  description: 'Mississippi football rankings for every MHSAA high school team in Classes 1A–7A. Compare statewide ratings, records, scores and strength of schedule with MFPI.',
   category: 'Sports',
   authors: [{ name: 'Mississippi Football Power Index' }],
   creator: 'Mississippi Football Power Index',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: siteUrl,
     siteName: 'Mississippi Football Power Index',
-    title: 'Mississippi Football Power Index | Mississippi Football Rankings',
+    title: 'Mississippi Football Rankings | MHSAA High School Football',
     description: 'Weekly, explainable Mississippi high school football rankings for all MHSAA classifications.',
     images: [
       {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mississippi Football Power Index | Mississippi Football Rankings',
+    title: 'Mississippi Football Rankings | MHSAA High School Football',
     description: 'Weekly Mississippi high school football rankings with scores, margin of victory, and strength of schedule.',
     images: ['/mfpi-social-card.png'],
   },

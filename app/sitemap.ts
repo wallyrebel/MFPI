@@ -7,11 +7,14 @@ import { metadata as snapshotMeta, teams } from './team-data';
 // Public, substantive pages only. Drafts and previews never appear here.
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date(snapshotMeta.generated_at);
+  const analysisLastModified = publishedArticles.length
+    ? new Date(Math.max(...publishedArticles.map((article) => new Date(article.published_at!).getTime())))
+    : undefined;
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${siteUrl}/`, changeFrequency: 'weekly', priority: 1, lastModified },
     { url: `${siteUrl}/teams`, changeFrequency: 'weekly', priority: 0.7, lastModified },
-    { url: `${siteUrl}/analysis`, changeFrequency: 'weekly', priority: 0.7, lastModified },
+    { url: `${siteUrl}/analysis`, changeFrequency: 'weekly', priority: 0.7, lastModified: analysisLastModified },
     { url: `${siteUrl}/archive`, changeFrequency: 'weekly', priority: 0.5, lastModified },
     { url: `${siteUrl}/methodology`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${siteUrl}/corrections`, changeFrequency: 'weekly', priority: 0.4, lastModified },
