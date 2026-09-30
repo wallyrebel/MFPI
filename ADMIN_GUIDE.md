@@ -39,6 +39,18 @@ Run it any time: `python -m mfpi.audit --snapshot data/current --out reports/cur
 
 ## Team identity review
 
+For a statewide comparison with fresh public schedules, use an isolated cache
+and report directory (this command never publishes rankings):
+
+```sh
+python -m mfpi.coverage --snapshot data/current --cache-root work/coverage-cache --output reports/coverage-current --fetch
+```
+
+Omit `--fetch` to replay that audit cache. `team-coverage.csv` covers every active
+program; `coverage.json` records missing identities, unresolved primary games,
+record discrepancies and schedule evidence. A secondary-only result with an
+unknown opponent needs verification before it can enter the ranking ledger.
+
 Names alone never merge schools. When a source lists an MHSAA program under a different name, add a `ReviewedIdentity` in `mfpi/matching.py` with the source, its stable team ID, the listed name and the listed city; it applies only when all four agree, and the run records `REVIEWED_IDENTITY_APPLIED`. Use `team_id=None` to record that a same-named source team is a different school (for example a Tennessee "Houston"), which keeps it external. The import reports `MULTIPLE_SOURCE_IDS_FOR_TEAM` when one MHSAA team matched several source IDs by name, and `TEAM_DOUBLE_BOOKED` when a team is credited with two games on one date — both are signs of a same-name mix-up. Resolve them with evidence (the opponent's schedule, the school's own schedule, or the MHSAA listing's city), not by deleting a game.
 
 ## Weekly Analysis workflow

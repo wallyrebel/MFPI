@@ -40,3 +40,14 @@ When both team pages report the game, their terminal facts must agree. Conflicti
 Names are normalized through explicit aliases plus conservative fuzzy matching. Where a name is not enough, a reviewed identity (source, stable source team ID, listed name and city must all agree) links or separates teams; see ADMIN_GUIDE.md. Ambiguous near-matches are critical because attaching a score to the wrong school would contaminate both teams' opponent chains. External opponents remain unclassified and unranked but retain a learned SRS from their games against MHSAA teams.
 
 Every snapshot includes source URLs and timestamps. SQLite stores the exact teams, games, Media Rank and Strength of Schedule values, secondary-result provenance, component values, formula version, and validation report needed to reproduce a published week.
+
+The score center still lists Northside as `Broad Street` (team ID `243751`, Shelby).
+A reviewed mapping verified against all four 2026 matchups links that exact source
+identity to Northside. The name alone is not an alias. Leake's reviewed successor
+profile is accepted at both its original school-ID query URL and its current
+`/ms/carthage/leake-gators/football/` URL; the retired 0–0 profile remains excluded.
+
+Every fresh secondary schedule is also compared with the imported ledger. This
+exposes games absent from the primary feed, unknown opponents, and conflicting
+source reports without adding duplicate games or replacing official finals.
+Unreadable secondary schedules use the existing cache/outage reporting path.

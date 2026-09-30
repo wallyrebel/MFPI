@@ -202,8 +202,13 @@ def reconcile_maxpreps(
     leake_successors = [
         row for row in rankings
         if row.team_name == "Leake"
-        and parse_qs(urlparse(row.team_url).query).get("schoolid")
-        == ["80480779-619d-4cd9-9feb-c26005e4201f"]
+        and (
+            parse_qs(urlparse(row.team_url).query).get("schoolid")
+            == ["80480779-619d-4cd9-9feb-c26005e4201f"]
+            # The same school UUID now has a canonical profile URL (verified
+            # from the schedule's schoolId metadata on 2026-09-30).
+            or urlparse(row.team_url).path.rstrip("/") == "/ms/carthage/leake-gators/football"
+        )
     ]
     for row in rankings:
         if (

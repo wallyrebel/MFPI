@@ -212,12 +212,16 @@ def test_maxpreps_reconciliation_requires_every_active_team() -> None:
 
 
 @pytest.mark.parametrize("reverse", [False, True])
-def test_consolidated_leake_profile_replaces_only_retired_placeholder(reverse) -> None:
+@pytest.mark.parametrize("active_url", [
+    "/local/team/home.aspx?schoolid=80480779-619d-4cd9-9feb-c26005e4201f&season=fall",
+    "/ms/carthage/leake-gators/football/",
+])
+def test_consolidated_leake_profile_replaces_only_retired_placeholder(reverse, active_url) -> None:
     teams = [make_team("Leake Central")]
     old = MaxPrepsRanking(82, "Leake Central", "0-0", 47.67, 0.0,
                          "/ms/carthage/leake-central-gators/football/")
     active = MaxPrepsRanking(139, "Leake", "2-0", 38.61, 10.3,
-                            "/local/team/home.aspx?schoolid=80480779-619d-4cd9-9feb-c26005e4201f&season=fall")
+                            active_url)
     rows = [active, old] if reverse else [old, active]
     signals, issues = reconcile_maxpreps(teams, rows)
     assert signals["leake-central"].rating == 38.61
@@ -226,6 +230,27 @@ def test_consolidated_leake_profile_replaces_only_retired_placeholder(reverse) -
     assert any(issue.code == "DUPLICATE_MAXPREPS_TEAM" for issue in issues)
     _, issues = reconcile_maxpreps(teams, [old, replace(active, team_url="/unknown/")])
     assert any(issue.code == "DUPLICATE_MAXPREPS_TEAM" for issue in issues)
+
+
+def test_empty_secondary_schedule_does_not_replace_a_readable_cache(tmp_path) -> None:
+    from mfpi.models import MaxPrepsSignal
+    cache = tmp_path / "alpha.json"
+    retrieved = datetime(2026, 9, 1, tzinfo=timezone.utc)
+    observation = MaxPrepsScoreObservation(
+        "one", retrieved, "Alpha", "Beta", 21, 14, "COMPLETED", False,
+        "https://www.maxpreps.com/game/one/", "alpha", retrieved,
+    )
+    cache.write_text(json.dumps({"retrieved_at": retrieved.isoformat(),
+                                 "games": [observation.to_dict()]}))
+    signal = MaxPrepsSignal("alpha", 1, 70, 30, "Alpha", "/ms/a/alpha/football/")
+    fetched = MaxPrepsScoreProvider(transport=lambda url: b"<html>Unavailable</html>").fetch({"alpha": signal}, tmp_path)
+    assert fetched.games == [observation]
+    assert fetched.cached_team_ids == ("alpha",)
+    assert json.loads(cache.read_text())["games"] == [observation.to_dict()]
+    cache.unlink()
+    fetched = MaxPrepsScoreProvider(transport=lambda url: b"<html>Unavailable</html>").fetch({"alpha": signal}, tmp_path)
+    assert fetched.failed_team_ids == ("alpha",)
+    assert not cache.exists()
 
 
 @pytest.mark.parametrize("reverse", [False, True])

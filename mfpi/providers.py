@@ -588,6 +588,8 @@ class MaxPrepsScoreProvider:
                     source_team_url=signal.source_url,
                     retrieved_at=retrieved_at,
                 )
+                if not parsed:
+                    raise ValueError(f"Secondary schedule contained no readable games: {schedule_url}")
                 cache_path.parent.mkdir(parents=True, exist_ok=True)
                 cache_path.write_text(
                     json.dumps(

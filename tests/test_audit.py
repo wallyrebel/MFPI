@@ -360,6 +360,20 @@ def test_rank_order_rounding_and_component_sum(cutoff, league) -> None:
     assert {"DISPLAY_ROUNDING_MISMATCH", "COMPONENT_SUM_MISMATCH"} <= codes(audit_snapshot(drifted), BLOCKING)
 
 
+def test_display_rounding_accepts_only_serialization_boundary_uncertainty(cutoff, league) -> None:
+    teams, games = league
+    payload, _, _ = build(teams, games, cutoff)
+    row = payload["rankings"][0]
+    row["mfpi_unrounded"] = 18.25
+    row["mfpi"] = 18.3  # Full precision was slightly above 18.25.
+    assert "DISPLAY_ROUNDING_MISMATCH" not in codes(audit_snapshot(payload), BLOCKING)
+    row["mfpi_unrounded"] = 18.24999
+    assert "DISPLAY_ROUNDING_MISMATCH" in codes(audit_snapshot(payload), BLOCKING)
+    row["mfpi_unrounded"] = 18.25001
+    row["mfpi"] = 18.2
+    assert "DISPLAY_ROUNDING_MISMATCH" in codes(audit_snapshot(payload), BLOCKING)
+
+
 def test_tied_ratings_are_reported_not_blocked(cutoff) -> None:
     teams = [make_team("Alpha"), make_team("Beta")]
     payload, _, _ = build(teams, [], cutoff)

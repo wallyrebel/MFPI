@@ -451,7 +451,11 @@ def audit_snapshot(
         mfpi, unrounded = row.get("mfpi"), row.get("mfpi_unrounded")
         if not (1.0 <= unrounded <= 100.0):
             add("RATING_OUT_OF_RANGE", BLOCKING, f"{row['team']} rating {unrounded} is outside 1-100.", team_id)
-        if round(unrounded, 1) != mfpi:
+        # Eight-decimal serialization can erase which side of a half-tenth
+        # boundary the full-precision rating occupied. Both displays are
+        # possible only within that last stored decimal's uncertainty.
+        display_candidates = {round(unrounded + delta, 1) for delta in (0.0, -5e-9, 5e-9)}
+        if mfpi not in display_candidates:
             add("DISPLAY_ROUNDING_MISMATCH", BLOCKING, f"{row['team']} displays {mfpi} for {unrounded}.", team_id)
         components = row.get("components", {})
         weights = {name: value.get("weight") for name, value in components.items()}

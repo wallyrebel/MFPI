@@ -155,6 +155,20 @@ class ReviewedIdentity:
 REVIEWED_SOURCE_IDENTITIES: tuple[ReviewedIdentity, ...] = (
     ReviewedIdentity(
         source="mhsaa_score_center",
+        source_team_id="243751",
+        team_id="northside",
+        source_names=("Broad Street",),
+        city="Shelby",
+        evidence=(
+            "Verified 2026-09-30: score-center team 243751 is listed as Broad Street, Shelby, MS. "
+            "Its four 2026 games (Jefferson County Aug 28 27-6, Shaw Sep 11 44-0, "
+            "Leflore County Sep 18 14-16, West Bolivar Sep 25 34-8) exactly match North Side, "
+            "Shelby on both teams' MaxPreps schedules. "
+            "https://www.maxpreps.com/ms/shelby/north-side-gators/football/schedule/"
+        ),
+    ),
+    ReviewedIdentity(
+        source="mhsaa_score_center",
         source_team_id="241722",
         team_id="cleveland-central",
         source_names=("Cleveland",),

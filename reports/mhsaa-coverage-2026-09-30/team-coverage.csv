@@ -1,0 +1,226 @@
+team_id,team,classification,region,source_team_id,source_city,snapshot_record,replayed_record,media_record,expected_listings,verified_results,unresolved_listings,secondary_schedule_readable,secondary_profile
+aberdeen,Aberdeen High School,3A,4,240828,Aberdeen,3-2,3-2,3-2,5,5,0,True,/ms/aberdeen/aberdeen-bulldogs/football/
+alcorn-central,Alcorn Central High School,3A,1,240872,Glen,3-2,3-2,3-2,5,5,0,True,/ms/glen/alcorn-central-golden-bears/football/
+amanda-elzy,Amanda Elzy High School,3A,3,243142,Greenwood,1-4,1-4,1-4,5,5,0,True,/ms/greenwood/amanda-elzy-panthers/football/
+amite-county,Amite County High School,2A,7,240921,Liberty,5-0,5-0,5-0,5,5,0,True,/ms/liberty/amite-county-trojans/football/
+amory,Amory High School,4A,2,240922,Amory,3-2,3-2,3-2,5,5,0,True,/ms/amory/amory-panthers/football/
+ashland,Ashland Middle-High School,1A,2,260726,Ashland,0-5,0-5,0-5,6,5,1,True,/ms/ashland/ashland-blue-devils/football/
+baldwyn,Baldwyn High School,2A,1,241038,Baldwyn,3-2,3-2,3-2,5,5,0,True,/ms/baldwyn/baldwyn-bearcats/football/
+bay,Bay High School,4A,8,260730,Bay St. Louis,0-4,0-4,0-4,4,4,0,True,/ms/bay-st-louis/bay-tigers/football/
+bay-springs,Bay Springs High School,2A,6,245149,Bay Springs,4-1,4-1,4-1,5,5,0,True,/ms/bay-springs/bay-springs-bulldogs/football/
+belmont,Belmont School,3A,1,260731,Belmont,1-3,1-3,1-3,5,4,1,True,/ms/belmont/belmont-cardinals/football/
+biggersville,Biggersville High School,1A,1,240874,Corinth,1-4,1-4,1-4,5,5,0,True,/ms/corinth/biggersville-lions/football/
+biloxi,Biloxi High School,7A,4,241218,Biloxi,1-4,1-4,1-4,5,5,0,True,/ms/biloxi/biloxi-indians/football/
+bogue-chitto,Bogue Chitto School,1A,7,260735,Bogue Chitto,1-4,1-4,1-4,5,5,0,True,/ms/bogue-chitto/bogue-chitto-bobcats/football/
+booneville,Booneville High School,3A,1,241265,Booneville,5-0,5-0,4-0,5,5,0,True,/ms/booneville/booneville-blue-devils/football/
+brandon,Brandon High School,7A,3,244214,Brandon,4-1,4-1,4-1,5,5,0,True,/ms/brandon/brandon-bulldogs/football/
+brookhaven,Brookhaven High School,5A,3,241367,Brookhaven,5-0,5-0,5-0,5,5,0,True,/ms/brookhaven/brookhaven-panthers/football/
+bruce,Bruce High School,2A,2,241462,Bruce,5-0,5-0,5-0,5,5,0,True,/ms/bruce/bruce-trojans/football/
+byers,H. W. Byers High School (5-12),1A,2,260738,Holly Springs,0-5,0-5,0-5,5,5,0,True,/ms/holly-springs/byers-lions/football/
+byhalia,Byhalia High School (9-12),4A,3,243366,Byhalia,2-3,2-3,2-3,5,5,0,True,/ms/byhalia/byhalia-indians/football/
+caledonia,Caledonia High School,5A,1,243258,Caledonia,2-3,2-3,2-3,5,5,0,True,/ms/caledonia/caledonia-cavaliers/football/
+calhoun-city,Calhoun City High School,1A,3,241465,Calhoun City,2-3,2-3,2-3,5,5,0,True,/ms/calhoun-city/calhoun-city-wildcats/football/
+callaway,Callaway High School,6A,2,242786,Jackson,2-3,2-3,2-3,5,5,0,True,/ms/jackson/callaway-chargers/football/
+canton,Canton Public High School,6A,2,241506,Canton,5-0,5-0,5-0,5,5,0,True,/ms/canton/canton-tigers/football/
+center-hill,Center Hill High School,6A,1,241876,Olive Branch,4-1,4-1,4-1,5,5,0,True,/ms/olive-branch/center-hill-mustangs/football/
+charleston,Charleston High School,2A,3,242036,Charleston,3-2,3-2,3-2,5,5,0,True,/ms/charleston/charleston-tigers/football/
+choctaw-central,Choctaw Central,4A,5,260742,Philadelphia,3-2,3-2,3-2,5,5,0,True,/ms/philadelphia/choctaw-central-ftng-warriors/football/
+choctaw-county,Choctaw County High School,3A,4,241676,Ackerman,1-4,1-4,1-4,5,5,0,True,/ms/ackerman/choctaw-county-chargers/football/
+clarkdale,Clarkdale High School,2A,6,243091,Meridian,4-1,4-1,4-1,5,5,0,True,/ms/meridian/clarkdale-bulldogs/football/
+clarksdale,Clarksdale High School,4A,3,241708,Clarksdale,3-2,3-2,3-2,5,5,0,True,/ms/clarksdale/clarksdale-wildcats/football/
+cleveland-central,Cleveland Central High School,5A,2,241722,Cleveland,3-1,3-1,3-1,4,4,0,True,/ms/cleveland/cleveland-central-wolves/football/
+clinton,Clinton High School,7A,2,241737,Clinton,1-4,1-4,1-4,5,5,0,True,/ms/clinton/clinton-arrows/football/
+coahoma-county,Coahoma County Jr/Sr High School,3A,2,241746,Clarksdale,2-3,2-3,2-3,5,5,0,True,/ms/clarksdale/coahoma-county-red-panthers/football/
+coffeeville,Coffeeville High School,1A,4,241748,Coffeeville,2-3,2-3,2-3,6,5,1,True,/ms/coffeeville/coffeeville-pirates/football/
+collins,Collins High School,2A,8,241804,Collins,2-3,2-3,2-3,5,5,0,True,/ms/collins/collins-tigers/football/
+columbia,Columbia High School,4A,7,241765,Columbia,3-2,3-2,3-2,5,5,0,True,/ms/columbia/columbia-wildcats/football/
+columbus,Columbus High School,5A,1,241767,Columbus,0-5,0-5,0-5,5,5,0,True,/ms/columbus/columbus-falcons/football/
+corinth,Corinth High School,4A,1,241796,Corinth,2-2,2-2,2-2,4,4,0,True,/ms/corinth/corinth-warriors/football/
+crystal-springs,Crystal Springs High School,3A,7,241792,Crystal Springs,0-5,0-5,0-5,5,5,0,True,/ms/crystal-springs/crystal-springs-tigers/football/
+desoto-central,Desoto Central High School,7A,1,241879,Southaven,3-1,3-1,3-1,5,4,1,True,/ms/southaven/desoto-central-jaguars/football/
+diberville,Diberville Senior High Sch,7A,4,260753,D'Iberville,5-0,5-0,5-0,5,5,0,True,/ms/diberville/diberville-warriors/football/
+east-central,East Central High School,5A,4,260758,Moss Point,1-4,1-4,1-4,5,5,0,True,/ms/moss-point/east-central-hornets/football/
+east-marion,East Marion High School,2A,8,243349,Columbia,4-1,4-1,4-1,5,5,0,True,/ms/columbia/east-marion-eagles/football/
+east-union,East Union Attendance Center,2A,2,260763,Blue Springs,1-4,1-4,1-4,5,5,0,True,/ms/blue-springs/east-union-urchins/football/
+east-webster,East Webster High School,2A,4,245118,Maben,5-0,5-0,5-0,5,5,0,True,/ms/maben/east-webster-wolverines/football/
+edwards,Thomas E. Edwards,3A,3,244796,Ruleville,4-0,4-0,4-0,4,4,0,True,/ms/ruleville/edwards-tigers/football/
+enterprise-brookhaven,Enterprise (Brookhaven),2A,7,260766,Brookhaven,4-1,4-1,4-1,5,5,0,True,/ms/brookhaven/enterprise-yellowjackets/football/
+enterprise-clarke,Enterprise (Clarke),2A,6,242083,Enterprise,4-1,4-1,4-1,5,5,0,True,/ms/enterprise/enterprise-bulldogs/football/
+ethel,Ethel Attendance Center,1A,5,260767,Ethel,3-2,3-2,3-2,5,5,0,True,/ms/ethel/ethel-tigers/football/
+eupora,Eupora High School,2A,4,245119,Eupora,5-0,5-0,5-0,5,5,0,True,/ms/eupora/eupora-eagles/football/
+falkner,Falkner Attendance Center,1A,2,243786,Falkner,2-2,2-2,2-2,4,4,0,True,/ms/falkner/falkner-eagles/football/
+florence,Florence High School,5A,2,244217,Florence,1-4,1-4,1-4,5,5,0,True,/ms/florence/florence-eagles/football/
+forest,Forest High School,4A,6,242212,Forest,4-1,4-1,4-1,5,5,0,True,/ms/forest/forest-bearcats/football/
+forest-hill,Forest Hill High School,6A,3,242789,Jackson,0-5,0-5,0-5,5,5,0,True,/ms/jackson/forest-hill-patriots/football/
+forrest-county-agricultural,Forrest County Agricultural Hi Sch,4A,8,242215,Brooklyn,2-3,2-3,2-3,5,5,0,True,/ms/brooklyn/forrest-county-agricultural-aggies/football/
+franklin,Franklin High School,3A,7,260769,Meadville,1-4,1-4,1-4,5,5,0,True,/ms/meadville/franklin-county-bulldogs/football/
+french-camp,French Camp,1A,4,229411,French Camp,1-4,1-4,1-4,6,5,1,True,/ms/french-camp/french-camp-academy-panthers/football/
+gautier,Gautier High School,6A,4,243967,Gautier,4-1,4-1,4-1,5,5,0,True,/ms/gautier/gautier-gators/football/
+gentry,Gentry High School,4A,4,242753,Indianola,1-4,1-4,1-4,5,5,0,True,/ms/indianola/gentry-rams/football/
+george-county,George County High School,6A,3,242345,Lucedale,2-3,2-3,2-3,5,5,0,True,/ms/lucedale/george-county-rebels/football/
+germantown,Germantown High School,7A,2,260771,Madison,3-2,3-2,3-2,5,5,0,True,/ms/madison/germantown-mavericks/football/
+greene-county,Greene County High School,4A,8,242440,Leakesville,4-1,4-1,4-1,5,5,0,True,/ms/leakesville/greene-county-wildcats/football/
+greenville,Greenville High School,6A,2,242451,Greenville,3-2,3-2,3-2,5,5,0,True,/ms/greenville/greenville-hornets/football/
+greenwood,Greenwood High School,4A,4,242456,Greenwood,1-3,1-3,1-3,4,4,0,True,/ms/greenwood/greenwood-bulldogs/football/
+grenada,Grenada High,6A,1,242458,Grenada,3-1,3-1,3-1,4,4,0,True,/ms/grenada/grenada-chargers/football/
+gulfport,Gulfport High School,7A,4,242466,Gulfport,3-1,3-1,3-1,4,4,0,True,/ms/gulfport/gulfport-admirals/football/
+hamilton,Hamilton High School,2A,1,260778,Hamilton,2-3,2-3,2-3,5,5,0,True,/ms/hamilton/hamilton-lions/football/
+hancock,Hancock High School,6A,4,242493,Kiln,1-3,1-3,1-3,4,4,0,True,/ms/kiln/hancock-hawks/football/
+harrison-central,Harrison Central High School,7A,4,242544,Gulfport,1-3,1-3,1-3,4,4,0,True,/ms/gulfport/harrison-central-red-rebels/football/
+hatley,Hatley High School,2A,1,260782,Amory,4-1,4-1,4-1,5,5,0,True,/ms/amory/hatley-tigers/football/
+hattiesburg,Hattiesburg High School,6A,3,242572,Hattiesburg,2-3,2-3,2-3,5,5,0,True,/ms/hattiesburg/hattiesburg-tigers/football/
+hazlehurst,Hazlehurst High School,3A,7,242596,Hazlehurst,2-2,2-2,3-2,4,4,0,True,/ms/hazlehurst/hazlehurst-indians/football/
+heidelberg,Heidelberg High School,2A,6,242019,Heidelberg,3-1,3-1,3-1,5,4,1,True,/ms/heidelberg/heidelberg-oilers/football/
+hernando,Hernando High School,7A,1,241881,Hernando,4-1,4-1,4-1,5,5,0,True,/ms/hernando/hernando-tigers/football/
+holly-springs,Holly Springs High School,3A,2,242663,Holly Springs,3-1,3-1,3-1,4,4,0,True,/ms/holly-springs/holly-springs-hawks/football/
+holmes-county-central,Holmes County Central High School,5A,2,260785,Lexington,2-3,2-3,2-3,5,5,0,True,/ms/lexington/holmes-county-central-jaguars/football/
+horn-lake,Horn Lake High,7A,1,241884,Horn Lake,0-5,0-5,0-5,5,5,0,True,/ms/horn-lake/horn-lake-eagles/football/
+houston,Houston High School,4A,2,260788,Houston,1-4,1-4,1-4,5,5,0,True,/ms/houston/houston-hilltoppers/football/
+humphreys-county,Humphreys County High School,3A,3,242725,Belzoni,0-4,0-4,0-4,5,4,1,True,/ms/belzoni/humphreys-county-cowboys/football/
+independence,Independence High School,3A,2,244827,Independence,4-1,4-1,4-1,5,5,0,True,/ms/independence/independence-wildcats/football/
+itawamba-agricultural,Itawamba Agricultural High School,4A,2,242772,Fulton,4-0,4-0,4-0,5,4,1,True,/ms/fulton/itawamba-agricultural-indians/football/
+j-z-george,J Z George High School,2A,3,260791,North Carrollton,3-2,3-2,3-2,5,5,0,True,/ms/north-carrollton/jz-george-jaguars/football/
+jefferson-county,Jefferson Co High,3A,7,242816,Fayette,1-4,1-4,1-4,5,5,0,True,/ms/fayette/jefferson-county-jchs/football/
+jefferson-davis-county,Jefferson Davis County High School,3A,6,490851,Bassfield,1-4,1-4,1-4,5,5,0,True,/ms/bassfield/jefferson-davis-county-jaguars/football/
+jim-hill,Jim Hill High School,6A,3,242791,Jackson,1-4,1-4,1-4,5,5,0,True,/ms/jackson/jim-hill-tigers/football/
+kemper-county,Kemper County High School,2A,4,242951,DeKalb,4-1,4-1,4-1,5,5,0,True,/ms/dekalb/kemper-county-wildcats/football/
+kosciusko,Kosciusko Senior High School,4A,4,242997,Kosciusko,5-0,5-0,5-0,6,5,1,True,/ms/kosciusko/kosciusko-whippets/football/
+kossuth,Kossuth High School,3A,1,260801,Kossuth,3-2,3-2,3-2,5,5,0,True,/ms/kossuth/kossuth-aggies/football/
+lafayette,Lafayette High School,5A,1,243008,Oxford,4-1,4-1,4-1,5,5,0,True,/ms/oxford/lafayette-commodores/football/
+lake,Lake High School,2A,5,260806,Lake,2-2,2-2,2-2,4,4,0,True,/ms/lake/lake-hornets/football/
+lake-cormorant,Lake Cormorant High,6A,1,260809,Lake Cormorant,5-0,5-0,5-0,5,5,0,True,/ms/lake-cormorant/lake-cormorant/football/
+lanier,Lanier High School,5A,2,242794,Jackson,4-1,4-1,4-1,5,5,0,True,/ms/jackson/lanier-bulldogs/football/
+laurel,Laurel High School,5A,3,243107,Laurel,1-4,1-4,1-4,5,5,0,True,/ms/laurel/laurel-tornadoes/football/
+lawrence-county,Lawrence County High School,4A,7,243115,Monticello,0-5,0-5,0-5,5,5,0,True,/ms/monticello/lawrence-county-cougars/football/
+leake-central,Leake Central High School,5A,2,243126,Carthage,4-1,4-1,4-1,5,5,0,True,/ms/carthage/leake-gators/football/
+leflore-county,Leflore County High School,1A,4,243144,Itta Bena,4-0,4-0,4-0,4,4,0,True,/ms/itta-bena/leflore-county-tigers/football/
+leland,Leland High School,2A,3,243149,Leland,1-4,1-4,1-4,5,5,0,True,/ms/leland/leland-cubs/football/
+lewisburg,Lewisburg High School,7A,1,260813,Olive Branch,2-3,2-3,2-3,5,5,0,True,/ms/olive-branch/lewisburg-patriots/football/
+long-beach,Long Beach Senior High School,6A,4,243240,Long Beach,3-1,3-1,3-1,4,4,0,True,/ms/long-beach/long-beach-bearcats/football/
+louisville,Louisville High School,4A,4,243249,Louisville,3-2,3-2,3-2,5,5,0,True,/ms/louisville/louisville-wildcats/football/
+loyd-star,Loyd Star School,2A,7,260818,Brookhaven,4-1,4-1,4-1,5,5,0,True,/ms/brookhaven/loyd-star-hornets/football/
+lumberton,Lumberton High School,1A,8,243272,Lumberton,1-3,1-3,1-3,4,4,0,True,/ms/lumberton/lumberton-panthers/football/
+madison-central,Madison Central High School,7A,2,243291,Madison,2-3,2-3,2-3,5,5,0,True,/ms/madison/madison-central-jaguars/football/
+magee,Magee High School,3A,6,244548,Magee,4-1,4-1,4-1,5,5,0,True,/ms/magee/magee-trojans/football/
+mantachie,Mantachie Attendance Center,3A,1,260820,Mantachie,3-2,3-2,3-2,5,5,0,True,/ms/mantachie/mantachie-mustangs/football/
+mcadams,McAdams Attendance Center,1A,5,260823,McAdams,3-2,3-2,3-2,5,5,0,True,/ms/mcadams/mcadams-bulldogs/football/
+mccomb,McComb High School,4A,7,243418,McComb,4-1,4-1,4-1,5,5,0,True,/ms/mccomb/mccomb-tigers/football/
+mclaurin,McLaurin Attendance Center,3A,6,244220,Florence,2-3,2-3,2-3,5,5,0,True,/ms/florence/mclaurin-tigers/football/
+mendenhall,Mendenhall High School,4A,6,244551,Mendenhall,5-0,5-0,5-0,5,5,0,True,/ms/mendenhall/mendenhall-tigers/football/
+meridian,Meridian High School,7A,3,243463,Meridian,3-2,3-2,3-2,5,5,0,True,/ms/meridian/meridian-wildcats/football/
+mize,Mize Attendance Center,2A,6,260828,Mize,1-4,1-4,1-4,5,5,0,True,/ms/mize/mize-bulldogs/football/
+mooreville,Mooreville High School,4A,2,243133,Mooreville,3-2,3-2,3-2,5,5,0,True,/ms/mooreville/mooreville-troopers/football/
+morton,Morton High School,4A,6,244505,Morton,4-1,4-1,4-1,5,5,0,True,/ms/morton/morton-panthers/football/
+moss-point,Moss Point High School,4A,8,243620,Moss Point,1-4,1-4,1-4,5,5,0,True,/ms/moss-point/moss-point-tigers/football/
+mount-olive,Mount Olive Attendance Center,1A,7,260831,Mount Olive,0-5,0-5,0-5,5,5,0,True,/ms/mount-olive/mount-olive-pirates/football/
+murrah,Murrah High School,7A,2,242796,Jackson,1-4,1-4,1-4,5,5,0,True,/ms/jackson/murrah-mustangs/football/
+myrtle,Myrtle Attendance Center,2A,2,489458,Myrtle,3-1,3-1,3-1,5,4,1,True,/ms/myrtle/myrtle-hawks/football/
+nanih-waiya,Nanih Waiya Attendance Center,1A,5,260835,Louisville,4-1,4-1,4-1,5,5,0,True,/ms/louisville/nanih-waiya-warriors/football/
+natchez,Natchez High School,5A,3,243667,Natchez,5-0,5-0,5-0,5,5,0,True,/ms/natchez/natchez-bulldogs/football/
+neshoba-central,Neshoba Central High School,6A,2,243685,Philadelphia,3-2,3-2,3-2,5,5,0,True,/ms/philadelphia/neshoba-central-rockets/football/
+nettleton,Nettleton High School,3A,4,243690,Nettleton,0-5,0-5,0-5,5,5,0,True,/ms/nettleton/nettleton-tigers/football/
+new-albany,New Albany High School,4A,1,243697,New Albany,2-2,2-2,2-2,5,4,1,True,/ms/new-albany/new-albany-bulldogs/football/
+new-hope,New Hope High School,5A,1,243261,Columbus,2-2,2-2,2-2,4,4,0,True,/ms/columbus/new-hope-trojans/football/
+newton,Newton High School,2A,5,243726,Newton,1-4,1-4,1-4,5,5,0,True,/ms/newton/newton-tigers/football/
+newton-county,Newton County High School,4A,5,260838,Decatur,1-4,1-4,1-4,5,5,0,True,/ms/decatur/newton-county-cougars/football/
+north-forrest,North Forrest High School,2A,8,242216,Hattiesburg,1-4,1-4,1-4,5,5,0,True,/ms/hattiesburg/north-forrest-eagles/football/
+north-panola,North Panola High School,3A,2,243776,Sardis,1-4,1-4,1-3,5,5,0,True,/ms/sardis/north-panola-fightn-cougars/football/
+north-pike,North Pike Senior High School,5A,3,260844,Summit,1-4,1-4,1-4,5,5,0,True,/ms/summit/north-pike-jaguars/football/
+north-pontotoc,North Pontotoc High School,4A,1,244095,Ecru,2-3,2-3,2-3,5,5,0,True,/ms/ecru/north-pontotoc-vikings/football/
+northeast-jones,Northeast Jones High School,5A,4,242912,Laurel,2-3,2-3,2-3,5,5,0,True,/ms/laurel/northeast-jones-tigers/football/
+northeast-lauderdale,Northeast Lauderdale High School,4A,5,243094,Meridian,1-4,1-4,1-4,5,5,0,True,/ms/meridian/northeast-lauderdale-trojans/football/
+northside,Northside High School,2A,3,243751,Shelby,0-0,3-1,3-1,4,4,0,True,/ms/shelby/north-side-gators/football/
+northwest-rankin,Northwest Rankin High School,7A,3,260845,Brandon,2-3,2-3,2-3,5,5,0,True,/ms/brandon/northwest-rankin-cougars/football/
+noxapater,Noxapater Attendance Center,1A,5,260849,Noxapater,1-4,1-4,1-4,5,5,0,True,/ms/noxapater/noxapater-tigers/football/
+noxubee-county,Noxubee County High School,3A,4,243828,Macon,4-1,4-1,4-1,5,5,0,True,/ms/macon/noxubee-county-tigers/football/
+oak-grove,Oak Grove High School,7A,3,243054,Hattiesburg,3-1,3-1,3-1,4,4,0,True,/ms/hattiesburg/oak-grove-warriors/football/
+obannon,O’Bannon High School,3A,3,245173,Greenville,5-0,5-0,5-0,5,5,0,True,/ms/greenville/obannon-greenwaves/football/
+ocean-springs,Ocean Springs High School,7A,4,243840,Ocean Springs,2-3,2-3,2-3,5,5,0,True,/ms/ocean-springs/ocean-springs-greyhounds/football/
+okolona,Okolona High School,1A,3,243855,Okolona,2-3,2-3,2-3,5,5,0,True,/ms/okolona/okolona-chieftains/football/
+olive-branch,Olive Branch High School,6A,1,241887,Olive Branch,2-3,2-3,2-3,5,5,0,True,/ms/olive-branch/olive-branch-conquistadors/football/
+oxford,Oxford High School,7A,2,243929,Oxford,4-1,4-1,4-1,5,5,0,True,/ms/oxford/oxford-chargers/football/
+palmer,M. S. Palmer High School,2A,3,260851,Marks,0-5,0-5,0-5,5,5,0,True,/ms/marks/palmer-dragons/football/
+pascagoula,Pascagoula High School,6A,4,243970,Pascagoula,2-3,2-3,2-3,5,5,0,True,/ms/pascagoula/pascagoula-panthers/football/
+pass-christian,Pass Christian High School,4A,8,243973,Pass Christian,5-0,5-0,5-0,5,5,0,True,/ms/pass-christian/pass-christian-pirates/football/
+pearl,Pearl High School,7A,3,243986,Pearl,1-4,1-4,1-4,5,5,0,True,/ms/pearl/pearl-pirates/football/
+pearl-river-central,Pearl River Central High School,6A,4,243991,Carriere,4-1,4-1,4-1,5,5,0,True,/ms/carriere/pearl-river-central-blue-devils/football/
+pelahatchie,Pelahatchie Attendance Center,2A,5,260855,Pelahatchie,2-3,2-3,2-3,5,5,0,True,/ms/pelahatchie/pelahatchie-chiefs/football/
+perry-central,Perry Central High School,2A,8,244007,New Augusta,2-3,2-3,2-3,5,5,0,True,/ms/new-augusta/perry-central-bulldogs/football/
+petal,Petal High School,7A,3,244016,Petal,5-0,5-0,5-0,5,5,0,True,/ms/petal/petal-panthers/football/
+philadelphia,Philadelphia High School,2A,4,244021,Philadelphia,0-5,0-5,0-5,5,5,0,True,/ms/philadelphia/philadelphia-tornadoes/football/
+picayune,Picayune Memorial High School,6A,4,244024,Picayune,2-3,2-3,2-3,5,5,0,True,/ms/picayune/picayune-maroon-tide/football/
+pisgah,Pisgah High School,3A,5,244223,Sandhill,2-3,2-3,2-3,5,5,0,True,/ms/sandhill/pisgah-dragons/football/
+pontotoc,Pontotoc High School,5A,1,244091,Pontotoc,4-0,4-0,4-0,4,4,0,True,/ms/pontotoc/pontotoc-warriors/football/
+poplarville,Poplarville Jr Sr High School,4A,7,244102,Poplarville,5-0,5-0,5-0,5,5,0,True,/ms/poplarville/poplarville-hornets/football/
+port-gibson,Port Gibson High School,3A,7,241700,Port Gibson,2-2,2-2,2-2,4,4,0,True,/ms/port-gibson/port-gibson-blue-waves/football/
+potts-camp,Potts Camp High School (5-12),1A,2,260856,Potts Camp,2-2,2-2,2-2,4,4,0,True,/ms/potts-camp/potts-camp-cardinals/football/
+presbyterian-christian,Presbyterian Christian School,3A,8,230800,Hattiesburg,3-2,3-2,3-2,5,5,0,True,/ms/hattiesburg/presbyterian-christian-bobcats/football/
+provine,Provine High School,5A,2,242799,Jackson,2-3,2-3,2-3,5,5,0,True,/ms/jackson/provine-rams/football/
+puckett,Puckett Attendance Center,2A,5,260862,Puckett,4-1,4-1,4-1,5,5,0,True,/ms/puckett/puckett-wolves/football/
+purvis,Purvis High School,5A,4,243059,Purvis,1-4,1-4,1-4,5,5,0,True,/ms/purvis/purvis-tornadoes/football/
+quitman,Quitman High School,3A,5,244209,Quitman,1-4,1-4,1-4,5,5,0,True,/ms/quitman/quitman-panthers/football/
+raleigh,Raleigh High School,3A,6,244561,Raleigh,4-1,4-1,4-1,5,5,0,True,/ms/raleigh/raleigh-lions/football/
+raymond,Raymond High School,4A,6,242635,Raymond,1-4,1-4,1-4,5,5,0,True,/ms/raymond/raymond-rangers/football/
+resurrection,Resurrection,1A,8,230395,Pascagoula,0-4-1,0-4-1,0-4,5,5,0,True,/ms/pascagoula/resurrection-catholic-eagles/football/
+richland,Richland High School,4A,6,244224,Richland,4-1,4-1,4-1,5,5,0,True,/ms/richland/richland-rangers/football/
+richton,Richton High School,1A,8,244283,Richton,2-2,2-2,2-2,4,4,0,True,/ms/richton/richton-rebels/football/
+ridgeland,Ridgeland High School,6A,2,243294,Ridgeland,3-2,3-2,3-2,5,5,0,True,/ms/ridgeland/ridgeland-titans/football/
+ripley,Ripley High School,4A,3,244607,Ripley,1-4,1-4,1-4,5,5,0,True,/ms/ripley/ripley-tigers/football/
+riverside,Riverside High School,1A,6,245174,Avon,0-5,0-5,0-5,5,5,0,True,/ms/avon/riverside-bulldogs/football/
+rosa-fort,Rosa Fort High School,4A,3,244901,Tunica,3-2,3-2,3-2,5,5,0,True,/ms/tunica/rosa-fort-lions/football/
+sacred-heart,Sacred Heart,2A,8,260864,Hattiesburg,4-1,4-1,4-1,5,5,0,True,/ms/hattiesburg/sacred-heart-crusaders/football/
+salem,Salem Attendance Center,1A,7,260866,Tylertown,1-4,1-4,1-4,5,5,0,True,/ms/tylertown/salem-wildcats/football/
+saltillo,Saltillo High School,6A,1,243134,Saltillo,0-5,0-5,0-5,5,5,0,True,/ms/saltillo/saltillo-tigers/football/
+scott-central,Scott Central Attendance Center,2A,5,260870,Forest,3-2,3-2,3-2,5,5,0,True,/ms/forest/scott-central-rebels/football/
+sebastopol,Sebastopol Attendance Center,1A,5,260871,Sebastopol,1-4,1-4,1-4,5,5,0,True,/ms/sebastopol/sebastopol-bobcats/football/
+seminary,Seminary High School,3A,6,260872,Seminary,4-1,4-1,4-1,5,5,0,True,/ms/seminary/seminary-bulldogs/football/
+senatobia,Senatobia High School,4A,3,244513,Senatobia,5-0,5-0,5-0,5,5,0,True,/ms/senatobia/senatobia-warriors/football/
+shannon,Shannon High School,4A,2,243137,Shannon,3-2,3-2,3-2,5,5,0,True,/ms/shannon/shannon-red-raiders/football/
+shaw,Shaw High School,1A,6,244525,Shaw,1-4,1-4,1-4,5,5,0,True,/ms/shaw/shaw-warriors/football/
+simmons,Simmons High School,1A,6,242652,Hollandale,3-1,3-1,3-1,4,4,0,True,/ms/hollandale/simmons-blue-devils/football/
+smithville,Smithville High School,1A,1,260874,Smithville,2-3,2-3,2-3,5,5,0,True,/ms/smithville/smithville-seminoles/football/
+south-delta,South Delta High School,1A,6,244577,Rolling Fork,3-2,3-2,3-2,5,5,0,True,/ms/rolling-fork/south-delta-bulldogs/football/
+south-jones,South Jones High School,5A,3,242915,Ellisville,3-2,3-2,3-2,5,5,0,True,/ms/ellisville/south-jones-braves/football/
+south-panola,South Panola High School,6A,1,244598,Batesville,2-2,2-2,2-2,5,4,1,True,/ms/batesville/south-panola-tigers/football/
+south-pike,South Pike Senior High School,4A,7,244599,Magnolia,2-2,2-2,2-2,5,4,1,True,/ms/magnolia/south-pike-eagles/football/
+south-pontotoc,South Pontotoc High School,4A,1,244098,Pontotoc,0-5,0-5,0-5,5,5,0,True,/ms/pontotoc/south-pontotoc-cougars/football/
+southaven,Southaven High School,7A,1,241890,Southaven,1-3,1-3,1-3,5,4,1,True,/ms/southaven/southaven-chargers/football/
+southeast-lauderdale,Southeast Lauderdale High School,3A,5,243097,Meridian,4-1,4-1,4-1,5,5,0,True,/ms/meridian/southeast-lauderdale-tigers/football/
+st-andrews,St. Andrew’S,3A,5,230801,Ridgeland,2-3,2-3,2-3,5,5,0,True,/ms/ridgeland/st-andrews-episcopal-saints/football/
+st-martin,St. Martin High School,7A,4,242776,Ocean Springs,5-0,5-0,5-0,5,5,0,True,/ms/ocean-springs/st-martin-yellow-jackets/football/
+st-patrick,St. Patrick,3A,8,260877,Biloxi,3-2,3-2,3-2,5,5,0,True,/ms/biloxi/st-patrick-fighting-irish/football/
+st-stanislaus,St. Stanislaus,3A,8,260880,Bay St. Louis,2-3,2-3,2-3,5,5,0,True,/ms/bay-st-louis/st-stanislaus-rock-a-chaws/football/
+starkville,Starkville High School,7A,2,244765,Starkville,4-1,4-1,4-1,5,5,0,True,/ms/starkville/starkville-yellowjackets/football/
+stone,Stone High School,5A,4,244779,Wiggins,2-2,2-2,2-2,4,4,0,True,/ms/wiggins/stone-tomcats/football/
+strayhorn,Strayhorn High School,2A,2,244828,Sarah,0-5,0-5,0-5,5,5,0,True,/ms/sarah/strayhorn-mustangs/football/
+stringer,Stringer Attendance Center,1A,8,260883,Stringer,3-2,3-2,3-2,5,5,0,True,/ms/stringer/stringer-red-devils/football/
+sumrall,Sumrall High School,5A,3,260884,Sumrall,4-1,4-1,4-1,5,5,0,True,/ms/sumrall/sumrall-bobcats/football/
+taylorsville,Taylorsville Attendance Center,1A,8,260887,Taylorsville,0-5,0-5,0-5,5,5,0,True,/ms/taylorsville/taylorsville-tartars/football/
+terry,Terry High School,6A,3,242637,Terry,3-2,3-2,3-2,5,5,0,True,/ms/terry/terry-bulldogs/football/
+tishomingo-county,Tishomingo County High School,4A,1,244864,Iuka,3-2,3-2,3-2,5,5,0,True,/ms/iuka/tishomingo-county-braves/football/
+tupelo,Tupelo High School,7A,1,244902,Tupelo,5-0,5-0,5-0,5,5,0,True,/ms/tupelo/tupelo-golden-wave/football/
+tupelo-christian-prep,Tupelo Christian,1A,1,231255,Belden,5-0,5-0,5-0,5,5,0,True,/ms/belden/tupelo-christian-prep-eagles/football/
+tylertown,Tylertown High School,3A,8,244999,Tylertown,1-4,1-4,1-4,5,5,0,True,/ms/tylertown/tylertown-chiefs/football/
+union,Union High School,3A,5,244919,Union,2-3,2-3,2-3,5,5,0,True,/ms/union/union-yellowjackets/football/
+vancleave,Vancleave High School,5A,4,242779,Vancleave,2-3,2-3,2-3,5,5,0,True,/ms/vancleave/vancleave-bulldogs/football/
+vardaman,Vardaman High School,1A,3,241466,Vardaman,0-4,0-4,0-4,5,4,1,True,/ms/vardaman/vardaman-rams/football/
+velma-jackson,Velma Jackson High School,2A,4,243297,Camden,3-2,3-2,3-2,5,5,0,True,/ms/camden/velma-jackson-falcons/football/
+vicksburg,Vicksburg High School,5A,2,244973,Vicksburg,1-4,1-4,1-4,5,5,0,True,/ms/vicksburg/vicksburg-gators/football/
+walnut,Walnut Attendance Center,2A,1,260895,Walnut,2-3,2-3,2-3,5,5,0,True,/ms/walnut/walnut-wildcats/football/
+warren-central,Warren Central High School,6A,2,244976,Vicksburg,5-0,5-0,5-0,5,5,0,True,/ms/vicksburg/warren-central-vikings/football/
+water-valley,Water Valley High School,2A,2,245066,Water Valley,2-3,2-3,2-3,5,5,0,True,/ms/water-valley/water-valley-blue-devils/football/
+wayne-county,Wayne County High School,5A,4,245094,Waynesboro,1-4,1-4,1-4,5,5,0,True,/ms/waynesboro/wayne-county-war-eagleslady-war-eagles/football/
+wesson,Wesson Attendance Center,2A,7,260897,Wesson,5-0,5-0,5-0,5,5,0,True,/ms/wesson/wesson-cobras/football/
+west-bolivar,West Bolivar High School,1A,6,260899,Rosedale,1-4,1-4,1-4,5,5,0,True,/ms/rosedale/west-bolivar-eagles/football/
+west-harrison,West Harrison High School,7A,4,242549,Gulfport,2-3,2-3,2-3,5,5,0,True,/ms/gulfport/west-harrison-hurricanes/football/
+west-jones,West Jones High School,6A,3,242918,Laurel,4-1,4-1,4-1,5,5,0,True,/ms/laurel/west-jones-mustangs/football/
+west-lauderdale,West Lauderdale High School,4A,5,243100,Collinsville,2-3,2-3,2-3,5,5,0,True,/ms/collinsville/west-lauderdale-knights/football/
+west-lincoln,West Lincoln School,1A,7,260901,Brookhaven,0-5,0-5,0-5,5,5,0,True,/ms/brookhaven/west-lincoln-bears/football/
+west-lowndes,West Lowndes High School,1A,3,243266,Columbus,0-4,0-4,0-4,4,4,0,True,/ms/columbus/west-lowndes-panthers/football/
+west-marion,West Marion High School,3A,8,243351,Foxworth,1-4,1-4,1-4,5,5,0,True,/ms/foxworth/west-marion-trojans/football/
+west-point,West Point High School,5A,1,245161,West Point,0-4,0-4,0-4,4,4,0,True,/ms/west-point/west-point-green-wave/football/
+west-tallahatchie,West Tallahatchie High School,1A,4,245167,Webb,1-3,1-3,1-3,5,4,1,True,/ms/webb/west-tallahatchie-choctaws/football/
+wilkinson-county,Wilkinson County High,2A,7,245223,Woodville,2-1,2-1,2-1,3,3,0,True,/ms/woodville/wilkinson-county-wildcats/football/
+winona,Winona Secondary School,3A,4,245254,Winona,5-0,5-0,5-0,5,5,0,True,/ms/winona/winona-tigers/football/
+yazoo-city,Yazoo City High School,4A,4,245304,Yazoo City,0-4,0-4,0-4,5,4,1,True,/ms/yazoo-city/yazoo-city-indians/football/
+yazoo-county,Yazoo County High School,3A,3,245305,Yazoo City,3-2,3-2,3-2,5,5,0,True,/ms/yazoo-city/yazoo-county-panthers/football/

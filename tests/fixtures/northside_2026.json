@@ -1,0 +1,272 @@
+{
+  "retrieved_at": "2026-09-30T13:00:00+00:00",
+  "primary_source": "https://api.scorebooklive.com/v2/graphql",
+  "primary_nodes": [
+    {
+      "id": "7810684",
+      "date": "2026-08-28T23:59:00-07:00",
+      "status": "COMPLETED",
+      "expectedStatus": "COMPLETED",
+      "longStatusText": "Final",
+      "divisionText": "Varsity Football",
+      "contestTypeLabel": "Non Region",
+      "isTbd": true,
+      "contestParticipants": [
+        {
+          "id": "15788125",
+          "location": "AWAY",
+          "result": "WIN",
+          "score": 27,
+          "participant": {
+            "__typename": "Team",
+            "id": "243751",
+            "name": "Broad Street",
+            "locationText": "Shelby, MS"
+          }
+        },
+        {
+          "id": "15788126",
+          "location": "HOME",
+          "result": "LOSS",
+          "score": 6,
+          "participant": {
+            "__typename": "Team",
+            "id": "242816",
+            "name": "Jefferson County",
+            "locationText": "Fayette, MS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7731756",
+      "date": "2026-09-11T17:00:00-07:00",
+      "status": "COMPLETED",
+      "expectedStatus": "COMPLETED",
+      "longStatusText": "Final",
+      "divisionText": "Varsity Football",
+      "contestTypeLabel": "Non Region",
+      "isTbd": false,
+      "contestParticipants": [
+        {
+          "id": "15630269",
+          "location": "AWAY",
+          "result": "WIN",
+          "score": 44,
+          "participant": {
+            "__typename": "Team",
+            "id": "243751",
+            "name": "Broad Street",
+            "locationText": "Shelby, MS"
+          }
+        },
+        {
+          "id": "15630270",
+          "location": "HOME",
+          "result": "LOSS",
+          "score": 0,
+          "participant": {
+            "__typename": "Team",
+            "id": "244525",
+            "name": "Shaw",
+            "locationText": "Shaw, MS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7731878",
+      "date": "2026-09-18T17:00:00-07:00",
+      "status": "COMPLETED",
+      "expectedStatus": "COMPLETED",
+      "longStatusText": "Final",
+      "divisionText": "Varsity Football",
+      "contestTypeLabel": "Non Region",
+      "isTbd": false,
+      "contestParticipants": [
+        {
+          "id": "15630513",
+          "location": "AWAY",
+          "result": "WIN",
+          "score": 16,
+          "participant": {
+            "__typename": "Team",
+            "id": "243144",
+            "name": "Leflore County",
+            "locationText": "Itta Bena, MS"
+          }
+        },
+        {
+          "id": "15630514",
+          "location": "HOME",
+          "result": "LOSS",
+          "score": 14,
+          "participant": {
+            "__typename": "Team",
+            "id": "243751",
+            "name": "Broad Street",
+            "locationText": "Shelby, MS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7731796",
+      "date": "2026-09-25T17:00:00-07:00",
+      "status": "COMPLETED",
+      "expectedStatus": "COMPLETED",
+      "longStatusText": "Final",
+      "divisionText": "Varsity Football",
+      "contestTypeLabel": "Non Region",
+      "isTbd": false,
+      "contestParticipants": [
+        {
+          "id": "15630349",
+          "location": "AWAY",
+          "result": "WIN",
+          "score": 34,
+          "participant": {
+            "__typename": "Team",
+            "id": "243751",
+            "name": "Broad Street",
+            "locationText": "Shelby, MS"
+          }
+        },
+        {
+          "id": "15630350",
+          "location": "HOME",
+          "result": "LOSS",
+          "score": 8,
+          "participant": {
+            "__typename": "Team",
+            "id": "260899",
+            "name": "West Bolivar",
+            "locationText": "Rosedale, MS"
+          }
+        }
+      ]
+    }
+  ],
+  "secondary_observations": [
+    {
+      "game_id": "fd355bcf-b45d-4808-8b36-e0dda9f7e5c7",
+      "date": "2026-08-28T19:00:00-05:00",
+      "home_name": "Jefferson County High School",
+      "away_name": "North Side High School",
+      "home_score": 6,
+      "away_score": 27,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/jefferson-county-fayette-vs-north-side-shelby/8-28-2026/?c=fd355bcf-b45d-4808-8b36-e0dda9f7e5c7",
+      "observed_from_team_id": "northside",
+      "retrieved_at": "2026-09-30T12:58:51.207685+00:00",
+      "home_url": "https://www.maxpreps.com/ms/fayette/jefferson-county-jchs/football/",
+      "away_url": "https://www.maxpreps.com/ms/shelby/north-side-gators/football/"
+    },
+    {
+      "game_id": "7842b146-b92c-4cf2-960b-fcc3adee5c5c",
+      "date": "2026-09-11T19:00:00-05:00",
+      "home_name": "Shaw High School",
+      "away_name": "North Side High School",
+      "home_score": 0,
+      "away_score": 44,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/north-side-shelby-vs-shaw/9-11-2026/?c=7842b146-b92c-4cf2-960b-fcc3adee5c5c",
+      "observed_from_team_id": "northside",
+      "retrieved_at": "2026-09-30T12:58:51.207685+00:00",
+      "home_url": "https://www.maxpreps.com/ms/shaw/shaw-warriors/football/",
+      "away_url": "https://www.maxpreps.com/ms/shelby/north-side-gators/football/"
+    },
+    {
+      "game_id": "1ead236a-98b0-4458-a81e-0549d7de71bf",
+      "date": "2026-09-18T19:00:00-05:00",
+      "home_name": "North Side High School",
+      "away_name": "Leflore County High School",
+      "home_score": 14,
+      "away_score": 16,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/leflore-county-itta-bena-vs-north-side-shelby/9-18-2026/?c=1ead236a-98b0-4458-a81e-0549d7de71bf",
+      "observed_from_team_id": "northside",
+      "retrieved_at": "2026-09-30T12:58:51.207685+00:00",
+      "home_url": "https://www.maxpreps.com/ms/shelby/north-side-gators/football/",
+      "away_url": "https://www.maxpreps.com/ms/itta-bena/leflore-county-tigers/football/"
+    },
+    {
+      "game_id": "07d33e6e-d064-4689-9663-8748d7b365ff",
+      "date": "2026-09-25T19:00:00-05:00",
+      "home_name": "West Bolivar High School",
+      "away_name": "North Side High School",
+      "home_score": 8,
+      "away_score": 34,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/north-side-shelby-vs-west-bolivar-rosedale/9-25-2026/?c=07d33e6e-d064-4689-9663-8748d7b365ff",
+      "observed_from_team_id": "northside",
+      "retrieved_at": "2026-09-30T12:58:51.207685+00:00",
+      "home_url": "https://www.maxpreps.com/ms/rosedale/west-bolivar-eagles/football/",
+      "away_url": "https://www.maxpreps.com/ms/shelby/north-side-gators/football/"
+    },
+    {
+      "game_id": "fd355bcf-b45d-4808-8b36-e0dda9f7e5c7",
+      "date": "2026-08-28T19:00:00-05:00",
+      "home_name": "Jefferson County High School",
+      "away_name": "North Side High School",
+      "home_score": 6,
+      "away_score": 27,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/jefferson-county-fayette-vs-north-side-shelby/8-28-2026/?c=fd355bcf-b45d-4808-8b36-e0dda9f7e5c7",
+      "observed_from_team_id": "jefferson-county",
+      "retrieved_at": "2026-09-30T12:58:51.207685+00:00",
+      "home_url": "https://www.maxpreps.com/ms/fayette/jefferson-county-jchs/football/",
+      "away_url": "https://www.maxpreps.com/ms/shelby/north-side-gators/football/"
+    },
+    {
+      "game_id": "7842b146-b92c-4cf2-960b-fcc3adee5c5c",
+      "date": "2026-09-11T19:00:00-05:00",
+      "home_name": "Shaw High School",
+      "away_name": "North Side High School",
+      "home_score": 0,
+      "away_score": 44,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/north-side-shelby-vs-shaw/9-11-2026/?c=7842b146-b92c-4cf2-960b-fcc3adee5c5c",
+      "observed_from_team_id": "shaw",
+      "retrieved_at": "2026-09-30T12:58:51.207685+00:00",
+      "home_url": "https://www.maxpreps.com/ms/shaw/shaw-warriors/football/",
+      "away_url": "https://www.maxpreps.com/ms/shelby/north-side-gators/football/"
+    },
+    {
+      "game_id": "1ead236a-98b0-4458-a81e-0549d7de71bf",
+      "date": "2026-09-18T19:00:00-05:00",
+      "home_name": "North Side High School",
+      "away_name": "Leflore County High School",
+      "home_score": 14,
+      "away_score": 16,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/leflore-county-itta-bena-vs-north-side-shelby/9-18-2026/?c=1ead236a-98b0-4458-a81e-0549d7de71bf",
+      "observed_from_team_id": "leflore-county",
+      "retrieved_at": "2026-09-30T12:58:51.207685+00:00",
+      "home_url": "https://www.maxpreps.com/ms/shelby/north-side-gators/football/",
+      "away_url": "https://www.maxpreps.com/ms/itta-bena/leflore-county-tigers/football/"
+    },
+    {
+      "game_id": "07d33e6e-d064-4689-9663-8748d7b365ff",
+      "date": "2026-09-25T19:00:00-05:00",
+      "home_name": "West Bolivar High School",
+      "away_name": "North Side High School",
+      "home_score": 8,
+      "away_score": 34,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/north-side-shelby-vs-west-bolivar-rosedale/9-25-2026/?c=07d33e6e-d064-4689-9663-8748d7b365ff",
+      "observed_from_team_id": "west-bolivar",
+      "retrieved_at": "2026-09-30T12:58:51.207685+00:00",
+      "home_url": "https://www.maxpreps.com/ms/rosedale/west-bolivar-eagles/football/",
+      "away_url": "https://www.maxpreps.com/ms/shelby/north-side-gators/football/"
+    }
+  ]
+}

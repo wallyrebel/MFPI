@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 
 from .config import CENTRAL, FORMULA_VERSION, Settings, ranking_week
 from .byes import confirmed_byes
+from .coverage import audit_schedule_coverage
 from .engine import calculate_rankings
 from .fixtures import demo_dataset
 from .models import ValidationIssue
@@ -142,10 +143,17 @@ def main(argv: list[str] | None = None) -> int:
             cutoff,
         )
         prior_issues.extend(maxpreps_score_issues)
+        fresh_schedule_ids = (
+            set(maxpreps_score_targets) - set(maxpreps_score_fetch.cached_team_ids)
+            - set(maxpreps_score_fetch.failed_team_ids)
+        )
+        prior_issues.extend(audit_schedule_coverage(
+            teams, games, maxpreps_score_fetch.games, maxpreps_signals, cutoff,
+            datetime.fromisoformat(settings.season_start).date(), fresh_schedule_ids,
+        ))
         bye_team_ids = confirmed_byes(
             games, maxpreps_score_fetch.games, cutoff,
-            set(maxpreps_score_targets) - set(maxpreps_score_fetch.cached_team_ids)
-            - set(maxpreps_score_fetch.failed_team_ids),
+            fresh_schedule_ids,
         )
         external_states = {}
         for observation in maxpreps_score_fetch.games:
