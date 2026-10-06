@@ -1,0 +1,35 @@
+state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
+75,1,Simmons High School,1A,3-1,62.5,-2,1,-0.6,16.1,32.5,8.0,60,48.67,20.7,Playing up,1.25,3,1,0
+76,2,Leflore County High School,1A,5-0,62.5,-34,-1,-11.1,37.1,26.8,9.6,58,49.12,24.9,Playing up,0.6,2,3,0
+92,3,Tupelo Christian,1A,6-0,59.4,3,0,3.4,4.0,42.8,4.8,77,46.13,12.2,Playing up,0.667,2,1,0
+107,4,Nanih Waiya Attendance Center,1A,4-1,51.0,1,0,-0.1,34.8,42.0,33.4,103,41.36,19.9,Playing up,0.6,3,2,0
+109,5,Calhoun City High School,1A,3-3,50.7,18,1,4.7,59.4,25.3,31.7,114,38.69,29.2,Playing up,1.5,5,1,0
+128,6,Ethel Attendance Center,1A,4-2,43.7,-3,-1,-3.2,24.6,24.0,11.0,173,29.57,14.6,Playing up,0.8,3,2,0
+135,7,Stringer Attendance Center,1A,4-2,41.0,-3,1,-2.5,3.1,35.0,15.5,158,32.11,11.1,Playing up,0.4,2,3,0
+138,8,South Delta High School,1A,4-2,40.7,-10,-1,-5.2,12.1,25.3,16.0,137,35.03,18.5,Playing up,1.0,4,2,0
+159,9,Noxapater Attendance Center,1A,2-4,34.8,1,0,1.2,40.2,19.2,25.2,181,28.4,21.9,Playing up,1.0,5,1,0
+162,10,French Camp,1A,2-4,32.7,0,0,-0.3,52.7,15.8,28.3,219,20.25,22.7,Mostly same class,0.25,1,3,0
+164,11,Okolona High School,1A,3-3,31.8,14,3,3.2,31.2,25.3,32.7,184,27.88,22.8,Playing up,2.2,5,0,0
+173,12,Sebastopol Attendance Center,1A,1-5,28.5,1,0,-2.1,36.2,21.3,28.3,195,24.83,20.6,Playing up,1.0,5,1,0
+175,13,McAdams Attendance Center,1A,3-3,27.9,1,0,-0.9,4.5,29.0,20.2,199,24.53,12.8,Playing up,0.667,3,3,0
+179,14,Potts Camp High School (5-12),1A,3-2,26.5,17,7,4.6,5.8,36.8,31.2,215,21.07,11.1,Playing up,1.25,3,1,0
+185,15,Lumberton High School,1A,1-4,24.3,6,3,0.8,30.8,12.4,23.6,216,20.93,20.9,Playing up,1.8,5,0,0
+190,16,Salem Attendance Center,1A,1-4,23.1,0,1,-0.4,35.3,13.2,34.0,232,16.0,19.9,Playing up,0.8,3,2,0
+191,17,Smithville High School,1A,3-3,22.7,10,6,2.4,2.7,27.0,22.7,224,20.07,9.7,Playing up,0.833,4,2,0
+192,18,Taylorsville Attendance Center,1A,0-6,22.6,-4,-2,-1.1,64.3,4.7,46.2,251,2.53,29.8,Playing up,1.0,5,1,0
+194,19,Coffeeville High School,1A,2-4,22.3,-23,-8,-8.9,18.3,24.7,29.5,227,18.66,16.7,Playing up,0.667,4,2,0
+198,20,Bogue Chitto School,1A,2-4,20.6,12,7,4.7,26.8,18.3,30.7,225,20.03,18.2,Playing up,1.4,5,0,0
+200,21,Vardaman High School,1A,0-4,20.2,2,3,0.3,51.3,16.5,47.5,260,-0.34,24.4,Playing up,0.5,2,2,0
+201,22,Richton High School,1A,2-3,19.8,-19,-7,-5.9,4.9,14.6,16.8,233,15.86,12.1,Playing up,0.6,2,3,0
+202,23,Shaw High School,1A,1-5,19.6,-9,-4,-2.7,39.3,8.0,30.3,231,16.47,25.0,Playing up,0.667,3,3,0
+203,24,Biggersville High School,1A,1-5,17.0,4,1,-1.2,41.5,10.0,40.0,243,13.83,23.6,Playing up,1.5,5,1,0
+206,25,Resurrection,1A,1-4-1,16.4,2,1,-1.7,37.5,9.7,33.3,253,1.65,15.4,Playing up,1.0,4,1,0
+208,26,West Tallahatchie High School,1A,1-4,16.2,-8,-4,-4.8,13.4,16.4,26.6,239,14.61,17.3,Playing up,1.2,4,1,0
+211,27,West Bolivar High School,1A,2-4,14.8,-16,-7,-7.3,15.6,12.3,26.8,246,11.28,17.5,Playing up,0.833,3,3,0
+215,28,Falkner Attendance Center,1A,2-3,12.9,-4,0,-2.9,6.7,20.0,30.2,259,0.64,10.9,Playing up,1.0,3,1,0
+217,29,Mount Olive Attendance Center,1A,0-6,11.2,-2,0,-3.2,31.7,3.7,43.3,269,-8.47,20.9,Playing up,1.167,5,1,0
+219,30,H. W. Byers High School (5-12),1A,0-5,10.3,1,0,-0.2,13.8,8.0,29.0,271,-10.44,16.6,Playing up,2.0,4,0,0
+222,31,Ashland Middle-High School,1A,0-6,6.6,0,0,-0.9,17.4,10.0,46.0,272,-10.73,16.0,Playing up,1.167,4,2,0
+223,32,West Lowndes High School,1A,0-5,4.6,0,0,-1.7,8.5,9.6,42.6,266,-5.92,16.1,Playing up,1.0,3,2,0
+224,33,West Lincoln School,1A,0-6,4.4,1,1,-1.8,9.8,7.2,36.5,270,-8.96,14.6,Playing up,1.0,4,1,0
+225,34,Riverside High School,1A,0-6,3.2,-1,-1,-3.1,7.6,3.7,45.3,273,-12.05,14.8,Playing up,1.0,4,2,0

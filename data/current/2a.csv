@@ -1,40 +1,40 @@
 state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
-34,1,Heidelberg High School,2A,3-1,76.6,43,1,14.3,39.7,48.2,8.8,31,55.38,23.2,Playing up,1.0,3,0,1
-47,2,East Webster High School,2A,5-0,70.4,14,-1,3.2,32.1,32.6,10.2,45,50.99,23.9,Playing up,0.8,3,0,2
-60,3,Eupora High School,2A,5-0,66.9,18,0,5.6,36.2,29.6,8.4,78,43.3,17.3,Playing down,-0.6,0,2,3
-77,4,Amite County High School,2A,5-0,61.4,4,1,0.3,1.8,43.6,0.0,69,45.27,7.1,Playing down,-1.0,0,0,5
-86,5,Scott Central Attendance Center,2A,3-2,59.2,3,1,1.6,49.1,28.0,21.0,106,38.4,24.0,Playing up,1.8,5,0,0
-89,6,Northside High School,2A,3-1,58.4,37,10,12.6,15.6,29.8,7.5,68,45.56,18.9,Playing down,-0.5,1,0,3
-91,7,Kemper County High School,2A,4-1,57.6,17,6,7.0,32.6,38.6,28.6,71,44.67,24.9,Playing up,1.25,4,0,0
-93,8,Wilkinson County High,2A,2-1,57.0,52,14,17.0,21.4,33.3,10.7,117,37.55,17.3,Playing down,-0.667,0,1,2
-99,9,East Marion High School,2A,4-1,54.2,7,3,2.9,4.5,42.6,14.8,98,40.25,12.3,Playing up,1.0,5,0,0
-100,10,Water Valley High School,2A,2-3,53.7,-7,-3,-2.8,47.8,30.8,22.2,131,35.53,22.4,Mostly same class,0.2,2,1,2
-105,11,Wesson Attendance Center,2A,5-0,52.6,-5,0,-1.0,5.4,29.0,5.6,99,40.08,12.3,Playing up,0.8,3,0,2
-106,12,Enterprise (Clarke),2A,4-1,52.4,-9,-3,-2.1,38.4,29.6,21.6,143,34.24,19.0,Playing up,0.8,3,1,1
-107,13,Baldwyn High School,2A,3-2,52.0,-28,-9,-9.3,58.5,22.2,25.0,124,36.84,24.1,Playing up,1.25,4,0,0
-109,14,Clarkdale High School,2A,4-1,50.6,-14,-6,-5.0,19.2,30.8,15.8,134,35.04,13.9,Playing down,-0.4,1,1,3
-111,15,Myrtle Attendance Center,2A,3-1,49.4,29,4,7.6,6.7,37.8,13.8,130,35.65,12.4,Playing down,-0.75,0,1,3
-112,16,Mize Attendance Center,2A,1-4,49.2,19,1,5.0,58.9,27.0,26.2,123,36.86,26.3,Playing up,0.8,4,0,1
-118,17,Bruce High School,2A,5-0,48.4,31,7,8.9,4.9,39.2,16.8,156,31.3,10.6,Mostly same class,-0.2,1,1,3
-120,18,Charleston High School,2A,3-2,47.6,-2,-3,-1.3,37.9,25.6,22.4,122,36.89,22.3,Playing up,1.6,4,0,1
-129,19,Perry Central High School,2A,2-3,45.5,-13,-5,-3.6,46.4,26.0,24.8,153,32.02,22.3,Playing up,1.2,4,1,0
-142,20,Bay Springs High School,2A,4-1,41.6,-1,0,0.0,5.8,28.8,14.2,142,34.36,12.3,Playing up,1.2,3,1,1
-148,21,Loyd Star School,2A,4-1,37.7,-4,0,-2.5,0.9,32.6,14.2,175,28.5,6.6,Mostly same class,-0.2,1,2,2
-149,22,Lake High School,2A,2-2,37.6,-51,-12,-16.2,45.1,24.0,28.2,179,28.29,22.0,Playing up,1.0,3,0,1
-152,23,Velma Jackson High School,2A,3-2,36.9,-5,0,-2.6,23.7,41.6,37.8,159,30.68,17.2,Playing up,1.6,4,1,0
-155,24,Puckett Attendance Center,2A,4-1,36.1,1,2,-0.2,7.6,23.6,11.8,191,24.8,11.8,Mostly same class,-0.2,2,0,3
-156,25,Hamilton High School,2A,2-3,36.0,33,6,9.8,29.9,33.4,32.2,181,27.78,17.7,Playing down,-0.6,0,2,3
-158,26,Pelahatchie Attendance Center,2A,2-3,34.9,-1,1,-1.0,50.4,17.8,26.8,193,24.44,20.2,Playing up,0.4,2,2,1
-159,27,Enterprise (Brookhaven),2A,4-1,33.7,1,2,0.0,12.1,25.4,19.8,189,25.67,12.2,Playing down,-0.5,0,2,2
-161,28,Hatley High School,2A,4-1,33.5,-9,-3,-4.2,0.0,32.2,13.2,205,23.08,3.6,Mostly same class,-0.2,2,0,3
-168,29,Sacred Heart,2A,4-1,31.9,-30,-11,-10.7,8.5,26.4,20.6,187,25.77,8.8,Mostly same class,0.25,2,1,1
-169,30,J Z George High School,2A,3-2,31.9,-10,-2,-3.7,16.5,21.2,18.8,190,24.94,14.3,Playing down,-0.8,0,1,4
-181,31,Walnut Attendance Center,2A,2-3,26.4,0,-1,-1.0,27.7,12.2,20.2,222,18.81,14.9,Playing up,0.75,3,1,0
-192,32,Collins High School,2A,2-3,23.5,11,2,5.3,27.2,16.8,32.4,196,24.28,19.8,Playing up,1.0,4,0,1
-194,33,North Forrest High School,2A,1-4,22.2,-4,-1,-3.4,17.0,19.8,26.4,214,21.17,15.7,Playing down,-0.4,0,3,2
-204,34,Newton High School,2A,1-4,19.2,-2,-1,0.3,14.3,23.6,33.4,240,12.12,15.3,Playing up,0.6,3,1,1
-205,35,Philadelphia High School,2A,0-5,18.3,4,0,0.8,35.3,10.4,30.0,234,14.06,21.1,Playing up,1.4,4,1,0
-212,36,Strayhorn High School,2A,0-5,15.6,-1,0,-1.6,36.6,19.4,43.2,262,-5.49,17.7,Playing down,-0.5,1,0,3
-214,37,Leland High School,2A,1-4,14.8,-1,0,-0.4,17.4,6.8,26.4,251,1.5,17.9,Playing down,-0.6,1,0,4
-216,38,East Union Attendance Center,2A,1-4,13.6,1,1,2.0,19.6,20.4,39.6,257,-4.14,13.2,Mostly same class,-0.2,1,1,3
-219,39,M. S. Palmer High School,2A,0-5,10.5,-4,-1,-3.1,30.4,2.8,46.2,271,-10.3,20.4,Playing up,0.8,4,0,1
+35,1,Heidelberg High School,2A,4-1,78.9,-1,0,2.3,46.4,47.4,7.0,25,58.7,25.1,Playing up,0.8,3,1,1
+53,2,Kemper County High School,2A,5-1,69.5,38,5,11.9,52.2,39.7,27.2,53,50.75,29.2,Playing up,1.0,4,1,0
+59,3,Eupora High School,2A,6-0,67.9,1,0,1.0,37.9,32.0,9.7,76,46.17,19.6,Playing down,-0.5,0,3,3
+62,4,Scott Central Attendance Center,2A,4-2,67.3,24,1,8.1,54.9,31.7,19.2,99,42.57,26.0,Playing up,1.5,5,1,0
+63,5,East Webster High School,2A,5-1,66.8,-16,-3,-3.6,44.6,30.5,16.0,57,49.12,28.1,Playing up,0.667,3,1,2
+85,6,Amite County High School,2A,5-0,60.8,-8,-2,-0.6,0.4,43.6,0.0,73,47.06,8.1,Playing down,-1.0,0,0,5
+96,7,Wesson Attendance Center,2A,6-0,58.1,9,4,5.5,12.5,32.0,5.7,83,45.33,16.2,Playing up,0.667,3,1,2
+97,8,Northside High School,2A,4-1,57.8,-8,-2,-0.6,11.6,34.2,7.2,59,49.11,19.1,Playing down,-0.4,1,1,3
+98,9,East Marion High School,2A,5-1,56.2,1,0,2.0,5.4,45.5,13.3,85,44.93,15.3,Playing up,0.833,5,1,0
+108,10,Enterprise (Clarke),2A,4-2,50.7,-2,2,-1.7,51.8,24.7,25.3,138,34.94,25.9,Playing up,0.667,3,2,1
+110,11,Clarkdale High School,2A,5-1,50.7,-1,3,0.1,22.8,28.5,14.2,123,38.08,18.0,Playing down,-0.333,1,2,3
+112,12,Myrtle Attendance Center,2A,4-1,49.5,-1,3,0.1,7.1,38.4,13.8,121,38.34,12.9,Playing down,-0.6,0,2,3
+113,13,Mize Attendance Center,2A,1-4,49.5,-1,3,0.3,62.9,27.0,26.2,115,38.69,29.7,Playing up,0.8,4,0,1
+114,14,Baldwyn High School,2A,4-2,49.3,-7,-1,-2.7,33.5,26.3,20.8,110,39.46,23.3,Playing up,0.8,4,0,1
+115,15,Water Valley High School,2A,2-4,49.2,-15,-5,-4.5,47.3,30.0,24.2,144,34.51,23.8,Mostly same class,0.167,2,2,2
+117,16,Perry Central High School,2A,3-3,48.3,12,3,2.8,42.4,26.0,22.0,136,35.04,23.2,Playing up,0.833,4,1,1
+120,17,Bruce High School,2A,6-0,47.0,-2,0,-1.4,6.2,38.3,18.3,143,34.52,12.5,Mostly same class,-0.167,1,2,3
+123,18,Charleston High School,2A,3-3,46.4,-3,0,-1.2,47.8,22.3,24.0,133,35.65,25.6,Playing up,2.0,5,0,1
+126,19,Wilkinson County High,2A,2-2,44.3,-33,-11,-12.7,20.5,32.0,17.5,154,33.02,19.3,Playing down,-0.5,0,2,2
+139,20,Loyd Star School,2A,5-1,40.6,9,1,2.9,2.2,33.5,16.5,145,33.91,11.7,Mostly same class,-0.167,1,3,2
+141,21,Bay Springs High School,2A,4-2,40.1,1,-1,-1.5,14.3,25.0,14.7,151,33.31,16.4,Playing up,1.0,3,2,1
+143,22,Lake High School,2A,3-2,39.6,6,0,2.0,30.4,27.6,25.0,161,31.43,20.6,Playing up,0.8,3,1,1
+151,23,Hamilton High School,2A,2-4,36.3,5,2,0.3,38.8,31.2,32.5,178,28.9,21.6,Playing down,-0.667,0,2,4
+155,24,Velma Jackson High School,2A,3-3,35.8,-3,-1,-1.1,32.1,37.3,38.8,171,29.68,20.7,Playing up,1.333,4,2,0
+156,25,Puckett Attendance Center,2A,4-2,35.5,-1,-1,-0.6,18.8,21.3,18.2,193,26.08,17.6,Mostly same class,-0.167,2,1,3
+166,26,Enterprise (Brookhaven),2A,4-2,31.3,-7,1,-2.4,21.4,22.2,24.3,191,26.25,17.7,Playing down,-0.4,0,3,2
+170,27,Pelahatchie Attendance Center,2A,3-3,30.2,-12,-1,-4.7,20.1,22.3,23.5,192,26.12,17.7,Mostly same class,0.167,2,2,2
+178,28,J Z George High School,2A,3-3,26.9,-9,2,-5.0,19.6,18.7,24.3,203,23.89,17.9,Playing down,-0.667,0,2,4
+181,29,Hatley High School,2A,4-2,26.5,-20,-1,-7.0,0.0,30.5,17.8,214,22.55,8.0,Playing down,-0.333,2,0,4
+183,30,Sacred Heart,2A,4-2,25.5,-15,-1,-6.4,11.2,23.0,27.2,205,23.41,13.9,Mostly same class,0.2,2,2,1
+187,31,Strayhorn High School,2A,1-5,24.1,25,5,8.5,42.0,22.0,37.3,238,14.66,20.0,Playing down,-0.6,1,0,4
+193,32,Walnut Attendance Center,2A,3-3,22.5,-12,-1,-3.9,10.7,16.2,19.2,226,19.34,12.6,Playing up,0.4,3,1,1
+195,33,Philadelphia High School,2A,0-6,21.8,10,2,3.6,49.1,8.7,35.3,236,14.91,26.8,Playing up,1.333,5,1,0
+196,34,North Forrest High School,2A,2-4,21.2,-2,-1,-1.0,12.9,21.5,26.7,207,23.12,17.6,Playing down,-0.333,0,4,2
+199,35,Collins High School,2A,2-4,20.5,-7,-3,-3.0,21.9,18.7,32.0,210,22.88,19.9,Playing up,0.833,4,1,1
+212,36,Newton High School,2A,1-5,14.4,-8,-2,-4.8,14.7,21.7,34.8,249,6.09,16.7,Playing up,0.5,3,2,1
+213,37,East Union Attendance Center,2A,1-5,14.4,3,1,0.8,29.9,19.3,39.8,261,-0.76,17.1,Mostly same class,-0.167,1,2,3
+218,38,Leland High School,2A,2-4,10.6,-4,-1,-4.2,3.6,9.7,24.3,252,1.86,14.8,Playing down,-0.5,1,1,4
+221,39,M. S. Palmer High School,2A,0-6,9.6,-2,0,-0.9,25.4,4.7,42.5,268,-7.85,20.8,Playing up,0.667,4,1,1

@@ -1,0 +1,249 @@
+{
+  "slug": "2026-week-06-risers-and-fallers",
+  "kind": "risers-and-fallers",
+  "title": "Week 6 risers and fallers in the MFPI",
+  "dek": "The largest statewide rank moves this week, with the verified results and rating changes behind each one.",
+  "status": "published",
+  "season": 2026,
+  "week": 6,
+  "snapshot_run_id": "2026-week-06-20261006T162205885524Z",
+  "snapshot_generated_at": "2026-10-06T16:22:05.885524+00:00",
+  "formula_version": "MFPI-3.2",
+  "draft_generated_at": "2026-10-06T16:24:03.561450+00:00",
+  "author": "MFPI automated analysis",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "published_at": "2026-10-06T11:24:03-05:00",
+  "review_notes": "",
+  "sources": [
+    {
+      "label": "MHSAA official score center (schedules and scores)",
+      "url": "https://scores.misshsaa.com/"
+    },
+    {
+      "label": "MHSAA 2025-27 football classifications and regions",
+      "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+    },
+    {
+      "label": "Statewide media rankings used for the Media Rank inputs",
+      "url": "https://www.maxpreps.com/ms/football/rankings/1/"
+    },
+    {
+      "label": "MFPI Week 6 rankings archive",
+      "url": "/archive/2026/week-06"
+    },
+    {
+      "label": "MFPI methodology",
+      "url": "/methodology"
+    }
+  ],
+  "limitations": [
+    "Movement is only shown against a comparable previous snapshot; teams without one are NEW.",
+    "Large moves in the middle of the table often reflect tightly bunched ratings rather than dramatic results."
+  ],
+  "sections": [
+    {
+      "heading": "How to read these moves",
+      "paragraphs": [
+        "Rank movement is last week's statewide rank minus this week's. Rating change is this week's displayed MFPI minus last week's. They are separate facts: in the middle of the table, where ratings are close together, a small rating change can move a team many places, and a team can hold its place while its rating changes.",
+        "Both compare the Week 6 snapshot with the latest audited Week 5 snapshot (formula MFPI-3.2)."
+      ]
+    },
+    {
+      "heading": "Biggest risers",
+      "paragraphs": [
+        "[[kemper-county]] (2A, 5-1): State ranking: up 38 spots to No. 53 (from No. 91). MFPI rating: increased 11.9 points to 69.5. In the window it beat [[east-webster]] (currently No. 63) 45-20 at home on Oct 2.",
+        "[[newton-county]] (4A, 2-4): State ranking: up 32 spots to No. 87 (from No. 119). MFPI rating: increased 12.1 points to 60.4. In the window it beat [[northeast-lauderdale]] (currently No. 168) 42-7 at home on Oct 2.",
+        "[[independence]] (3A, 5-1): State ranking: up 30 spots to No. 101 (from No. 131). MFPI rating: increased 9.5 points to 53.7. In the window it beat [[holly-springs]] (currently No. 177) 42-6 on the road on Oct 1.",
+        "[[strayhorn]] (2A, 1-5): State ranking: up 25 spots to No. 187 (from No. 212). MFPI rating: increased 8.5 points to 24.1. In the window it beat [[coffeeville]] (currently No. 194) 35-8 at home on Oct 1.",
+        "[[scott-central]] (2A, 4-2): State ranking: up 24 spots to No. 62 (from No. 86). MFPI rating: increased 8.1 points to 67.3. In the window it beat [[puckett]] (currently No. 156) 50-10 at home on Oct 1.",
+        "[[houston]] (4A, 2-5): State ranking: up 24 spots to No. 72 (from No. 96). MFPI rating: increased 8.0 points to 63.7. In the window it beat [[amory]] (currently No. 105) 21-20 on the road on Oct 1; it lost to [[oak-grove]] (currently No. 16) 45-48 at home on Oct 2.",
+        "[[morton]] (4A, 5-1): State ranking: up 23 spots to No. 29 (from No. 52). MFPI rating: increased 11.0 points to 80.0. In the window it beat [[richland]] (currently No. 93) 49-20 on the road on Oct 2.",
+        "[[coahoma-county]] (3A, 2-4): State ranking: up 21 spots to No. 176 (from No. 197). MFPI rating: increased 5.8 points to 27.4. In the window it lost to [[leflore-county]] (currently No. 76) 14-24 on the road on Oct 2."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[kemper-county]]",
+            "53",
+            "91",
+            "+38",
+            "69.5",
+            "+11.9"
+          ],
+          [
+            "[[newton-county]]",
+            "87",
+            "119",
+            "+32",
+            "60.4",
+            "+12.1"
+          ],
+          [
+            "[[independence]]",
+            "101",
+            "131",
+            "+30",
+            "53.7",
+            "+9.5"
+          ],
+          [
+            "[[strayhorn]]",
+            "187",
+            "212",
+            "+25",
+            "24.1",
+            "+8.5"
+          ],
+          [
+            "[[scott-central]]",
+            "62",
+            "86",
+            "+24",
+            "67.3",
+            "+8.1"
+          ],
+          [
+            "[[houston]]",
+            "72",
+            "96",
+            "+24",
+            "63.7",
+            "+8.0"
+          ],
+          [
+            "[[morton]]",
+            "29",
+            "52",
+            "+23",
+            "80.0",
+            "+11.0"
+          ],
+          [
+            "[[coahoma-county]]",
+            "176",
+            "197",
+            "+21",
+            "27.4",
+            "+5.8"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Biggest fallers",
+      "paragraphs": [
+        "[[port-gibson]] (3A, 2-3): State ranking: down 35 spots to No. 150 (from No. 115). MFPI rating: decreased 12.0 points to 36.8. In the window it lost to [[hazlehurst]] (currently No. 67) 24-48 at home on Oct 2.",
+        "[[leflore-county]] (1A, 5-0): State ranking: down 34 spots to No. 76 (from No. 42). MFPI rating: decreased 11.1 points to 62.5. In the window it beat [[coahoma-county]] (currently No. 176) 24-14 at home on Oct 2.",
+        "[[wilkinson-county]] (2A, 2-2): State ranking: down 33 spots to No. 126 (from No. 93). MFPI rating: decreased 12.7 points to 44.3. In the window it lost to [[loyd-star]] (currently No. 139) 28-38 at home on Oct 2.",
+        "[[raymond]] (4A, 1-5): State ranking: down 28 spots to No. 214 (from No. 186). MFPI rating: decreased 10.9 points to 13.3. In the window it lost to [[jim-hill]] (currently No. 204) 8-21 at home on Oct 2.",
+        "[[coffeeville]] (1A, 2-4): State ranking: down 23 spots to No. 194 (from No. 171). MFPI rating: decreased 8.9 points to 22.3. In the window it lost to [[strayhorn]] (currently No. 187) 8-35 on the road on Oct 1.",
+        "[[obannon]] (3A, 5-1): State ranking: down 22 spots to No. 136 (from No. 114). MFPI rating: decreased 7.9 points to 41.0. In the window it lost to [[edwards]] (currently No. 65) 6-24 on the road on Oct 2.",
+        "[[terry]] (6A, 3-3): State ranking: down 20 spots to No. 73 (from No. 53). MFPI rating: decreased 5.1 points to 63.6. In the window it lost to [[pearl]] (currently No. 57) 20-27 on the road on Oct 2.",
+        "[[hatley]] (2A, 4-2): State ranking: down 20 spots to No. 181 (from No. 161). MFPI rating: decreased 7.0 points to 26.5. In the window it lost to [[okolona]] (currently No. 164) 22-41 at home on Oct 2."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[port-gibson]]",
+            "150",
+            "115",
+            "-35",
+            "36.8",
+            "-12.0"
+          ],
+          [
+            "[[leflore-county]]",
+            "76",
+            "42",
+            "-34",
+            "62.5",
+            "-11.1"
+          ],
+          [
+            "[[wilkinson-county]]",
+            "126",
+            "93",
+            "-33",
+            "44.3",
+            "-12.7"
+          ],
+          [
+            "[[raymond]]",
+            "214",
+            "186",
+            "-28",
+            "13.3",
+            "-10.9"
+          ],
+          [
+            "[[coffeeville]]",
+            "194",
+            "171",
+            "-23",
+            "22.3",
+            "-8.9"
+          ],
+          [
+            "[[obannon]]",
+            "136",
+            "114",
+            "-22",
+            "41.0",
+            "-7.9"
+          ],
+          [
+            "[[terry]]",
+            "73",
+            "53",
+            "-20",
+            "63.6",
+            "-5.1"
+          ],
+          [
+            "[[hatley]]",
+            "181",
+            "161",
+            "-20",
+            "26.5",
+            "-7.0"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Rank and rating moving separately",
+      "paragraphs": [
+        "Held their rank while the rating changed by at least a point: [[tupelo]] (No. 1, +1.4); [[diberville]] (No. 2, +1.0); [[cleveland-central]] (No. 39, +3.3); [[new-hope]] (No. 40, +3.0); [[booneville]] (No. 83, +1.1); [[magee]] (No. 94, +2.1); [[west-lowndes]] (No. 223, -1.7).",
+        "Moved in the ranking with an unchanged displayed rating: [[meridian]] (-5 to No. 27); [[grenada]] (-5 to No. 28); [[natchez]] (-9 to No. 33); [[itawamba-agricultural]] (-7 to No. 34); [[ridgeland]] (-2 to No. 52); [[picayune]] (-2 to No. 70); [[george-county]] (-5 to No. 79); [[laurel]] (-5 to No. 80)."
+      ]
+    },
+    {
+      "heading": "Data notes and limitations",
+      "paragraphs": [
+        "Snapshot generated October 6, 2026 at 11:22 AM Central with a cutoff of October 6 at 11:00 AM Central, formula MFPI-3.2.",
+        "663 of 675 game listings due by the cutoff had verified scores (98.2%); the rest count as unavailable, never as losses or 0-0 results.",
+        "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
+      ]
+    }
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
+}

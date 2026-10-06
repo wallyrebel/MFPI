@@ -1,18 +1,18 @@
 {
   "snapshot": "pre-publication",
   "season": 2026,
-  "week": 5,
-  "status": "CORRECTED",
+  "week": 6,
+  "status": "PUBLISHED",
   "formula_version": "MFPI-3.2",
-  "generated_at": "2026-09-30T13:38:53.034629+00:00",
-  "cutoff_at": "2026-09-29T11:00:00-05:00",
-  "audited_at": "2026-09-30T13:38:53.404358+00:00",
+  "generated_at": "2026-10-06T16:22:05.885524+00:00",
+  "cutoff_at": "2026-10-06T11:00:00-05:00",
+  "audited_at": "2026-10-06T16:24:02.965576+00:00",
   "outcome": "PASS",
   "teams": 225,
-  "unique_games": 567,
+  "unique_games": 663,
   "blocking": 0,
   "warnings": 0,
-  "info": 42,
+  "info": 45,
   "issue_counts": [
     {
       "severity": "INFO",
@@ -21,28 +21,18 @@
     },
     {
       "severity": "INFO",
-      "code": "LARGE_RANK_CHANGE",
-      "count": 5
-    },
-    {
-      "severity": "INFO",
-      "code": "LARGE_RATING_CHANGE",
-      "count": 3
-    },
-    {
-      "severity": "INFO",
       "code": "PENDING_RESULTS",
-      "count": 17
+      "count": 18
     },
     {
       "severity": "INFO",
       "code": "SCHEDULE_GAP",
-      "count": 1
+      "count": 5
     },
     {
       "severity": "INFO",
       "code": "UNUSUAL_SCORE",
-      "count": 14
+      "count": 20
     }
   ],
   "external_verification": "PIPELINE_SOURCES_ONLY",
@@ -64,8 +54,29 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
+      "message": "Senatobia High School game on 2026-10-01 finished 64-0; flagged for a source check only.",
+      "team_id": "senatobia",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Noxubee County High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
+      "team_id": "noxubee-county",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
       "message": "Heidelberg High School game on 2026-09-18 finished 60-0; flagged for a source check only.",
       "team_id": "heidelberg",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Corinth High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
+      "team_id": "corinth",
       "context": {}
     },
     {
@@ -113,6 +124,13 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
+      "message": "South Pontotoc High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
+      "team_id": "south-pontotoc",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
       "message": "Taylorsville Attendance Center game on 2026-09-18 finished 60-0; flagged for a source check only.",
       "team_id": "taylorsville",
       "context": {}
@@ -120,8 +138,22 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
+      "message": "Philadelphia High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
+      "team_id": "philadelphia",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
       "message": "Vardaman High School game on 2026-08-28 finished 45-65; flagged for a source check only.",
       "team_id": "vardaman",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Byhalia High School (9-12) game on 2026-10-01 finished 64-0; flagged for a source check only.",
+      "team_id": "byhalia",
       "context": {}
     },
     {
@@ -162,13 +194,6 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "South Panola High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "south-panola",
-      "context": {}
-    },
-    {
-      "code": "PENDING_RESULTS",
-      "severity": "INFO",
       "message": "Desoto Central High School has 1 listing(s) awaiting a verified result.",
       "team_id": "desoto-central",
       "context": {}
@@ -176,8 +201,22 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
+      "message": "South Panola High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "south-panola",
+      "context": {}
+    },
+    {
+      "code": "PENDING_RESULTS",
+      "severity": "INFO",
       "message": "Kosciusko Senior High School has 1 listing(s) awaiting a verified result.",
       "team_id": "kosciusko",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Grenada High has 4 verified games against a statewide median of 6.",
+      "team_id": "grenada",
       "context": {}
     },
     {
@@ -209,6 +248,13 @@
       "context": {}
     },
     {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Southaven High School has 4 verified games against a statewide median of 6.",
+      "team_id": "southaven",
+      "context": {}
+    },
+    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
       "message": "Southaven High School has 1 listing(s) awaiting a verified result.",
@@ -218,8 +264,8 @@
     {
       "code": "SCHEDULE_GAP",
       "severity": "INFO",
-      "message": "Wilkinson County High has 3 verified games against a statewide median of 5.",
-      "team_id": "wilkinson-county",
+      "message": "Simmons High School has 4 verified games against a statewide median of 6.",
+      "team_id": "simmons",
       "context": {}
     },
     {
@@ -227,6 +273,20 @@
       "severity": "INFO",
       "message": "Myrtle Attendance Center has 1 listing(s) awaiting a verified result.",
       "team_id": "myrtle",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Wilkinson County High has 4 verified games against a statewide median of 6.",
+      "team_id": "wilkinson-county",
+      "context": {}
+    },
+    {
+      "code": "PENDING_RESULTS",
+      "severity": "INFO",
+      "message": "Wilkinson County High has 1 listing(s) awaiting a verified result.",
+      "team_id": "wilkinson-county",
       "context": {}
     },
     {
@@ -246,13 +306,6 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Coffeeville High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "coffeeville",
-      "context": {}
-    },
-    {
-      "code": "PENDING_RESULTS",
-      "severity": "INFO",
       "message": "Yazoo City High School has 1 listing(s) awaiting a verified result.",
       "team_id": "yazoo-city",
       "context": {}
@@ -260,8 +313,15 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "West Tallahatchie High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "west-tallahatchie",
+      "message": "Coffeeville High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "coffeeville",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Vardaman High School has 4 verified games against a statewide median of 6.",
+      "team_id": "vardaman",
       "context": {}
     },
     {
@@ -269,6 +329,13 @@
       "severity": "INFO",
       "message": "Vardaman High School has 1 listing(s) awaiting a verified result.",
       "team_id": "vardaman",
+      "context": {}
+    },
+    {
+      "code": "PENDING_RESULTS",
+      "severity": "INFO",
+      "message": "West Tallahatchie High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "west-tallahatchie",
       "context": {}
     },
     {
@@ -283,62 +350,6 @@
       "severity": "INFO",
       "message": "Ashland Middle-High School has 1 listing(s) awaiting a verified result.",
       "team_id": "ashland",
-      "context": {}
-    },
-    {
-      "code": "LARGE_RANK_CHANGE",
-      "severity": "INFO",
-      "message": "Heidelberg High School moved +43 places.",
-      "team_id": "heidelberg",
-      "context": {}
-    },
-    {
-      "code": "LARGE_RATING_CHANGE",
-      "severity": "INFO",
-      "message": "Cleveland Central High School rating moved +15.8 points.",
-      "team_id": "cleveland-central",
-      "context": {}
-    },
-    {
-      "code": "LARGE_RANK_CHANGE",
-      "severity": "INFO",
-      "message": "Cleveland Central High School moved +47 places.",
-      "team_id": "cleveland-central",
-      "context": {}
-    },
-    {
-      "code": "LARGE_RATING_CHANGE",
-      "severity": "INFO",
-      "message": "Wilkinson County High rating moved +17.0 points.",
-      "team_id": "wilkinson-county",
-      "context": {}
-    },
-    {
-      "code": "LARGE_RANK_CHANGE",
-      "severity": "INFO",
-      "message": "Wilkinson County High moved +52 places.",
-      "team_id": "wilkinson-county",
-      "context": {}
-    },
-    {
-      "code": "LARGE_RANK_CHANGE",
-      "severity": "INFO",
-      "message": "Nanih Waiya Attendance Center moved +45 places.",
-      "team_id": "nanih-waiya",
-      "context": {}
-    },
-    {
-      "code": "LARGE_RATING_CHANGE",
-      "severity": "INFO",
-      "message": "Lake High School rating moved -16.2 points.",
-      "team_id": "lake",
-      "context": {}
-    },
-    {
-      "code": "LARGE_RANK_CHANGE",
-      "severity": "INFO",
-      "message": "Lake High School moved -51 places.",
-      "team_id": "lake",
       "context": {}
     }
   ]

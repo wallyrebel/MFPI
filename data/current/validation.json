@@ -1,9 +1,9 @@
 {
   "valid": true,
-  "expected_games": 578,
-  "verified_games": 567,
-  "missing_games": 11,
-  "coverage_percentage": 98.1,
+  "expected_games": 675,
+  "verified_games": 663,
+  "missing_games": 12,
+  "coverage_percentage": 98.22,
   "issues": [
     {
       "code": "RETIRED_MAXPREPS_PROFILE",
@@ -52,6 +52,162 @@
       }
     },
     {
+      "code": "MULTIPLE_SOURCE_IDS_FOR_TEAM",
+      "severity": "WARNING",
+      "message": "Germantown High School matched 2 different source team IDs by name.",
+      "context": {
+        "team_id": "germantown",
+        "source_ids": {
+          "260771": [
+            "Germantown | Madison"
+          ],
+          "254114": [
+            "Germantown | Germantown"
+          ]
+        },
+        "games": [
+          {
+            "game_id": "7586784",
+            "date": "2026-08-28T17:00:00-07:00",
+            "home": "Germantown",
+            "home_source_id": "260771",
+            "away": "Northwest Rankin",
+            "away_source_id": "260845"
+          },
+          {
+            "game_id": "7586786",
+            "date": "2026-09-04T17:00:00-07:00",
+            "home": "Oak Grove",
+            "home_source_id": "243054",
+            "away": "Germantown",
+            "away_source_id": "260771"
+          },
+          {
+            "game_id": "7586788",
+            "date": "2026-09-11T17:00:00-07:00",
+            "home": "Germantown",
+            "home_source_id": "260771",
+            "away": "Warren Central",
+            "away_source_id": "244976"
+          },
+          {
+            "game_id": "7586789",
+            "date": "2026-09-18T17:00:00-07:00",
+            "home": "Neshoba Central",
+            "home_source_id": "243685",
+            "away": "Germantown",
+            "away_source_id": "260771"
+          },
+          {
+            "game_id": "7586790",
+            "date": "2026-09-25T17:00:00-07:00",
+            "home": "Germantown",
+            "home_source_id": "260771",
+            "away": "Pearl",
+            "away_source_id": "243986"
+          },
+          {
+            "game_id": "7614933",
+            "date": "2026-10-02T17:00:00-07:00",
+            "home": "Germantown",
+            "home_source_id": "254114",
+            "away": "DeSoto Central",
+            "away_source_id": "241879"
+          },
+          {
+            "game_id": "7586746",
+            "date": "2026-10-02T17:00:00-07:00",
+            "home": "Germantown",
+            "home_source_id": "260771",
+            "away": "DeSoto Central",
+            "away_source_id": "241879"
+          }
+        ]
+      }
+    },
+    {
+      "code": "MULTIPLE_SOURCE_IDS_FOR_TEAM",
+      "severity": "WARNING",
+      "message": "Houston High School matched 2 different source team IDs by name.",
+      "context": {
+        "team_id": "houston",
+        "source_ids": {
+          "260788": [
+            "Houston | Houston"
+          ],
+          "254115": [
+            "Houston | Germantown"
+          ]
+        },
+        "games": [
+          {
+            "game_id": "7731597",
+            "date": "2026-08-28T17:00:00-07:00",
+            "home": "Columbus",
+            "home_source_id": "241767",
+            "away": "Houston",
+            "away_source_id": "260788"
+          },
+          {
+            "game_id": "7614688",
+            "date": "2026-09-04T16:00:00-07:00",
+            "home": "Pontotoc",
+            "home_source_id": "244091",
+            "away": "Houston",
+            "away_source_id": "260788"
+          },
+          {
+            "game_id": "7614763",
+            "date": "2026-09-11T17:00:00-07:00",
+            "home": "Houston",
+            "home_source_id": "260788",
+            "away": "Corinth",
+            "away_source_id": "241796"
+          },
+          {
+            "game_id": "7614846",
+            "date": "2026-09-18T17:00:00-07:00",
+            "home": "Winona",
+            "home_source_id": "245254",
+            "away": "Houston",
+            "away_source_id": "260788"
+          },
+          {
+            "game_id": "7614877",
+            "date": "2026-09-25T17:00:00-07:00",
+            "home": "Houston",
+            "home_source_id": "260788",
+            "away": "New Hope",
+            "away_source_id": "243261"
+          },
+          {
+            "game_id": "7614906",
+            "date": "2026-10-01T17:00:00-07:00",
+            "home": "Amory",
+            "home_source_id": "240922",
+            "away": "Houston",
+            "away_source_id": "260788"
+          },
+          {
+            "game_id": "7614923",
+            "date": "2026-10-02T16:00:00-07:00",
+            "home": "Houston",
+            "home_source_id": "254115",
+            "away": "Oak Grove",
+            "away_source_id": "243054"
+          },
+          {
+            "game_id": "7586980",
+            "date": "2026-10-02T17:00:00-07:00",
+            "home": "Houston",
+            "home_source_id": "260788",
+            "away": "Oak Grove",
+            "away_source_id": "243054"
+          }
+        ]
+      }
+    },
+    {
       "code": "STALE_RESCHEDULED_LISTING",
       "severity": "WARNING",
       "message": "Excluded stale MHSAA listing 7614702; official final 7827396 is independently corroborated.",
@@ -71,9 +227,66 @@
       }
     },
     {
+      "code": "STALE_RESCHEDULED_LISTING",
+      "severity": "WARNING",
+      "message": "Excluded stale MHSAA listing 7614705; official final 7827395 is independently corroborated.",
+      "context": {
+        "mhsaa_game_id": "7614705",
+        "maxpreps_game_id": "50749e69-d7b2-40a7-b4a9-8909d78b8402",
+        "original_date": "2026-09-04T16:00:00-07:00",
+        "maxpreps_date": "2026-09-03T19:00:00-05:00",
+        "home_team_id": "byers",
+        "away_team_id": "holly-springs",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/byers-holly-springs-vs-holly-springs/9-3-2026/?c=50749e69-d7b2-40a7-b4a9-8909d78b8402"
+        ],
+        "retained_mhsaa_game_id": "7827395",
+        "home_score": 12,
+        "away_score": 38
+      }
+    },
+    {
+      "code": "STALE_RESCHEDULED_LISTING",
+      "severity": "WARNING",
+      "message": "Excluded stale MHSAA listing 7586746; official final 7614933 is independently corroborated.",
+      "context": {
+        "mhsaa_game_id": "7586746",
+        "maxpreps_game_id": "26b5e652-3e1c-4357-813c-b2ca1e205d09",
+        "original_date": "2026-10-02T17:00:00-07:00",
+        "maxpreps_date": "2026-10-02T19:00:00-05:00",
+        "home_team_id": "germantown",
+        "away_team_id": "desoto-central",
+        "source_urls": [
+          "https://www.maxpreps.com/inter-state/football/game/desoto-central-southaven-ms-vs-germantown-tn/10-2-2026/?c=26b5e652-3e1c-4357-813c-b2ca1e205d09"
+        ],
+        "retained_mhsaa_game_id": "7614933",
+        "home_score": 26,
+        "away_score": 27
+      }
+    },
+    {
+      "code": "STALE_RESCHEDULED_LISTING",
+      "severity": "WARNING",
+      "message": "Excluded stale MHSAA listing 7586980; official final 7614923 is independently corroborated.",
+      "context": {
+        "mhsaa_game_id": "7586980",
+        "maxpreps_game_id": "f6c8e4ba-b051-4d09-b4d4-79e24d08bc42",
+        "original_date": "2026-10-02T17:00:00-07:00",
+        "maxpreps_date": "2026-10-02T18:00:00-05:00",
+        "home_team_id": "houston",
+        "away_team_id": "oak-grove",
+        "source_urls": [
+          "https://www.maxpreps.com/inter-state/football/game/houston-germantown-tn-vs-oak-grove-hattiesburg-ms/10-2-2026/?c=f6c8e4ba-b051-4d09-b4d4-79e24d08bc42"
+        ],
+        "retained_mhsaa_game_id": "7614923",
+        "home_score": 45,
+        "away_score": 48
+      }
+    },
+    {
       "code": "MAXPREPS_SECONDARY_RESULTS_USED",
       "severity": "WARNING",
-      "message": "Used exact secondary matchup evidence for 16 MHSAA listings without official finals.",
+      "message": "Used exact secondary matchup evidence for 18 MHSAA listings without official finals.",
       "context": {
         "games": [
           {
@@ -102,6 +315,20 @@
             ],
             "home_score": 9,
             "away_score": 47,
+            "forfeit": false
+          },
+          {
+            "mhsaa_game_id": "7614614",
+            "maxpreps_game_id": "98bded44-7251-4295-9495-85bd5fd38391",
+            "original_date": "2026-08-27T17:00:00-07:00",
+            "maxpreps_date": "2026-08-27T19:00:00-05:00",
+            "home_team_id": "byhalia",
+            "away_team_id": "byers",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/byers-holly-springs-vs-byhalia/8-27-2026/?c=98bded44-7251-4295-9495-85bd5fd38391"
+            ],
+            "home_score": 28,
+            "away_score": 6,
             "forfeit": false
           },
           {
@@ -231,6 +458,20 @@
             "forfeit": false
           },
           {
+            "mhsaa_game_id": "7731668",
+            "maxpreps_game_id": "cdfb33f7-a48e-4365-b89c-62dc5da0a4c0",
+            "original_date": "2026-09-04T17:00:00-07:00",
+            "maxpreps_date": "2026-09-04T19:00:00-05:00",
+            "home_team_id": "leake-central",
+            "away_team_id": "vicksburg",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/leake-carthage-vs-vicksburg/9-4-2026/?c=cdfb33f7-a48e-4365-b89c-62dc5da0a4c0"
+            ],
+            "home_score": 34,
+            "away_score": 18,
+            "forfeit": false
+          },
+          {
             "mhsaa_game_id": "7614788",
             "maxpreps_game_id": "5e2767bc-6f21-4707-bb61-248c5321fe3a",
             "original_date": "2026-09-11T17:00:00-07:00",
@@ -328,164 +569,54 @@
     {
       "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
       "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 04304e70-554a-4189-8451-60b08b92ce2b; review the source facts.",
+      "message": "Secondary schedule reports disagree for event 206d083d-650e-4aec-9b84-6237ab83b426; review the source facts.",
       "context": {
-        "secondary_game_id": "04304e70-554a-4189-8451-60b08b92ce2b",
-        "date": "2026-09-25",
-        "home": "union",
-        "away": "lake",
-        "home_url": "https://www.maxpreps.com/ms/union/union-yellowjackets/football/",
-        "away_url": "https://www.maxpreps.com/ms/lake/lake-hornets/football/",
+        "secondary_game_id": "206d083d-650e-4aec-9b84-6237ab83b426",
+        "date": "2026-10-02",
+        "home": "west-lincoln",
+        "away": "pelahatchie",
+        "home_url": "https://www.maxpreps.com/ms/brookhaven/west-lincoln-bears/football/",
+        "away_url": "https://www.maxpreps.com/ms/pelahatchie/pelahatchie-chiefs/football/",
         "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/lake-vs-union/9-25-2026/?c=04304e70-554a-4189-8451-60b08b92ce2b"
+          "https://www.maxpreps.com/ms/football/game/pelahatchie-vs-west-lincoln-brookhaven/10-2-2026/?c=206d083d-650e-4aec-9b84-6237ab83b426"
         ],
         "observed_from_team_ids": [
-          "lake",
-          "union"
+          "pelahatchie",
+          "west-lincoln"
         ],
         "status": "COMPLETED",
-        "home_score": 35,
-        "away_score": 12,
+        "home_score": 7,
+        "away_score": 45,
         "reports": [
           {
-            "game_id": "04304e70-554a-4189-8451-60b08b92ce2b",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Union High School",
-            "away_name": "Lake High School",
-            "home_score": 35,
-            "away_score": 12,
+            "game_id": "206d083d-650e-4aec-9b84-6237ab83b426",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "West Lincoln High School",
+            "away_name": "Pelahatchie High School",
+            "home_score": 7,
+            "away_score": 45,
             "status": "COMPLETED",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/lake-vs-union/9-25-2026/?c=04304e70-554a-4189-8451-60b08b92ce2b",
-            "observed_from_team_id": "lake",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/union/union-yellowjackets/football/",
-            "away_url": "https://www.maxpreps.com/ms/lake/lake-hornets/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/pelahatchie-vs-west-lincoln-brookhaven/10-2-2026/?c=206d083d-650e-4aec-9b84-6237ab83b426",
+            "observed_from_team_id": "pelahatchie",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/brookhaven/west-lincoln-bears/football/",
+            "away_url": "https://www.maxpreps.com/ms/pelahatchie/pelahatchie-chiefs/football/"
           },
           {
-            "game_id": "04304e70-554a-4189-8451-60b08b92ce2b",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Union High School",
-            "away_name": "Lake High School",
+            "game_id": "206d083d-650e-4aec-9b84-6237ab83b426",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "West Lincoln High School",
+            "away_name": "Pelahatchie High School",
             "home_score": null,
             "away_score": null,
             "status": "UPCOMING",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/lake-vs-union/9-25-2026/?c=04304e70-554a-4189-8451-60b08b92ce2b",
-            "observed_from_team_id": "union",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/union/union-yellowjackets/football/",
-            "away_url": "https://www.maxpreps.com/ms/lake/lake-hornets/football/"
-          }
-        ]
-      }
-    },
-    {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
-      "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 1871dd27-2698-4dcb-845f-4fd4ff731cad; review the source facts.",
-      "context": {
-        "secondary_game_id": "1871dd27-2698-4dcb-845f-4fd4ff731cad",
-        "date": "2026-09-25",
-        "home": "leake-central",
-        "away": "heidelberg",
-        "home_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/",
-        "away_url": "https://www.maxpreps.com/ms/heidelberg/heidelberg-oilers/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/heidelberg-vs-leake-carthage/9-25-2026/?c=1871dd27-2698-4dcb-845f-4fd4ff731cad"
-        ],
-        "observed_from_team_ids": [
-          "heidelberg",
-          "leake-central"
-        ],
-        "status": "COMPLETED",
-        "home_score": 0,
-        "away_score": 47,
-        "reports": [
-          {
-            "game_id": "1871dd27-2698-4dcb-845f-4fd4ff731cad",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Leake High School",
-            "away_name": "Heidelberg High School",
-            "home_score": 0,
-            "away_score": 47,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/heidelberg-vs-leake-carthage/9-25-2026/?c=1871dd27-2698-4dcb-845f-4fd4ff731cad",
-            "observed_from_team_id": "heidelberg",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/",
-            "away_url": "https://www.maxpreps.com/ms/heidelberg/heidelberg-oilers/football/"
-          },
-          {
-            "game_id": "1871dd27-2698-4dcb-845f-4fd4ff731cad",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Leake High School",
-            "away_name": "Heidelberg High School",
-            "home_score": null,
-            "away_score": null,
-            "status": "UPCOMING",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/heidelberg-vs-leake-carthage/9-25-2026/?c=1871dd27-2698-4dcb-845f-4fd4ff731cad",
-            "observed_from_team_id": "leake-central",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/local/team/home.aspx?schoolid=80480779-619d-4cd9-9feb-c26005e4201f&season=fall&ssid=2286cd80-c46d-4739-8dd1-92a67ca8daa7",
-            "away_url": "https://www.maxpreps.com/ms/heidelberg/heidelberg-oilers/football/"
-          }
-        ]
-      }
-    },
-    {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
-      "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 1bc4d5c6-773a-4a09-8414-47b505a435d3; review the source facts.",
-      "context": {
-        "secondary_game_id": "1bc4d5c6-773a-4a09-8414-47b505a435d3",
-        "date": "2026-09-25",
-        "home": "ripley",
-        "away": "booneville",
-        "home_url": "https://www.maxpreps.com/ms/ripley/ripley-tigers/football/",
-        "away_url": "https://www.maxpreps.com/ms/booneville/booneville-blue-devils/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/booneville-vs-ripley/9-25-2026/?c=1bc4d5c6-773a-4a09-8414-47b505a435d3"
-        ],
-        "observed_from_team_ids": [
-          "booneville",
-          "ripley"
-        ],
-        "status": "UPCOMING",
-        "home_score": null,
-        "away_score": null,
-        "reports": [
-          {
-            "game_id": "1bc4d5c6-773a-4a09-8414-47b505a435d3",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Ripley High School",
-            "away_name": "Booneville High School",
-            "home_score": null,
-            "away_score": null,
-            "status": "UPCOMING",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/booneville-vs-ripley/9-25-2026/?c=1bc4d5c6-773a-4a09-8414-47b505a435d3",
-            "observed_from_team_id": "booneville",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/ripley/ripley-tigers/football/",
-            "away_url": "https://www.maxpreps.com/ms/booneville/booneville-blue-devils/football/"
-          },
-          {
-            "game_id": "1bc4d5c6-773a-4a09-8414-47b505a435d3",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Ripley High School",
-            "away_name": "Booneville High School",
-            "home_score": 21,
-            "away_score": 31,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/booneville-vs-ripley/9-25-2026/?c=1bc4d5c6-773a-4a09-8414-47b505a435d3",
-            "observed_from_team_id": "ripley",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/ripley/ripley-tigers/football/",
-            "away_url": "https://www.maxpreps.com/ms/booneville/booneville-blue-devils/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/pelahatchie-vs-west-lincoln-brookhaven/10-2-2026/?c=206d083d-650e-4aec-9b84-6237ab83b426",
+            "observed_from_team_id": "west-lincoln",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/brookhaven/west-lincoln-bears/football/",
+            "away_url": "https://www.maxpreps.com/ms/pelahatchie/pelahatchie-chiefs/football/"
           }
         ]
       }
@@ -521,164 +652,164 @@
     {
       "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
       "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 36963ee2-baed-46a9-8e09-70ed0e140701; review the source facts.",
+      "message": "Secondary schedule reports disagree for event 373f665b-38e0-4234-9255-767721c1b2a7; review the source facts.",
       "context": {
-        "secondary_game_id": "36963ee2-baed-46a9-8e09-70ed0e140701",
-        "date": "2026-09-25",
-        "home": "kemper-county",
-        "away": "northeast-lauderdale",
-        "home_url": "https://www.maxpreps.com/ms/dekalb/kemper-county-wildcats/football/",
-        "away_url": "https://www.maxpreps.com/ms/meridian/northeast-lauderdale-trojans/football/",
+        "secondary_game_id": "373f665b-38e0-4234-9255-767721c1b2a7",
+        "date": "2026-10-02",
+        "home": "union",
+        "away": "quitman",
+        "home_url": "https://www.maxpreps.com/ms/union/union-yellowjackets/football/",
+        "away_url": "https://www.maxpreps.com/ms/quitman/quitman-panthers/football/",
         "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/kemper-county-dekalb-vs-northeast-lauderdale-meridian/9-25-2026/?c=36963ee2-baed-46a9-8e09-70ed0e140701"
+          "https://www.maxpreps.com/ms/football/game/quitman-vs-union/10-2-2026/?c=373f665b-38e0-4234-9255-767721c1b2a7"
         ],
         "observed_from_team_ids": [
-          "kemper-county",
-          "northeast-lauderdale"
+          "quitman",
+          "union"
+        ],
+        "status": "COMPLETED",
+        "home_score": 22,
+        "away_score": 12,
+        "reports": [
+          {
+            "game_id": "373f665b-38e0-4234-9255-767721c1b2a7",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Union High School",
+            "away_name": "Quitman High School",
+            "home_score": 22,
+            "away_score": 12,
+            "status": "COMPLETED",
+            "forfeit": false,
+            "source_url": "https://www.maxpreps.com/ms/football/game/quitman-vs-union/10-2-2026/?c=373f665b-38e0-4234-9255-767721c1b2a7",
+            "observed_from_team_id": "quitman",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/union/union-yellowjackets/football/",
+            "away_url": "https://www.maxpreps.com/ms/quitman/quitman-panthers/football/"
+          },
+          {
+            "game_id": "373f665b-38e0-4234-9255-767721c1b2a7",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Union High School",
+            "away_name": "Quitman High School",
+            "home_score": null,
+            "away_score": null,
+            "status": "UPCOMING",
+            "forfeit": false,
+            "source_url": "https://www.maxpreps.com/ms/football/game/quitman-vs-union/10-2-2026/?c=373f665b-38e0-4234-9255-767721c1b2a7",
+            "observed_from_team_id": "union",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/union/union-yellowjackets/football/",
+            "away_url": "https://www.maxpreps.com/ms/quitman/quitman-panthers/football/"
+          }
+        ]
+      }
+    },
+    {
+      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
+      "severity": "WARNING",
+      "message": "Secondary schedule reports disagree for event 3f9fec30-c2ea-4f5a-93c7-2b429c848904; review the source facts.",
+      "context": {
+        "secondary_game_id": "3f9fec30-c2ea-4f5a-93c7-2b429c848904",
+        "date": "2026-10-02",
+        "home": "wesson",
+        "away": "enterprise-brookhaven",
+        "home_url": "https://www.maxpreps.com/ms/wesson/wesson-cobras/football/",
+        "away_url": "https://www.maxpreps.com/ms/brookhaven/enterprise-yellowjackets/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/enterprise-brookhaven-vs-wesson/10-2-2026/?c=3f9fec30-c2ea-4f5a-93c7-2b429c848904"
+        ],
+        "observed_from_team_ids": [
+          "enterprise-brookhaven",
+          "wesson"
+        ],
+        "status": "COMPLETED",
+        "home_score": 47,
+        "away_score": 6,
+        "reports": [
+          {
+            "game_id": "3f9fec30-c2ea-4f5a-93c7-2b429c848904",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Wesson High School",
+            "away_name": "Enterprise High School",
+            "home_score": 47,
+            "away_score": 6,
+            "status": "COMPLETED",
+            "forfeit": false,
+            "source_url": "https://www.maxpreps.com/ms/football/game/enterprise-brookhaven-vs-wesson/10-2-2026/?c=3f9fec30-c2ea-4f5a-93c7-2b429c848904",
+            "observed_from_team_id": "enterprise-brookhaven",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/wesson/wesson-cobras/football/",
+            "away_url": "https://www.maxpreps.com/ms/brookhaven/enterprise-yellowjackets/football/"
+          },
+          {
+            "game_id": "3f9fec30-c2ea-4f5a-93c7-2b429c848904",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Wesson High School",
+            "away_name": "Enterprise High School",
+            "home_score": null,
+            "away_score": null,
+            "status": "UPCOMING",
+            "forfeit": false,
+            "source_url": "https://www.maxpreps.com/ms/football/game/enterprise-brookhaven-vs-wesson/10-2-2026/?c=3f9fec30-c2ea-4f5a-93c7-2b429c848904",
+            "observed_from_team_id": "wesson",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/wesson/wesson-cobras/football/",
+            "away_url": "https://www.maxpreps.com/ms/brookhaven/enterprise-yellowjackets/football/"
+          }
+        ]
+      }
+    },
+    {
+      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
+      "severity": "WARNING",
+      "message": "Secondary schedule reports disagree for event 4444ec52-54bd-4469-a7db-93dc78da824e; review the source facts.",
+      "context": {
+        "secondary_game_id": "4444ec52-54bd-4469-a7db-93dc78da824e",
+        "date": "2026-10-02",
+        "home": "ripley",
+        "away": "clarksdale",
+        "home_url": "https://www.maxpreps.com/ms/ripley/ripley-tigers/football/",
+        "away_url": "https://www.maxpreps.com/ms/clarksdale/clarksdale-wildcats/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/clarksdale-vs-ripley/10-2-2026/?c=4444ec52-54bd-4469-a7db-93dc78da824e"
+        ],
+        "observed_from_team_ids": [
+          "clarksdale",
+          "ripley"
         ],
         "status": "UPCOMING",
         "home_score": null,
         "away_score": null,
         "reports": [
           {
-            "game_id": "36963ee2-baed-46a9-8e09-70ed0e140701",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Kemper County High School",
-            "away_name": "Northeast Lauderdale High School",
+            "game_id": "4444ec52-54bd-4469-a7db-93dc78da824e",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Ripley High School",
+            "away_name": "Clarksdale High School",
             "home_score": null,
             "away_score": null,
             "status": "UPCOMING",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/kemper-county-dekalb-vs-northeast-lauderdale-meridian/9-25-2026/?c=36963ee2-baed-46a9-8e09-70ed0e140701",
-            "observed_from_team_id": "kemper-county",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/dekalb/kemper-county-wildcats/football/",
-            "away_url": "https://www.maxpreps.com/ms/meridian/northeast-lauderdale-trojans/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/clarksdale-vs-ripley/10-2-2026/?c=4444ec52-54bd-4469-a7db-93dc78da824e",
+            "observed_from_team_id": "clarksdale",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/ripley/ripley-tigers/football/",
+            "away_url": "https://www.maxpreps.com/ms/clarksdale/clarksdale-wildcats/football/"
           },
           {
-            "game_id": "36963ee2-baed-46a9-8e09-70ed0e140701",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Kemper County High School",
-            "away_name": "Northeast Lauderdale High School",
-            "home_score": 37,
-            "away_score": 6,
+            "game_id": "4444ec52-54bd-4469-a7db-93dc78da824e",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Ripley High School",
+            "away_name": "Clarksdale High School",
+            "home_score": 10,
+            "away_score": 22,
             "status": "COMPLETED",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/kemper-county-dekalb-vs-northeast-lauderdale-meridian/9-25-2026/?c=36963ee2-baed-46a9-8e09-70ed0e140701",
-            "observed_from_team_id": "northeast-lauderdale",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/dekalb/kemper-county-wildcats/football/",
-            "away_url": "https://www.maxpreps.com/ms/meridian/northeast-lauderdale-trojans/football/"
-          }
-        ]
-      }
-    },
-    {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
-      "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 36acd246-303c-4fb3-993f-733340fd9e5c; review the source facts.",
-      "context": {
-        "secondary_game_id": "36acd246-303c-4fb3-993f-733340fd9e5c",
-        "date": "2026-09-18",
-        "home": "leake-central",
-        "away": "lanier",
-        "home_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/",
-        "away_url": "https://www.maxpreps.com/ms/jackson/lanier-bulldogs/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/lanier-jackson-vs-leake-carthage/9-18-2026/?c=36acd246-303c-4fb3-993f-733340fd9e5c"
-        ],
-        "observed_from_team_ids": [
-          "lanier",
-          "leake-central"
-        ],
-        "status": "COMPLETED",
-        "home_score": 35,
-        "away_score": 16,
-        "reports": [
-          {
-            "game_id": "36acd246-303c-4fb3-993f-733340fd9e5c",
-            "date": "2026-09-18T19:00:00-05:00",
-            "home_name": "Leake High School",
-            "away_name": "Lanier High School",
-            "home_score": 35,
-            "away_score": 16,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/lanier-jackson-vs-leake-carthage/9-18-2026/?c=36acd246-303c-4fb3-993f-733340fd9e5c",
-            "observed_from_team_id": "lanier",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/",
-            "away_url": "https://www.maxpreps.com/ms/jackson/lanier-bulldogs/football/"
-          },
-          {
-            "game_id": "36acd246-303c-4fb3-993f-733340fd9e5c",
-            "date": "2026-09-18T19:00:00-05:00",
-            "home_name": "Leake High School",
-            "away_name": "Lanier High School",
-            "home_score": 35,
-            "away_score": 16,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/lanier-jackson-vs-leake-carthage/9-18-2026/?c=36acd246-303c-4fb3-993f-733340fd9e5c",
-            "observed_from_team_id": "leake-central",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/local/team/home.aspx?schoolid=80480779-619d-4cd9-9feb-c26005e4201f&season=fall&ssid=2286cd80-c46d-4739-8dd1-92a67ca8daa7",
-            "away_url": "https://www.maxpreps.com/ms/jackson/lanier-bulldogs/football/"
-          }
-        ]
-      }
-    },
-    {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
-      "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 4fd71def-dd18-483c-916a-84dec40562c2; review the source facts.",
-      "context": {
-        "secondary_game_id": "4fd71def-dd18-483c-916a-84dec40562c2",
-        "date": "2026-09-25",
-        "home": "west-lincoln",
-        "away": "enterprise-brookhaven",
-        "home_url": "https://www.maxpreps.com/ms/brookhaven/west-lincoln-bears/football/",
-        "away_url": "https://www.maxpreps.com/ms/brookhaven/enterprise-yellowjackets/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/enterprise-brookhaven-vs-west-lincoln-brookhaven/9-25-2026/?c=4fd71def-dd18-483c-916a-84dec40562c2"
-        ],
-        "observed_from_team_ids": [
-          "enterprise-brookhaven",
-          "west-lincoln"
-        ],
-        "status": "COMPLETED",
-        "home_score": 6,
-        "away_score": 35,
-        "reports": [
-          {
-            "game_id": "4fd71def-dd18-483c-916a-84dec40562c2",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "West Lincoln High School",
-            "away_name": "Enterprise High School",
-            "home_score": 6,
-            "away_score": 35,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/enterprise-brookhaven-vs-west-lincoln-brookhaven/9-25-2026/?c=4fd71def-dd18-483c-916a-84dec40562c2",
-            "observed_from_team_id": "enterprise-brookhaven",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/brookhaven/west-lincoln-bears/football/",
-            "away_url": "https://www.maxpreps.com/ms/brookhaven/enterprise-yellowjackets/football/"
-          },
-          {
-            "game_id": "4fd71def-dd18-483c-916a-84dec40562c2",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "West Lincoln High School",
-            "away_name": "Enterprise High School",
-            "home_score": null,
-            "away_score": null,
-            "status": "UPCOMING",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/enterprise-brookhaven-vs-west-lincoln-brookhaven/9-25-2026/?c=4fd71def-dd18-483c-916a-84dec40562c2",
-            "observed_from_team_id": "west-lincoln",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/brookhaven/west-lincoln-bears/football/",
-            "away_url": "https://www.maxpreps.com/ms/brookhaven/enterprise-yellowjackets/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/clarksdale-vs-ripley/10-2-2026/?c=4444ec52-54bd-4469-a7db-93dc78da824e",
+            "observed_from_team_id": "ripley",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/ripley/ripley-tigers/football/",
+            "away_url": "https://www.maxpreps.com/ms/clarksdale/clarksdale-wildcats/football/"
           }
         ]
       }
@@ -712,61 +843,6 @@
       }
     },
     {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
-      "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 5dd7fc37-afe4-4b4c-9dab-b511e0b763a3; review the source facts.",
-      "context": {
-        "secondary_game_id": "5dd7fc37-afe4-4b4c-9dab-b511e0b763a3",
-        "date": "2026-09-25",
-        "home": "tupelo-christian-prep",
-        "away": "ashland",
-        "home_url": "https://www.maxpreps.com/ms/belden/tupelo-christian-prep-eagles/football/",
-        "away_url": "https://www.maxpreps.com/ms/ashland/ashland-blue-devils/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/ashland-vs-tupelo-christian-prep-belden/9-25-2026/?c=5dd7fc37-afe4-4b4c-9dab-b511e0b763a3"
-        ],
-        "observed_from_team_ids": [
-          "ashland",
-          "tupelo-christian-prep"
-        ],
-        "status": "COMPLETED",
-        "home_score": 57,
-        "away_score": 0,
-        "reports": [
-          {
-            "game_id": "5dd7fc37-afe4-4b4c-9dab-b511e0b763a3",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Tupelo Christian Prep",
-            "away_name": "Ashland High School",
-            "home_score": 57,
-            "away_score": 0,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/ashland-vs-tupelo-christian-prep-belden/9-25-2026/?c=5dd7fc37-afe4-4b4c-9dab-b511e0b763a3",
-            "observed_from_team_id": "ashland",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/belden/tupelo-christian-prep-eagles/football/",
-            "away_url": "https://www.maxpreps.com/ms/ashland/ashland-blue-devils/football/"
-          },
-          {
-            "game_id": "5dd7fc37-afe4-4b4c-9dab-b511e0b763a3",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Tupelo Christian Prep",
-            "away_name": "Ashland High School",
-            "home_score": null,
-            "away_score": null,
-            "status": "UPCOMING",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/ashland-vs-tupelo-christian-prep-belden/9-25-2026/?c=5dd7fc37-afe4-4b4c-9dab-b511e0b763a3",
-            "observed_from_team_id": "tupelo-christian-prep",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/belden/tupelo-christian-prep-eagles/football/",
-            "away_url": "https://www.maxpreps.com/ms/ashland/ashland-blue-devils/football/"
-          }
-        ]
-      }
-    },
-    {
       "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
       "severity": "WARNING",
       "message": "Imported final 7731822 disagrees with secondary event 61521283-b2ef-455f-a650-44ce5c5f0d27; primary result retained.",
@@ -797,54 +873,54 @@
     {
       "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
       "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 7299581e-6964-4d67-bd25-755db4b9d5d0; review the source facts.",
+      "message": "Secondary schedule reports disagree for event 6169681f-0681-4111-b2d6-b1e430907e71; review the source facts.",
       "context": {
-        "secondary_game_id": "7299581e-6964-4d67-bd25-755db4b9d5d0",
-        "date": "2026-09-25",
-        "home": "south-jones",
-        "away": "enterprise-clarke",
-        "home_url": "https://www.maxpreps.com/ms/ellisville/south-jones-braves/football/",
-        "away_url": "https://www.maxpreps.com/ms/enterprise/enterprise-bulldogs/football/",
+        "secondary_game_id": "6169681f-0681-4111-b2d6-b1e430907e71",
+        "date": "2026-10-02",
+        "home": "kossuth",
+        "away": "booneville",
+        "home_url": "https://www.maxpreps.com/ms/kossuth/kossuth-aggies/football/",
+        "away_url": "https://www.maxpreps.com/ms/booneville/booneville-blue-devils/football/",
         "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/enterprise-vs-south-jones-ellisville/9-25-2026/?c=7299581e-6964-4d67-bd25-755db4b9d5d0"
+          "https://www.maxpreps.com/ms/football/game/booneville-vs-kossuth/10-2-2026/?c=6169681f-0681-4111-b2d6-b1e430907e71"
         ],
         "observed_from_team_ids": [
-          "enterprise-clarke",
-          "south-jones"
+          "booneville",
+          "kossuth"
         ],
         "status": "UPCOMING",
         "home_score": null,
         "away_score": null,
         "reports": [
           {
-            "game_id": "7299581e-6964-4d67-bd25-755db4b9d5d0",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "South Jones High School",
-            "away_name": "Enterprise High School",
+            "game_id": "6169681f-0681-4111-b2d6-b1e430907e71",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Kossuth High School",
+            "away_name": "Booneville High School",
             "home_score": null,
             "away_score": null,
             "status": "UPCOMING",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/enterprise-vs-south-jones-ellisville/9-25-2026/?c=7299581e-6964-4d67-bd25-755db4b9d5d0",
-            "observed_from_team_id": "enterprise-clarke",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/ellisville/south-jones-braves/football/",
-            "away_url": "https://www.maxpreps.com/ms/enterprise/enterprise-bulldogs/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/booneville-vs-kossuth/10-2-2026/?c=6169681f-0681-4111-b2d6-b1e430907e71",
+            "observed_from_team_id": "booneville",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/kossuth/kossuth-aggies/football/",
+            "away_url": "https://www.maxpreps.com/ms/booneville/booneville-blue-devils/football/"
           },
           {
-            "game_id": "7299581e-6964-4d67-bd25-755db4b9d5d0",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "South Jones High School",
-            "away_name": "Enterprise High School",
-            "home_score": 37,
-            "away_score": 20,
+            "game_id": "6169681f-0681-4111-b2d6-b1e430907e71",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Kossuth High School",
+            "away_name": "Booneville High School",
+            "home_score": 22,
+            "away_score": 44,
             "status": "COMPLETED",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/enterprise-vs-south-jones-ellisville/9-25-2026/?c=7299581e-6964-4d67-bd25-755db4b9d5d0",
-            "observed_from_team_id": "south-jones",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/ellisville/south-jones-braves/football/",
-            "away_url": "https://www.maxpreps.com/ms/enterprise/enterprise-bulldogs/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/booneville-vs-kossuth/10-2-2026/?c=6169681f-0681-4111-b2d6-b1e430907e71",
+            "observed_from_team_id": "kossuth",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/kossuth/kossuth-aggies/football/",
+            "away_url": "https://www.maxpreps.com/ms/booneville/booneville-blue-devils/football/"
           }
         ]
       }
@@ -852,56 +928,139 @@
     {
       "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
       "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 75a7d7ed-fe0d-4337-9c71-c2e910f54518; review the source facts.",
+      "message": "Secondary schedule reports disagree for event 6739db5b-bd35-478b-a1d9-7ab950fc194a; review the source facts.",
       "context": {
-        "secondary_game_id": "75a7d7ed-fe0d-4337-9c71-c2e910f54518",
-        "date": "2026-09-25",
-        "home": "wesson",
-        "away": "lawrence-county",
-        "home_url": "https://www.maxpreps.com/ms/wesson/wesson-cobras/football/",
-        "away_url": "https://www.maxpreps.com/ms/monticello/lawrence-county-cougars/football/",
+        "secondary_game_id": "6739db5b-bd35-478b-a1d9-7ab950fc194a",
+        "date": "2026-10-02",
+        "home": "west-tallahatchie",
+        "away": "north-panola",
+        "home_url": "https://www.maxpreps.com/ms/webb/west-tallahatchie-choctaws/football/",
+        "away_url": "https://www.maxpreps.com/ms/sardis/north-panola-fightn-cougars/football/",
         "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/lawrence-county-monticello-vs-wesson/9-25-2026/?c=75a7d7ed-fe0d-4337-9c71-c2e910f54518"
+          "https://www.maxpreps.com/ms/football/game/north-panola-sardis-vs-west-tallahatchie-webb/10-2-2026/?c=6739db5b-bd35-478b-a1d9-7ab950fc194a"
         ],
         "observed_from_team_ids": [
-          "lawrence-county",
-          "wesson"
+          "north-panola",
+          "west-tallahatchie"
         ],
         "status": "COMPLETED",
-        "home_score": 34,
-        "away_score": 0,
+        "home_score": 14,
+        "away_score": 44,
         "reports": [
           {
-            "game_id": "75a7d7ed-fe0d-4337-9c71-c2e910f54518",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Wesson High School",
-            "away_name": "Lawrence County High School",
-            "home_score": 34,
-            "away_score": 0,
+            "game_id": "6739db5b-bd35-478b-a1d9-7ab950fc194a",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "West Tallahatchie High School",
+            "away_name": "North Panola High School",
+            "home_score": 14,
+            "away_score": 44,
             "status": "COMPLETED",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/lawrence-county-monticello-vs-wesson/9-25-2026/?c=75a7d7ed-fe0d-4337-9c71-c2e910f54518",
-            "observed_from_team_id": "lawrence-county",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/wesson/wesson-cobras/football/",
-            "away_url": "https://www.maxpreps.com/ms/monticello/lawrence-county-cougars/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/north-panola-sardis-vs-west-tallahatchie-webb/10-2-2026/?c=6739db5b-bd35-478b-a1d9-7ab950fc194a",
+            "observed_from_team_id": "north-panola",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/webb/west-tallahatchie-choctaws/football/",
+            "away_url": "https://www.maxpreps.com/ms/sardis/north-panola-fightn-cougars/football/"
           },
           {
-            "game_id": "75a7d7ed-fe0d-4337-9c71-c2e910f54518",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Wesson High School",
-            "away_name": "Lawrence County High School",
+            "game_id": "6739db5b-bd35-478b-a1d9-7ab950fc194a",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "West Tallahatchie High School",
+            "away_name": "North Panola High School",
             "home_score": null,
             "away_score": null,
             "status": "UPCOMING",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/lawrence-county-monticello-vs-wesson/9-25-2026/?c=75a7d7ed-fe0d-4337-9c71-c2e910f54518",
-            "observed_from_team_id": "wesson",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/wesson/wesson-cobras/football/",
-            "away_url": "https://www.maxpreps.com/ms/monticello/lawrence-county-cougars/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/north-panola-sardis-vs-west-tallahatchie-webb/10-2-2026/?c=6739db5b-bd35-478b-a1d9-7ab950fc194a",
+            "observed_from_team_id": "west-tallahatchie",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/webb/west-tallahatchie-choctaws/football/",
+            "away_url": "https://www.maxpreps.com/ms/sardis/north-panola-fightn-cougars/football/"
           }
         ]
+      }
+    },
+    {
+      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
+      "severity": "WARNING",
+      "message": "Secondary schedule reports disagree for event 7276f884-2675-4837-835c-cd64e16858d9; review the source facts.",
+      "context": {
+        "secondary_game_id": "7276f884-2675-4837-835c-cd64e16858d9",
+        "date": "2026-10-02",
+        "home": "aberdeen",
+        "away": "winona",
+        "home_url": "https://www.maxpreps.com/ms/aberdeen/aberdeen-bulldogs/football/",
+        "away_url": "https://www.maxpreps.com/ms/winona/winona-tigers/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/aberdeen-vs-winona/10-2-2026/?c=7276f884-2675-4837-835c-cd64e16858d9"
+        ],
+        "observed_from_team_ids": [
+          "aberdeen",
+          "winona"
+        ],
+        "status": "COMPLETED",
+        "home_score": 12,
+        "away_score": 56,
+        "reports": [
+          {
+            "game_id": "7276f884-2675-4837-835c-cd64e16858d9",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Aberdeen High School",
+            "away_name": "Winona High School",
+            "home_score": 12,
+            "away_score": 56,
+            "status": "COMPLETED",
+            "forfeit": false,
+            "source_url": "https://www.maxpreps.com/ms/football/game/aberdeen-vs-winona/10-2-2026/?c=7276f884-2675-4837-835c-cd64e16858d9",
+            "observed_from_team_id": "aberdeen",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/aberdeen/aberdeen-bulldogs/football/",
+            "away_url": "https://www.maxpreps.com/ms/winona/winona-tigers/football/"
+          },
+          {
+            "game_id": "7276f884-2675-4837-835c-cd64e16858d9",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Aberdeen High School",
+            "away_name": "Winona High School",
+            "home_score": null,
+            "away_score": null,
+            "status": "UPCOMING",
+            "forfeit": false,
+            "source_url": "https://www.maxpreps.com/ms/football/game/aberdeen-vs-winona/10-2-2026/?c=7276f884-2675-4837-835c-cd64e16858d9",
+            "observed_from_team_id": "winona",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/aberdeen/aberdeen-bulldogs/football/",
+            "away_url": "https://www.maxpreps.com/ms/winona/winona-tigers/football/"
+          }
+        ]
+      }
+    },
+    {
+      "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
+      "severity": "WARNING",
+      "message": "Imported final 7731854 disagrees with secondary event 7a287689-ee8d-4c9c-bbcd-ab1560796cbb; primary result retained.",
+      "context": {
+        "secondary_game_id": "7a287689-ee8d-4c9c-bbcd-ab1560796cbb",
+        "date": "2026-09-18",
+        "home": "caledonia",
+        "away": "new-albany",
+        "home_url": "https://www.maxpreps.com/ms/caledonia/caledonia-cavaliers/football/",
+        "away_url": "https://www.maxpreps.com/ms/new-albany/new-albany-bulldogs/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/caledonia-vs-new-albany/9-18-2026/?c=7a287689-ee8d-4c9c-bbcd-ab1560796cbb"
+        ],
+        "observed_from_team_ids": [
+          "caledonia",
+          "new-albany"
+        ],
+        "status": "COMPLETED",
+        "home_score": 28,
+        "away_score": 35,
+        "primary_game_id": "7731854",
+        "primary_scores": {
+          "caledonia": 14,
+          "new-albany": 21
+        }
       }
     },
     {
@@ -989,80 +1148,59 @@
       }
     },
     {
-      "code": "SECONDARY_OPPONENT_UNRESOLVED",
+      "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
       "severity": "WARNING",
-      "message": "A secondary listing for wilkinson-county has no primary listing and no verified opponent identity.",
+      "message": "Imported final 7614898 disagrees with secondary event 8bb49849-9f50-454f-93b5-32c775257b88; primary result retained.",
       "context": {
-        "secondary_game_id": "89be26bd-c92a-417b-bf64-4037cea68038",
-        "date": "2026-09-11",
-        "home": "wilkinson-county",
-        "away": "Helix Mentorship & Maritime Academy",
-        "home_url": "https://www.maxpreps.com/ms/woodville/wilkinson-county-wildcats/football/",
-        "away_url": "https://www.maxpreps.com/la/baton-rouge/helix-mentorship-and-maritime-academy-sharks/football/",
+        "secondary_game_id": "8bb49849-9f50-454f-93b5-32c775257b88",
+        "date": "2026-09-25",
+        "home": "richland",
+        "away": "pisgah",
+        "home_url": "https://www.maxpreps.com/ms/richland/richland-rangers/football/",
+        "away_url": "https://www.maxpreps.com/ms/sandhill/pisgah-dragons/football/",
         "source_urls": [
-          "https://www.maxpreps.com/inter-state/football/game/helix-mentorship-and-maritime-academy-baton-rouge-la-vs-wilkinson-county-woodville-ms/9-11-2026/?c=89be26bd-c92a-417b-bf64-4037cea68038"
+          "https://www.maxpreps.com/ms/football/game/pisgah-sandhill-vs-richland/9-25-2026/?c=8bb49849-9f50-454f-93b5-32c775257b88"
         ],
         "observed_from_team_ids": [
-          "wilkinson-county"
+          "pisgah",
+          "richland"
         ],
         "status": "COMPLETED",
-        "home_score": 64,
-        "away_score": 0
+        "home_score": 41,
+        "away_score": 17,
+        "primary_game_id": "7614898",
+        "primary_scores": {
+          "richland": 41,
+          "pisgah": 19
+        }
       }
     },
     {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
+      "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
       "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 92d9a39f-80a4-4cdf-a4bb-fc634ac2f68e; review the source facts.",
+      "message": "Imported final 7586968 disagrees with secondary event 985a51a2-8db8-4669-8cd4-52eb19feed09; primary result retained.",
       "context": {
-        "secondary_game_id": "92d9a39f-80a4-4cdf-a4bb-fc634ac2f68e",
-        "date": "2026-09-25",
-        "home": "gautier",
-        "away": "greene-county",
-        "home_url": "https://www.maxpreps.com/ms/gautier/gautier-gators/football/",
-        "away_url": "https://www.maxpreps.com/ms/leakesville/greene-county-wildcats/football/",
+        "secondary_game_id": "985a51a2-8db8-4669-8cd4-52eb19feed09",
+        "date": "2026-10-02",
+        "home": "murrah",
+        "away": "lanier",
+        "home_url": "https://www.maxpreps.com/ms/jackson/murrah-mustangs/football/",
+        "away_url": "https://www.maxpreps.com/ms/jackson/lanier-bulldogs/football/",
         "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/gautier-vs-greene-county-leakesville/9-25-2026/?c=92d9a39f-80a4-4cdf-a4bb-fc634ac2f68e"
+          "https://www.maxpreps.com/ms/football/game/lanier-jackson-vs-murrah-jackson/10-2-2026/?c=985a51a2-8db8-4669-8cd4-52eb19feed09"
         ],
         "observed_from_team_ids": [
-          "gautier",
-          "greene-county"
+          "lanier",
+          "murrah"
         ],
-        "status": "UPCOMING",
-        "home_score": null,
-        "away_score": null,
-        "reports": [
-          {
-            "game_id": "92d9a39f-80a4-4cdf-a4bb-fc634ac2f68e",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Gautier High School",
-            "away_name": "Greene County High School",
-            "home_score": null,
-            "away_score": null,
-            "status": "UPCOMING",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/gautier-vs-greene-county-leakesville/9-25-2026/?c=92d9a39f-80a4-4cdf-a4bb-fc634ac2f68e",
-            "observed_from_team_id": "gautier",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/gautier/gautier-gators/football/",
-            "away_url": "https://www.maxpreps.com/ms/leakesville/greene-county-wildcats/football/"
-          },
-          {
-            "game_id": "92d9a39f-80a4-4cdf-a4bb-fc634ac2f68e",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Gautier High School",
-            "away_name": "Greene County High School",
-            "home_score": 56,
-            "away_score": 27,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/gautier-vs-greene-county-leakesville/9-25-2026/?c=92d9a39f-80a4-4cdf-a4bb-fc634ac2f68e",
-            "observed_from_team_id": "greene-county",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/gautier/gautier-gators/football/",
-            "away_url": "https://www.maxpreps.com/ms/leakesville/greene-county-wildcats/football/"
-          }
-        ]
+        "status": "COMPLETED",
+        "home_score": 12,
+        "away_score": 24,
+        "primary_game_id": "7586968",
+        "primary_scores": {
+          "murrah": 21,
+          "lanier": 47
+        }
       }
     },
     {
@@ -1096,6 +1234,144 @@
     {
       "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
       "severity": "WARNING",
+      "message": "Imported final 7731906 disagrees with secondary event a11dfea2-dcf2-4c7f-aa29-ae969a411e5a; primary result retained.",
+      "context": {
+        "secondary_game_id": "a11dfea2-dcf2-4c7f-aa29-ae969a411e5a",
+        "date": "2026-10-02",
+        "home": "riverside",
+        "away": "west-bolivar",
+        "home_url": "https://www.maxpreps.com/ms/avon/riverside-bulldogs/football/",
+        "away_url": "https://www.maxpreps.com/ms/rosedale/west-bolivar-eagles/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/riverside-avon-vs-west-bolivar-rosedale/10-2-2026/?c=a11dfea2-dcf2-4c7f-aa29-ae969a411e5a"
+        ],
+        "observed_from_team_ids": [
+          "riverside",
+          "west-bolivar"
+        ],
+        "status": "COMPLETED",
+        "home_score": 14,
+        "away_score": 36,
+        "primary_game_id": "7731906",
+        "primary_scores": {
+          "riverside": 14,
+          "west-bolivar": 38
+        }
+      }
+    },
+    {
+      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
+      "severity": "WARNING",
+      "message": "Secondary schedule reports disagree for event a22c1fcc-f96d-4d36-af33-831741a33b2f; review the source facts.",
+      "context": {
+        "secondary_game_id": "a22c1fcc-f96d-4d36-af33-831741a33b2f",
+        "date": "2026-10-02",
+        "home": "north-forrest",
+        "away": "collins",
+        "home_url": "https://www.maxpreps.com/ms/hattiesburg/north-forrest-eagles/football/",
+        "away_url": "https://www.maxpreps.com/ms/collins/collins-tigers/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/collins-vs-north-forrest-hattiesburg/10-2-2026/?c=a22c1fcc-f96d-4d36-af33-831741a33b2f"
+        ],
+        "observed_from_team_ids": [
+          "collins",
+          "north-forrest"
+        ],
+        "status": "UPCOMING",
+        "home_score": null,
+        "away_score": null,
+        "reports": [
+          {
+            "game_id": "a22c1fcc-f96d-4d36-af33-831741a33b2f",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "North Forrest High School",
+            "away_name": "Collins High School",
+            "home_score": null,
+            "away_score": null,
+            "status": "UPCOMING",
+            "forfeit": false,
+            "source_url": "https://www.maxpreps.com/ms/football/game/collins-vs-north-forrest-hattiesburg/10-2-2026/?c=a22c1fcc-f96d-4d36-af33-831741a33b2f",
+            "observed_from_team_id": "collins",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/hattiesburg/north-forrest-eagles/football/",
+            "away_url": "https://www.maxpreps.com/ms/collins/collins-tigers/football/"
+          },
+          {
+            "game_id": "a22c1fcc-f96d-4d36-af33-831741a33b2f",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "North Forrest High School",
+            "away_name": "Collins High School",
+            "home_score": 30,
+            "away_score": 28,
+            "status": "COMPLETED",
+            "forfeit": false,
+            "source_url": "https://www.maxpreps.com/ms/football/game/collins-vs-north-forrest-hattiesburg/10-2-2026/?c=a22c1fcc-f96d-4d36-af33-831741a33b2f",
+            "observed_from_team_id": "north-forrest",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/hattiesburg/north-forrest-eagles/football/",
+            "away_url": "https://www.maxpreps.com/ms/collins/collins-tigers/football/"
+          }
+        ]
+      }
+    },
+    {
+      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
+      "severity": "WARNING",
+      "message": "Secondary schedule reports disagree for event a83920f5-bd29-4617-9257-8a55db723b5c; review the source facts.",
+      "context": {
+        "secondary_game_id": "a83920f5-bd29-4617-9257-8a55db723b5c",
+        "date": "2026-10-01",
+        "home": "west-marion",
+        "away": "tylertown",
+        "home_url": "https://www.maxpreps.com/ms/foxworth/west-marion-trojans/football/",
+        "away_url": "https://www.maxpreps.com/ms/tylertown/tylertown-chiefs/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/tylertown-vs-west-marion-foxworth/10-1-2026/?c=a83920f5-bd29-4617-9257-8a55db723b5c"
+        ],
+        "observed_from_team_ids": [
+          "tylertown",
+          "west-marion"
+        ],
+        "status": "COMPLETED",
+        "home_score": 22,
+        "away_score": 30,
+        "reports": [
+          {
+            "game_id": "a83920f5-bd29-4617-9257-8a55db723b5c",
+            "date": "2026-10-01T19:00:00-05:00",
+            "home_name": "West Marion High School",
+            "away_name": "Tylertown High School",
+            "home_score": 22,
+            "away_score": 30,
+            "status": "COMPLETED",
+            "forfeit": false,
+            "source_url": "https://www.maxpreps.com/ms/football/game/tylertown-vs-west-marion-foxworth/10-1-2026/?c=a83920f5-bd29-4617-9257-8a55db723b5c",
+            "observed_from_team_id": "tylertown",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/foxworth/west-marion-trojans/football/",
+            "away_url": "https://www.maxpreps.com/ms/tylertown/tylertown-chiefs/football/"
+          },
+          {
+            "game_id": "a83920f5-bd29-4617-9257-8a55db723b5c",
+            "date": "2026-10-01T19:00:00-05:00",
+            "home_name": "West Marion High School",
+            "away_name": "Tylertown High School",
+            "home_score": null,
+            "away_score": null,
+            "status": "UPCOMING",
+            "forfeit": false,
+            "source_url": "https://www.maxpreps.com/ms/football/game/tylertown-vs-west-marion-foxworth/10-1-2026/?c=a83920f5-bd29-4617-9257-8a55db723b5c",
+            "observed_from_team_id": "west-marion",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/foxworth/west-marion-trojans/football/",
+            "away_url": "https://www.maxpreps.com/ms/tylertown/tylertown-chiefs/football/"
+          }
+        ]
+      }
+    },
+    {
+      "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
+      "severity": "WARNING",
       "message": "Imported final 7586999 disagrees with secondary event ab3dee44-d03f-4a4c-95e2-386803a37807; primary result retained.",
       "context": {
         "secondary_game_id": "ab3dee44-d03f-4a4c-95e2-386803a37807",
@@ -1119,61 +1395,6 @@
           "hattiesburg": 34,
           "petal": 35
         }
-      }
-    },
-    {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
-      "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event b2757023-30c7-4606-a4c6-61543ee36012; review the source facts.",
-      "context": {
-        "secondary_game_id": "b2757023-30c7-4606-a4c6-61543ee36012",
-        "date": "2026-09-11",
-        "home": "holmes-county-central",
-        "away": "leake-central",
-        "home_url": "https://www.maxpreps.com/ms/lexington/holmes-county-central-jaguars/football/",
-        "away_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/holmes-county-central-lexington-vs-leake-carthage/9-11-2026/?c=b2757023-30c7-4606-a4c6-61543ee36012"
-        ],
-        "observed_from_team_ids": [
-          "holmes-county-central",
-          "leake-central"
-        ],
-        "status": "COMPLETED",
-        "home_score": 26,
-        "away_score": 59,
-        "reports": [
-          {
-            "game_id": "b2757023-30c7-4606-a4c6-61543ee36012",
-            "date": "2026-09-11T19:00:00-05:00",
-            "home_name": "Holmes County Central High School",
-            "away_name": "Leake High School",
-            "home_score": 26,
-            "away_score": 59,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/holmes-county-central-lexington-vs-leake-carthage/9-11-2026/?c=b2757023-30c7-4606-a4c6-61543ee36012",
-            "observed_from_team_id": "holmes-county-central",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/lexington/holmes-county-central-jaguars/football/",
-            "away_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/"
-          },
-          {
-            "game_id": "b2757023-30c7-4606-a4c6-61543ee36012",
-            "date": "2026-09-11T19:00:00-05:00",
-            "home_name": "Holmes County Central High School",
-            "away_name": "Leake High School",
-            "home_score": 26,
-            "away_score": 59,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/holmes-county-central-lexington-vs-leake-carthage/9-11-2026/?c=b2757023-30c7-4606-a4c6-61543ee36012",
-            "observed_from_team_id": "leake-central",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/lexington/holmes-county-central-jaguars/football/",
-            "away_url": "https://www.maxpreps.com/local/team/home.aspx?schoolid=80480779-619d-4cd9-9feb-c26005e4201f&season=fall&ssid=2286cd80-c46d-4739-8dd1-92a67ca8daa7"
-          }
-        ]
       }
     },
     {
@@ -1235,109 +1456,54 @@
     {
       "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
       "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event c677fabd-07aa-4b48-9854-588912eac813; review the source facts.",
+      "message": "Secondary schedule reports disagree for event bda3f886-b3f1-4194-ae82-16a42db1b100; review the source facts.",
       "context": {
-        "secondary_game_id": "c677fabd-07aa-4b48-9854-588912eac813",
-        "date": "2026-09-25",
-        "home": "east-central",
-        "away": "pass-christian",
-        "home_url": "https://www.maxpreps.com/ms/moss-point/east-central-hornets/football/",
-        "away_url": "https://www.maxpreps.com/ms/pass-christian/pass-christian-pirates/football/",
+        "secondary_game_id": "bda3f886-b3f1-4194-ae82-16a42db1b100",
+        "date": "2026-10-02",
+        "home": "cleveland-central",
+        "away": "leake-central",
+        "home_url": "https://www.maxpreps.com/ms/cleveland/cleveland-central-wolves/football/",
+        "away_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/",
         "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/east-central-moss-point-vs-pass-christian/9-25-2026/?c=c677fabd-07aa-4b48-9854-588912eac813"
+          "https://www.maxpreps.com/ms/football/game/cleveland-central-vs-leake-carthage/10-2-2026/?c=bda3f886-b3f1-4194-ae82-16a42db1b100"
         ],
         "observed_from_team_ids": [
-          "east-central",
-          "pass-christian"
-        ],
-        "status": "UPCOMING",
-        "home_score": null,
-        "away_score": null,
-        "reports": [
-          {
-            "game_id": "c677fabd-07aa-4b48-9854-588912eac813",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "East Central High School",
-            "away_name": "Pass Christian High School",
-            "home_score": null,
-            "away_score": null,
-            "status": "UPCOMING",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/east-central-moss-point-vs-pass-christian/9-25-2026/?c=c677fabd-07aa-4b48-9854-588912eac813",
-            "observed_from_team_id": "east-central",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/moss-point/east-central-hornets/football/",
-            "away_url": "https://www.maxpreps.com/ms/pass-christian/pass-christian-pirates/football/"
-          },
-          {
-            "game_id": "c677fabd-07aa-4b48-9854-588912eac813",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "East Central High School",
-            "away_name": "Pass Christian High School",
-            "home_score": 28,
-            "away_score": 42,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/east-central-moss-point-vs-pass-christian/9-25-2026/?c=c677fabd-07aa-4b48-9854-588912eac813",
-            "observed_from_team_id": "pass-christian",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/moss-point/east-central-hornets/football/",
-            "away_url": "https://www.maxpreps.com/ms/pass-christian/pass-christian-pirates/football/"
-          }
-        ]
-      }
-    },
-    {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
-      "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event cf09d84c-2524-4002-91b1-13041bd86003; review the source facts.",
-      "context": {
-        "secondary_game_id": "cf09d84c-2524-4002-91b1-13041bd86003",
-        "date": "2026-09-25",
-        "home": "caledonia",
-        "away": "east-webster",
-        "home_url": "https://www.maxpreps.com/ms/caledonia/caledonia-cavaliers/football/",
-        "away_url": "https://www.maxpreps.com/ms/maben/east-webster-wolverines/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/caledonia-vs-east-webster-maben/9-25-2026/?c=cf09d84c-2524-4002-91b1-13041bd86003"
-        ],
-        "observed_from_team_ids": [
-          "caledonia",
-          "east-webster"
+          "cleveland-central",
+          "leake-central"
         ],
         "status": "COMPLETED",
-        "home_score": 24,
-        "away_score": 27,
+        "home_score": 56,
+        "away_score": 41,
         "reports": [
           {
-            "game_id": "cf09d84c-2524-4002-91b1-13041bd86003",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Caledonia High School",
-            "away_name": "East Webster High School",
-            "home_score": 24,
-            "away_score": 27,
+            "game_id": "bda3f886-b3f1-4194-ae82-16a42db1b100",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Cleveland Central High School",
+            "away_name": "Leake High School",
+            "home_score": 56,
+            "away_score": 41,
             "status": "COMPLETED",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/caledonia-vs-east-webster-maben/9-25-2026/?c=cf09d84c-2524-4002-91b1-13041bd86003",
-            "observed_from_team_id": "caledonia",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/caledonia/caledonia-cavaliers/football/",
-            "away_url": "https://www.maxpreps.com/ms/maben/east-webster-wolverines/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/cleveland-central-vs-leake-carthage/10-2-2026/?c=bda3f886-b3f1-4194-ae82-16a42db1b100",
+            "observed_from_team_id": "cleveland-central",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/cleveland/cleveland-central-wolves/football/",
+            "away_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/"
           },
           {
-            "game_id": "cf09d84c-2524-4002-91b1-13041bd86003",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Caledonia High School",
-            "away_name": "East Webster High School",
+            "game_id": "bda3f886-b3f1-4194-ae82-16a42db1b100",
+            "date": "2026-10-02T19:00:00-05:00",
+            "home_name": "Cleveland Central High School",
+            "away_name": "Leake High School",
             "home_score": null,
             "away_score": null,
             "status": "UPCOMING",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/caledonia-vs-east-webster-maben/9-25-2026/?c=cf09d84c-2524-4002-91b1-13041bd86003",
-            "observed_from_team_id": "east-webster",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/caledonia/caledonia-cavaliers/football/",
-            "away_url": "https://www.maxpreps.com/ms/maben/east-webster-wolverines/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/cleveland-central-vs-leake-carthage/10-2-2026/?c=bda3f886-b3f1-4194-ae82-16a42db1b100",
+            "observed_from_team_id": "leake-central",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/cleveland/cleveland-central-wolves/football/",
+            "away_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/"
           }
         ]
       }
@@ -1345,54 +1511,54 @@
     {
       "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
       "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event d843dc38-e122-4757-85e1-a417bddf7d1f; review the source facts.",
+      "message": "Secondary schedule reports disagree for event d8960733-ed22-4981-bc91-db4b1e444997; review the source facts.",
       "context": {
-        "secondary_game_id": "d843dc38-e122-4757-85e1-a417bddf7d1f",
-        "date": "2026-09-25",
-        "home": "clarksdale",
-        "away": "gentry",
-        "home_url": "https://www.maxpreps.com/ms/clarksdale/clarksdale-wildcats/football/",
-        "away_url": "https://www.maxpreps.com/ms/indianola/gentry-rams/football/",
+        "secondary_game_id": "d8960733-ed22-4981-bc91-db4b1e444997",
+        "date": "2026-10-01",
+        "home": "heidelberg",
+        "away": "enterprise-clarke",
+        "home_url": "https://www.maxpreps.com/ms/heidelberg/heidelberg-oilers/football/",
+        "away_url": "https://www.maxpreps.com/ms/enterprise/enterprise-bulldogs/football/",
         "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/clarksdale-vs-gentry-indianola/9-25-2026/?c=d843dc38-e122-4757-85e1-a417bddf7d1f"
+          "https://www.maxpreps.com/ms/football/game/enterprise-vs-heidelberg/10-1-2026/?c=d8960733-ed22-4981-bc91-db4b1e444997"
         ],
         "observed_from_team_ids": [
-          "clarksdale",
-          "gentry"
+          "enterprise-clarke",
+          "heidelberg"
         ],
         "status": "UPCOMING",
         "home_score": null,
         "away_score": null,
         "reports": [
           {
-            "game_id": "d843dc38-e122-4757-85e1-a417bddf7d1f",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Clarksdale High School",
-            "away_name": "Gentry High School",
+            "game_id": "d8960733-ed22-4981-bc91-db4b1e444997",
+            "date": "2026-10-01T19:00:00-05:00",
+            "home_name": "Heidelberg High School",
+            "away_name": "Enterprise High School",
             "home_score": null,
             "away_score": null,
             "status": "UPCOMING",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/clarksdale-vs-gentry-indianola/9-25-2026/?c=d843dc38-e122-4757-85e1-a417bddf7d1f",
-            "observed_from_team_id": "clarksdale",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/clarksdale/clarksdale-wildcats/football/",
-            "away_url": "https://www.maxpreps.com/ms/indianola/gentry-rams/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/enterprise-vs-heidelberg/10-1-2026/?c=d8960733-ed22-4981-bc91-db4b1e444997",
+            "observed_from_team_id": "enterprise-clarke",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/heidelberg/heidelberg-oilers/football/",
+            "away_url": "https://www.maxpreps.com/ms/enterprise/enterprise-bulldogs/football/"
           },
           {
-            "game_id": "d843dc38-e122-4757-85e1-a417bddf7d1f",
-            "date": "2026-09-25T19:00:00-05:00",
-            "home_name": "Clarksdale High School",
-            "away_name": "Gentry High School",
-            "home_score": 27,
+            "game_id": "d8960733-ed22-4981-bc91-db4b1e444997",
+            "date": "2026-10-01T19:00:00-05:00",
+            "home_name": "Heidelberg High School",
+            "away_name": "Enterprise High School",
+            "home_score": 44,
             "away_score": 0,
             "status": "COMPLETED",
             "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/clarksdale-vs-gentry-indianola/9-25-2026/?c=d843dc38-e122-4757-85e1-a417bddf7d1f",
-            "observed_from_team_id": "gentry",
-            "retrieved_at": "2026-09-30T13:22:40.326805+00:00",
-            "home_url": "https://www.maxpreps.com/ms/clarksdale/clarksdale-wildcats/football/",
-            "away_url": "https://www.maxpreps.com/ms/indianola/gentry-rams/football/"
+            "source_url": "https://www.maxpreps.com/ms/football/game/enterprise-vs-heidelberg/10-1-2026/?c=d8960733-ed22-4981-bc91-db4b1e444997",
+            "observed_from_team_id": "heidelberg",
+            "retrieved_at": "2026-10-06T16:22:18.873300+00:00",
+            "home_url": "https://www.maxpreps.com/ms/heidelberg/heidelberg-oilers/football/",
+            "away_url": "https://www.maxpreps.com/ms/enterprise/enterprise-bulldogs/football/"
           }
         ]
       }
@@ -1428,7 +1594,7 @@
     {
       "code": "UNVERIFIED_GAMES_REMAIN",
       "severity": "WARNING",
-      "message": "Published coverage is 98.1%, with 11 unresolved game listings retained.",
+      "message": "Published coverage is 98.2%, with 12 unresolved game listings retained.",
       "context": {
         "missing_game_ids": [
           "7731608",
@@ -1441,7 +1607,8 @@
           "7614853",
           "7614888",
           "7614890",
-          "7731800"
+          "7731800",
+          "7731957"
         ]
       }
     }
