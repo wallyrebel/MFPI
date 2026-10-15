@@ -603,7 +603,18 @@ def validate_article(article: dict[str, Any], known_team_ids: set[str] | None = 
             published = datetime.fromisoformat(article["published_at"])
             if published > now:
                 problems.append("publication date is in the future")
-            if published < datetime.fromisoformat(article["snapshot_generated_at"]):
+            data_publication = published
+            # Automated corrections retain the original publication date.
+            # Their validated update time must be after the corrected source
+            # snapshot; it must never be future-dated or precede publication.
+            if mode == "automated" and article.get("updated_at"):
+                updated = datetime.fromisoformat(article["updated_at"])
+                if updated > now:
+                    problems.append("update date is in the future")
+                if updated < published:
+                    problems.append("update date precedes publication")
+                data_publication = updated
+            if data_publication < datetime.fromisoformat(article["snapshot_generated_at"]):
                 problems.append("publication date precedes the data it describes (backdated)")
     elif article.get("reviewed_by") or article.get("published_at"):
         problems.append("a draft must not carry reviewer or publication fields")

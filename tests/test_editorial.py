@@ -110,11 +110,19 @@ def test_automated_publication_is_labelled_and_idempotent(tmp_path) -> None:
     # Same snapshot again: nothing changes.
     assert editorial.auto_publish(dict(articles[0]), tmp_path, now=first + timedelta(days=1))[1] == "unchanged"
     # A corrected snapshot refreshes the article but keeps its publication date.
-    corrected = dict(articles[0], snapshot_run_id="2026-week-04-correction")
+    corrected = dict(articles[0], snapshot_run_id="2026-week-04-correction",
+                     snapshot_generated_at=(first + timedelta(hours=12)).isoformat())
     path, outcome = editorial.auto_publish(corrected, tmp_path, now=first + timedelta(days=1))
     stored = json.loads(path.read_text())
     assert outcome.startswith("updated") and stored["published_at"] == first.astimezone(editorial.CENTRAL).isoformat(timespec="seconds")
     assert stored["updated_at"]
+    assert editorial.validate_article(stored, now=first + timedelta(days=1)) == []
+    future = dict(stored, updated_at=(first + timedelta(days=2)).isoformat())
+    assert "update date is in the future" in editorial.validate_article(future, now=first + timedelta(days=1))
+    early = dict(stored, updated_at=(first - timedelta(hours=1)).isoformat())
+    assert "update date precedes publication" in editorial.validate_article(early, now=first + timedelta(days=1))
+    backdated = dict(stored, updated_at=(first + timedelta(hours=1)).isoformat())
+    assert any("backdated" in problem for problem in editorial.validate_article(backdated, now=first + timedelta(days=1)))
 
 
 def test_automation_never_replaces_a_human_reviewed_article(tmp_path) -> None:
