@@ -2,14 +2,14 @@
   "slug": "2026-rankings-performance-review-weeks-1-6",
   "kind": "performance-review",
   "title": "How MFPI's pregame rankings fared: Weeks 1-6 rankings against the games that followed",
-  "dek": "The higher-rated team won 451 of 599 games between ranked MHSAA teams (75.3%), using only the rankings published before kickoff.",
+  "dek": "The higher-rated team won 450 of 596 games between ranked MHSAA teams (75.5%), using only the rankings published before kickoff.",
   "status": "published",
   "season": 2026,
   "week": 7,
-  "snapshot_run_id": "2026-week-07-20261015T001435982623Z",
-  "snapshot_generated_at": "2026-10-15T00:14:35.982623+00:00",
+  "snapshot_run_id": "2026-week-07-20261015T002316548268Z",
+  "snapshot_generated_at": "2026-10-15T00:23:16.548268+00:00",
   "formula_version": "MFPI-3.2",
-  "draft_generated_at": "2026-10-15T00:15:32.727835+00:00",
+  "draft_generated_at": "2026-10-15T00:25:03.956048+00:00",
   "author": "MFPI automated analysis",
   "reviewed_by": null,
   "reviewed_at": null,
@@ -53,7 +53,7 @@
     {
       "heading": "Results by ranking week",
       "paragraphs": [
-        "Across these windows the favorite won 451 of 599 (75.3%). The Week 1 ranking was built from about one game per team plus the fading classification prior; the table shows each week's rate as published."
+        "Across these windows the favorite won 450 of 596 (75.5%). The Week 1 ranking was built from about one game per team plus the fading classification prior; the table shows each week's rate as published."
       ],
       "table": {
         "columns": [
@@ -126,9 +126,9 @@
           [
             "Week 6 (MFPI-3.2, published Oct 6 11:22 AM CT)",
             "Oct 7-Oct 13",
-            "97",
-            "75",
-            "77.3%",
+            "94",
+            "74",
+            "78.7%",
             "7",
             "0",
             "0",
@@ -158,15 +158,15 @@
           ],
           [
             "5 to 15",
-            "183",
+            "182",
             "120",
-            "65.6%"
+            "65.9%"
           ],
           [
             "15 or more",
-            "292",
-            "261",
-            "89.4%"
+            "290",
+            "260",
+            "89.7%"
           ]
         ]
       }
@@ -176,23 +176,23 @@
       "paragraphs": [
         "[[callaway]] beat [[terry]] 7-6 on Sep 18, overcoming a 47.1-point gap in the Week 3 ranking.",
         "[[kossuth]] beat [[tishomingo-county]] 31-13 on Sep 11, overcoming a 45.2-point gap in the Week 2 ranking.",
-        "[[north-pontotoc]] beat [[corinth]] 85-0 on Oct 8, overcoming a 42.7-point gap in the Week 6 ranking.",
         "[[long-beach]] beat [[gautier]] 16-14 on Oct 8, overcoming a 38.1-point gap in the Week 6 ranking.",
-        "[[amanda-elzy]] beat [[north-pontotoc]] 20-14 on Sep 18, overcoming a 36.9-point gap in the Week 3 ranking."
+        "[[amanda-elzy]] beat [[north-pontotoc]] 20-14 on Sep 18, overcoming a 36.9-point gap in the Week 3 ranking.",
+        "[[saltillo]] beat [[olive-branch]] 26-21 on Oct 9, overcoming a 35.3-point gap in the Week 6 ranking."
       ]
     },
     {
       "heading": "Data notes and limitations",
       "paragraphs": [
-        "Snapshot generated October 14, 2026 at 7:14 PM Central with a cutoff of October 13 at 11:00 AM Central, formula MFPI-3.2.",
-        "767 of 784 game listings due by the cutoff had verified scores (97.8%); the rest count as unavailable, never as losses or 0-0 results.",
+        "Snapshot generated October 14, 2026 at 7:23 PM Central with a cutoff of October 13 at 11:00 AM Central, formula MFPI-3.2.",
+        "764 of 783 game listings due by the cutoff had verified scores (97.6%); the rest count as unavailable, never as losses or 0-0 results.",
         "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise.",
         "Formula versions differed across these weeks (MFPI-3.0 to MFPI-3.2); each ranking is evaluated as it was published.",
-        "Samples are small (599 games); a few results can move these percentages several points."
+        "Samples are small (596 games); a few results can move these percentages several points."
       ]
     }
   ],
   "publication_mode": "automated",
   "approved_by": "Jon Ross Myers",
-  "updated_at": null
+  "updated_at": "2026-10-14T19:25:03-05:00"
 }

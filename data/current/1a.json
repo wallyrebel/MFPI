@@ -2,16 +2,16 @@
   "metadata": {
     "season": 2026,
     "week": 7,
-    "generated_at": "2026-10-15T00:14:35.982623+00:00",
+    "generated_at": "2026-10-15T00:23:16.548268+00:00",
     "cutoff_at": "2026-10-13T11:00:00-05:00",
     "formula_version": "MFPI-3.2",
     "status": "PROVISIONAL",
-    "run_id": "2026-week-07-20261015T001435982623Z",
+    "run_id": "2026-week-07-20261015T002316548268Z",
     "data_sources": [
       {
         "name": "MHSAA official score center",
         "url": "https://scores.misshsaa.com/",
-        "retrieved_at": "2026-10-15T00:14:38.145980+00:00"
+        "retrieved_at": "2026-10-15T00:23:19.472339+00:00"
       },
       {
         "name": "MHSAA 2025-27 football classifications",
@@ -20,14 +20,14 @@
       {
         "name": "Media Rank and Strength of Schedule",
         "url": "https://www.maxpreps.com/ms/football/rankings/1/",
-        "retrieved_at": "2026-10-15T00:14:35.983729+00:00",
+        "retrieved_at": "2026-10-15T00:23:16.549710+00:00",
         "source_updated_at": "10/11/2026",
         "cached_fallback": false
       },
       {
         "name": "Secondary score verification",
         "url": "https://www.maxpreps.com/ms/football/scores/",
-        "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+        "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
         "team_schedule_pages_checked": 225,
         "secondary_results_used": 19,
         "secondary_statuses_used": 0,
@@ -36,10 +36,10 @@
       }
     ],
     "validation_status": "PROVISIONAL",
-    "coverage_percentage": 97.83,
-    "expected_games": 784,
-    "verified_games": 767,
-    "missing_games": 17,
+    "coverage_percentage": 97.57,
+    "expected_games": 783,
+    "verified_games": 764,
+    "missing_games": 19,
     "opponent_names": {
       "external-228102": "Mars Hill Bible",
       "external-228114": "Mobile Christian",
@@ -106,16 +106,16 @@
       "region": "4",
       "record": "6-0",
       "games_played": 6,
-      "state_rank": 80,
+      "state_rank": 86,
       "class_rank": 1,
-      "mfpi": 60.8,
-      "mfpi_unrounded": 60.84598214,
+      "mfpi": 59.8,
+      "mfpi_unrounded": 59.81919643,
       "previous_state_rank": 76,
-      "state_rank_change": -4,
+      "state_rank_change": -10,
       "previous_class_rank": 2,
       "class_rank_change": 1,
       "previous_mfpi": 62.5,
-      "mfpi_change": -1.7,
+      "mfpi_change": -2.7,
       "pf_per_game": 29.7,
       "pa_per_game": 8.0,
       "pending_games": 0,
@@ -130,16 +130,16 @@
       "maxpreps_strength": 21.7,
       "components": {
         "performance": {
-          "raw": 9.0497,
-          "normalized": 71.428571,
+          "raw": 8.980457,
+          "normalized": 68.75,
           "weight": 0.35,
-          "contribution": 25.0
+          "contribution": 24.0625
         },
         "sos": {
-          "raw": -8.230207,
-          "normalized": 23.660714,
+          "raw": -8.319614,
+          "normalized": 23.214286,
           "weight": 0.2,
-          "contribution": 4.732143
+          "contribution": 4.642857
         },
         "maxpreps_rank": {
           "raw": -54.0,
@@ -172,7 +172,7 @@
           "contribution": 7.785714
         },
         "recent": {
-          "raw": 4.152913,
+          "raw": 3.965039,
           "normalized": 54.910714,
           "weight": 0.04,
           "contribution": 2.196429
@@ -259,7 +259,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 4 spots to No. 80 (from No. 76). MFPI rating: decreased 1.7 points to 60.8. Opponent-adjusted performance percentile 71.4; schedule-strength percentile 23.7."
+      "explanation": "State ranking: down 10 spots to No. 86 (from No. 76). MFPI rating: decreased 2.7 points to 59.8. Opponent-adjusted performance percentile 68.8; schedule-strength percentile 23.2."
     },
     {
       "team_id": "simmons",
@@ -269,16 +269,16 @@
       "region": "6",
       "record": "4-1",
       "games_played": 5,
-      "state_rank": 86,
+      "state_rank": 87,
       "class_rank": 2,
-      "mfpi": 60.0,
-      "mfpi_unrounded": 59.99553571,
+      "mfpi": 59.7,
+      "mfpi_unrounded": 59.68303571,
       "previous_state_rank": 75,
-      "state_rank_change": -11,
+      "state_rank_change": -12,
       "previous_class_rank": 1,
       "class_rank_change": -1,
       "previous_mfpi": 62.5,
-      "mfpi_change": -2.5,
+      "mfpi_change": -2.8,
       "pf_per_game": 32.0,
       "pa_per_game": 9.2,
       "pending_games": 0,
@@ -293,13 +293,13 @@
       "maxpreps_strength": 21.8,
       "components": {
         "performance": {
-          "raw": 7.376297,
-          "normalized": 66.071429,
+          "raw": 7.335704,
+          "normalized": 65.178571,
           "weight": 0.35,
-          "contribution": 23.125
+          "contribution": 22.8125
         },
         "sos": {
-          "raw": -7.65669,
+          "raw": -7.725227,
           "normalized": 26.785714,
           "weight": 0.2,
           "contribution": 5.357143
@@ -335,7 +335,7 @@
           "contribution": 7.607143
         },
         "recent": {
-          "raw": 10.842312,
+          "raw": 10.794724,
           "normalized": 71.428571,
           "weight": 0.04,
           "contribution": 2.857143
@@ -409,7 +409,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 11 spots to No. 86 (from No. 75). MFPI rating: decreased 2.5 points to 60.0. Opponent-adjusted performance percentile 66.1; schedule-strength percentile 26.8."
+      "explanation": "State ranking: down 12 spots to No. 87 (from No. 75). MFPI rating: decreased 2.8 points to 59.7. Opponent-adjusted performance percentile 65.2; schedule-strength percentile 26.8."
     },
     {
       "team_id": "tupelo-christian-prep",
@@ -419,16 +419,16 @@
       "region": "1",
       "record": "7-0",
       "games_played": 7,
-      "state_rank": 93,
+      "state_rank": 94,
       "class_rank": 3,
-      "mfpi": 57.6,
-      "mfpi_unrounded": 57.63616071,
+      "mfpi": 57.3,
+      "mfpi_unrounded": 57.25223214,
       "previous_state_rank": 92,
-      "state_rank_change": -1,
+      "state_rank_change": -2,
       "previous_class_rank": 3,
       "class_rank_change": 0,
       "previous_mfpi": 59.4,
-      "mfpi_change": -1.8,
+      "mfpi_change": -2.1,
       "pf_per_game": 43.9,
       "pa_per_game": 6.7,
       "pending_games": 0,
@@ -443,16 +443,16 @@
       "maxpreps_strength": 11.3,
       "components": {
         "performance": {
-          "raw": 10.870581,
-          "normalized": 74.107143,
+          "raw": 10.88144,
+          "normalized": 73.214286,
           "weight": 0.35,
-          "contribution": 25.9375
+          "contribution": 25.625
         },
         "sos": {
-          "raw": -16.354787,
-          "normalized": 4.910714,
+          "raw": -16.360692,
+          "normalized": 4.464286,
           "weight": 0.2,
-          "contribution": 0.982143
+          "contribution": 0.892857
         },
         "maxpreps_rank": {
           "raw": -82.0,
@@ -485,10 +485,10 @@
           "contribution": 7.892857
         },
         "recent": {
-          "raw": 10.455854,
-          "normalized": 70.535714,
+          "raw": 10.431262,
+          "normalized": 70.982143,
           "weight": 0.04,
-          "contribution": 2.821429
+          "contribution": 2.839286
         }
       },
       "game_results": [
@@ -585,7 +585,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 1 spot to No. 93 (from No. 92). MFPI rating: decreased 1.8 points to 57.6. Opponent-adjusted performance percentile 74.1; schedule-strength percentile 4.9."
+      "explanation": "State ranking: down 2 spots to No. 94 (from No. 92). MFPI rating: decreased 2.1 points to 57.3. Opponent-adjusted performance percentile 73.2; schedule-strength percentile 4.5."
     },
     {
       "team_id": "calhoun-city",
@@ -595,12 +595,12 @@
       "region": "3",
       "record": "3-3",
       "games_played": 6,
-      "state_rank": 114,
+      "state_rank": 113,
       "class_rank": 4,
       "mfpi": 50.8,
-      "mfpi_unrounded": 50.76584822,
+      "mfpi_unrounded": 50.78035714,
       "previous_state_rank": 109,
-      "state_rank_change": -5,
+      "state_rank_change": -4,
       "previous_class_rank": 5,
       "class_rank_change": 1,
       "previous_mfpi": 50.7,
@@ -619,13 +619,13 @@
       "maxpreps_strength": 29.9,
       "components": {
         "performance": {
-          "raw": -0.772409,
-          "normalized": 45.535714,
+          "raw": -0.676363,
+          "normalized": 45.982143,
           "weight": 0.35,
-          "contribution": 15.9375
+          "contribution": 16.09375
         },
         "sos": {
-          "raw": 3.046501,
+          "raw": 3.129235,
           "normalized": 61.160714,
           "weight": 0.2,
           "contribution": 12.232143
@@ -644,24 +644,24 @@
         },
         "record": {
           "raw": 0.5,
-          "normalized": 51.116071,
+          "normalized": 50.892857,
           "weight": 0.05,
-          "contribution": 2.555804
+          "contribution": 2.544643
         },
         "offense": {
           "raw": 25.333333,
-          "normalized": 51.5625,
+          "normalized": 51.116071,
           "weight": 0.08,
-          "contribution": 4.125
+          "contribution": 4.089286
         },
         "defense": {
           "raw": 19.0,
-          "normalized": 23.883929,
+          "normalized": 24.330357,
           "weight": 0.08,
-          "contribution": 1.910714
+          "contribution": 1.946429
         },
         "recent": {
-          "raw": 3.560984,
+          "raw": 3.570834,
           "normalized": 53.571429,
           "weight": 0.04,
           "contribution": 2.142857
@@ -750,11 +750,11 @@
       "bye_adjustment": {
         "previous_weight": 0.9,
         "previous_mfpi": 50.70982143,
-        "recalculated_mfpi": 51.270089285714285,
-        "adjustment": -0.5042410701428608,
+        "recalculated_mfpi": 51.41517857142857,
+        "adjustment": -0.6348214272857149,
         "reason": "Confirmed bye; no new or changed verified results."
       },
-      "explanation": "State ranking: down 5 spots to No. 114 (from No. 109). MFPI rating: increased 0.1 points to 50.8. Opponent-adjusted performance percentile 45.5; schedule-strength percentile 61.2. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
+      "explanation": "State ranking: down 4 spots to No. 113 (from No. 109). MFPI rating: increased 0.1 points to 50.8. Opponent-adjusted performance percentile 46.0; schedule-strength percentile 61.2. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
     },
     {
       "team_id": "nanih-waiya",
@@ -764,16 +764,16 @@
       "region": "5",
       "record": "5-1",
       "games_played": 6,
-      "state_rank": 118,
+      "state_rank": 117,
       "class_rank": 5,
-      "mfpi": 49.7,
-      "mfpi_unrounded": 49.72098214,
+      "mfpi": 50.1,
+      "mfpi_unrounded": 50.09151786,
       "previous_state_rank": 107,
-      "state_rank_change": -11,
+      "state_rank_change": -10,
       "previous_class_rank": 4,
       "class_rank_change": -1,
       "previous_mfpi": 51.0,
-      "mfpi_change": -1.3,
+      "mfpi_change": -0.9,
       "pf_per_game": 39.5,
       "pa_per_game": 30.0,
       "pending_games": 0,
@@ -788,16 +788,16 @@
       "maxpreps_strength": 19.5,
       "components": {
         "performance": {
-          "raw": 2.864117,
-          "normalized": 54.910714,
+          "raw": 2.944471,
+          "normalized": 55.357143,
           "weight": 0.35,
-          "contribution": 19.21875
+          "contribution": 19.375
         },
         "sos": {
-          "raw": -6.114058,
-          "normalized": 32.142857,
+          "raw": -6.047468,
+          "normalized": 33.035714,
           "weight": 0.2,
-          "contribution": 6.428571
+          "contribution": 6.607143
         },
         "maxpreps_rank": {
           "raw": -105.0,
@@ -825,12 +825,12 @@
         },
         "defense": {
           "raw": 19.0,
-          "normalized": 23.883929,
+          "normalized": 24.330357,
           "weight": 0.08,
-          "contribution": 1.910714
+          "contribution": 1.946429
         },
         "recent": {
-          "raw": 6.266064,
+          "raw": 6.368565,
           "normalized": 62.5,
           "weight": 0.04,
           "contribution": 2.5
@@ -917,7 +917,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 11 spots to No. 118 (from No. 107). MFPI rating: decreased 1.3 points to 49.7. Opponent-adjusted performance percentile 54.9; schedule-strength percentile 32.1."
+      "explanation": "State ranking: down 10 spots to No. 117 (from No. 107). MFPI rating: decreased 0.9 points to 50.1. Opponent-adjusted performance percentile 55.4; schedule-strength percentile 33.0."
     },
     {
       "team_id": "ethel",
@@ -927,12 +927,12 @@
       "region": "5",
       "record": "4-2",
       "games_played": 6,
-      "state_rank": 130,
+      "state_rank": 129,
       "class_rank": 6,
       "mfpi": 43.3,
-      "mfpi_unrounded": 43.25825893,
+      "mfpi_unrounded": 43.28638393,
       "previous_state_rank": 128,
-      "state_rank_change": -2,
+      "state_rank_change": -1,
       "previous_class_rank": 6,
       "class_rank_change": 0,
       "previous_mfpi": 43.7,
@@ -951,16 +951,16 @@
       "maxpreps_strength": 12.9,
       "components": {
         "performance": {
-          "raw": -1.55274,
-          "normalized": 42.857143,
+          "raw": -1.459477,
+          "normalized": 43.303571,
           "weight": 0.35,
-          "contribution": 15.0
+          "contribution": 15.15625
         },
         "sos": {
-          "raw": -10.544213,
-          "normalized": 16.071429,
+          "raw": -10.463994,
+          "normalized": 16.964286,
           "weight": 0.2,
-          "contribution": 3.214286
+          "contribution": 3.392857
         },
         "maxpreps_rank": {
           "raw": -174.0,
@@ -982,9 +982,9 @@
         },
         "offense": {
           "raw": 24.0,
-          "normalized": 46.651786,
+          "normalized": 45.758929,
           "weight": 0.08,
-          "contribution": 3.732143
+          "contribution": 3.660714
         },
         "defense": {
           "raw": 38.0,
@@ -993,10 +993,10 @@
           "contribution": 7.428571
         },
         "recent": {
-          "raw": -1.119608,
-          "normalized": 45.535714,
+          "raw": -1.054127,
+          "normalized": 45.982143,
           "weight": 0.04,
-          "contribution": 1.821429
+          "contribution": 1.839286
         }
       },
       "game_results": [
@@ -1082,11 +1082,11 @@
       "bye_adjustment": {
         "previous_weight": 0.9,
         "previous_mfpi": 43.73660714,
-        "recalculated_mfpi": 38.95312499999999,
-        "adjustment": 4.305133926000003,
+        "recalculated_mfpi": 39.234375,
+        "adjustment": 4.052008925999999,
         "reason": "Confirmed bye; no new or changed verified results."
       },
-      "explanation": "State ranking: down 2 spots to No. 130 (from No. 128). MFPI rating: decreased 0.4 points to 43.3. Opponent-adjusted performance percentile 42.9; schedule-strength percentile 16.1. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
+      "explanation": "State ranking: down 1 spot to No. 129 (from No. 128). MFPI rating: decreased 0.4 points to 43.3. Opponent-adjusted performance percentile 43.3; schedule-strength percentile 17.0. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
     },
     {
       "team_id": "south-delta",
@@ -1096,16 +1096,16 @@
       "region": "6",
       "record": "4-3",
       "games_played": 7,
-      "state_rank": 133,
+      "state_rank": 130,
       "class_rank": 7,
-      "mfpi": 43.0,
-      "mfpi_unrounded": 43.03794643,
+      "mfpi": 43.2,
+      "mfpi_unrounded": 43.18526786,
       "previous_state_rank": 138,
-      "state_rank_change": 5,
+      "state_rank_change": 8,
       "previous_class_rank": 8,
       "class_rank_change": 1,
       "previous_mfpi": 40.7,
-      "mfpi_change": 2.3,
+      "mfpi_change": 2.5,
       "pf_per_game": 23.7,
       "pa_per_game": 18.0,
       "pending_games": 0,
@@ -1120,16 +1120,16 @@
       "maxpreps_strength": 22.0,
       "components": {
         "performance": {
-          "raw": -2.092675,
-          "normalized": 41.964286,
+          "raw": -2.14061,
+          "normalized": 42.857143,
           "weight": 0.35,
-          "contribution": 14.6875
+          "contribution": 15.0
         },
         "sos": {
-          "raw": -7.666684,
-          "normalized": 26.339286,
+          "raw": -7.733427,
+          "normalized": 25.892857,
           "weight": 0.2,
-          "contribution": 5.267857
+          "contribution": 5.178571
         },
         "maxpreps_rank": {
           "raw": -131.0,
@@ -1145,15 +1145,15 @@
         },
         "record": {
           "raw": 0.571429,
-          "normalized": 58.258929,
+          "normalized": 57.8125,
           "weight": 0.05,
-          "contribution": 2.912946
+          "contribution": 2.890625
         },
         "offense": {
           "raw": 23.714286,
-          "normalized": 43.973214,
+          "normalized": 43.080357,
           "weight": 0.08,
-          "contribution": 3.517857
+          "contribution": 3.446429
         },
         "defense": {
           "raw": 31.142857,
@@ -1162,10 +1162,10 @@
           "contribution": 6.285714
         },
         "recent": {
-          "raw": -0.85933,
-          "normalized": 45.982143,
+          "raw": -0.882734,
+          "normalized": 46.428571,
           "weight": 0.04,
-          "contribution": 1.839286
+          "contribution": 1.857143
         }
       },
       "game_results": [
@@ -1262,7 +1262,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 5 spots to No. 133 (from No. 138). MFPI rating: increased 2.3 points to 43.0. Opponent-adjusted performance percentile 42.0; schedule-strength percentile 26.3."
+      "explanation": "State ranking: up 8 spots to No. 130 (from No. 138). MFPI rating: increased 2.5 points to 43.2. Opponent-adjusted performance percentile 42.9; schedule-strength percentile 25.9."
     },
     {
       "team_id": "stringer",
@@ -1272,16 +1272,16 @@
       "region": "8",
       "record": "5-2",
       "games_played": 7,
-      "state_rank": 140,
+      "state_rank": 136,
       "class_rank": 8,
-      "mfpi": 41.1,
-      "mfpi_unrounded": 41.14285714,
+      "mfpi": 41.4,
+      "mfpi_unrounded": 41.4375,
       "previous_state_rank": 135,
-      "state_rank_change": -5,
+      "state_rank_change": -1,
       "previous_class_rank": 7,
       "class_rank_change": -1,
       "previous_mfpi": 41.0,
-      "mfpi_change": 0.1,
+      "mfpi_change": 0.4,
       "pf_per_game": 33.7,
       "pa_per_game": 16.3,
       "pending_games": 0,
@@ -1296,13 +1296,13 @@
       "maxpreps_strength": 14.5,
       "components": {
         "performance": {
-          "raw": -1.496349,
-          "normalized": 43.303571,
+          "raw": -1.347425,
+          "normalized": 44.196429,
           "weight": 0.35,
-          "contribution": 15.15625
+          "contribution": 15.46875
         },
         "sos": {
-          "raw": -14.910994,
+          "raw": -14.773017,
           "normalized": 6.25,
           "weight": 0.2,
           "contribution": 1.25
@@ -1338,10 +1338,10 @@
           "contribution": 6.714286
         },
         "recent": {
-          "raw": 1.699829,
-          "normalized": 50.0,
+          "raw": 1.870373,
+          "normalized": 49.553571,
           "weight": 0.04,
-          "contribution": 2.0
+          "contribution": 1.982143
         }
       },
       "game_results": [
@@ -1438,7 +1438,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 5 spots to No. 140 (from No. 135). MFPI rating: increased 0.1 points to 41.1. Opponent-adjusted performance percentile 43.3; schedule-strength percentile 6.2."
+      "explanation": "State ranking: down 1 spot to No. 136 (from No. 135). MFPI rating: increased 0.4 points to 41.4. Opponent-adjusted performance percentile 44.2; schedule-strength percentile 6.2."
     },
     {
       "team_id": "noxapater",
@@ -1448,16 +1448,16 @@
       "region": "5",
       "record": "2-5",
       "games_played": 7,
-      "state_rank": 158,
+      "state_rank": 156,
       "class_rank": 9,
-      "mfpi": 35.6,
-      "mfpi_unrounded": 35.62276786,
+      "mfpi": 36.0,
+      "mfpi_unrounded": 36.01116071,
       "previous_state_rank": 159,
-      "state_rank_change": 1,
+      "state_rank_change": 3,
       "previous_class_rank": 9,
       "class_rank_change": 0,
       "previous_mfpi": 34.8,
-      "mfpi_change": 0.8,
+      "mfpi_change": 1.2,
       "pf_per_game": 18.3,
       "pa_per_game": 25.4,
       "pending_games": 0,
@@ -1472,16 +1472,16 @@
       "maxpreps_strength": 24.0,
       "components": {
         "performance": {
-          "raw": -7.977965,
-          "normalized": 30.803571,
+          "raw": -7.862466,
+          "normalized": 31.25,
           "weight": 0.35,
-          "contribution": 10.78125
+          "contribution": 10.9375
         },
         "sos": {
-          "raw": -2.550375,
-          "normalized": 42.410714,
+          "raw": -2.447367,
+          "normalized": 43.303571,
           "weight": 0.2,
-          "contribution": 8.482143
+          "contribution": 8.660714
         },
         "maxpreps_rank": {
           "raw": -176.0,
@@ -1509,15 +1509,15 @@
         },
         "defense": {
           "raw": 23.571429,
-          "normalized": 44.866071,
+          "normalized": 45.3125,
           "weight": 0.08,
-          "contribution": 3.589286
+          "contribution": 3.625
         },
         "recent": {
-          "raw": -5.358641,
-          "normalized": 39.732143,
+          "raw": -5.258249,
+          "normalized": 40.178571,
           "weight": 0.04,
-          "contribution": 1.589286
+          "contribution": 1.607143
         }
       },
       "game_results": [
@@ -1614,7 +1614,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 1 spot to No. 158 (from No. 159). MFPI rating: increased 0.8 points to 35.6. Opponent-adjusted performance percentile 30.8; schedule-strength percentile 42.4."
+      "explanation": "State ranking: up 3 spots to No. 156 (from No. 159). MFPI rating: increased 1.2 points to 36.0. Opponent-adjusted performance percentile 31.2; schedule-strength percentile 43.3."
     },
     {
       "team_id": "french-camp",
@@ -1624,12 +1624,12 @@
       "region": "4",
       "record": "2-5",
       "games_played": 7,
-      "state_rank": 166,
+      "state_rank": 165,
       "class_rank": 10,
       "mfpi": 31.5,
-      "mfpi_unrounded": 31.546875,
+      "mfpi_unrounded": 31.47544643,
       "previous_state_rank": 162,
-      "state_rank_change": -4,
+      "state_rank_change": -3,
       "previous_class_rank": 10,
       "class_rank_change": 0,
       "previous_mfpi": 32.7,
@@ -1648,16 +1648,16 @@
       "maxpreps_strength": 21.5,
       "components": {
         "performance": {
-          "raw": -10.299351,
+          "raw": -10.211675,
           "normalized": 27.678571,
           "weight": 0.35,
           "contribution": 9.6875
         },
         "sos": {
-          "raw": -0.44066,
-          "normalized": 50.446429,
+          "raw": -0.366821,
+          "normalized": 50.0,
           "weight": 0.2,
-          "contribution": 10.089286
+          "contribution": 10.0
         },
         "maxpreps_rank": {
           "raw": -224.0,
@@ -1690,10 +1690,10 @@
           "contribution": 2.821429
         },
         "recent": {
-          "raw": -9.689203,
-          "normalized": 29.910714,
+          "raw": -9.627938,
+          "normalized": 30.357143,
           "weight": 0.04,
-          "contribution": 1.196429
+          "contribution": 1.214286
         }
       },
       "game_results": [
@@ -1790,183 +1790,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 4 spots to No. 166 (from No. 162). MFPI rating: decreased 1.2 points to 31.5. Opponent-adjusted performance percentile 27.7; schedule-strength percentile 50.4. 1 listing due by the cutoff still lack a verified result."
-    },
-    {
-      "team_id": "okolona",
-      "slug": "okolona",
-      "team": "Okolona High School",
-      "classification": "1A",
-      "region": "3",
-      "record": "3-4",
-      "games_played": 7,
-      "state_rank": 168,
-      "class_rank": 11,
-      "mfpi": 30.8,
-      "mfpi_unrounded": 30.81696429,
-      "previous_state_rank": 164,
-      "state_rank_change": -4,
-      "previous_class_rank": 11,
-      "class_rank_change": 0,
-      "previous_mfpi": 31.8,
-      "mfpi_change": -1.0,
-      "pf_per_game": 23.7,
-      "pa_per_game": 32.9,
-      "pending_games": 0,
-      "data_status": "complete",
-      "up_games": 5,
-      "same_class_games": 0,
-      "down_games": 0,
-      "class_schedule_delta": 2.2,
-      "schedule_direction": "Playing up",
-      "maxpreps_state_rank": 197,
-      "maxpreps_rating": 26.58,
-      "maxpreps_strength": 22.3,
-      "components": {
-        "performance": {
-          "raw": -11.860413,
-          "normalized": 25.892857,
-          "weight": 0.35,
-          "contribution": 9.0625
-        },
-        "sos": {
-          "raw": -5.039072,
-          "normalized": 35.267857,
-          "weight": 0.2,
-          "contribution": 7.053571
-        },
-        "maxpreps_rank": {
-          "raw": -197.0,
-          "normalized": 26.785714,
-          "weight": 0.1,
-          "contribution": 2.678571
-        },
-        "maxpreps_sos": {
-          "raw": 22.3,
-          "normalized": 35.714286,
-          "weight": 0.1,
-          "contribution": 3.571429
-        },
-        "record": {
-          "raw": 0.428571,
-          "normalized": 41.517857,
-          "weight": 0.05,
-          "contribution": 2.075893
-        },
-        "offense": {
-          "raw": 23.714286,
-          "normalized": 43.973214,
-          "weight": 0.08,
-          "contribution": 3.517857
-        },
-        "defense": {
-          "raw": 16.285714,
-          "normalized": 15.401786,
-          "weight": 0.08,
-          "contribution": 1.232143
-        },
-        "recent": {
-          "raw": -5.264747,
-          "normalized": 40.625,
-          "weight": 0.04,
-          "contribution": 1.625
-        }
-      },
-      "game_results": [
-        {
-          "date": "2026-08-28T18:00:00-05:00",
-          "home": "okolona",
-          "away": "aberdeen",
-          "home_score": 32,
-          "away_score": 50,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7614664",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-05T01:59:00-05:00",
-          "home": "external-263101",
-          "away": "okolona",
-          "home_score": 35,
-          "away_score": 6,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7827140",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "shannon",
-          "away": "okolona",
-          "home_score": 47,
-          "away_score": 7,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7614760",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "okolona",
-          "away": "south-pontotoc",
-          "home_score": 21,
-          "away_score": 16,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7731846",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-25T19:00:00-05:00",
-          "home": "okolona",
-          "away": "nettleton",
-          "home_score": 45,
-          "away_score": 26,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-25",
-          "game_id": "7614873",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-02T19:00:00-05:00",
-          "home": "hatley",
-          "away": "okolona",
-          "home_score": 22,
-          "away_score": 41,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-02",
-          "game_id": "7614955",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-08T18:00:00-05:00",
-          "home": "external-231342",
-          "away": "okolona",
-          "home_score": 34,
-          "away_score": 14,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-08",
-          "game_id": "7615007",
-          "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: down 4 spots to No. 168 (from No. 164). MFPI rating: decreased 1.0 points to 30.8. Opponent-adjusted performance percentile 25.9; schedule-strength percentile 35.3."
+      "explanation": "State ranking: down 3 spots to No. 165 (from No. 162). MFPI rating: decreased 1.2 points to 31.5. Opponent-adjusted performance percentile 27.7; schedule-strength percentile 50.0. 1 listing due by the cutoff still lack a verified result."
     },
     {
       "team_id": "sebastopol",
@@ -1976,16 +1800,16 @@
       "region": "5",
       "record": "2-5",
       "games_played": 7,
-      "state_rank": 170,
-      "class_rank": 12,
-      "mfpi": 30.5,
-      "mfpi_unrounded": 30.51116071,
+      "state_rank": 169,
+      "class_rank": 11,
+      "mfpi": 30.8,
+      "mfpi_unrounded": 30.83258929,
       "previous_state_rank": 173,
-      "state_rank_change": 3,
+      "state_rank_change": 4,
       "previous_class_rank": 12,
-      "class_rank_change": 0,
+      "class_rank_change": 1,
       "previous_mfpi": 28.5,
-      "mfpi_change": 2.0,
+      "mfpi_change": 2.3,
       "pf_per_game": 23.4,
       "pa_per_game": 25.1,
       "pending_games": 0,
@@ -2000,16 +1824,16 @@
       "maxpreps_strength": 19.8,
       "components": {
         "performance": {
-          "raw": -9.921194,
+          "raw": -9.791823,
           "normalized": 28.571429,
           "weight": 0.35,
           "contribution": 10.0
         },
         "sos": {
-          "raw": -7.696974,
-          "normalized": 25.446429,
+          "raw": -7.579367,
+          "normalized": 27.232143,
           "weight": 0.2,
-          "contribution": 5.089286
+          "contribution": 5.446429
         },
         "maxpreps_rank": {
           "raw": -186.0,
@@ -2031,18 +1855,18 @@
         },
         "offense": {
           "raw": 23.428571,
-          "normalized": 41.517857,
+          "normalized": 40.625,
           "weight": 0.08,
-          "contribution": 3.321429
+          "contribution": 3.25
         },
         "defense": {
           "raw": 23.857143,
-          "normalized": 47.098214,
+          "normalized": 47.544643,
           "weight": 0.08,
-          "contribution": 3.767857
+          "contribution": 3.803571
         },
         "recent": {
-          "raw": -7.653106,
+          "raw": -7.565244,
           "normalized": 33.928571,
           "weight": 0.04,
           "contribution": 1.357143
@@ -2142,7 +1966,183 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 3 spots to No. 170 (from No. 173). MFPI rating: increased 2.0 points to 30.5. Opponent-adjusted performance percentile 28.6; schedule-strength percentile 25.4."
+      "explanation": "State ranking: up 4 spots to No. 169 (from No. 173). MFPI rating: increased 2.3 points to 30.8. Opponent-adjusted performance percentile 28.6; schedule-strength percentile 27.2."
+    },
+    {
+      "team_id": "okolona",
+      "slug": "okolona",
+      "team": "Okolona High School",
+      "classification": "1A",
+      "region": "3",
+      "record": "3-4",
+      "games_played": 7,
+      "state_rank": 170,
+      "class_rank": 12,
+      "mfpi": 30.8,
+      "mfpi_unrounded": 30.76116071,
+      "previous_state_rank": 164,
+      "state_rank_change": -6,
+      "previous_class_rank": 11,
+      "class_rank_change": -1,
+      "previous_mfpi": 31.8,
+      "mfpi_change": -1.0,
+      "pf_per_game": 23.7,
+      "pa_per_game": 32.9,
+      "pending_games": 0,
+      "data_status": "complete",
+      "up_games": 5,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 2.2,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 197,
+      "maxpreps_rating": 26.58,
+      "maxpreps_strength": 22.3,
+      "components": {
+        "performance": {
+          "raw": -11.870546,
+          "normalized": 25.892857,
+          "weight": 0.35,
+          "contribution": 9.0625
+        },
+        "sos": {
+          "raw": -5.066834,
+          "normalized": 35.714286,
+          "weight": 0.2,
+          "contribution": 7.142857
+        },
+        "maxpreps_rank": {
+          "raw": -197.0,
+          "normalized": 26.785714,
+          "weight": 0.1,
+          "contribution": 2.678571
+        },
+        "maxpreps_sos": {
+          "raw": 22.3,
+          "normalized": 35.714286,
+          "weight": 0.1,
+          "contribution": 3.571429
+        },
+        "record": {
+          "raw": 0.428571,
+          "normalized": 42.1875,
+          "weight": 0.05,
+          "contribution": 2.109375
+        },
+        "offense": {
+          "raw": 23.714286,
+          "normalized": 43.080357,
+          "weight": 0.08,
+          "contribution": 3.446429
+        },
+        "defense": {
+          "raw": 16.285714,
+          "normalized": 15.401786,
+          "weight": 0.08,
+          "contribution": 1.232143
+        },
+        "recent": {
+          "raw": -5.840261,
+          "normalized": 37.946429,
+          "weight": 0.04,
+          "contribution": 1.517857
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T18:00:00-05:00",
+          "home": "okolona",
+          "away": "aberdeen",
+          "home_score": 32,
+          "away_score": 50,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7614664",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-05T01:59:00-05:00",
+          "home": "external-263101",
+          "away": "okolona",
+          "home_score": 35,
+          "away_score": 6,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7827140",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "shannon",
+          "away": "okolona",
+          "home_score": 47,
+          "away_score": 7,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7614760",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "okolona",
+          "away": "south-pontotoc",
+          "home_score": 21,
+          "away_score": 16,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7731846",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-25T19:00:00-05:00",
+          "home": "okolona",
+          "away": "nettleton",
+          "home_score": 45,
+          "away_score": 26,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-25",
+          "game_id": "7614873",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-02T19:00:00-05:00",
+          "home": "hatley",
+          "away": "okolona",
+          "home_score": 22,
+          "away_score": 41,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-02",
+          "game_id": "7614955",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-08T18:00:00-05:00",
+          "home": "external-231342",
+          "away": "okolona",
+          "home_score": 34,
+          "away_score": 14,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-08",
+          "game_id": "7615007",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: down 6 spots to No. 170 (from No. 164). MFPI rating: decreased 1.0 points to 30.8. Opponent-adjusted performance percentile 25.9; schedule-strength percentile 35.7."
     },
     {
       "team_id": "potts-camp",
@@ -2152,16 +2152,16 @@
       "region": "2",
       "record": "3-2",
       "games_played": 5,
-      "state_rank": 176,
+      "state_rank": 177,
       "class_rank": 13,
-      "mfpi": 26.5,
-      "mfpi_unrounded": 26.45401786,
+      "mfpi": 26.4,
+      "mfpi_unrounded": 26.4390625,
       "previous_state_rank": 179,
-      "state_rank_change": 3,
+      "state_rank_change": 2,
       "previous_class_rank": 14,
       "class_rank_change": 1,
       "previous_mfpi": 26.5,
-      "mfpi_change": 0.0,
+      "mfpi_change": -0.1,
       "pf_per_game": 36.8,
       "pa_per_game": 31.2,
       "pending_games": 0,
@@ -2176,13 +2176,13 @@
       "maxpreps_strength": 10.8,
       "components": {
         "performance": {
-          "raw": -11.090962,
-          "normalized": 26.785714,
+          "raw": -11.081703,
+          "normalized": 26.339286,
           "weight": 0.35,
-          "contribution": 9.375
+          "contribution": 9.21875
         },
         "sos": {
-          "raw": -15.607112,
+          "raw": -15.615933,
           "normalized": 5.803571,
           "weight": 0.2,
           "contribution": 1.160714
@@ -2201,9 +2201,9 @@
         },
         "record": {
           "raw": 0.6,
-          "normalized": 62.276786,
+          "normalized": 62.053571,
           "weight": 0.05,
-          "contribution": 3.113839
+          "contribution": 3.102679
         },
         "offense": {
           "raw": 34.6,
@@ -2218,10 +2218,10 @@
           "contribution": 1.607143
         },
         "recent": {
-          "raw": -6.335392,
-          "normalized": 36.160714,
+          "raw": -6.340368,
+          "normalized": 36.607143,
           "weight": 0.04,
-          "contribution": 1.446429
+          "contribution": 1.464286
         }
       },
       "game_results": [
@@ -2294,11 +2294,11 @@
       "bye_adjustment": {
         "previous_weight": 0.9,
         "previous_mfpi": 26.52455357,
-        "recalculated_mfpi": 25.81919642857143,
-        "adjustment": 0.6348214272857078,
+        "recalculated_mfpi": 25.669642857142858,
+        "adjustment": 0.7694196415714245,
         "reason": "Confirmed bye; no new or changed verified results."
       },
-      "explanation": "State ranking: up 3 spots to No. 176 (from No. 179). MFPI rating: unchanged at 26.5. Opponent-adjusted performance percentile 26.8; schedule-strength percentile 5.8. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
+      "explanation": "State ranking: up 2 spots to No. 177 (from No. 179). MFPI rating: decreased 0.1 points to 26.4. Opponent-adjusted performance percentile 26.3; schedule-strength percentile 5.8. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
     },
     {
       "team_id": "lumberton",
@@ -2310,14 +2310,14 @@
       "games_played": 6,
       "state_rank": 181,
       "class_rank": 14,
-      "mfpi": 25.1,
-      "mfpi_unrounded": 25.10714286,
+      "mfpi": 25.3,
+      "mfpi_unrounded": 25.29241071,
       "previous_state_rank": 185,
       "state_rank_change": 4,
       "previous_class_rank": 15,
       "class_rank_change": 1,
       "previous_mfpi": 24.3,
-      "mfpi_change": 0.8,
+      "mfpi_change": 1.0,
       "pf_per_game": 17.0,
       "pa_per_game": 23.0,
       "pending_games": 0,
@@ -2332,13 +2332,13 @@
       "maxpreps_strength": 20.3,
       "components": {
         "performance": {
-          "raw": -15.003231,
-          "normalized": 18.303571,
+          "raw": -14.987909,
+          "normalized": 18.75,
           "weight": 0.35,
-          "contribution": 6.40625
+          "contribution": 6.5625
         },
         "sos": {
-          "raw": -9.177737,
+          "raw": -9.178264,
           "normalized": 19.642857,
           "weight": 0.2,
           "contribution": 3.928571
@@ -2357,9 +2357,9 @@
         },
         "record": {
           "raw": 0.333333,
-          "normalized": 33.035714,
+          "normalized": 33.258929,
           "weight": 0.05,
-          "contribution": 1.651786
+          "contribution": 1.662946
         },
         "offense": {
           "raw": 17.0,
@@ -2374,10 +2374,10 @@
           "contribution": 4.75
         },
         "recent": {
-          "raw": -12.376568,
-          "normalized": 25.446429,
+          "raw": -12.42804,
+          "normalized": 25.892857,
           "weight": 0.04,
-          "contribution": 1.017857
+          "contribution": 1.035714
         }
       },
       "game_results": [
@@ -2461,7 +2461,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 4 spots to No. 181 (from No. 185). MFPI rating: increased 0.8 points to 25.1. Opponent-adjusted performance percentile 18.3; schedule-strength percentile 19.6."
+      "explanation": "State ranking: up 4 spots to No. 181 (from No. 185). MFPI rating: increased 1.0 points to 25.3. Opponent-adjusted performance percentile 18.8; schedule-strength percentile 19.6."
     },
     {
       "team_id": "smithville",
@@ -2471,16 +2471,16 @@
       "region": "1",
       "record": "4-3",
       "games_played": 7,
-      "state_rank": 184,
+      "state_rank": 186,
       "class_rank": 15,
-      "mfpi": 23.7,
-      "mfpi_unrounded": 23.71205357,
+      "mfpi": 23.8,
+      "mfpi_unrounded": 23.76116071,
       "previous_state_rank": 191,
-      "state_rank_change": 7,
+      "state_rank_change": 5,
       "previous_class_rank": 17,
       "class_rank_change": 2,
       "previous_mfpi": 22.7,
-      "mfpi_change": 1.0,
+      "mfpi_change": 1.1,
       "pf_per_game": 31.6,
       "pa_per_game": 23.7,
       "pending_games": 0,
@@ -2495,13 +2495,13 @@
       "maxpreps_strength": 7.9,
       "components": {
         "performance": {
-          "raw": -13.053433,
+          "raw": -13.189727,
           "normalized": 22.767857,
           "weight": 0.35,
           "contribution": 7.96875
         },
         "sos": {
-          "raw": -20.689092,
+          "raw": -20.847537,
           "normalized": 0.446429,
           "weight": 0.2,
           "contribution": 0.089286
@@ -2520,9 +2520,9 @@
         },
         "record": {
           "raw": 0.571429,
-          "normalized": 58.258929,
+          "normalized": 57.8125,
           "weight": 0.05,
-          "contribution": 2.912946
+          "contribution": 2.890625
         },
         "offense": {
           "raw": 29.714286,
@@ -2532,15 +2532,15 @@
         },
         "defense": {
           "raw": 25.285714,
-          "normalized": 53.125,
+          "normalized": 53.571429,
           "weight": 0.08,
-          "contribution": 4.25
+          "contribution": 4.285714
         },
         "recent": {
-          "raw": -10.895624,
-          "normalized": 28.125,
+          "raw": -10.964958,
+          "normalized": 29.017857,
           "weight": 0.04,
-          "contribution": 1.125
+          "contribution": 1.160714
         }
       },
       "game_results": [
@@ -2637,7 +2637,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 7 spots to No. 184 (from No. 191). MFPI rating: increased 1.0 points to 23.7. Opponent-adjusted performance percentile 22.8; schedule-strength percentile 0.4."
+      "explanation": "State ranking: up 5 spots to No. 186 (from No. 191). MFPI rating: increased 1.1 points to 23.8. Opponent-adjusted performance percentile 22.8; schedule-strength percentile 0.4."
     },
     {
       "team_id": "coffeeville",
@@ -2649,14 +2649,14 @@
       "games_played": 7,
       "state_rank": 187,
       "class_rank": 16,
-      "mfpi": 22.9,
-      "mfpi_unrounded": 22.93303571,
+      "mfpi": 23.4,
+      "mfpi_unrounded": 23.36830357,
       "previous_state_rank": 194,
       "state_rank_change": 7,
       "previous_class_rank": 19,
       "class_rank_change": 3,
       "previous_mfpi": 22.3,
-      "mfpi_change": 0.6,
+      "mfpi_change": 1.1,
       "pf_per_game": 28.9,
       "pa_per_game": 25.3,
       "pending_games": 1,
@@ -2671,13 +2671,13 @@
       "maxpreps_strength": 12.7,
       "components": {
         "performance": {
-          "raw": -13.140877,
-          "normalized": 22.321429,
+          "raw": -13.097789,
+          "normalized": 23.214286,
           "weight": 0.35,
-          "contribution": 7.8125
+          "contribution": 8.125
         },
         "sos": {
-          "raw": -14.711536,
+          "raw": -14.68415,
           "normalized": 6.696429,
           "weight": 0.2,
           "contribution": 1.339286
@@ -2696,27 +2696,27 @@
         },
         "record": {
           "raw": 0.428571,
-          "normalized": 41.517857,
+          "normalized": 42.1875,
           "weight": 0.05,
-          "contribution": 2.075893
+          "contribution": 2.109375
         },
         "offense": {
           "raw": 27.714286,
-          "normalized": 59.821429,
+          "normalized": 60.267857,
           "weight": 0.08,
-          "contribution": 4.785714
+          "contribution": 4.821429
         },
         "defense": {
           "raw": 23.714286,
-          "normalized": 46.205357,
+          "normalized": 46.651786,
           "weight": 0.08,
-          "contribution": 3.696429
+          "contribution": 3.732143
         },
         "recent": {
-          "raw": -15.59219,
-          "normalized": 19.196429,
+          "raw": -15.668158,
+          "normalized": 19.642857,
           "weight": 0.04,
-          "contribution": 0.767857
+          "contribution": 0.785714
         }
       },
       "game_results": [
@@ -2813,7 +2813,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 7 spots to No. 187 (from No. 194). MFPI rating: increased 0.6 points to 22.9. Opponent-adjusted performance percentile 22.3; schedule-strength percentile 6.7. 1 listing due by the cutoff still lack a verified result."
+      "explanation": "State ranking: up 7 spots to No. 187 (from No. 194). MFPI rating: increased 1.1 points to 23.4. Opponent-adjusted performance percentile 23.2; schedule-strength percentile 6.7. 1 listing due by the cutoff still lack a verified result."
     },
     {
       "team_id": "biggersville",
@@ -2825,14 +2825,14 @@
       "games_played": 7,
       "state_rank": 193,
       "class_rank": 17,
-      "mfpi": 21.1,
-      "mfpi_unrounded": 21.06473214,
+      "mfpi": 20.8,
+      "mfpi_unrounded": 20.796875,
       "previous_state_rank": 203,
       "state_rank_change": 10,
       "previous_class_rank": 24,
       "class_rank_change": 7,
       "previous_mfpi": 17.0,
-      "mfpi_change": 4.1,
+      "mfpi_change": 3.8,
       "pf_per_game": 10.9,
       "pa_per_game": 35.1,
       "pending_games": 0,
@@ -2847,16 +2847,16 @@
       "maxpreps_strength": 22.7,
       "components": {
         "performance": {
-          "raw": -20.774004,
+          "raw": -21.615873,
           "normalized": 10.714286,
           "weight": 0.35,
           "contribution": 3.75
         },
         "sos": {
-          "raw": -3.682636,
-          "normalized": 38.392857,
+          "raw": -4.571983,
+          "normalized": 37.053571,
           "weight": 0.2,
-          "contribution": 7.678571
+          "contribution": 7.410714
         },
         "maxpreps_rank": {
           "raw": -219.0,
@@ -2889,7 +2889,7 @@
           "contribution": 1.357143
         },
         "recent": {
-          "raw": -17.610483,
+          "raw": -18.534021,
           "normalized": 16.517857,
           "weight": 0.04,
           "contribution": 0.660714
@@ -2989,7 +2989,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 10 spots to No. 193 (from No. 203). MFPI rating: increased 4.1 points to 21.1. Opponent-adjusted performance percentile 10.7; schedule-strength percentile 38.4."
+      "explanation": "State ranking: up 10 spots to No. 193 (from No. 203). MFPI rating: increased 3.8 points to 20.8. Opponent-adjusted performance percentile 10.7; schedule-strength percentile 37.1."
     },
     {
       "team_id": "shaw",
@@ -3001,14 +3001,14 @@
       "games_played": 7,
       "state_rank": 194,
       "class_rank": 18,
-      "mfpi": 20.4,
-      "mfpi_unrounded": 20.38616071,
+      "mfpi": 20.8,
+      "mfpi_unrounded": 20.78794643,
       "previous_state_rank": 202,
       "state_rank_change": 8,
       "previous_class_rank": 23,
       "class_rank_change": 5,
       "previous_mfpi": 19.6,
-      "mfpi_change": 0.8,
+      "mfpi_change": 1.2,
       "pf_per_game": 10.0,
       "pa_per_game": 28.0,
       "pending_games": 0,
@@ -3023,16 +3023,16 @@
       "maxpreps_strength": 22.8,
       "components": {
         "performance": {
-          "raw": -21.489046,
-          "normalized": 10.267857,
+          "raw": -21.477319,
+          "normalized": 11.160714,
           "weight": 0.35,
-          "contribution": 3.59375
+          "contribution": 3.90625
         },
         "sos": {
-          "raw": -6.720905,
-          "normalized": 30.803571,
+          "raw": -6.725915,
+          "normalized": 31.25,
           "weight": 0.2,
-          "contribution": 6.160714
+          "contribution": 6.25
         },
         "maxpreps_rank": {
           "raw": -225.0,
@@ -3065,7 +3065,7 @@
           "contribution": 2.821429
         },
         "recent": {
-          "raw": -21.50014,
+          "raw": -21.497657,
           "normalized": 11.607143,
           "weight": 0.04,
           "contribution": 0.464286
@@ -3165,170 +3165,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 8 spots to No. 194 (from No. 202). MFPI rating: increased 0.8 points to 20.4. Opponent-adjusted performance percentile 10.3; schedule-strength percentile 30.8."
-    },
-    {
-      "team_id": "west-tallahatchie",
-      "slug": "west-tallahatchie",
-      "team": "West Tallahatchie High School",
-      "classification": "1A",
-      "region": "4",
-      "record": "1-5",
-      "games_played": 6,
-      "state_rank": 197,
-      "class_rank": 19,
-      "mfpi": 19.3,
-      "mfpi_unrounded": 19.26785714,
-      "previous_state_rank": 208,
-      "state_rank_change": 11,
-      "previous_class_rank": 26,
-      "class_rank_change": 7,
-      "previous_mfpi": 16.2,
-      "mfpi_change": 3.1,
-      "pf_per_game": 13.7,
-      "pa_per_game": 23.2,
-      "pending_games": 1,
-      "data_status": "partial",
-      "up_games": 5,
-      "same_class_games": 1,
-      "down_games": 0,
-      "class_schedule_delta": 1.5,
-      "schedule_direction": "Playing up",
-      "maxpreps_state_rank": 229,
-      "maxpreps_rating": 16.81,
-      "maxpreps_strength": 17.3,
-      "components": {
-        "performance": {
-          "raw": -17.635268,
-          "normalized": 14.732143,
-          "weight": 0.35,
-          "contribution": 5.15625
-        },
-        "sos": {
-          "raw": -9.261931,
-          "normalized": 19.196429,
-          "weight": 0.2,
-          "contribution": 3.839286
-        },
-        "maxpreps_rank": {
-          "raw": -229.0,
-          "normalized": 14.732143,
-          "weight": 0.1,
-          "contribution": 1.473214
-        },
-        "maxpreps_sos": {
-          "raw": 17.3,
-          "normalized": 18.303571,
-          "weight": 0.1,
-          "contribution": 1.830357
-        },
-        "record": {
-          "raw": 0.166667,
-          "normalized": 14.732143,
-          "weight": 0.05,
-          "contribution": 0.736607
-        },
-        "offense": {
-          "raw": 13.666667,
-          "normalized": 15.178571,
-          "weight": 0.08,
-          "contribution": 1.214286
-        },
-        "defense": {
-          "raw": 25.833333,
-          "normalized": 57.366071,
-          "weight": 0.08,
-          "contribution": 4.589286
-        },
-        "recent": {
-          "raw": -21.852528,
-          "normalized": 10.714286,
-          "weight": 0.04,
-          "contribution": 0.428571
-        }
-      },
-      "game_results": [
-        {
-          "date": "2026-08-28T18:00:00-05:00",
-          "home": "palmer",
-          "away": "west-tallahatchie",
-          "home_score": 6,
-          "away_score": 44,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7614658",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-04T19:00:00-05:00",
-          "home": "west-tallahatchie",
-          "away": "west-bolivar",
-          "home_score": 8,
-          "away_score": 14,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7731673",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "edwards",
-          "away": "west-tallahatchie",
-          "home_score": 35,
-          "away_score": 0,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7614776",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "west-tallahatchie",
-          "away": "charleston",
-          "home_score": 16,
-          "away_score": 34,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7614807",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-02T19:00:00-05:00",
-          "home": "west-tallahatchie",
-          "away": "north-panola",
-          "home_score": 14,
-          "away_score": 44,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-02",
-          "game_id": "7614949",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-09T19:00:00-05:00",
-          "home": "gentry",
-          "away": "west-tallahatchie",
-          "home_score": 6,
-          "away_score": 0,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-09",
-          "game_id": "7615011",
-          "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: up 11 spots to No. 197 (from No. 208). MFPI rating: increased 3.1 points to 19.3. Opponent-adjusted performance percentile 14.7; schedule-strength percentile 19.2. 1 listing due by the cutoff still lack a verified result."
+      "explanation": "State ranking: up 8 spots to No. 194 (from No. 202). MFPI rating: increased 1.2 points to 20.8. Opponent-adjusted performance percentile 11.2; schedule-strength percentile 31.2."
     },
     {
       "team_id": "mcadams",
@@ -3338,16 +3175,16 @@
       "region": "5",
       "record": "3-4",
       "games_played": 7,
-      "state_rank": 199,
-      "class_rank": 20,
-      "mfpi": 19.1,
-      "mfpi_unrounded": 19.13839286,
+      "state_rank": 197,
+      "class_rank": 19,
+      "mfpi": 19.4,
+      "mfpi_unrounded": 19.38169643,
       "previous_state_rank": 175,
-      "state_rank_change": -24,
+      "state_rank_change": -22,
       "previous_class_rank": 13,
-      "class_rank_change": -7,
+      "class_rank_change": -6,
       "previous_mfpi": 27.9,
-      "mfpi_change": -8.8,
+      "mfpi_change": -8.5,
       "pf_per_game": 25.7,
       "pa_per_game": 22.4,
       "pending_games": 0,
@@ -3362,16 +3199,16 @@
       "maxpreps_strength": 10.5,
       "components": {
         "performance": {
-          "raw": -15.864415,
-          "normalized": 16.964286,
+          "raw": -15.813182,
+          "normalized": 17.410714,
           "weight": 0.35,
-          "contribution": 5.9375
+          "contribution": 6.09375
         },
         "sos": {
-          "raw": -17.467612,
-          "normalized": 2.232143,
+          "raw": -17.431317,
+          "normalized": 2.678571,
           "weight": 0.2,
-          "contribution": 0.446429
+          "contribution": 0.535714
         },
         "maxpreps_rank": {
           "raw": -228.0,
@@ -3387,15 +3224,15 @@
         },
         "record": {
           "raw": 0.428571,
-          "normalized": 41.517857,
+          "normalized": 42.1875,
           "weight": 0.05,
-          "contribution": 2.075893
+          "contribution": 2.109375
         },
         "offense": {
           "raw": 23.285714,
-          "normalized": 41.071429,
+          "normalized": 40.178571,
           "weight": 0.08,
-          "contribution": 3.285714
+          "contribution": 3.214286
         },
         "defense": {
           "raw": 26.571429,
@@ -3404,10 +3241,10 @@
           "contribution": 4.839286
         },
         "recent": {
-          "raw": -17.284857,
-          "normalized": 16.964286,
+          "raw": -17.197405,
+          "normalized": 17.857143,
           "weight": 0.04,
-          "contribution": 0.678571
+          "contribution": 0.714286
         }
       },
       "game_results": [
@@ -3504,7 +3341,170 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 24 spots to No. 199 (from No. 175). MFPI rating: decreased 8.8 points to 19.1. Opponent-adjusted performance percentile 17.0; schedule-strength percentile 2.2."
+      "explanation": "State ranking: down 22 spots to No. 197 (from No. 175). MFPI rating: decreased 8.5 points to 19.4. Opponent-adjusted performance percentile 17.4; schedule-strength percentile 2.7."
+    },
+    {
+      "team_id": "west-tallahatchie",
+      "slug": "west-tallahatchie",
+      "team": "West Tallahatchie High School",
+      "classification": "1A",
+      "region": "4",
+      "record": "1-5",
+      "games_played": 6,
+      "state_rank": 199,
+      "class_rank": 20,
+      "mfpi": 19.1,
+      "mfpi_unrounded": 19.11383929,
+      "previous_state_rank": 208,
+      "state_rank_change": 9,
+      "previous_class_rank": 26,
+      "class_rank_change": 6,
+      "previous_mfpi": 16.2,
+      "mfpi_change": 2.9,
+      "pf_per_game": 13.7,
+      "pa_per_game": 23.2,
+      "pending_games": 1,
+      "data_status": "partial",
+      "up_games": 5,
+      "same_class_games": 1,
+      "down_games": 0,
+      "class_schedule_delta": 1.5,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 229,
+      "maxpreps_rating": 16.81,
+      "maxpreps_strength": 17.3,
+      "components": {
+        "performance": {
+          "raw": -17.803481,
+          "normalized": 14.732143,
+          "weight": 0.35,
+          "contribution": 5.15625
+        },
+        "sos": {
+          "raw": -9.45451,
+          "normalized": 18.303571,
+          "weight": 0.2,
+          "contribution": 3.660714
+        },
+        "maxpreps_rank": {
+          "raw": -229.0,
+          "normalized": 14.732143,
+          "weight": 0.1,
+          "contribution": 1.473214
+        },
+        "maxpreps_sos": {
+          "raw": 17.3,
+          "normalized": 18.303571,
+          "weight": 0.1,
+          "contribution": 1.830357
+        },
+        "record": {
+          "raw": 0.166667,
+          "normalized": 14.508929,
+          "weight": 0.05,
+          "contribution": 0.725446
+        },
+        "offense": {
+          "raw": 13.666667,
+          "normalized": 15.625,
+          "weight": 0.08,
+          "contribution": 1.25
+        },
+        "defense": {
+          "raw": 25.833333,
+          "normalized": 57.366071,
+          "weight": 0.08,
+          "contribution": 4.589286
+        },
+        "recent": {
+          "raw": -22.09567,
+          "normalized": 10.714286,
+          "weight": 0.04,
+          "contribution": 0.428571
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T18:00:00-05:00",
+          "home": "palmer",
+          "away": "west-tallahatchie",
+          "home_score": 6,
+          "away_score": 44,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7614658",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-04T19:00:00-05:00",
+          "home": "west-tallahatchie",
+          "away": "west-bolivar",
+          "home_score": 8,
+          "away_score": 14,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7731673",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "edwards",
+          "away": "west-tallahatchie",
+          "home_score": 35,
+          "away_score": 0,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7614776",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "west-tallahatchie",
+          "away": "charleston",
+          "home_score": 16,
+          "away_score": 34,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7614807",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-02T19:00:00-05:00",
+          "home": "west-tallahatchie",
+          "away": "north-panola",
+          "home_score": 14,
+          "away_score": 44,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-02",
+          "game_id": "7614949",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-09T19:00:00-05:00",
+          "home": "gentry",
+          "away": "west-tallahatchie",
+          "home_score": 6,
+          "away_score": 0,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-09",
+          "game_id": "7615011",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: up 9 spots to No. 199 (from No. 208). MFPI rating: increased 2.9 points to 19.1. Opponent-adjusted performance percentile 14.7; schedule-strength percentile 18.3. 1 listing due by the cutoff still lack a verified result."
     },
     {
       "team_id": "vardaman",
@@ -3514,16 +3514,16 @@
       "region": "3",
       "record": "0-5",
       "games_played": 5,
-      "state_rank": 202,
+      "state_rank": 201,
       "class_rank": 21,
-      "mfpi": 18.6,
-      "mfpi_unrounded": 18.62053571,
+      "mfpi": 18.8,
+      "mfpi_unrounded": 18.79464286,
       "previous_state_rank": 200,
-      "state_rank_change": -2,
+      "state_rank_change": -1,
       "previous_class_rank": 21,
       "class_rank_change": 0,
       "previous_mfpi": 20.2,
-      "mfpi_change": -1.6,
+      "mfpi_change": -1.4,
       "pf_per_game": 14.6,
       "pa_per_game": 43.6,
       "pending_games": 1,
@@ -3538,13 +3538,13 @@
       "maxpreps_strength": 23.4,
       "components": {
         "performance": {
-          "raw": -22.555527,
-          "normalized": 8.035714,
+          "raw": -22.47249,
+          "normalized": 8.482143,
           "weight": 0.35,
-          "contribution": 2.8125
+          "contribution": 2.96875
         },
         "sos": {
-          "raw": -1.282067,
+          "raw": -1.202226,
           "normalized": 46.428571,
           "weight": 0.2,
           "contribution": 9.285714
@@ -3580,10 +3580,10 @@
           "contribution": 0.392857
         },
         "recent": {
-          "raw": -27.397134,
-          "normalized": 4.910714,
+          "raw": -27.353742,
+          "normalized": 5.357143,
           "weight": 0.04,
-          "contribution": 0.196429
+          "contribution": 0.214286
         }
       },
       "game_results": [
@@ -3654,7 +3654,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 2 spots to No. 202 (from No. 200). MFPI rating: decreased 1.6 points to 18.6. Opponent-adjusted performance percentile 8.0; schedule-strength percentile 46.4. 1 listing due by the cutoff still lack a verified result."
+      "explanation": "State ranking: down 1 spot to No. 201 (from No. 200). MFPI rating: decreased 1.4 points to 18.8. Opponent-adjusted performance percentile 8.5; schedule-strength percentile 46.4. 1 listing due by the cutoff still lack a verified result."
     },
     {
       "team_id": "taylorsville",
@@ -3662,42 +3662,42 @@
       "team": "Taylorsville Attendance Center",
       "classification": "1A",
       "region": "8",
-      "record": "0-8",
-      "games_played": 8,
-      "state_rank": 204,
+      "record": "0-7",
+      "games_played": 7,
+      "state_rank": 203,
       "class_rank": 22,
-      "mfpi": 16.5,
-      "mfpi_unrounded": 16.53571429,
+      "mfpi": 18.3,
+      "mfpi_unrounded": 18.32142857,
       "previous_state_rank": 192,
-      "state_rank_change": -12,
+      "state_rank_change": -11,
       "previous_class_rank": 18,
       "class_rank_change": -4,
       "previous_mfpi": 22.6,
-      "mfpi_change": -6.1,
-      "pf_per_game": 9.5,
-      "pa_per_game": 41.4,
+      "mfpi_change": -4.3,
+      "pf_per_game": 7.4,
+      "pa_per_game": 43.4,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 5,
-      "same_class_games": 3,
+      "same_class_games": 2,
       "down_games": 0,
-      "class_schedule_delta": 0.75,
+      "class_schedule_delta": 0.857,
       "schedule_direction": "Playing up",
       "maxpreps_state_rank": 250,
       "maxpreps_rating": 5.41,
       "maxpreps_strength": 27.0,
       "components": {
         "performance": {
-          "raw": -25.147233,
+          "raw": -24.800403,
           "normalized": 4.910714,
           "weight": 0.35,
           "contribution": 1.71875
         },
         "sos": {
-          "raw": -3.761453,
-          "normalized": 37.946429,
+          "raw": -0.497085,
+          "normalized": 49.107143,
           "weight": 0.2,
-          "contribution": 7.589286
+          "contribution": 9.821429
         },
         "maxpreps_rank": {
           "raw": -250.0,
@@ -3718,22 +3718,22 @@
           "contribution": 0.223214
         },
         "offense": {
-          "raw": 9.5,
-          "normalized": 7.589286,
+          "raw": 7.428571,
+          "normalized": 4.241071,
           "weight": 0.08,
-          "contribution": 0.607143
+          "contribution": 0.339286
         },
         "defense": {
-          "raw": 10.0,
-          "normalized": 4.017857,
+          "raw": 8.285714,
+          "normalized": 2.008929,
           "weight": 0.08,
-          "contribution": 0.321429
+          "contribution": 0.160714
         },
         "recent": {
-          "raw": -28.368256,
-          "normalized": 4.017857,
+          "raw": -29.687616,
+          "normalized": 3.571429,
           "weight": 0.04,
-          "contribution": 0.160714
+          "contribution": 0.142857
         }
       },
       "game_results": [
@@ -3827,23 +3827,10 @@
           "calendar_date": "2026-10-08",
           "game_id": "7984763",
           "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-09T19:00:00-05:00",
-          "home": "resurrection",
-          "away": "taylorsville",
-          "home_score": 27,
-          "away_score": 24,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-09",
-          "game_id": "7732318",
-          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 12 spots to No. 204 (from No. 192). MFPI rating: decreased 6.1 points to 16.5. Opponent-adjusted performance percentile 4.9; schedule-strength percentile 37.9."
+      "explanation": "State ranking: down 11 spots to No. 203 (from No. 192). MFPI rating: decreased 4.3 points to 18.3. Opponent-adjusted performance percentile 4.9; schedule-strength percentile 49.1."
     },
     {
       "team_id": "bogue-chitto",
@@ -3855,14 +3842,14 @@
       "games_played": 7,
       "state_rank": 205,
       "class_rank": 23,
-      "mfpi": 15.8,
-      "mfpi_unrounded": 15.796875,
+      "mfpi": 16.2,
+      "mfpi_unrounded": 16.18526786,
       "previous_state_rank": 198,
       "state_rank_change": -7,
       "previous_class_rank": 20,
       "class_rank_change": -3,
       "previous_mfpi": 20.6,
-      "mfpi_change": -4.8,
+      "mfpi_change": -4.4,
       "pf_per_game": 20.3,
       "pa_per_game": 35.4,
       "pending_games": 1,
@@ -3877,16 +3864,16 @@
       "maxpreps_strength": 19.3,
       "components": {
         "performance": {
-          "raw": -22.002973,
-          "normalized": 9.375,
+          "raw": -21.941898,
+          "normalized": 9.821429,
           "weight": 0.35,
-          "contribution": 3.28125
+          "contribution": 3.4375
         },
         "sos": {
-          "raw": -9.328345,
-          "normalized": 18.303571,
+          "raw": -9.281473,
+          "normalized": 19.196429,
           "weight": 0.2,
-          "contribution": 3.660714
+          "contribution": 3.839286
         },
         "maxpreps_rank": {
           "raw": -227.0,
@@ -3919,10 +3906,10 @@
           "contribution": 1.142857
         },
         "recent": {
-          "raw": -22.871782,
-          "normalized": 8.482143,
+          "raw": -22.784816,
+          "normalized": 9.821429,
           "weight": 0.04,
-          "contribution": 0.339286
+          "contribution": 0.392857
         }
       },
       "game_results": [
@@ -4019,7 +4006,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 7 spots to No. 205 (from No. 198). MFPI rating: decreased 4.8 points to 15.8. Opponent-adjusted performance percentile 9.4; schedule-strength percentile 18.3. 1 listing due by the cutoff still lack a verified result."
+      "explanation": "State ranking: down 7 spots to No. 205 (from No. 198). MFPI rating: decreased 4.4 points to 16.2. Opponent-adjusted performance percentile 9.8; schedule-strength percentile 19.2. 1 listing due by the cutoff still lack a verified result."
     },
     {
       "team_id": "west-bolivar",
@@ -4029,16 +4016,16 @@
       "region": "6",
       "record": "2-5",
       "games_played": 7,
-      "state_rank": 210,
+      "state_rank": 209,
       "class_rank": 24,
-      "mfpi": 13.9,
-      "mfpi_unrounded": 13.93080357,
+      "mfpi": 14.1,
+      "mfpi_unrounded": 14.109375,
       "previous_state_rank": 211,
-      "state_rank_change": 1,
+      "state_rank_change": 2,
       "previous_class_rank": 27,
       "class_rank_change": 3,
       "previous_mfpi": 14.8,
-      "mfpi_change": -0.9,
+      "mfpi_change": -0.7,
       "pf_per_game": 12.6,
       "pa_per_game": 26.1,
       "pending_games": 0,
@@ -4053,16 +4040,16 @@
       "maxpreps_strength": 16.8,
       "components": {
         "performance": {
-          "raw": -23.037194,
+          "raw": -23.046201,
           "normalized": 7.589286,
           "weight": 0.35,
           "contribution": 2.65625
         },
         "sos": {
-          "raw": -11.823928,
-          "normalized": 13.839286,
+          "raw": -11.85047,
+          "normalized": 14.285714,
           "weight": 0.2,
-          "contribution": 2.767857
+          "contribution": 2.857143
         },
         "maxpreps_rank": {
           "raw": -243.0,
@@ -4084,21 +4071,21 @@
         },
         "offense": {
           "raw": 12.571429,
-          "normalized": 12.723214,
+          "normalized": 13.169643,
           "weight": 0.08,
-          "contribution": 1.017857
+          "contribution": 1.053571
         },
         "defense": {
           "raw": 22.857143,
-          "normalized": 41.741071,
+          "normalized": 42.1875,
           "weight": 0.08,
-          "contribution": 3.339286
+          "contribution": 3.375
         },
         "recent": {
-          "raw": -23.739818,
-          "normalized": 8.035714,
+          "raw": -23.73947,
+          "normalized": 8.482143,
           "weight": 0.04,
-          "contribution": 0.321429
+          "contribution": 0.339286
         }
       },
       "game_results": [
@@ -4195,7 +4182,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 1 spot to No. 210 (from No. 211). MFPI rating: decreased 0.9 points to 13.9. Opponent-adjusted performance percentile 7.6; schedule-strength percentile 13.8."
+      "explanation": "State ranking: up 2 spots to No. 209 (from No. 211). MFPI rating: decreased 0.7 points to 14.1. Opponent-adjusted performance percentile 7.6; schedule-strength percentile 14.3."
     },
     {
       "team_id": "salem",
@@ -4205,16 +4192,16 @@
       "region": "7",
       "record": "2-4",
       "games_played": 6,
-      "state_rank": 211,
+      "state_rank": 210,
       "class_rank": 25,
-      "mfpi": 13.7,
-      "mfpi_unrounded": 13.66071429,
+      "mfpi": 14.0,
+      "mfpi_unrounded": 14.00669643,
       "previous_state_rank": 190,
-      "state_rank_change": -21,
+      "state_rank_change": -20,
       "previous_class_rank": 16,
       "class_rank_change": -9,
       "previous_mfpi": 23.1,
-      "mfpi_change": -9.4,
+      "mfpi_change": -9.1,
       "pf_per_game": 16.5,
       "pa_per_game": 28.3,
       "pending_games": 0,
@@ -4229,16 +4216,16 @@
       "maxpreps_strength": 13.6,
       "components": {
         "performance": {
-          "raw": -21.912018,
-          "normalized": 9.821429,
+          "raw": -21.828383,
+          "normalized": 10.267857,
           "weight": 0.35,
-          "contribution": 3.4375
+          "contribution": 3.59375
         },
         "sos": {
-          "raw": -14.106193,
-          "normalized": 8.035714,
+          "raw": -14.035499,
+          "normalized": 8.928571,
           "weight": 0.2,
-          "contribution": 1.607143
+          "contribution": 1.785714
         },
         "maxpreps_rank": {
           "raw": -241.0,
@@ -4254,9 +4241,9 @@
         },
         "record": {
           "raw": 0.333333,
-          "normalized": 33.035714,
+          "normalized": 33.258929,
           "weight": 0.05,
-          "contribution": 1.651786
+          "contribution": 1.662946
         },
         "offense": {
           "raw": 16.5,
@@ -4271,7 +4258,7 @@
           "contribution": 2.714286
         },
         "recent": {
-          "raw": -21.702587,
+          "raw": -21.622416,
           "normalized": 11.160714,
           "weight": 0.04,
           "contribution": 0.446429
@@ -4358,7 +4345,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 21 spots to No. 211 (from No. 190). MFPI rating: decreased 9.4 points to 13.7. Opponent-adjusted performance percentile 9.8; schedule-strength percentile 8.0."
+      "explanation": "State ranking: down 20 spots to No. 210 (from No. 190). MFPI rating: decreased 9.1 points to 14.0. Opponent-adjusted performance percentile 10.3; schedule-strength percentile 8.9."
     },
     {
       "team_id": "richton",
@@ -4370,14 +4357,14 @@
       "games_played": 6,
       "state_rank": 215,
       "class_rank": 26,
-      "mfpi": 12.6,
-      "mfpi_unrounded": 12.62053571,
+      "mfpi": 12.8,
+      "mfpi_unrounded": 12.75223214,
       "previous_state_rank": 201,
       "state_rank_change": -14,
       "previous_class_rank": 22,
       "class_rank_change": -4,
       "previous_mfpi": 19.8,
-      "mfpi_change": -7.2,
+      "mfpi_change": -7.0,
       "pf_per_game": 15.5,
       "pa_per_game": 20.7,
       "pending_games": 0,
@@ -4392,13 +4379,13 @@
       "maxpreps_strength": 8.9,
       "components": {
         "performance": {
-          "raw": -23.500334,
-          "normalized": 6.696429,
+          "raw": -23.473165,
+          "normalized": 7.142857,
           "weight": 0.35,
-          "contribution": 2.34375
+          "contribution": 2.5
         },
         "sos": {
-          "raw": -19.464356,
+          "raw": -19.452487,
           "normalized": 1.339286,
           "weight": 0.2,
           "contribution": 0.267857
@@ -4417,9 +4404,9 @@
         },
         "record": {
           "raw": 0.333333,
-          "normalized": 33.035714,
+          "normalized": 33.258929,
           "weight": 0.05,
-          "contribution": 1.651786
+          "contribution": 1.662946
         },
         "offense": {
           "raw": 15.5,
@@ -4429,12 +4416,12 @@
         },
         "defense": {
           "raw": 28.333333,
-          "normalized": 68.303571,
+          "normalized": 67.857143,
           "weight": 0.08,
-          "contribution": 5.464286
+          "contribution": 5.428571
         },
         "recent": {
-          "raw": -26.514876,
+          "raw": -26.553548,
           "normalized": 6.696429,
           "weight": 0.04,
           "contribution": 0.267857
@@ -4521,7 +4508,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 14 spots to No. 215 (from No. 201). MFPI rating: decreased 7.2 points to 12.6. Opponent-adjusted performance percentile 6.7; schedule-strength percentile 1.3."
+      "explanation": "State ranking: down 14 spots to No. 215 (from No. 201). MFPI rating: decreased 7.0 points to 12.8. Opponent-adjusted performance percentile 7.1; schedule-strength percentile 1.3."
     },
     {
       "team_id": "falkner",
@@ -4533,14 +4520,14 @@
       "games_played": 6,
       "state_rank": 216,
       "class_rank": 27,
-      "mfpi": 11.5,
-      "mfpi_unrounded": 11.45758929,
+      "mfpi": 11.1,
+      "mfpi_unrounded": 11.13392857,
       "previous_state_rank": 215,
       "state_rank_change": -1,
       "previous_class_rank": 28,
       "class_rank_change": 1,
       "previous_mfpi": 12.9,
-      "mfpi_change": -1.4,
+      "mfpi_change": -1.8,
       "pf_per_game": 21.3,
       "pa_per_game": 28.8,
       "pending_games": 0,
@@ -4555,13 +4542,13 @@
       "maxpreps_strength": 8.0,
       "components": {
         "performance": {
-          "raw": -23.476196,
-          "normalized": 7.142857,
+          "raw": -23.722519,
+          "normalized": 6.25,
           "weight": 0.35,
-          "contribution": 2.5
+          "contribution": 2.1875
         },
         "sos": {
-          "raw": -18.840109,
+          "raw": -19.114052,
           "normalized": 1.785714,
           "weight": 0.2,
           "contribution": 0.357143
@@ -4580,9 +4567,9 @@
         },
         "record": {
           "raw": 0.5,
-          "normalized": 51.116071,
+          "normalized": 50.892857,
           "weight": 0.05,
-          "contribution": 2.555804
+          "contribution": 2.544643
         },
         "offense": {
           "raw": 21.333333,
@@ -4597,7 +4584,7 @@
           "contribution": 2.571429
         },
         "recent": {
-          "raw": -29.732654,
+          "raw": -29.766337,
           "normalized": 3.125,
           "weight": 0.04,
           "contribution": 0.125
@@ -4684,7 +4671,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 1 spot to No. 216 (from No. 215). MFPI rating: decreased 1.4 points to 11.5. Opponent-adjusted performance percentile 7.1; schedule-strength percentile 1.8."
+      "explanation": "State ranking: down 1 spot to No. 216 (from No. 215). MFPI rating: decreased 1.8 points to 11.1. Opponent-adjusted performance percentile 6.2; schedule-strength percentile 1.8."
     },
     {
       "team_id": "mount-olive",
@@ -4697,7 +4684,7 @@
       "state_rank": 218,
       "class_rank": 28,
       "mfpi": 10.9,
-      "mfpi_unrounded": 10.90022322,
+      "mfpi_unrounded": 10.92165179,
       "previous_state_rank": 217,
       "state_rank_change": -1,
       "previous_class_rank": 29,
@@ -4718,16 +4705,16 @@
       "maxpreps_strength": 19.6,
       "components": {
         "performance": {
-          "raw": -35.233611,
+          "raw": -35.149627,
           "normalized": 1.785714,
           "weight": 0.35,
           "contribution": 0.625
         },
         "sos": {
-          "raw": -8.366188,
-          "normalized": 22.767857,
+          "raw": -8.295153,
+          "normalized": 23.660714,
           "weight": 0.2,
-          "contribution": 4.553571
+          "contribution": 4.732143
         },
         "maxpreps_rank": {
           "raw": -266.0,
@@ -4755,12 +4742,12 @@
         },
         "defense": {
           "raw": 8.666667,
-          "normalized": 2.232143,
+          "normalized": 2.678571,
           "weight": 0.08,
-          "contribution": 0.178571
+          "contribution": 0.214286
         },
         "recent": {
-          "raw": -39.704129,
+          "raw": -39.603128,
           "normalized": 1.339286,
           "weight": 0.04,
           "contribution": 0.053571
@@ -4849,11 +4836,167 @@
       "bye_adjustment": {
         "previous_weight": 0.9,
         "previous_mfpi": 11.18526786,
-        "recalculated_mfpi": 8.33482142857143,
-        "adjustment": 2.565401788285712,
+        "recalculated_mfpi": 8.549107142857144,
+        "adjustment": 2.372544645428569,
         "reason": "Confirmed bye; no new or changed verified results."
       },
-      "explanation": "State ranking: down 1 spot to No. 218 (from No. 217). MFPI rating: decreased 0.3 points to 10.9. Opponent-adjusted performance percentile 1.8; schedule-strength percentile 22.8. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
+      "explanation": "State ranking: down 1 spot to No. 218 (from No. 217). MFPI rating: decreased 0.3 points to 10.9. Opponent-adjusted performance percentile 1.8; schedule-strength percentile 23.7. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
+    },
+    {
+      "team_id": "byers",
+      "slug": "byers",
+      "team": "H. W. Byers High School (5-12)",
+      "classification": "1A",
+      "region": "2",
+      "record": "0-5",
+      "games_played": 5,
+      "state_rank": 219,
+      "class_rank": 29,
+      "mfpi": 10.2,
+      "mfpi_unrounded": 10.19935267,
+      "previous_state_rank": 219,
+      "state_rank_change": 0,
+      "previous_class_rank": 30,
+      "class_rank_change": 1,
+      "previous_mfpi": 10.3,
+      "mfpi_change": -0.1,
+      "pf_per_game": 8.0,
+      "pa_per_game": 29.0,
+      "pending_games": 0,
+      "data_status": "complete",
+      "up_games": 4,
+      "same_class_games": 0,
+      "down_games": 0,
+      "class_schedule_delta": 2.0,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 267,
+      "maxpreps_rating": -8.34,
+      "maxpreps_strength": 14.7,
+      "components": {
+        "performance": {
+          "raw": -27.292843,
+          "normalized": 3.571429,
+          "weight": 0.35,
+          "contribution": 1.25
+        },
+        "sos": {
+          "raw": -12.332324,
+          "normalized": 12.5,
+          "weight": 0.2,
+          "contribution": 2.5
+        },
+        "maxpreps_rank": {
+          "raw": -267.0,
+          "normalized": 1.339286,
+          "weight": 0.1,
+          "contribution": 0.133929
+        },
+        "maxpreps_sos": {
+          "raw": 14.7,
+          "normalized": 10.714286,
+          "weight": 0.1,
+          "contribution": 1.071429
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 4.464286,
+          "weight": 0.05,
+          "contribution": 0.223214
+        },
+        "offense": {
+          "raw": 8.0,
+          "normalized": 5.357143,
+          "weight": 0.08,
+          "contribution": 0.428571
+        },
+        "defense": {
+          "raw": 21.2,
+          "normalized": 37.053571,
+          "weight": 0.08,
+          "contribution": 2.964286
+        },
+        "recent": {
+          "raw": -22.722501,
+          "normalized": 10.267857,
+          "weight": 0.04,
+          "contribution": 0.410714
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-27T19:00:00-05:00",
+          "home": "byhalia",
+          "away": "byers",
+          "home_score": 28,
+          "away_score": 6,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-27",
+          "game_id": "7614614",
+          "source": "maxpreps_secondary"
+        },
+        {
+          "date": "2026-09-04T01:59:00-05:00",
+          "home": "byers",
+          "away": "holly-springs",
+          "home_score": 12,
+          "away_score": 38,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-03",
+          "game_id": "7827395",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:30:00-05:00",
+          "home": "east-union",
+          "away": "byers",
+          "home_score": 22,
+          "away_score": 0,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7614771",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "byers",
+          "away": "obannon",
+          "home_score": 22,
+          "away_score": 55,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7731870",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-25T19:00:00-05:00",
+          "home": "byers",
+          "away": "external-231009",
+          "home_score": 0,
+          "away_score": 2,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": true,
+          "calendar_date": "2026-09-25",
+          "game_id": "7614899",
+          "source": "maxpreps_secondary"
+        }
+      ],
+      "bye_adjustment": {
+        "previous_weight": 0.9,
+        "previous_mfpi": 10.33459821,
+        "recalculated_mfpi": 8.98214285714286,
+        "adjustment": 1.217209817571426,
+        "reason": "Confirmed bye; no new or changed verified results."
+      },
+      "explanation": "State ranking: unchanged at No. 219. MFPI rating: decreased 0.1 points to 10.2. Opponent-adjusted performance percentile 3.6; schedule-strength percentile 12.5. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
     },
     {
       "team_id": "resurrection",
@@ -4861,42 +5004,42 @@
       "team": "Resurrection",
       "classification": "1A",
       "region": "8",
-      "record": "3-4-1",
-      "games_played": 8,
-      "state_rank": 219,
-      "class_rank": 29,
-      "mfpi": 10.3,
-      "mfpi_unrounded": 10.3125,
+      "record": "2-4-1",
+      "games_played": 7,
+      "state_rank": 220,
+      "class_rank": 30,
+      "mfpi": 9.7,
+      "mfpi_unrounded": 9.74553571,
       "previous_state_rank": 206,
-      "state_rank_change": -13,
+      "state_rank_change": -14,
       "previous_class_rank": 25,
-      "class_rank_change": -4,
+      "class_rank_change": -5,
       "previous_mfpi": 16.4,
-      "mfpi_change": -6.1,
-      "pf_per_game": 14.0,
-      "pa_per_game": 31.0,
+      "mfpi_change": -6.7,
+      "pf_per_game": 12.1,
+      "pa_per_game": 32.0,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 4,
-      "same_class_games": 3,
+      "same_class_games": 2,
       "down_games": 0,
-      "class_schedule_delta": 0.714,
+      "class_schedule_delta": 0.833,
       "schedule_direction": "Playing up",
       "maxpreps_state_rank": 256,
       "maxpreps_rating": 2.84,
       "maxpreps_strength": 10.9,
       "components": {
         "performance": {
-          "raw": -25.792819,
+          "raw": -25.944362,
           "normalized": 4.017857,
           "weight": 0.35,
           "contribution": 1.40625
         },
         "sos": {
-          "raw": -13.92722,
-          "normalized": 9.375,
+          "raw": -12.255004,
+          "normalized": 13.392857,
           "weight": 0.2,
-          "contribution": 1.875
+          "contribution": 2.678571
         },
         "maxpreps_rank": {
           "raw": -256.0,
@@ -4911,28 +5054,28 @@
           "contribution": 0.446429
         },
         "record": {
-          "raw": 0.4375,
-          "normalized": 46.875,
+          "raw": 0.357143,
+          "normalized": 36.607143,
           "weight": 0.05,
-          "contribution": 2.34375
+          "contribution": 1.830357
         },
         "offense": {
-          "raw": 14.0,
-          "normalized": 16.071429,
+          "raw": 12.142857,
+          "normalized": 12.053571,
           "weight": 0.08,
-          "contribution": 1.285714
+          "contribution": 0.964286
         },
         "defense": {
-          "raw": 19.25,
-          "normalized": 25.892857,
+          "raw": 18.428571,
+          "normalized": 20.535714,
           "weight": 0.08,
-          "contribution": 2.071429
+          "contribution": 1.642857
         },
         "recent": {
-          "raw": -22.662183,
-          "normalized": 9.821429,
+          "raw": -26.305815,
+          "normalized": 7.142857,
           "weight": 0.04,
-          "contribution": 0.392857
+          "contribution": 0.285714
         }
       },
       "game_results": [
@@ -5026,179 +5169,10 @@
           "calendar_date": "2026-10-08",
           "game_id": "7984763",
           "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-09T19:00:00-05:00",
-          "home": "resurrection",
-          "away": "taylorsville",
-          "home_score": 27,
-          "away_score": 24,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-09",
-          "game_id": "7732318",
-          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 13 spots to No. 219 (from No. 206). MFPI rating: decreased 6.1 points to 10.3. Opponent-adjusted performance percentile 4.0; schedule-strength percentile 9.4."
-    },
-    {
-      "team_id": "byers",
-      "slug": "byers",
-      "team": "H. W. Byers High School (5-12)",
-      "classification": "1A",
-      "region": "2",
-      "record": "0-5",
-      "games_played": 5,
-      "state_rank": 220,
-      "class_rank": 30,
-      "mfpi": 10.2,
-      "mfpi_unrounded": 10.20113839,
-      "previous_state_rank": 219,
-      "state_rank_change": -1,
-      "previous_class_rank": 30,
-      "class_rank_change": 0,
-      "previous_mfpi": 10.3,
-      "mfpi_change": -0.1,
-      "pf_per_game": 8.0,
-      "pa_per_game": 29.0,
-      "pending_games": 0,
-      "data_status": "complete",
-      "up_games": 4,
-      "same_class_games": 0,
-      "down_games": 0,
-      "class_schedule_delta": 2.0,
-      "schedule_direction": "Playing up",
-      "maxpreps_state_rank": 267,
-      "maxpreps_rating": -8.34,
-      "maxpreps_strength": 14.7,
-      "components": {
-        "performance": {
-          "raw": -27.270198,
-          "normalized": 3.571429,
-          "weight": 0.35,
-          "contribution": 1.25
-        },
-        "sos": {
-          "raw": -12.285223,
-          "normalized": 12.946429,
-          "weight": 0.2,
-          "contribution": 2.589286
-        },
-        "maxpreps_rank": {
-          "raw": -267.0,
-          "normalized": 1.339286,
-          "weight": 0.1,
-          "contribution": 0.133929
-        },
-        "maxpreps_sos": {
-          "raw": 14.7,
-          "normalized": 10.714286,
-          "weight": 0.1,
-          "contribution": 1.071429
-        },
-        "record": {
-          "raw": 0.0,
-          "normalized": 4.464286,
-          "weight": 0.05,
-          "contribution": 0.223214
-        },
-        "offense": {
-          "raw": 8.0,
-          "normalized": 4.910714,
-          "weight": 0.08,
-          "contribution": 0.392857
-        },
-        "defense": {
-          "raw": 21.2,
-          "normalized": 37.053571,
-          "weight": 0.08,
-          "contribution": 2.964286
-        },
-        "recent": {
-          "raw": -22.686444,
-          "normalized": 9.375,
-          "weight": 0.04,
-          "contribution": 0.375
-        }
-      },
-      "game_results": [
-        {
-          "date": "2026-08-27T19:00:00-05:00",
-          "home": "byhalia",
-          "away": "byers",
-          "home_score": 28,
-          "away_score": 6,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-08-27",
-          "game_id": "7614614",
-          "source": "maxpreps_secondary"
-        },
-        {
-          "date": "2026-09-04T01:59:00-05:00",
-          "home": "byers",
-          "away": "holly-springs",
-          "home_score": 12,
-          "away_score": 38,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-03",
-          "game_id": "7827395",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:30:00-05:00",
-          "home": "east-union",
-          "away": "byers",
-          "home_score": 22,
-          "away_score": 0,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7614771",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "byers",
-          "away": "obannon",
-          "home_score": 22,
-          "away_score": 55,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7731870",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-25T19:00:00-05:00",
-          "home": "byers",
-          "away": "external-231009",
-          "home_score": 0,
-          "away_score": 2,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": true,
-          "calendar_date": "2026-09-25",
-          "game_id": "7614899",
-          "source": "maxpreps_secondary"
-        }
-      ],
-      "bye_adjustment": {
-        "previous_weight": 0.9,
-        "previous_mfpi": 10.33459821,
-        "recalculated_mfpi": 9.0,
-        "adjustment": 1.2011383890000005,
-        "reason": "Confirmed bye; no new or changed verified results."
-      },
-      "explanation": "State ranking: down 1 spot to No. 220 (from No. 219). MFPI rating: decreased 0.1 points to 10.2. Opponent-adjusted performance percentile 3.6; schedule-strength percentile 12.9. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
+      "explanation": "State ranking: down 14 spots to No. 220 (from No. 206). MFPI rating: decreased 6.7 points to 9.7. Opponent-adjusted performance percentile 4.0; schedule-strength percentile 13.4."
     },
     {
       "team_id": "ashland",
@@ -5210,14 +5184,14 @@
       "games_played": 7,
       "state_rank": 222,
       "class_rank": 31,
-      "mfpi": 4.8,
-      "mfpi_unrounded": 4.76785714,
+      "mfpi": 4.9,
+      "mfpi_unrounded": 4.89285714,
       "previous_state_rank": 222,
       "state_rank_change": 0,
       "previous_class_rank": 31,
       "class_rank_change": 0,
       "previous_mfpi": 6.6,
-      "mfpi_change": -1.8,
+      "mfpi_change": -1.7,
       "pf_per_game": 8.6,
       "pa_per_game": 47.1,
       "pending_games": 1,
@@ -5232,16 +5206,16 @@
       "maxpreps_strength": 14.4,
       "components": {
         "performance": {
-          "raw": -37.753536,
+          "raw": -37.92981,
           "normalized": 0.892857,
           "weight": 0.35,
           "contribution": 0.3125
         },
         "sos": {
-          "raw": -11.864176,
-          "normalized": 13.392857,
+          "raw": -12.064085,
+          "normalized": 13.839286,
           "weight": 0.2,
-          "contribution": 2.678571
+          "contribution": 2.767857
         },
         "maxpreps_rank": {
           "raw": -271.0,
@@ -5263,9 +5237,9 @@
         },
         "offense": {
           "raw": 8.571429,
-          "normalized": 6.25,
+          "normalized": 6.696429,
           "weight": 0.08,
-          "contribution": 0.5
+          "contribution": 0.535714
         },
         "defense": {
           "raw": 5.142857,
@@ -5274,7 +5248,7 @@
           "contribution": 0.0
         },
         "recent": {
-          "raw": -37.937847,
+          "raw": -38.080391,
           "normalized": 1.785714,
           "weight": 0.04,
           "contribution": 0.071429
@@ -5374,7 +5348,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: unchanged at No. 222. MFPI rating: decreased 1.8 points to 4.8. Opponent-adjusted performance percentile 0.9; schedule-strength percentile 13.4. 1 listing due by the cutoff still lack a verified result."
+      "explanation": "State ranking: unchanged at No. 222. MFPI rating: decreased 1.7 points to 4.9. Opponent-adjusted performance percentile 0.9; schedule-strength percentile 13.8. 1 listing due by the cutoff still lack a verified result."
     },
     {
       "team_id": "west-lowndes",
@@ -5387,7 +5361,7 @@
       "state_rank": 223,
       "class_rank": 32,
       "mfpi": 4.6,
-      "mfpi_unrounded": 4.63727679,
+      "mfpi_unrounded": 4.61584822,
       "previous_state_rank": 223,
       "state_rank_change": 0,
       "previous_class_rank": 32,
@@ -5408,16 +5382,16 @@
       "maxpreps_strength": 15.1,
       "components": {
         "performance": {
-          "raw": -35.561562,
+          "raw": -35.740316,
           "normalized": 1.339286,
           "weight": 0.35,
           "contribution": 0.46875
         },
         "sos": {
-          "raw": -14.069139,
-          "normalized": 8.482143,
+          "raw": -14.303589,
+          "normalized": 7.589286,
           "weight": 0.2,
-          "contribution": 1.696429
+          "contribution": 1.517857
         },
         "maxpreps_rank": {
           "raw": -263.0,
@@ -5445,12 +5419,12 @@
         },
         "defense": {
           "raw": 6.4,
-          "normalized": 0.892857,
+          "normalized": 0.446429,
           "weight": 0.08,
-          "contribution": 0.071429
+          "contribution": 0.035714
         },
         "recent": {
-          "raw": -42.73438,
+          "raw": -42.932618,
           "normalized": 0.446429,
           "weight": 0.04,
           "contribution": 0.017857
@@ -5526,11 +5500,11 @@
       "bye_adjustment": {
         "previous_weight": 0.9,
         "previous_mfpi": 4.64508929,
-        "recalculated_mfpi": 4.566964285714286,
-        "adjustment": 0.07031250385714216,
+        "recalculated_mfpi": 4.352678571428572,
+        "adjustment": 0.26316964671428433,
         "reason": "Confirmed bye; no new or changed verified results."
       },
-      "explanation": "State ranking: unchanged at No. 223. MFPI rating: unchanged at 4.6. Opponent-adjusted performance percentile 1.3; schedule-strength percentile 8.5. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
+      "explanation": "State ranking: unchanged at No. 223. MFPI rating: unchanged at 4.6. Opponent-adjusted performance percentile 1.3; schedule-strength percentile 7.6. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
     },
     {
       "team_id": "west-lincoln",
@@ -5542,14 +5516,14 @@
       "games_played": 7,
       "state_rank": 224,
       "class_rank": 33,
-      "mfpi": 3.1,
-      "mfpi_unrounded": 3.11160714,
+      "mfpi": 3.2,
+      "mfpi_unrounded": 3.20089286,
       "previous_state_rank": 224,
       "state_rank_change": 0,
       "previous_class_rank": 33,
       "class_rank_change": 0,
       "previous_mfpi": 4.4,
-      "mfpi_change": -1.3,
+      "mfpi_change": -1.2,
       "pf_per_game": 6.1,
       "pa_per_game": 36.0,
       "pending_games": 0,
@@ -5564,16 +5538,16 @@
       "maxpreps_strength": 13.4,
       "components": {
         "performance": {
-          "raw": -40.717463,
+          "raw": -40.640118,
           "normalized": 0.446429,
           "weight": 0.35,
           "contribution": 0.15625
         },
         "sos": {
-          "raw": -16.384217,
-          "normalized": 4.464286,
+          "raw": -16.320447,
+          "normalized": 4.910714,
           "weight": 0.2,
-          "contribution": 0.892857
+          "contribution": 0.982143
         },
         "maxpreps_rank": {
           "raw": -268.0,
@@ -5606,7 +5580,7 @@
           "contribution": 0.678571
         },
         "recent": {
-          "raw": -45.610687,
+          "raw": -45.519215,
           "normalized": 0.0,
           "weight": 0.04,
           "contribution": 0.0
@@ -5706,7 +5680,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: unchanged at No. 224. MFPI rating: decreased 1.3 points to 3.1. Opponent-adjusted performance percentile 0.4; schedule-strength percentile 4.5."
+      "explanation": "State ranking: unchanged at No. 224. MFPI rating: decreased 1.2 points to 3.2. Opponent-adjusted performance percentile 0.4; schedule-strength percentile 4.9."
     },
     {
       "team_id": "riverside",
@@ -5740,13 +5714,13 @@
       "maxpreps_strength": 12.8,
       "components": {
         "performance": {
-          "raw": -41.646877,
+          "raw": -41.6514,
           "normalized": 0.0,
           "weight": 0.35,
           "contribution": 0.0
         },
         "sos": {
-          "raw": -16.424216,
+          "raw": -16.445994,
           "normalized": 4.017857,
           "weight": 0.2,
           "contribution": 0.803571
@@ -5782,7 +5756,7 @@
           "contribution": 0.464286
         },
         "recent": {
-          "raw": -41.063021,
+          "raw": -41.166208,
           "normalized": 0.892857,
           "weight": 0.04,
           "contribution": 0.035714

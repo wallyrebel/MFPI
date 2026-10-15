@@ -2,23 +2,18 @@
   "snapshot": "pre-publication",
   "season": 2026,
   "week": 7,
-  "status": "PUBLISHED",
+  "status": "CORRECTED",
   "formula_version": "MFPI-3.2",
-  "generated_at": "2026-10-15T00:14:35.982623+00:00",
+  "generated_at": "2026-10-15T00:23:16.548268+00:00",
   "cutoff_at": "2026-10-13T11:00:00-05:00",
-  "audited_at": "2026-10-15T00:15:32.257048+00:00",
-  "outcome": "BLOCKED",
+  "audited_at": "2026-10-15T00:25:03.331370+00:00",
+  "outcome": "PASS",
   "teams": 225,
-  "unique_games": 767,
-  "blocking": 2,
+  "unique_games": 764,
+  "blocking": 0,
   "warnings": 0,
   "info": 68,
   "issue_counts": [
-    {
-      "severity": "BLOCKING",
-      "code": "DUPLICATE_GAME",
-      "count": 2
-    },
     {
       "severity": "INFO",
       "code": "FORFEIT_REVIEW",
@@ -27,12 +22,12 @@
     {
       "severity": "INFO",
       "code": "LARGE_RANK_CHANGE",
-      "count": 2
+      "count": 1
     },
     {
       "severity": "INFO",
       "code": "LARGE_RATING_CHANGE",
-      "count": 2
+      "count": 1
     },
     {
       "severity": "INFO",
@@ -41,13 +36,18 @@
     },
     {
       "severity": "INFO",
+      "code": "RATING_TIE",
+      "count": 1
+    },
+    {
+      "severity": "INFO",
       "code": "SCHEDULE_GAP",
-      "count": 11
+      "count": 14
     },
     {
       "severity": "INFO",
       "code": "UNUSUAL_SCORE",
-      "count": 24
+      "count": 22
     }
   ],
   "external_verification": "PIPELINE_SOURCES_ONLY",
@@ -83,13 +83,6 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Senatobia High School game on 2026-10-01 finished 64-0; flagged for a source check only.",
-      "team_id": "senatobia",
-      "context": {}
-    },
-    {
-      "code": "UNUSUAL_SCORE",
-      "severity": "INFO",
       "message": "Corinth High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
       "team_id": "corinth",
       "context": {}
@@ -97,8 +90,8 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Corinth High School game on 2026-10-08 finished 85-0; flagged for a source check only.",
-      "team_id": "corinth",
+      "message": "Senatobia High School game on 2026-10-01 finished 64-0; flagged for a source check only.",
+      "team_id": "senatobia",
       "context": {}
     },
     {
@@ -113,13 +106,6 @@
       "severity": "INFO",
       "message": "Rosa Fort High School game on 2026-10-08 finished 72-0; flagged for a source check only.",
       "team_id": "rosa-fort",
-      "context": {}
-    },
-    {
-      "code": "UNUSUAL_SCORE",
-      "severity": "INFO",
-      "message": "North Pontotoc High School game on 2026-10-08 finished 85-0; flagged for a source check only.",
-      "team_id": "north-pontotoc",
       "context": {}
     },
     {
@@ -200,13 +186,6 @@
       "context": {}
     },
     {
-      "code": "DUPLICATE_GAME",
-      "severity": "BLOCKING",
-      "message": "Taylorsville Attendance Center lists the same matchup on 2026-10-08 and 2026-10-09 (likely a duplicate import).",
-      "team_id": "taylorsville",
-      "context": {}
-    },
-    {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
       "message": "Byhalia High School (9-12) game on 2026-10-01 finished 64-0; flagged for a source check only.",
@@ -225,13 +204,6 @@
       "severity": "INFO",
       "message": "Mount Olive Attendance Center game on 2026-08-28 finished 64-0; flagged for a source check only.",
       "team_id": "mount-olive",
-      "context": {}
-    },
-    {
-      "code": "DUPLICATE_GAME",
-      "severity": "BLOCKING",
-      "message": "Resurrection lists the same matchup on 2026-10-08 and 2026-10-09 (likely a duplicate import).",
-      "team_id": "resurrection",
       "context": {}
     },
     {
@@ -263,13 +235,6 @@
       "context": {}
     },
     {
-      "code": "PENDING_RESULTS",
-      "severity": "INFO",
-      "message": "Brookhaven High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "brookhaven",
-      "context": {}
-    },
-    {
       "code": "SCHEDULE_GAP",
       "severity": "INFO",
       "message": "South Panola High School has 5 verified games against a statewide median of 7.",
@@ -291,17 +256,24 @@
       "context": {}
     },
     {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Brookhaven High School has 5 verified games against a statewide median of 7.",
+      "team_id": "brookhaven",
+      "context": {}
+    },
+    {
+      "code": "PENDING_RESULTS",
+      "severity": "INFO",
+      "message": "Brookhaven High School has 2 listing(s) awaiting a verified result.",
+      "team_id": "brookhaven",
+      "context": {}
+    },
+    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
       "message": "Heidelberg High School has 2 listing(s) awaiting a verified result.",
       "team_id": "heidelberg",
-      "context": {}
-    },
-    {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Grenada High has 5 verified games against a statewide median of 7.",
-      "team_id": "grenada",
       "context": {}
     },
     {
@@ -319,17 +291,31 @@
       "context": {}
     },
     {
-      "code": "PENDING_RESULTS",
+      "code": "SCHEDULE_GAP",
       "severity": "INFO",
-      "message": "New Albany High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "new-albany",
+      "message": "Corinth High School has 5 verified games against a statewide median of 7.",
+      "team_id": "corinth",
       "context": {}
     },
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Corinth High School has 1 listing(s) awaiting a verified result.",
+      "message": "Corinth High School has 2 listing(s) awaiting a verified result.",
       "team_id": "corinth",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Grenada High has 5 verified games against a statewide median of 7.",
+      "team_id": "grenada",
+      "context": {}
+    },
+    {
+      "code": "PENDING_RESULTS",
+      "severity": "INFO",
+      "message": "New Albany High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "new-albany",
       "context": {}
     },
     {
@@ -361,9 +347,16 @@
       "context": {}
     },
     {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Laurel High School has 5 verified games against a statewide median of 7.",
+      "team_id": "laurel",
+      "context": {}
+    },
+    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Laurel High School has 1 listing(s) awaiting a verified result.",
+      "message": "Laurel High School has 2 listing(s) awaiting a verified result.",
       "team_id": "laurel",
       "context": {}
     },
@@ -391,13 +384,6 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "North Pontotoc High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "north-pontotoc",
-      "context": {}
-    },
-    {
-      "code": "PENDING_RESULTS",
-      "severity": "INFO",
       "message": "Myrtle Attendance Center has 1 listing(s) awaiting a verified result.",
       "team_id": "myrtle",
       "context": {}
@@ -414,6 +400,13 @@
       "severity": "INFO",
       "message": "Bay Springs High School has 1 listing(s) awaiting a verified result.",
       "team_id": "bay-springs",
+      "context": {}
+    },
+    {
+      "code": "PENDING_RESULTS",
+      "severity": "INFO",
+      "message": "North Pontotoc High School has 2 listing(s) awaiting a verified result.",
+      "team_id": "north-pontotoc",
       "context": {}
     },
     {
@@ -515,17 +508,10 @@
       "context": {}
     },
     {
-      "code": "LARGE_RATING_CHANGE",
+      "code": "RATING_TIE",
       "severity": "INFO",
-      "message": "North Pontotoc High School rating moved +17.0 points.",
-      "team_id": "north-pontotoc",
-      "context": {}
-    },
-    {
-      "code": "LARGE_RANK_CHANGE",
-      "severity": "INFO",
-      "message": "North Pontotoc High School moved +49 places.",
-      "team_id": "north-pontotoc",
+      "message": "Tishomingo County High School and Forrest County Agricultural Hi Sch share a full-precision rating; tie-breakers decided the order.",
+      "team_id": "forrest-county-agricultural",
       "context": {}
     },
     {
@@ -538,7 +524,7 @@
     {
       "code": "LARGE_RANK_CHANGE",
       "severity": "INFO",
-      "message": "Amite County High School moved -52 places.",
+      "message": "Amite County High School moved -50 places.",
       "team_id": "amite-county",
       "context": {}
     }

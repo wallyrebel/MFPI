@@ -1,9 +1,9 @@
 {
   "valid": false,
-  "expected_games": 784,
-  "verified_games": 767,
-  "missing_games": 17,
-  "coverage_percentage": 97.83,
+  "expected_games": 783,
+  "verified_games": 764,
+  "missing_games": 19,
+  "coverage_percentage": 97.57,
   "issues": [
     {
       "code": "REVIEWED_IDENTITY_APPLIED",
@@ -369,6 +369,25 @@
         "retained_mhsaa_game_id": "7614923",
         "home_score": 45,
         "away_score": 48
+      }
+    },
+    {
+      "code": "STALE_RESCHEDULED_LISTING",
+      "severity": "WARNING",
+      "message": "Excluded stale MHSAA listing 7732318; official final 7984763 is independently corroborated.",
+      "context": {
+        "mhsaa_game_id": "7732318",
+        "maxpreps_game_id": "1c855456-9c5c-4166-8238-379fdeefca58",
+        "original_date": "2026-10-09T17:00:00-07:00",
+        "maxpreps_date": "2026-10-08T18:00:00-05:00",
+        "home_team_id": "resurrection",
+        "away_team_id": "taylorsville",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/resurrection-catholic-pascagoula-vs-taylorsville/10-8-2026/?c=1c855456-9c5c-4166-8238-379fdeefca58"
+        ],
+        "retained_mhsaa_game_id": "7984763",
+        "home_score": 27,
+        "away_score": 24
       }
     },
     {
@@ -1264,7 +1283,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/east-central-moss-point-vs-purvis/10-8-2026/?c=06cee43a-bc8e-4ec1-9a8e-c1cf3140dc56",
             "observed_from_team_id": "east-central",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/purvis/purvis-tornadoes/football/",
             "away_url": "https://www.maxpreps.com/ms/moss-point/east-central-hornets/football/"
           },
@@ -1279,7 +1298,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/east-central-moss-point-vs-purvis/10-8-2026/?c=06cee43a-bc8e-4ec1-9a8e-c1cf3140dc56",
             "observed_from_team_id": "purvis",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/purvis/purvis-tornadoes/football/",
             "away_url": "https://www.maxpreps.com/ms/moss-point/east-central-hornets/football/"
           }
@@ -1319,7 +1338,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/kemper-county-dekalb-vs-velma-jackson-camden/10-9-2026/?c=0aa44159-fd0d-4696-83ce-f8b8cb20cf1d",
             "observed_from_team_id": "kemper-county",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/camden/velma-jackson-falcons/football/",
             "away_url": "https://www.maxpreps.com/ms/dekalb/kemper-county-wildcats/football/"
           },
@@ -1334,7 +1353,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/kemper-county-dekalb-vs-velma-jackson-camden/10-9-2026/?c=0aa44159-fd0d-4696-83ce-f8b8cb20cf1d",
             "observed_from_team_id": "velma-jackson",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/camden/velma-jackson-falcons/football/",
             "away_url": "https://www.maxpreps.com/ms/dekalb/kemper-county-wildcats/football/"
           }
@@ -1374,7 +1393,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/east-webster-maben-vs-philadelphia/10-9-2026/?c=14e7f3f2-a9b7-4ce9-adf2-69b3984fdbef",
             "observed_from_team_id": "east-webster",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/maben/east-webster-wolverines/football/",
             "away_url": "https://www.maxpreps.com/ms/philadelphia/philadelphia-tornadoes/football/"
           },
@@ -1389,39 +1408,11 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/east-webster-maben-vs-philadelphia/10-9-2026/?c=14e7f3f2-a9b7-4ce9-adf2-69b3984fdbef",
             "observed_from_team_id": "philadelphia",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/maben/east-webster-wolverines/football/",
             "away_url": "https://www.maxpreps.com/ms/philadelphia/philadelphia-tornadoes/football/"
           }
         ]
-      }
-    },
-    {
-      "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
-      "severity": "WARNING",
-      "message": "Imported final 7984795 disagrees with secondary event 1e1f08b6-73d3-4156-86f6-c94db3c65bb1; primary result retained.",
-      "context": {
-        "secondary_game_id": "1e1f08b6-73d3-4156-86f6-c94db3c65bb1",
-        "date": "2026-10-08",
-        "home": "north-pontotoc",
-        "away": "corinth",
-        "home_url": "https://www.maxpreps.com/ms/ecru/north-pontotoc-vikings/football/",
-        "away_url": "https://www.maxpreps.com/ms/corinth/corinth-warriors/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/corinth-vs-north-pontotoc-ecru/10-8-2026/?c=1e1f08b6-73d3-4156-86f6-c94db3c65bb1"
-        ],
-        "observed_from_team_ids": [
-          "corinth",
-          "north-pontotoc"
-        ],
-        "status": "COMPLETED",
-        "home_score": 7,
-        "away_score": 52,
-        "primary_game_id": "7984795",
-        "primary_scores": {
-          "north-pontotoc": 85,
-          "corinth": 0
-        }
       }
     },
     {
@@ -1457,7 +1448,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/collins-vs-perry-central-new-augusta/10-9-2026/?c=2173628f-a3d8-49e4-ad83-d57274778864",
             "observed_from_team_id": "collins",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/collins/collins-tigers/football/",
             "away_url": "https://www.maxpreps.com/ms/new-augusta/perry-central-bulldogs/football/"
           },
@@ -1472,7 +1463,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/collins-vs-perry-central-new-augusta/10-9-2026/?c=2173628f-a3d8-49e4-ad83-d57274778864",
             "observed_from_team_id": "perry-central",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/collins/collins-tigers/football/",
             "away_url": "https://www.maxpreps.com/ms/new-augusta/perry-central-bulldogs/football/"
           }
@@ -1568,7 +1559,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/bay-springs-vs-enterprise/10-9-2026/?c=362efce9-a348-49e0-96f3-49fd23616494",
             "observed_from_team_id": "bay-springs",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/enterprise/enterprise-bulldogs/football/",
             "away_url": "https://www.maxpreps.com/ms/bay-springs/bay-springs-bulldogs/football/"
           },
@@ -1583,7 +1574,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/bay-springs-vs-enterprise/10-9-2026/?c=362efce9-a348-49e0-96f3-49fd23616494",
             "observed_from_team_id": "enterprise-clarke",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/enterprise/enterprise-bulldogs/football/",
             "away_url": "https://www.maxpreps.com/ms/bay-springs/bay-springs-bulldogs/football/"
           }
@@ -1623,7 +1614,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/salem-tylertown-vs-west-lincoln-brookhaven/10-9-2026/?c=37fc1f3a-e67c-4946-8cca-7c60f3a32b40",
             "observed_from_team_id": "salem",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/brookhaven/west-lincoln-bears/football/",
             "away_url": "https://www.maxpreps.com/ms/tylertown/salem-wildcats/football/"
           },
@@ -1638,7 +1629,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/salem-tylertown-vs-west-lincoln-brookhaven/10-9-2026/?c=37fc1f3a-e67c-4946-8cca-7c60f3a32b40",
             "observed_from_team_id": "west-lincoln",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/brookhaven/west-lincoln-bears/football/",
             "away_url": "https://www.maxpreps.com/ms/tylertown/salem-wildcats/football/"
           }
@@ -1678,7 +1669,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/belmont-vs-booneville/10-9-2026/?c=431672a3-001e-49e1-9f5c-5352ca0c283f",
             "observed_from_team_id": "belmont",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/booneville/booneville-blue-devils/football/",
             "away_url": "https://www.maxpreps.com/ms/belmont/belmont-cardinals/football/"
           },
@@ -1693,7 +1684,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/belmont-vs-booneville/10-9-2026/?c=431672a3-001e-49e1-9f5c-5352ca0c283f",
             "observed_from_team_id": "booneville",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/booneville/booneville-blue-devils/football/",
             "away_url": "https://www.maxpreps.com/ms/belmont/belmont-cardinals/football/"
           }
@@ -1761,7 +1752,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/gentry-indianola-vs-west-tallahatchie-webb/10-9-2026/?c=4fb537c5-ba69-4a44-87f6-347c71dbc2ba",
             "observed_from_team_id": "gentry",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/indianola/gentry-rams/football/",
             "away_url": "https://www.maxpreps.com/ms/webb/west-tallahatchie-choctaws/football/"
           },
@@ -1776,7 +1767,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/gentry-indianola-vs-west-tallahatchie-webb/10-9-2026/?c=4fb537c5-ba69-4a44-87f6-347c71dbc2ba",
             "observed_from_team_id": "west-tallahatchie",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/indianola/gentry-rams/football/",
             "away_url": "https://www.maxpreps.com/ms/webb/west-tallahatchie-choctaws/football/"
           }
@@ -1844,7 +1835,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/loyd-star-brookhaven-vs-wesson/10-9-2026/?c=5da14eb9-ea65-4b4e-a197-586f1193c265",
             "observed_from_team_id": "loyd-star",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/brookhaven/loyd-star-hornets/football/",
             "away_url": "https://www.maxpreps.com/ms/wesson/wesson-cobras/football/"
           },
@@ -1859,7 +1850,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/loyd-star-brookhaven-vs-wesson/10-9-2026/?c=5da14eb9-ea65-4b4e-a197-586f1193c265",
             "observed_from_team_id": "wesson",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/brookhaven/loyd-star-hornets/football/",
             "away_url": "https://www.maxpreps.com/ms/wesson/wesson-cobras/football/"
           }
@@ -1927,7 +1918,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/clarkdale-meridian-vs-union/10-9-2026/?c=61a5a0a3-fb76-430d-9dcf-0ab0e5595fad",
             "observed_from_team_id": "clarkdale",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/meridian/clarkdale-bulldogs/football/",
             "away_url": "https://www.maxpreps.com/ms/union/union-yellowjackets/football/"
           },
@@ -1942,7 +1933,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/clarkdale-meridian-vs-union/10-9-2026/?c=61a5a0a3-fb76-430d-9dcf-0ab0e5595fad",
             "observed_from_team_id": "union",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/meridian/clarkdale-bulldogs/football/",
             "away_url": "https://www.maxpreps.com/ms/union/union-yellowjackets/football/"
           }
@@ -2144,7 +2135,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/gautier-vs-long-beach/10-8-2026/?c=9490b2aa-f18a-495f-8eeb-f25986f4dfd1",
             "observed_from_team_id": "gautier",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/long-beach/long-beach-bearcats/football/",
             "away_url": "https://www.maxpreps.com/ms/gautier/gautier-gators/football/"
           },
@@ -2159,7 +2150,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/gautier-vs-long-beach/10-8-2026/?c=9490b2aa-f18a-495f-8eeb-f25986f4dfd1",
             "observed_from_team_id": "long-beach",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/long-beach/long-beach-bearcats/football/",
             "away_url": "https://www.maxpreps.com/ms/gautier/gautier-gators/football/"
           }
@@ -2337,34 +2328,6 @@
     {
       "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
       "severity": "WARNING",
-      "message": "Imported final 7984789 disagrees with secondary event e72ff5a2-8167-464a-bae7-82c48962775e; primary result retained.",
-      "context": {
-        "secondary_game_id": "e72ff5a2-8167-464a-bae7-82c48962775e",
-        "date": "2026-10-08",
-        "home": "brookhaven",
-        "away": "laurel",
-        "home_url": "https://www.maxpreps.com/ms/brookhaven/brookhaven-panthers/football/",
-        "away_url": "https://www.maxpreps.com/ms/laurel/laurel-tornadoes/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/brookhaven-vs-laurel/10-8-2026/?c=e72ff5a2-8167-464a-bae7-82c48962775e"
-        ],
-        "observed_from_team_ids": [
-          "brookhaven",
-          "laurel"
-        ],
-        "status": "COMPLETED",
-        "home_score": 56,
-        "away_score": 0,
-        "primary_game_id": "7984789",
-        "primary_scores": {
-          "brookhaven": 49,
-          "laurel": 0
-        }
-      }
-    },
-    {
-      "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
-      "severity": "WARNING",
       "message": "Imported final 7614839 disagrees with secondary event ec2fa393-c991-464d-9b23-5c940df62e8d; primary result retained.",
       "context": {
         "secondary_game_id": "ec2fa393-c991-464d-9b23-5c940df62e8d",
@@ -2423,7 +2386,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/florence-vs-leake-carthage/10-9-2026/?c=f4953534-0b03-433c-b314-b21eb23e5fae",
             "observed_from_team_id": "florence",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/florence/florence-eagles/football/",
             "away_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/"
           },
@@ -2438,7 +2401,7 @@
             "forfeit": false,
             "source_url": "https://www.maxpreps.com/ms/football/game/florence-vs-leake-carthage/10-9-2026/?c=f4953534-0b03-433c-b314-b21eb23e5fae",
             "observed_from_team_id": "leake-central",
-            "retrieved_at": "2026-10-15T00:14:47.375606+00:00",
+            "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
             "home_url": "https://www.maxpreps.com/ms/florence/florence-eagles/football/",
             "away_url": "https://www.maxpreps.com/ms/carthage/leake-gators/football/"
           }
@@ -2448,7 +2411,7 @@
     {
       "code": "UNVERIFIED_GAMES_REMAIN",
       "severity": "WARNING",
-      "message": "Published coverage is 97.8%, with 17 unresolved game listings retained.",
+      "message": "Published coverage is 97.6%, with 19 unresolved game listings retained.",
       "context": {
         "missing_game_ids": [
           "7731608",
@@ -2463,21 +2426,13 @@
           "7614890",
           "7731800",
           "7731957",
+          "7984789",
+          "7984795",
           "7614992",
           "7615015",
           "7732312",
           "7732330",
           "7732331"
-        ]
-      }
-    },
-    {
-      "code": "PUBLICATION_AUDIT_FINDINGS",
-      "severity": "CRITICAL",
-      "message": "The publication audit found 2 data issue(s); the week is published as provisional.",
-      "context": {
-        "codes": [
-          "DUPLICATE_GAME"
         ]
       }
     }

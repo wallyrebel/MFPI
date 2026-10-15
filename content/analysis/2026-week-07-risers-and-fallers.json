@@ -6,10 +6,10 @@
   "status": "published",
   "season": 2026,
   "week": 7,
-  "snapshot_run_id": "2026-week-07-20261015T001435982623Z",
-  "snapshot_generated_at": "2026-10-15T00:14:35.982623+00:00",
+  "snapshot_run_id": "2026-week-07-20261015T002316548268Z",
+  "snapshot_generated_at": "2026-10-15T00:23:16.548268+00:00",
   "formula_version": "MFPI-3.2",
-  "draft_generated_at": "2026-10-15T00:15:32.698758+00:00",
+  "draft_generated_at": "2026-10-15T00:25:03.917213+00:00",
   "author": "MFPI automated analysis",
   "reviewed_by": null,
   "reviewed_at": null,
@@ -52,14 +52,14 @@
     {
       "heading": "Biggest risers",
       "paragraphs": [
-        "[[north-pontotoc]] (4A, 3-4): State ranking: up 49 spots to No. 109 (from No. 158). MFPI rating: increased 17.0 points to 52.2. In the window it beat [[corinth]] (currently No. 57) 85-0 at home on Oct 8.",
-        "[[booneville]] (3A, 7-0): State ranking: up 25 spots to No. 58 (from No. 83). MFPI rating: increased 7.2 points to 68.4. In the window it beat [[belmont]] (currently No. 160) 41-6 at home on Oct 9.",
-        "[[saltillo]] (6A, 1-6): State ranking: up 24 spots to No. 128 (from No. 152). MFPI rating: increased 7.6 points to 43.7. In the window it beat [[olive-branch]] (currently No. 77) 26-21 at home on Oct 9.",
-        "[[wilkinson-county]] (2A, 3-2): State ranking: up 21 spots to No. 105 (from No. 126). MFPI rating: increased 8.8 points to 53.1. In the window it beat [[amite-county]] (currently No. 137) 58-12 on the road on Oct 9.",
-        "[[wesson]] (2A, 7-0): State ranking: up 20 spots to No. 76 (from No. 96). MFPI rating: increased 3.9 points to 62.0. In the window it beat [[loyd-star]] (currently No. 153) 40-6 on the road on Oct 9.",
-        "[[rosa-fort]] (4A, 4-2): State ranking: up 20 spots to No. 98 (from No. 118). MFPI rating: increased 7.9 points to 55.6. In the window it beat [[byhalia]] (currently No. 209) 72-0 at home on Oct 8.",
-        "[[new-hope]] (5A, 4-2): State ranking: up 19 spots to No. 21 (from No. 40). MFPI rating: increased 5.8 points to 83.4. In the window it beat [[lafayette]] (currently No. 54) 28-14 on the road on Oct 9.",
-        "[[ocean-springs]] (7A, 2-5): State ranking: up 19 spots to No. 81 (from No. 100). MFPI rating: increased 6.4 points to 60.6. In the window it lost to [[diberville]] (currently No. 4) 14-35 at home on Oct 8."
+        "[[saltillo]] (6A, 1-6): State ranking: up 26 spots to No. 126 (from No. 152). MFPI rating: increased 7.8 points to 43.9. In the window it beat [[olive-branch]] (currently No. 77) 26-21 at home on Oct 9.",
+        "[[amory]] (4A, 4-3): State ranking: up 24 spots to No. 81 (from No. 105). MFPI rating: increased 8.3 points to 60.6. In the window it beat [[mooreville]] (currently No. 155) 42-7 on the road on Oct 9.",
+        "[[ocean-springs]] (7A, 2-5): State ranking: up 20 spots to No. 80 (from No. 100). MFPI rating: increased 6.9 points to 61.1. In the window it lost to [[diberville]] (currently No. 4) 14-35 at home on Oct 8.",
+        "[[rosa-fort]] (4A, 4-2): State ranking: up 20 spots to No. 98 (from No. 118). MFPI rating: increased 7.8 points to 55.5. In the window it beat [[byhalia]] (currently No. 214) 72-0 at home on Oct 8.",
+        "[[wilkinson-county]] (2A, 3-2): State ranking: up 20 spots to No. 106 (from No. 126). MFPI rating: increased 8.7 points to 53.0. In the window it beat [[amite-county]] (currently No. 135) 58-12 on the road on Oct 9.",
+        "[[new-hope]] (5A, 4-2): State ranking: up 19 spots to No. 21 (from No. 40). MFPI rating: increased 7.0 points to 84.6. In the window it beat [[lafayette]] (currently No. 51) 28-14 on the road on Oct 9.",
+        "[[booneville]] (3A, 7-0): State ranking: up 18 spots to No. 65 (from No. 83). MFPI rating: increased 5.0 points to 66.2. In the window it beat [[belmont]] (currently No. 162) 41-6 at home on Oct 9.",
+        "[[wesson]] (2A, 7-0): State ranking: up 18 spots to No. 78 (from No. 96). MFPI rating: increased 3.6 points to 61.7. In the window it beat [[loyd-star]] (currently No. 153) 40-6 on the road on Oct 9."
       ],
       "table": {
         "columns": [
@@ -72,68 +72,68 @@
         ],
         "rows": [
           [
-            "[[north-pontotoc]]",
-            "109",
-            "158",
-            "+49",
-            "52.2",
-            "+17.0"
-          ],
-          [
-            "[[booneville]]",
-            "58",
-            "83",
-            "+25",
-            "68.4",
-            "+7.2"
-          ],
-          [
             "[[saltillo]]",
-            "128",
-            "152",
-            "+24",
-            "43.7",
-            "+7.6"
-          ],
-          [
-            "[[wilkinson-county]]",
-            "105",
             "126",
-            "+21",
-            "53.1",
-            "+8.8"
+            "152",
+            "+26",
+            "43.9",
+            "+7.8"
           ],
           [
-            "[[wesson]]",
-            "76",
-            "96",
+            "[[amory]]",
+            "81",
+            "105",
+            "+24",
+            "60.6",
+            "+8.3"
+          ],
+          [
+            "[[ocean-springs]]",
+            "80",
+            "100",
             "+20",
-            "62.0",
-            "+3.9"
+            "61.1",
+            "+6.9"
           ],
           [
             "[[rosa-fort]]",
             "98",
             "118",
             "+20",
-            "55.6",
-            "+7.9"
+            "55.5",
+            "+7.8"
+          ],
+          [
+            "[[wilkinson-county]]",
+            "106",
+            "126",
+            "+20",
+            "53.0",
+            "+8.7"
           ],
           [
             "[[new-hope]]",
             "21",
             "40",
             "+19",
-            "83.4",
-            "+5.8"
+            "84.6",
+            "+7.0"
           ],
           [
-            "[[ocean-springs]]",
-            "81",
-            "100",
-            "+19",
-            "60.6",
-            "+6.4"
+            "[[booneville]]",
+            "65",
+            "83",
+            "+18",
+            "66.2",
+            "+5.0"
+          ],
+          [
+            "[[wesson]]",
+            "78",
+            "96",
+            "+18",
+            "61.7",
+            "+3.6"
           ]
         ]
       }
@@ -141,14 +141,14 @@
     {
       "heading": "Biggest fallers",
       "paragraphs": [
-        "[[amite-county]] (2A, 5-1): State ranking: down 52 spots to No. 137 (from No. 85). MFPI rating: decreased 18.9 points to 41.9. In the window it lost to [[wilkinson-county]] (currently No. 105) 12-58 at home on Oct 9.",
-        "[[olive-branch]] (6A, 3-4): State ranking: down 29 spots to No. 77 (from No. 48). MFPI rating: decreased 9.6 points to 61.8. In the window it lost to [[saltillo]] (currently No. 128) 21-26 on the road on Oct 9.",
-        "[[vancleave]] (5A, 2-4): State ranking: down 28 spots to No. 132 (from No. 104). MFPI rating: decreased 9.5 points to 43.1. In the window it lost to [[northeast-jones]] (currently No. 104) 21-31 on the road on Oct 8.",
-        "[[st-stanislaus]] (3A, 2-5): State ranking: down 28 spots to No. 162 (from No. 134). MFPI rating: decreased 6.8 points to 34.4. In the window it lost to [[tylertown]] (currently No. 164) 13-18 on the road on Oct 8.",
-        "[[gautier]] (6A, 4-2): State ranking: down 26 spots to No. 41 (from No. 15). MFPI rating: decreased 10.4 points to 75.3. In the window it lost to [[long-beach]] (currently No. 112) 14-16 on the road on Oct 8.",
-        "[[st-patrick]] (3A, 3-4): State ranking: down 26 spots to No. 191 (from No. 165). MFPI rating: decreased 9.7 points to 21.7. In the window it lost to [[west-marion]] (currently No. 190) 29-47 at home on Oct 8.",
-        "[[greene-county]] (4A, 4-3): State ranking: down 24 spots to No. 82 (from No. 58). MFPI rating: decreased 7.7 points to 60.5. In the window it lost to [[presbyterian-christian]] (currently No. 49) 14-40 on the road on Oct 8.",
-        "[[mcadams]] (1A, 3-4): State ranking: down 24 spots to No. 199 (from No. 175). MFPI rating: decreased 8.8 points to 19.1. In the window it lost to [[sebastopol]] (currently No. 170) 6-36 on the road on Oct 8."
+        "[[amite-county]] (2A, 5-1): State ranking: down 50 spots to No. 135 (from No. 85). MFPI rating: decreased 18.9 points to 41.9. In the window it lost to [[wilkinson-county]] (currently No. 106) 12-58 at home on Oct 9.",
+        "[[olive-branch]] (6A, 3-4): State ranking: down 29 spots to No. 77 (from No. 48). MFPI rating: decreased 9.6 points to 61.8. In the window it lost to [[saltillo]] (currently No. 126) 21-26 on the road on Oct 9.",
+        "[[gautier]] (6A, 4-2): State ranking: down 27 spots to No. 42 (from No. 15). MFPI rating: decreased 10.0 points to 75.7. In the window it lost to [[long-beach]] (currently No. 110) 14-16 on the road on Oct 8.",
+        "[[st-patrick]] (3A, 3-4): State ranking: down 26 spots to No. 191 (from No. 165). MFPI rating: decreased 9.6 points to 21.8. In the window it lost to [[west-marion]] (currently No. 190) 29-47 at home on Oct 8.",
+        "[[st-stanislaus]] (3A, 2-5): State ranking: down 25 spots to No. 159 (from No. 134). MFPI rating: decreased 6.4 points to 34.8. In the window it lost to [[tylertown]] (currently No. 164) 13-18 on the road on Oct 8.",
+        "[[greene-county]] (4A, 4-3): State ranking: down 24 spots to No. 82 (from No. 58). MFPI rating: decreased 7.6 points to 60.6. In the window it lost to [[presbyterian-christian]] (currently No. 49) 14-40 on the road on Oct 8.",
+        "[[vancleave]] (5A, 2-4): State ranking: down 24 spots to No. 128 (from No. 104). MFPI rating: decreased 9.0 points to 43.6. In the window it lost to [[northeast-jones]] (currently No. 104) 21-31 on the road on Oct 8.",
+        "[[mcadams]] (1A, 3-4): State ranking: down 22 spots to No. 197 (from No. 175). MFPI rating: decreased 8.5 points to 19.4. In the window it lost to [[sebastopol]] (currently No. 169) 6-36 on the road on Oct 8."
       ],
       "table": {
         "columns": [
@@ -162,9 +162,9 @@
         "rows": [
           [
             "[[amite-county]]",
-            "137",
+            "135",
             "85",
-            "-52",
+            "-50",
             "41.9",
             "-18.9"
           ],
@@ -177,52 +177,52 @@
             "-9.6"
           ],
           [
-            "[[vancleave]]",
-            "132",
-            "104",
-            "-28",
-            "43.1",
-            "-9.5"
-          ],
-          [
-            "[[st-stanislaus]]",
-            "162",
-            "134",
-            "-28",
-            "34.4",
-            "-6.8"
-          ],
-          [
             "[[gautier]]",
-            "41",
+            "42",
             "15",
-            "-26",
-            "75.3",
-            "-10.4"
+            "-27",
+            "75.7",
+            "-10.0"
           ],
           [
             "[[st-patrick]]",
             "191",
             "165",
             "-26",
-            "21.7",
-            "-9.7"
+            "21.8",
+            "-9.6"
+          ],
+          [
+            "[[st-stanislaus]]",
+            "159",
+            "134",
+            "-25",
+            "34.8",
+            "-6.4"
           ],
           [
             "[[greene-county]]",
             "82",
             "58",
             "-24",
-            "60.5",
-            "-7.7"
+            "60.6",
+            "-7.6"
+          ],
+          [
+            "[[vancleave]]",
+            "128",
+            "104",
+            "-24",
+            "43.6",
+            "-9.0"
           ],
           [
             "[[mcadams]]",
-            "199",
+            "197",
             "175",
-            "-24",
-            "19.1",
-            "-8.8"
+            "-22",
+            "19.4",
+            "-8.5"
           ]
         ]
       }
@@ -230,20 +230,20 @@
     {
       "heading": "Rank and rating moving separately",
       "paragraphs": [
-        "Held their rank while the rating changed by at least a point: [[mize]] (No. 113, +1.3); [[murrah]] (No. 147, +1.6); [[sacred-heart]] (No. 183, -1.3); [[ashland]] (No. 222, -1.8); [[west-lincoln]] (No. 224, -1.3).",
-        "Moved in the ranking with an unchanged displayed rating: [[brandon]] (-1 to No. 5); [[poplarville]] (-3 to No. 12); [[shannon]] (+2 to No. 30); [[belmont]] (-3 to No. 160); [[potts-camp]] (+3 to No. 176)."
+        "Held their rank while the rating changed by at least a point: [[lake]] (No. 143, +1.1); [[sacred-heart]] (No. 183, -1.4); [[ashland]] (No. 222, -1.7); [[west-lincoln]] (No. 224, -1.2).",
+        "Moved in the ranking with an unchanged displayed rating: [[brandon]] (-1 to No. 5); [[poplarville]] (-2 to No. 11)."
       ]
     },
     {
       "heading": "Data notes and limitations",
       "paragraphs": [
-        "Snapshot generated October 14, 2026 at 7:14 PM Central with a cutoff of October 13 at 11:00 AM Central, formula MFPI-3.2.",
-        "767 of 784 game listings due by the cutoff had verified scores (97.8%); the rest count as unavailable, never as losses or 0-0 results.",
+        "Snapshot generated October 14, 2026 at 7:23 PM Central with a cutoff of October 13 at 11:00 AM Central, formula MFPI-3.2.",
+        "764 of 783 game listings due by the cutoff had verified scores (97.6%); the rest count as unavailable, never as losses or 0-0 results.",
         "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
       ]
     }
   ],
   "publication_mode": "automated",
   "approved_by": "Jon Ross Myers",
-  "updated_at": null
+  "updated_at": "2026-10-14T19:25:03-05:00"
 }
