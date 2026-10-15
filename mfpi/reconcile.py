@@ -18,6 +18,26 @@ from urllib.parse import parse_qs, urljoin, urlparse
 from .providers import MAXPREPS_ROOT
 
 
+# Verified 2026-10-15 against the score-center source IDs and both schedules.
+# TN: https://tssaasports.com/sports/schedules/?schoolid=88&sport=football
+# MS: https://www.maxpreps.com/ms/columbia/columbia-academy-cougars/football/schedule/
+# Both cities are Columbia. Neither a shared name nor the city can separate
+# them; only these exact reviewed profiles establish the cross-source link.
+REVIEWED_EXTERNAL_PROFILES = {
+    "/tn/columbia/columbia-academy-bulldogs/football": "external-231141",
+    "/ms/columbia/columbia-academy-cougars/football": "external-229414",
+}
+
+
+def _reviewed_external_profile(teams: list[Team], name: str, url: str) -> Team | None:
+    parsed = urlparse(urljoin(MAXPREPS_ROOT, url))
+    if parsed.scheme != "https" or parsed.hostname != "www.maxpreps.com":
+        return None
+    team_id = REVIEWED_EXTERNAL_PROFILES.get(parsed.path.rstrip("/").lower())
+    return next((team for team in teams if not team.ranked and team.team_id == team_id
+                 and normalize_name(team.display_name) == normalize_name(name)), None)
+
+
 def reconcile_games(
     official_teams: list[Team], raw_games: list[RawGame]
 ) -> tuple[list[Team], list[Game], list[ValidationIssue]]:
@@ -284,13 +304,27 @@ def supplement_games_with_maxpreps(
 ) -> tuple[list[Game], list[ValidationIssue]]:
     """Fill only unresolved MHSAA listings from exact secondary matchup evidence."""
 
-    matcher = TeamMatcher(teams)
+    # External source IDs identify distinct schools even when their names
+    # coincide. Keep their primary games intact; a secondary name alone must
+    # not choose between them. Official alias collisions remain hard errors.
+    matcher = TeamMatcher(teams, allow_external_name_collisions=True)
     resolved_observations: list[tuple[MaxPrepsScoreObservation, str, str]] = []
     issues: list[ValidationIssue] = []
 
     for observation in observations:
-        home, _, _ = matcher.match(observation.home_name)
-        away, _, _ = matcher.match(observation.away_name)
+        home, _, home_method = matcher.match(observation.home_name)
+        away, _, away_method = matcher.match(observation.away_name)
+        if home_method == "ambiguous":
+            home = _reviewed_external_profile(teams, observation.home_name, observation.home_url)
+        if away_method == "ambiguous":
+            away = _reviewed_external_profile(teams, observation.away_name, observation.away_url)
+        if (home is None and home_method == "ambiguous") or (away is None and away_method == "ambiguous"):
+            issues.append(ValidationIssue(
+                "AMBIGUOUS_SECONDARY_TEAM_NAME", "WARNING",
+                f"Secondary event {observation.game_id} has an ambiguous team name; primary listings retained without assigning this result.",
+                {"secondary_game_id": observation.game_id, "home": observation.home_name,
+                 "away": observation.away_name, "source_url": observation.source_url},
+            ))
         if home is None or away is None or home.team_id == away.team_id:
             continue
         resolved_observations.append((observation, home.team_id, away.team_id))
@@ -480,7 +514,13 @@ def reconcile_external_maxpreps_ratings(
     teams: list[Team], observations: list[MaxPrepsScoreObservation], rankings_by_state: dict[str, list[MaxPrepsRanking]]
 ) -> dict[str, float]:
     """Attach published MaxPreps ratings to non-Mississippi opponents."""
-    by_name = {normalize_name(team.display_name): team for team in teams if not team.ranked}
+    external_by_name: dict[str, list[Team]] = defaultdict(list)
+    for team in teams:
+        if not team.ranked:
+            external_by_name[normalize_name(team.display_name)].append(team)
+    # A published rating cannot establish which same-named source school it
+    # belongs to. Do not seed the wrong opponent's SRS by insertion order.
+    by_name = {name: candidates[0] for name, candidates in external_by_name.items() if len(candidates) == 1}
     ratings: dict[str, float] = {}
     for observation in observations:
         for name, team_url in ((observation.home_name, observation.home_url), (observation.away_name, observation.away_url)):
@@ -489,7 +529,7 @@ def reconcile_external_maxpreps_ratings(
             if len(parts) < 2 or parts[0].lower() == "ms":
                 continue
             state = parts[0].lower()
-            team = by_name.get(normalize_name(name))
+            team = _reviewed_external_profile(teams, name, team_url) or by_name.get(normalize_name(name))
             if team is None or not team_url:
                 continue
             target = urlparse(absolute).path.rstrip("/").lower()

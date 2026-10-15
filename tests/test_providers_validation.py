@@ -7,17 +7,101 @@ from dataclasses import replace
 from datetime import datetime, timedelta, timezone
 
 from mfpi.config import Settings
-from mfpi.models import MaxPrepsRanking, MaxPrepsScoreObservation, ValidationIssue
+from mfpi.models import MaxPrepsRanking, MaxPrepsScoreObservation, Team, ValidationIssue
 from mfpi.providers import (
     MHSAAClassificationProvider,
     MHSAAOfficialScoreProvider,
     MaxPrepsRankingProvider,
     MaxPrepsScoreProvider,
 )
-from mfpi.reconcile import reconcile_maxpreps, supplement_games_with_maxpreps
+from mfpi.reconcile import reconcile_external_maxpreps_ratings, reconcile_maxpreps, supplement_games_with_maxpreps
+from mfpi.matching import TeamMatcher
 from mfpi.validation import can_show_provisional, validate_inputs
 
 from conftest import make_game, make_team
+
+
+def columbia_academies():
+    # Source 231141 is the TN Bulldogs; 229414 is the MS Cougars.
+    return [Team(f"external-{source_id}", "columbia academy", "Columbia Academy", None)
+            for source_id in ("231141", "229414")]
+
+
+@pytest.mark.parametrize("reverse", [False, True])
+def test_secondary_shared_external_names_preserve_finals_and_recover_other_games(cutoff, reverse):
+    external = columbia_academies()[:: -1 if reverse else 1]
+    teams = [make_team("Alpha"), make_team("Beta"), *external]
+    finals = [make_game("tn-final", "alpha", "external-231141", 42, 0),
+              make_game("ms-final", "beta", "external-229414", 21, 14)]
+    pending = replace(make_game("pending", "alpha", "beta", 0, 0),
+                      home_score=None, away_score=None, verified=False, status="UPCOMING")
+    observation = MaxPrepsScoreObservation(
+        "other-final", pending.date, "Alpha", "Beta", 35, 14, "COMPLETED", False,
+        "https://www.maxpreps.com/game/other-final/", "alpha", cutoff,
+    )
+    games, issues = supplement_games_with_maxpreps(teams, [*finals, pending], [observation], cutoff)
+    assert games[:2] == finals
+    assert games[2].completed and games[2].verified
+    assert (games[2].home_score, games[2].away_score) == (35, 14)
+    assert any(issue.code == "MAXPREPS_SECONDARY_RESULTS_USED" for issue in issues)
+
+
+def test_secondary_shared_external_name_cannot_fill_either_school_by_guessing(cutoff):
+    teams = [make_team("Alpha"), *columbia_academies()]
+    pending = replace(make_game("pending", "alpha", "external-231141", 0, 0),
+                      home_score=None, away_score=None, verified=False, status="UPCOMING")
+    observation = MaxPrepsScoreObservation(
+        "ambiguous-final", pending.date, "Alpha", "Columbia Academy", 42, 0,
+        "COMPLETED", False, "https://www.maxpreps.com/game/ambiguous-final/", "alpha", cutoff,
+    )
+    games, issues = supplement_games_with_maxpreps(teams, [pending], [observation], cutoff)
+    assert games == [pending]
+    assert any(issue.code == "AMBIGUOUS_SECONDARY_TEAM_NAME" for issue in issues)
+    matcher = TeamMatcher(teams, allow_external_name_collisions=True)
+    assert matcher.match("Columbia Academy") == (None, 1.0, "ambiguous")
+    assert matcher.match("Columbia Academi")[0] is None
+
+
+def test_secondary_external_collision_option_keeps_official_aliases_strict():
+    with pytest.raises(ValueError, match="Duplicate normalized alias"):
+        TeamMatcher(columbia_academies())
+    teams = [make_team("Columbia Academy"), *columbia_academies()]
+    with pytest.raises(ValueError, match="Duplicate normalized alias"):
+        TeamMatcher(teams, allow_external_name_collisions=True)
+
+
+@pytest.mark.parametrize("reverse", [False, True])
+def test_external_ratings_use_reviewed_profile_not_same_named_school_order(cutoff, reverse):
+    teams = columbia_academies()[:: -1 if reverse else 1]
+    profile = "/tn/columbia/columbia-academy-bulldogs/football/"
+    observation = MaxPrepsScoreObservation(
+        "tn-game", cutoff, "Alpha", "Columbia Academy", 42, 0, "COMPLETED", False,
+        "https://www.maxpreps.com/game/tn-game/", "alpha", cutoff, away_url=profile,
+    )
+    ratings = {"tn": [MaxPrepsRanking(1, "Columbia Academy", "2-4", 50, 25, profile)]}
+    assert reconcile_external_maxpreps_ratings(teams, [observation], ratings) == {"external-231141": 50}
+    unknown = replace(observation, away_url="/tn/elsewhere/columbia-academy/football/")
+    ratings["tn"].append(MaxPrepsRanking(2, "Columbia Academy", "1-5", 40, 20, unknown.away_url))
+    assert reconcile_external_maxpreps_ratings(teams, [unknown], ratings) == {}
+
+
+@pytest.mark.parametrize("source_id,profile", [
+    ("231141", "/tn/columbia/columbia-academy-bulldogs/football/"),
+    ("229414", "/ms/columbia/columbia-academy-cougars/football/"),
+])
+def test_secondary_reviewed_profile_recovers_only_correct_columbia_school(cutoff, source_id, profile):
+    teams = [make_team("Alpha"), *columbia_academies()]
+    pending = [replace(make_game(source, "alpha", f"external-{source}", 0, 0),
+                       home_score=None, away_score=None, verified=False, status="UPCOMING")
+               for source in ("231141", "229414")]
+    observation = MaxPrepsScoreObservation(
+        "reviewed-final", pending[0].date, "Alpha", "Columbia Academy", 42, 0,
+        "COMPLETED", False, "https://www.maxpreps.com/game/reviewed-final/", "alpha", cutoff,
+        away_url=profile,
+    )
+    games, _ = supplement_games_with_maxpreps(teams, pending, [observation], cutoff)
+    assert [game.game_id for game in games if game.completed] == [source_id]
+    assert games[0 if source_id == "229414" else 1] == pending[0 if source_id == "229414" else 1]
 
 
 def test_official_classification_parser_and_duplicate_enterprise_hardening() -> None:

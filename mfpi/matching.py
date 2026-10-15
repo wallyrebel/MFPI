@@ -99,28 +99,37 @@ def generated_aliases(name: str) -> tuple[str, ...]:
 
 
 class TeamMatcher:
-    def __init__(self, teams: Iterable[Team]) -> None:
+    def __init__(self, teams: Iterable[Team], *, allow_external_name_collisions: bool = False) -> None:
         self.teams = list(teams)
         self._by_alias: dict[str, Team] = {}
+        self._ambiguous_aliases: set[str] = set()
+        alias_teams: dict[str, dict[str, Team]] = {}
         for team in self.teams:
             values = {team.canonical_name, team.display_name, *team.aliases}
             for value in values:
                 key = normalize_name(value)
-                existing = self._by_alias.get(key)
-                if existing is not None and existing.team_id != team.team_id:
-                    raise ValueError(f"Duplicate normalized alias {key!r}: {existing.team_id} and {team.team_id}")
-                self._by_alias[key] = team
+                alias_teams.setdefault(key, {})[team.team_id] = team
+        for key, candidates in alias_teams.items():
+            values = list(candidates.values())
+            if len(values) > 1:
+                if not allow_external_name_collisions or any(team.ranked for team in values):
+                    raise ValueError(f"Duplicate normalized alias {key!r}: {values[0].team_id} and {values[1].team_id}")
+                self._ambiguous_aliases.add(key)
+            else:
+                self._by_alias[key] = values[0]
 
     def match(self, incoming_name: str) -> tuple[Team | None, float, str]:
         key = normalize_name(incoming_name)
+        if key in self._ambiguous_aliases:
+            return None, 1.0, "ambiguous"
         if key in self._by_alias:
             return self._by_alias[key], 1.0, "alias"
-        candidates = difflib.get_close_matches(key, self._by_alias.keys(), n=2, cutoff=0.88)
+        candidates = difflib.get_close_matches(key, self._by_alias.keys() | self._ambiguous_aliases, n=2, cutoff=0.88)
         if not candidates:
             return None, 0.0, "unmatched"
         best_score = difflib.SequenceMatcher(None, key, candidates[0]).ratio()
         second_score = difflib.SequenceMatcher(None, key, candidates[1]).ratio() if len(candidates) > 1 else 0.0
-        if best_score >= 0.94 and best_score - second_score >= 0.04:
+        if best_score >= 0.94 and best_score - second_score >= 0.04 and candidates[0] not in self._ambiguous_aliases:
             return self._by_alias[candidates[0]], best_score, "fuzzy"
         return None, best_score, "ambiguous"
 
