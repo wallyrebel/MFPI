@@ -332,6 +332,7 @@ def supplement_games_with_maxpreps(
     recovered: list[dict] = []
     terminal_statuses: list[dict] = []
     used_event_ids: dict[str, str] = {}
+    conflicted_final_ids: set[str] = set()
     output: list[Game] = []
 
     for game in games:
@@ -340,7 +341,17 @@ def supplement_games_with_maxpreps(
             and not game.completed
             and game.status not in {"CANCELLED", "POSTPONED"}
         )
-        if not unresolved:
+        # Some moved contests leave *two completed* primary listings. Only
+        # inspect such a final when another verified final of the same pair
+        # exists on the adjacent calendar day; independent evidence below
+        # must establish which listing is the actual contest.
+        duplicate_final = game.completed and game.verified and any(
+            other.game_id != game.game_id and other.completed and other.verified
+            and {other.home_team_id, other.away_team_id} == {game.home_team_id, game.away_team_id}
+            and abs((calendar_date(other.date) - calendar_date(game.date)).days) == 1
+            for other in games
+        )
+        if not unresolved and not duplicate_final:
             output.append(game)
             continue
 
@@ -398,6 +409,22 @@ def supplement_games_with_maxpreps(
             )
         )
         observation, home_id, away_id = candidates[0]
+        if duplicate_final and calendar_date(game.date) == calendar_date(observation.date):
+            scores = {game.home_team_id: game.home_score, game.away_team_id: game.away_score}
+            if scores == {home_id: observation.home_score, away_id: observation.away_score} and game.forfeit == observation.forfeit:
+                # Retain the corroborated official final without consuming
+                # the event needed to identify its stale adjacent listing.
+                output.append(game)
+                continue
+            conflicted_final_ids.add(game.game_id)
+            issues.append(ValidationIssue(
+                "MAXPREPS_SCORE_CONFLICT", "CRITICAL",
+                f"Secondary evidence conflicts with rescheduled official final {game.game_id}; its score is quarantined.",
+                {"official_game_id": game.game_id, "official_scores": scores,
+                 "observations": [candidate[0].to_dict() for candidate in candidates]},
+            ))
+            output.append(game)
+            continue
         previous_use = used_event_ids.get(observation.game_id)
         if previous_use is not None and previous_use != game.game_id:
             issues.append(
@@ -436,7 +463,11 @@ def supplement_games_with_maxpreps(
                 final = official_finals[0]
                 official_scores = {final.home_team_id: final.home_score, final.away_team_id: final.away_score}
                 secondary_scores = {home_id: observation.home_score, away_id: observation.away_score}
-                if official_scores == secondary_scores and final.forfeit == observation.forfeit:
+                stale_agrees = not game.completed or (
+                    {game.home_team_id: game.home_score, game.away_team_id: game.away_score} == secondary_scores
+                    and game.forfeit == observation.forfeit
+                )
+                if official_scores == secondary_scores and final.forfeit == observation.forfeit and stale_agrees:
                     issues.append(ValidationIssue(
                         "STALE_RESCHEDULED_LISTING", "WARNING",
                         f"Excluded stale MHSAA listing {game.game_id}; official final {final.game_id} is independently corroborated.",
@@ -450,6 +481,11 @@ def supplement_games_with_maxpreps(
                     {**audit, "official_game_id": final.game_id,
                      "official_scores": official_scores, "secondary_scores": secondary_scores},
                 ))
+                # A detected conflict must not leave the disputed official
+                # score counted merely because its duplicate was unfinished.
+                conflicted_final_ids.add(final.game_id)
+                if game.completed:
+                    conflicted_final_ids.add(game.game_id)
                 output.append(game)
                 continue
             updated = replace(
@@ -507,6 +543,8 @@ def supplement_games_with_maxpreps(
                 {"games": terminal_statuses},
             )
         )
+    output = [replace(game, verified=False, status="UNRESOLVED_CONFLICT", home_score=None, away_score=None)
+              if game.game_id in conflicted_final_ids else game for game in output]
     return output, issues
 
 

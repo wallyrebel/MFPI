@@ -356,6 +356,7 @@ def test_rescheduled_listing_does_not_double_count_corroborated_official_final(c
         assert len(games) == 2
         assert any(issue.code == "MAXPREPS_SCORE_CONFLICT" for issue in issues)
         assert not validate_inputs(teams, games, cutoff, Settings(), issues).valid
+        assert not any(game.completed and game.verified for game in games)
     else:
         assert games == [final]
         assert [issue.code for issue in issues] == ["STALE_RESCHEDULED_LISTING"]
@@ -371,6 +372,30 @@ def test_rescheduled_listing_needs_independent_evidence(cutoff) -> None:
     games, issues = supplement_games_with_maxpreps(teams, [final, stale], [], cutoff)
     assert games == [final, stale]
     assert not issues
+
+
+@pytest.mark.parametrize("reverse", [False, True])
+@pytest.mark.parametrize("evidence", [False, True])
+@pytest.mark.parametrize("conflicting", [False, True])
+def test_completed_reschedule_duplicates_require_corroborated_date_and_score(cutoff, reverse, evidence, conflicting):
+    teams = [make_team("Alpha"), make_team("Beta")]
+    final = make_game("actual-final", "alpha", "beta", 27, 24)
+    stale = replace(final, game_id="stale-final", date=final.date + timedelta(days=1),
+                    home_team_id="beta", away_team_id="alpha", home_score=24, away_score=28 if conflicting else 27)
+    observation = MaxPrepsScoreObservation(
+        "secondary-final", final.date, "Beta", "Alpha", 24, 27, "COMPLETED", False,
+        "https://www.maxpreps.com/game/actual/", "alpha", cutoff,
+    )
+    primary = [stale, final] if reverse else [final, stale]
+    games, issues = supplement_games_with_maxpreps(teams, primary, [observation] if evidence else [], cutoff)
+    if not evidence:
+        assert games == primary and not issues
+    elif conflicting:
+        assert len(games) == 2 and not any(game.completed and game.verified for game in games)
+        assert any(issue.code == "MAXPREPS_SCORE_CONFLICT" for issue in issues)
+    else:
+        assert games == [final]
+        assert [issue.code for issue in issues] == ["STALE_RESCHEDULED_LISTING"]
 
 
 def test_validation_blocks_low_coverage_and_impossible_scores(cutoff) -> None:
