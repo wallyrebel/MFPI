@@ -4,15 +4,15 @@
   "week": 7,
   "status": "CORRECTED",
   "formula_version": "MFPI-3.2",
-  "generated_at": "2026-10-15T00:23:16.548268+00:00",
+  "generated_at": "2026-10-15T00:38:27.285700+00:00",
   "cutoff_at": "2026-10-13T11:00:00-05:00",
-  "audited_at": "2026-10-15T00:25:03.331370+00:00",
+  "audited_at": "2026-10-15T00:41:01.128291+00:00",
   "outcome": "PASS",
   "teams": 225,
   "unique_games": 764,
   "blocking": 0,
   "warnings": 0,
-  "info": 68,
+  "info": 66,
   "issue_counts": [
     {
       "severity": "INFO",
@@ -32,7 +32,7 @@
     {
       "severity": "INFO",
       "code": "PENDING_RESULTS",
-      "count": 26
+      "count": 24
     },
     {
       "severity": "INFO",
@@ -426,13 +426,6 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Enterprise (Brookhaven) has 1 listing(s) awaiting a verified result.",
-      "team_id": "enterprise-brookhaven",
-      "context": {}
-    },
-    {
-      "code": "PENDING_RESULTS",
-      "severity": "INFO",
       "message": "Yazoo City High School has 1 listing(s) awaiting a verified result.",
       "team_id": "yazoo-city",
       "context": {}
@@ -470,13 +463,6 @@
       "severity": "INFO",
       "message": "Vardaman High School has 1 listing(s) awaiting a verified result.",
       "team_id": "vardaman",
-      "context": {}
-    },
-    {
-      "code": "PENDING_RESULTS",
-      "severity": "INFO",
-      "message": "Bogue Chitto School has 1 listing(s) awaiting a verified result.",
-      "team_id": "bogue-chitto",
       "context": {}
     },
     {

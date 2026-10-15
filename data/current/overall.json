@@ -2,16 +2,16 @@
   "metadata": {
     "season": 2026,
     "week": 7,
-    "generated_at": "2026-10-15T00:23:16.548268+00:00",
+    "generated_at": "2026-10-15T00:38:27.285700+00:00",
     "cutoff_at": "2026-10-13T11:00:00-05:00",
     "formula_version": "MFPI-3.2",
     "status": "PROVISIONAL",
-    "run_id": "2026-week-07-20261015T002316548268Z",
+    "run_id": "2026-week-07-20261015T003827285700Z",
     "data_sources": [
       {
         "name": "MHSAA official score center",
         "url": "https://scores.misshsaa.com/",
-        "retrieved_at": "2026-10-15T00:23:19.472339+00:00"
+        "retrieved_at": "2026-10-15T00:38:32.384239+00:00"
       },
       {
         "name": "MHSAA 2025-27 football classifications",
@@ -20,14 +20,14 @@
       {
         "name": "Media Rank and Strength of Schedule",
         "url": "https://www.maxpreps.com/ms/football/rankings/1/",
-        "retrieved_at": "2026-10-15T00:23:16.549710+00:00",
+        "retrieved_at": "2026-10-15T00:38:27.287534+00:00",
         "source_updated_at": "10/11/2026",
         "cached_fallback": false
       },
       {
         "name": "Secondary score verification",
         "url": "https://www.maxpreps.com/ms/football/scores/",
-        "retrieved_at": "2026-10-15T00:23:26.924546+00:00",
+        "retrieved_at": "2026-10-15T00:38:47.114651+00:00",
         "team_schedule_pages_checked": 225,
         "secondary_results_used": 19,
         "secondary_statuses_used": 0,
@@ -36,10 +36,10 @@
       }
     ],
     "validation_status": "PROVISIONAL",
-    "coverage_percentage": 97.57,
-    "expected_games": 783,
+    "coverage_percentage": 97.7,
+    "expected_games": 782,
     "verified_games": 764,
-    "missing_games": 19,
+    "missing_games": 18,
     "opponent_names": {
       "external-228102": "Mars Hill Bible",
       "external-228114": "Mobile Christian",
@@ -28070,8 +28070,8 @@
       "mfpi_change": 0.1,
       "pf_per_game": 28.1,
       "pa_per_game": 25.4,
-      "pending_games": 1,
-      "data_status": "partial",
+      "pending_games": 0,
+      "data_status": "complete",
       "up_games": 0,
       "same_class_games": 3,
       "down_games": 3,
@@ -28224,7 +28224,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: unchanged at No. 166. MFPI rating: increased 0.1 points to 31.4. Opponent-adjusted performance percentile 30.8; schedule-strength percentile 14.7. 1 listing due by the cutoff still lack a verified result."
+      "explanation": "State ranking: unchanged at No. 166. MFPI rating: increased 0.1 points to 31.4. Opponent-adjusted performance percentile 30.8; schedule-strength percentile 14.7."
     },
     {
       "team_id": "pisgah",
@@ -34796,8 +34796,8 @@
       "mfpi_change": -4.4,
       "pf_per_game": 20.3,
       "pa_per_game": 35.4,
-      "pending_games": 1,
-      "data_status": "partial",
+      "pending_games": 0,
+      "data_status": "complete",
       "up_games": 6,
       "same_class_games": 0,
       "down_games": 0,
@@ -34950,7 +34950,7 @@
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 7 spots to No. 205 (from No. 198). MFPI rating: decreased 4.4 points to 16.2. Opponent-adjusted performance percentile 9.8; schedule-strength percentile 19.2. 1 listing due by the cutoff still lack a verified result."
+      "explanation": "State ranking: down 7 spots to No. 205 (from No. 198). MFPI rating: decreased 4.4 points to 16.2. Opponent-adjusted performance percentile 9.8; schedule-strength percentile 19.2."
     },
     {
       "team_id": "st-andrews",
