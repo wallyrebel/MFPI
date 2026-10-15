@@ -1,0 +1,257 @@
+{
+  "slug": "2026-week-07-weekly-analysis",
+  "kind": "weekly-analysis",
+  "title": "Week 7 MFPI analysis: Tupelo High School leads the statewide rankings",
+  "dek": "What moved in the Week 7 Mississippi Football Power Index, computed from verified results through Oct 13.",
+  "status": "published",
+  "season": 2026,
+  "week": 7,
+  "snapshot_run_id": "2026-week-07-20261015T001435982623Z",
+  "snapshot_generated_at": "2026-10-15T00:14:35.982623+00:00",
+  "formula_version": "MFPI-3.2",
+  "draft_generated_at": "2026-10-15T00:15:32.678330+00:00",
+  "author": "MFPI automated analysis",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "published_at": "2026-10-14T19:15:32-05:00",
+  "review_notes": "",
+  "sources": [
+    {
+      "label": "MHSAA official score center (schedules and scores)",
+      "url": "https://scores.misshsaa.com/"
+    },
+    {
+      "label": "MHSAA 2025-27 football classifications and regions",
+      "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+    },
+    {
+      "label": "Statewide media rankings used for the Media Rank inputs",
+      "url": "https://www.maxpreps.com/ms/football/rankings/1/"
+    },
+    {
+      "label": "MFPI Week 7 rankings archive",
+      "url": "/archive/2026/week-07"
+    },
+    {
+      "label": "MFPI methodology",
+      "url": "/methodology"
+    }
+  ],
+  "limitations": [
+    "Generated from the published snapshot; no games after the cutoff are included.",
+    "Media Rank and Media Strength of Schedule contribute 20% of every rating; MFPI's own score-based model contributes 80%.",
+    "No player, injury, coaching or game-narrative information is used or implied."
+  ],
+  "sections": [
+    {
+      "heading": "The top of the statewide rankings",
+      "paragraphs": [
+        "[[tupelo]] (7-0) is No. 1 for the 7th straight published week. MFPI rating: decreased 0.4 points to 96.7. In the latest window it beat [[southaven]] (currently No. 66) 42-0 on the road on Oct 9.",
+        "No. 2 [[warren-central]] (6-0, 6A): ranking up 1 spot to No. 2 (from No. 3); rating increased 1.8 points to 94.6. It beat [[ridgeland]] (currently No. 45) 49-21 on the road on Oct 9.",
+        "No. 3 [[gulfport]] (5-1, 7A): ranking up 5 spots to No. 3 (from No. 8); rating increased 4.4 points to 93.7. It beat [[st-martin]] (currently No. 23) 42-14 on the road on Oct 8.",
+        "No. 4 [[diberville]] (7-0, 7A): ranking down 2 spots to No. 4 (from No. 2); rating decreased 2.6 points to 93.0. It beat [[ocean-springs]] (currently No. 81) 35-14 on the road on Oct 8.",
+        "No. 5 [[brandon]] (5-1, 7A): ranking down 1 spot to No. 5 (from No. 4); rating unchanged at 91.7. It had no verified result in this window."
+      ],
+      "table": {
+        "columns": [
+          "Rank",
+          "Team",
+          "Class",
+          "Record",
+          "MFPI",
+          "Rating change",
+          "Rank move"
+        ],
+        "rows": [
+          [
+            "1",
+            "[[tupelo]]",
+            "7A",
+            "7-0",
+            "96.7",
+            "-0.4",
+            "—"
+          ],
+          [
+            "2",
+            "[[warren-central]]",
+            "6A",
+            "6-0",
+            "94.6",
+            "+1.8",
+            "+1"
+          ],
+          [
+            "3",
+            "[[gulfport]]",
+            "7A",
+            "5-1",
+            "93.7",
+            "+4.4",
+            "+5"
+          ],
+          [
+            "4",
+            "[[diberville]]",
+            "7A",
+            "7-0",
+            "93.0",
+            "-2.6",
+            "-2"
+          ],
+          [
+            "5",
+            "[[brandon]]",
+            "7A",
+            "5-1",
+            "91.7",
+            "0.0",
+            "-1"
+          ],
+          [
+            "6",
+            "[[desoto-central]]",
+            "7A",
+            "5-1",
+            "90.9",
+            "+1.6",
+            "+1"
+          ],
+          [
+            "7",
+            "[[louisville]]",
+            "4A",
+            "5-2",
+            "90.3",
+            "+3.0",
+            "+6"
+          ],
+          [
+            "8",
+            "[[starkville]]",
+            "7A",
+            "4-2",
+            "90.2",
+            "-1.0",
+            "-3"
+          ],
+          [
+            "9",
+            "[[oxford]]",
+            "7A",
+            "5-1",
+            "90.0",
+            "-0.1",
+            "-3"
+          ],
+          [
+            "10",
+            "[[germantown]]",
+            "7A",
+            "4-3",
+            "89.5",
+            "+1.8",
+            "+1"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Classification leaders",
+      "paragraphs": [
+        "Class ranks are the statewide order filtered to one classification; MFPI never recalculates a separate class rating.",
+        "Class 5A: [[brookhaven]] replaced [[pontotoc]] at No. 1. Class 4A: [[louisville]] replaced [[poplarville]] at No. 1. Class 1A: [[leflore-county]] replaced [[simmons]] at No. 1."
+      ],
+      "table": {
+        "columns": [
+          "Class",
+          "No. 1",
+          "Record",
+          "State rank",
+          "MFPI"
+        ],
+        "rows": [
+          [
+            "7A",
+            "[[tupelo]]",
+            "7-0",
+            "1",
+            "96.7"
+          ],
+          [
+            "6A",
+            "[[warren-central]]",
+            "6-0",
+            "2",
+            "94.6"
+          ],
+          [
+            "5A",
+            "[[brookhaven]]",
+            "6-0",
+            "11",
+            "89.1"
+          ],
+          [
+            "4A",
+            "[[louisville]]",
+            "5-2",
+            "7",
+            "90.3"
+          ],
+          [
+            "3A",
+            "[[noxubee-county]]",
+            "5-2",
+            "25",
+            "81.6"
+          ],
+          [
+            "2A",
+            "[[heidelberg]]",
+            "5-1",
+            "24",
+            "82.1"
+          ],
+          [
+            "1A",
+            "[[leflore-county]]",
+            "6-0",
+            "80",
+            "60.8"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Results that raised ratings most",
+      "paragraphs": [
+        "The largest rating increases among teams with a verified result in this window. A rating can also move without a game, because every opponent's rating is re-solved each week.",
+        "[[north-pontotoc]] (+17.0 to 52.2, now No. 109) beat [[corinth]] (currently No. 57) 85-0 at home on Oct 8.",
+        "[[wilkinson-county]] (+8.8 to 53.1, now No. 105) beat [[amite-county]] (currently No. 137) 58-12 on the road on Oct 9.",
+        "[[rosa-fort]] (+7.9 to 55.6, now No. 98) beat [[byhalia]] (currently No. 209) 72-0 at home on Oct 8.",
+        "[[saltillo]] (+7.6 to 43.7, now No. 128) beat [[olive-branch]] (currently No. 77) 26-21 at home on Oct 9.",
+        "[[amory]] (+7.5 to 59.8, now No. 88) beat [[mooreville]] (currently No. 156) 42-7 on the road on Oct 9.",
+        "The full list of movers is in the [[risers-and-fallers:2026-week-07-risers-and-fallers]] analysis."
+      ]
+    },
+    {
+      "heading": "Schedule strength",
+      "paragraphs": [
+        "MFPI strength of schedule is the average current rating of every completed opponent, expressed as a statewide percentile (100 is the strongest schedule in this week's field, not a perfect grade). The five strongest schedules: [[west-point]] (0-6, SOS percentile 100.0); [[madison-central]] (2-4, SOS percentile 99.6); [[starkville]] (4-2, SOS percentile 99.1); [[germantown]] (4-3, SOS percentile 98.7); [[brandon]] (5-1, SOS percentile 98.2).",
+        "Teams that have played furthest above their own classification (average class steps up, games up in class): [[okolona]] (1A, +2.20, 5 up); [[byers]] (1A, +2.00, 4 up); [[charleston]] (2A, +1.71, 5 up); [[poplarville]] (4A, +1.67, 5 up); [[scott-central]] (2A, +1.50, 5 up)."
+      ]
+    },
+    {
+      "heading": "Data notes and limitations",
+      "paragraphs": [
+        "Snapshot generated October 14, 2026 at 7:14 PM Central with a cutoff of October 13 at 11:00 AM Central, formula MFPI-3.2.",
+        "767 of 784 game listings due by the cutoff had verified scores (97.8%); the rest count as unavailable, never as losses or 0-0 results.",
+        "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
+      ]
+    }
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
+}
