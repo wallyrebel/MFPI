@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-10-15T00:36:18.303587+00:00",
+  "game_id": "7614978",
+  "calendar_date": "2026-10-09",
+  "matchup": "New Albany vs Ripley",
+  "status": "UNRESOLVED_EXTERNAL_REPORT_DISCREPANCY",
+  "retained_result": {
+    "home": "New Albany",
+    "home_score": 35,
+    "away": "Ripley",
+    "away_score": 15,
+    "source": "mhsaa_score_center"
+  },
+  "decision": "Retain the established official-primary source priority; both freshly read secondary team schedules concur with 35-15. Do not substitute the local report score or claim the discrepancy is resolved.",
+  "public_per_game_warning": false,
+  "warning_disclosure": "This external local-report discrepancy is recorded here for audit. The local publication is not an ingested secondary-score provider, so the deployed game has no separate per-game warning. The site provisional status also reflects unrelated unresolved primary listings and active reschedule-score conflicts.",
+  "official_evidence": {
+    "url": "https://api.scorebooklive.com/v2/graphql",
+    "public_score_center_url": "https://scores.misshsaa.com/",
+    "source_policy": "ms-mhsaa",
+    "requested_date": "2026-10-09",
+    "retrieved_at": "2026-10-15T00:31:44.034460+00:00",
+    "node_id": "7614978",
+    "status": "COMPLETED",
+    "participants": {
+      "AWAY": {
+        "source_team_id": "244607",
+        "name": "Ripley",
+        "score": 15
+      },
+      "HOME": {
+        "source_team_id": "243697",
+        "name": "New Albany",
+        "score": 35
+      }
+    }
+  },
+  "fresh_secondary_evidence": [
+    {
+      "game_id": "1355113c-4b23-4bd8-a7af-1b266a013f48",
+      "date": "2026-10-09T19:00:00-05:00",
+      "home_name": "New Albany High School",
+      "away_name": "Ripley High School",
+      "home_score": 35,
+      "away_score": 15,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/new-albany-vs-ripley/10-9-2026/?c=1355113c-4b23-4bd8-a7af-1b266a013f48",
+      "observed_from_team_id": "ripley",
+      "retrieved_at": "2026-10-15T00:35:40.995352+00:00",
+      "home_url": "https://www.maxpreps.com/ms/new-albany/new-albany-bulldogs/football/",
+      "away_url": "https://www.maxpreps.com/ms/ripley/ripley-tigers/football/"
+    },
+    {
+      "game_id": "1355113c-4b23-4bd8-a7af-1b266a013f48",
+      "date": "2026-10-09T19:00:00-05:00",
+      "home_name": "New Albany High School",
+      "away_name": "Ripley High School",
+      "home_score": 35,
+      "away_score": 15,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/new-albany-vs-ripley/10-9-2026/?c=1355113c-4b23-4bd8-a7af-1b266a013f48",
+      "observed_from_team_id": "new-albany",
+      "retrieved_at": "2026-10-15T00:35:40.995352+00:00",
+      "home_url": "https://www.maxpreps.com/ms/new-albany/new-albany-bulldogs/football/",
+      "away_url": "https://www.maxpreps.com/ms/ripley/ripley-tigers/football/"
+    }
+  ],
+  "external_report": {
+    "url": "https://tippahsports.com/ripley/walnuts-tying-try-falls-short-ripley-loses-at-new-albany/",
+    "published_date": "2026-10-10",
+    "reported_winner": "New Albany",
+    "reported_score": "32-15",
+    "read_on": "2026-10-15",
+    "summary": "The local report gives New Albany an 18-point lead through three quarters and 14 additional fourth-quarter points, totaling 32. This conflicts with the retained original-feed result."
+  },
+  "scope": "Audit evidence only. No score, record, ranking formula, source priority, threshold, cron or unrelated article change."
+}

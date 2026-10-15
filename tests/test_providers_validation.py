@@ -117,6 +117,55 @@ def test_official_classification_parser_and_duplicate_enterprise_hardening() -> 
     assert "enterprise-brookhaven" in ids
 
 
+@pytest.mark.parametrize("reverse", [False, True])
+@pytest.mark.parametrize("profile,remove_stale", [
+    ("/ms/brookhaven/enterprise-yellowjackets/football/", True),
+    ("https://www.maxpreps.com/ms/brookhaven/enterprise-yellowjackets/football/", True),
+    ("/ms/enterprise/enterprise-bulldogs/football/", False),
+    ("/tn/brookhaven/enterprise-yellowjackets/football/", False),
+    ("/ms/brookhaven/another-enterprise/football/", False),
+    ("https://example.com/ms/brookhaven/enterprise-yellowjackets/football/", False),
+    ("", False),
+])
+def test_enterprise_exact_profile_excludes_only_corroborated_bogue_chitto_stale_listing(reverse, profile, remove_stale):
+    teams = [make_team("Bogue Chitto"), make_team("Enterprise Brookhaven"), make_team("Enterprise Clarke")]
+    cutoff = datetime(2026, 10, 13, 16, tzinfo=timezone.utc)
+    final = replace(make_game("7984799", "bogue-chitto", "enterprise-brookhaven", 32, 64),
+                    date=datetime(2026, 10, 8, 19, tzinfo=timezone.utc), source="mhsaa_score_center")
+    stale = replace(final, game_id="7615015", date=final.date + timedelta(days=1),
+                    home_score=None, away_score=None, verified=False, status="UPCOMING")
+    unrelated = replace(stale, game_id="unrelated-pending", home_team_id="enterprise-clarke",
+                        away_team_id="enterprise-brookhaven")
+    observation = MaxPrepsScoreObservation(
+        "908f3d22-e875-463e-a250-2174fff232bf", final.date, "Bogue Chitto High School", "Enterprise High School",
+        32, 64, "COMPLETED", False,
+        "https://www.maxpreps.com/ms/football/game/bogue-chitto-vs-enterprise-brookhaven/10-8-2026/?c=908f3d22-e875-463e-a250-2174fff232bf",
+        "bogue-chitto", cutoff, away_url=profile,
+    )
+    primary = [stale, final, unrelated] if reverse else [final, stale, unrelated]
+    games, issues = supplement_games_with_maxpreps(teams, primary, [observation], cutoff)
+    if remove_stale:
+        assert games == [final, unrelated]
+        assert len(issues) == 1 and issues[0].code == "STALE_RESCHEDULED_LISTING"
+        assert issues[0].context["retained_mhsaa_game_id"] == "7984799"
+    else:
+        assert games == primary and not issues
+    assert next(game for game in games if game.game_id == "7984799") == final
+
+
+def test_enterprise_clarke_exact_profile_does_not_resolve_to_brookhaven(cutoff):
+    teams = [make_team("Bay Springs"), make_team("Enterprise Brookhaven"), make_team("Enterprise Clarke")]
+    pending = replace(make_game("clarke-final", "enterprise-clarke", "bay-springs", 0, 0),
+                      home_score=None, away_score=None, verified=False, status="UPCOMING")
+    observation = MaxPrepsScoreObservation(
+        "clarke-event", pending.date, "Enterprise High School", "Bay Springs High School", 41, 22,
+        "COMPLETED", False, "https://www.maxpreps.com/game/clarke/", "bay-springs", cutoff,
+        home_url="/ms/enterprise/enterprise-bulldogs/football/",
+    )
+    games, _ = supplement_games_with_maxpreps(teams, [pending], [observation], cutoff)
+    assert games[0].home_team_id == "enterprise-clarke" and games[0].home_score == 41
+
+
 def test_inactive_football_program_is_not_ranked() -> None:
     rows = "<table>" + "".join(
         f"<tr><td>School {i}</td><td>{1 + i % 7}</td><td>1</td></tr>" for i in range(150)

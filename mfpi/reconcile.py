@@ -29,6 +29,26 @@ REVIEWED_EXTERNAL_PROFILES = {
 }
 
 
+# These are the two Mississippi programs already distinguished in the media
+# importer. Secondary schedules label both simply "Enterprise High School".
+# Require their exact state/city/school profiles, not a city substring.
+ENTERPRISE_SECONDARY_PROFILES = {
+    "/ms/brookhaven/enterprise-yellowjackets/football": "Enterprise Brookhaven",
+    "/ms/enterprise/enterprise-bulldogs/football": "Enterprise Clarke",
+}
+
+
+def _secondary_team_match(matcher: TeamMatcher, name: str, url: str) -> tuple[Team | None, float, str]:
+    if normalize_name(name) == "enterprise":
+        parsed = urlparse(urljoin(MAXPREPS_ROOT, url))
+        if parsed.scheme != "https" or parsed.hostname != "www.maxpreps.com":
+            return None, 0.0, "unmatched"
+        name = ENTERPRISE_SECONDARY_PROFILES.get(parsed.path.rstrip("/").lower())
+        if name is None:
+            return None, 0.0, "unmatched"
+    return matcher.match(name)
+
+
 def _reviewed_external_profile(teams: list[Team], name: str, url: str) -> Team | None:
     parsed = urlparse(urljoin(MAXPREPS_ROOT, url))
     if parsed.scheme != "https" or parsed.hostname != "www.maxpreps.com":
@@ -312,8 +332,8 @@ def supplement_games_with_maxpreps(
     issues: list[ValidationIssue] = []
 
     for observation in observations:
-        home, _, home_method = matcher.match(observation.home_name)
-        away, _, away_method = matcher.match(observation.away_name)
+        home, _, home_method = _secondary_team_match(matcher, observation.home_name, observation.home_url)
+        away, _, away_method = _secondary_team_match(matcher, observation.away_name, observation.away_url)
         if home_method == "ambiguous":
             home = _reviewed_external_profile(teams, observation.home_name, observation.home_url)
         if away_method == "ambiguous":

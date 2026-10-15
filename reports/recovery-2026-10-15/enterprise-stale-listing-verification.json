@@ -1,0 +1,79 @@
+{
+  "verified_at": "2026-10-15T00:35:36.662131+00:00",
+  "comparison": "Same captured original inputs before/after the Enterprise-only profile change; no publication.",
+  "removed_listing_ids": [
+    "7615015"
+  ],
+  "retained_final": {
+    "game_id": "7984799",
+    "date": "2026-10-08T23:59:00-07:00",
+    "home_team_id": "bogue-chitto",
+    "away_team_id": "enterprise-brookhaven",
+    "home_score": 32,
+    "away_score": 64,
+    "neutral_site": false,
+    "overtime": false,
+    "forfeit": false,
+    "source": "mhsaa_score_center",
+    "source_timestamp": "2026-10-15T00:09:02.307675+00:00",
+    "verified": true,
+    "status": "COMPLETED",
+    "expected_status": "COMPLETED",
+    "contest_type": "Non Region"
+  },
+  "other_games_unchanged": true,
+  "all_225_records_scores_ranks_and_component_math_unchanged": true,
+  "exclusion_evidence": [
+    {
+      "code": "STALE_RESCHEDULED_LISTING",
+      "severity": "WARNING",
+      "message": "Excluded stale MHSAA listing 7615015; official final 7984799 is independently corroborated.",
+      "context": {
+        "mhsaa_game_id": "7615015",
+        "maxpreps_game_id": "908f3d22-e875-463e-a250-2174fff232bf",
+        "original_date": "2026-10-09T16:00:00-07:00",
+        "maxpreps_date": "2026-10-08T19:00:00-05:00",
+        "home_team_id": "bogue-chitto",
+        "away_team_id": "enterprise-brookhaven",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/bogue-chitto-vs-enterprise-brookhaven/10-8-2026/?c=908f3d22-e875-463e-a250-2174fff232bf"
+        ],
+        "retained_mhsaa_game_id": "7984799",
+        "home_score": 32,
+        "away_score": 64
+      }
+    }
+  ],
+  "fresh_schedule_corroboration": [
+    {
+      "game_id": "908f3d22-e875-463e-a250-2174fff232bf",
+      "date": "2026-10-08T19:00:00-05:00",
+      "home_name": "Bogue Chitto High School",
+      "away_name": "Enterprise High School",
+      "home_score": 32,
+      "away_score": 64,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/bogue-chitto-vs-enterprise-brookhaven/10-8-2026/?c=908f3d22-e875-463e-a250-2174fff232bf",
+      "observed_from_team_id": "bogue-chitto",
+      "retrieved_at": "2026-10-15T00:31:43.128719+00:00",
+      "home_url": "https://www.maxpreps.com/ms/bogue-chitto/bogue-chitto-bobcats/football/",
+      "away_url": "https://www.maxpreps.com/ms/brookhaven/enterprise-yellowjackets/football/"
+    },
+    {
+      "game_id": "908f3d22-e875-463e-a250-2174fff232bf",
+      "date": "2026-10-08T19:00:00-05:00",
+      "home_name": "Bogue Chitto High School",
+      "away_name": "Enterprise High School",
+      "home_score": 32,
+      "away_score": 64,
+      "status": "COMPLETED",
+      "forfeit": false,
+      "source_url": "https://www.maxpreps.com/ms/football/game/bogue-chitto-vs-enterprise-brookhaven/10-8-2026/?c=908f3d22-e875-463e-a250-2174fff232bf",
+      "observed_from_team_id": "enterprise-brookhaven",
+      "retrieved_at": "2026-10-15T00:31:43.128719+00:00",
+      "home_url": "https://www.maxpreps.com/ms/bogue-chitto/bogue-chitto-bobcats/football/",
+      "away_url": "https://www.maxpreps.com/ms/brookhaven/enterprise-yellowjackets/football/"
+    }
+  ]
+}
