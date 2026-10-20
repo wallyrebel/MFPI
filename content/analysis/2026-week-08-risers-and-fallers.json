@@ -1,0 +1,249 @@
+{
+  "slug": "2026-week-08-risers-and-fallers",
+  "kind": "risers-and-fallers",
+  "title": "Week 8 risers and fallers in the MFPI",
+  "dek": "The largest statewide rank moves this week, with the verified results and rating changes behind each one.",
+  "status": "published",
+  "season": 2026,
+  "week": 8,
+  "snapshot_run_id": "2026-week-08-20261020T162023361873Z",
+  "snapshot_generated_at": "2026-10-20T16:20:23.361873+00:00",
+  "formula_version": "MFPI-3.2",
+  "draft_generated_at": "2026-10-20T16:22:17.490436+00:00",
+  "author": "MFPI automated analysis",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "published_at": "2026-10-20T11:22:17-05:00",
+  "review_notes": "",
+  "sources": [
+    {
+      "label": "MHSAA official score center (schedules and scores)",
+      "url": "https://scores.misshsaa.com/"
+    },
+    {
+      "label": "MHSAA 2025-27 football classifications and regions",
+      "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+    },
+    {
+      "label": "Statewide media rankings used for the Media Rank inputs",
+      "url": "https://www.maxpreps.com/ms/football/rankings/1/"
+    },
+    {
+      "label": "MFPI Week 8 rankings archive",
+      "url": "/archive/2026/week-08"
+    },
+    {
+      "label": "MFPI methodology",
+      "url": "/methodology"
+    }
+  ],
+  "limitations": [
+    "Movement is only shown against a comparable previous snapshot; teams without one are NEW.",
+    "Large moves in the middle of the table often reflect tightly bunched ratings rather than dramatic results."
+  ],
+  "sections": [
+    {
+      "heading": "How to read these moves",
+      "paragraphs": [
+        "Rank movement is last week's statewide rank minus this week's. Rating change is this week's displayed MFPI minus last week's. They are separate facts: in the middle of the table, where ratings are close together, a small rating change can move a team many places, and a team can hold its place while its rating changes.",
+        "Both compare the Week 8 snapshot with the latest audited Week 7 snapshot (formula MFPI-3.2)."
+      ]
+    },
+    {
+      "heading": "Biggest risers",
+      "paragraphs": [
+        "[[biloxi]] (7A, 2-5): State ranking: up 31 spots to No. 78 (from No. 109). MFPI rating: increased 9.3 points to 61.7. In the window it beat [[harrison-central]] (currently No. 112) 30-14 on the road on Oct 16.",
+        "[[purvis]] (5A, 2-5): State ranking: up 26 spots to No. 125 (from No. 151). MFPI rating: increased 6.1 points to 44.7. In the window it beat [[stone]] (currently No. 106) 21-14 at home on Oct 16.",
+        "[[north-panola]] (3A, 4-4): State ranking: up 24 spots to No. 128 (from No. 152). MFPI rating: increased 5.4 points to 43.0. In the window it beat [[independence]] (currently No. 143) 26-20 on the road on Oct 16.",
+        "[[lewisburg]] (7A, 3-4): State ranking: up 22 spots to No. 92 (from No. 114). MFPI rating: increased 7.7 points to 58.4. In the window it beat [[southaven]] (currently No. 85) 28-7 at home on Oct 16.",
+        "[[magee]] (3A, 7-1): State ranking: up 21 spots to No. 74 (from No. 95). MFPI rating: increased 7.0 points to 63.2. In the window it beat [[raleigh]] (currently No. 52) 29-7 at home on Oct 16.",
+        "[[port-gibson]] (3A, 4-3): State ranking: up 20 spots to No. 126 (from No. 146). MFPI rating: increased 3.5 points to 44.0. In the window it beat [[jefferson-county]] (currently No. 152) 22-6 at home on Oct 16.",
+        "[[franklin]] (3A, 3-5): State ranking: up 19 spots to No. 118 (from No. 137). MFPI rating: increased 6.4 points to 47.6. In the window it beat [[hazlehurst]] (currently No. 77) 35-34 on the road on Oct 16.",
+        "[[west-tallahatchie]] (1A, 2-5): State ranking: up 19 spots to No. 180 (from No. 199). MFPI rating: increased 5.8 points to 24.9. In the window it beat [[coffeeville]] (currently No. 205) 48-22 on the road on Oct 16."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[biloxi]]",
+            "78",
+            "109",
+            "+31",
+            "61.7",
+            "+9.3"
+          ],
+          [
+            "[[purvis]]",
+            "125",
+            "151",
+            "+26",
+            "44.7",
+            "+6.1"
+          ],
+          [
+            "[[north-panola]]",
+            "128",
+            "152",
+            "+24",
+            "43.0",
+            "+5.4"
+          ],
+          [
+            "[[lewisburg]]",
+            "92",
+            "114",
+            "+22",
+            "58.4",
+            "+7.7"
+          ],
+          [
+            "[[magee]]",
+            "74",
+            "95",
+            "+21",
+            "63.2",
+            "+7.0"
+          ],
+          [
+            "[[port-gibson]]",
+            "126",
+            "146",
+            "+20",
+            "44.0",
+            "+3.5"
+          ],
+          [
+            "[[franklin]]",
+            "118",
+            "137",
+            "+19",
+            "47.6",
+            "+6.4"
+          ],
+          [
+            "[[west-tallahatchie]]",
+            "180",
+            "199",
+            "+19",
+            "24.9",
+            "+5.8"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Biggest fallers",
+      "paragraphs": [
+        "[[independence]] (3A, 5-2): State ranking: down 38 spots to No. 143 (from No. 105). MFPI rating: decreased 12.7 points to 40.4. In the window it lost to [[north-panola]] (currently No. 128) 20-26 at home on Oct 16.",
+        "[[ethel]] (1A, 4-3): State ranking: down 33 spots to No. 162 (from No. 129). MFPI rating: decreased 9.8 points to 33.5. In the window it lost to [[noxapater]] (currently No. 157) 14-20 on the road on Oct 16.",
+        "[[jefferson-county]] (3A, 2-5): State ranking: down 29 spots to No. 152 (from No. 123). MFPI rating: decreased 7.4 points to 37.5. In the window it lost to [[port-gibson]] (currently No. 126) 6-22 on the road on Oct 16.",
+        "[[south-pike]] (4A, 4-3): State ranking: down 24 spots to No. 94 (from No. 70). MFPI rating: decreased 6.8 points to 57.7. In the window it lost to [[poplarville]] (currently No. 13) 6-48 at home on Oct 16.",
+        "[[presbyterian-christian]] (3A, 6-2): State ranking: down 23 spots to No. 72 (from No. 49). MFPI rating: decreased 7.2 points to 63.3. In the window it beat [[west-marion]] (currently No. 175) 28-24 on the road on Oct 16.",
+        "[[forest]] (4A, 5-2): State ranking: down 23 spots to No. 95 (from No. 72). MFPI rating: decreased 6.5 points to 57.7. In the window it beat [[raymond]] (currently No. 204) 56-14 at home on Oct 16.",
+        "[[scott-central]] (2A, 5-2): State ranking: down 22 spots to No. 83 (from No. 61). MFPI rating: decreased 6.8 points to 60.0. In the window it beat [[newton]] (currently No. 194) 44-6 on the road on Oct 16.",
+        "[[southaven]] (7A, 1-5): State ranking: down 21 spots to No. 85 (from No. 64). MFPI rating: decreased 6.5 points to 59.7. In the window it lost to [[lewisburg]] (currently No. 92) 7-28 on the road on Oct 16."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[independence]]",
+            "143",
+            "105",
+            "-38",
+            "40.4",
+            "-12.7"
+          ],
+          [
+            "[[ethel]]",
+            "162",
+            "129",
+            "-33",
+            "33.5",
+            "-9.8"
+          ],
+          [
+            "[[jefferson-county]]",
+            "152",
+            "123",
+            "-29",
+            "37.5",
+            "-7.4"
+          ],
+          [
+            "[[south-pike]]",
+            "94",
+            "70",
+            "-24",
+            "57.7",
+            "-6.8"
+          ],
+          [
+            "[[presbyterian-christian]]",
+            "72",
+            "49",
+            "-23",
+            "63.3",
+            "-7.2"
+          ],
+          [
+            "[[forest]]",
+            "95",
+            "72",
+            "-23",
+            "57.7",
+            "-6.5"
+          ],
+          [
+            "[[scott-central]]",
+            "83",
+            "61",
+            "-22",
+            "60.0",
+            "-6.8"
+          ],
+          [
+            "[[southaven]]",
+            "85",
+            "64",
+            "-21",
+            "59.7",
+            "-6.5"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Rank and rating moving separately",
+      "paragraphs": [
+        "Held their rank while the rating changed by at least a point: [[south-panola]] (No. 14, +1.8); [[resurrection]] (No. 220, -2.3).",
+        "Moved in the ranking with an unchanged displayed rating: [[neshoba-central]] (-3 to No. 30); [[new-albany]] (-1 to No. 47); [[mcadams]] (+2 to No. 195); [[crystal-springs]] (+3 to No. 218)."
+      ]
+    },
+    {
+      "heading": "Data notes and limitations",
+      "paragraphs": [
+        "Snapshot generated October 20, 2026 at 11:20 AM Central with a cutoff of October 20 at 11:00 AM Central, formula MFPI-3.2.",
+        "871 of 892 game listings due by the cutoff had verified scores (97.7%); the rest count as unavailable, never as losses or 0-0 results.",
+        "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
+      ]
+    }
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
+}
