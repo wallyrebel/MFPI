@@ -1,9 +1,9 @@
 {
   "valid": false,
-  "expected_games": 892,
-  "verified_games": 871,
-  "missing_games": 21,
-  "coverage_percentage": 97.65,
+  "expected_games": 1002,
+  "verified_games": 980,
+  "missing_games": 22,
+  "coverage_percentage": 97.8,
   "issues": [
     {
       "code": "REVIEWED_IDENTITY_APPLIED",
@@ -127,6 +127,14 @@
             "home_source_id": "242596",
             "away": "Franklin County",
             "away_source_id": "260769"
+          },
+          {
+            "game_id": "7615097",
+            "date": "2026-10-23T17:00:00-07:00",
+            "home": "Franklin County",
+            "home_source_id": "260769",
+            "away": "Loyd Star",
+            "away_source_id": "260818"
           }
         ]
       }
@@ -217,6 +225,14 @@
             "home_source_id": "260771",
             "away": "Oxford",
             "away_source_id": "243929"
+          },
+          {
+            "game_id": "7586796",
+            "date": "2026-10-23T17:00:00-07:00",
+            "home": "Madison Central",
+            "home_source_id": "243291",
+            "away": "Germantown",
+            "away_source_id": "260771"
           }
         ]
       }
@@ -315,6 +331,14 @@
             "home_source_id": "260788",
             "away": "Itawamba Agricultural",
             "away_source_id": "242772"
+          },
+          {
+            "game_id": "7615092",
+            "date": "2026-10-23T17:00:00-07:00",
+            "home": "Houston",
+            "home_source_id": "260788",
+            "away": "Mooreville",
+            "away_source_id": "243133"
           }
         ]
       }
@@ -999,7 +1023,7 @@
     {
       "code": "MAXPREPS_SECONDARY_RESULTS_USED",
       "severity": "WARNING",
-      "message": "Used exact secondary matchup evidence for 19 MHSAA listings without official finals.",
+      "message": "Used exact secondary matchup evidence for 20 MHSAA listings without official finals.",
       "context": {
         "games": [
           {
@@ -1267,6 +1291,20 @@
             "home_score": 0,
             "away_score": 2,
             "forfeit": true
+          },
+          {
+            "mhsaa_game_id": "7615117",
+            "maxpreps_game_id": "355950fe-46cd-4a7c-9f61-c8641938fa9c",
+            "original_date": "2026-10-23T17:00:00-07:00",
+            "maxpreps_date": "2026-10-23T19:00:00-05:00",
+            "home_team_id": "columbus",
+            "away_team_id": "lafayette",
+            "source_urls": [
+              "https://www.maxpreps.com/ms/football/game/columbus-vs-lafayette-oxford/10-23-2026/?c=355950fe-46cd-4a7c-9f61-c8641938fa9c"
+            ],
+            "home_score": 12,
+            "away_score": 45,
+            "forfeit": false
           }
         ]
       }
@@ -1291,116 +1329,6 @@
         "status": "COMPLETED",
         "home_score": 76,
         "away_score": 0
-      }
-    },
-    {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
-      "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 0ab90930-f1b9-44dd-a861-004f359e2721; review the source facts.",
-      "context": {
-        "secondary_game_id": "0ab90930-f1b9-44dd-a861-004f359e2721",
-        "date": "2026-10-16",
-        "home": "hancock",
-        "away": "picayune",
-        "home_url": "https://www.maxpreps.com/ms/kiln/hancock-hawks/football/",
-        "away_url": "https://www.maxpreps.com/ms/picayune/picayune-maroon-tide/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/hancock-kiln-vs-picayune/10-16-2026/?c=0ab90930-f1b9-44dd-a861-004f359e2721"
-        ],
-        "observed_from_team_ids": [
-          "hancock",
-          "picayune"
-        ],
-        "status": "COMPLETED",
-        "home_score": 27,
-        "away_score": 56,
-        "reports": [
-          {
-            "game_id": "0ab90930-f1b9-44dd-a861-004f359e2721",
-            "date": "2026-10-16T19:00:00-05:00",
-            "home_name": "Hancock High School",
-            "away_name": "Picayune High School",
-            "home_score": 27,
-            "away_score": 56,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/hancock-kiln-vs-picayune/10-16-2026/?c=0ab90930-f1b9-44dd-a861-004f359e2721",
-            "observed_from_team_id": "hancock",
-            "retrieved_at": "2026-10-20T16:20:37.275766+00:00",
-            "home_url": "https://www.maxpreps.com/ms/kiln/hancock-hawks/football/",
-            "away_url": "https://www.maxpreps.com/ms/picayune/picayune-maroon-tide/football/"
-          },
-          {
-            "game_id": "0ab90930-f1b9-44dd-a861-004f359e2721",
-            "date": "2026-10-16T19:00:00-05:00",
-            "home_name": "Hancock High School",
-            "away_name": "Picayune High School",
-            "home_score": null,
-            "away_score": null,
-            "status": "UPCOMING",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/hancock-kiln-vs-picayune/10-16-2026/?c=0ab90930-f1b9-44dd-a861-004f359e2721",
-            "observed_from_team_id": "picayune",
-            "retrieved_at": "2026-10-20T16:20:37.275766+00:00",
-            "home_url": "https://www.maxpreps.com/ms/kiln/hancock-hawks/football/",
-            "away_url": "https://www.maxpreps.com/ms/picayune/picayune-maroon-tide/football/"
-          }
-        ]
-      }
-    },
-    {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
-      "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event 0d74ec34-0a8a-4347-9dca-bb411586c24d; review the source facts.",
-      "context": {
-        "secondary_game_id": "0d74ec34-0a8a-4347-9dca-bb411586c24d",
-        "date": "2026-10-16",
-        "home": "west-marion",
-        "away": "presbyterian-christian",
-        "home_url": "https://www.maxpreps.com/ms/foxworth/west-marion-trojans/football/",
-        "away_url": "https://www.maxpreps.com/ms/hattiesburg/presbyterian-christian-bobcats/football/",
-        "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/presbyterian-christian-hattiesburg-vs-west-marion-foxworth/10-16-2026/?c=0d74ec34-0a8a-4347-9dca-bb411586c24d"
-        ],
-        "observed_from_team_ids": [
-          "presbyterian-christian",
-          "west-marion"
-        ],
-        "status": "COMPLETED",
-        "home_score": 24,
-        "away_score": 28,
-        "reports": [
-          {
-            "game_id": "0d74ec34-0a8a-4347-9dca-bb411586c24d",
-            "date": "2026-10-16T19:00:00-05:00",
-            "home_name": "West Marion High School",
-            "away_name": "Presbyterian Christian High School",
-            "home_score": 24,
-            "away_score": 28,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/presbyterian-christian-hattiesburg-vs-west-marion-foxworth/10-16-2026/?c=0d74ec34-0a8a-4347-9dca-bb411586c24d",
-            "observed_from_team_id": "presbyterian-christian",
-            "retrieved_at": "2026-10-20T16:20:37.275766+00:00",
-            "home_url": "https://www.maxpreps.com/ms/foxworth/west-marion-trojans/football/",
-            "away_url": "https://www.maxpreps.com/ms/hattiesburg/presbyterian-christian-bobcats/football/"
-          },
-          {
-            "game_id": "0d74ec34-0a8a-4347-9dca-bb411586c24d",
-            "date": "2026-10-16T19:00:00-05:00",
-            "home_name": "West Marion High School",
-            "away_name": "Presbyterian Christian High School",
-            "home_score": null,
-            "away_score": null,
-            "status": "UPCOMING",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/presbyterian-christian-hattiesburg-vs-west-marion-foxworth/10-16-2026/?c=0d74ec34-0a8a-4347-9dca-bb411586c24d",
-            "observed_from_team_id": "west-marion",
-            "retrieved_at": "2026-10-20T16:20:37.275766+00:00",
-            "home_url": "https://www.maxpreps.com/ms/foxworth/west-marion-trojans/football/",
-            "away_url": "https://www.maxpreps.com/ms/hattiesburg/presbyterian-christian-bobcats/football/"
-          }
-        ]
       }
     },
     {
@@ -1597,6 +1525,28 @@
           "coffeeville": 52,
           "potts-camp": 44
         }
+      }
+    },
+    {
+      "code": "SECONDARY_OPPONENT_UNRESOLVED",
+      "severity": "WARNING",
+      "message": "A secondary listing for jefferson-davis-county has no primary listing and no verified opponent identity.",
+      "context": {
+        "secondary_game_id": "6ecc516c-4f94-43b3-bb25-8b8a4f9dbd51",
+        "date": "2026-10-16",
+        "home": "jefferson-davis-county",
+        "away": "De La Salle High School",
+        "home_url": "https://www.maxpreps.com/ms/bassfield/jefferson-davis-county-jaguars/football/",
+        "away_url": "https://www.maxpreps.com/la/new-orleans/de-la-salle-cavalier/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/inter-state/football/game/de-la-salle-new-orleans-la-vs-jefferson-davis-county-bassfield-ms/10-16-2026/?c=6ecc516c-4f94-43b3-bb25-8b8a4f9dbd51"
+        ],
+        "observed_from_team_ids": [
+          "jefferson-davis-county"
+        ],
+        "status": "COMPLETED",
+        "home_score": 14,
+        "away_score": 42
       }
     },
     {
@@ -1904,6 +1854,34 @@
     {
       "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
       "severity": "WARNING",
+      "message": "Imported final 8020306 disagrees with secondary event b7d9a4b8-f978-4bc4-98f7-41c71aa3e01c; primary result retained.",
+      "context": {
+        "secondary_game_id": "b7d9a4b8-f978-4bc4-98f7-41c71aa3e01c",
+        "date": "2026-10-23",
+        "home": "coffeeville",
+        "away": "leflore-county",
+        "home_url": "https://www.maxpreps.com/ms/coffeeville/coffeeville-pirates/football/",
+        "away_url": "https://www.maxpreps.com/ms/itta-bena/leflore-county-tigers/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/coffeeville-vs-leflore-county-itta-bena/10-23-2026/?c=b7d9a4b8-f978-4bc4-98f7-41c71aa3e01c"
+        ],
+        "observed_from_team_ids": [
+          "coffeeville",
+          "leflore-county"
+        ],
+        "status": "COMPLETED",
+        "home_score": 6,
+        "away_score": 30,
+        "primary_game_id": "8020306",
+        "primary_scores": {
+          "leflore-county": 36,
+          "coffeeville": 6
+        }
+      }
+    },
+    {
+      "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
+      "severity": "WARNING",
       "message": "Imported final 7614771 disagrees with secondary event bbb36693-7124-4a52-b387-43d2672ce4b1; primary result retained.",
       "context": {
         "secondary_game_id": "bbb36693-7124-4a52-b387-43d2672ce4b1",
@@ -1930,58 +1908,31 @@
       }
     },
     {
-      "code": "SECONDARY_SCHEDULE_DISAGREEMENT",
+      "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
       "severity": "WARNING",
-      "message": "Secondary schedule reports disagree for event ca4616f4-8796-4059-9435-d138a6556a92; review the source facts.",
+      "message": "Imported final 7615126 disagrees with secondary event c28b7a1d-cd2b-457c-bb65-7b62662fb0dd; primary result retained.",
       "context": {
-        "secondary_game_id": "ca4616f4-8796-4059-9435-d138a6556a92",
-        "date": "2026-10-16",
-        "home": "hattiesburg",
-        "away": "forest-hill",
-        "home_url": "https://www.maxpreps.com/ms/hattiesburg/hattiesburg-tigers/football/",
-        "away_url": "https://www.maxpreps.com/ms/jackson/forest-hill-patriots/football/",
+        "secondary_game_id": "c28b7a1d-cd2b-457c-bb65-7b62662fb0dd",
+        "date": "2026-10-23",
+        "home": "pelahatchie",
+        "away": "scott-central",
+        "home_url": "https://www.maxpreps.com/ms/pelahatchie/pelahatchie-chiefs/football/",
+        "away_url": "https://www.maxpreps.com/ms/forest/scott-central-rebels/football/",
         "source_urls": [
-          "https://www.maxpreps.com/ms/football/game/forest-hill-jackson-vs-hattiesburg/10-16-2026/?c=ca4616f4-8796-4059-9435-d138a6556a92"
+          "https://www.maxpreps.com/ms/football/game/pelahatchie-vs-scott-central-forest/10-23-2026/?c=c28b7a1d-cd2b-457c-bb65-7b62662fb0dd"
         ],
         "observed_from_team_ids": [
-          "forest-hill",
-          "hattiesburg"
+          "pelahatchie",
+          "scott-central"
         ],
         "status": "COMPLETED",
-        "home_score": 28,
-        "away_score": 0,
-        "reports": [
-          {
-            "game_id": "ca4616f4-8796-4059-9435-d138a6556a92",
-            "date": "2026-10-16T19:00:00-05:00",
-            "home_name": "Hattiesburg High School",
-            "away_name": "Forest Hill High School",
-            "home_score": 28,
-            "away_score": 0,
-            "status": "COMPLETED",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/forest-hill-jackson-vs-hattiesburg/10-16-2026/?c=ca4616f4-8796-4059-9435-d138a6556a92",
-            "observed_from_team_id": "forest-hill",
-            "retrieved_at": "2026-10-20T16:20:37.275766+00:00",
-            "home_url": "https://www.maxpreps.com/ms/hattiesburg/hattiesburg-tigers/football/",
-            "away_url": "https://www.maxpreps.com/ms/jackson/forest-hill-patriots/football/"
-          },
-          {
-            "game_id": "ca4616f4-8796-4059-9435-d138a6556a92",
-            "date": "2026-10-16T19:00:00-05:00",
-            "home_name": "Hattiesburg High School",
-            "away_name": "Forest Hill High School",
-            "home_score": null,
-            "away_score": null,
-            "status": "UPCOMING",
-            "forfeit": false,
-            "source_url": "https://www.maxpreps.com/ms/football/game/forest-hill-jackson-vs-hattiesburg/10-16-2026/?c=ca4616f4-8796-4059-9435-d138a6556a92",
-            "observed_from_team_id": "hattiesburg",
-            "retrieved_at": "2026-10-20T16:20:37.275766+00:00",
-            "home_url": "https://www.maxpreps.com/ms/hattiesburg/hattiesburg-tigers/football/",
-            "away_url": "https://www.maxpreps.com/ms/jackson/forest-hill-patriots/football/"
-          }
-        ]
+        "home_score": 6,
+        "away_score": 44,
+        "primary_game_id": "7615126",
+        "primary_scores": {
+          "pelahatchie": 6,
+          "scott-central": 42
+        }
       }
     },
     {
@@ -2041,9 +1992,22 @@
       }
     },
     {
+      "code": "TEAM_DOUBLE_BOOKED",
+      "severity": "WARNING",
+      "message": "wesson is credited with 2 completed games on 2026-10-23; one may belong to a same-named school.",
+      "context": {
+        "team_id": "wesson",
+        "date": "2026-10-23",
+        "game_ids": [
+          "8035513",
+          "8044901"
+        ]
+      }
+    },
+    {
       "code": "UNVERIFIED_GAMES_REMAIN",
       "severity": "WARNING",
-      "message": "Published coverage is 97.6%, with 21 unresolved game listings retained.",
+      "message": "Published coverage is 97.8%, with 22 unresolved game listings retained.",
       "context": {
         "missing_game_ids": [
           "7731608",
@@ -2066,7 +2030,47 @@
           "7732331",
           "7731824",
           "7615046",
-          "7732376"
+          "7732376",
+          "7727889"
+        ]
+      }
+    },
+    {
+      "code": "PUBLICATION_AUDIT_WARNINGS",
+      "severity": "WARNING",
+      "message": "The publication audit passed with warnings; see audit.json.",
+      "context": {
+        "counts": [
+          {
+            "severity": "INFO",
+            "code": "FORFEIT_REVIEW",
+            "count": 3
+          },
+          {
+            "severity": "INFO",
+            "code": "PENDING_RESULTS",
+            "count": 28
+          },
+          {
+            "severity": "INFO",
+            "code": "SCHEDULE_GAP",
+            "count": 1
+          },
+          {
+            "severity": "INFO",
+            "code": "UNUSUAL_SCORE",
+            "count": 28
+          },
+          {
+            "severity": "WARNING",
+            "code": "MULTIPLE_GAMES_SAME_DAY",
+            "count": 1
+          },
+          {
+            "severity": "WARNING",
+            "code": "OPPONENT_LISTING_UNDER_REVIEW",
+            "count": 1
+          }
         ]
       }
     }

@@ -1,0 +1,250 @@
+{
+  "slug": "2026-week-09-risers-and-fallers",
+  "kind": "risers-and-fallers",
+  "title": "Week 9 risers and fallers in the MFPI",
+  "dek": "The largest statewide rank moves this week, with the verified results and rating changes behind each one.",
+  "status": "published",
+  "season": 2026,
+  "week": 9,
+  "snapshot_run_id": "2026-week-09-20261027T161602863648Z",
+  "snapshot_generated_at": "2026-10-27T16:16:02.863648+00:00",
+  "formula_version": "MFPI-3.2",
+  "draft_generated_at": "2026-10-27T16:18:37.831361+00:00",
+  "author": "MFPI automated analysis",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "published_at": "2026-10-27T11:18:37-05:00",
+  "review_notes": "",
+  "sources": [
+    {
+      "label": "MHSAA official score center (schedules and scores)",
+      "url": "https://scores.misshsaa.com/"
+    },
+    {
+      "label": "MHSAA 2025-27 football classifications and regions",
+      "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+    },
+    {
+      "label": "Statewide media rankings used for the Media Rank inputs",
+      "url": "https://www.maxpreps.com/ms/football/rankings/1/"
+    },
+    {
+      "label": "MFPI Week 9 rankings archive",
+      "url": "/archive/2026/week-09"
+    },
+    {
+      "label": "MFPI methodology",
+      "url": "/methodology"
+    }
+  ],
+  "limitations": [
+    "Movement is only shown against a comparable previous snapshot; teams without one are NEW.",
+    "Large moves in the middle of the table often reflect tightly bunched ratings rather than dramatic results."
+  ],
+  "sections": [
+    {
+      "heading": "How to read these moves",
+      "paragraphs": [
+        "Rank movement is last week's statewide rank minus this week's. Rating change is this week's displayed MFPI minus last week's. They are separate facts: in the middle of the table, where ratings are close together, a small rating change can move a team many places, and a team can hold its place while its rating changes.",
+        "Both compare the Week 9 snapshot with the latest audited Week 8 snapshot (formula MFPI-3.2)."
+      ]
+    },
+    {
+      "heading": "Biggest risers",
+      "paragraphs": [
+        "[[hancock]] (6A, 4-4): State ranking: up 23 spots to No. 76 (from No. 99). MFPI rating: increased 7.1 points to 62.8. In the window it beat [[gautier]] (currently No. 46) 50-43 at home on Oct 23.",
+        "[[sumrall]] (5A, 5-4): State ranking: up 22 spots to No. 88 (from No. 110). MFPI rating: increased 7.7 points to 59.0. In the window it beat [[natchez]] (currently No. 56) 54-48 at home on Oct 23.",
+        "[[southaven]] (7A, 2-5): State ranking: up 21 spots to No. 64 (from No. 85). MFPI rating: increased 7.8 points to 67.5. In the window it beat [[desoto-central]] (currently No. 17) 28-26 on the road on Oct 23.",
+        "[[collins]] (2A, 3-5): State ranking: up 21 spots to No. 165 (from No. 186). MFPI rating: increased 9.1 points to 32.4. In the window it beat [[sacred-heart]] (currently No. 209) 53-12 at home on Oct 23.",
+        "[[jefferson-davis-county]] (3A, 2-6): State ranking: up 19 spots to No. 121 (from No. 140). MFPI rating: increased 6.0 points to 46.6. In the window it beat [[mclaurin]] (currently No. 203) 49-14 on the road on Oct 23.",
+        "[[lawrence-county]] (4A, 0-9): State ranking: up 19 spots to No. 136 (from No. 155). MFPI rating: increased 4.0 points to 40.7. In the window it lost to [[poplarville]] (currently No. 15) 7-42 at home on Oct 23.",
+        "[[columbia]] (4A, 6-3): State ranking: up 18 spots to No. 41 (from No. 59). MFPI rating: increased 7.1 points to 75.5. In the window it beat [[south-pike]] (currently No. 107) 43-0 at home on Oct 23.",
+        "[[murrah]] (7A, 1-8): State ranking: up 18 spots to No. 127 (from No. 145). MFPI rating: increased 3.9 points to 43.9. In the window it lost to [[starkville]] (currently No. 7) 12-49 at home on Oct 22."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[hancock]]",
+            "76",
+            "99",
+            "+23",
+            "62.8",
+            "+7.1"
+          ],
+          [
+            "[[sumrall]]",
+            "88",
+            "110",
+            "+22",
+            "59.0",
+            "+7.7"
+          ],
+          [
+            "[[southaven]]",
+            "64",
+            "85",
+            "+21",
+            "67.5",
+            "+7.8"
+          ],
+          [
+            "[[collins]]",
+            "165",
+            "186",
+            "+21",
+            "32.4",
+            "+9.1"
+          ],
+          [
+            "[[jefferson-davis-county]]",
+            "121",
+            "140",
+            "+19",
+            "46.6",
+            "+6.0"
+          ],
+          [
+            "[[lawrence-county]]",
+            "136",
+            "155",
+            "+19",
+            "40.7",
+            "+4.0"
+          ],
+          [
+            "[[columbia]]",
+            "41",
+            "59",
+            "+18",
+            "75.5",
+            "+7.1"
+          ],
+          [
+            "[[murrah]]",
+            "127",
+            "145",
+            "+18",
+            "43.9",
+            "+3.9"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Biggest fallers",
+      "paragraphs": [
+        "[[caledonia]] (5A, 3-5): State ranking: down 19 spots to No. 86 (from No. 67). MFPI rating: decreased 5.3 points to 59.8. In the window it lost to [[west-point]] (currently No. 54) 16-41 on the road on Oct 23.",
+        "[[simmons]] (1A, 6-1): State ranking: down 18 spots to No. 98 (from No. 80). MFPI rating: decreased 5.1 points to 56.5. In the window it beat [[riverside]] (currently No. 221) 62-8 at home on Oct 23.",
+        "[[leflore-county]] (1A, 8-0): State ranking: down 16 spots to No. 92 (from No. 76). MFPI rating: decreased 3.8 points to 58.5. In the window it beat [[coffeeville]] (currently No. 200) 36-6 at home on Oct 23.",
+        "[[forrest-county-agricultural]] (4A, 3-5): State ranking: down 16 spots to No. 147 (from No. 131). MFPI rating: decreased 3.5 points to 39.1. In the window it lost to [[bay]] (currently No. 180) 12-17 on the road on Oct 23.",
+        "[[morton]] (4A, 6-2): State ranking: down 15 spots to No. 60 (from No. 45). MFPI rating: decreased 5.0 points to 69.1. In the window it beat [[raymond]] (currently No. 194) 56-8 on the road on Oct 23.",
+        "[[edwards]] (3A, 8-0): State ranking: down 15 spots to No. 81 (from No. 66). MFPI rating: decreased 4.9 points to 60.3. In the window it beat [[leland]] (currently No. 202) 36-0 on the road on Oct 23.",
+        "[[vancleave]] (5A, 2-6): State ranking: down 15 spots to No. 151 (from No. 136). MFPI rating: decreased 3.1 points to 38.4. In the window it lost to [[stone]] (currently No. 95) 20-59 on the road on Oct 23.",
+        "[[greenville]] (6A, 3-5): State ranking: down 14 spots to No. 114 (from No. 100). MFPI rating: decreased 5.5 points to 50.2. In the window it lost to [[callaway]] (currently No. 106) 8-27 on the road on Oct 22."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[caledonia]]",
+            "86",
+            "67",
+            "-19",
+            "59.8",
+            "-5.3"
+          ],
+          [
+            "[[simmons]]",
+            "98",
+            "80",
+            "-18",
+            "56.5",
+            "-5.1"
+          ],
+          [
+            "[[leflore-county]]",
+            "92",
+            "76",
+            "-16",
+            "58.5",
+            "-3.8"
+          ],
+          [
+            "[[forrest-county-agricultural]]",
+            "147",
+            "131",
+            "-16",
+            "39.1",
+            "-3.5"
+          ],
+          [
+            "[[morton]]",
+            "60",
+            "45",
+            "-15",
+            "69.1",
+            "-5.0"
+          ],
+          [
+            "[[edwards]]",
+            "81",
+            "66",
+            "-15",
+            "60.3",
+            "-4.9"
+          ],
+          [
+            "[[vancleave]]",
+            "151",
+            "136",
+            "-15",
+            "38.4",
+            "-3.1"
+          ],
+          [
+            "[[greenville]]",
+            "114",
+            "100",
+            "-14",
+            "50.2",
+            "-5.5"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Rank and rating moving separately",
+      "paragraphs": [
+        "Held their rank while the rating changed by at least a point: [[brandon]] (No. 8, +1.1); [[st-martin]] (No. 18, +1.2); [[st-andrews]] (No. 212, -1.5).",
+        "Moved in the ranking with an unchanged displayed rating: [[leake-central]] (-3 to No. 57); [[lanier]] (-1 to No. 85); [[north-panola]] (-1 to No. 129)."
+      ]
+    },
+    {
+      "heading": "Data notes and limitations",
+      "paragraphs": [
+        "Snapshot generated October 27, 2026 at 11:16 AM Central with a cutoff of October 27 at 11:00 AM Central, formula MFPI-3.2.",
+        "980 of 1002 game listings due by the cutoff had verified scores (97.8%); the rest count as unavailable, never as losses or 0-0 results.",
+        "[[wesson]] is credited with two games on Oct 23. One listing may belong to a same-named school; it is under review and affects that team and its opponents.",
+        "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
+      ]
+    }
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
+}

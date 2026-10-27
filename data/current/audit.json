@@ -1,18 +1,18 @@
 {
   "snapshot": "pre-publication",
   "season": 2026,
-  "week": 8,
+  "week": 9,
   "status": "PUBLISHED",
   "formula_version": "MFPI-3.2",
-  "generated_at": "2026-10-20T16:20:23.361873+00:00",
-  "cutoff_at": "2026-10-20T11:00:00-05:00",
-  "audited_at": "2026-10-20T16:22:16.880318+00:00",
-  "outcome": "PASS",
+  "generated_at": "2026-10-27T16:16:02.863648+00:00",
+  "cutoff_at": "2026-10-27T11:00:00-05:00",
+  "audited_at": "2026-10-27T16:18:37.137086+00:00",
+  "outcome": "PASS_WITH_WARNINGS",
   "teams": 225,
-  "unique_games": 871,
+  "unique_games": 980,
   "blocking": 0,
-  "warnings": 0,
-  "info": 72,
+  "warnings": 2,
+  "info": 60,
   "issue_counts": [
     {
       "severity": "INFO",
@@ -27,12 +27,22 @@
     {
       "severity": "INFO",
       "code": "SCHEDULE_GAP",
-      "count": 15
+      "count": 1
     },
     {
       "severity": "INFO",
       "code": "UNUSUAL_SCORE",
-      "count": 26
+      "count": 28
+    },
+    {
+      "severity": "WARNING",
+      "code": "MULTIPLE_GAMES_SAME_DAY",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "code": "OPPONENT_LISTING_UNDER_REVIEW",
+      "count": 1
     }
   ],
   "external_verification": "PIPELINE_SOURCES_ONLY",
@@ -42,6 +52,20 @@
       "severity": "INFO",
       "message": "Hernando High School game on 2026-09-11 finished 60-58; flagged for a source check only.",
       "team_id": "hernando",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Heidelberg High School game on 2026-09-18 finished 60-0; flagged for a source check only.",
+      "team_id": "heidelberg",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Noxubee County High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
+      "team_id": "noxubee-county",
       "context": {}
     },
     {
@@ -61,23 +85,28 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Noxubee County High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
-      "team_id": "noxubee-county",
-      "context": {}
-    },
-    {
-      "code": "UNUSUAL_SCORE",
-      "severity": "INFO",
-      "message": "Heidelberg High School game on 2026-09-18 finished 60-0; flagged for a source check only.",
-      "team_id": "heidelberg",
-      "context": {}
-    },
-    {
-      "code": "UNUSUAL_SCORE",
-      "severity": "INFO",
       "message": "Senatobia High School game on 2026-10-01 finished 64-0; flagged for a source check only.",
       "team_id": "senatobia",
       "context": {}
+    },
+    {
+      "code": "OPPONENT_LISTING_UNDER_REVIEW",
+      "severity": "WARNING",
+      "message": "wilkinson-county's 2026-10-23 game against Wesson Attendance Center involves a double-booked listing.",
+      "team_id": "wilkinson-county",
+      "context": {
+        "date": "2026-10-23",
+        "double_booked_team": "wesson"
+      }
+    },
+    {
+      "code": "MULTIPLE_GAMES_SAME_DAY",
+      "severity": "WARNING",
+      "message": "Wesson Attendance Center is credited with 2 games on 2026-10-23; one listing may belong to a same-named school (check source team IDs and cities).",
+      "team_id": "wesson",
+      "context": {
+        "date": "2026-10-23"
+      }
     },
     {
       "code": "UNUSUAL_SCORE",
@@ -91,6 +120,13 @@
       "severity": "INFO",
       "message": "Rosa Fort High School game on 2026-10-08 finished 72-0; flagged for a source check only.",
       "team_id": "rosa-fort",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Baldwyn High School game on 2026-10-23 finished 63-84; flagged for a source check only.",
+      "team_id": "baldwyn",
       "context": {}
     },
     {
@@ -124,6 +160,13 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
+      "message": "Hamilton High School game on 2026-10-23 finished 63-84; flagged for a source check only.",
+      "team_id": "hamilton",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
       "message": "South Pontotoc High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
       "team_id": "south-pontotoc",
       "context": {}
@@ -136,10 +179,10 @@
       "context": {}
     },
     {
-      "code": "FORFEIT_REVIEW",
+      "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Holly Springs High School has a forfeit on 2026-10-09; confirm the official ruling before treating its score as played.",
-      "team_id": "holly-springs",
+      "message": "McAdams Attendance Center game on 2026-09-25 finished 66-0; flagged for a source check only.",
+      "team_id": "mcadams",
       "context": {}
     },
     {
@@ -157,10 +200,10 @@
       "context": {}
     },
     {
-      "code": "UNUSUAL_SCORE",
+      "code": "FORFEIT_REVIEW",
       "severity": "INFO",
-      "message": "McAdams Attendance Center game on 2026-09-25 finished 66-0; flagged for a source check only.",
-      "team_id": "mcadams",
+      "message": "Holly Springs High School has a forfeit on 2026-10-09; confirm the official ruling before treating its score as played.",
+      "team_id": "holly-springs",
       "context": {}
     },
     {
@@ -220,13 +263,6 @@
       "context": {}
     },
     {
-      "code": "FORFEIT_REVIEW",
-      "severity": "INFO",
-      "message": "H. W. Byers High School (5-12) has a forfeit on 2026-09-25; confirm the official ruling before treating its score as played.",
-      "team_id": "byers",
-      "context": {}
-    },
-    {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
       "message": "Riverside High School game on 2026-08-28 finished 61-0; flagged for a source check only.",
@@ -241,17 +277,10 @@
       "context": {}
     },
     {
-      "code": "PENDING_RESULTS",
+      "code": "FORFEIT_REVIEW",
       "severity": "INFO",
-      "message": "Desoto Central High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "desoto-central",
-      "context": {}
-    },
-    {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "South Panola High School has 6 verified games against a statewide median of 8.",
-      "team_id": "south-panola",
+      "message": "H. W. Byers High School (5-12) has a forfeit on 2026-09-25; confirm the official ruling before treating its score as played.",
+      "team_id": "byers",
       "context": {}
     },
     {
@@ -259,13 +288,6 @@
       "severity": "INFO",
       "message": "South Panola High School has 1 listing(s) awaiting a verified result.",
       "team_id": "south-panola",
-      "context": {}
-    },
-    {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Brookhaven High School has 6 verified games against a statewide median of 8.",
-      "team_id": "brookhaven",
       "context": {}
     },
     {
@@ -278,22 +300,8 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Kosciusko Senior High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "kosciusko",
-      "context": {}
-    },
-    {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Corinth High School has 6 verified games against a statewide median of 8.",
-      "team_id": "corinth",
-      "context": {}
-    },
-    {
-      "code": "PENDING_RESULTS",
-      "severity": "INFO",
-      "message": "Corinth High School has 2 listing(s) awaiting a verified result.",
-      "team_id": "corinth",
+      "message": "Desoto Central High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "desoto-central",
       "context": {}
     },
     {
@@ -304,24 +312,10 @@
       "context": {}
     },
     {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Itawamba Agricultural High School has 6 verified games against a statewide median of 8.",
-      "team_id": "itawamba-agricultural",
-      "context": {}
-    },
-    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Itawamba Agricultural High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "itawamba-agricultural",
-      "context": {}
-    },
-    {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Grenada High has 6 verified games against a statewide median of 8.",
-      "team_id": "grenada",
+      "message": "Kosciusko Senior High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "kosciusko",
       "context": {}
     },
     {
@@ -334,15 +328,15 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "New Albany High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "new-albany",
+      "message": "Corinth High School has 2 listing(s) awaiting a verified result.",
+      "team_id": "corinth",
       "context": {}
     },
     {
-      "code": "SCHEDULE_GAP",
+      "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Laurel High School has 6 verified games against a statewide median of 8.",
-      "team_id": "laurel",
+      "message": "Itawamba Agricultural High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "itawamba-agricultural",
       "context": {}
     },
     {
@@ -353,31 +347,10 @@
       "context": {}
     },
     {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Hazlehurst High School has 6 verified games against a statewide median of 8.",
-      "team_id": "hazlehurst",
-      "context": {}
-    },
-    {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Simmons High School has 6 verified games against a statewide median of 8.",
-      "team_id": "simmons",
-      "context": {}
-    },
-    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Simmons High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "simmons",
-      "context": {}
-    },
-    {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Southaven High School has 6 verified games against a statewide median of 8.",
-      "team_id": "southaven",
+      "message": "New Albany High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "new-albany",
       "context": {}
     },
     {
@@ -390,8 +363,8 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "South Pike Senior High School has 2 listing(s) awaiting a verified result.",
-      "team_id": "south-pike",
+      "message": "Simmons High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "simmons",
       "context": {}
     },
     {
@@ -402,17 +375,10 @@
       "context": {}
     },
     {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Wilkinson County High has 5 verified games against a statewide median of 8.",
-      "team_id": "wilkinson-county",
-      "context": {}
-    },
-    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Wilkinson County High has 2 listing(s) awaiting a verified result.",
-      "team_id": "wilkinson-county",
+      "message": "South Pike Senior High School has 2 listing(s) awaiting a verified result.",
+      "team_id": "south-pike",
       "context": {}
     },
     {
@@ -430,6 +396,20 @@
       "context": {}
     },
     {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Wilkinson County High has 6 verified games against a statewide median of 8.",
+      "team_id": "wilkinson-county",
+      "context": {}
+    },
+    {
+      "code": "PENDING_RESULTS",
+      "severity": "INFO",
+      "message": "Wilkinson County High has 3 listing(s) awaiting a verified result.",
+      "team_id": "wilkinson-county",
+      "context": {}
+    },
+    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
       "message": "Bay Springs High School has 2 listing(s) awaiting a verified result.",
@@ -441,13 +421,6 @@
       "severity": "INFO",
       "message": "North Pontotoc High School has 2 listing(s) awaiting a verified result.",
       "team_id": "north-pontotoc",
-      "context": {}
-    },
-    {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Yazoo City High School has 6 verified games against a statewide median of 8.",
-      "team_id": "yazoo-city",
       "context": {}
     },
     {
@@ -467,29 +440,15 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "French Camp has 1 listing(s) awaiting a verified result.",
-      "team_id": "french-camp",
-      "context": {}
-    },
-    {
-      "code": "PENDING_RESULTS",
-      "severity": "INFO",
       "message": "West Tallahatchie High School has 1 listing(s) awaiting a verified result.",
       "team_id": "west-tallahatchie",
       "context": {}
     },
     {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "Potts Camp High School (5-12) has 6 verified games against a statewide median of 8.",
-      "team_id": "potts-camp",
-      "context": {}
-    },
-    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Humphreys County High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "humphreys-county",
+      "message": "French Camp has 1 listing(s) awaiting a verified result.",
+      "team_id": "french-camp",
       "context": {}
     },
     {
@@ -507,10 +466,10 @@
       "context": {}
     },
     {
-      "code": "SCHEDULE_GAP",
+      "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Vardaman High School has 6 verified games against a statewide median of 8.",
-      "team_id": "vardaman",
+      "message": "Humphreys County High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "humphreys-county",
       "context": {}
     },
     {
@@ -518,20 +477,6 @@
       "severity": "INFO",
       "message": "Vardaman High School has 1 listing(s) awaiting a verified result.",
       "team_id": "vardaman",
-      "context": {}
-    },
-    {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "H. W. Byers High School (5-12) has 6 verified games against a statewide median of 8.",
-      "team_id": "byers",
-      "context": {}
-    },
-    {
-      "code": "SCHEDULE_GAP",
-      "severity": "INFO",
-      "message": "West Lowndes High School has 6 verified games against a statewide median of 8.",
-      "team_id": "west-lowndes",
       "context": {}
     },
     {

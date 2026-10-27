@@ -1,0 +1,258 @@
+{
+  "slug": "2026-week-09-weekly-analysis",
+  "kind": "weekly-analysis",
+  "title": "Week 9 MFPI analysis: Tupelo High School leads the statewide rankings",
+  "dek": "What moved in the Week 9 Mississippi Football Power Index, computed from verified results through Oct 27.",
+  "status": "published",
+  "season": 2026,
+  "week": 9,
+  "snapshot_run_id": "2026-week-09-20261027T161602863648Z",
+  "snapshot_generated_at": "2026-10-27T16:16:02.863648+00:00",
+  "formula_version": "MFPI-3.2",
+  "draft_generated_at": "2026-10-27T16:18:37.781333+00:00",
+  "author": "MFPI automated analysis",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "published_at": "2026-10-27T11:18:37-05:00",
+  "review_notes": "",
+  "sources": [
+    {
+      "label": "MHSAA official score center (schedules and scores)",
+      "url": "https://scores.misshsaa.com/"
+    },
+    {
+      "label": "MHSAA 2025-27 football classifications and regions",
+      "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+    },
+    {
+      "label": "Statewide media rankings used for the Media Rank inputs",
+      "url": "https://www.maxpreps.com/ms/football/rankings/1/"
+    },
+    {
+      "label": "MFPI Week 9 rankings archive",
+      "url": "/archive/2026/week-09"
+    },
+    {
+      "label": "MFPI methodology",
+      "url": "/methodology"
+    }
+  ],
+  "limitations": [
+    "Generated from the published snapshot; no games after the cutoff are included.",
+    "Media Rank and Media Strength of Schedule contribute 20% of every rating; MFPI's own score-based model contributes 80%.",
+    "No player, injury, coaching or game-narrative information is used or implied."
+  ],
+  "sections": [
+    {
+      "heading": "The top of the statewide rankings",
+      "paragraphs": [
+        "[[tupelo]] (9-0) is No. 1 for the 9th straight published week. MFPI rating: increased 0.1 points to 97.2. In the latest window it beat [[horn-lake]] (currently No. 77) 40-0 on the road on Oct 23.",
+        "No. 2 [[gulfport]] (7-1, 7A): ranking unchanged at No. 2; rating decreased 0.1 points to 95.1. It beat [[biloxi]] (currently No. 70) 35-3 on the road on Oct 23.",
+        "No. 3 [[warren-central]] (8-0, 6A): ranking unchanged at No. 3; rating unchanged at 94.3. It beat [[neshoba-central]] (currently No. 29) 34-14 at home on Oct 23.",
+        "No. 4 [[diberville]] (8-0, 7A): ranking unchanged at No. 4; rating unchanged at 93.2. It had no verified result in this window.",
+        "No. 5 [[oxford]] (7-1, 7A): ranking up 1 spot to No. 5 (from No. 6); rating increased 1.5 points to 92.6. It beat [[clinton]] (currently No. 36) 52-21 at home on Oct 23."
+      ],
+      "table": {
+        "columns": [
+          "Rank",
+          "Team",
+          "Class",
+          "Record",
+          "MFPI",
+          "Rating change",
+          "Rank move"
+        ],
+        "rows": [
+          [
+            "1",
+            "[[tupelo]]",
+            "7A",
+            "9-0",
+            "97.2",
+            "+0.1",
+            "—"
+          ],
+          [
+            "2",
+            "[[gulfport]]",
+            "7A",
+            "7-1",
+            "95.1",
+            "-0.1",
+            "—"
+          ],
+          [
+            "3",
+            "[[warren-central]]",
+            "6A",
+            "8-0",
+            "94.3",
+            "0.0",
+            "—"
+          ],
+          [
+            "4",
+            "[[diberville]]",
+            "7A",
+            "8-0",
+            "93.2",
+            "0.0",
+            "—"
+          ],
+          [
+            "5",
+            "[[oxford]]",
+            "7A",
+            "7-1",
+            "92.6",
+            "+1.5",
+            "+1"
+          ],
+          [
+            "6",
+            "[[louisville]]",
+            "4A",
+            "7-2",
+            "91.6",
+            "+2.4",
+            "+5"
+          ],
+          [
+            "7",
+            "[[starkville]]",
+            "7A",
+            "6-2",
+            "91.5",
+            "+0.2",
+            "-2"
+          ],
+          [
+            "8",
+            "[[brandon]]",
+            "7A",
+            "6-2",
+            "91.5",
+            "+1.1",
+            "—"
+          ],
+          [
+            "9",
+            "[[south-panola]]",
+            "6A",
+            "4-3",
+            "90.6",
+            "+1.9",
+            "+5"
+          ],
+          [
+            "10",
+            "[[brookhaven]]",
+            "5A",
+            "7-0",
+            "89.0",
+            "+1.7",
+            "+6"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Classification leaders",
+      "paragraphs": [
+        "Class ranks are the statewide order filtered to one classification; MFPI never recalculates a separate class rating.",
+        "Class 5A: [[brookhaven]] replaced [[pontotoc]] at No. 1."
+      ],
+      "table": {
+        "columns": [
+          "Class",
+          "No. 1",
+          "Record",
+          "State rank",
+          "MFPI"
+        ],
+        "rows": [
+          [
+            "7A",
+            "[[tupelo]]",
+            "9-0",
+            "1",
+            "97.2"
+          ],
+          [
+            "6A",
+            "[[warren-central]]",
+            "8-0",
+            "3",
+            "94.3"
+          ],
+          [
+            "5A",
+            "[[brookhaven]]",
+            "7-0",
+            "10",
+            "89.0"
+          ],
+          [
+            "4A",
+            "[[louisville]]",
+            "7-2",
+            "6",
+            "91.6"
+          ],
+          [
+            "3A",
+            "[[noxubee-county]]",
+            "7-2",
+            "25",
+            "82.8"
+          ],
+          [
+            "2A",
+            "[[heidelberg]]",
+            "7-1",
+            "23",
+            "83.9"
+          ],
+          [
+            "1A",
+            "[[leflore-county]]",
+            "8-0",
+            "92",
+            "58.5"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Results that raised ratings most",
+      "paragraphs": [
+        "The largest rating increases among teams with a verified result in this window. A rating can also move without a game, because every opponent's rating is re-solved each week.",
+        "[[collins]] (+9.1 to 32.4, now No. 165) beat [[sacred-heart]] (currently No. 209) 53-12 at home on Oct 23.",
+        "[[southaven]] (+7.8 to 67.5, now No. 64) beat [[desoto-central]] (currently No. 17) 28-26 on the road on Oct 23.",
+        "[[sumrall]] (+7.7 to 59.0, now No. 88) beat [[natchez]] (currently No. 56) 54-48 at home on Oct 23.",
+        "[[columbia]] (+7.1 to 75.5, now No. 41) beat [[south-pike]] (currently No. 107) 43-0 at home on Oct 23.",
+        "[[hancock]] (+7.1 to 62.8, now No. 76) beat [[gautier]] (currently No. 46) 50-43 at home on Oct 23.",
+        "The full list of movers is in the [[risers-and-fallers:2026-week-09-risers-and-fallers]] analysis."
+      ]
+    },
+    {
+      "heading": "Schedule strength",
+      "paragraphs": [
+        "MFPI strength of schedule is the average current rating of every completed opponent, expressed as a statewide percentile (100 is the strongest schedule in this week's field, not a perfect grade). The five strongest schedules: [[oxford]] (7-1, SOS percentile 100.0); [[brandon]] (6-2, SOS percentile 99.6); [[germantown]] (4-5, SOS percentile 99.1); [[west-point]] (1-7, SOS percentile 98.7); [[horn-lake]] (0-8, SOS percentile 98.2).",
+        "Teams that have played furthest above their own classification (average class steps up, games up in class): [[okolona]] (1A, +1.57, 5 up); [[charleston]] (2A, +1.33, 5 up); [[byers]] (1A, +1.33, 4 up); [[poplarville]] (4A, +1.25, 5 up); [[laurel]] (5A, +1.14, 5 up)."
+      ]
+    },
+    {
+      "heading": "Data notes and limitations",
+      "paragraphs": [
+        "Snapshot generated October 27, 2026 at 11:16 AM Central with a cutoff of October 27 at 11:00 AM Central, formula MFPI-3.2.",
+        "980 of 1002 game listings due by the cutoff had verified scores (97.8%); the rest count as unavailable, never as losses or 0-0 results.",
+        "[[wesson]] is credited with two games on Oct 23. One listing may belong to a same-named school; it is under review and affects that team and its opponents.",
+        "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
+      ]
+    }
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
+}
