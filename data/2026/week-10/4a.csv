@@ -1,0 +1,40 @@
+state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
+7,1,Louisville High School,4A,8-2,92.0,-1,0,0.4,85.3,36.0,12.2,17,73.16,39.0,Playing up,0.333,2,6,1
+14,2,Poplarville Jr Sr High School,4A,9-0,88.3,1,0,1.1,77.7,42.8,18.2,26,67.41,34.4,Playing up,1.111,5,4,0
+17,3,Shannon High School,4A,8-2,86.5,2,0,0.7,81.2,34.4,16.1,36,62.75,35.6,Mostly same class,0.1,3,5,2
+27,4,McComb High School,4A,7-2,81.2,1,1,0.5,67.4,38.3,18.1,42,60.74,31.5,Mostly same class,-0.111,2,4,3
+28,5,Kosciusko Senior High School,4A,9-1,81.0,-2,-1,-0.5,69.6,47.9,26.4,35,63.55,31.5,Playing up,0.6,4,4,2
+31,6,Corinth High School,4A,5-3,80.0,4,1,2.1,80.8,28.8,13.0,58,55.61,32.0,Mostly same class,0.25,2,6,0
+35,7,Itawamba Agricultural High School,4A,6-2,77.8,4,2,1.4,73.7,38.0,22.8,62,54.31,32.7,Mostly same class,0.25,2,5,1
+40,8,Mendenhall High School,4A,8-2,76.0,-8,-2,-3.1,69.2,35.8,22.6,59,54.86,31.1,Playing up,0.4,3,6,1
+41,9,Columbia High School,4A,6-4,75.6,0,2,0.1,64.7,36.2,21.7,57,55.95,32.3,Mostly same class,0.111,2,4,3
+44,10,Pass Christian High School,4A,10-0,74.7,-6,-2,-2.1,41.1,47.6,15.0,43,60.24,23.9,Mostly same class,0.1,3,4,3
+45,11,Senatobia High School,4A,10-0,74.1,-5,-1,-1.5,48.7,31.9,7.4,44,60.23,27.1,Playing down,-0.333,1,5,3
+47,12,Houston High School,4A,4-6,72.8,1,0,0.1,91.5,27.2,28.5,90,48.21,37.7,Playing up,0.5,4,5,1
+55,13,Amory High School,4A,5-5,69.7,7,2,2.0,75.4,24.9,20.1,98,45.95,32.1,Playing up,0.3,3,6,1
+58,14,New Albany High School,4A,6-3,69.3,-7,-1,-2.0,61.2,30.8,18.2,78,50.9,29.0,Playing up,0.444,3,6,0
+64,15,Morton High School,4A,7-2,67.9,-4,-1,-1.2,67.9,34.6,26.8,87,49.02,30.1,Playing down,-0.333,0,7,2
+67,16,Greenwood High School,4A,4-5,66.7,0,0,0.4,71.9,20.9,16.4,94,47.68,31.5,Playing up,0.333,3,5,1
+73,17,Clarksdale High School,4A,6-3,64.2,2,0,1.1,55.4,26.4,16.0,85,49.44,26.5,Mostly same class,0.0,2,5,2
+86,18,Richland High School,4A,7-2,59.3,1,0,-0.1,37.1,40.4,23.7,111,43.77,22.1,Mostly same class,-0.222,2,4,3
+87,19,West Lauderdale High School,4A,5-4,59.0,16,2,3.8,55.8,24.1,19.1,112,43.65,27.3,Mostly same class,-0.111,2,4,3
+92,20,Greene County High School,4A,7-3,57.2,1,-1,-0.4,50.0,30.7,26.0,118,41.73,27.4,Playing up,0.3,4,4,2
+94,21,Rosa Fort High School,4A,5-4,56.7,0,-1,-0.7,38.8,32.7,13.9,105,44.82,22.9,Playing down,-0.625,0,4,4
+96,22,Forest High School,4A,5-4,56.0,8,0,1.2,54.5,30.1,25.8,117,41.96,27.0,Playing down,-0.333,1,5,3
+106,23,Newton County High School,4A,4-5,53.4,5,1,1.7,53.6,23.7,21.7,121,41.22,27.3,Playing down,-0.556,1,4,4
+112,24,South Pike Senior High School,4A,4-5,51.7,-5,-1,-1.1,70.5,23.1,30.3,149,35.74,31.1,Mostly same class,-0.25,1,5,2
+135,25,Ripley High School,4A,2-8,41.4,-1,0,0.4,66.5,16.4,30.6,181,29.43,31.2,Mostly same class,0.2,2,6,2
+138,26,Lawrence County High School,4A,0-9,41.0,-2,0,0.3,82.6,10.8,34.7,198,26.09,36.5,Mostly same class,-0.222,2,4,3
+142,27,Tishomingo County High School,4A,5-4,39.8,6,3,0.9,43.8,28.1,31.2,184,29.06,23.6,Playing down,-0.75,0,4,4
+147,28,North Pontotoc High School,4A,4-5,39.1,-2,0,-0.3,28.6,31.6,26.1,185,28.89,22.2,Playing down,-0.889,0,3,6
+149,29,Choctaw Central,4A,4-5,38.4,-6,-2,-1.1,30.4,23.0,19.6,173,31.42,19.7,Playing down,-1.0,0,3,4
+154,30,Mooreville High School,4A,4-6,37.1,0,1,-0.1,47.8,22.7,30.1,199,26.07,25.1,Playing down,-0.6,0,6,4
+156,31,Forrest County Agricultural Hi Sch,4A,3-6,36.8,-9,-2,-2.3,45.5,15.7,22.7,180,29.48,26.1,Playing up,0.444,4,4,1
+160,32,Gentry High School,4A,2-8,34.0,-4,0,-3.1,61.6,7.6,26.8,226,16.31,29.4,Playing down,-0.4,1,5,4
+161,33,Yazoo City High School,4A,1-7,33.4,0,0,-0.5,68.3,7.8,32.1,211,22.26,30.9,Playing up,0.375,3,4,1
+169,34,Moss Point High School,4A,3-7,29.5,-1,0,-1.4,49.1,13.7,32.6,212,21.78,27.3,Playing up,0.556,4,4,1
+175,35,South Pontotoc High School,4A,0-10,27.7,3,0,2.3,57.1,12.8,37.5,234,12.12,27.6,Playing down,-0.8,0,6,4
+179,36,Bay High School,4A,1-8,26.8,1,0,1.4,51.3,7.4,31.7,223,18.52,28.2,Mostly same class,0.25,2,4,2
+184,37,Northeast Lauderdale High School,4A,1-9,24.3,1,0,0.7,51.8,9.4,35.6,233,13.03,26.5,Playing down,-0.7,1,4,5
+189,38,Raymond High School,4A,1-9,21.6,5,0,2.0,47.3,11.4,39.8,252,6.32,26.1,Mostly same class,0.0,2,4,3
+217,39,Byhalia High School (9-12),4A,2-7,10.7,-1,0,0.2,21.9,10.9,40.4,263,-1.59,17.6,Playing down,-1.222,0,4,5

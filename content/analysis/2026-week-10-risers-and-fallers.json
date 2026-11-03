@@ -1,0 +1,250 @@
+{
+  "slug": "2026-week-10-risers-and-fallers",
+  "kind": "risers-and-fallers",
+  "title": "Week 10 risers and fallers in the MFPI",
+  "dek": "The largest statewide rank moves this week, with the verified results and rating changes behind each one.",
+  "status": "published",
+  "season": 2026,
+  "week": 10,
+  "snapshot_run_id": "2026-week-10-20261103T171130471802Z",
+  "snapshot_generated_at": "2026-11-03T17:11:30.471802+00:00",
+  "formula_version": "MFPI-3.2",
+  "draft_generated_at": "2026-11-03T17:13:33.681232+00:00",
+  "author": "MFPI automated analysis",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "published_at": "2026-11-03T11:13:33-06:00",
+  "review_notes": "",
+  "sources": [
+    {
+      "label": "MHSAA official score center (schedules and scores)",
+      "url": "https://scores.misshsaa.com/"
+    },
+    {
+      "label": "MHSAA 2025-27 football classifications and regions",
+      "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+    },
+    {
+      "label": "Statewide media rankings used for the Media Rank inputs",
+      "url": "https://www.maxpreps.com/ms/football/rankings/1/"
+    },
+    {
+      "label": "MFPI Week 10 rankings archive",
+      "url": "/archive/2026/week-10"
+    },
+    {
+      "label": "MFPI methodology",
+      "url": "/methodology"
+    }
+  ],
+  "limitations": [
+    "Movement is only shown against a comparable previous snapshot; teams without one are NEW.",
+    "Large moves in the middle of the table often reflect tightly bunched ratings rather than dramatic results."
+  ],
+  "sections": [
+    {
+      "heading": "How to read these moves",
+      "paragraphs": [
+        "Rank movement is last week's statewide rank minus this week's. Rating change is this week's displayed MFPI minus last week's. They are separate facts: in the middle of the table, where ratings are close together, a small rating change can move a team many places, and a team can hold its place while its rating changes.",
+        "Both compare the Week 10 snapshot with the latest audited Week 9 snapshot (formula MFPI-3.2)."
+      ]
+    },
+    {
+      "heading": "Biggest risers",
+      "paragraphs": [
+        "[[tylertown]] (3A, 5-5): State ranking: up 20 spots to No. 139 (from No. 159). MFPI rating: increased 4.7 points to 40.7. In the window it beat [[presbyterian-christian]] (currently No. 84) 30-22 at home on Oct 29.",
+        "[[west-lauderdale]] (4A, 5-4): State ranking: up 16 spots to No. 87 (from No. 103). MFPI rating: increased 3.8 points to 59.0. In the window it beat [[choctaw-central]] (currently No. 149) 26-0 at home on Oct 29.",
+        "[[biloxi]] (7A, 3-6): State ranking: up 14 spots to No. 56 (from No. 70). MFPI rating: increased 4.8 points to 69.7. In the window it beat [[west-harrison]] (currently No. 63) 38-22 on the road on Oct 30.",
+        "[[lanier]] (5A, 8-2): State ranking: up 14 spots to No. 71 (from No. 85). MFPI rating: increased 4.8 points to 64.7. In the window it beat [[cleveland-central]] (currently No. 51) 26-18 at home on Oct 30.",
+        "[[holmes-county-central]] (5A, 4-6): State ranking: up 13 spots to No. 126 (from No. 139). MFPI rating: increased 5.5 points to 45.7. In the window it beat [[vicksburg]] (currently No. 98) 26-14 on the road on Oct 30.",
+        "[[horn-lake]] (7A, 1-8): State ranking: up 11 spots to No. 66 (from No. 77). MFPI rating: increased 5.0 points to 67.4. In the window it beat [[southaven]] (currently No. 76) 26-0 on the road on Oct 30.",
+        "[[terry]] (6A, 6-4): State ranking: up 10 spots to No. 79 (from No. 89). MFPI rating: increased 2.7 points to 61.5. In the window it beat [[george-county]] (currently No. 99) 39-21 at home on Oct 30.",
+        "[[independence]] (3A, 6-3): State ranking: up 9 spots to No. 140 (from No. 149). MFPI rating: increased 2.0 points to 40.6. In the window it beat [[coahoma-county]] (currently No. 170) 35-18 at home on Oct 29."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[tylertown]]",
+            "139",
+            "159",
+            "+20",
+            "40.7",
+            "+4.7"
+          ],
+          [
+            "[[west-lauderdale]]",
+            "87",
+            "103",
+            "+16",
+            "59.0",
+            "+3.8"
+          ],
+          [
+            "[[biloxi]]",
+            "56",
+            "70",
+            "+14",
+            "69.7",
+            "+4.8"
+          ],
+          [
+            "[[lanier]]",
+            "71",
+            "85",
+            "+14",
+            "64.7",
+            "+4.8"
+          ],
+          [
+            "[[holmes-county-central]]",
+            "126",
+            "139",
+            "+13",
+            "45.7",
+            "+5.5"
+          ],
+          [
+            "[[horn-lake]]",
+            "66",
+            "77",
+            "+11",
+            "67.4",
+            "+5.0"
+          ],
+          [
+            "[[terry]]",
+            "79",
+            "89",
+            "+10",
+            "61.5",
+            "+2.7"
+          ],
+          [
+            "[[independence]]",
+            "140",
+            "149",
+            "+9",
+            "40.6",
+            "+2.0"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Biggest fallers",
+      "paragraphs": [
+        "[[vicksburg]] (5A, 3-6): State ranking: down 20 spots to No. 98 (from No. 78). MFPI rating: decreased 5.8 points to 55.9. In the window it lost to [[holmes-county-central]] (currently No. 126) 14-26 at home on Oct 30.",
+        "[[hazlehurst]] (3A, 5-3): State ranking: down 16 spots to No. 100 (from No. 84). MFPI rating: decreased 4.4 points to 55.5. In the window it beat [[crystal-springs]] (currently No. 215) 44-8 at home on Oct 29.",
+        "[[presbyterian-christian]] (3A, 7-3): State ranking: down 15 spots to No. 84 (from No. 69). MFPI rating: decreased 5.7 points to 59.4. In the window it lost to [[tylertown]] (currently No. 139) 22-30 on the road on Oct 29.",
+        "[[southeast-lauderdale]] (3A, 7-3): State ranking: down 15 spots to No. 152 (from No. 137). MFPI rating: decreased 3.2 points to 37.3. In the window it lost to [[newton-county]] (currently No. 106) 7-33 on the road on Oct 30.",
+        "[[sumrall]] (5A, 5-5): State ranking: down 14 spots to No. 102 (from No. 88). MFPI rating: decreased 3.8 points to 55.2. In the window it lost to [[laurel]] (currently No. 43) 21-49 on the road on Oct 30.",
+        "[[calhoun-city]] (1A, 6-3): State ranking: down 14 spots to No. 131 (from No. 117). MFPI rating: decreased 4.5 points to 43.8. In the window it beat [[west-lowndes]] (currently No. 222) 45-16 on the road on Oct 29.",
+        "[[southaven]] (7A, 2-6): State ranking: down 12 spots to No. 76 (from No. 64). MFPI rating: decreased 5.0 points to 62.5. In the window it lost to [[horn-lake]] (currently No. 66) 0-26 at home on Oct 30.",
+        "[[lake]] (2A, 5-4): State ranking: down 12 spots to No. 143 (from No. 131). MFPI rating: decreased 2.3 points to 39.8. In the window it lost to [[scott-central]] (currently No. 77) 12-42 on the road on Oct 29."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[vicksburg]]",
+            "98",
+            "78",
+            "-20",
+            "55.9",
+            "-5.8"
+          ],
+          [
+            "[[hazlehurst]]",
+            "100",
+            "84",
+            "-16",
+            "55.5",
+            "-4.4"
+          ],
+          [
+            "[[presbyterian-christian]]",
+            "84",
+            "69",
+            "-15",
+            "59.4",
+            "-5.7"
+          ],
+          [
+            "[[southeast-lauderdale]]",
+            "152",
+            "137",
+            "-15",
+            "37.3",
+            "-3.2"
+          ],
+          [
+            "[[sumrall]]",
+            "102",
+            "88",
+            "-14",
+            "55.2",
+            "-3.8"
+          ],
+          [
+            "[[calhoun-city]]",
+            "131",
+            "117",
+            "-14",
+            "43.8",
+            "-4.5"
+          ],
+          [
+            "[[southaven]]",
+            "76",
+            "64",
+            "-12",
+            "62.5",
+            "-5.0"
+          ],
+          [
+            "[[lake]]",
+            "143",
+            "131",
+            "-12",
+            "39.8",
+            "-2.3"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Rank and rating moving separately",
+      "paragraphs": [
+        "Held their rank while the rating changed by at least a point: [[gulfport]] (No. 2, +1.2); [[heidelberg]] (No. 23, -1.6); [[riverside]] (No. 221, -1.2).",
+        "Moved in the ranking with an unchanged displayed rating: [[leake-central]] (+4 to No. 53); [[wesson]] (+1 to No. 57); [[edwards]] (-1 to No. 82); [[south-delta]] (+2 to No. 148); [[velma-jackson]] (+2 to No. 153); [[noxapater]] (+1 to No. 165); [[resurrection]] (+1 to No. 219)."
+      ]
+    },
+    {
+      "heading": "Data notes and limitations",
+      "paragraphs": [
+        "Snapshot generated November 3, 2026 at 11:11 AM Central with a cutoff of November 3 at 11:00 AM Central, formula MFPI-3.2.",
+        "1087 of 1110 game listings due by the cutoff had verified scores (97.9%); the rest count as unavailable, never as losses or 0-0 results.",
+        "[[wesson]] is credited with two games on Oct 23. One listing may belong to a same-named school; it is under review and affects that team and its opponents.",
+        "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
+      ]
+    }
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
+}

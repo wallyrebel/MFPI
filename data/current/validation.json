@@ -1,9 +1,9 @@
 {
   "valid": false,
-  "expected_games": 1002,
-  "verified_games": 980,
-  "missing_games": 22,
-  "coverage_percentage": 97.8,
+  "expected_games": 1110,
+  "verified_games": 1087,
+  "missing_games": 23,
+  "coverage_percentage": 97.93,
   "issues": [
     {
       "code": "REVIEWED_IDENTITY_APPLIED",
@@ -135,6 +135,14 @@
             "home_source_id": "260769",
             "away": "Loyd Star",
             "away_source_id": "260818"
+          },
+          {
+            "game_id": "7615154",
+            "date": "2026-10-29T17:00:00-07:00",
+            "home": "Franklin County",
+            "home_source_id": "260769",
+            "away": "Jefferson County",
+            "away_source_id": "242816"
           }
         ]
       }
@@ -233,6 +241,14 @@
             "home_source_id": "243291",
             "away": "Germantown",
             "away_source_id": "260771"
+          },
+          {
+            "game_id": "7586731",
+            "date": "2026-10-30T17:00:00-07:00",
+            "home": "Germantown",
+            "home_source_id": "260771",
+            "away": "Clinton",
+            "away_source_id": "241737"
           }
         ]
       }
@@ -2007,7 +2023,7 @@
     {
       "code": "UNVERIFIED_GAMES_REMAIN",
       "severity": "WARNING",
-      "message": "Published coverage is 97.8%, with 22 unresolved game listings retained.",
+      "message": "Published coverage is 97.9%, with 23 unresolved game listings retained.",
       "context": {
         "missing_game_ids": [
           "7731608",
@@ -2031,7 +2047,8 @@
           "7731824",
           "7615046",
           "7732376",
-          "7727889"
+          "7727889",
+          "7732474"
         ]
       }
     },
@@ -2049,7 +2066,12 @@
           {
             "severity": "INFO",
             "code": "PENDING_RESULTS",
-            "count": 28
+            "count": 30
+          },
+          {
+            "severity": "INFO",
+            "code": "RATING_TIE",
+            "count": 2
           },
           {
             "severity": "INFO",
@@ -2059,7 +2081,7 @@
           {
             "severity": "INFO",
             "code": "UNUSUAL_SCORE",
-            "count": 28
+            "count": 32
           },
           {
             "severity": "WARNING",
