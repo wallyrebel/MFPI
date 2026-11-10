@@ -1,15 +1,15 @@
 {
   "snapshot": "pre-publication",
   "season": 2026,
-  "week": 10,
+  "week": 11,
   "status": "PUBLISHED",
   "formula_version": "MFPI-3.2",
-  "generated_at": "2026-11-03T17:11:30.471802+00:00",
-  "cutoff_at": "2026-11-03T11:00:00-06:00",
-  "audited_at": "2026-11-03T17:13:33.025381+00:00",
+  "generated_at": "2026-11-10T17:10:58.281790+00:00",
+  "cutoff_at": "2026-11-10T11:00:00-06:00",
+  "audited_at": "2026-11-10T17:13:35.736808+00:00",
   "outcome": "PASS_WITH_WARNINGS",
   "teams": 225,
-  "unique_games": 1087,
+  "unique_games": 1186,
   "blocking": 0,
   "warnings": 2,
   "info": 68,
@@ -26,18 +26,13 @@
     },
     {
       "severity": "INFO",
-      "code": "RATING_TIE",
-      "count": 2
-    },
-    {
-      "severity": "INFO",
       "code": "SCHEDULE_GAP",
       "count": 1
     },
     {
       "severity": "INFO",
       "code": "UNUSUAL_SCORE",
-      "count": 32
+      "count": 34
     },
     {
       "severity": "WARNING",
@@ -55,8 +50,8 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Heidelberg High School game on 2026-09-18 finished 60-0; flagged for a source check only.",
-      "team_id": "heidelberg",
+      "message": "Kosciusko Senior High School game on 2026-09-11 finished 60-58; flagged for a source check only.",
+      "team_id": "kosciusko",
       "context": {}
     },
     {
@@ -76,8 +71,8 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Kosciusko Senior High School game on 2026-09-11 finished 60-58; flagged for a source check only.",
-      "team_id": "kosciusko",
+      "message": "Heidelberg High School game on 2026-09-18 finished 60-0; flagged for a source check only.",
+      "team_id": "heidelberg",
       "context": {}
     },
     {
@@ -130,15 +125,15 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Rosa Fort High School game on 2026-10-08 finished 72-0; flagged for a source check only.",
-      "team_id": "rosa-fort",
+      "message": "Perry Central High School game on 2026-10-29 finished 2-63; flagged for a source check only.",
+      "team_id": "perry-central",
       "context": {}
     },
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Perry Central High School game on 2026-10-29 finished 2-63; flagged for a source check only.",
-      "team_id": "perry-central",
+      "message": "Rosa Fort High School game on 2026-10-08 finished 72-0; flagged for a source check only.",
+      "team_id": "rosa-fort",
       "context": {}
     },
     {
@@ -158,6 +153,20 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
+      "message": "Stringer Attendance Center game on 2026-11-06 finished 62-0; flagged for a source check only.",
+      "team_id": "stringer",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Lumberton High School game on 2026-10-15 finished 0-62; flagged for a source check only.",
+      "team_id": "lumberton",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
       "message": "North Pontotoc High School game on 2026-10-16 finished 70-6; flagged for a source check only.",
       "team_id": "north-pontotoc",
       "context": {}
@@ -172,22 +181,8 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Lumberton High School game on 2026-10-15 finished 0-62; flagged for a source check only.",
-      "team_id": "lumberton",
-      "context": {}
-    },
-    {
-      "code": "UNUSUAL_SCORE",
-      "severity": "INFO",
       "message": "Hamilton High School game on 2026-10-23 finished 63-84; flagged for a source check only.",
       "team_id": "hamilton",
-      "context": {}
-    },
-    {
-      "code": "UNUSUAL_SCORE",
-      "severity": "INFO",
-      "message": "South Pontotoc High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
-      "team_id": "south-pontotoc",
       "context": {}
     },
     {
@@ -202,6 +197,13 @@
       "severity": "INFO",
       "message": "Yazoo County High School game on 2026-08-28 finished 61-0; flagged for a source check only.",
       "team_id": "yazoo-county",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "South Pontotoc High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
+      "team_id": "south-pontotoc",
       "context": {}
     },
     {
@@ -228,15 +230,22 @@
     {
       "code": "FORFEIT_REVIEW",
       "severity": "INFO",
-      "message": "St. Patrick has a forfeit on 2026-08-28; confirm the official ruling before treating its score as played.",
-      "team_id": "st-patrick",
+      "message": "Holly Springs High School has a forfeit on 2026-10-09; confirm the official ruling before treating its score as played.",
+      "team_id": "holly-springs",
       "context": {}
     },
     {
       "code": "FORFEIT_REVIEW",
       "severity": "INFO",
-      "message": "Holly Springs High School has a forfeit on 2026-10-09; confirm the official ruling before treating its score as played.",
-      "team_id": "holly-springs",
+      "message": "St. Patrick has a forfeit on 2026-08-28; confirm the official ruling before treating its score as played.",
+      "team_id": "st-patrick",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Shaw High School game on 2026-11-06 finished 62-0; flagged for a source check only.",
+      "team_id": "shaw",
       "context": {}
     },
     {
@@ -256,15 +265,15 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "West Bolivar High School game on 2026-10-16 finished 70-6; flagged for a source check only.",
-      "team_id": "west-bolivar",
+      "message": "Vardaman High School game on 2026-08-28 finished 45-65; flagged for a source check only.",
+      "team_id": "vardaman",
       "context": {}
     },
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Vardaman High School game on 2026-08-28 finished 45-65; flagged for a source check only.",
-      "team_id": "vardaman",
+      "message": "West Bolivar High School game on 2026-10-16 finished 70-6; flagged for a source check only.",
+      "team_id": "west-bolivar",
       "context": {}
     },
     {
@@ -319,6 +328,13 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
+      "message": "Brookhaven High School has 2 listing(s) awaiting a verified result.",
+      "team_id": "brookhaven",
+      "context": {}
+    },
+    {
+      "code": "PENDING_RESULTS",
+      "severity": "INFO",
       "message": "South Panola High School has 1 listing(s) awaiting a verified result.",
       "team_id": "south-panola",
       "context": {}
@@ -333,8 +349,8 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Brookhaven High School has 2 listing(s) awaiting a verified result.",
-      "team_id": "brookhaven",
+      "message": "Kosciusko Senior High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "kosciusko",
       "context": {}
     },
     {
@@ -349,13 +365,6 @@
       "severity": "INFO",
       "message": "McComb High School has 1 listing(s) awaiting a verified result.",
       "team_id": "mccomb",
-      "context": {}
-    },
-    {
-      "code": "PENDING_RESULTS",
-      "severity": "INFO",
-      "message": "Kosciusko Senior High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "kosciusko",
       "context": {}
     },
     {
@@ -403,15 +412,15 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Simmons High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "simmons",
+      "message": "Franklin High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "franklin",
       "context": {}
     },
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Franklin High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "franklin",
+      "message": "Simmons High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "simmons",
       "context": {}
     },
     {
@@ -431,7 +440,7 @@
     {
       "code": "SCHEDULE_GAP",
       "severity": "INFO",
-      "message": "Wilkinson County High has 7 verified games against a statewide median of 9.",
+      "message": "Wilkinson County High has 8 verified games against a statewide median of 10.",
       "team_id": "wilkinson-county",
       "context": {}
     },
@@ -452,6 +461,13 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
+      "message": "Yazoo City High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "yazoo-city",
+      "context": {}
+    },
+    {
+      "code": "PENDING_RESULTS",
+      "severity": "INFO",
       "message": "North Pontotoc High School has 2 listing(s) awaiting a verified result.",
       "team_id": "north-pontotoc",
       "context": {}
@@ -459,8 +475,8 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Yazoo City High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "yazoo-city",
+      "message": "French Camp has 1 listing(s) awaiting a verified result.",
+      "team_id": "french-camp",
       "context": {}
     },
     {
@@ -480,13 +496,6 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "French Camp has 1 listing(s) awaiting a verified result.",
-      "team_id": "french-camp",
-      "context": {}
-    },
-    {
-      "code": "PENDING_RESULTS",
-      "severity": "INFO",
       "message": "Coffeeville High School has 1 listing(s) awaiting a verified result.",
       "team_id": "coffeeville",
       "context": {}
@@ -494,15 +503,15 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Humphreys County High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "humphreys-county",
+      "message": "Leland High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "leland",
       "context": {}
     },
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Leland High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "leland",
+      "message": "Humphreys County High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "humphreys-county",
       "context": {}
     },
     {
@@ -531,20 +540,6 @@
       "severity": "INFO",
       "message": "Ashland Middle-High School has 1 listing(s) awaiting a verified result.",
       "team_id": "ashland",
-      "context": {}
-    },
-    {
-      "code": "RATING_TIE",
-      "severity": "INFO",
-      "message": "Greene County High School and Mize Attendance Center share a full-precision rating; tie-breakers decided the order.",
-      "team_id": "mize",
-      "context": {}
-    },
-    {
-      "code": "RATING_TIE",
-      "severity": "INFO",
-      "message": "Riverside High School and West Lowndes High School share a full-precision rating; tie-breakers decided the order.",
-      "team_id": "west-lowndes",
       "context": {}
     }
   ]

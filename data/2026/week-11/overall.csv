@@ -1,0 +1,226 @@
+state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
+1,1,Tupelo High School,7A,11-0,96.8,0,0,0.0,89.3,43.1,6.5,1,96.7,43.6,Mostly same class,-0.25,0,7,1
+2,2,Gulfport High School,7A,9-1,95.2,0,0,-1.1,90.2,39.5,11.8,2,80.76,40.2,Playing down,-0.4,0,7,3
+3,1,Warren Central High School,6A,10-0,93.7,1,0,0.3,86.2,40.2,15.2,6,78.23,37.6,Playing up,0.3,4,5,1
+4,3,Starkville High School,7A,7-3,93.2,5,3,2.3,99.1,33.6,21.7,3,80.28,47.8,Playing down,-0.5,0,8,2
+5,4,Diberville Senior High Sch,7A,9-1,92.7,-2,-1,-1.2,90.6,36.7,17.0,15,74.93,39.4,Playing down,-1.0,0,6,4
+6,1,Louisville High School,4A,9-2,92.6,1,0,0.6,85.3,37.2,11.1,17,74.77,39.2,Playing up,0.3,2,7,1
+7,5,Meridian High School,7A,7-3,91.7,3,2,1.2,93.8,35.5,20.3,11,76.36,42.9,Playing down,-0.4,0,7,3
+8,6,Brandon High School,7A,7-3,91.2,-3,-2,-1.4,99.6,34.3,25.8,4,80.22,49.5,Mostly same class,0.0,0,9,0
+9,7,Oak Grove High School,7A,8-2,91.0,2,1,1.7,96.9,33.4,23.8,8,78.03,46.7,Playing down,-0.6,0,7,3
+10,8,Oxford High School,7A,8-2,90.3,-4,-3,-2.0,97.8,31.6,24.6,9,77.88,47.3,Playing down,-0.444,0,6,3
+11,1,Brookhaven High School,5A,9-0,90.1,4,0,2.1,76.8,40.7,14.4,12,75.34,34.1,Mostly same class,0.0,2,4,3
+12,2,South Panola High School,6A,5-4,89.2,-4,0,-2.2,88.8,34.7,15.4,20,72.29,39.8,Mostly same class,0.111,3,5,1
+13,9,Germantown High School,7A,6-5,88.9,-1,0,0.4,96.4,38.2,27.9,7,78.19,45.6,Mostly same class,-0.182,0,9,2
+14,10,Desoto Central High School,7A,7-3,87.4,-1,0,-0.9,92.0,31.3,19.1,26,68.26,40.3,Playing down,-0.778,0,6,3
+15,11,St. Martin High School,7A,8-2,87.0,3,0,0.6,82.1,41.9,22.9,31,65.74,36.4,Playing down,-0.7,0,6,4
+16,2,Poplarville Jr Sr High School,4A,10-0,86.7,-2,0,-1.6,71.9,44.1,16.4,27,68.11,32.8,Playing up,1.0,5,5,0
+17,12,Madison Central High School,7A,6-4,86.6,2,0,0.3,97.3,29.6,26.1,14,75.33,47.1,Playing down,-0.3,0,8,2
+18,2,Pontotoc High School,5A,8-2,86.4,-2,0,-0.6,83.0,35.2,18.0,37,61.58,36.3,Playing down,-0.5,0,5,5
+19,13,Petal High School,7A,9-2,86.3,1,0,0.1,96.0,37.8,33.8,16,74.91,44.7,Playing down,-0.455,0,8,3
+20,3,Lake Cormorant High,6A,10-0,85.0,1,0,0.6,78.1,25.5,7.9,19,72.3,34.5,Mostly same class,0.222,3,5,1
+21,3,Kosciusko Senior High School,4A,10-1,83.6,7,2,2.6,73.2,47.9,25.9,33,64.4,32.4,Playing up,0.545,4,5,2
+22,3,New Hope High School,5A,7-3,83.3,0,0,0.0,81.2,35.8,21.2,44,60.68,36.0,Mostly same class,-0.1,2,5,3
+23,4,Shannon High School,4A,9-2,83.3,-6,-1,-3.2,72.8,34.9,15.4,36,62.29,33.3,Mostly same class,0.091,3,6,2
+24,4,Picayune Memorial High School,6A,7-3,82.4,5,1,1.5,91.1,28.9,25.1,29,67.66,41.0,Mostly same class,0.111,3,5,1
+25,14,Hernando High School,7A,7-3,82.2,-1,0,-0.1,83.9,35.4,23.8,39,61.34,37.0,Playing down,-0.75,0,5,3
+26,5,Neshoba Central High School,6A,7-3,82.1,0,-1,0.0,87.5,31.7,25.6,34,64.12,38.1,Playing down,-0.3,2,5,3
+27,1,Noxubee County High School,3A,9-2,81.4,-2,0,-0.8,71.4,38.7,20.9,35,63.56,34.7,Mostly same class,0.091,3,5,3
+28,6,Center Hill High School,6A,8-2,81.4,4,0,2.4,79.0,30.8,19.6,47,58.78,36.7,Playing up,0.375,3,5,0
+29,1,Heidelberg High School,2A,9-1,80.8,-6,0,-1.5,48.2,47.1,6.8,21,70.28,27.3,Playing up,0.4,3,6,1
+30,5,McComb High School,4A,8-2,80.3,-3,-1,-0.9,60.7,40.6,17.7,40,61.29,30.5,Mostly same class,-0.1,2,5,3
+31,2,Seminary High School,3A,10-1,79.5,-1,0,-0.9,56.2,36.6,11.1,38,61.44,29.1,Playing up,0.727,4,6,1
+32,7,Hattiesburg High School,6A,7-3,78.4,4,0,0.7,80.8,25.0,17.3,55,56.13,35.0,Playing up,0.3,4,5,1
+33,15,Northwest Rankin High School,7A,3-7,78.4,5,1,1.2,100.0,25.0,32.7,22,70.19,47.8,Playing down,-0.4,0,8,2
+34,16,Clinton High School,7A,2-8,78.0,-1,-1,-0.1,98.2,28.0,32.8,23,68.92,47.5,Mostly same class,-0.1,0,9,1
+35,6,Corinth High School,4A,6-3,77.7,-4,0,-2.3,71.0,30.2,11.6,58,55.71,30.5,Mostly same class,0.222,2,7,0
+36,8,Grenada High,6A,5-4,77.0,1,0,-0.3,83.5,23.0,17.4,48,58.65,37.4,Mostly same class,-0.222,1,6,2
+37,9,Pearl River Central High School,6A,6-4,76.4,2,0,-0.3,79.9,33.2,24.9,67,52.6,35.6,Playing down,-0.556,0,5,4
+38,7,Pass Christian High School,4A,11-0,76.3,6,3,1.6,43.3,48.9,16.6,43,60.98,25.0,Mostly same class,0.091,3,5,3
+39,8,Columbia High School,4A,7-4,75.7,2,1,0.1,65.2,34.8,20.4,56,55.88,32.4,Mostly same class,0.1,2,5,3
+40,9,Mendenhall High School,4A,9-2,74.6,0,-1,-1.4,59.4,36.4,20.5,61,54.4,29.7,Playing up,0.364,3,7,1
+41,3,Winona Secondary School,3A,11-0,74.4,-7,0,-3.6,37.1,48.4,13.0,24,68.79,23.9,Mostly same class,0.2,2,6,2
+42,4,West Point High School,5A,3-7,74.3,4,1,1.0,95.5,22.4,30.9,28,67.86,47.0,Mostly same class,0.111,2,5,2
+43,10,Canton Public High School,6A,8-2,74.0,9,2,3.6,65.6,34.6,22.3,69,52.4,30.4,Playing down,-0.4,1,7,2
+44,10,Itawamba Agricultural High School,4A,6-3,73.8,-9,-3,-4.0,74.1,36.1,25.6,62,53.57,34.2,Mostly same class,0.222,2,6,1
+45,17,Biloxi High School,7A,3-7,73.6,11,0,3.9,91.5,23.1,26.6,45,60.41,40.4,Playing down,-0.5,0,6,4
+46,11,Senatobia High School,4A,11-0,73.3,-1,0,-0.8,44.6,33.3,8.0,42,61.02,26.6,Playing down,-0.3,1,6,3
+47,11,Gautier High School,6A,6-4,72.6,2,0,0.7,78.6,36.8,29.1,80,50.64,34.8,Mostly same class,-0.2,2,6,2
+48,5,Laurel High School,5A,4-5,72.5,-5,-1,-2.5,87.1,35.4,38.2,59,55.36,40.1,Playing up,0.889,5,4,0
+49,6,Wayne County High School,5A,6-4,72.1,1,1,0.4,61.6,33.3,19.1,79,50.69,29.9,Playing up,0.6,5,5,0
+50,7,Cleveland Central High School,5A,7-3,71.8,1,1,0.6,63.8,34.2,20.6,71,51.93,29.6,Playing down,-0.3,1,6,3
+51,12,West Jones High School,6A,8-3,71.4,-9,-2,-3.9,63.4,34.4,22.6,70,52.21,29.7,Playing down,-0.364,1,5,5
+52,8,Lafayette High School,5A,8-3,71.4,-4,-2,-1.3,62.1,41.0,25.9,73,51.81,30.9,Playing up,0.333,3,5,1
+53,12,Greenwood High School,4A,5-5,70.1,14,4,3.4,75.4,23.4,18.6,92,47.45,32.3,Playing up,0.3,3,6,1
+54,9,Leake Central High School,5A,7-2,69.9,-1,0,0.1,64.3,35.1,22.6,100,45.64,29.7,Playing down,-0.556,0,6,3
+55,18,Horn Lake High,7A,2-8,69.8,11,3,2.4,94.6,16.2,26.7,46,60.38,43.9,Playing down,-0.444,0,5,4
+56,4,Choctaw County High School,3A,4-6,69.4,4,0,0.7,75.9,30.4,26.1,63,53.42,35.8,Mostly same class,0.2,3,5,2
+57,13,Houston High School,4A,4-7,69.2,-10,-1,-3.6,87.9,28.2,30.1,93,47.43,37.1,Playing up,0.455,4,6,1
+58,5,Raleigh High School,3A,6-4,69.1,4,0,0.9,59.8,28.5,17.0,60,55.01,30.2,Playing up,0.3,3,5,2
+59,14,New Albany High School,4A,7-3,69.1,-1,0,-0.2,54.5,32.9,17.8,76,51.31,28.6,Playing up,0.4,3,7,0
+60,2,Wesson Attendance Center,2A,11-0,69.0,-3,1,-0.5,29.9,34.9,3.6,49,58.23,20.6,Playing up,0.4,3,5,2
+61,10,Natchez High School,5A,7-3,69.0,0,0,0.6,67.9,35.0,27.1,90,48.06,31.1,Playing down,-0.4,1,6,3
+62,13,Ridgeland High School,6A,5-5,69.0,12,2,4.8,77.7,30.4,26.2,84,49.36,33.0,Playing down,-0.7,0,5,5
+63,19,West Harrison High School,7A,4-6,68.8,0,0,0.8,94.2,23.5,33.7,50,57.86,41.5,Playing down,-0.9,0,6,4
+64,20,Ocean Springs High School,7A,3-7,68.2,1,0,0.3,95.1,17.5,30.3,41,61.13,43.6,Mostly same class,-0.2,0,8,2
+65,21,Pearl High School,7A,2-9,67.2,-6,-3,-1.7,98.7,16.5,31.3,54,56.2,46.8,Playing down,-0.364,0,8,3
+66,3,Kemper County High School,2A,9-2,66.4,-12,-1,-3.4,47.3,37.8,23.2,51,56.6,27.3,Playing up,0.5,4,6,0
+67,14,Pascagoula High School,6A,3-7,66.3,2,-1,1.5,85.7,18.5,23.2,83,50.06,38.3,Mostly same class,0.2,4,5,1
+68,6,Magee High School,3A,8-2,66.1,2,0,1.4,46.9,34.4,17.2,74,51.76,25.9,Playing down,-0.3,1,6,3
+69,4,East Webster High School,2A,10-1,66.1,-1,0,0.5,35.3,35.0,13.3,57,55.75,22.9,Playing up,0.455,4,5,2
+70,5,East Marion High School,2A,9-1,66.0,8,1,4.2,24.6,45.7,12.1,64,53.28,19.7,Playing up,0.5,5,5,0
+71,15,Amory High School,4A,5-6,65.8,-16,-2,-3.9,76.3,22.6,22.7,98,46.09,34.0,Playing up,0.273,3,7,1
+72,16,Morton High School,4A,8-2,65.3,-8,-1,-2.6,62.9,36.0,28.3,96,46.51,29.5,Playing down,-0.3,0,8,2
+73,15,Hancock High School,6A,6-4,64.7,2,1,0.9,80.4,31.8,35.2,103,45.25,35.7,Playing down,-0.3,2,5,3
+74,6,Scott Central Attendance Center,2A,8-2,63.9,3,-1,1.6,34.4,35.6,13.9,89,48.23,21.3,Playing up,0.9,5,5,0
+75,11,Stone High School,5A,6-4,63.9,15,4,5.7,73.7,28.7,28.6,105,44.72,32.6,Mostly same class,0.1,3,5,2
+76,12,Lanier High School,5A,9-2,63.7,-5,-1,-1.0,45.1,30.5,15.4,97,46.28,23.9,Playing up,0.455,4,6,1
+77,17,Clarksdale High School,4A,7-3,63.4,-4,0,-0.8,48.7,27.9,15.0,88,48.31,25.6,Mostly same class,0.0,2,6,2
+78,7,Presbyterian Christian School,3A,8-3,62.9,6,2,3.5,51.8,29.3,20.0,91,47.81,28.4,Mostly same class,0.2,3,6,1
+79,16,Olive Branch High School,6A,3-8,62.8,-7,-2,-1.7,88.4,21.1,29.7,94,46.95,40.3,Playing down,-0.727,2,5,4
+80,17,Terry High School,6A,6-5,62.3,-1,0,0.8,49.6,30.1,16.5,101,45.51,25.8,Mostly same class,-0.091,2,7,2
+81,8,Thomas E. Edwards,3A,10-0,61.8,1,0,1.5,19.2,34.9,4.2,72,51.84,16.5,Mostly same class,0.2,3,5,2
+82,22,Southaven High School,7A,2-7,61.7,-6,0,-0.8,92.9,10.8,25.2,75,51.34,43.3,Playing down,-0.875,0,5,3
+83,13,South Jones High School,5A,7-4,60.9,5,1,2.1,69.2,27.5,27.3,113,42.46,31.8,Mostly same class,-0.182,3,6,2
+84,14,Sumrall High School,5A,6-5,60.2,18,4,5.0,69.6,28.6,29.2,116,41.95,32.1,Playing down,-0.727,1,6,4
+85,7,Perry Central High School,2A,7-4,59.4,16,2,4.0,41.5,30.5,15.5,108,43.78,24.3,Playing up,0.455,4,6,1
+86,18,George County High School,6A,4-6,59.4,13,0,3.8,68.8,27.8,26.6,125,41.26,30.7,Playing down,-0.5,0,6,4
+87,18,Greene County High School,4A,8-3,59.4,5,2,2.2,54.9,31.1,26.0,120,41.64,28.3,Playing up,0.273,4,5,2
+88,8,Eupora High School,2A,9-2,58.9,3,-1,1.6,33.0,31.8,14.5,99,45.9,21.3,Playing down,-0.273,0,8,3
+89,19,West Lauderdale High School,4A,6-4,58.5,-2,0,-0.5,54.0,24.4,18.4,119,41.7,27.4,Mostly same class,-0.1,2,5,3
+90,15,Vicksburg High School,5A,3-7,58.0,8,2,2.1,75.0,16.8,20.8,130,39.64,31.9,Mostly same class,0.1,2,7,1
+91,16,East Central High School,5A,4-6,57.6,-10,-4,-3.1,74.6,21.3,25.2,131,39.62,32.9,Mostly same class,0.0,2,5,3
+92,9,Mize Attendance Center,2A,5-5,57.6,1,-1,0.4,52.2,24.2,17.7,102,45.48,28.3,Playing up,0.4,4,5,1
+93,17,Caledonia High School,5A,3-7,57.4,-8,-4,-2.0,81.7,17.9,26.8,112,42.47,36.1,Playing down,-0.667,0,5,4
+94,20,Richland High School,4A,7-3,57.1,-8,-2,-2.2,39.7,39.0,24.8,110,42.7,23.0,Mostly same class,-0.2,2,5,3
+95,23,Harrison Central High School,7A,1-9,56.6,14,1,4.1,86.6,13.4,26.7,132,38.59,38.7,Playing down,-0.8,0,6,4
+96,19,Callaway High School,6A,4-7,56.2,7,0,1.3,79.5,16.1,25.5,135,38.42,34.3,Mostly same class,0.0,2,8,1
+97,21,Forest High School,4A,5-5,56.0,-1,1,0.0,58.5,30.4,29.4,111,42.56,29.2,Playing down,-0.3,1,6,3
+98,24,Lewisburg High School,7A,3-7,55.3,-15,-1,-4.8,84.4,21.6,35.8,143,37.3,39.0,Playing down,-0.778,0,5,4
+99,9,Booneville High School,3A,11-0,55.2,-19,-2,-5.7,17.4,35.7,11.7,85,49.2,17.0,Mostly same class,0.0,3,6,2
+100,18,Florence High School,5A,4-7,54.8,-5,-2,-1.7,70.5,20.2,24.5,137,37.93,31.1,Mostly same class,0.0,2,6,3
+101,1,Leflore County High School,1A,10-0,54.4,-12,0,-3.9,10.3,35.6,7.3,52,56.33,14.5,Playing up,0.5,3,7,0
+102,22,Newton County High School,4A,4-6,54.3,4,1,0.9,57.1,22.0,21.6,117,41.75,29.1,Playing down,-0.5,1,5,4
+103,10,Franklin High School,3A,6-5,53.7,4,1,1.1,50.0,30.9,25.8,138,37.87,26.9,Mostly same class,0.091,2,6,3
+104,10,Amite County High School,2A,8-2,53.3,11,4,3.7,11.2,37.0,9.1,65,53.19,14.7,Playing down,-0.5,0,5,5
+105,11,Hazlehurst High School,3A,6-3,53.0,-5,-1,-2.5,44.2,33.6,25.0,107,43.83,23.5,Playing up,0.333,3,5,1
+106,23,Rosa Fort High School,4A,5-5,52.9,-12,-2,-3.8,41.1,30.8,17.7,115,42.06,24.1,Playing down,-0.556,0,5,4
+107,11,Charleston High School,2A,8-3,52.7,-2,-1,-1.7,31.2,32.2,17.8,109,42.82,20.5,Playing up,1.091,5,5,1
+108,2,Simmons High School,1A,8-1,52.5,-4,1,-2.3,4.0,40.0,6.7,53,56.32,13.7,Playing up,0.556,3,6,0
+109,3,Tupelo Christian,1A,10-0,52.2,-12,-1,-3.8,1.3,44.3,5.3,77,50.99,8.0,Playing up,0.333,2,4,0
+110,24,South Pike Senior High School,4A,4-6,51.5,2,0,-0.2,70.1,22.0,30.0,152,34.66,31.2,Mostly same class,-0.222,1,6,2
+111,20,Long Beach Senior High School,6A,4-6,51.1,5,1,1.5,72.3,16.2,27.2,149,36.05,32.8,Playing down,-0.8,0,5,5
+112,19,Northeast Jones High School,5A,3-7,51.0,2,0,1.3,67.0,18.0,24.6,151,35.12,30.9,Playing down,-0.3,1,6,3
+113,20,Purvis High School,5A,4-6,50.8,10,1,4.3,56.7,21.6,25.3,139,37.83,29.1,Playing down,-0.5,1,6,3
+114,12,Jefferson Davis County High School,3A,3-7,50.0,14,3,5.1,62.5,21.7,29.1,150,35.47,33.2,Playing up,0.333,3,5,1
+115,21,Holmes County Central High School,5A,5-6,50.0,11,1,4.3,68.3,22.8,33.3,148,36.47,30.0,Playing up,0.273,3,6,2
+116,12,Enterprise (Clarke),2A,7-4,49.8,-8,-1,-2.7,45.5,23.9,21.7,136,38.28,25.5,Playing up,0.273,3,6,2
+117,21,Greenville High School,6A,3-7,49.6,-6,-1,-2.4,66.1,19.4,25.4,174,30.85,30.5,Playing down,-1.3,0,5,5
+118,13,Northside High School,2A,8-2,49.5,-5,0,-1.7,8.5,34.9,10.2,95,46.55,15.3,Mostly same class,-0.1,2,5,3
+119,25,Murrah High School,7A,1-10,48.9,2,0,1.9,89.7,15.4,39.7,173,30.88,39.5,Playing down,-0.818,0,5,6
+120,14,Myrtle Attendance Center,2A,8-1,47.4,2,2,0.5,8.9,37.9,15.3,121,41.6,14.5,Playing down,-0.333,0,6,3
+121,15,Baldwyn High School,2A,9-2,47.2,-11,-3,-4.9,19.6,35.5,22.7,118,41.75,18.8,Playing up,0.4,4,5,1
+122,13,Aberdeen High School,3A,5-6,47.1,-4,0,-1.5,53.1,28.2,33.6,153,34.45,29.9,Playing down,-0.273,3,5,3
+123,14,Kossuth High School,3A,7-3,46.7,-6,-2,-2.0,28.6,26.7,18.6,134,38.43,20.8,Mostly same class,0.111,2,6,1
+124,16,Clarkdale High School,2A,6-5,46.4,-4,-1,-1.4,42.9,19.5,19.1,140,37.7,24.4,Mostly same class,-0.091,2,6,3
+125,22,Saltillo High School,6A,1-10,45.1,-1,0,-0.9,93.3,10.5,44.7,165,32.39,41.2,Playing down,-0.909,0,5,6
+126,22,North Pike Senior High School,5A,1-9,44.9,-7,-2,-3.7,84.8,15.4,37.4,177,30.37,37.1,Playing down,-0.4,2,5,3
+127,17,Wilkinson County High,2A,4-4,44.8,-2,0,-1.2,36.6,26.8,21.8,170,31.17,23.6,Mostly same class,-0.25,0,6,2
+128,15,St. Stanislaus,3A,4-7,44.6,2,2,0.0,43.8,25.4,25.5,154,34.3,25.9,Playing up,0.6,5,5,0
+129,4,Calhoun City High School,1A,6-3,43.9,2,0,0.1,29.0,29.0,25.1,104,44.78,22.6,Playing up,1.0,5,4,0
+130,5,Nanih Waiya Attendance Center,1A,8-2,43.3,2,0,1.0,16.5,40.1,26.7,123,41.38,16.6,Playing up,0.3,3,7,0
+131,23,Provine High School,5A,3-8,42.3,5,1,1.0,58.9,12.5,23.4,189,27.84,28.5,Playing up,0.364,4,6,1
+132,16,Port Gibson High School,3A,5-5,42.0,-3,0,-2.7,33.5,25.6,23.4,157,33.84,21.3,Playing up,0.3,3,5,2
+133,25,Lawrence County High School,4A,0-9,41.9,5,1,0.9,82.6,10.8,34.7,195,26.73,37.1,Mostly same class,-0.222,2,4,3
+134,24,Columbus High School,5A,0-10,41.2,0,-1,-0.7,92.4,9.5,43.0,216,21.35,41.0,Playing up,0.5,4,5,1
+135,17,North Panola High School,3A,5-5,41.0,-8,-3,-4.0,29.5,27.8,21.8,158,33.64,19.1,Playing down,-0.333,1,5,3
+136,6,Stringer Attendance Center,1A,8-3,40.9,10,0,1.7,2.7,36.2,13.8,145,37.17,11.7,Mostly same class,0.222,2,7,0
+137,18,O’Bannon High School,3A,9-1,40.7,4,2,0.8,2.2,31.1,10.6,146,36.91,10.9,Playing down,-0.9,0,5,5
+138,26,Forrest County Agricultural Hi Sch,4A,3-7,40.5,18,5,3.7,49.1,18.3,25.3,175,30.79,27.4,Playing up,0.4,4,5,1
+139,19,Southeast Lauderdale High School,3A,8-3,40.4,13,4,3.1,23.2,25.3,19.1,178,30.03,18.6,Playing down,-0.273,2,5,4
+140,18,Bruce High School,2A,9-2,40.3,-7,0,-1.8,5.4,36.8,18.5,156,34.01,12.2,Mostly same class,-0.091,1,7,3
+141,20,Quitman High School,3A,5-6,40.3,10,2,2.4,38.4,24.9,26.4,183,28.73,23.7,Mostly same class,-0.091,2,5,4
+142,21,Tylertown High School,3A,5-6,40.3,-3,-3,-0.4,55.4,18.2,30.3,159,33.41,27.8,Playing up,0.455,4,5,2
+143,27,Ripley High School,4A,2-9,40.0,-8,-2,-1.4,67.4,14.9,31.6,181,28.79,31.7,Mostly same class,0.182,2,7,2
+144,28,Choctaw Central,4A,4-6,39.7,5,1,1.3,37.9,22.1,23.7,172,31.05,22.5,Playing down,-0.875,0,4,4
+145,22,Union High School,3A,5-6,39.1,0,-1,-0.1,36.2,23.3,24.3,163,32.71,22.0,Playing down,-0.364,1,5,5
+146,7,Lumberton High School,1A,6-4,39.0,13,2,3.7,15.6,28.6,16.9,160,33.31,17.1,Playing up,0.9,5,5,0
+147,19,Bay Springs High School,2A,5-5,39.0,-3,2,-0.3,35.7,21.2,22.8,164,32.41,22.1,Playing up,0.6,3,6,1
+148,29,Yazoo City High School,4A,1-8,38.4,13,4,5.0,77.2,7.8,33.0,204,24.02,33.7,Playing up,0.333,3,5,1
+149,8,South Delta High School,1A,7-3,38.4,-1,-1,-0.1,6.2,29.8,14.5,147,36.51,14.5,Playing up,0.6,4,6,0
+150,20,Water Valley High School,2A,4-7,38.1,-13,-1,-3.1,32.1,29.5,26.6,161,33.18,20.9,Mostly same class,0.091,2,7,2
+151,21,Lake High School,2A,5-5,37.5,-8,-1,-2.3,33.9,23.0,24.7,169,31.76,22.0,Playing up,0.5,4,5,1
+152,9,Ethel Attendance Center,1A,7-3,37.1,3,-1,0.0,9.4,24.9,10.7,167,31.9,12.3,Playing up,0.444,3,6,0
+153,30,North Pontotoc High School,4A,4-6,37.0,-6,-2,-2.1,32.6,29.8,28.2,182,28.79,23.8,Playing down,-0.8,0,4,6
+154,23,Independence High School,3A,6-4,36.9,-14,-4,-3.7,25.0,25.9,24.2,166,32.11,21.2,Mostly same class,-0.222,2,4,3
+155,31,Tishomingo County High School,4A,5-5,36.8,-13,-4,-3.0,42.0,25.9,32.2,190,27.74,24.3,Playing down,-0.667,0,5,4
+156,25,Vancleave High School,5A,2-8,36.3,-6,0,-2.0,64.7,22.2,41.5,194,27.03,30.0,Mostly same class,-0.2,1,5,4
+157,22,Velma Jackson High School,2A,4-6,35.9,-4,0,-1.3,40.2,34.6,38.8,176,30.66,23.4,Playing up,0.8,4,6,0
+158,23,Loyd Star School,2A,7-4,35.8,5,1,3.3,25.9,26.7,25.4,187,27.93,19.1,Mostly same class,0.0,2,7,2
+159,24,Collins High School,2A,3-7,35.7,5,1,3.2,50.4,19.5,32.8,184,28.64,27.6,Playing up,0.5,4,5,1
+160,32,Mooreville High School,4A,4-6,34.8,-6,-2,-2.3,42.4,22.7,30.1,196,26.71,24.3,Playing down,-0.6,0,6,4
+161,33,Gentry High School,4A,2-8,34.3,-1,-1,0.3,60.3,7.6,26.8,224,16.79,29.9,Playing down,-0.4,1,5,4
+162,23,Forest Hill High School,6A,1-10,34.3,-5,0,-1.7,66.5,7.7,30.0,221,19.4,30.1,Playing down,-0.636,0,7,4
+163,25,Puckett Attendance Center,2A,8-3,33.9,-1,-2,0.6,12.9,23.5,17.4,191,27.68,15.6,Mostly same class,-0.182,2,5,4
+164,24,West Marion High School,3A,2-9,33.3,8,3,4.7,61.2,14.0,36.6,201,24.83,30.0,Mostly same class,0.0,3,5,3
+165,25,Jefferson Co High,3A,2-8,33.2,-7,-1,-2.5,47.8,17.2,27.6,197,25.95,26.2,Mostly same class,0.2,3,5,2
+166,10,Noxapater Attendance Center,1A,4-6,32.3,-1,0,0.3,23.7,20.9,21.8,179,29.11,18.9,Playing up,0.6,5,5,0
+167,26,Hamilton High School,2A,6-5,31.7,1,0,1.7,14.3,37.5,32.5,192,27.51,17.2,Playing down,-0.455,0,6,5
+168,11,Okolona High School,1A,6-5,31.1,-1,0,-0.7,17.0,27.5,25.6,185,28.47,18.1,Playing up,1.222,5,4,0
+169,34,Moss Point High School,4A,3-7,30.4,0,0,0.9,51.3,13.7,32.6,213,22.0,27.8,Playing up,0.556,4,4,1
+170,26,Pisgah High School,3A,4-7,30.2,3,2,1.6,26.3,21.8,24.1,199,25.54,19.9,Playing down,-0.545,1,5,5
+171,35,Bay High School,4A,1-9,29.7,8,1,2.9,57.6,6.7,32.7,220,19.67,30.1,Mostly same class,0.222,2,5,2
+172,27,Amanda Elzy High School,3A,3-8,29.5,-6,-2,-2.3,55.8,9.3,34.1,209,22.81,29.1,Playing up,0.545,4,6,1
+173,28,Coahoma County Jr/Sr High School,3A,3-7,29.4,-3,-2,0.4,39.3,17.8,29.8,205,23.48,24.0,Playing down,-0.3,2,5,3
+174,36,Northeast Lauderdale High School,4A,1-10,27.8,10,1,3.5,58.0,8.5,37.5,227,15.44,29.4,Playing down,-0.636,1,5,5
+175,12,French Camp,1A,4-7,27.7,8,3,3.3,30.8,19.4,27.1,214,21.43,18.9,Mostly same class,0.125,1,7,0
+176,13,Potts Camp High School (5-12),1A,7-2,27.5,-5,-1,-1.5,0.0,38.8,22.8,217,21.13,3.1,Playing up,0.625,3,5,0
+177,27,Enterprise (Brookhaven),2A,5-5,27.3,4,0,1.4,25.4,23.7,30.2,207,23.1,19.4,Playing down,-0.333,0,6,3
+178,29,Belmont School,3A,3-7,26.5,-4,0,-1.4,27.7,24.5,31.4,200,25.08,20.5,Mostly same class,-0.125,1,5,2
+179,30,Yazoo County High School,3A,4-6,26.3,6,2,2.4,17.9,15.5,17.8,203,24.15,17.9,Playing down,-0.3,2,5,3
+180,14,Sebastopol Attendance Center,1A,2-8,25.7,-3,-1,-1.5,22.3,20.3,24.5,193,27.11,18.5,Playing up,0.6,5,5,0
+181,37,South Pontotoc High School,4A,0-10,25.4,-6,-2,-2.3,50.9,12.8,37.5,234,13.31,27.2,Playing down,-0.8,0,6,4
+182,31,Nettleton High School,3A,0-9,25.3,-2,0,-1.1,53.6,12.2,41.0,237,11.55,29.9,Playing down,-0.333,1,5,3
+183,28,North Forrest High School,2A,3-8,25.2,-1,0,-0.3,34.8,18.4,32.5,210,22.49,21.9,Mostly same class,-0.182,0,9,2
+184,15,West Tallahatchie High School,1A,4-6,24.5,-6,-1,-2.5,13.4,20.4,22.1,202,24.31,15.3,Playing up,0.9,5,5,0
+185,32,Alcorn Central High School,3A,5-6,24.4,-9,-2,-3.3,16.1,18.5,22.9,211,22.06,17.7,Mostly same class,-0.182,3,5,3
+186,29,Pelahatchie Attendance Center,2A,3-7,23.0,0,0,0.3,22.8,18.8,26.3,218,20.52,18.2,Mostly same class,0.1,2,6,2
+187,24,Jim Hill High School,6A,2-9,22.8,3,0,1.7,46.0,7.6,32.2,247,8.14,24.2,Playing down,-1.0,0,5,6
+188,30,Philadelphia High School,2A,0-10,22.7,-1,0,0.1,52.7,8.2,39.6,246,9.12,28.7,Playing up,0.8,5,5,0
+189,38,Raymond High School,4A,1-9,21.4,0,0,-0.2,46.4,11.4,39.8,251,7.29,25.9,Mostly same class,0.0,2,4,3
+190,16,McAdams Attendance Center,1A,4-5,21.2,3,1,0.8,6.7,27.3,27.8,215,21.38,14.5,Playing up,0.444,3,6,0
+191,31,Newton High School,2A,3-8,20.5,6,2,2.8,30.4,15.5,32.3,235,12.72,20.1,Mostly same class,0.182,3,6,2
+192,32,J Z George High School,2A,5-6,20.3,-4,-1,-1.5,14.7,18.5,27.6,219,20.4,16.2,Playing down,-0.364,0,7,4
+193,33,Hatley High School,2A,4-6,19.0,-2,-1,-2.1,3.6,28.7,27.7,222,18.91,11.9,Mostly same class,-0.2,2,4,4
+194,17,Smithville High School,1A,5-5,18.5,-2,-1,-2.2,0.9,26.2,24.0,223,17.04,8.3,Playing up,0.556,4,5,0
+195,18,Bogue Chitto School,1A,6-5,18.2,5,3,1.1,4.5,20.3,24.9,228,15.2,12.4,Playing up,0.8,6,4,0
+196,33,Holly Springs High School,3A,3-7,17.6,9,4,1.7,21.0,18.8,32.8,245,9.22,18.4,Playing down,-0.333,1,5,3
+197,34,St. Patrick,3A,3-6,17.3,5,1,1.1,11.6,20.3,25.9,241,10.23,10.6,Playing down,-0.714,0,4,3
+198,19,Coffeeville High School,1A,3-8,17.3,-4,-1,-0.8,8.0,24.2,28.0,229,15.18,13.6,Playing up,0.364,4,7,0
+199,35,McLaurin Attendance Center,3A,3-7,17.2,4,1,1.2,28.1,20.3,42.1,253,6.91,20.0,Playing down,-0.444,1,5,3
+200,34,Leland High School,2A,2-9,16.7,4,1,0.7,26.8,6.5,28.6,244,9.42,21.3,Mostly same class,-0.182,2,5,4
+201,20,Shaw High School,1A,3-7,16.4,-6,-1,-1.7,21.4,10.0,31.2,225,16.76,20.4,Playing up,0.4,3,7,0
+202,36,Mantachie Attendance Center,3A,4-6,16.3,-6,-3,-1.6,5.8,21.6,27.4,230,15.05,12.8,Playing down,-0.6,1,5,4
+203,37,Humphreys County High School,3A,0-9,16.2,-4,-3,-0.9,38.8,5.3,32.9,252,6.94,22.6,Mostly same class,0.0,2,5,2
+204,21,Biggersville High School,1A,2-8,15.7,-6,-1,-1.7,27.2,9.6,34.4,233,13.53,21.1,Playing up,1.0,6,4,0
+205,22,Taylorsville Attendance Center,1A,0-10,15.6,2,0,0.1,40.6,7.7,41.9,250,7.33,23.5,Playing up,0.7,6,4,0
+206,35,Sacred Heart,2A,4-6,15.5,4,3,1.4,18.3,16.6,35.3,239,10.74,16.6,Mostly same class,0.125,2,5,1
+207,36,Walnut Attendance Center,2A,4-7,15.0,-6,-2,-1.6,10.7,14.3,26.0,236,11.61,14.3,Mostly same class,0.1,3,5,2
+208,23,Richton High School,1A,3-7,14.8,3,1,1.4,7.1,11.7,22.0,240,10.65,13.2,Playing up,0.4,3,7,0
+209,37,M. S. Palmer High School,2A,0-10,13.9,-3,-1,-1.6,37.5,5.4,40.6,261,1.34,23.8,Playing up,0.4,4,5,1
+210,38,Strayhorn High School,2A,1-9,13.7,-2,-1,-1.6,24.1,17.8,38.7,248,7.99,18.2,Playing down,-0.333,1,4,4
+211,39,East Union Attendance Center,2A,2-9,13.1,2,0,1.2,21.9,19.4,41.5,256,4.44,18.5,Mostly same class,0.0,2,6,3
+212,24,Vardaman High School,1A,2-7,12.8,2,2,1.8,20.5,15.6,37.8,242,9.86,18.4,Playing up,0.333,3,6,0
+213,38,St. Andrew’S,3A,3-7,11.8,3,1,1.0,13.8,17.2,35.4,249,7.72,15.7,Playing down,-0.889,0,5,4
+214,25,West Bolivar High School,1A,2-9,11.7,-2,0,-1.3,20.1,9.6,35.4,243,9.62,18.9,Playing up,0.727,4,7,0
+215,26,Falkner Attendance Center,1A,5-5,11.1,-6,-3,-3.0,0.4,23.8,29.1,257,3.4,3.6,Playing up,0.444,3,6,0
+216,39,Crystal Springs High School,3A,0-9,10.9,-1,-1,-0.1,31.7,6.9,40.8,266,-6.5,20.3,Mostly same class,0.111,2,4,3
+217,27,Salem Attendance Center,1A,2-8,10.6,1,0,0.5,9.8,15.7,30.4,255,5.39,14.3,Playing up,0.5,4,6,0
+218,39,Byhalia High School (9-12),4A,2-7,9.9,-1,0,-0.8,18.8,10.9,40.4,264,-1.48,16.8,Playing down,-1.222,0,4,5
+219,28,Resurrection,1A,2-7-1,7.9,0,0,0.5,15.2,9.8,38.4,259,1.81,13.9,Playing up,0.556,4,5,0
+220,29,Mount Olive Attendance Center,1A,2-8,7.9,0,0,1.2,12.1,8.6,36.1,254,6.53,15.9,Playing up,0.7,5,5,0
+221,30,West Lowndes High School,1A,0-9,6.3,1,1,1.8,12.5,10.4,42.3,263,-1.11,17.2,Playing up,0.556,3,6,0
+222,31,Riverside High School,1A,0-10,4.0,-1,-1,-0.5,7.6,6.7,43.4,267,-8.65,15.5,Playing up,0.6,4,6,0
+223,32,H. W. Byers High School (5-12),1A,0-9,4.0,0,0,0.5,3.1,11.4,35.4,269,-10.68,11.7,Playing up,1.0,4,4,0
+224,33,West Lincoln School,1A,0-11,2.4,1,1,0.3,4.9,6.4,37.3,271,-18.04,11.3,Playing up,0.556,4,5,0
+225,34,Ashland Middle-High School,1A,1-10,1.5,-1,-1,-0.7,1.8,9.3,44.5,268,-9.77,9.2,Playing up,0.636,4,7,0

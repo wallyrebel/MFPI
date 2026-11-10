@@ -1,0 +1,26 @@
+state_rank,class_rank,team,classification,record,mfpi,state_rank_change,class_rank_change,mfpi_change,sos,pf_per_game,pa_per_game,maxpreps_state_rank,maxpreps_rating,maxpreps_strength,schedule_direction,class_schedule_delta,up_games,same_class_games,down_games
+1,1,Tupelo High School,7A,11-0,96.8,0,0,0.0,89.3,43.1,6.5,1,96.7,43.6,Mostly same class,-0.25,0,7,1
+2,2,Gulfport High School,7A,9-1,95.2,0,0,-1.1,90.2,39.5,11.8,2,80.76,40.2,Playing down,-0.4,0,7,3
+4,3,Starkville High School,7A,7-3,93.2,5,3,2.3,99.1,33.6,21.7,3,80.28,47.8,Playing down,-0.5,0,8,2
+5,4,Diberville Senior High Sch,7A,9-1,92.7,-2,-1,-1.2,90.6,36.7,17.0,15,74.93,39.4,Playing down,-1.0,0,6,4
+7,5,Meridian High School,7A,7-3,91.7,3,2,1.2,93.8,35.5,20.3,11,76.36,42.9,Playing down,-0.4,0,7,3
+8,6,Brandon High School,7A,7-3,91.2,-3,-2,-1.4,99.6,34.3,25.8,4,80.22,49.5,Mostly same class,0.0,0,9,0
+9,7,Oak Grove High School,7A,8-2,91.0,2,1,1.7,96.9,33.4,23.8,8,78.03,46.7,Playing down,-0.6,0,7,3
+10,8,Oxford High School,7A,8-2,90.3,-4,-3,-2.0,97.8,31.6,24.6,9,77.88,47.3,Playing down,-0.444,0,6,3
+13,9,Germantown High School,7A,6-5,88.9,-1,0,0.4,96.4,38.2,27.9,7,78.19,45.6,Mostly same class,-0.182,0,9,2
+14,10,Desoto Central High School,7A,7-3,87.4,-1,0,-0.9,92.0,31.3,19.1,26,68.26,40.3,Playing down,-0.778,0,6,3
+15,11,St. Martin High School,7A,8-2,87.0,3,0,0.6,82.1,41.9,22.9,31,65.74,36.4,Playing down,-0.7,0,6,4
+17,12,Madison Central High School,7A,6-4,86.6,2,0,0.3,97.3,29.6,26.1,14,75.33,47.1,Playing down,-0.3,0,8,2
+19,13,Petal High School,7A,9-2,86.3,1,0,0.1,96.0,37.8,33.8,16,74.91,44.7,Playing down,-0.455,0,8,3
+25,14,Hernando High School,7A,7-3,82.2,-1,0,-0.1,83.9,35.4,23.8,39,61.34,37.0,Playing down,-0.75,0,5,3
+33,15,Northwest Rankin High School,7A,3-7,78.4,5,1,1.2,100.0,25.0,32.7,22,70.19,47.8,Playing down,-0.4,0,8,2
+34,16,Clinton High School,7A,2-8,78.0,-1,-1,-0.1,98.2,28.0,32.8,23,68.92,47.5,Mostly same class,-0.1,0,9,1
+45,17,Biloxi High School,7A,3-7,73.6,11,0,3.9,91.5,23.1,26.6,45,60.41,40.4,Playing down,-0.5,0,6,4
+55,18,Horn Lake High,7A,2-8,69.8,11,3,2.4,94.6,16.2,26.7,46,60.38,43.9,Playing down,-0.444,0,5,4
+63,19,West Harrison High School,7A,4-6,68.8,0,0,0.8,94.2,23.5,33.7,50,57.86,41.5,Playing down,-0.9,0,6,4
+64,20,Ocean Springs High School,7A,3-7,68.2,1,0,0.3,95.1,17.5,30.3,41,61.13,43.6,Mostly same class,-0.2,0,8,2
+65,21,Pearl High School,7A,2-9,67.2,-6,-3,-1.7,98.7,16.5,31.3,54,56.2,46.8,Playing down,-0.364,0,8,3
+82,22,Southaven High School,7A,2-7,61.7,-6,0,-0.8,92.9,10.8,25.2,75,51.34,43.3,Playing down,-0.875,0,5,3
+95,23,Harrison Central High School,7A,1-9,56.6,14,1,4.1,86.6,13.4,26.7,132,38.59,38.7,Playing down,-0.8,0,6,4
+98,24,Lewisburg High School,7A,3-7,55.3,-15,-1,-4.8,84.4,21.6,35.8,143,37.3,39.0,Playing down,-0.778,0,5,4
+119,25,Murrah High School,7A,1-10,48.9,2,0,1.9,89.7,15.4,39.7,173,30.88,39.5,Playing down,-0.818,0,5,6

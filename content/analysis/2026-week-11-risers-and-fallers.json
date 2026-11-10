@@ -1,0 +1,250 @@
+{
+  "slug": "2026-week-11-risers-and-fallers",
+  "kind": "risers-and-fallers",
+  "title": "Week 11 risers and fallers in the MFPI",
+  "dek": "The largest statewide rank moves this week, with the verified results and rating changes behind each one.",
+  "status": "published",
+  "season": 2026,
+  "week": 11,
+  "snapshot_run_id": "2026-week-11-20261110T171058281790Z",
+  "snapshot_generated_at": "2026-11-10T17:10:58.281790+00:00",
+  "formula_version": "MFPI-3.2",
+  "draft_generated_at": "2026-11-10T17:13:36.438741+00:00",
+  "author": "MFPI automated analysis",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "published_at": "2026-11-10T11:13:36-06:00",
+  "review_notes": "",
+  "sources": [
+    {
+      "label": "MHSAA official score center (schedules and scores)",
+      "url": "https://scores.misshsaa.com/"
+    },
+    {
+      "label": "MHSAA 2025-27 football classifications and regions",
+      "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+    },
+    {
+      "label": "Statewide media rankings used for the Media Rank inputs",
+      "url": "https://www.maxpreps.com/ms/football/rankings/1/"
+    },
+    {
+      "label": "MFPI Week 11 rankings archive",
+      "url": "/archive/2026/week-11"
+    },
+    {
+      "label": "MFPI methodology",
+      "url": "/methodology"
+    }
+  ],
+  "limitations": [
+    "Movement is only shown against a comparable previous snapshot; teams without one are NEW.",
+    "Large moves in the middle of the table often reflect tightly bunched ratings rather than dramatic results."
+  ],
+  "sections": [
+    {
+      "heading": "How to read these moves",
+      "paragraphs": [
+        "Rank movement is last week's statewide rank minus this week's. Rating change is this week's displayed MFPI minus last week's. They are separate facts: in the middle of the table, where ratings are close together, a small rating change can move a team many places, and a team can hold its place while its rating changes.",
+        "Both compare the Week 11 snapshot with the latest audited Week 10 snapshot (formula MFPI-3.2)."
+      ]
+    },
+    {
+      "heading": "Biggest risers",
+      "paragraphs": [
+        "[[sumrall]] (5A, 6-5): State ranking: up 18 spots to No. 84 (from No. 102). MFPI rating: increased 5.0 points to 60.2. In the window it beat [[north-pike]] (currently No. 126) 44-7 on the road on Nov 5.",
+        "[[forrest-county-agricultural]] (4A, 3-7): State ranking: up 18 spots to No. 138 (from No. 156). MFPI rating: increased 3.7 points to 40.5. In the window it lost to [[morton]] (currently No. 72) 42-49 on the road on Nov 6.",
+        "[[perry-central]] (2A, 7-4): State ranking: up 16 spots to No. 85 (from No. 101). MFPI rating: increased 4.0 points to 59.4. In the window it beat [[enterprise-clarke]] (currently No. 116) 37-0 at home on Nov 6.",
+        "[[stone]] (5A, 6-4): State ranking: up 15 spots to No. 75 (from No. 90). MFPI rating: increased 5.7 points to 63.9. In the window it beat [[east-central]] (currently No. 91) 32-0 on the road on Nov 5.",
+        "[[greenwood]] (4A, 5-5): State ranking: up 14 spots to No. 53 (from No. 67). MFPI rating: increased 3.4 points to 70.1. In the window it beat [[houston]] (currently No. 57) 46-38 on the road on Nov 6.",
+        "[[harrison-central]] (7A, 1-9): State ranking: up 14 spots to No. 95 (from No. 109). MFPI rating: increased 4.1 points to 56.6. In the window it lost to [[gulfport]] (currently No. 2) 21-35 at home on Nov 5.",
+        "[[jefferson-davis-county]] (3A, 3-7): State ranking: up 14 spots to No. 114 (from No. 128). MFPI rating: increased 5.1 points to 50.0. In the window it beat [[tylertown]] (currently No. 142) 40-16 on the road on Nov 6.",
+        "[[george-county]] (6A, 4-6): State ranking: up 13 spots to No. 86 (from No. 99). MFPI rating: increased 3.8 points to 59.4. In the window it beat [[forest-hill]] (currently No. 162) 47-0 at home on Nov 5."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[sumrall]]",
+            "84",
+            "102",
+            "+18",
+            "60.2",
+            "+5.0"
+          ],
+          [
+            "[[forrest-county-agricultural]]",
+            "138",
+            "156",
+            "+18",
+            "40.5",
+            "+3.7"
+          ],
+          [
+            "[[perry-central]]",
+            "85",
+            "101",
+            "+16",
+            "59.4",
+            "+4.0"
+          ],
+          [
+            "[[stone]]",
+            "75",
+            "90",
+            "+15",
+            "63.9",
+            "+5.7"
+          ],
+          [
+            "[[greenwood]]",
+            "53",
+            "67",
+            "+14",
+            "70.1",
+            "+3.4"
+          ],
+          [
+            "[[harrison-central]]",
+            "95",
+            "109",
+            "+14",
+            "56.6",
+            "+4.1"
+          ],
+          [
+            "[[jefferson-davis-county]]",
+            "114",
+            "128",
+            "+14",
+            "50.0",
+            "+5.1"
+          ],
+          [
+            "[[george-county]]",
+            "86",
+            "99",
+            "+13",
+            "59.4",
+            "+3.8"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Biggest fallers",
+      "paragraphs": [
+        "[[booneville]] (3A, 11-0): State ranking: down 19 spots to No. 99 (from No. 80). MFPI rating: decreased 5.7 points to 55.2. In the window it beat [[yazoo-county]] (currently No. 179) 13-0 at home on Nov 6.",
+        "[[amory]] (4A, 5-6): State ranking: down 16 spots to No. 71 (from No. 55). MFPI rating: decreased 3.9 points to 65.8. In the window it lost to [[louisville]] (currently No. 6) 0-49 on the road on Nov 6.",
+        "[[lewisburg]] (7A, 3-7): State ranking: down 15 spots to No. 98 (from No. 83). MFPI rating: decreased 4.8 points to 55.3. In the window it lost to [[horn-lake]] (currently No. 55) 14-50 on the road on Nov 5.",
+        "[[independence]] (3A, 6-4): State ranking: down 14 spots to No. 154 (from No. 140). MFPI rating: decreased 3.7 points to 36.9. In the window it lost to [[choctaw-county]] (currently No. 56) 7-42 at home on Nov 6.",
+        "[[water-valley]] (2A, 4-7): State ranking: down 13 spots to No. 150 (from No. 137). MFPI rating: decreased 3.1 points to 38.1. In the window it lost to [[east-webster]] (currently No. 69) 8-50 on the road on Nov 6.",
+        "[[tishomingo-county]] (4A, 5-5): State ranking: down 13 spots to No. 155 (from No. 142). MFPI rating: decreased 3.0 points to 36.8. In the window it lost to [[clarksdale]] (currently No. 77) 6-41 on the road on Nov 6.",
+        "[[kemper-county]] (2A, 9-2): State ranking: down 12 spots to No. 66 (from No. 54). MFPI rating: decreased 3.4 points to 66.4. In the window it beat [[east-union]] (currently No. 211) 50-12 at home on Nov 6.",
+        "[[leflore-county]] (1A, 10-0): State ranking: down 12 spots to No. 101 (from No. 89). MFPI rating: decreased 3.9 points to 54.4. In the window it beat [[byers]] (currently No. 223) 48-6 at home on Nov 6."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[booneville]]",
+            "99",
+            "80",
+            "-19",
+            "55.2",
+            "-5.7"
+          ],
+          [
+            "[[amory]]",
+            "71",
+            "55",
+            "-16",
+            "65.8",
+            "-3.9"
+          ],
+          [
+            "[[lewisburg]]",
+            "98",
+            "83",
+            "-15",
+            "55.3",
+            "-4.8"
+          ],
+          [
+            "[[independence]]",
+            "154",
+            "140",
+            "-14",
+            "36.9",
+            "-3.7"
+          ],
+          [
+            "[[water-valley]]",
+            "150",
+            "137",
+            "-13",
+            "38.1",
+            "-3.1"
+          ],
+          [
+            "[[tishomingo-county]]",
+            "155",
+            "142",
+            "-13",
+            "36.8",
+            "-3.0"
+          ],
+          [
+            "[[kemper-county]]",
+            "66",
+            "54",
+            "-12",
+            "66.4",
+            "-3.4"
+          ],
+          [
+            "[[leflore-county]]",
+            "101",
+            "89",
+            "-12",
+            "54.4",
+            "-3.9"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Rank and rating moving separately",
+      "paragraphs": [
+        "Held their rank while the rating changed by at least a point: [[gulfport]] (No. 2, -1.1); [[mendenhall]] (No. 40, -1.4); [[mount-olive]] (No. 220, +1.2).",
+        "Moved in the ranking with an unchanged displayed rating: [[forest]] (-1 to No. 97); [[st-stanislaus]] (+2 to No. 128); [[ethel]] (+3 to No. 152)."
+      ]
+    },
+    {
+      "heading": "Data notes and limitations",
+      "paragraphs": [
+        "Snapshot generated November 10, 2026 at 11:10 AM Central with a cutoff of November 10 at 11:00 AM Central, formula MFPI-3.2.",
+        "1186 of 1209 game listings due by the cutoff had verified scores (98.1%); the rest count as unavailable, never as losses or 0-0 results.",
+        "[[wesson]] is credited with two games on Oct 23. One listing may belong to a same-named school; it is under review and affects that team and its opponents.",
+        "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
+      ]
+    }
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
+}

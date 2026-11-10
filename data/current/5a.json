@@ -1,17 +1,17 @@
 {
   "metadata": {
     "season": 2026,
-    "week": 10,
-    "generated_at": "2026-11-03T17:11:30.471802+00:00",
-    "cutoff_at": "2026-11-03T11:00:00-06:00",
+    "week": 11,
+    "generated_at": "2026-11-10T17:10:58.281790+00:00",
+    "cutoff_at": "2026-11-10T11:00:00-06:00",
     "formula_version": "MFPI-3.2",
     "status": "PROVISIONAL",
-    "run_id": "2026-week-10-20261103T171130471802Z",
+    "run_id": "2026-week-11-20261110T171058281790Z",
     "data_sources": [
       {
         "name": "MHSAA official score center",
         "url": "https://scores.misshsaa.com/",
-        "retrieved_at": "2026-11-03T17:11:34.187391+00:00"
+        "retrieved_at": "2026-11-10T17:11:02.680329+00:00"
       },
       {
         "name": "MHSAA 2025-27 football classifications",
@@ -20,14 +20,14 @@
       {
         "name": "Media Rank and Strength of Schedule",
         "url": "https://www.maxpreps.com/ms/football/rankings/1/",
-        "retrieved_at": "2026-11-03T17:11:30.472975+00:00",
-        "source_updated_at": "10/31/2026",
+        "retrieved_at": "2026-11-10T17:10:58.283370+00:00",
+        "source_updated_at": "11/8/2026",
         "cached_fallback": false
       },
       {
         "name": "Secondary score verification",
         "url": "https://www.maxpreps.com/ms/football/scores/",
-        "retrieved_at": "2026-11-03T17:11:44.797846+00:00",
+        "retrieved_at": "2026-11-10T17:11:13.773660+00:00",
         "team_schedule_pages_checked": 225,
         "secondary_results_used": 20,
         "secondary_statuses_used": 0,
@@ -36,9 +36,9 @@
       }
     ],
     "validation_status": "PROVISIONAL",
-    "coverage_percentage": 97.93,
-    "expected_games": 1110,
-    "verified_games": 1087,
+    "coverage_percentage": 98.1,
+    "expected_games": 1209,
+    "verified_games": 1186,
     "missing_games": 23,
     "opponent_names": {
       "external-228102": "Mars Hill Bible",
@@ -109,54 +109,54 @@
       "team": "Brookhaven High School",
       "classification": "5A",
       "region": "3",
-      "record": "8-0",
-      "games_played": 8,
-      "state_rank": 15,
+      "record": "9-0",
+      "games_played": 9,
+      "state_rank": 11,
       "class_rank": 1,
-      "mfpi": 88.0,
-      "mfpi_unrounded": 88.04910714,
-      "previous_state_rank": 10,
-      "state_rank_change": -5,
+      "mfpi": 90.1,
+      "mfpi_unrounded": 90.09375,
+      "previous_state_rank": 15,
+      "state_rank_change": 4,
       "previous_class_rank": 1,
       "class_rank_change": 0,
-      "previous_mfpi": 89.0,
-      "mfpi_change": -1.0,
-      "pf_per_game": 41.4,
-      "pa_per_game": 16.2,
+      "previous_mfpi": 88.0,
+      "mfpi_change": 2.1,
+      "pf_per_game": 40.7,
+      "pa_per_game": 14.4,
       "pending_games": 2,
       "data_status": "partial",
       "up_games": 2,
-      "same_class_games": 3,
+      "same_class_games": 4,
       "down_games": 3,
       "class_schedule_delta": 0.0,
       "schedule_direction": "Mostly same class",
-      "maxpreps_state_rank": 13,
-      "maxpreps_rating": 74.75,
-      "maxpreps_strength": 33.5,
+      "maxpreps_state_rank": 12,
+      "maxpreps_rating": 75.34,
+      "maxpreps_strength": 34.1,
       "components": {
         "performance": {
-          "raw": 27.889572,
-          "normalized": 94.196429,
+          "raw": 30.13071,
+          "normalized": 96.875,
           "weight": 0.35,
-          "contribution": 32.96875
+          "contribution": 33.90625
         },
         "sos": {
-          "raw": 7.377742,
-          "normalized": 74.553571,
+          "raw": 8.557644,
+          "normalized": 76.785714,
           "weight": 0.2,
-          "contribution": 14.910714
+          "contribution": 15.357143
         },
         "maxpreps_rank": {
-          "raw": -13.0,
+          "raw": -12.0,
           "normalized": 95.982143,
           "weight": 0.1,
           "contribution": 9.598214
         },
         "maxpreps_sos": {
-          "raw": 33.5,
-          "normalized": 75.446429,
+          "raw": 34.1,
+          "normalized": 76.339286,
           "weight": 0.1,
-          "contribution": 7.544643
+          "contribution": 7.633929
         },
         "record": {
           "raw": 1.0,
@@ -165,22 +165,22 @@
           "contribution": 4.866071
         },
         "offense": {
-          "raw": 41.375,
+          "raw": 40.666667,
           "normalized": 95.982143,
           "weight": 0.08,
           "contribution": 7.678571
         },
         "defense": {
-          "raw": 32.75,
-          "normalized": 84.375,
+          "raw": 34.555556,
+          "normalized": 89.285714,
           "weight": 0.08,
-          "contribution": 6.75
+          "contribution": 7.142857
         },
         "recent": {
-          "raw": 28.283487,
-          "normalized": 93.303571,
+          "raw": 34.460622,
+          "normalized": 97.767857,
           "weight": 0.04,
-          "contribution": 3.732143
+          "contribution": 3.910714
         }
       },
       "game_results": [
@@ -287,10 +287,23 @@
           "calendar_date": "2026-10-30",
           "game_id": "7732464",
           "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "natchez",
+          "away": "brookhaven",
+          "home_score": 0,
+          "away_score": 35,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732444",
+          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 5 spots to No. 15 (from No. 10). MFPI rating: decreased 1.0 points to 88.0. Opponent-adjusted performance percentile 94.2; schedule-strength percentile 74.6. 2 listings due by the cutoff still lack a verified result."
+      "explanation": "State ranking: up 4 spots to No. 11 (from No. 15). MFPI rating: increased 2.1 points to 90.1. Opponent-adjusted performance percentile 96.9; schedule-strength percentile 76.8. 2 listings due by the cutoff still lack a verified result."
     },
     {
       "team_id": "pontotoc",
@@ -298,42 +311,42 @@
       "team": "Pontotoc High School",
       "classification": "5A",
       "region": "1",
-      "record": "7-2",
-      "games_played": 9,
-      "state_rank": 16,
+      "record": "8-2",
+      "games_played": 10,
+      "state_rank": 18,
       "class_rank": 2,
-      "mfpi": 87.0,
-      "mfpi_unrounded": 87.015625,
-      "previous_state_rank": 11,
-      "state_rank_change": -5,
+      "mfpi": 86.4,
+      "mfpi_unrounded": 86.40178571,
+      "previous_state_rank": 16,
+      "state_rank_change": -2,
       "previous_class_rank": 2,
       "class_rank_change": 0,
-      "previous_mfpi": 88.9,
-      "mfpi_change": -1.9,
-      "pf_per_game": 33.7,
-      "pa_per_game": 14.7,
+      "previous_mfpi": 87.0,
+      "mfpi_change": -0.6,
+      "pf_per_game": 35.2,
+      "pa_per_game": 18.0,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 0,
-      "same_class_games": 4,
+      "same_class_games": 5,
       "down_games": 5,
-      "class_schedule_delta": -0.556,
+      "class_schedule_delta": -0.5,
       "schedule_direction": "Playing down",
       "maxpreps_state_rank": 37,
-      "maxpreps_rating": 62.08,
-      "maxpreps_strength": 36.2,
+      "maxpreps_rating": 61.58,
+      "maxpreps_strength": 36.3,
       "components": {
         "performance": {
-          "raw": 27.05716,
-          "normalized": 92.857143,
+          "raw": 25.18463,
+          "normalized": 92.410714,
           "weight": 0.35,
-          "contribution": 32.5
+          "contribution": 32.34375
         },
         "sos": {
-          "raw": 12.447786,
-          "normalized": 83.928571,
+          "raw": 11.692135,
+          "normalized": 83.035714,
           "weight": 0.2,
-          "contribution": 16.785714
+          "contribution": 16.607143
         },
         "maxpreps_rank": {
           "raw": -37.0,
@@ -342,34 +355,34 @@
           "contribution": 8.705357
         },
         "maxpreps_sos": {
-          "raw": 36.2,
-          "normalized": 81.25,
+          "raw": 36.3,
+          "normalized": 81.696429,
           "weight": 0.1,
-          "contribution": 8.125
+          "contribution": 8.169643
         },
         "record": {
-          "raw": 0.777778,
-          "normalized": 80.133929,
+          "raw": 0.8,
+          "normalized": 82.589286,
           "weight": 0.05,
-          "contribution": 4.006696
+          "contribution": 4.129464
         },
         "offense": {
-          "raw": 33.666667,
-          "normalized": 77.901786,
+          "raw": 35.2,
+          "normalized": 86.383929,
           "weight": 0.08,
-          "contribution": 6.232143
+          "contribution": 6.910714
         },
         "defense": {
-          "raw": 34.333333,
-          "normalized": 88.839286,
+          "raw": 31.0,
+          "normalized": 78.125,
           "weight": 0.08,
-          "contribution": 7.107143
+          "contribution": 6.25
         },
         "recent": {
-          "raw": 23.145678,
-          "normalized": 88.839286,
+          "raw": 19.030926,
+          "normalized": 82.142857,
           "weight": 0.04,
-          "contribution": 3.553571
+          "contribution": 3.285714
         }
       },
       "game_results": [
@@ -489,10 +502,23 @@
           "calendar_date": "2026-10-30",
           "game_id": "7615166",
           "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "lafayette",
+          "away": "pontotoc",
+          "home_score": 48,
+          "away_score": 49,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7615175",
+          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 5 spots to No. 16 (from No. 11). MFPI rating: decreased 1.9 points to 87.0. Opponent-adjusted performance percentile 92.9; schedule-strength percentile 83.9."
+      "explanation": "State ranking: down 2 spots to No. 18 (from No. 16). MFPI rating: decreased 0.6 points to 86.4. Opponent-adjusted performance percentile 92.4; schedule-strength percentile 83.0."
     },
     {
       "team_id": "new-hope",
@@ -500,78 +526,78 @@
       "team": "New Hope High School",
       "classification": "5A",
       "region": "1",
-      "record": "6-3",
-      "games_played": 9,
+      "record": "7-3",
+      "games_played": 10,
       "state_rank": 22,
       "class_rank": 3,
       "mfpi": 83.3,
-      "mfpi_unrounded": 83.25892857,
-      "previous_state_rank": 20,
-      "state_rank_change": -2,
+      "mfpi_unrounded": 83.28571429,
+      "previous_state_rank": 22,
+      "state_rank_change": 0,
       "previous_class_rank": 3,
       "class_rank_change": 0,
-      "previous_mfpi": 85.7,
-      "mfpi_change": -2.4,
-      "pf_per_game": 36.1,
-      "pa_per_game": 23.2,
+      "previous_mfpi": 83.3,
+      "mfpi_change": 0.0,
+      "pf_per_game": 35.8,
+      "pa_per_game": 21.2,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 2,
-      "same_class_games": 4,
+      "same_class_games": 5,
       "down_games": 3,
-      "class_schedule_delta": -0.111,
+      "class_schedule_delta": -0.1,
       "schedule_direction": "Mostly same class",
-      "maxpreps_state_rank": 40,
-      "maxpreps_rating": 61.15,
-      "maxpreps_strength": 36.9,
+      "maxpreps_state_rank": 44,
+      "maxpreps_rating": 60.68,
+      "maxpreps_strength": 36.0,
       "components": {
         "performance": {
-          "raw": 22.069965,
-          "normalized": 89.285714,
+          "raw": 21.769809,
+          "normalized": 88.392857,
           "weight": 0.35,
-          "contribution": 31.25
+          "contribution": 30.9375
         },
         "sos": {
-          "raw": 12.274224,
-          "normalized": 83.035714,
+          "raw": 10.572568,
+          "normalized": 81.25,
           "weight": 0.2,
-          "contribution": 16.607143
+          "contribution": 16.25
         },
         "maxpreps_rank": {
-          "raw": -40.0,
-          "normalized": 85.714286,
+          "raw": -44.0,
+          "normalized": 83.928571,
           "weight": 0.1,
-          "contribution": 8.571429
+          "contribution": 8.392857
         },
         "maxpreps_sos": {
-          "raw": 36.9,
-          "normalized": 83.035714,
+          "raw": 36.0,
+          "normalized": 80.803571,
           "weight": 0.1,
-          "contribution": 8.303571
+          "contribution": 8.080357
         },
         "record": {
-          "raw": 0.666667,
-          "normalized": 68.75,
+          "raw": 0.7,
+          "normalized": 71.428571,
           "weight": 0.05,
-          "contribution": 3.4375
+          "contribution": 3.571429
         },
         "offense": {
-          "raw": 35.333333,
-          "normalized": 87.276786,
+          "raw": 35.1,
+          "normalized": 85.491071,
           "weight": 0.08,
-          "contribution": 6.982143
+          "contribution": 6.839286
         },
         "defense": {
-          "raw": 25.888889,
-          "normalized": 58.928571,
+          "raw": 27.9,
+          "normalized": 70.089286,
           "weight": 0.08,
-          "contribution": 4.714286
+          "contribution": 5.607143
         },
         "recent": {
-          "raw": 19.322581,
-          "normalized": 84.821429,
+          "raw": 23.193179,
+          "normalized": 90.178571,
           "weight": 0.04,
-          "contribution": 3.392857
+          "contribution": 3.607143
         }
       },
       "game_results": [
@@ -691,199 +717,23 @@
           "calendar_date": "2026-10-30",
           "game_id": "7615172",
           "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: down 2 spots to No. 22 (from No. 20). MFPI rating: decreased 2.4 points to 83.3. Opponent-adjusted performance percentile 89.3; schedule-strength percentile 83.0."
-    },
-    {
-      "team_id": "laurel",
-      "slug": "laurel",
-      "team": "Laurel High School",
-      "classification": "5A",
-      "region": "3",
-      "record": "4-4",
-      "games_played": 8,
-      "state_rank": 43,
-      "class_rank": 4,
-      "mfpi": 75.0,
-      "mfpi_unrounded": 75.03125,
-      "previous_state_rank": 49,
-      "state_rank_change": 6,
-      "previous_class_rank": 6,
-      "class_rank_change": 2,
-      "previous_mfpi": 72.0,
-      "mfpi_change": 3.0,
-      "pf_per_game": 35.5,
-      "pa_per_game": 38.4,
-      "pending_games": 2,
-      "data_status": "partial",
-      "up_games": 5,
-      "same_class_games": 3,
-      "down_games": 0,
-      "class_schedule_delta": 1.0,
-      "schedule_direction": "Playing up",
-      "maxpreps_state_rank": 51,
-      "maxpreps_rating": 56.43,
-      "maxpreps_strength": 40.5,
-      "components": {
-        "performance": {
-          "raw": 12.634732,
-          "normalized": 75.892857,
-          "weight": 0.35,
-          "contribution": 26.5625
         },
-        "sos": {
-          "raw": 14.878019,
-          "normalized": 90.178571,
-          "weight": 0.2,
-          "contribution": 18.035714
-        },
-        "maxpreps_rank": {
-          "raw": -51.0,
-          "normalized": 80.803571,
-          "weight": 0.1,
-          "contribution": 8.080357
-        },
-        "maxpreps_sos": {
-          "raw": 40.5,
-          "normalized": 90.625,
-          "weight": 0.1,
-          "contribution": 9.0625
-        },
-        "record": {
-          "raw": 0.5,
-          "normalized": 50.446429,
-          "weight": 0.05,
-          "contribution": 2.522321
-        },
-        "offense": {
-          "raw": 34.625,
-          "normalized": 83.482143,
-          "weight": 0.08,
-          "contribution": 6.678571
-        },
-        "defense": {
-          "raw": 12.375,
-          "normalized": 8.035714,
-          "weight": 0.08,
-          "contribution": 0.642857
-        },
-        "recent": {
-          "raw": 21.00011,
-          "normalized": 86.160714,
-          "weight": 0.04,
-          "contribution": 3.446429
-        }
-      },
-      "game_results": [
         {
-          "date": "2026-08-28T19:00:00-05:00",
-          "home": "laurel",
-          "away": "west-jones",
-          "home_score": 56,
-          "away_score": 42,
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "new-hope",
+          "away": "caledonia",
+          "home_score": 33,
+          "away_score": 3,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7731575",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-04T18:00:00-05:00",
-          "home": "hattiesburg",
-          "away": "laurel",
-          "home_score": 27,
-          "away_score": 25,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7614682",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "gulfport",
-          "away": "laurel",
-          "home_score": 51,
-          "away_score": 0,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7586803",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "laurel",
-          "away": "west-harrison",
-          "home_score": 41,
-          "away_score": 61,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7587019",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-25T19:00:00-05:00",
-          "home": "laurel",
-          "away": "oak-grove",
-          "home_score": 20,
-          "away_score": 42,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-25",
-          "game_id": "7586979",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-16T19:00:00-05:00",
-          "home": "natchez",
-          "away": "laurel",
-          "home_score": 42,
-          "away_score": 44,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-16",
-          "game_id": "8003567",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-23T19:00:00-05:00",
-          "home": "laurel",
-          "away": "north-pike",
-          "home_score": 49,
-          "away_score": 21,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-23",
-          "game_id": "7727856",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-30T19:00:00-05:00",
-          "home": "laurel",
-          "away": "sumrall",
-          "home_score": 49,
-          "away_score": 21,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-30",
-          "game_id": "7732466",
+          "calendar_date": "2026-11-05",
+          "game_id": "7732430",
           "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 6 spots to No. 43 (from No. 49). MFPI rating: increased 3.0 points to 75.0. Opponent-adjusted performance percentile 75.9; schedule-strength percentile 90.2. 2 listings due by the cutoff still lack a verified result."
+      "explanation": "State ranking: unchanged at No. 22. MFPI rating: unchanged at 83.3. Opponent-adjusted performance percentile 88.4; schedule-strength percentile 81.2."
     },
     {
       "team_id": "west-point",
@@ -891,78 +741,78 @@
       "team": "West Point High School",
       "classification": "5A",
       "region": "1",
-      "record": "2-7",
-      "games_played": 9,
-      "state_rank": 46,
-      "class_rank": 5,
-      "mfpi": 73.3,
-      "mfpi_unrounded": 73.34598214,
-      "previous_state_rank": 54,
-      "state_rank_change": 8,
-      "previous_class_rank": 8,
-      "class_rank_change": 3,
-      "previous_mfpi": 70.6,
-      "mfpi_change": 2.7,
-      "pf_per_game": 19.7,
-      "pa_per_game": 32.1,
+      "record": "3-7",
+      "games_played": 10,
+      "state_rank": 42,
+      "class_rank": 4,
+      "mfpi": 74.3,
+      "mfpi_unrounded": 74.27008929,
+      "previous_state_rank": 46,
+      "state_rank_change": 4,
+      "previous_class_rank": 5,
+      "class_rank_change": 1,
+      "previous_mfpi": 73.3,
+      "mfpi_change": 1.0,
+      "pf_per_game": 22.4,
+      "pa_per_game": 30.9,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 2,
-      "same_class_games": 4,
+      "same_class_games": 5,
       "down_games": 2,
-      "class_schedule_delta": 0.125,
+      "class_schedule_delta": 0.111,
       "schedule_direction": "Mostly same class",
-      "maxpreps_state_rank": 25,
-      "maxpreps_rating": 67.43,
-      "maxpreps_strength": 50.3,
+      "maxpreps_state_rank": 28,
+      "maxpreps_rating": 67.86,
+      "maxpreps_strength": 47.0,
       "components": {
         "performance": {
-          "raw": 11.931494,
-          "normalized": 74.553571,
+          "raw": 12.366691,
+          "normalized": 75.892857,
           "weight": 0.35,
-          "contribution": 26.09375
+          "contribution": 26.5625
         },
         "sos": {
-          "raw": 23.30173,
-          "normalized": 99.107143,
+          "raw": 20.032806,
+          "normalized": 95.535714,
           "weight": 0.2,
-          "contribution": 19.821429
+          "contribution": 19.107143
         },
         "maxpreps_rank": {
-          "raw": -25.0,
-          "normalized": 91.071429,
+          "raw": -28.0,
+          "normalized": 90.178571,
           "weight": 0.1,
-          "contribution": 9.107143
+          "contribution": 9.017857
         },
         "maxpreps_sos": {
-          "raw": 50.3,
-          "normalized": 100.0,
+          "raw": 47.0,
+          "normalized": 97.321429,
           "weight": 0.1,
-          "contribution": 10.0
+          "contribution": 9.732143
         },
         "record": {
-          "raw": 0.222222,
-          "normalized": 17.1875,
+          "raw": 0.3,
+          "normalized": 27.008929,
           "weight": 0.05,
-          "contribution": 0.859375
+          "contribution": 1.350446
         },
         "offense": {
-          "raw": 19.555556,
-          "normalized": 31.026786,
+          "raw": 22.3,
+          "normalized": 41.294643,
           "weight": 0.08,
-          "contribution": 2.482143
+          "contribution": 3.303571
         },
         "defense": {
-          "raw": 16.888889,
-          "normalized": 18.75,
+          "raw": 18.1,
+          "normalized": 23.660714,
           "weight": 0.08,
-          "contribution": 1.5
+          "contribution": 1.892857
         },
         "recent": {
-          "raw": 21.7134,
-          "normalized": 87.053571,
+          "raw": 19.406221,
+          "normalized": 82.589286,
           "weight": 0.04,
-          "contribution": 3.482143
+          "contribution": 3.303571
         }
       },
       "game_results": [
@@ -1082,10 +932,655 @@
           "calendar_date": "2026-10-30",
           "game_id": "7615172",
           "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "columbus",
+          "away": "west-point",
+          "home_score": 20,
+          "away_score": 47,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7731967",
+          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 8 spots to No. 46 (from No. 54). MFPI rating: increased 2.7 points to 73.3. Opponent-adjusted performance percentile 74.6; schedule-strength percentile 99.1."
+      "explanation": "State ranking: up 4 spots to No. 42 (from No. 46). MFPI rating: increased 1.0 points to 74.3. Opponent-adjusted performance percentile 75.9; schedule-strength percentile 95.5."
+    },
+    {
+      "team_id": "laurel",
+      "slug": "laurel",
+      "team": "Laurel High School",
+      "classification": "5A",
+      "region": "3",
+      "record": "4-5",
+      "games_played": 9,
+      "state_rank": 48,
+      "class_rank": 5,
+      "mfpi": 72.5,
+      "mfpi_unrounded": 72.47098214,
+      "previous_state_rank": 43,
+      "state_rank_change": -5,
+      "previous_class_rank": 4,
+      "class_rank_change": -1,
+      "previous_mfpi": 75.0,
+      "mfpi_change": -2.5,
+      "pf_per_game": 35.4,
+      "pa_per_game": 38.2,
+      "pending_games": 2,
+      "data_status": "partial",
+      "up_games": 5,
+      "same_class_games": 4,
+      "down_games": 0,
+      "class_schedule_delta": 0.889,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 59,
+      "maxpreps_rating": 55.36,
+      "maxpreps_strength": 40.1,
+      "components": {
+        "performance": {
+          "raw": 11.957708,
+          "normalized": 74.107143,
+          "weight": 0.35,
+          "contribution": 25.9375
+        },
+        "sos": {
+          "raw": 13.936602,
+          "normalized": 87.053571,
+          "weight": 0.2,
+          "contribution": 17.410714
+        },
+        "maxpreps_rank": {
+          "raw": -59.0,
+          "normalized": 77.232143,
+          "weight": 0.1,
+          "contribution": 7.723214
+        },
+        "maxpreps_sos": {
+          "raw": 40.1,
+          "normalized": 89.285714,
+          "weight": 0.1,
+          "contribution": 8.928571
+        },
+        "record": {
+          "raw": 0.444444,
+          "normalized": 44.419643,
+          "weight": 0.05,
+          "contribution": 2.220982
+        },
+        "offense": {
+          "raw": 34.666667,
+          "normalized": 81.25,
+          "weight": 0.08,
+          "contribution": 6.5
+        },
+        "defense": {
+          "raw": 12.333333,
+          "normalized": 8.035714,
+          "weight": 0.08,
+          "contribution": 0.642857
+        },
+        "recent": {
+          "raw": 15.635602,
+          "normalized": 77.678571,
+          "weight": 0.04,
+          "contribution": 3.107143
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T19:00:00-05:00",
+          "home": "laurel",
+          "away": "west-jones",
+          "home_score": 56,
+          "away_score": 42,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7731575",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-04T18:00:00-05:00",
+          "home": "hattiesburg",
+          "away": "laurel",
+          "home_score": 27,
+          "away_score": 25,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7614682",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "gulfport",
+          "away": "laurel",
+          "home_score": 51,
+          "away_score": 0,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7586803",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "laurel",
+          "away": "west-harrison",
+          "home_score": 41,
+          "away_score": 61,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7587019",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-25T19:00:00-05:00",
+          "home": "laurel",
+          "away": "oak-grove",
+          "home_score": 20,
+          "away_score": 42,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-25",
+          "game_id": "7586979",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-16T19:00:00-05:00",
+          "home": "natchez",
+          "away": "laurel",
+          "home_score": 42,
+          "away_score": 44,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-16",
+          "game_id": "8003567",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-23T19:00:00-05:00",
+          "home": "laurel",
+          "away": "north-pike",
+          "home_score": 49,
+          "away_score": 21,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-23",
+          "game_id": "7727856",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-30T19:00:00-05:00",
+          "home": "laurel",
+          "away": "sumrall",
+          "home_score": 49,
+          "away_score": 21,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-30",
+          "game_id": "7732466",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "south-jones",
+          "away": "laurel",
+          "home_score": 37,
+          "away_score": 35,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732435",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: down 5 spots to No. 48 (from No. 43). MFPI rating: decreased 2.5 points to 72.5. Opponent-adjusted performance percentile 74.1; schedule-strength percentile 87.1. 2 listings due by the cutoff still lack a verified result."
+    },
+    {
+      "team_id": "wayne-county",
+      "slug": "wayne-county",
+      "team": "Wayne County High School",
+      "classification": "5A",
+      "region": "4",
+      "record": "6-4",
+      "games_played": 10,
+      "state_rank": 49,
+      "class_rank": 6,
+      "mfpi": 72.1,
+      "mfpi_unrounded": 72.12723214,
+      "previous_state_rank": 50,
+      "state_rank_change": 1,
+      "previous_class_rank": 7,
+      "class_rank_change": 1,
+      "previous_mfpi": 71.7,
+      "mfpi_change": 0.4,
+      "pf_per_game": 33.3,
+      "pa_per_game": 19.1,
+      "pending_games": 0,
+      "data_status": "complete",
+      "up_games": 5,
+      "same_class_games": 5,
+      "down_games": 0,
+      "class_schedule_delta": 0.6,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 79,
+      "maxpreps_rating": 50.69,
+      "maxpreps_strength": 29.9,
+      "components": {
+        "performance": {
+          "raw": 15.537188,
+          "normalized": 80.357143,
+          "weight": 0.35,
+          "contribution": 28.125
+        },
+        "sos": {
+          "raw": 4.315287,
+          "normalized": 61.607143,
+          "weight": 0.2,
+          "contribution": 12.321429
+        },
+        "maxpreps_rank": {
+          "raw": -79.0,
+          "normalized": 69.642857,
+          "weight": 0.1,
+          "contribution": 6.964286
+        },
+        "maxpreps_sos": {
+          "raw": 29.9,
+          "normalized": 60.9375,
+          "weight": 0.1,
+          "contribution": 6.09375
+        },
+        "record": {
+          "raw": 0.6,
+          "normalized": 61.383929,
+          "weight": 0.05,
+          "contribution": 3.069196
+        },
+        "offense": {
+          "raw": 33.3,
+          "normalized": 75.892857,
+          "weight": 0.08,
+          "contribution": 6.071429
+        },
+        "defense": {
+          "raw": 29.9,
+          "normalized": 74.776786,
+          "weight": 0.08,
+          "contribution": 5.982143
+        },
+        "recent": {
+          "raw": 22.307154,
+          "normalized": 87.5,
+          "weight": 0.04,
+          "contribution": 3.5
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T19:00:00-05:00",
+          "home": "wayne-county",
+          "away": "pearl-river-central",
+          "home_score": 27,
+          "away_score": 28,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7731589",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-04T18:00:00-05:00",
+          "home": "forest-hill",
+          "away": "wayne-county",
+          "home_score": 0,
+          "away_score": 44,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7614698",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "northwest-rankin",
+          "away": "wayne-county",
+          "home_score": 31,
+          "away_score": 6,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7586971",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "wayne-county",
+          "away": "george-county",
+          "home_score": 29,
+          "away_score": 31,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7614810",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-25T19:00:00-05:00",
+          "home": "west-jones",
+          "away": "wayne-county",
+          "home_score": 42,
+          "away_score": 35,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-25",
+          "game_id": "7731789",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-09T01:59:00-05:00",
+          "home": "wayne-county",
+          "away": "stone",
+          "home_score": 47,
+          "away_score": 28,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-08",
+          "game_id": "7984792",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-16T19:00:00-05:00",
+          "home": "vancleave",
+          "away": "wayne-county",
+          "home_score": 0,
+          "away_score": 41,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-16",
+          "game_id": "7732380",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-23T19:00:00-05:00",
+          "home": "wayne-county",
+          "away": "east-central",
+          "home_score": 35,
+          "away_score": 14,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-23",
+          "game_id": "7727859",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-30T19:00:00-05:00",
+          "home": "purvis",
+          "away": "wayne-county",
+          "home_score": 7,
+          "away_score": 35,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-30",
+          "game_id": "7732449",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "wayne-county",
+          "away": "northeast-jones",
+          "home_score": 34,
+          "away_score": 10,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7661658",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: up 1 spot to No. 49 (from No. 50). MFPI rating: increased 0.4 points to 72.1. Opponent-adjusted performance percentile 80.4; schedule-strength percentile 61.6."
+    },
+    {
+      "team_id": "cleveland-central",
+      "slug": "cleveland-central",
+      "team": "Cleveland Central High School",
+      "classification": "5A",
+      "region": "2",
+      "record": "7-3",
+      "games_played": 10,
+      "state_rank": 50,
+      "class_rank": 7,
+      "mfpi": 71.8,
+      "mfpi_unrounded": 71.77678571,
+      "previous_state_rank": 51,
+      "state_rank_change": 1,
+      "previous_class_rank": 8,
+      "class_rank_change": 1,
+      "previous_mfpi": 71.2,
+      "mfpi_change": 0.6,
+      "pf_per_game": 34.2,
+      "pa_per_game": 20.6,
+      "pending_games": 0,
+      "data_status": "complete",
+      "up_games": 1,
+      "same_class_games": 6,
+      "down_games": 3,
+      "class_schedule_delta": -0.3,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 71,
+      "maxpreps_rating": 51.93,
+      "maxpreps_strength": 29.6,
+      "components": {
+        "performance": {
+          "raw": 15.4226,
+          "normalized": 79.464286,
+          "weight": 0.35,
+          "contribution": 27.8125
+        },
+        "sos": {
+          "raw": 4.710365,
+          "normalized": 63.839286,
+          "weight": 0.2,
+          "contribution": 12.767857
+        },
+        "maxpreps_rank": {
+          "raw": -71.0,
+          "normalized": 72.767857,
+          "weight": 0.1,
+          "contribution": 7.276786
+        },
+        "maxpreps_sos": {
+          "raw": 29.6,
+          "normalized": 58.482143,
+          "weight": 0.1,
+          "contribution": 5.848214
+        },
+        "record": {
+          "raw": 0.7,
+          "normalized": 71.428571,
+          "weight": 0.05,
+          "contribution": 3.571429
+        },
+        "offense": {
+          "raw": 33.2,
+          "normalized": 75.0,
+          "weight": 0.08,
+          "contribution": 6.0
+        },
+        "defense": {
+          "raw": 28.4,
+          "normalized": 71.875,
+          "weight": 0.08,
+          "contribution": 5.75
+        },
+        "recent": {
+          "raw": 12.108392,
+          "normalized": 68.75,
+          "weight": 0.04,
+          "contribution": 2.75
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T19:00:00-05:00",
+          "home": "cleveland-central",
+          "away": "clarksdale",
+          "home_score": 35,
+          "away_score": 29,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7731613",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-04T18:00:00-05:00",
+          "home": "greenwood",
+          "away": "cleveland-central",
+          "home_score": 6,
+          "away_score": 21,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7614679",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "cleveland-central",
+          "away": "amanda-elzy",
+          "home_score": 51,
+          "away_score": 8,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7731700",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "grenada",
+          "away": "cleveland-central",
+          "home_score": 33,
+          "away_score": 20,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7731835",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-02T19:00:00-05:00",
+          "home": "cleveland-central",
+          "away": "leake-central",
+          "home_score": 56,
+          "away_score": 41,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-02",
+          "game_id": "7731907",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-09T19:00:00-05:00",
+          "home": "cleveland-central",
+          "away": "holmes-county-central",
+          "home_score": 50,
+          "away_score": 22,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-09",
+          "game_id": "7614984",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-16T19:00:00-05:00",
+          "home": "cleveland-central",
+          "away": "florence",
+          "home_score": 25,
+          "away_score": 7,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-16",
+          "game_id": "7732369",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-23T19:00:00-05:00",
+          "home": "vicksburg",
+          "away": "cleveland-central",
+          "home_score": 28,
+          "away_score": 26,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-23",
+          "game_id": "7727893",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-30T19:00:00-05:00",
+          "home": "lanier",
+          "away": "cleveland-central",
+          "home_score": 26,
+          "away_score": 18,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-30",
+          "game_id": "7615152",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "cleveland-central",
+          "away": "provine",
+          "home_score": 40,
+          "away_score": 6,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "8079725",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: up 1 spot to No. 50 (from No. 51). MFPI rating: increased 0.6 points to 71.8. Opponent-adjusted performance percentile 79.5; schedule-strength percentile 63.8."
     },
     {
       "team_id": "lafayette",
@@ -1093,78 +1588,78 @@
       "team": "Lafayette High School",
       "classification": "5A",
       "region": "1",
-      "record": "8-2",
-      "games_played": 10,
-      "state_rank": 48,
-      "class_rank": 6,
-      "mfpi": 72.7,
-      "mfpi_unrounded": 72.73660714,
-      "previous_state_rank": 47,
-      "state_rank_change": -1,
-      "previous_class_rank": 5,
-      "class_rank_change": -1,
-      "previous_mfpi": 72.8,
-      "mfpi_change": -0.1,
-      "pf_per_game": 40.3,
-      "pa_per_game": 23.6,
+      "record": "8-3",
+      "games_played": 11,
+      "state_rank": 52,
+      "class_rank": 8,
+      "mfpi": 71.4,
+      "mfpi_unrounded": 71.35491071,
+      "previous_state_rank": 48,
+      "state_rank_change": -4,
+      "previous_class_rank": 6,
+      "class_rank_change": -2,
+      "previous_mfpi": 72.7,
+      "mfpi_change": -1.3,
+      "pf_per_game": 41.0,
+      "pa_per_game": 25.9,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 3,
-      "same_class_games": 4,
+      "same_class_games": 5,
       "down_games": 1,
-      "class_schedule_delta": 0.375,
+      "class_schedule_delta": 0.333,
       "schedule_direction": "Playing up",
       "maxpreps_state_rank": 73,
-      "maxpreps_rating": 51.42,
-      "maxpreps_strength": 30.0,
+      "maxpreps_rating": 51.81,
+      "maxpreps_strength": 30.9,
       "components": {
         "performance": {
-          "raw": 14.909868,
-          "normalized": 79.910714,
+          "raw": 14.880991,
+          "normalized": 77.678571,
           "weight": 0.35,
-          "contribution": 27.96875
+          "contribution": 27.1875
         },
         "sos": {
-          "raw": 3.142939,
-          "normalized": 60.267857,
+          "raw": 4.458583,
+          "normalized": 62.053571,
           "weight": 0.2,
-          "contribution": 12.053571
+          "contribution": 12.410714
         },
         "maxpreps_rank": {
           "raw": -73.0,
-          "normalized": 72.321429,
+          "normalized": 71.875,
           "weight": 0.1,
-          "contribution": 7.232143
+          "contribution": 7.1875
         },
         "maxpreps_sos": {
-          "raw": 30.0,
-          "normalized": 64.0625,
+          "raw": 30.9,
+          "normalized": 67.1875,
           "weight": 0.1,
-          "contribution": 6.40625
+          "contribution": 6.71875
         },
         "record": {
-          "raw": 0.8,
-          "normalized": 86.160714,
+          "raw": 0.727273,
+          "normalized": 77.008929,
           "weight": 0.05,
-          "contribution": 4.308036
+          "contribution": 3.850446
         },
         "offense": {
-          "raw": 35.6,
-          "normalized": 87.946429,
+          "raw": 36.727273,
+          "normalized": 90.625,
           "weight": 0.08,
-          "contribution": 7.035714
+          "contribution": 7.25
         },
         "defense": {
-          "raw": 25.4,
-          "normalized": 57.366071,
+          "raw": 23.090909,
+          "normalized": 43.75,
           "weight": 0.08,
-          "contribution": 4.589286
+          "contribution": 3.5
         },
         "recent": {
-          "raw": 15.188279,
-          "normalized": 78.571429,
+          "raw": 18.423641,
+          "normalized": 81.25,
           "weight": 0.04,
-          "contribution": 3.142857
+          "contribution": 3.25
         }
       },
       "game_results": [
@@ -1297,414 +1792,23 @@
           "calendar_date": "2026-10-30",
           "game_id": "7615162",
           "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: down 1 spot to No. 48 (from No. 47). MFPI rating: decreased 0.1 points to 72.7. Opponent-adjusted performance percentile 79.9; schedule-strength percentile 60.3."
-    },
-    {
-      "team_id": "wayne-county",
-      "slug": "wayne-county",
-      "team": "Wayne County High School",
-      "classification": "5A",
-      "region": "4",
-      "record": "5-4",
-      "games_played": 9,
-      "state_rank": 50,
-      "class_rank": 7,
-      "mfpi": 71.7,
-      "mfpi_unrounded": 71.6875,
-      "previous_state_rank": 53,
-      "state_rank_change": 3,
-      "previous_class_rank": 7,
-      "class_rank_change": 0,
-      "previous_mfpi": 70.6,
-      "mfpi_change": 1.1,
-      "pf_per_game": 33.2,
-      "pa_per_game": 20.1,
-      "pending_games": 0,
-      "data_status": "complete",
-      "up_games": 5,
-      "same_class_games": 4,
-      "down_games": 0,
-      "class_schedule_delta": 0.667,
-      "schedule_direction": "Playing up",
-      "maxpreps_state_rank": 83,
-      "maxpreps_rating": 49.6,
-      "maxpreps_strength": 29.8,
-      "components": {
-        "performance": {
-          "raw": 14.512481,
-          "normalized": 79.017857,
-          "weight": 0.35,
-          "contribution": 27.65625
         },
-        "sos": {
-          "raw": 4.198371,
-          "normalized": 62.946429,
-          "weight": 0.2,
-          "contribution": 12.589286
-        },
-        "maxpreps_rank": {
-          "raw": -83.0,
-          "normalized": 68.75,
-          "weight": 0.1,
-          "contribution": 6.875
-        },
-        "maxpreps_sos": {
-          "raw": 29.8,
-          "normalized": 63.169643,
-          "weight": 0.1,
-          "contribution": 6.316964
-        },
-        "record": {
-          "raw": 0.555556,
-          "normalized": 57.142857,
-          "weight": 0.05,
-          "contribution": 2.857143
-        },
-        "offense": {
-          "raw": 33.222222,
-          "normalized": 75.892857,
-          "weight": 0.08,
-          "contribution": 6.071429
-        },
-        "defense": {
-          "raw": 28.888889,
-          "normalized": 71.875,
-          "weight": 0.08,
-          "contribution": 5.75
-        },
-        "recent": {
-          "raw": 23.539443,
-          "normalized": 89.285714,
-          "weight": 0.04,
-          "contribution": 3.571429
-        }
-      },
-      "game_results": [
         {
-          "date": "2026-08-28T19:00:00-05:00",
-          "home": "wayne-county",
-          "away": "pearl-river-central",
-          "home_score": 27,
-          "away_score": 28,
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "lafayette",
+          "away": "pontotoc",
+          "home_score": 48,
+          "away_score": 49,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7731589",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-04T18:00:00-05:00",
-          "home": "forest-hill",
-          "away": "wayne-county",
-          "home_score": 0,
-          "away_score": 44,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7614698",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "northwest-rankin",
-          "away": "wayne-county",
-          "home_score": 31,
-          "away_score": 6,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7586971",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "wayne-county",
-          "away": "george-county",
-          "home_score": 29,
-          "away_score": 31,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7614810",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-25T19:00:00-05:00",
-          "home": "west-jones",
-          "away": "wayne-county",
-          "home_score": 42,
-          "away_score": 35,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-25",
-          "game_id": "7731789",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-09T01:59:00-05:00",
-          "home": "wayne-county",
-          "away": "stone",
-          "home_score": 47,
-          "away_score": 28,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-08",
-          "game_id": "7984792",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-16T19:00:00-05:00",
-          "home": "vancleave",
-          "away": "wayne-county",
-          "home_score": 0,
-          "away_score": 41,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-16",
-          "game_id": "7732380",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-23T19:00:00-05:00",
-          "home": "wayne-county",
-          "away": "east-central",
-          "home_score": 35,
-          "away_score": 14,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-23",
-          "game_id": "7727859",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-30T19:00:00-05:00",
-          "home": "purvis",
-          "away": "wayne-county",
-          "home_score": 7,
-          "away_score": 35,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-30",
-          "game_id": "7732449",
+          "calendar_date": "2026-11-05",
+          "game_id": "7615175",
           "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 3 spots to No. 50 (from No. 53). MFPI rating: increased 1.1 points to 71.7. Opponent-adjusted performance percentile 79.0; schedule-strength percentile 62.9."
-    },
-    {
-      "team_id": "cleveland-central",
-      "slug": "cleveland-central",
-      "team": "Cleveland Central High School",
-      "classification": "5A",
-      "region": "2",
-      "record": "6-3",
-      "games_played": 9,
-      "state_rank": 51,
-      "class_rank": 8,
-      "mfpi": 71.2,
-      "mfpi_unrounded": 71.22321429,
-      "previous_state_rank": 43,
-      "state_rank_change": -8,
-      "previous_class_rank": 4,
-      "class_rank_change": -4,
-      "previous_mfpi": 74.4,
-      "mfpi_change": -3.2,
-      "pf_per_game": 33.6,
-      "pa_per_game": 22.2,
-      "pending_games": 0,
-      "data_status": "complete",
-      "up_games": 1,
-      "same_class_games": 5,
-      "down_games": 3,
-      "class_schedule_delta": -0.333,
-      "schedule_direction": "Playing down",
-      "maxpreps_state_rank": 80,
-      "maxpreps_rating": 50.58,
-      "maxpreps_strength": 30.1,
-      "components": {
-        "performance": {
-          "raw": 14.335576,
-          "normalized": 78.125,
-          "weight": 0.35,
-          "contribution": 27.34375
-        },
-        "sos": {
-          "raw": 5.300209,
-          "normalized": 66.964286,
-          "weight": 0.2,
-          "contribution": 13.392857
-        },
-        "maxpreps_rank": {
-          "raw": -80.0,
-          "normalized": 69.642857,
-          "weight": 0.1,
-          "contribution": 6.964286
-        },
-        "maxpreps_sos": {
-          "raw": 30.1,
-          "normalized": 64.955357,
-          "weight": 0.1,
-          "contribution": 6.495536
-        },
-        "record": {
-          "raw": 0.666667,
-          "normalized": 68.75,
-          "weight": 0.05,
-          "contribution": 3.4375
-        },
-        "offense": {
-          "raw": 32.444444,
-          "normalized": 73.660714,
-          "weight": 0.08,
-          "contribution": 5.892857
-        },
-        "defense": {
-          "raw": 26.777778,
-          "normalized": 64.508929,
-          "weight": 0.08,
-          "contribution": 5.160714
-        },
-        "recent": {
-          "raw": 7.462539,
-          "normalized": 63.392857,
-          "weight": 0.04,
-          "contribution": 2.535714
-        }
-      },
-      "game_results": [
-        {
-          "date": "2026-08-28T19:00:00-05:00",
-          "home": "cleveland-central",
-          "away": "clarksdale",
-          "home_score": 35,
-          "away_score": 29,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7731613",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-04T18:00:00-05:00",
-          "home": "greenwood",
-          "away": "cleveland-central",
-          "home_score": 6,
-          "away_score": 21,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7614679",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "cleveland-central",
-          "away": "amanda-elzy",
-          "home_score": 51,
-          "away_score": 8,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7731700",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "grenada",
-          "away": "cleveland-central",
-          "home_score": 33,
-          "away_score": 20,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7731835",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-02T19:00:00-05:00",
-          "home": "cleveland-central",
-          "away": "leake-central",
-          "home_score": 56,
-          "away_score": 41,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-02",
-          "game_id": "7731907",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-09T19:00:00-05:00",
-          "home": "cleveland-central",
-          "away": "holmes-county-central",
-          "home_score": 50,
-          "away_score": 22,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-09",
-          "game_id": "7614984",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-16T19:00:00-05:00",
-          "home": "cleveland-central",
-          "away": "florence",
-          "home_score": 25,
-          "away_score": 7,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-16",
-          "game_id": "7732369",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-23T19:00:00-05:00",
-          "home": "vicksburg",
-          "away": "cleveland-central",
-          "home_score": 28,
-          "away_score": 26,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-23",
-          "game_id": "7727893",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-30T19:00:00-05:00",
-          "home": "lanier",
-          "away": "cleveland-central",
-          "home_score": 26,
-          "away_score": 18,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-30",
-          "game_id": "7615152",
-          "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: down 8 spots to No. 51 (from No. 43). MFPI rating: decreased 3.2 points to 71.2. Opponent-adjusted performance percentile 78.1; schedule-strength percentile 67.0."
+      "explanation": "State ranking: down 4 spots to No. 52 (from No. 48). MFPI rating: decreased 1.3 points to 71.4. Opponent-adjusted performance percentile 77.7; schedule-strength percentile 62.1."
     },
     {
       "team_id": "leake-central",
@@ -1714,16 +1818,16 @@
       "region": "2",
       "record": "7-2",
       "games_played": 9,
-      "state_rank": 53,
+      "state_rank": 54,
       "class_rank": 9,
-      "mfpi": 69.8,
-      "mfpi_unrounded": 69.83705357,
-      "previous_state_rank": 57,
-      "state_rank_change": 4,
-      "previous_class_rank": 10,
-      "class_rank_change": 1,
+      "mfpi": 69.9,
+      "mfpi_unrounded": 69.88839286,
+      "previous_state_rank": 53,
+      "state_rank_change": -1,
+      "previous_class_rank": 9,
+      "class_rank_change": 0,
       "previous_mfpi": 69.8,
-      "mfpi_change": 0.0,
+      "mfpi_change": 0.1,
       "pf_per_game": 35.1,
       "pa_per_game": 22.6,
       "pending_games": 0,
@@ -1733,57 +1837,57 @@
       "down_games": 3,
       "class_schedule_delta": -0.556,
       "schedule_direction": "Playing down",
-      "maxpreps_state_rank": 102,
-      "maxpreps_rating": 45.0,
-      "maxpreps_strength": 29.2,
+      "maxpreps_state_rank": 100,
+      "maxpreps_rating": 45.64,
+      "maxpreps_strength": 29.7,
       "components": {
         "performance": {
-          "raw": 14.019416,
+          "raw": 14.642708,
           "normalized": 77.232143,
           "weight": 0.35,
           "contribution": 27.03125
         },
         "sos": {
-          "raw": 4.066635,
-          "normalized": 62.5,
+          "raw": 4.713349,
+          "normalized": 64.285714,
           "weight": 0.2,
-          "contribution": 12.5
+          "contribution": 12.857143
         },
         "maxpreps_rank": {
-          "raw": -102.0,
-          "normalized": 61.160714,
+          "raw": -100.0,
+          "normalized": 62.053571,
           "weight": 0.1,
-          "contribution": 6.116071
+          "contribution": 6.205357
         },
         "maxpreps_sos": {
-          "raw": 29.2,
-          "normalized": 58.258929,
+          "raw": 29.7,
+          "normalized": 59.375,
           "weight": 0.1,
-          "contribution": 5.825893
+          "contribution": 5.9375
         },
         "record": {
           "raw": 0.777778,
-          "normalized": 80.133929,
+          "normalized": 79.241071,
           "weight": 0.05,
-          "contribution": 4.006696
+          "contribution": 3.962054
         },
         "offense": {
           "raw": 32.777778,
-          "normalized": 74.553571,
+          "normalized": 73.660714,
           "weight": 0.08,
-          "contribution": 5.964286
+          "contribution": 5.892857
         },
         "defense": {
           "raw": 27.222222,
-          "normalized": 66.071429,
+          "normalized": 67.857143,
           "weight": 0.08,
-          "contribution": 5.285714
+          "contribution": 5.428571
         },
         "recent": {
-          "raw": 14.474771,
-          "normalized": 77.678571,
+          "raw": 15.280228,
+          "normalized": 75.892857,
           "weight": 0.04,
-          "contribution": 3.107143
+          "contribution": 3.035714
         }
       },
       "game_results": [
@@ -1905,8 +2009,14 @@
           "source": "mhsaa_score_center"
         }
       ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: up 4 spots to No. 53 (from No. 57). MFPI rating: unchanged at 69.8. Opponent-adjusted performance percentile 77.2; schedule-strength percentile 62.5."
+      "bye_adjustment": {
+        "previous_weight": 0.9,
+        "previous_mfpi": 69.83705357,
+        "recalculated_mfpi": 70.35044642857144,
+        "adjustment": -0.4620535727143107,
+        "reason": "Confirmed bye; no new or changed verified results."
+      },
+      "explanation": "State ranking: down 1 spot to No. 54 (from No. 53). MFPI rating: increased 0.1 points to 69.9. Opponent-adjusted performance percentile 77.2; schedule-strength percentile 64.3. Confirmed bye: MFPI retains 90% of last week's score plus 10% of this week's recalculation."
     },
     {
       "team_id": "natchez",
@@ -1914,78 +2024,78 @@
       "team": "Natchez High School",
       "classification": "5A",
       "region": "3",
-      "record": "7-2",
-      "games_played": 9,
+      "record": "7-3",
+      "games_played": 10,
       "state_rank": 61,
       "class_rank": 10,
-      "mfpi": 68.4,
-      "mfpi_unrounded": 68.41741071,
-      "previous_state_rank": 56,
-      "state_rank_change": -5,
-      "previous_class_rank": 9,
-      "class_rank_change": -1,
-      "previous_mfpi": 69.9,
-      "mfpi_change": -1.5,
-      "pf_per_game": 38.9,
-      "pa_per_game": 26.2,
+      "mfpi": 69.0,
+      "mfpi_unrounded": 69.02678571,
+      "previous_state_rank": 61,
+      "state_rank_change": 0,
+      "previous_class_rank": 10,
+      "class_rank_change": 0,
+      "previous_mfpi": 68.4,
+      "mfpi_change": 0.6,
+      "pf_per_game": 35.0,
+      "pa_per_game": 27.1,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 1,
-      "same_class_games": 5,
+      "same_class_games": 6,
       "down_games": 3,
-      "class_schedule_delta": -0.444,
+      "class_schedule_delta": -0.4,
       "schedule_direction": "Playing down",
-      "maxpreps_state_rank": 91,
-      "maxpreps_rating": 47.99,
-      "maxpreps_strength": 28.4,
+      "maxpreps_state_rank": 90,
+      "maxpreps_rating": 48.06,
+      "maxpreps_strength": 31.1,
       "components": {
         "performance": {
-          "raw": 13.458381,
-          "normalized": 76.785714,
+          "raw": 12.275085,
+          "normalized": 75.446429,
           "weight": 0.35,
-          "contribution": 26.875
+          "contribution": 26.40625
         },
         "sos": {
-          "raw": 2.86494,
-          "normalized": 59.375,
+          "raw": 5.780619,
+          "normalized": 67.857143,
           "weight": 0.2,
-          "contribution": 11.875
+          "contribution": 13.571429
         },
         "maxpreps_rank": {
-          "raw": -91.0,
-          "normalized": 66.071429,
+          "raw": -90.0,
+          "normalized": 66.517857,
           "weight": 0.1,
-          "contribution": 6.607143
+          "contribution": 6.651786
         },
         "maxpreps_sos": {
-          "raw": 28.4,
-          "normalized": 56.25,
+          "raw": 31.1,
+          "normalized": 68.080357,
           "weight": 0.1,
-          "contribution": 5.625
+          "contribution": 6.808036
         },
         "record": {
-          "raw": 0.777778,
-          "normalized": 80.133929,
+          "raw": 0.7,
+          "normalized": 71.428571,
           "weight": 0.05,
-          "contribution": 4.006696
+          "contribution": 3.571429
         },
         "offense": {
-          "raw": 38.444444,
-          "normalized": 93.75,
+          "raw": 34.6,
+          "normalized": 80.580357,
           "weight": 0.08,
-          "contribution": 7.5
+          "contribution": 6.446429
         },
         "defense": {
-          "raw": 23.333333,
-          "normalized": 43.75,
+          "raw": 22.4,
+          "normalized": 40.625,
           "weight": 0.08,
-          "contribution": 3.5
+          "contribution": 3.25
         },
         "recent": {
-          "raw": 6.154953,
-          "normalized": 60.714286,
+          "raw": 3.779893,
+          "normalized": 58.035714,
           "weight": 0.04,
-          "contribution": 2.428571
+          "contribution": 2.321429
         }
       },
       "game_results": [
@@ -2105,10 +2215,238 @@
           "calendar_date": "2026-10-30",
           "game_id": "8058631",
           "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "natchez",
+          "away": "brookhaven",
+          "home_score": 0,
+          "away_score": 35,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732444",
+          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 5 spots to No. 61 (from No. 56). MFPI rating: decreased 1.5 points to 68.4. Opponent-adjusted performance percentile 76.8; schedule-strength percentile 59.4."
+      "explanation": "State ranking: unchanged at No. 61. MFPI rating: increased 0.6 points to 69.0. Opponent-adjusted performance percentile 75.4; schedule-strength percentile 67.9."
+    },
+    {
+      "team_id": "stone",
+      "slug": "stone",
+      "team": "Stone High School",
+      "classification": "5A",
+      "region": "4",
+      "record": "6-4",
+      "games_played": 10,
+      "state_rank": 75,
+      "class_rank": 11,
+      "mfpi": 63.9,
+      "mfpi_unrounded": 63.87276786,
+      "previous_state_rank": 90,
+      "state_rank_change": 15,
+      "previous_class_rank": 15,
+      "class_rank_change": 4,
+      "previous_mfpi": 58.2,
+      "mfpi_change": 5.7,
+      "pf_per_game": 28.7,
+      "pa_per_game": 28.6,
+      "pending_games": 0,
+      "data_status": "complete",
+      "up_games": 3,
+      "same_class_games": 5,
+      "down_games": 2,
+      "class_schedule_delta": 0.1,
+      "schedule_direction": "Mostly same class",
+      "maxpreps_state_rank": 105,
+      "maxpreps_rating": 44.72,
+      "maxpreps_strength": 32.6,
+      "components": {
+        "performance": {
+          "raw": 7.560658,
+          "normalized": 64.285714,
+          "weight": 0.35,
+          "contribution": 22.5
+        },
+        "sos": {
+          "raw": 7.375998,
+          "normalized": 73.660714,
+          "weight": 0.2,
+          "contribution": 14.732143
+        },
+        "maxpreps_rank": {
+          "raw": -105.0,
+          "normalized": 59.821429,
+          "weight": 0.1,
+          "contribution": 5.982143
+        },
+        "maxpreps_sos": {
+          "raw": 32.6,
+          "normalized": 72.321429,
+          "weight": 0.1,
+          "contribution": 7.232143
+        },
+        "record": {
+          "raw": 0.6,
+          "normalized": 61.383929,
+          "weight": 0.05,
+          "contribution": 3.069196
+        },
+        "offense": {
+          "raw": 27.6,
+          "normalized": 56.25,
+          "weight": 0.08,
+          "contribution": 4.5
+        },
+        "defense": {
+          "raw": 20.4,
+          "normalized": 30.803571,
+          "weight": 0.08,
+          "contribution": 2.464286
+        },
+        "recent": {
+          "raw": 20.842536,
+          "normalized": 84.821429,
+          "weight": 0.04,
+          "contribution": 3.392857
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T19:00:00-05:00",
+          "home": "stone",
+          "away": "hancock",
+          "home_score": 50,
+          "away_score": 44,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7731617",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-04T19:00:00-05:00",
+          "home": "poplarville",
+          "away": "stone",
+          "home_score": 42,
+          "away_score": 0,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7731666",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "st-martin",
+          "away": "stone",
+          "home_score": 45,
+          "away_score": 14,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7587006",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-25T19:00:00-05:00",
+          "home": "stone",
+          "away": "george-county",
+          "home_score": 34,
+          "away_score": 21,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-25",
+          "game_id": "7614864",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-01T19:00:00-05:00",
+          "home": "stone",
+          "away": "st-stanislaus",
+          "home_score": 42,
+          "away_score": 39,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-01",
+          "game_id": "7731962",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-09T01:59:00-05:00",
+          "home": "wayne-county",
+          "away": "stone",
+          "home_score": 47,
+          "away_score": 28,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-08",
+          "game_id": "7984792",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-16T19:00:00-05:00",
+          "home": "purvis",
+          "away": "stone",
+          "home_score": 21,
+          "away_score": 14,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-16",
+          "game_id": "7732417",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-23T19:00:00-05:00",
+          "home": "stone",
+          "away": "vancleave",
+          "home_score": 59,
+          "away_score": 20,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-23",
+          "game_id": "7727869",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-30T19:00:00-05:00",
+          "home": "stone",
+          "away": "northeast-jones",
+          "home_score": 14,
+          "away_score": 7,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-30",
+          "game_id": "7661657",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "east-central",
+          "away": "stone",
+          "home_score": 0,
+          "away_score": 32,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732428",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: up 15 spots to No. 75 (from No. 90). MFPI rating: increased 5.7 points to 63.9. Opponent-adjusted performance percentile 64.3; schedule-strength percentile 73.7."
     },
     {
       "team_id": "lanier",
@@ -2116,78 +2454,78 @@
       "team": "Lanier High School",
       "classification": "5A",
       "region": "2",
-      "record": "8-2",
-      "games_played": 10,
-      "state_rank": 71,
-      "class_rank": 11,
-      "mfpi": 64.7,
-      "mfpi_unrounded": 64.67857143,
-      "previous_state_rank": 85,
-      "state_rank_change": 14,
-      "previous_class_rank": 14,
-      "class_rank_change": 3,
-      "previous_mfpi": 59.9,
-      "mfpi_change": 4.8,
-      "pf_per_game": 32.7,
-      "pa_per_game": 16.2,
+      "record": "9-2",
+      "games_played": 11,
+      "state_rank": 76,
+      "class_rank": 12,
+      "mfpi": 63.7,
+      "mfpi_unrounded": 63.73883929,
+      "previous_state_rank": 71,
+      "state_rank_change": -5,
+      "previous_class_rank": 11,
+      "class_rank_change": -1,
+      "previous_mfpi": 64.7,
+      "mfpi_change": -1.0,
+      "pf_per_game": 30.5,
+      "pa_per_game": 15.4,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 4,
-      "same_class_games": 5,
+      "same_class_games": 6,
       "down_games": 1,
-      "class_schedule_delta": 0.5,
+      "class_schedule_delta": 0.455,
       "schedule_direction": "Playing up",
-      "maxpreps_state_rank": 96,
-      "maxpreps_rating": 46.24,
-      "maxpreps_strength": 23.2,
+      "maxpreps_state_rank": 97,
+      "maxpreps_rating": 46.28,
+      "maxpreps_strength": 23.9,
       "components": {
         "performance": {
-          "raw": 10.943482,
-          "normalized": 72.321429,
+          "raw": 11.243644,
+          "normalized": 71.428571,
           "weight": 0.35,
-          "contribution": 25.3125
+          "contribution": 25.0
         },
         "sos": {
-          "raw": -3.023013,
-          "normalized": 44.196429,
+          "raw": -1.714985,
+          "normalized": 45.089286,
           "weight": 0.2,
-          "contribution": 8.839286
+          "contribution": 9.017857
         },
         "maxpreps_rank": {
-          "raw": -96.0,
-          "normalized": 63.839286,
+          "raw": -97.0,
+          "normalized": 63.392857,
           "weight": 0.1,
-          "contribution": 6.383929
+          "contribution": 6.339286
         },
         "maxpreps_sos": {
-          "raw": 23.2,
-          "normalized": 39.955357,
+          "raw": 23.9,
+          "normalized": 40.848214,
           "weight": 0.1,
-          "contribution": 3.995536
+          "contribution": 4.084821
         },
         "record": {
-          "raw": 0.8,
-          "normalized": 86.160714,
+          "raw": 0.818182,
+          "normalized": 87.723214,
           "weight": 0.05,
-          "contribution": 4.308036
+          "contribution": 4.386161
         },
         "offense": {
-          "raw": 32.5,
-          "normalized": 74.107143,
+          "raw": 30.272727,
+          "normalized": 66.517857,
           "weight": 0.08,
-          "contribution": 5.928571
+          "contribution": 5.321429
         },
         "defense": {
-          "raw": 32.8,
-          "normalized": 84.821429,
+          "raw": 33.636364,
+          "normalized": 86.830357,
           "weight": 0.08,
-          "contribution": 6.785714
+          "contribution": 6.946429
         },
         "recent": {
-          "raw": 14.48216,
-          "normalized": 78.125,
+          "raw": 10.029378,
+          "normalized": 66.071429,
           "weight": 0.04,
-          "contribution": 3.125
+          "contribution": 2.642857
         }
       },
       "game_results": [
@@ -2320,414 +2658,23 @@
           "calendar_date": "2026-10-30",
           "game_id": "7615152",
           "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: up 14 spots to No. 71 (from No. 85). MFPI rating: increased 4.8 points to 64.7. Opponent-adjusted performance percentile 72.3; schedule-strength percentile 44.2."
-    },
-    {
-      "team_id": "east-central",
-      "slug": "east-central",
-      "team": "East Central High School",
-      "classification": "5A",
-      "region": "4",
-      "record": "4-5",
-      "games_played": 9,
-      "state_rank": 81,
-      "class_rank": 12,
-      "mfpi": 60.7,
-      "mfpi_unrounded": 60.68303571,
-      "previous_state_rank": 80,
-      "state_rank_change": -1,
-      "previous_class_rank": 12,
-      "class_rank_change": 0,
-      "previous_mfpi": 60.5,
-      "mfpi_change": 0.2,
-      "pf_per_game": 23.7,
-      "pa_per_game": 24.4,
-      "pending_games": 0,
-      "data_status": "complete",
-      "up_games": 2,
-      "same_class_games": 4,
-      "down_games": 3,
-      "class_schedule_delta": 0.0,
-      "schedule_direction": "Mostly same class",
-      "maxpreps_state_rank": 116,
-      "maxpreps_rating": 42.03,
-      "maxpreps_strength": 32.1,
-      "components": {
-        "performance": {
-          "raw": 6.381552,
-          "normalized": 61.160714,
-          "weight": 0.35,
-          "contribution": 21.40625
-        },
-        "sos": {
-          "raw": 6.756824,
-          "normalized": 70.982143,
-          "weight": 0.2,
-          "contribution": 14.196429
-        },
-        "maxpreps_rank": {
-          "raw": -116.0,
-          "normalized": 55.803571,
-          "weight": 0.1,
-          "contribution": 5.580357
-        },
-        "maxpreps_sos": {
-          "raw": 32.1,
-          "normalized": 72.544643,
-          "weight": 0.1,
-          "contribution": 7.254464
-        },
-        "record": {
-          "raw": 0.444444,
-          "normalized": 44.196429,
-          "weight": 0.05,
-          "contribution": 2.209821
-        },
-        "offense": {
-          "raw": 23.0,
-          "normalized": 43.080357,
-          "weight": 0.08,
-          "contribution": 3.446429
-        },
-        "defense": {
-          "raw": 24.555556,
-          "normalized": 52.232143,
-          "weight": 0.08,
-          "contribution": 4.178571
-        },
-        "recent": {
-          "raw": 6.122956,
-          "normalized": 60.267857,
-          "weight": 0.04,
-          "contribution": 2.410714
-        }
-      },
-      "game_results": [
-        {
-          "date": "2026-08-28T19:00:00-05:00",
-          "home": "greene-county",
-          "away": "east-central",
-          "home_score": 21,
-          "away_score": 13,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7731576",
-          "source": "mhsaa_score_center"
         },
         {
-          "date": "2026-09-04T19:00:00-05:00",
-          "home": "st-martin",
-          "away": "east-central",
-          "home_score": 34,
-          "away_score": 0,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7587005",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "east-central",
-          "away": "pearl-river-central",
-          "home_score": 23,
-          "away_score": 30,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7731721",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "forrest-county-agricultural",
-          "away": "east-central",
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "vicksburg",
+          "away": "lanier",
           "home_score": 7,
-          "away_score": 19,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7731847",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-25T19:00:00-05:00",
-          "home": "east-central",
-          "away": "pass-christian",
-          "home_score": 28,
-          "away_score": 42,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-25",
-          "game_id": "7614901",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-09T01:59:00-05:00",
-          "home": "purvis",
-          "away": "east-central",
-          "home_score": 30,
-          "away_score": 55,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-08",
-          "game_id": "7984766",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-16T19:00:00-05:00",
-          "home": "east-central",
-          "away": "northeast-jones",
-          "home_score": 34,
-          "away_score": 14,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-16",
-          "game_id": "7661655",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-23T19:00:00-05:00",
-          "home": "wayne-county",
-          "away": "east-central",
-          "home_score": 35,
-          "away_score": 14,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-23",
-          "game_id": "7727859",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-30T19:00:00-05:00",
-          "home": "east-central",
-          "away": "vancleave",
-          "home_score": 27,
-          "away_score": 7,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-30",
-          "game_id": "7732457",
-          "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: down 1 spot to No. 81 (from No. 80). MFPI rating: increased 0.2 points to 60.7. Opponent-adjusted performance percentile 61.2; schedule-strength percentile 71.0."
-    },
-    {
-      "team_id": "caledonia",
-      "slug": "caledonia",
-      "team": "Caledonia High School",
-      "classification": "5A",
-      "region": "1",
-      "record": "3-6",
-      "games_played": 9,
-      "state_rank": 85,
-      "class_rank": 13,
-      "mfpi": 59.4,
-      "mfpi_unrounded": 59.38616071,
-      "previous_state_rank": 86,
-      "state_rank_change": 1,
-      "previous_class_rank": 15,
-      "class_rank_change": 2,
-      "previous_mfpi": 59.8,
-      "mfpi_change": -0.4,
-      "pf_per_game": 19.6,
-      "pa_per_game": 26.1,
-      "pending_games": 0,
-      "data_status": "complete",
-      "up_games": 0,
-      "same_class_games": 4,
-      "down_games": 4,
-      "class_schedule_delta": -0.75,
-      "schedule_direction": "Playing down",
-      "maxpreps_state_rank": 110,
-      "maxpreps_rating": 43.78,
-      "maxpreps_strength": 35.3,
-      "components": {
-        "performance": {
-          "raw": 4.938021,
-          "normalized": 58.482143,
-          "weight": 0.35,
-          "contribution": 20.46875
-        },
-        "sos": {
-          "raw": 10.50751,
-          "normalized": 79.910714,
-          "weight": 0.2,
-          "contribution": 15.982143
-        },
-        "maxpreps_rank": {
-          "raw": -110.0,
-          "normalized": 58.035714,
-          "weight": 0.1,
-          "contribution": 5.803571
-        },
-        "maxpreps_sos": {
-          "raw": 35.3,
-          "normalized": 79.464286,
-          "weight": 0.1,
-          "contribution": 7.946429
-        },
-        "record": {
-          "raw": 0.333333,
-          "normalized": 30.133929,
-          "weight": 0.05,
-          "contribution": 1.506696
-        },
-        "offense": {
-          "raw": 19.555556,
-          "normalized": 31.026786,
-          "weight": 0.08,
-          "contribution": 2.482143
-        },
-        "defense": {
-          "raw": 22.888889,
-          "normalized": 40.625,
-          "weight": 0.08,
-          "contribution": 3.25
-        },
-        "recent": {
-          "raw": 0.108053,
-          "normalized": 48.660714,
-          "weight": 0.04,
-          "contribution": 1.946429
-        }
-      },
-      "game_results": [
-        {
-          "date": "2026-08-28T18:00:00-05:00",
-          "home": "itawamba-agricultural",
-          "away": "caledonia",
-          "home_score": 42,
-          "away_score": 10,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7614620",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-04T19:00:00-05:00",
-          "home": "caledonia",
-          "away": "amory",
-          "home_score": 27,
-          "away_score": 7,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7731647",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "external-230619",
-          "away": "caledonia",
-          "home_score": 20,
-          "away_score": 31,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7614773",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "caledonia",
-          "away": "new-albany",
-          "home_score": 14,
-          "away_score": 21,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7731854",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-25T19:00:00-05:00",
-          "home": "caledonia",
-          "away": "east-webster",
-          "home_score": 24,
-          "away_score": 27,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-25",
-          "game_id": "7731775",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-09T19:00:00-05:00",
-          "home": "caledonia",
-          "away": "columbus",
-          "home_score": 27,
           "away_score": 8,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
-          "calendar_date": "2026-10-09",
-          "game_id": "7732335",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-15T19:00:00-05:00",
-          "home": "pontotoc",
-          "away": "caledonia",
-          "home_score": 41,
-          "away_score": 6,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-15",
-          "game_id": "7615023",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-23T19:00:00-05:00",
-          "home": "west-point",
-          "away": "caledonia",
-          "home_score": 41,
-          "away_score": 16,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-23",
-          "game_id": "7615086",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-30T19:00:00-05:00",
-          "home": "caledonia",
-          "away": "lafayette",
-          "home_score": 21,
-          "away_score": 28,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-30",
-          "game_id": "7615162",
+          "calendar_date": "2026-11-05",
+          "game_id": "7732440",
           "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 1 spot to No. 85 (from No. 86). MFPI rating: decreased 0.4 points to 59.4. Opponent-adjusted performance percentile 58.5; schedule-strength percentile 79.9."
+      "explanation": "State ranking: down 5 spots to No. 76 (from No. 71). MFPI rating: decreased 1.0 points to 63.7. Opponent-adjusted performance percentile 71.4; schedule-strength percentile 45.1."
     },
     {
       "team_id": "south-jones",
@@ -2735,78 +2682,78 @@
       "team": "South Jones High School",
       "classification": "5A",
       "region": "3",
-      "record": "6-4",
-      "games_played": 10,
-      "state_rank": 88,
-      "class_rank": 14,
-      "mfpi": 58.8,
-      "mfpi_unrounded": 58.82366071,
-      "previous_state_rank": 82,
-      "state_rank_change": -6,
-      "previous_class_rank": 13,
-      "class_rank_change": -1,
-      "previous_mfpi": 60.2,
-      "mfpi_change": -1.4,
-      "pf_per_game": 26.6,
-      "pa_per_game": 26.5,
+      "record": "7-4",
+      "games_played": 11,
+      "state_rank": 83,
+      "class_rank": 13,
+      "mfpi": 60.9,
+      "mfpi_unrounded": 60.87053571,
+      "previous_state_rank": 88,
+      "state_rank_change": 5,
+      "previous_class_rank": 14,
+      "class_rank_change": 1,
+      "previous_mfpi": 58.8,
+      "mfpi_change": 2.1,
+      "pf_per_game": 27.5,
+      "pa_per_game": 27.3,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 3,
-      "same_class_games": 5,
+      "same_class_games": 6,
       "down_games": 2,
-      "class_schedule_delta": -0.2,
+      "class_schedule_delta": -0.182,
       "schedule_direction": "Mostly same class",
-      "maxpreps_state_rank": 125,
-      "maxpreps_rating": 40.43,
-      "maxpreps_strength": 31.0,
+      "maxpreps_state_rank": 113,
+      "maxpreps_rating": 42.46,
+      "maxpreps_strength": 31.8,
       "components": {
         "performance": {
-          "raw": 5.519605,
-          "normalized": 60.267857,
+          "raw": 6.613584,
+          "normalized": 60.714286,
           "weight": 0.35,
-          "contribution": 21.09375
+          "contribution": 21.25
         },
         "sos": {
-          "raw": 5.007059,
-          "normalized": 65.178571,
+          "raw": 6.177156,
+          "normalized": 69.196429,
           "weight": 0.2,
-          "contribution": 13.035714
+          "contribution": 13.839286
         },
         "maxpreps_rank": {
-          "raw": -125.0,
-          "normalized": 52.678571,
+          "raw": -113.0,
+          "normalized": 56.696429,
           "weight": 0.1,
-          "contribution": 5.267857
+          "contribution": 5.669643
         },
         "maxpreps_sos": {
-          "raw": 31.0,
-          "normalized": 66.517857,
+          "raw": 31.8,
+          "normalized": 69.642857,
           "weight": 0.1,
-          "contribution": 6.651786
+          "contribution": 6.964286
         },
         "record": {
-          "raw": 0.6,
-          "normalized": 62.276786,
+          "raw": 0.636364,
+          "normalized": 64.732143,
           "weight": 0.05,
-          "contribution": 3.113839
+          "contribution": 3.236607
         },
         "offense": {
-          "raw": 26.6,
-          "normalized": 54.6875,
+          "raw": 27.545455,
+          "normalized": 55.580357,
           "weight": 0.08,
-          "contribution": 4.375
+          "contribution": 4.446429
         },
         "defense": {
-          "raw": 22.5,
-          "normalized": 38.839286,
+          "raw": 21.727273,
+          "normalized": 36.607143,
           "weight": 0.08,
-          "contribution": 3.107143
+          "contribution": 2.928571
         },
         "recent": {
-          "raw": 3.513348,
-          "normalized": 54.464286,
+          "raw": 7.901601,
+          "normalized": 63.392857,
           "weight": 0.04,
-          "contribution": 2.178571
+          "contribution": 2.535714
         }
       },
       "game_results": [
@@ -2939,629 +2886,23 @@
           "calendar_date": "2026-10-30",
           "game_id": "8058631",
           "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: down 6 spots to No. 88 (from No. 82). MFPI rating: decreased 1.4 points to 58.8. Opponent-adjusted performance percentile 60.3; schedule-strength percentile 65.2."
-    },
-    {
-      "team_id": "stone",
-      "slug": "stone",
-      "team": "Stone High School",
-      "classification": "5A",
-      "region": "4",
-      "record": "5-4",
-      "games_played": 9,
-      "state_rank": 90,
-      "class_rank": 15,
-      "mfpi": 58.2,
-      "mfpi_unrounded": 58.22767857,
-      "previous_state_rank": 95,
-      "state_rank_change": 5,
-      "previous_class_rank": 18,
-      "class_rank_change": 3,
-      "previous_mfpi": 57.1,
-      "mfpi_change": 1.1,
-      "pf_per_game": 28.3,
-      "pa_per_game": 31.8,
-      "pending_games": 0,
-      "data_status": "complete",
-      "up_games": 3,
-      "same_class_games": 4,
-      "down_games": 2,
-      "class_schedule_delta": 0.111,
-      "schedule_direction": "Mostly same class",
-      "maxpreps_state_rank": 120,
-      "maxpreps_rating": 41.31,
-      "maxpreps_strength": 32.2,
-      "components": {
-        "performance": {
-          "raw": 3.969177,
-          "normalized": 56.696429,
-          "weight": 0.35,
-          "contribution": 19.84375
-        },
-        "sos": {
-          "raw": 6.878824,
-          "normalized": 71.428571,
-          "weight": 0.2,
-          "contribution": 14.285714
-        },
-        "maxpreps_rank": {
-          "raw": -120.0,
-          "normalized": 54.017857,
-          "weight": 0.1,
-          "contribution": 5.401786
-        },
-        "maxpreps_sos": {
-          "raw": 32.2,
-          "normalized": 73.214286,
-          "weight": 0.1,
-          "contribution": 7.321429
-        },
-        "record": {
-          "raw": 0.555556,
-          "normalized": 57.142857,
-          "weight": 0.05,
-          "contribution": 2.857143
-        },
-        "offense": {
-          "raw": 27.111111,
-          "normalized": 56.696429,
-          "weight": 0.08,
-          "contribution": 4.535714
-        },
-        "defense": {
-          "raw": 17.222222,
-          "normalized": 19.196429,
-          "weight": 0.08,
-          "contribution": 1.535714
-        },
-        "recent": {
-          "raw": 6.271638,
-          "normalized": 61.160714,
-          "weight": 0.04,
-          "contribution": 2.446429
-        }
-      },
-      "game_results": [
-        {
-          "date": "2026-08-28T19:00:00-05:00",
-          "home": "stone",
-          "away": "hancock",
-          "home_score": 50,
-          "away_score": 44,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7731617",
-          "source": "mhsaa_score_center"
         },
         {
-          "date": "2026-09-04T19:00:00-05:00",
-          "home": "poplarville",
-          "away": "stone",
-          "home_score": 42,
-          "away_score": 0,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7731666",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "st-martin",
-          "away": "stone",
-          "home_score": 45,
-          "away_score": 14,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7587006",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-25T19:00:00-05:00",
-          "home": "stone",
-          "away": "george-county",
-          "home_score": 34,
-          "away_score": 21,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-25",
-          "game_id": "7614864",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-01T19:00:00-05:00",
-          "home": "stone",
-          "away": "st-stanislaus",
-          "home_score": 42,
-          "away_score": 39,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-01",
-          "game_id": "7731962",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-09T01:59:00-05:00",
-          "home": "wayne-county",
-          "away": "stone",
-          "home_score": 47,
-          "away_score": 28,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-08",
-          "game_id": "7984792",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-16T19:00:00-05:00",
-          "home": "purvis",
-          "away": "stone",
-          "home_score": 21,
-          "away_score": 14,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-16",
-          "game_id": "7732417",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-23T19:00:00-05:00",
-          "home": "stone",
-          "away": "vancleave",
-          "home_score": 59,
-          "away_score": 20,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-23",
-          "game_id": "7727869",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-30T19:00:00-05:00",
-          "home": "stone",
-          "away": "northeast-jones",
-          "home_score": 14,
-          "away_score": 7,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-30",
-          "game_id": "7661657",
-          "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: up 5 spots to No. 90 (from No. 95). MFPI rating: increased 1.1 points to 58.2. Opponent-adjusted performance percentile 56.7; schedule-strength percentile 71.4."
-    },
-    {
-      "team_id": "florence",
-      "slug": "florence",
-      "team": "Florence High School",
-      "classification": "5A",
-      "region": "2",
-      "record": "4-6",
-      "games_played": 10,
-      "state_rank": 95,
-      "class_rank": 16,
-      "mfpi": 56.5,
-      "mfpi_unrounded": 56.54241071,
-      "previous_state_rank": 91,
-      "state_rank_change": -4,
-      "previous_class_rank": 17,
-      "class_rank_change": 1,
-      "previous_mfpi": 58.7,
-      "mfpi_change": -2.2,
-      "pf_per_game": 20.8,
-      "pa_per_game": 24.7,
-      "pending_games": 0,
-      "data_status": "complete",
-      "up_games": 2,
-      "same_class_games": 5,
-      "down_games": 3,
-      "class_schedule_delta": 0.0,
-      "schedule_direction": "Mostly same class",
-      "maxpreps_state_rank": 134,
-      "maxpreps_rating": 39.23,
-      "maxpreps_strength": 31.4,
-      "components": {
-        "performance": {
-          "raw": 3.112515,
-          "normalized": 53.571429,
-          "weight": 0.35,
-          "contribution": 18.75
-        },
-        "sos": {
-          "raw": 7.390457,
-          "normalized": 75.0,
-          "weight": 0.2,
-          "contribution": 15.0
-        },
-        "maxpreps_rank": {
-          "raw": -134.0,
-          "normalized": 50.446429,
-          "weight": 0.1,
-          "contribution": 5.044643
-        },
-        "maxpreps_sos": {
-          "raw": 31.4,
-          "normalized": 68.75,
-          "weight": 0.1,
-          "contribution": 6.875
-        },
-        "record": {
-          "raw": 0.4,
-          "normalized": 38.169643,
-          "weight": 0.05,
-          "contribution": 1.908482
-        },
-        "offense": {
-          "raw": 20.8,
-          "normalized": 34.598214,
-          "weight": 0.08,
-          "contribution": 2.767857
-        },
-        "defense": {
-          "raw": 24.3,
-          "normalized": 49.776786,
-          "weight": 0.08,
-          "contribution": 3.982143
-        },
-        "recent": {
-          "raw": 3.561759,
-          "normalized": 55.357143,
-          "weight": 0.04,
-          "contribution": 2.214286
-        }
-      },
-      "game_results": [
-        {
-          "date": "2026-08-28T19:00:00-05:00",
-          "home": "richland",
-          "away": "florence",
-          "home_score": 31,
-          "away_score": 21,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7731587",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-04T18:00:00-05:00",
-          "home": "florence",
-          "away": "kosciusko",
-          "home_score": 16,
-          "away_score": 46,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7614699",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "florence",
-          "away": "pearl",
-          "home_score": 0,
-          "away_score": 21,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7586996",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "florence",
-          "away": "mendenhall",
-          "home_score": 30,
-          "away_score": 33,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7731859",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-25T19:00:00-05:00",
-          "home": "jim-hill",
-          "away": "florence",
-          "home_score": 6,
-          "away_score": 42,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-25",
-          "game_id": "7614876",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-02T19:00:00-05:00",
-          "home": "florence",
-          "away": "vicksburg",
-          "home_score": 15,
-          "away_score": 12,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-02",
-          "game_id": "7614920",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-09T19:00:00-05:00",
-          "home": "florence",
-          "away": "leake-central",
-          "home_score": 27,
-          "away_score": 30,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-09",
-          "game_id": "7614967",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-16T19:00:00-05:00",
-          "home": "cleveland-central",
-          "away": "florence",
-          "home_score": 25,
-          "away_score": 7,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-16",
-          "game_id": "7732369",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-23T19:00:00-05:00",
-          "home": "lanier",
-          "away": "florence",
-          "home_score": 14,
-          "away_score": 15,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-23",
-          "game_id": "7615099",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-30T19:00:00-05:00",
-          "home": "florence",
-          "away": "provine",
-          "home_score": 35,
-          "away_score": 29,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-30",
-          "game_id": "7615173",
-          "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: down 4 spots to No. 95 (from No. 91). MFPI rating: decreased 2.2 points to 56.5. Opponent-adjusted performance percentile 53.6; schedule-strength percentile 75.0."
-    },
-    {
-      "team_id": "vicksburg",
-      "slug": "vicksburg",
-      "team": "Vicksburg High School",
-      "classification": "5A",
-      "region": "2",
-      "record": "3-6",
-      "games_played": 9,
-      "state_rank": 98,
-      "class_rank": 17,
-      "mfpi": 55.9,
-      "mfpi_unrounded": 55.94866071,
-      "previous_state_rank": 78,
-      "state_rank_change": -20,
-      "previous_class_rank": 11,
-      "class_rank_change": -6,
-      "previous_mfpi": 61.7,
-      "mfpi_change": -5.8,
-      "pf_per_game": 17.9,
-      "pa_per_game": 22.2,
-      "pending_games": 0,
-      "data_status": "complete",
-      "up_games": 2,
-      "same_class_games": 6,
-      "down_games": 1,
-      "class_schedule_delta": 0.111,
-      "schedule_direction": "Mostly same class",
-      "maxpreps_state_rank": 138,
-      "maxpreps_rating": 38.66,
-      "maxpreps_strength": 31.3,
-      "components": {
-        "performance": {
-          "raw": 3.335373,
-          "normalized": 54.910714,
-          "weight": 0.35,
-          "contribution": 19.21875
-        },
-        "sos": {
-          "raw": 6.946237,
-          "normalized": 72.321429,
-          "weight": 0.2,
-          "contribution": 14.464286
-        },
-        "maxpreps_rank": {
-          "raw": -138.0,
-          "normalized": 49.107143,
-          "weight": 0.1,
-          "contribution": 4.910714
-        },
-        "maxpreps_sos": {
-          "raw": 31.3,
-          "normalized": 68.303571,
-          "weight": 0.1,
-          "contribution": 6.830357
-        },
-        "record": {
-          "raw": 0.333333,
-          "normalized": 30.133929,
-          "weight": 0.05,
-          "contribution": 1.506696
-        },
-        "offense": {
-          "raw": 17.888889,
-          "normalized": 25.446429,
-          "weight": 0.08,
-          "contribution": 2.035714
-        },
-        "defense": {
-          "raw": 26.777778,
-          "normalized": 64.508929,
-          "weight": 0.08,
-          "contribution": 5.160714
-        },
-        "recent": {
-          "raw": -1.731869,
-          "normalized": 45.535714,
-          "weight": 0.04,
-          "contribution": 1.821429
-        }
-      },
-      "game_results": [
-        {
-          "date": "2026-08-28T19:00:00-05:00",
-          "home": "vicksburg",
-          "away": "natchez",
-          "home_score": 14,
-          "away_score": 20,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7731620",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-04T19:00:00-05:00",
-          "home": "leake-central",
-          "away": "vicksburg",
-          "home_score": 34,
-          "away_score": 18,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7731668",
-          "source": "maxpreps_secondary"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "ridgeland",
-          "away": "vicksburg",
-          "home_score": 34,
-          "away_score": 24,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7731728",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "vicksburg",
-          "away": "warren-central",
-          "home_score": 3,
-          "away_score": 45,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7614794",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-25T19:00:00-05:00",
-          "home": "yazoo-city",
-          "away": "vicksburg",
-          "home_score": 0,
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "south-jones",
+          "away": "laurel",
+          "home_score": 37,
           "away_score": 35,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
-          "calendar_date": "2026-09-25",
-          "game_id": "7731820",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-02T19:00:00-05:00",
-          "home": "florence",
-          "away": "vicksburg",
-          "home_score": 15,
-          "away_score": 12,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-02",
-          "game_id": "7614920",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-16T19:00:00-05:00",
-          "home": "provine",
-          "away": "vicksburg",
-          "home_score": 0,
-          "away_score": 13,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-16",
-          "game_id": "7615060",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-23T19:00:00-05:00",
-          "home": "vicksburg",
-          "away": "cleveland-central",
-          "home_score": 28,
-          "away_score": 26,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-23",
-          "game_id": "7727893",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-30T19:00:00-05:00",
-          "home": "vicksburg",
-          "away": "holmes-county-central",
-          "home_score": 14,
-          "away_score": 26,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-30",
-          "game_id": "7615161",
+          "calendar_date": "2026-11-05",
+          "game_id": "7732435",
           "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 20 spots to No. 98 (from No. 78). MFPI rating: decreased 5.8 points to 55.9. Opponent-adjusted performance percentile 54.9; schedule-strength percentile 72.3."
+      "explanation": "State ranking: up 5 spots to No. 83 (from No. 88). MFPI rating: increased 2.1 points to 60.9. Opponent-adjusted performance percentile 60.7; schedule-strength percentile 69.2."
     },
     {
       "team_id": "sumrall",
@@ -3569,78 +2910,78 @@
       "team": "Sumrall High School",
       "classification": "5A",
       "region": "3",
-      "record": "5-5",
-      "games_played": 10,
-      "state_rank": 102,
-      "class_rank": 18,
-      "mfpi": 55.2,
-      "mfpi_unrounded": 55.21875,
-      "previous_state_rank": 88,
-      "state_rank_change": -14,
-      "previous_class_rank": 16,
-      "class_rank_change": -2,
-      "previous_mfpi": 59.0,
-      "mfpi_change": -3.8,
-      "pf_per_game": 27.1,
-      "pa_per_game": 31.4,
+      "record": "6-5",
+      "games_played": 11,
+      "state_rank": 84,
+      "class_rank": 14,
+      "mfpi": 60.2,
+      "mfpi_unrounded": 60.18973214,
+      "previous_state_rank": 102,
+      "state_rank_change": 18,
+      "previous_class_rank": 18,
+      "class_rank_change": 4,
+      "previous_mfpi": 55.2,
+      "mfpi_change": 5.0,
+      "pf_per_game": 28.6,
+      "pa_per_game": 29.2,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 1,
-      "same_class_games": 5,
+      "same_class_games": 6,
       "down_games": 4,
-      "class_schedule_delta": -0.8,
+      "class_schedule_delta": -0.727,
       "schedule_direction": "Playing down",
-      "maxpreps_state_rank": 133,
-      "maxpreps_rating": 39.27,
-      "maxpreps_strength": 32.3,
+      "maxpreps_state_rank": 116,
+      "maxpreps_rating": 41.95,
+      "maxpreps_strength": 32.1,
       "components": {
         "performance": {
-          "raw": 2.198474,
-          "normalized": 51.339286,
+          "raw": 5.47034,
+          "normalized": 58.928571,
           "weight": 0.35,
-          "contribution": 17.96875
+          "contribution": 20.625
         },
         "sos": {
-          "raw": 6.210008,
-          "normalized": 70.089286,
+          "raw": 6.314792,
+          "normalized": 69.642857,
           "weight": 0.2,
-          "contribution": 14.017857
+          "contribution": 13.928571
         },
         "maxpreps_rank": {
-          "raw": -133.0,
-          "normalized": 50.892857,
+          "raw": -116.0,
+          "normalized": 55.803571,
           "weight": 0.1,
-          "contribution": 5.089286
+          "contribution": 5.580357
         },
         "maxpreps_sos": {
-          "raw": 32.3,
-          "normalized": 73.883929,
+          "raw": 32.1,
+          "normalized": 70.535714,
           "weight": 0.1,
-          "contribution": 7.388393
+          "contribution": 7.053571
         },
         "record": {
-          "raw": 0.5,
-          "normalized": 50.446429,
+          "raw": 0.545455,
+          "normalized": 56.473214,
           "weight": 0.05,
-          "contribution": 2.522321
+          "contribution": 2.823661
         },
         "offense": {
-          "raw": 26.6,
-          "normalized": 54.6875,
+          "raw": 28.181818,
+          "normalized": 60.044643,
           "weight": 0.08,
-          "contribution": 4.375
+          "contribution": 4.803571
         },
         "defense": {
-          "raw": 18.8,
-          "normalized": 23.214286,
+          "raw": 20.909091,
+          "normalized": 33.035714,
           "weight": 0.08,
-          "contribution": 1.857143
+          "contribution": 2.642857
         },
         "recent": {
-          "raw": 1.22942,
-          "normalized": 50.0,
+          "raw": 12.003171,
+          "normalized": 68.303571,
           "weight": 0.04,
-          "contribution": 2.0
+          "contribution": 2.732143
         }
       },
       "game_results": [
@@ -3773,10 +3114,896 @@
           "calendar_date": "2026-10-30",
           "game_id": "7732466",
           "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "north-pike",
+          "away": "sumrall",
+          "home_score": 7,
+          "away_score": 44,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732443",
+          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 14 spots to No. 102 (from No. 88). MFPI rating: decreased 3.8 points to 55.2. Opponent-adjusted performance percentile 51.3; schedule-strength percentile 70.1."
+      "explanation": "State ranking: up 18 spots to No. 84 (from No. 102). MFPI rating: increased 5.0 points to 60.2. Opponent-adjusted performance percentile 58.9; schedule-strength percentile 69.6."
+    },
+    {
+      "team_id": "vicksburg",
+      "slug": "vicksburg",
+      "team": "Vicksburg High School",
+      "classification": "5A",
+      "region": "2",
+      "record": "3-7",
+      "games_played": 10,
+      "state_rank": 90,
+      "class_rank": 15,
+      "mfpi": 58.0,
+      "mfpi_unrounded": 58.03348214,
+      "previous_state_rank": 98,
+      "state_rank_change": 8,
+      "previous_class_rank": 17,
+      "class_rank_change": 2,
+      "previous_mfpi": 55.9,
+      "mfpi_change": 2.1,
+      "pf_per_game": 16.8,
+      "pa_per_game": 20.8,
+      "pending_games": 0,
+      "data_status": "complete",
+      "up_games": 2,
+      "same_class_games": 7,
+      "down_games": 1,
+      "class_schedule_delta": 0.1,
+      "schedule_direction": "Mostly same class",
+      "maxpreps_state_rank": 130,
+      "maxpreps_rating": 39.64,
+      "maxpreps_strength": 31.9,
+      "components": {
+        "performance": {
+          "raw": 4.439131,
+          "normalized": 56.696429,
+          "weight": 0.35,
+          "contribution": 19.84375
+        },
+        "sos": {
+          "raw": 8.020311,
+          "normalized": 75.0,
+          "weight": 0.2,
+          "contribution": 15.0
+        },
+        "maxpreps_rank": {
+          "raw": -130.0,
+          "normalized": 52.232143,
+          "weight": 0.1,
+          "contribution": 5.223214
+        },
+        "maxpreps_sos": {
+          "raw": 31.9,
+          "normalized": 70.089286,
+          "weight": 0.1,
+          "contribution": 7.008929
+        },
+        "record": {
+          "raw": 0.3,
+          "normalized": 27.008929,
+          "weight": 0.05,
+          "contribution": 1.350446
+        },
+        "offense": {
+          "raw": 16.8,
+          "normalized": 22.321429,
+          "weight": 0.08,
+          "contribution": 1.785714
+        },
+        "defense": {
+          "raw": 28.2,
+          "normalized": 71.428571,
+          "weight": 0.08,
+          "contribution": 5.714286
+        },
+        "recent": {
+          "raw": 2.105379,
+          "normalized": 52.678571,
+          "weight": 0.04,
+          "contribution": 2.107143
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T19:00:00-05:00",
+          "home": "vicksburg",
+          "away": "natchez",
+          "home_score": 14,
+          "away_score": 20,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7731620",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-04T19:00:00-05:00",
+          "home": "leake-central",
+          "away": "vicksburg",
+          "home_score": 34,
+          "away_score": 18,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7731668",
+          "source": "maxpreps_secondary"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "ridgeland",
+          "away": "vicksburg",
+          "home_score": 34,
+          "away_score": 24,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7731728",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "vicksburg",
+          "away": "warren-central",
+          "home_score": 3,
+          "away_score": 45,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7614794",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-25T19:00:00-05:00",
+          "home": "yazoo-city",
+          "away": "vicksburg",
+          "home_score": 0,
+          "away_score": 35,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-25",
+          "game_id": "7731820",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-02T19:00:00-05:00",
+          "home": "florence",
+          "away": "vicksburg",
+          "home_score": 15,
+          "away_score": 12,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-02",
+          "game_id": "7614920",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-16T19:00:00-05:00",
+          "home": "provine",
+          "away": "vicksburg",
+          "home_score": 0,
+          "away_score": 13,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-16",
+          "game_id": "7615060",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-23T19:00:00-05:00",
+          "home": "vicksburg",
+          "away": "cleveland-central",
+          "home_score": 28,
+          "away_score": 26,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-23",
+          "game_id": "7727893",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-30T19:00:00-05:00",
+          "home": "vicksburg",
+          "away": "holmes-county-central",
+          "home_score": 14,
+          "away_score": 26,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-30",
+          "game_id": "7615161",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "vicksburg",
+          "away": "lanier",
+          "home_score": 7,
+          "away_score": 8,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732440",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: up 8 spots to No. 90 (from No. 98). MFPI rating: increased 2.1 points to 58.0. Opponent-adjusted performance percentile 56.7; schedule-strength percentile 75.0."
+    },
+    {
+      "team_id": "east-central",
+      "slug": "east-central",
+      "team": "East Central High School",
+      "classification": "5A",
+      "region": "4",
+      "record": "4-6",
+      "games_played": 10,
+      "state_rank": 91,
+      "class_rank": 16,
+      "mfpi": 57.6,
+      "mfpi_unrounded": 57.578125,
+      "previous_state_rank": 81,
+      "state_rank_change": -10,
+      "previous_class_rank": 12,
+      "class_rank_change": -4,
+      "previous_mfpi": 60.7,
+      "mfpi_change": -3.1,
+      "pf_per_game": 21.3,
+      "pa_per_game": 25.2,
+      "pending_games": 0,
+      "data_status": "complete",
+      "up_games": 2,
+      "same_class_games": 5,
+      "down_games": 3,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "Mostly same class",
+      "maxpreps_state_rank": 131,
+      "maxpreps_rating": 39.62,
+      "maxpreps_strength": 32.9,
+      "components": {
+        "performance": {
+          "raw": 4.609649,
+          "normalized": 57.142857,
+          "weight": 0.35,
+          "contribution": 20.0
+        },
+        "sos": {
+          "raw": 7.804367,
+          "normalized": 74.553571,
+          "weight": 0.2,
+          "contribution": 14.910714
+        },
+        "maxpreps_rank": {
+          "raw": -131.0,
+          "normalized": 51.785714,
+          "weight": 0.1,
+          "contribution": 5.178571
+        },
+        "maxpreps_sos": {
+          "raw": 32.9,
+          "normalized": 73.660714,
+          "weight": 0.1,
+          "contribution": 7.366071
+        },
+        "record": {
+          "raw": 0.4,
+          "normalized": 39.955357,
+          "weight": 0.05,
+          "contribution": 1.997768
+        },
+        "offense": {
+          "raw": 20.7,
+          "normalized": 33.928571,
+          "weight": 0.08,
+          "contribution": 2.714286
+        },
+        "defense": {
+          "raw": 23.8,
+          "normalized": 50.0,
+          "weight": 0.08,
+          "contribution": 4.0
+        },
+        "recent": {
+          "raw": -8.239364,
+          "normalized": 35.267857,
+          "weight": 0.04,
+          "contribution": 1.410714
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T19:00:00-05:00",
+          "home": "greene-county",
+          "away": "east-central",
+          "home_score": 21,
+          "away_score": 13,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7731576",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-04T19:00:00-05:00",
+          "home": "st-martin",
+          "away": "east-central",
+          "home_score": 34,
+          "away_score": 0,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7587005",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "east-central",
+          "away": "pearl-river-central",
+          "home_score": 23,
+          "away_score": 30,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7731721",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "forrest-county-agricultural",
+          "away": "east-central",
+          "home_score": 7,
+          "away_score": 19,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7731847",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-25T19:00:00-05:00",
+          "home": "east-central",
+          "away": "pass-christian",
+          "home_score": 28,
+          "away_score": 42,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-25",
+          "game_id": "7614901",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-09T01:59:00-05:00",
+          "home": "purvis",
+          "away": "east-central",
+          "home_score": 30,
+          "away_score": 55,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-08",
+          "game_id": "7984766",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-16T19:00:00-05:00",
+          "home": "east-central",
+          "away": "northeast-jones",
+          "home_score": 34,
+          "away_score": 14,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-16",
+          "game_id": "7661655",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-23T19:00:00-05:00",
+          "home": "wayne-county",
+          "away": "east-central",
+          "home_score": 35,
+          "away_score": 14,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-23",
+          "game_id": "7727859",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-30T19:00:00-05:00",
+          "home": "east-central",
+          "away": "vancleave",
+          "home_score": 27,
+          "away_score": 7,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-30",
+          "game_id": "7732457",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "east-central",
+          "away": "stone",
+          "home_score": 0,
+          "away_score": 32,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732428",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: down 10 spots to No. 91 (from No. 81). MFPI rating: decreased 3.1 points to 57.6. Opponent-adjusted performance percentile 57.1; schedule-strength percentile 74.6."
+    },
+    {
+      "team_id": "caledonia",
+      "slug": "caledonia",
+      "team": "Caledonia High School",
+      "classification": "5A",
+      "region": "1",
+      "record": "3-7",
+      "games_played": 10,
+      "state_rank": 93,
+      "class_rank": 17,
+      "mfpi": 57.4,
+      "mfpi_unrounded": 57.39955357,
+      "previous_state_rank": 85,
+      "state_rank_change": -8,
+      "previous_class_rank": 13,
+      "class_rank_change": -4,
+      "previous_mfpi": 59.4,
+      "mfpi_change": -2.0,
+      "pf_per_game": 17.9,
+      "pa_per_game": 26.8,
+      "pending_games": 0,
+      "data_status": "complete",
+      "up_games": 0,
+      "same_class_games": 5,
+      "down_games": 4,
+      "class_schedule_delta": -0.667,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 112,
+      "maxpreps_rating": 42.47,
+      "maxpreps_strength": 36.1,
+      "components": {
+        "performance": {
+          "raw": 3.545985,
+          "normalized": 54.017857,
+          "weight": 0.35,
+          "contribution": 18.90625
+        },
+        "sos": {
+          "raw": 10.90254,
+          "normalized": 81.696429,
+          "weight": 0.2,
+          "contribution": 16.339286
+        },
+        "maxpreps_rank": {
+          "raw": -112.0,
+          "normalized": 57.142857,
+          "weight": 0.1,
+          "contribution": 5.714286
+        },
+        "maxpreps_sos": {
+          "raw": 36.1,
+          "normalized": 81.25,
+          "weight": 0.1,
+          "contribution": 8.125
+        },
+        "record": {
+          "raw": 0.3,
+          "normalized": 27.008929,
+          "weight": 0.05,
+          "contribution": 1.350446
+        },
+        "offense": {
+          "raw": 17.9,
+          "normalized": 24.776786,
+          "weight": 0.08,
+          "contribution": 1.982143
+        },
+        "defense": {
+          "raw": 22.2,
+          "normalized": 38.169643,
+          "weight": 0.08,
+          "contribution": 3.053571
+        },
+        "recent": {
+          "raw": -0.842266,
+          "normalized": 48.214286,
+          "weight": 0.04,
+          "contribution": 1.928571
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T18:00:00-05:00",
+          "home": "itawamba-agricultural",
+          "away": "caledonia",
+          "home_score": 42,
+          "away_score": 10,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7614620",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-04T19:00:00-05:00",
+          "home": "caledonia",
+          "away": "amory",
+          "home_score": 27,
+          "away_score": 7,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7731647",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "external-230619",
+          "away": "caledonia",
+          "home_score": 20,
+          "away_score": 31,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7614773",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "caledonia",
+          "away": "new-albany",
+          "home_score": 14,
+          "away_score": 21,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7731854",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-25T19:00:00-05:00",
+          "home": "caledonia",
+          "away": "east-webster",
+          "home_score": 24,
+          "away_score": 27,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-25",
+          "game_id": "7731775",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-09T19:00:00-05:00",
+          "home": "caledonia",
+          "away": "columbus",
+          "home_score": 27,
+          "away_score": 8,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-09",
+          "game_id": "7732335",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-15T19:00:00-05:00",
+          "home": "pontotoc",
+          "away": "caledonia",
+          "home_score": 41,
+          "away_score": 6,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-15",
+          "game_id": "7615023",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-23T19:00:00-05:00",
+          "home": "west-point",
+          "away": "caledonia",
+          "home_score": 41,
+          "away_score": 16,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-23",
+          "game_id": "7615086",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-30T19:00:00-05:00",
+          "home": "caledonia",
+          "away": "lafayette",
+          "home_score": 21,
+          "away_score": 28,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-30",
+          "game_id": "7615162",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "new-hope",
+          "away": "caledonia",
+          "home_score": 33,
+          "away_score": 3,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732430",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: down 8 spots to No. 93 (from No. 85). MFPI rating: decreased 2.0 points to 57.4. Opponent-adjusted performance percentile 54.0; schedule-strength percentile 81.7."
+    },
+    {
+      "team_id": "florence",
+      "slug": "florence",
+      "team": "Florence High School",
+      "classification": "5A",
+      "region": "2",
+      "record": "4-7",
+      "games_played": 11,
+      "state_rank": 100,
+      "class_rank": 18,
+      "mfpi": 54.8,
+      "mfpi_unrounded": 54.75223214,
+      "previous_state_rank": 95,
+      "state_rank_change": -5,
+      "previous_class_rank": 16,
+      "class_rank_change": -2,
+      "previous_mfpi": 56.5,
+      "mfpi_change": -1.7,
+      "pf_per_game": 20.2,
+      "pa_per_game": 24.5,
+      "pending_games": 0,
+      "data_status": "complete",
+      "up_games": 2,
+      "same_class_games": 6,
+      "down_games": 3,
+      "class_schedule_delta": 0.0,
+      "schedule_direction": "Mostly same class",
+      "maxpreps_state_rank": 137,
+      "maxpreps_rating": 37.93,
+      "maxpreps_strength": 31.1,
+      "components": {
+        "performance": {
+          "raw": 2.393063,
+          "normalized": 52.232143,
+          "weight": 0.35,
+          "contribution": 18.28125
+        },
+        "sos": {
+          "raw": 6.806737,
+          "normalized": 70.535714,
+          "weight": 0.2,
+          "contribution": 14.107143
+        },
+        "maxpreps_rank": {
+          "raw": -137.0,
+          "normalized": 49.553571,
+          "weight": 0.1,
+          "contribution": 4.955357
+        },
+        "maxpreps_sos": {
+          "raw": 31.1,
+          "normalized": 68.080357,
+          "weight": 0.1,
+          "contribution": 6.808036
+        },
+        "record": {
+          "raw": 0.363636,
+          "normalized": 34.151786,
+          "weight": 0.05,
+          "contribution": 1.707589
+        },
+        "offense": {
+          "raw": 20.181818,
+          "normalized": 32.142857,
+          "weight": 0.08,
+          "contribution": 2.571429
+        },
+        "defense": {
+          "raw": 24.545455,
+          "normalized": 55.357143,
+          "weight": 0.08,
+          "contribution": 4.428571
+        },
+        "recent": {
+          "raw": -1.047347,
+          "normalized": 47.321429,
+          "weight": 0.04,
+          "contribution": 1.892857
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T19:00:00-05:00",
+          "home": "richland",
+          "away": "florence",
+          "home_score": 31,
+          "away_score": 21,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7731587",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-04T18:00:00-05:00",
+          "home": "florence",
+          "away": "kosciusko",
+          "home_score": 16,
+          "away_score": 46,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7614699",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "florence",
+          "away": "pearl",
+          "home_score": 0,
+          "away_score": 21,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7586996",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "florence",
+          "away": "mendenhall",
+          "home_score": 30,
+          "away_score": 33,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7731859",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-25T19:00:00-05:00",
+          "home": "jim-hill",
+          "away": "florence",
+          "home_score": 6,
+          "away_score": 42,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-25",
+          "game_id": "7614876",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-02T19:00:00-05:00",
+          "home": "florence",
+          "away": "vicksburg",
+          "home_score": 15,
+          "away_score": 12,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-02",
+          "game_id": "7614920",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-09T19:00:00-05:00",
+          "home": "florence",
+          "away": "leake-central",
+          "home_score": 27,
+          "away_score": 30,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-09",
+          "game_id": "7614967",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-16T19:00:00-05:00",
+          "home": "cleveland-central",
+          "away": "florence",
+          "home_score": 25,
+          "away_score": 7,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-16",
+          "game_id": "7732369",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-23T19:00:00-05:00",
+          "home": "lanier",
+          "away": "florence",
+          "home_score": 14,
+          "away_score": 15,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-23",
+          "game_id": "7615099",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-30T19:00:00-05:00",
+          "home": "florence",
+          "away": "provine",
+          "home_score": 35,
+          "away_score": 29,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-30",
+          "game_id": "7615173",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "holmes-county-central",
+          "away": "florence",
+          "home_score": 22,
+          "away_score": 14,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732431",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: down 5 spots to No. 100 (from No. 95). MFPI rating: decreased 1.7 points to 54.8. Opponent-adjusted performance percentile 52.2; schedule-strength percentile 70.5."
     },
     {
       "team_id": "northeast-jones",
@@ -3784,78 +4011,78 @@
       "team": "Northeast Jones High School",
       "classification": "5A",
       "region": "4",
-      "record": "3-6",
-      "games_played": 9,
-      "state_rank": 114,
+      "record": "3-7",
+      "games_played": 10,
+      "state_rank": 112,
       "class_rank": 19,
-      "mfpi": 49.7,
-      "mfpi_unrounded": 49.68526786,
-      "previous_state_rank": 115,
-      "state_rank_change": 1,
+      "mfpi": 51.0,
+      "mfpi_unrounded": 50.97991071,
+      "previous_state_rank": 114,
+      "state_rank_change": 2,
       "previous_class_rank": 19,
       "class_rank_change": 0,
-      "previous_mfpi": 49.4,
-      "mfpi_change": 0.3,
-      "pf_per_game": 18.9,
-      "pa_per_game": 23.6,
+      "previous_mfpi": 49.7,
+      "mfpi_change": 1.3,
+      "pf_per_game": 18.0,
+      "pa_per_game": 24.6,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 1,
-      "same_class_games": 5,
+      "same_class_games": 6,
       "down_games": 3,
-      "class_schedule_delta": -0.333,
+      "class_schedule_delta": -0.3,
       "schedule_direction": "Playing down",
-      "maxpreps_state_rank": 152,
-      "maxpreps_rating": 35.2,
-      "maxpreps_strength": 29.7,
+      "maxpreps_state_rank": 151,
+      "maxpreps_rating": 35.12,
+      "maxpreps_strength": 30.9,
       "components": {
         "performance": {
-          "raw": -0.552771,
+          "raw": -0.314225,
           "normalized": 48.214286,
           "weight": 0.35,
           "contribution": 16.875
         },
         "sos": {
-          "raw": 3.739921,
-          "normalized": 62.053571,
+          "raw": 5.52857,
+          "normalized": 66.964286,
           "weight": 0.2,
-          "contribution": 12.410714
+          "contribution": 13.392857
         },
         "maxpreps_rank": {
-          "raw": -152.0,
+          "raw": -151.0,
           "normalized": 44.642857,
           "weight": 0.1,
           "contribution": 4.464286
         },
         "maxpreps_sos": {
-          "raw": 29.7,
-          "normalized": 61.607143,
+          "raw": 30.9,
+          "normalized": 67.1875,
           "weight": 0.1,
-          "contribution": 6.160714
+          "contribution": 6.71875
         },
         "record": {
-          "raw": 0.333333,
-          "normalized": 30.133929,
+          "raw": 0.3,
+          "normalized": 27.008929,
           "weight": 0.05,
-          "contribution": 1.506696
+          "contribution": 1.350446
         },
         "offense": {
-          "raw": 18.888889,
-          "normalized": 28.348214,
+          "raw": 18.0,
+          "normalized": 25.446429,
           "weight": 0.08,
-          "contribution": 2.267857
+          "contribution": 2.035714
         },
         "defense": {
-          "raw": 25.444444,
-          "normalized": 58.035714,
+          "raw": 24.4,
+          "normalized": 54.017857,
           "weight": 0.08,
-          "contribution": 4.642857
+          "contribution": 4.321429
         },
         "recent": {
-          "raw": -6.737695,
-          "normalized": 33.928571,
+          "raw": -3.031763,
+          "normalized": 45.535714,
           "weight": 0.04,
-          "contribution": 1.357143
+          "contribution": 1.821429
         }
       },
       "game_results": [
@@ -3975,212 +4202,23 @@
           "calendar_date": "2026-10-30",
           "game_id": "7661657",
           "source": "mhsaa_score_center"
-        }
-      ],
-      "bye_adjustment": null,
-      "explanation": "State ranking: up 1 spot to No. 114 (from No. 115). MFPI rating: increased 0.3 points to 49.7. Opponent-adjusted performance percentile 48.2; schedule-strength percentile 62.1."
-    },
-    {
-      "team_id": "north-pike",
-      "slug": "north-pike",
-      "team": "North Pike Senior High School",
-      "classification": "5A",
-      "region": "3",
-      "record": "1-8",
-      "games_played": 9,
-      "state_rank": 119,
-      "class_rank": 20,
-      "mfpi": 48.6,
-      "mfpi_unrounded": 48.55133929,
-      "previous_state_rank": 124,
-      "state_rank_change": 5,
-      "previous_class_rank": 21,
-      "class_rank_change": 1,
-      "previous_mfpi": 46.3,
-      "mfpi_change": 2.3,
-      "pf_per_game": 16.3,
-      "pa_per_game": 36.7,
-      "pending_games": 0,
-      "data_status": "complete",
-      "up_games": 2,
-      "same_class_games": 4,
-      "down_games": 3,
-      "class_schedule_delta": -0.444,
-      "schedule_direction": "Playing down",
-      "maxpreps_state_rank": 169,
-      "maxpreps_rating": 32.32,
-      "maxpreps_strength": 37.3,
-      "components": {
-        "performance": {
-          "raw": -4.196244,
-          "normalized": 41.517857,
-          "weight": 0.35,
-          "contribution": 14.53125
         },
-        "sos": {
-          "raw": 13.234721,
-          "normalized": 86.607143,
-          "weight": 0.2,
-          "contribution": 17.321429
-        },
-        "maxpreps_rank": {
-          "raw": -169.0,
-          "normalized": 37.5,
-          "weight": 0.1,
-          "contribution": 3.75
-        },
-        "maxpreps_sos": {
-          "raw": 37.3,
-          "normalized": 85.044643,
-          "weight": 0.1,
-          "contribution": 8.504464
-        },
-        "record": {
-          "raw": 0.111111,
-          "normalized": 9.598214,
-          "weight": 0.05,
-          "contribution": 0.479911
-        },
-        "offense": {
-          "raw": 16.333333,
-          "normalized": 20.089286,
-          "weight": 0.08,
-          "contribution": 1.607143
-        },
-        "defense": {
-          "raw": 12.777778,
-          "normalized": 8.482143,
-          "weight": 0.08,
-          "contribution": 0.678571
-        },
-        "recent": {
-          "raw": -2.676797,
-          "normalized": 41.964286,
-          "weight": 0.04,
-          "contribution": 1.678571
-        }
-      },
-      "game_results": [
         {
-          "date": "2026-08-28T18:00:00-05:00",
-          "home": "north-pike",
-          "away": "franklin",
-          "home_score": 17,
-          "away_score": 12,
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "wayne-county",
+          "away": "northeast-jones",
+          "home_score": 34,
+          "away_score": 10,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
-          "calendar_date": "2026-08-28",
-          "game_id": "7614665",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-04T19:00:00-05:00",
-          "home": "wesson",
-          "away": "north-pike",
-          "home_score": 29,
-          "away_score": 14,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-04",
-          "game_id": "7731674",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-11T19:00:00-05:00",
-          "home": "terry",
-          "away": "north-pike",
-          "home_score": 44,
-          "away_score": 14,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-11",
-          "game_id": "7614782",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-18T19:00:00-05:00",
-          "home": "north-pike",
-          "away": "west-jones",
-          "home_score": 13,
-          "away_score": 35,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-18",
-          "game_id": "7614811",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-09-25T19:00:00-05:00",
-          "home": "north-pike",
-          "away": "columbia",
-          "home_score": 7,
-          "away_score": 34,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-09-25",
-          "game_id": "7614896",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-09T01:59:00-05:00",
-          "home": "north-pike",
-          "away": "natchez",
-          "home_score": 30,
-          "away_score": 53,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-08",
-          "game_id": "7984780",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-16T19:00:00-05:00",
-          "home": "south-jones",
-          "away": "north-pike",
-          "home_score": 31,
-          "away_score": 24,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-16",
-          "game_id": "7615041",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-23T19:00:00-05:00",
-          "home": "laurel",
-          "away": "north-pike",
-          "home_score": 49,
-          "away_score": 21,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-23",
-          "game_id": "7727856",
-          "source": "mhsaa_score_center"
-        },
-        {
-          "date": "2026-10-30T19:00:00-05:00",
-          "home": "brookhaven",
-          "away": "north-pike",
-          "home_score": 43,
-          "away_score": 7,
-          "neutral": false,
-          "overtime": false,
-          "forfeit": false,
-          "calendar_date": "2026-10-30",
-          "game_id": "7732464",
+          "calendar_date": "2026-11-05",
+          "game_id": "7661658",
           "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 5 spots to No. 119 (from No. 124). MFPI rating: increased 2.3 points to 48.6. Opponent-adjusted performance percentile 41.5; schedule-strength percentile 86.6."
+      "explanation": "State ranking: up 2 spots to No. 112 (from No. 114). MFPI rating: increased 1.3 points to 51.0. Opponent-adjusted performance percentile 48.2; schedule-strength percentile 67.0."
     },
     {
       "team_id": "purvis",
@@ -4188,78 +4226,78 @@
       "team": "Purvis High School",
       "classification": "5A",
       "region": "4",
-      "record": "3-6",
-      "games_played": 9,
-      "state_rank": 123,
-      "class_rank": 21,
-      "mfpi": 46.5,
-      "mfpi_unrounded": 46.51116071,
-      "previous_state_rank": 116,
-      "state_rank_change": -7,
-      "previous_class_rank": 20,
-      "class_rank_change": -1,
-      "previous_mfpi": 49.3,
-      "mfpi_change": -2.8,
-      "pf_per_game": 18.9,
-      "pa_per_game": 27.0,
+      "record": "4-6",
+      "games_played": 10,
+      "state_rank": 113,
+      "class_rank": 20,
+      "mfpi": 50.8,
+      "mfpi_unrounded": 50.81919643,
+      "previous_state_rank": 123,
+      "state_rank_change": 10,
+      "previous_class_rank": 21,
+      "class_rank_change": 1,
+      "previous_mfpi": 46.5,
+      "mfpi_change": 4.3,
+      "pf_per_game": 21.6,
+      "pa_per_game": 25.3,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 1,
-      "same_class_games": 5,
+      "same_class_games": 6,
       "down_games": 3,
-      "class_schedule_delta": -0.556,
+      "class_schedule_delta": -0.5,
       "schedule_direction": "Playing down",
-      "maxpreps_state_rank": 154,
-      "maxpreps_rating": 35.01,
-      "maxpreps_strength": 29.2,
+      "maxpreps_state_rank": 139,
+      "maxpreps_rating": 37.83,
+      "maxpreps_strength": 29.1,
       "components": {
         "performance": {
-          "raw": -3.549884,
-          "normalized": 42.857143,
+          "raw": 0.225342,
+          "normalized": 48.660714,
           "weight": 0.35,
-          "contribution": 15.0
+          "contribution": 17.03125
         },
         "sos": {
-          "raw": 3.206725,
-          "normalized": 60.714286,
+          "raw": 3.286525,
+          "normalized": 56.696429,
           "weight": 0.2,
-          "contribution": 12.142857
+          "contribution": 11.339286
         },
         "maxpreps_rank": {
-          "raw": -154.0,
-          "normalized": 43.75,
+          "raw": -139.0,
+          "normalized": 48.660714,
           "weight": 0.1,
-          "contribution": 4.375
+          "contribution": 4.866071
         },
         "maxpreps_sos": {
-          "raw": 29.2,
-          "normalized": 58.258929,
+          "raw": 29.1,
+          "normalized": 56.026786,
           "weight": 0.1,
-          "contribution": 5.825893
+          "contribution": 5.602679
         },
         "record": {
-          "raw": 0.333333,
-          "normalized": 30.133929,
+          "raw": 0.4,
+          "normalized": 39.955357,
           "weight": 0.05,
-          "contribution": 1.506696
+          "contribution": 1.997768
         },
         "offense": {
-          "raw": 18.888889,
-          "normalized": 28.348214,
+          "raw": 21.6,
+          "normalized": 36.607143,
           "weight": 0.08,
-          "contribution": 2.267857
+          "contribution": 2.928571
         },
         "defense": {
-          "raw": 23.333333,
-          "normalized": 43.75,
+          "raw": 24.9,
+          "normalized": 56.696429,
           "weight": 0.08,
-          "contribution": 3.5
+          "contribution": 4.535714
         },
         "recent": {
-          "raw": -0.747126,
-          "normalized": 47.321429,
+          "raw": 7.840868,
+          "normalized": 62.946429,
           "weight": 0.04,
-          "contribution": 1.892857
+          "contribution": 2.517857
         }
       },
       "game_results": [
@@ -4379,10 +4417,23 @@
           "calendar_date": "2026-10-30",
           "game_id": "7732449",
           "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "vancleave",
+          "away": "purvis",
+          "home_score": 10,
+          "away_score": 46,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732433",
+          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 7 spots to No. 123 (from No. 116). MFPI rating: decreased 2.8 points to 46.5. Opponent-adjusted performance percentile 42.9; schedule-strength percentile 60.7."
+      "explanation": "State ranking: up 10 spots to No. 113 (from No. 123). MFPI rating: increased 4.3 points to 50.8. Opponent-adjusted performance percentile 48.7; schedule-strength percentile 56.7."
     },
     {
       "team_id": "holmes-county-central",
@@ -4390,78 +4441,78 @@
       "team": "Holmes County Central High School",
       "classification": "5A",
       "region": "2",
-      "record": "4-6",
-      "games_played": 10,
-      "state_rank": 126,
-      "class_rank": 22,
-      "mfpi": 45.7,
-      "mfpi_unrounded": 45.68526786,
-      "previous_state_rank": 139,
-      "state_rank_change": 13,
-      "previous_class_rank": 23,
+      "record": "5-6",
+      "games_played": 11,
+      "state_rank": 115,
+      "class_rank": 21,
+      "mfpi": 50.0,
+      "mfpi_unrounded": 50.00223214,
+      "previous_state_rank": 126,
+      "state_rank_change": 11,
+      "previous_class_rank": 22,
       "class_rank_change": 1,
-      "previous_mfpi": 40.2,
-      "mfpi_change": 5.5,
-      "pf_per_game": 22.9,
-      "pa_per_game": 35.2,
+      "previous_mfpi": 45.7,
+      "mfpi_change": 4.3,
+      "pf_per_game": 22.8,
+      "pa_per_game": 33.3,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 3,
-      "same_class_games": 5,
+      "same_class_games": 6,
       "down_games": 2,
-      "class_schedule_delta": 0.3,
+      "class_schedule_delta": 0.273,
       "schedule_direction": "Playing up",
-      "maxpreps_state_rank": 159,
-      "maxpreps_rating": 33.95,
-      "maxpreps_strength": 29.4,
+      "maxpreps_state_rank": 148,
+      "maxpreps_rating": 36.47,
+      "maxpreps_strength": 30.0,
       "components": {
         "performance": {
-          "raw": -4.677709,
-          "normalized": 39.732143,
+          "raw": -2.491274,
+          "normalized": 44.642857,
           "weight": 0.35,
-          "contribution": 13.90625
+          "contribution": 15.625
         },
         "sos": {
-          "raw": 5.228513,
-          "normalized": 66.071429,
+          "raw": 6.03115,
+          "normalized": 68.303571,
           "weight": 0.2,
-          "contribution": 13.214286
+          "contribution": 13.660714
         },
         "maxpreps_rank": {
-          "raw": -159.0,
-          "normalized": 41.517857,
+          "raw": -148.0,
+          "normalized": 45.982143,
           "weight": 0.1,
-          "contribution": 4.151786
+          "contribution": 4.598214
         },
         "maxpreps_sos": {
-          "raw": 29.4,
-          "normalized": 60.044643,
+          "raw": 30.0,
+          "normalized": 62.5,
           "weight": 0.1,
-          "contribution": 6.004464
+          "contribution": 6.25
         },
         "record": {
-          "raw": 0.4,
-          "normalized": 38.169643,
+          "raw": 0.454545,
+          "normalized": 46.651786,
           "weight": 0.05,
-          "contribution": 1.908482
+          "contribution": 2.332589
         },
         "offense": {
-          "raw": 22.9,
-          "normalized": 42.410714,
+          "raw": 22.818182,
+          "normalized": 42.857143,
           "weight": 0.08,
-          "contribution": 3.392857
+          "contribution": 3.428571
         },
         "defense": {
-          "raw": 15.0,
-          "normalized": 13.392857,
+          "raw": 16.818182,
+          "normalized": 19.196429,
           "weight": 0.08,
-          "contribution": 1.071429
+          "contribution": 1.535714
         },
         "recent": {
-          "raw": 2.142632,
-          "normalized": 50.892857,
+          "raw": 8.303422,
+          "normalized": 64.285714,
           "weight": 0.04,
-          "contribution": 2.035714
+          "contribution": 2.571429
         }
       },
       "game_results": [
@@ -4594,212 +4645,238 @@
           "calendar_date": "2026-10-30",
           "game_id": "7615161",
           "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "holmes-county-central",
+          "away": "florence",
+          "home_score": 22,
+          "away_score": 14,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732431",
+          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 13 spots to No. 126 (from No. 139). MFPI rating: increased 5.5 points to 45.7. Opponent-adjusted performance percentile 39.7; schedule-strength percentile 66.1."
+      "explanation": "State ranking: up 11 spots to No. 115 (from No. 126). MFPI rating: increased 4.3 points to 50.0. Opponent-adjusted performance percentile 44.6; schedule-strength percentile 68.3."
     },
     {
-      "team_id": "columbus",
-      "slug": "columbus",
-      "team": "Columbus High School",
+      "team_id": "north-pike",
+      "slug": "north-pike",
+      "team": "North Pike Senior High School",
       "classification": "5A",
-      "region": "1",
-      "record": "0-9",
-      "games_played": 9,
-      "state_rank": 134,
-      "class_rank": 23,
-      "mfpi": 41.9,
-      "mfpi_unrounded": 41.93303571,
-      "previous_state_rank": 133,
-      "state_rank_change": -1,
-      "previous_class_rank": 22,
-      "class_rank_change": -1,
-      "previous_mfpi": 41.5,
-      "mfpi_change": 0.4,
-      "pf_per_game": 8.3,
-      "pa_per_game": 42.6,
+      "region": "3",
+      "record": "1-9",
+      "games_played": 10,
+      "state_rank": 126,
+      "class_rank": 22,
+      "mfpi": 44.9,
+      "mfpi_unrounded": 44.92410714,
+      "previous_state_rank": 119,
+      "state_rank_change": -7,
+      "previous_class_rank": 20,
+      "class_rank_change": -2,
+      "previous_mfpi": 48.6,
+      "mfpi_change": -3.7,
+      "pf_per_game": 15.4,
+      "pa_per_game": 37.4,
       "pending_games": 0,
       "data_status": "complete",
-      "up_games": 4,
-      "same_class_games": 4,
-      "down_games": 1,
-      "class_schedule_delta": 0.556,
-      "schedule_direction": "Playing up",
-      "maxpreps_state_rank": 218,
-      "maxpreps_rating": 20.71,
-      "maxpreps_strength": 41.0,
+      "up_games": 2,
+      "same_class_games": 5,
+      "down_games": 3,
+      "class_schedule_delta": -0.4,
+      "schedule_direction": "Playing down",
+      "maxpreps_state_rank": 177,
+      "maxpreps_rating": 30.37,
+      "maxpreps_strength": 37.1,
       "components": {
         "performance": {
-          "raw": -9.44429,
-          "normalized": 29.017857,
+          "raw": -6.036536,
+          "normalized": 36.160714,
           "weight": 0.35,
-          "contribution": 10.15625
+          "contribution": 12.65625
         },
         "sos": {
-          "raw": 17.60451,
-          "normalized": 93.75,
+          "raw": 12.778152,
+          "normalized": 84.821429,
           "weight": 0.2,
-          "contribution": 18.75
+          "contribution": 16.964286
         },
         "maxpreps_rank": {
-          "raw": -218.0,
-          "normalized": 19.642857,
+          "raw": -177.0,
+          "normalized": 34.821429,
           "weight": 0.1,
-          "contribution": 1.964286
+          "contribution": 3.482143
         },
         "maxpreps_sos": {
-          "raw": 41.0,
-          "normalized": 91.964286,
+          "raw": 37.1,
+          "normalized": 83.928571,
           "weight": 0.1,
-          "contribution": 9.196429
+          "contribution": 8.392857
         },
         "record": {
-          "raw": 0.0,
-          "normalized": 2.678571,
+          "raw": 0.1,
+          "normalized": 8.928571,
           "weight": 0.05,
-          "contribution": 0.133929
+          "contribution": 0.446429
         },
         "offense": {
-          "raw": 8.333333,
-          "normalized": 5.357143,
+          "raw": 15.4,
+          "normalized": 17.857143,
           "weight": 0.08,
-          "contribution": 0.428571
+          "contribution": 1.428571
         },
         "defense": {
-          "raw": 6.555556,
-          "normalized": 0.0,
+          "raw": 12.0,
+          "normalized": 7.589286,
           "weight": 0.08,
-          "contribution": 0.0
+          "contribution": 0.607143
         },
         "recent": {
-          "raw": -8.015773,
-          "normalized": 32.589286,
+          "raw": -13.369999,
+          "normalized": 23.660714,
           "weight": 0.04,
-          "contribution": 1.303571
+          "contribution": 0.946429
         }
       },
       "game_results": [
         {
-          "date": "2026-08-28T19:00:00-05:00",
-          "home": "columbus",
-          "away": "houston",
-          "home_score": 12,
-          "away_score": 46,
+          "date": "2026-08-28T18:00:00-05:00",
+          "home": "north-pike",
+          "away": "franklin",
+          "home_score": 17,
+          "away_score": 12,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
           "calendar_date": "2026-08-28",
-          "game_id": "7731597",
+          "game_id": "7614665",
           "source": "mhsaa_score_center"
         },
         {
           "date": "2026-09-04T19:00:00-05:00",
-          "home": "southaven",
-          "away": "columbus",
-          "home_score": 41,
-          "away_score": 0,
+          "home": "wesson",
+          "away": "north-pike",
+          "home_score": 29,
+          "away_score": 14,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
           "calendar_date": "2026-09-04",
-          "game_id": "7731667",
+          "game_id": "7731674",
           "source": "mhsaa_score_center"
         },
         {
           "date": "2026-09-11T19:00:00-05:00",
-          "home": "lake-cormorant",
-          "away": "columbus",
-          "home_score": 42,
-          "away_score": 6,
+          "home": "terry",
+          "away": "north-pike",
+          "home_score": 44,
+          "away_score": 14,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
           "calendar_date": "2026-09-11",
-          "game_id": "7731737",
+          "game_id": "7614782",
           "source": "mhsaa_score_center"
         },
         {
           "date": "2026-09-18T19:00:00-05:00",
-          "home": "meridian",
-          "away": "columbus",
-          "home_score": 50,
-          "away_score": 9,
+          "home": "north-pike",
+          "away": "west-jones",
+          "home_score": 13,
+          "away_score": 35,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
           "calendar_date": "2026-09-18",
-          "game_id": "7586906",
+          "game_id": "7614811",
           "source": "mhsaa_score_center"
         },
         {
           "date": "2026-09-25T19:00:00-05:00",
-          "home": "columbus",
-          "away": "neshoba-central",
-          "home_score": 14,
-          "away_score": 42,
+          "home": "north-pike",
+          "away": "columbia",
+          "home_score": 7,
+          "away_score": 34,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
           "calendar_date": "2026-09-25",
-          "game_id": "7731797",
+          "game_id": "7614896",
           "source": "mhsaa_score_center"
         },
         {
-          "date": "2026-10-09T19:00:00-05:00",
-          "home": "caledonia",
-          "away": "columbus",
-          "home_score": 27,
-          "away_score": 8,
+          "date": "2026-10-09T01:59:00-05:00",
+          "home": "north-pike",
+          "away": "natchez",
+          "home_score": 30,
+          "away_score": 53,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
-          "calendar_date": "2026-10-09",
-          "game_id": "7732335",
+          "calendar_date": "2026-10-08",
+          "game_id": "7984780",
           "source": "mhsaa_score_center"
         },
         {
           "date": "2026-10-16T19:00:00-05:00",
-          "home": "columbus",
-          "away": "new-hope",
-          "home_score": 14,
-          "away_score": 41,
+          "home": "south-jones",
+          "away": "north-pike",
+          "home_score": 31,
+          "away_score": 24,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
           "calendar_date": "2026-10-16",
-          "game_id": "7732395",
+          "game_id": "7615041",
           "source": "mhsaa_score_center"
         },
         {
           "date": "2026-10-23T19:00:00-05:00",
-          "home": "columbus",
-          "away": "lafayette",
-          "home_score": 12,
-          "away_score": 45,
+          "home": "laurel",
+          "away": "north-pike",
+          "home_score": 49,
+          "away_score": 21,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
           "calendar_date": "2026-10-23",
-          "game_id": "7615117",
-          "source": "maxpreps_secondary"
+          "game_id": "7727856",
+          "source": "mhsaa_score_center"
         },
         {
           "date": "2026-10-30T19:00:00-05:00",
-          "home": "pontotoc",
-          "away": "columbus",
-          "home_score": 49,
-          "away_score": 0,
+          "home": "brookhaven",
+          "away": "north-pike",
+          "home_score": 43,
+          "away_score": 7,
           "neutral": false,
           "overtime": false,
           "forfeit": false,
           "calendar_date": "2026-10-30",
-          "game_id": "7615166",
+          "game_id": "7732464",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "north-pike",
+          "away": "sumrall",
+          "home_score": 7,
+          "away_score": 44,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732443",
           "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: down 1 spot to No. 134 (from No. 133). MFPI rating: increased 0.4 points to 41.9. Opponent-adjusted performance percentile 29.0; schedule-strength percentile 93.8."
+      "explanation": "State ranking: down 7 spots to No. 126 (from No. 119). MFPI rating: decreased 3.7 points to 44.9. Opponent-adjusted performance percentile 36.2; schedule-strength percentile 84.8."
     },
     {
       "team_id": "provine",
@@ -4807,78 +4884,78 @@
       "team": "Provine High School",
       "classification": "5A",
       "region": "2",
-      "record": "3-7",
-      "games_played": 10,
-      "state_rank": 136,
-      "class_rank": 24,
-      "mfpi": 41.3,
-      "mfpi_unrounded": 41.29910714,
-      "previous_state_rank": 140,
-      "state_rank_change": 4,
+      "record": "3-8",
+      "games_played": 11,
+      "state_rank": 131,
+      "class_rank": 23,
+      "mfpi": 42.3,
+      "mfpi_unrounded": 42.27901786,
+      "previous_state_rank": 136,
+      "state_rank_change": 5,
       "previous_class_rank": 24,
-      "class_rank_change": 0,
-      "previous_mfpi": 40.1,
-      "mfpi_change": 1.2,
-      "pf_per_game": 13.1,
-      "pa_per_game": 21.7,
+      "class_rank_change": 1,
+      "previous_mfpi": 41.3,
+      "mfpi_change": 1.0,
+      "pf_per_game": 12.5,
+      "pa_per_game": 23.4,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 4,
-      "same_class_games": 5,
+      "same_class_games": 6,
       "down_games": 1,
-      "class_schedule_delta": 0.4,
+      "class_schedule_delta": 0.364,
       "schedule_direction": "Playing up",
-      "maxpreps_state_rank": 191,
-      "maxpreps_rating": 27.77,
-      "maxpreps_strength": 27.1,
+      "maxpreps_state_rank": 189,
+      "maxpreps_rating": 27.84,
+      "maxpreps_strength": 28.5,
       "components": {
         "performance": {
-          "raw": -5.565076,
-          "normalized": 36.607143,
+          "raw": -5.430919,
+          "normalized": 38.392857,
           "weight": 0.35,
-          "contribution": 12.8125
+          "contribution": 13.4375
         },
         "sos": {
-          "raw": 2.023407,
-          "normalized": 56.25,
+          "raw": 3.848314,
+          "normalized": 58.928571,
           "weight": 0.2,
-          "contribution": 11.25
+          "contribution": 11.785714
         },
         "maxpreps_rank": {
-          "raw": -191.0,
-          "normalized": 29.017857,
+          "raw": -189.0,
+          "normalized": 30.803571,
           "weight": 0.1,
-          "contribution": 2.901786
+          "contribution": 3.080357
         },
         "maxpreps_sos": {
-          "raw": 27.1,
-          "normalized": 50.892857,
+          "raw": 28.5,
+          "normalized": 54.017857,
           "weight": 0.1,
-          "contribution": 5.089286
+          "contribution": 5.401786
         },
         "record": {
-          "raw": 0.3,
-          "normalized": 22.767857,
+          "raw": 0.272727,
+          "normalized": 20.758929,
           "weight": 0.05,
-          "contribution": 1.138393
+          "contribution": 1.037946
         },
         "offense": {
-          "raw": 13.1,
-          "normalized": 15.178571,
+          "raw": 12.454545,
+          "normalized": 13.839286,
           "weight": 0.08,
-          "contribution": 1.214286
+          "contribution": 1.107143
         },
         "defense": {
-          "raw": 27.3,
-          "normalized": 66.741071,
+          "raw": 25.636364,
+          "normalized": 59.821429,
           "weight": 0.08,
-          "contribution": 5.339286
+          "contribution": 4.785714
         },
         "recent": {
-          "raw": -4.43306,
-          "normalized": 38.839286,
+          "raw": -5.922978,
+          "normalized": 41.071429,
           "weight": 0.04,
-          "contribution": 1.553571
+          "contribution": 1.642857
         }
       },
       "game_results": [
@@ -5011,10 +5088,238 @@
           "calendar_date": "2026-10-30",
           "game_id": "7615173",
           "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "cleveland-central",
+          "away": "provine",
+          "home_score": 40,
+          "away_score": 6,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "8079725",
+          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 4 spots to No. 136 (from No. 140). MFPI rating: increased 1.2 points to 41.3. Opponent-adjusted performance percentile 36.6; schedule-strength percentile 56.2."
+      "explanation": "State ranking: up 5 spots to No. 131 (from No. 136). MFPI rating: increased 1.0 points to 42.3. Opponent-adjusted performance percentile 38.4; schedule-strength percentile 58.9."
+    },
+    {
+      "team_id": "columbus",
+      "slug": "columbus",
+      "team": "Columbus High School",
+      "classification": "5A",
+      "region": "1",
+      "record": "0-10",
+      "games_played": 10,
+      "state_rank": 134,
+      "class_rank": 24,
+      "mfpi": 41.2,
+      "mfpi_unrounded": 41.20982143,
+      "previous_state_rank": 134,
+      "state_rank_change": 0,
+      "previous_class_rank": 23,
+      "class_rank_change": -1,
+      "previous_mfpi": 41.9,
+      "mfpi_change": -0.7,
+      "pf_per_game": 9.5,
+      "pa_per_game": 43.0,
+      "pending_games": 0,
+      "data_status": "complete",
+      "up_games": 4,
+      "same_class_games": 5,
+      "down_games": 1,
+      "class_schedule_delta": 0.5,
+      "schedule_direction": "Playing up",
+      "maxpreps_state_rank": 216,
+      "maxpreps_rating": 21.35,
+      "maxpreps_strength": 41.0,
+      "components": {
+        "performance": {
+          "raw": -10.331172,
+          "normalized": 27.678571,
+          "weight": 0.35,
+          "contribution": 9.6875
+        },
+        "sos": {
+          "raw": 16.574128,
+          "normalized": 92.410714,
+          "weight": 0.2,
+          "contribution": 18.482143
+        },
+        "maxpreps_rank": {
+          "raw": -216.0,
+          "normalized": 20.535714,
+          "weight": 0.1,
+          "contribution": 2.053571
+        },
+        "maxpreps_sos": {
+          "raw": 41.0,
+          "normalized": 91.741071,
+          "weight": 0.1,
+          "contribution": 9.174107
+        },
+        "record": {
+          "raw": 0.0,
+          "normalized": 2.678571,
+          "weight": 0.05,
+          "contribution": 0.133929
+        },
+        "offense": {
+          "raw": 9.5,
+          "normalized": 7.589286,
+          "weight": 0.08,
+          "contribution": 0.607143
+        },
+        "defense": {
+          "raw": 6.1,
+          "normalized": 0.0,
+          "weight": 0.08,
+          "contribution": 0.0
+        },
+        "recent": {
+          "raw": -11.794768,
+          "normalized": 26.785714,
+          "weight": 0.04,
+          "contribution": 1.071429
+        }
+      },
+      "game_results": [
+        {
+          "date": "2026-08-28T19:00:00-05:00",
+          "home": "columbus",
+          "away": "houston",
+          "home_score": 12,
+          "away_score": 46,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-08-28",
+          "game_id": "7731597",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-04T19:00:00-05:00",
+          "home": "southaven",
+          "away": "columbus",
+          "home_score": 41,
+          "away_score": 0,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-04",
+          "game_id": "7731667",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-11T19:00:00-05:00",
+          "home": "lake-cormorant",
+          "away": "columbus",
+          "home_score": 42,
+          "away_score": 6,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-11",
+          "game_id": "7731737",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-18T19:00:00-05:00",
+          "home": "meridian",
+          "away": "columbus",
+          "home_score": 50,
+          "away_score": 9,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-18",
+          "game_id": "7586906",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-09-25T19:00:00-05:00",
+          "home": "columbus",
+          "away": "neshoba-central",
+          "home_score": 14,
+          "away_score": 42,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-09-25",
+          "game_id": "7731797",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-09T19:00:00-05:00",
+          "home": "caledonia",
+          "away": "columbus",
+          "home_score": 27,
+          "away_score": 8,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-09",
+          "game_id": "7732335",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-16T19:00:00-05:00",
+          "home": "columbus",
+          "away": "new-hope",
+          "home_score": 14,
+          "away_score": 41,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-16",
+          "game_id": "7732395",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-10-23T19:00:00-05:00",
+          "home": "columbus",
+          "away": "lafayette",
+          "home_score": 12,
+          "away_score": 45,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-23",
+          "game_id": "7615117",
+          "source": "maxpreps_secondary"
+        },
+        {
+          "date": "2026-10-30T19:00:00-05:00",
+          "home": "pontotoc",
+          "away": "columbus",
+          "home_score": 49,
+          "away_score": 0,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-10-30",
+          "game_id": "7615166",
+          "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "columbus",
+          "away": "west-point",
+          "home_score": 20,
+          "away_score": 47,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7731967",
+          "source": "mhsaa_score_center"
+        }
+      ],
+      "bye_adjustment": null,
+      "explanation": "State ranking: unchanged at No. 134. MFPI rating: decreased 0.7 points to 41.2. Opponent-adjusted performance percentile 27.7; schedule-strength percentile 92.4."
     },
     {
       "team_id": "vancleave",
@@ -5022,78 +5327,78 @@
       "team": "Vancleave High School",
       "classification": "5A",
       "region": "4",
-      "record": "2-7",
-      "games_played": 9,
-      "state_rank": 150,
+      "record": "2-8",
+      "games_played": 10,
+      "state_rank": 156,
       "class_rank": 25,
-      "mfpi": 38.3,
-      "mfpi_unrounded": 38.33258929,
-      "previous_state_rank": 151,
-      "state_rank_change": 1,
+      "mfpi": 36.3,
+      "mfpi_unrounded": 36.27678571,
+      "previous_state_rank": 150,
+      "state_rank_change": -6,
       "previous_class_rank": 25,
       "class_rank_change": 0,
-      "previous_mfpi": 38.4,
-      "mfpi_change": -0.1,
-      "pf_per_game": 23.6,
-      "pa_per_game": 41.0,
+      "previous_mfpi": 38.3,
+      "mfpi_change": -2.0,
+      "pf_per_game": 22.2,
+      "pa_per_game": 41.5,
       "pending_games": 0,
       "data_status": "complete",
       "up_games": 1,
-      "same_class_games": 4,
+      "same_class_games": 5,
       "down_games": 4,
-      "class_schedule_delta": -0.222,
+      "class_schedule_delta": -0.2,
       "schedule_direction": "Mostly same class",
-      "maxpreps_state_rank": 186,
-      "maxpreps_rating": 28.85,
-      "maxpreps_strength": 29.8,
+      "maxpreps_state_rank": 194,
+      "maxpreps_rating": 27.03,
+      "maxpreps_strength": 30.0,
       "components": {
         "performance": {
-          "raw": -9.146417,
-          "normalized": 29.910714,
+          "raw": -10.584013,
+          "normalized": 27.232143,
           "weight": 0.35,
-          "contribution": 10.46875
+          "contribution": 9.53125
         },
         "sos": {
-          "raw": 4.461316,
-          "normalized": 64.285714,
+          "raw": 4.749226,
+          "normalized": 64.732143,
           "weight": 0.2,
-          "contribution": 12.857143
+          "contribution": 12.946429
         },
         "maxpreps_rank": {
-          "raw": -186.0,
-          "normalized": 30.803571,
+          "raw": -194.0,
+          "normalized": 28.571429,
           "weight": 0.1,
-          "contribution": 3.080357
+          "contribution": 2.857143
         },
         "maxpreps_sos": {
-          "raw": 29.8,
-          "normalized": 63.169643,
+          "raw": 30.0,
+          "normalized": 62.5,
           "weight": 0.1,
-          "contribution": 6.316964
+          "contribution": 6.25
         },
         "record": {
-          "raw": 0.222222,
-          "normalized": 17.1875,
+          "raw": 0.2,
+          "normalized": 15.625,
           "weight": 0.05,
-          "contribution": 0.859375
+          "contribution": 0.78125
         },
         "offense": {
-          "raw": 23.555556,
-          "normalized": 45.089286,
+          "raw": 22.2,
+          "normalized": 39.955357,
           "weight": 0.08,
-          "contribution": 3.607143
+          "contribution": 3.196429
         },
         "defense": {
-          "raw": 9.888889,
-          "normalized": 4.017857,
+          "raw": 9.2,
+          "normalized": 2.232143,
           "weight": 0.08,
-          "contribution": 0.321429
+          "contribution": 0.178571
         },
         "recent": {
-          "raw": -16.835077,
-          "normalized": 20.535714,
+          "raw": -22.684831,
+          "normalized": 13.392857,
           "weight": 0.04,
-          "contribution": 0.821429
+          "contribution": 0.535714
         }
       },
       "game_results": [
@@ -5213,10 +5518,23 @@
           "calendar_date": "2026-10-30",
           "game_id": "7732457",
           "source": "mhsaa_score_center"
+        },
+        {
+          "date": "2026-11-05T19:00:00-06:00",
+          "home": "vancleave",
+          "away": "purvis",
+          "home_score": 10,
+          "away_score": 46,
+          "neutral": false,
+          "overtime": false,
+          "forfeit": false,
+          "calendar_date": "2026-11-05",
+          "game_id": "7732433",
+          "source": "mhsaa_score_center"
         }
       ],
       "bye_adjustment": null,
-      "explanation": "State ranking: up 1 spot to No. 150 (from No. 151). MFPI rating: decreased 0.1 points to 38.3. Opponent-adjusted performance percentile 29.9; schedule-strength percentile 64.3."
+      "explanation": "State ranking: down 6 spots to No. 156 (from No. 150). MFPI rating: decreased 2.0 points to 36.3. Opponent-adjusted performance percentile 27.2; schedule-strength percentile 64.7."
     }
   ]
 }

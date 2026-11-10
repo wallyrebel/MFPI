@@ -1,9 +1,9 @@
 {
   "valid": false,
-  "expected_games": 1110,
-  "verified_games": 1087,
+  "expected_games": 1209,
+  "verified_games": 1186,
   "missing_games": 23,
-  "coverage_percentage": 97.93,
+  "coverage_percentage": 98.1,
   "issues": [
     {
       "code": "REVIEWED_IDENTITY_APPLIED",
@@ -143,6 +143,14 @@
             "home_source_id": "260769",
             "away": "Jefferson County",
             "away_source_id": "242816"
+          },
+          {
+            "game_id": "8073623",
+            "date": "2026-11-06T17:00:00-08:00",
+            "home": "Union",
+            "home_source_id": "244919",
+            "away": "Franklin County",
+            "away_source_id": "260769"
           }
         ]
       }
@@ -249,6 +257,120 @@
             "home_source_id": "260771",
             "away": "Clinton",
             "away_source_id": "241737"
+          },
+          {
+            "game_id": "7586797",
+            "date": "2026-11-05T17:00:00-08:00",
+            "home": "Murrah",
+            "home_source_id": "242796",
+            "away": "Germantown",
+            "away_source_id": "260771"
+          }
+        ]
+      }
+    },
+    {
+      "code": "MULTIPLE_SOURCE_IDS_FOR_TEAM",
+      "severity": "WARNING",
+      "message": "Hernando High School matched 2 different source team IDs by name.",
+      "context": {
+        "team_id": "hernando",
+        "source_ids": {
+          "241881": [
+            "Hernando | Hernando"
+          ],
+          "258433": [
+            "Hernando | Brooksville"
+          ]
+        },
+        "games": [
+          {
+            "game_id": "7586829",
+            "date": "2026-08-28T17:00:00-07:00",
+            "home": "Hernando",
+            "home_source_id": "241881",
+            "away": "Overton",
+            "away_source_id": "253176"
+          },
+          {
+            "game_id": "7586830",
+            "date": "2026-09-04T17:00:00-07:00",
+            "home": "Hernando",
+            "home_source_id": "241881",
+            "away": "Ridgeway",
+            "away_source_id": "253177"
+          },
+          {
+            "game_id": "7586831",
+            "date": "2026-09-11T17:00:00-07:00",
+            "home": "Kosciusko",
+            "home_source_id": "242997",
+            "away": "Hernando",
+            "away_source_id": "241881"
+          },
+          {
+            "game_id": "7586838",
+            "date": "2026-09-18T17:00:00-07:00",
+            "home": "Center Hill",
+            "home_source_id": "241876",
+            "away": "Hernando",
+            "away_source_id": "241881"
+          },
+          {
+            "game_id": "7586832",
+            "date": "2026-09-25T17:00:00-07:00",
+            "home": "Hernando",
+            "home_source_id": "241881",
+            "away": "Lafayette",
+            "away_source_id": "243008"
+          },
+          {
+            "game_id": "7586833",
+            "date": "2026-10-02T17:00:00-07:00",
+            "home": "Hernando",
+            "home_source_id": "241881",
+            "away": "Horn Lake",
+            "away_source_id": "241884"
+          },
+          {
+            "game_id": "7586834",
+            "date": "2026-10-15T17:00:00-07:00",
+            "home": "Tupelo",
+            "home_source_id": "244902",
+            "away": "Hernando",
+            "away_source_id": "241881"
+          },
+          {
+            "game_id": "7586835",
+            "date": "2026-10-23T17:00:00-07:00",
+            "home": "Hernando",
+            "home_source_id": "241881",
+            "away": "Lewisburg",
+            "away_source_id": "260813"
+          },
+          {
+            "game_id": "7586776",
+            "date": "2026-10-30T17:00:00-07:00",
+            "home": "DeSoto Central",
+            "home_source_id": "241879",
+            "away": "Hernando",
+            "away_source_id": "241881"
+          },
+          {
+            "game_id": "7586836",
+            "date": "2026-11-05T17:00:00-08:00",
+            "home": "Southaven",
+            "home_source_id": "241890",
+            "away": "Hernando",
+            "away_source_id": "241881"
+          },
+          {
+            "game_id": "7731968",
+            "date": "2026-11-06T17:00:00-08:00",
+            "home": "Southaven",
+            "home_source_id": "241890",
+            "away": "Hernando",
+            "away_source_id": "258433"
           }
         ]
       }
@@ -355,6 +477,14 @@
             "home_source_id": "260788",
             "away": "Mooreville",
             "away_source_id": "243133"
+          },
+          {
+            "game_id": "8073595",
+            "date": "2026-11-06T17:00:00-08:00",
+            "home": "Houston",
+            "home_source_id": "260788",
+            "away": "Greenwood",
+            "away_source_id": "242456"
           }
         ]
       }
@@ -1037,6 +1167,44 @@
       }
     },
     {
+      "code": "STALE_RESCHEDULED_LISTING",
+      "severity": "WARNING",
+      "message": "Excluded stale MHSAA listing 7731968; official final 7586836 is independently corroborated.",
+      "context": {
+        "mhsaa_game_id": "7731968",
+        "maxpreps_game_id": "a1b56353-17cc-49cc-bcd3-61d8cdba681c",
+        "original_date": "2026-11-06T17:00:00-08:00",
+        "maxpreps_date": "2026-11-05T19:00:00-06:00",
+        "home_team_id": "southaven",
+        "away_team_id": "hernando",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/hernando-vs-southaven/11-5-2026/?c=a1b56353-17cc-49cc-bcd3-61d8cdba681c"
+        ],
+        "retained_mhsaa_game_id": "7586836",
+        "home_score": 14,
+        "away_score": 31
+      }
+    },
+    {
+      "code": "STALE_RESCHEDULED_LISTING",
+      "severity": "WARNING",
+      "message": "Excluded stale MHSAA listing 7731969; official final 8079725 is independently corroborated.",
+      "context": {
+        "mhsaa_game_id": "7731969",
+        "maxpreps_game_id": "97b73ad7-dec3-40d1-9adc-3ef2059e67e4",
+        "original_date": "2026-11-06T17:00:00-08:00",
+        "maxpreps_date": "2026-11-05T19:00:00-06:00",
+        "home_team_id": "cleveland-central",
+        "away_team_id": "provine",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/cleveland-central-vs-provine-jackson/11-5-2026/?c=97b73ad7-dec3-40d1-9adc-3ef2059e67e4"
+        ],
+        "retained_mhsaa_game_id": "8079725",
+        "home_score": 40,
+        "away_score": 6
+      }
+    },
+    {
       "code": "MAXPREPS_SECONDARY_RESULTS_USED",
       "severity": "WARNING",
       "message": "Used exact secondary matchup evidence for 20 MHSAA listings without official finals.",
@@ -1624,6 +1792,34 @@
     {
       "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
       "severity": "WARNING",
+      "message": "Imported final 8073660 disagrees with secondary event 823feb00-0b52-442f-b98a-48e389f72b00; primary result retained.",
+      "context": {
+        "secondary_game_id": "823feb00-0b52-442f-b98a-48e389f72b00",
+        "date": "2026-11-06",
+        "home": "smithville",
+        "away": "vardaman",
+        "home_url": "https://www.maxpreps.com/ms/smithville/smithville-seminoles/football/",
+        "away_url": "https://www.maxpreps.com/ms/vardaman/vardaman-rams/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/smithville-vs-vardaman/11-6-2026/?c=823feb00-0b52-442f-b98a-48e389f72b00"
+        ],
+        "observed_from_team_ids": [
+          "smithville",
+          "vardaman"
+        ],
+        "status": "COMPLETED",
+        "home_score": 21,
+        "away_score": 29,
+        "primary_game_id": "8073660",
+        "primary_scores": {
+          "smithville": 21,
+          "vardaman": 27
+        }
+      }
+    },
+    {
+      "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
+      "severity": "WARNING",
       "message": "Imported final 7586990 disagrees with secondary event 82bf8375-12da-429b-b9e9-4ff3c8a02072; primary result retained.",
       "context": {
         "secondary_game_id": "82bf8375-12da-429b-b9e9-4ff3c8a02072",
@@ -1982,6 +2178,34 @@
     {
       "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
       "severity": "WARNING",
+      "message": "Imported final 8073663 disagrees with secondary event eaad9bb8-bce5-412b-8c6b-463b9c385141; primary result retained.",
+      "context": {
+        "secondary_game_id": "eaad9bb8-bce5-412b-8c6b-463b9c385141",
+        "date": "2026-11-06",
+        "home": "south-delta",
+        "away": "resurrection",
+        "home_url": "https://www.maxpreps.com/ms/rolling-fork/south-delta-bulldogs/football/",
+        "away_url": "https://www.maxpreps.com/ms/pascagoula/resurrection-catholic-eagles/football/",
+        "source_urls": [
+          "https://www.maxpreps.com/ms/football/game/resurrection-catholic-pascagoula-vs-south-delta-rolling-fork/11-6-2026/?c=eaad9bb8-bce5-412b-8c6b-463b9c385141"
+        ],
+        "observed_from_team_ids": [
+          "resurrection",
+          "south-delta"
+        ],
+        "status": "COMPLETED",
+        "home_score": 50,
+        "away_score": 6,
+        "primary_game_id": "8073663",
+        "primary_scores": {
+          "south-delta": 52,
+          "resurrection": 6
+        }
+      }
+    },
+    {
+      "code": "PRIMARY_SECONDARY_SCORE_DISAGREEMENT",
+      "severity": "WARNING",
       "message": "Imported final 7614839 disagrees with secondary event ec2fa393-c991-464d-9b23-5c940df62e8d; primary result retained.",
       "context": {
         "secondary_game_id": "ec2fa393-c991-464d-9b23-5c940df62e8d",
@@ -2008,6 +2232,17 @@
       }
     },
     {
+      "code": "QUARANTINED_DUPLICATE_MATCHUP",
+      "severity": "WARNING",
+      "message": "Counted one of 2 identical listings for ('2026-11-06', 'northside', 'walnut').",
+      "context": {
+        "game_ids": [
+          "8073639",
+          "8083867"
+        ]
+      }
+    },
+    {
       "code": "TEAM_DOUBLE_BOOKED",
       "severity": "WARNING",
       "message": "wesson is credited with 2 completed games on 2026-10-23; one may belong to a same-named school.",
@@ -2023,7 +2258,7 @@
     {
       "code": "UNVERIFIED_GAMES_REMAIN",
       "severity": "WARNING",
-      "message": "Published coverage is 97.9%, with 23 unresolved game listings retained.",
+      "message": "Published coverage is 98.1%, with 23 unresolved game listings retained.",
       "context": {
         "missing_game_ids": [
           "7731608",
@@ -2070,18 +2305,13 @@
           },
           {
             "severity": "INFO",
-            "code": "RATING_TIE",
-            "count": 2
-          },
-          {
-            "severity": "INFO",
             "code": "SCHEDULE_GAP",
             "count": 1
           },
           {
             "severity": "INFO",
             "code": "UNUSUAL_SCORE",
-            "count": 32
+            "count": 34
           },
           {
             "severity": "WARNING",
