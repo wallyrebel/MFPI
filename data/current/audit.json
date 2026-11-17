@@ -1,18 +1,18 @@
 {
   "snapshot": "pre-publication",
   "season": 2026,
-  "week": 11,
+  "week": 12,
   "status": "PUBLISHED",
   "formula_version": "MFPI-3.2",
-  "generated_at": "2026-11-10T17:10:58.281790+00:00",
-  "cutoff_at": "2026-11-10T11:00:00-06:00",
-  "audited_at": "2026-11-10T17:13:35.736808+00:00",
+  "generated_at": "2026-11-17T17:12:09.484096+00:00",
+  "cutoff_at": "2026-11-17T11:00:00-06:00",
+  "audited_at": "2026-11-17T17:14:44.278552+00:00",
   "outcome": "PASS_WITH_WARNINGS",
   "teams": 225,
-  "unique_games": 1186,
+  "unique_games": 1242,
   "blocking": 0,
   "warnings": 2,
-  "info": 68,
+  "info": 85,
   "issue_counts": [
     {
       "severity": "INFO",
@@ -26,13 +26,18 @@
     },
     {
       "severity": "INFO",
-      "code": "SCHEDULE_GAP",
+      "code": "RATING_TIE",
       "count": 1
     },
     {
       "severity": "INFO",
+      "code": "SCHEDULE_GAP",
+      "count": 13
+    },
+    {
+      "severity": "INFO",
       "code": "UNUSUAL_SCORE",
-      "count": 34
+      "count": 38
     },
     {
       "severity": "WARNING",
@@ -57,15 +62,15 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Hernando High School game on 2026-09-11 finished 60-58; flagged for a source check only.",
-      "team_id": "hernando",
+      "message": "Noxubee County High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
+      "team_id": "noxubee-county",
       "context": {}
     },
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Noxubee County High School game on 2026-10-02 finished 62-0; flagged for a source check only.",
-      "team_id": "noxubee-county",
+      "message": "Hernando High School game on 2026-09-11 finished 60-58; flagged for a source check only.",
+      "team_id": "hernando",
       "context": {}
     },
     {
@@ -87,6 +92,13 @@
       "severity": "INFO",
       "message": "Senatobia High School game on 2026-10-01 finished 64-0; flagged for a source check only.",
       "team_id": "senatobia",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Wayne County High School game on 2026-11-13 finished 69-56; flagged for a source check only.",
+      "team_id": "wayne-county",
       "context": {}
     },
     {
@@ -125,8 +137,22 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
+      "message": "Sumrall High School game on 2026-11-13 finished 69-56; flagged for a source check only.",
+      "team_id": "sumrall",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
       "message": "Perry Central High School game on 2026-10-29 finished 2-63; flagged for a source check only.",
       "team_id": "perry-central",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
+      "message": "Leflore County High School game on 2026-11-13 finished 76-0; flagged for a source check only.",
+      "team_id": "leflore-county",
       "context": {}
     },
     {
@@ -167,15 +193,15 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "North Pontotoc High School game on 2026-10-16 finished 70-6; flagged for a source check only.",
-      "team_id": "north-pontotoc",
+      "message": "Velma Jackson High School game on 2026-09-25 finished 74-46; flagged for a source check only.",
+      "team_id": "velma-jackson",
       "context": {}
     },
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
-      "message": "Velma Jackson High School game on 2026-09-25 finished 74-46; flagged for a source check only.",
-      "team_id": "velma-jackson",
+      "message": "North Pontotoc High School game on 2026-10-16 finished 70-6; flagged for a source check only.",
+      "team_id": "north-pontotoc",
       "context": {}
     },
     {
@@ -272,6 +298,13 @@
     {
       "code": "UNUSUAL_SCORE",
       "severity": "INFO",
+      "message": "Vardaman High School game on 2026-11-13 finished 76-0; flagged for a source check only.",
+      "team_id": "vardaman",
+      "context": {}
+    },
+    {
+      "code": "UNUSUAL_SCORE",
+      "severity": "INFO",
       "message": "West Bolivar High School game on 2026-10-16 finished 70-6; flagged for a source check only.",
       "team_id": "west-bolivar",
       "context": {}
@@ -328,15 +361,15 @@
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "Brookhaven High School has 2 listing(s) awaiting a verified result.",
-      "team_id": "brookhaven",
+      "message": "South Panola High School has 1 listing(s) awaiting a verified result.",
+      "team_id": "south-panola",
       "context": {}
     },
     {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
-      "message": "South Panola High School has 1 listing(s) awaiting a verified result.",
-      "team_id": "south-panola",
+      "message": "Brookhaven High School has 2 listing(s) awaiting a verified result.",
+      "team_id": "brookhaven",
       "context": {}
     },
     {
@@ -375,6 +408,13 @@
       "context": {}
     },
     {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Itawamba Agricultural High School has 9 verified games against a statewide median of 11.",
+      "team_id": "itawamba-agricultural",
+      "context": {}
+    },
+    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
       "message": "Itawamba Agricultural High School has 1 listing(s) awaiting a verified result.",
@@ -393,6 +433,13 @@
       "severity": "INFO",
       "message": "New Albany High School has 1 listing(s) awaiting a verified result.",
       "team_id": "new-albany",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Southaven High School has 9 verified games against a statewide median of 11.",
+      "team_id": "southaven",
       "context": {}
     },
     {
@@ -440,7 +487,7 @@
     {
       "code": "SCHEDULE_GAP",
       "severity": "INFO",
-      "message": "Wilkinson County High has 8 verified games against a statewide median of 10.",
+      "message": "Wilkinson County High has 8 verified games against a statewide median of 11.",
       "team_id": "wilkinson-county",
       "context": {}
     },
@@ -452,10 +499,24 @@
       "context": {}
     },
     {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Lawrence County High School has 9 verified games against a statewide median of 11.",
+      "team_id": "lawrence-county",
+      "context": {}
+    },
+    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
       "message": "Bay Springs High School has 2 listing(s) awaiting a verified result.",
       "team_id": "bay-springs",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Yazoo City High School has 9 verified games against a statewide median of 11.",
+      "team_id": "yazoo-city",
       "context": {}
     },
     {
@@ -480,6 +541,13 @@
       "context": {}
     },
     {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Nettleton High School has 9 verified games against a statewide median of 11.",
+      "team_id": "nettleton",
+      "context": {}
+    },
+    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
       "message": "Belmont School has 1 listing(s) awaiting a verified result.",
@@ -491,6 +559,20 @@
       "severity": "INFO",
       "message": "West Tallahatchie High School has 1 listing(s) awaiting a verified result.",
       "team_id": "west-tallahatchie",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "McAdams Attendance Center has 9 verified games against a statewide median of 11.",
+      "team_id": "mcadams",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "St. Patrick has 9 verified games against a statewide median of 11.",
+      "team_id": "st-patrick",
       "context": {}
     },
     {
@@ -508,6 +590,13 @@
       "context": {}
     },
     {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Humphreys County High School has 9 verified games against a statewide median of 11.",
+      "team_id": "humphreys-county",
+      "context": {}
+    },
+    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
       "message": "Humphreys County High School has 1 listing(s) awaiting a verified result.",
@@ -522,10 +611,24 @@
       "context": {}
     },
     {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Crystal Springs High School has 9 verified games against a statewide median of 11.",
+      "team_id": "crystal-springs",
+      "context": {}
+    },
+    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
       "message": "Salem Attendance Center has 1 listing(s) awaiting a verified result.",
       "team_id": "salem",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "Byhalia High School (9-12) has 9 verified games against a statewide median of 11.",
+      "team_id": "byhalia",
       "context": {}
     },
     {
@@ -536,10 +639,31 @@
       "context": {}
     },
     {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "West Lowndes High School has 9 verified games against a statewide median of 11.",
+      "team_id": "west-lowndes",
+      "context": {}
+    },
+    {
+      "code": "SCHEDULE_GAP",
+      "severity": "INFO",
+      "message": "H. W. Byers High School (5-12) has 9 verified games against a statewide median of 11.",
+      "team_id": "byers",
+      "context": {}
+    },
+    {
       "code": "PENDING_RESULTS",
       "severity": "INFO",
       "message": "Ashland Middle-High School has 1 listing(s) awaiting a verified result.",
       "team_id": "ashland",
+      "context": {}
+    },
+    {
+      "code": "RATING_TIE",
+      "severity": "INFO",
+      "message": "Starkville High School and Diberville Senior High Sch share a full-precision rating; tie-breakers decided the order.",
+      "team_id": "diberville",
       "context": {}
     }
   ]

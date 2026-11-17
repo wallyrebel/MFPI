@@ -1,0 +1,250 @@
+{
+  "slug": "2026-week-12-risers-and-fallers",
+  "kind": "risers-and-fallers",
+  "title": "Week 12 risers and fallers in the MFPI",
+  "dek": "The largest statewide rank moves this week, with the verified results and rating changes behind each one.",
+  "status": "published",
+  "season": 2026,
+  "week": 12,
+  "snapshot_run_id": "2026-week-12-20261117T171209484096Z",
+  "snapshot_generated_at": "2026-11-17T17:12:09.484096+00:00",
+  "formula_version": "MFPI-3.2",
+  "draft_generated_at": "2026-11-17T17:14:45.235293+00:00",
+  "author": "MFPI automated analysis",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "published_at": "2026-11-17T11:14:45-06:00",
+  "review_notes": "",
+  "sources": [
+    {
+      "label": "MHSAA official score center (schedules and scores)",
+      "url": "https://scores.misshsaa.com/"
+    },
+    {
+      "label": "MHSAA 2025-27 football classifications and regions",
+      "url": "https://www.misshsaa.com/2024/11/19/2025-27-football-regions/"
+    },
+    {
+      "label": "Statewide media rankings used for the Media Rank inputs",
+      "url": "https://www.maxpreps.com/ms/football/rankings/1/"
+    },
+    {
+      "label": "MFPI Week 12 rankings archive",
+      "url": "/archive/2026/week-12"
+    },
+    {
+      "label": "MFPI methodology",
+      "url": "/methodology"
+    }
+  ],
+  "limitations": [
+    "Movement is only shown against a comparable previous snapshot; teams without one are NEW.",
+    "Large moves in the middle of the table often reflect tightly bunched ratings rather than dramatic results."
+  ],
+  "sections": [
+    {
+      "heading": "How to read these moves",
+      "paragraphs": [
+        "Rank movement is last week's statewide rank minus this week's. Rating change is this week's displayed MFPI minus last week's. They are separate facts: in the middle of the table, where ratings are close together, a small rating change can move a team many places, and a team can hold its place while its rating changes.",
+        "Both compare the Week 12 snapshot with the latest audited Week 11 snapshot (formula MFPI-3.2)."
+      ]
+    },
+    {
+      "heading": "Biggest risers",
+      "paragraphs": [
+        "[[choctaw-county]] (3A, 5-6): State ranking: up 12 spots to No. 44 (from No. 56). MFPI rating: increased 5.9 points to 75.3. In the window it beat [[edwards]] (currently No. 91) 42-8 on the road on Nov 13.",
+        "[[south-delta]] (1A, 8-3): State ranking: up 12 spots to No. 137 (from No. 149). MFPI rating: increased 2.3 points to 40.7. In the window it beat [[bogue-chitto]] (currently No. 199) 60-14 on the road on Nov 13.",
+        "[[west-jones]] (6A, 9-3): State ranking: up 11 spots to No. 40 (from No. 51). MFPI rating: increased 4.3 points to 75.7. In the window it beat [[gautier]] (currently No. 55) 42-12 at home on Nov 13.",
+        "[[simmons]] (1A, 9-1): State ranking: up 10 spots to No. 98 (from No. 108). MFPI rating: increased 3.3 points to 55.8. In the window it beat [[noxapater]] (currently No. 168) 38-0 at home on Nov 13.",
+        "[[northside]] (2A, 9-2): State ranking: up 10 spots to No. 108 (from No. 118). MFPI rating: increased 3.0 points to 52.5. In the window it beat [[myrtle]] (currently No. 127) 34-8 on the road on Nov 13.",
+        "[[mendenhall]] (4A, 10-2): State ranking: up 7 spots to No. 33 (from No. 40). MFPI rating: increased 3.9 points to 78.5. In the window it beat [[mccomb]] (currently No. 35) 41-16 at home on Nov 13.",
+        "[[cleveland-central]] (5A, 8-3): State ranking: up 7 spots to No. 43 (from No. 50). MFPI rating: increased 3.6 points to 75.4. In the window it beat [[pontotoc]] (currently No. 20) 22-16 on the road on Nov 13.",
+        "[[pearl]] (7A, 2-9): State ranking: up 7 spots to No. 58 (from No. 65). MFPI rating: increased 1.8 points to 69.0. It had no verified result in the window; the move comes from other teams' results and re-solved opponent ratings."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[choctaw-county]]",
+            "44",
+            "56",
+            "+12",
+            "75.3",
+            "+5.9"
+          ],
+          [
+            "[[south-delta]]",
+            "137",
+            "149",
+            "+12",
+            "40.7",
+            "+2.3"
+          ],
+          [
+            "[[west-jones]]",
+            "40",
+            "51",
+            "+11",
+            "75.7",
+            "+4.3"
+          ],
+          [
+            "[[simmons]]",
+            "98",
+            "108",
+            "+10",
+            "55.8",
+            "+3.3"
+          ],
+          [
+            "[[northside]]",
+            "108",
+            "118",
+            "+10",
+            "52.5",
+            "+3.0"
+          ],
+          [
+            "[[mendenhall]]",
+            "33",
+            "40",
+            "+7",
+            "78.5",
+            "+3.9"
+          ],
+          [
+            "[[cleveland-central]]",
+            "43",
+            "50",
+            "+7",
+            "75.4",
+            "+3.6"
+          ],
+          [
+            "[[pearl]]",
+            "58",
+            "65",
+            "+7",
+            "69.0",
+            "+1.8"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Biggest fallers",
+      "paragraphs": [
+        "[[obannon]] (3A, 9-2): State ranking: down 13 spots to No. 150 (from No. 137). MFPI rating: decreased 2.7 points to 38.0. In the window it lost to [[aberdeen]] (currently No. 115) 12-32 on the road on Nov 13.",
+        "[[raleigh]] (3A, 6-4): State ranking: down 10 spots to No. 68 (from No. 58). MFPI rating: decreased 1.5 points to 67.6. It had no verified result in the window; the move comes from other teams' results and re-solved opponent ratings.",
+        "[[edwards]] (3A, 10-1): State ranking: down 10 spots to No. 91 (from No. 81). MFPI rating: decreased 4.2 points to 57.6. In the window it lost to [[choctaw-county]] (currently No. 44) 8-42 at home on Nov 13.",
+        "[[gautier]] (6A, 6-5): State ranking: down 8 spots to No. 55 (from No. 47). MFPI rating: decreased 2.6 points to 70.0. In the window it lost to [[west-jones]] (currently No. 40) 12-42 on the road on Nov 13.",
+        "[[jefferson-davis-county]] (3A, 3-8): State ranking: down 8 spots to No. 122 (from No. 114). MFPI rating: decreased 3.8 points to 46.2. In the window it lost to [[franklin]] (currently No. 97) 27-61 at home on Nov 13.",
+        "[[columbia]] (4A, 7-5): State ranking: down 7 spots to No. 46 (from No. 39). MFPI rating: decreased 1.3 points to 74.4. In the window it lost to [[pass-christian]] (currently No. 39) 28-35 on the road on Nov 13.",
+        "[[stone]] (5A, 6-5): State ranking: down 7 spots to No. 82 (from No. 75). MFPI rating: decreased 2.8 points to 61.1. In the window it lost to [[laurel]] (currently No. 49) 27-42 at home on Nov 13.",
+        "[[myrtle]] (2A, 8-2): State ranking: down 7 spots to No. 127 (from No. 120). MFPI rating: decreased 2.1 points to 45.3. In the window it lost to [[northside]] (currently No. 108) 8-34 at home on Nov 13."
+      ],
+      "table": {
+        "columns": [
+          "Team",
+          "Now",
+          "Before",
+          "Rank move",
+          "MFPI",
+          "Rating change"
+        ],
+        "rows": [
+          [
+            "[[obannon]]",
+            "150",
+            "137",
+            "-13",
+            "38.0",
+            "-2.7"
+          ],
+          [
+            "[[raleigh]]",
+            "68",
+            "58",
+            "-10",
+            "67.6",
+            "-1.5"
+          ],
+          [
+            "[[edwards]]",
+            "91",
+            "81",
+            "-10",
+            "57.6",
+            "-4.2"
+          ],
+          [
+            "[[gautier]]",
+            "55",
+            "47",
+            "-8",
+            "70.0",
+            "-2.6"
+          ],
+          [
+            "[[jefferson-davis-county]]",
+            "122",
+            "114",
+            "-8",
+            "46.2",
+            "-3.8"
+          ],
+          [
+            "[[columbia]]",
+            "46",
+            "39",
+            "-7",
+            "74.4",
+            "-1.3"
+          ],
+          [
+            "[[stone]]",
+            "82",
+            "75",
+            "-7",
+            "61.1",
+            "-2.8"
+          ],
+          [
+            "[[myrtle]]",
+            "127",
+            "120",
+            "-7",
+            "45.3",
+            "-2.1"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Rank and rating moving separately",
+      "paragraphs": [
+        "Held their rank while the rating changed by at least a point: [[mount-olive]] (No. 220, -1.0).",
+        "Moved in the ranking with an unchanged displayed rating: [[picayune]] (-1 to No. 25); [[pass-christian]] (-1 to No. 39); [[jefferson-county]] (+1 to No. 164); [[taylorsville]] (+1 to No. 204)."
+      ]
+    },
+    {
+      "heading": "Data notes and limitations",
+      "paragraphs": [
+        "Snapshot generated November 17, 2026 at 11:12 AM Central with a cutoff of November 17 at 11:00 AM Central, formula MFPI-3.2.",
+        "1242 of 1265 game listings due by the cutoff had verified scores (98.2%); the rest count as unavailable, never as losses or 0-0 results.",
+        "[[wesson]] is credited with two games on Oct 23. One listing may belong to a same-named school; it is under review and affects that team and its opponents.",
+        "Opponent ranks in this article are the opponent's rank in this snapshot, not its rank on the day the game was played, unless a sentence says otherwise."
+      ]
+    }
+  ],
+  "publication_mode": "automated",
+  "approved_by": "Jon Ross Myers",
+  "updated_at": null
+}

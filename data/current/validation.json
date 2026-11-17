@@ -1,9 +1,9 @@
 {
   "valid": false,
-  "expected_games": 1209,
-  "verified_games": 1186,
+  "expected_games": 1265,
+  "verified_games": 1242,
   "missing_games": 23,
-  "coverage_percentage": 98.1,
+  "coverage_percentage": 98.18,
   "issues": [
     {
       "code": "REVIEWED_IDENTITY_APPLIED",
@@ -151,6 +151,14 @@
             "home_source_id": "244919",
             "away": "Franklin County",
             "away_source_id": "260769"
+          },
+          {
+            "game_id": "8092465",
+            "date": "2026-11-13T17:00:00-08:00",
+            "home": "Jefferson Davis County",
+            "home_source_id": "490851",
+            "away": "Franklin County",
+            "away_source_id": "260769"
           }
         ]
       }
@@ -265,6 +273,14 @@
             "home_source_id": "242796",
             "away": "Germantown",
             "away_source_id": "260771"
+          },
+          {
+            "game_id": "8101223",
+            "date": "2026-11-13T17:00:00-08:00",
+            "home": "DeSoto Central",
+            "home_source_id": "241879",
+            "away": "Germantown",
+            "away_source_id": "260771"
           }
         ]
       }
@@ -371,6 +387,14 @@
             "home_source_id": "241890",
             "away": "Hernando",
             "away_source_id": "258433"
+          },
+          {
+            "game_id": "8101221",
+            "date": "2026-11-13T17:00:00-08:00",
+            "home": "Madison Central",
+            "home_source_id": "243291",
+            "away": "Hernando",
+            "away_source_id": "241881"
           }
         ]
       }
@@ -2243,6 +2267,28 @@
       }
     },
     {
+      "code": "QUARANTINED_DUPLICATE_MATCHUP",
+      "severity": "WARNING",
+      "message": "Counted one of 2 identical listings for ('2026-11-13', 'cleveland-central', 'pontotoc').",
+      "context": {
+        "game_ids": [
+          "8101238",
+          "8125068"
+        ]
+      }
+    },
+    {
+      "code": "QUARANTINED_DUPLICATE_MATCHUP",
+      "severity": "WARNING",
+      "message": "Counted one of 2 identical listings for ('2026-11-13', 'myrtle', 'northside').",
+      "context": {
+        "game_ids": [
+          "8101836",
+          "8116061"
+        ]
+      }
+    },
+    {
       "code": "TEAM_DOUBLE_BOOKED",
       "severity": "WARNING",
       "message": "wesson is credited with 2 completed games on 2026-10-23; one may belong to a same-named school.",
@@ -2258,7 +2304,7 @@
     {
       "code": "UNVERIFIED_GAMES_REMAIN",
       "severity": "WARNING",
-      "message": "Published coverage is 98.1%, with 23 unresolved game listings retained.",
+      "message": "Published coverage is 98.2%, with 23 unresolved game listings retained.",
       "context": {
         "missing_game_ids": [
           "7731608",
@@ -2305,13 +2351,18 @@
           },
           {
             "severity": "INFO",
-            "code": "SCHEDULE_GAP",
+            "code": "RATING_TIE",
             "count": 1
           },
           {
             "severity": "INFO",
+            "code": "SCHEDULE_GAP",
+            "count": 13
+          },
+          {
+            "severity": "INFO",
             "code": "UNUSUAL_SCORE",
-            "count": 34
+            "count": 38
           },
           {
             "severity": "WARNING",
